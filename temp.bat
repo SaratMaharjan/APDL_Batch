@@ -1,0 +1,30 @@
+REM @echo off
+
+				call Timer.bat :StartTimer
+
+REM setlocal EnableDelayedExpansion
+
+REM call CalcLoop.bat :calc
+
+
+pause
+REM endlocal
+
+
+    REM EQU - equal
+    REM NEQ - not equal
+    REM LSS - less than
+    REM LEQ - less than or equal
+    REM GTR - greater than
+    REM GEQ - greater than or equal
+    
+    	REM variable can be only one character , use /a for arithmetic calc .. eg: set /a job=%job%+1
+	REM for /l %%n in (1 1 10) do (
+	REM for some numbers not as series above#
+	REM for %%n in (11,12,13) do (
+	
+	REM  Dont use :Subroutine  inside loop
+	
+	REM setlocal EnableDelayedExpansion
+REM for /l %%t in (1 1 3)  do (
+REM for %%t in (1,2,3)  do (
