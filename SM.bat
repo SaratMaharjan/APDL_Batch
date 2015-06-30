@@ -15,11 +15,11 @@ REM ende
 
 REM anfang select drive
 	REM 1: x: ; 2: s:
-	set d=2
+	set d=1
 REM ende 
 
 REM for /l %%z in (1 26 27) do (		
-for %%z in ( 29 ) do (
+for %%z in ( 25 ) do (
 	
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -55,7 +55,7 @@ for %%z in ( 29 ) do (
 	if %%z equ 4 (
 		REM goto :takeTime
 		set proj_Num=287715a
-		set interval=1099 10 1099
+		set interval=1009 10 1009
 		set interval2=21 1 22
 	)	
 	REM ende
@@ -96,8 +96,26 @@ for %%z in ( 29 ) do (
 	)	
 	REM ende
 	
-	REM anfang 9 - 290215 - S991 Tragrahmen
+	REM anfang 9 - 287915 - S-972 Metro Lima
 	if %%z equ 9 (
+		REM goto :takeTime
+		set proj_Num=287915
+		set interval=1009 10 1099
+		set interval2=1 2 3
+	)
+	REM ende
+	
+	REM anfang 10 - 287915 - S-972 Metro Lima -ver Verformung
+	if %%z equ 10 (
+		REM goto :takeTime
+		set proj_Num=287915
+		set interval=1119 10 1199
+		set interval2=1 2 3
+	)
+	REM ende
+
+	REM anfang 11 - 290215 - S991 Tragrahmen
+	if %%z equ 11 (
 		REM goto :takeTime
 		set proj_Num=290215
 		set interval=1000 1000 1000
@@ -106,34 +124,34 @@ for %%z in ( 29 ) do (
 		REM set interval2=1 1 1
 	)
 	REM ende
-	
-	REM anfang 10 - 287915 - S-972 Metro Lima
-	if %%z equ 10 (
-		REM goto :takeTime
-		set proj_Num=287915
-		set interval=1009 10 1099
-		set interval2=1 2 3
-	)
-	REM ende
-	
-	REM anfang 11 - 287915 - S-972 Metro Lima -ver Verformung
-	if %%z equ 11 (
-		REM goto :takeTime
-		set proj_Num=287915
-		set interval=1119 10 1199
-		set interval2=1 2 3
-	)
-	REM ende
-	
+
 	REM anfang 12 - 290215 - S-991 Tragrahmen
 	if %%z equ 12 (
 		REM goto :takeTime
 		set proj_Num=290215
 		set interval=1000 10 1000
-		set interval2=2 1 2
+		set interval2=11 1 12
+	)
+	REM ende
+
+	REM anfang 13 - 290515 - Eppenbergtunnel
+	if %%z equ 13 (
+		REM goto :takeTime
+		set proj_Num=290515
+		set interval=1009 10 1099
+		set interval2=1 1 4
 	)
 	REM ende
 	
+	REM anfang 14 - 290515 - Eppenbergtunnel -ver Verformung
+	if %%z equ 14 (
+		REM goto :takeTime
+		set proj_Num=290515
+		set interval=1119 10 1199
+		set interval2=1 1 4
+	)
+	REM ende
+
 	REM anfang 18 - 288115 - BypassTunnel
 	if %%z equ 18 (
 		REM goto :takeTime
@@ -210,8 +228,8 @@ for %%z in ( 29 ) do (
 	if %%z equ 29 (
 		REM goto :takeTime
 		set proj_Num=288915
-		set interval=1000 10 1010
-		set interval2=81 1 81
+		set interval=1000 10 1020
+		set interval2=11 1 11
 	)
 	REM ende
 	
