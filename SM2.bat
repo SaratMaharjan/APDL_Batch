@@ -19,7 +19,7 @@ REM anfang select drive
 REM ende
 
 REM for /l %%z in (1 26 27) do (
-for %%z in ( 25 ) do (
+for %%z in ( 99 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -156,8 +156,8 @@ for %%z in ( 25 ) do (
 	if %%z equ 18 (
 		REM goto :takeTime
 		set proj_Num=288115
-		set interval=1029 10 1029
-		set interval2=1 1 5
+		set interval=2019 10 3099
+		set interval2=5 1 5
 	)
 	REM ende
 
@@ -165,8 +165,8 @@ for %%z in ( 25 ) do (
 	if %%z equ 19 (
 		REM goto :takeTime
 		set proj_Num=288115
-		set interval=1119 10 1179
-		set interval2=1 1 5
+		set interval=3119 10 3199
+		set interval2=5 1 5
 	)
 	REM ende
 

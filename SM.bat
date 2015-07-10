@@ -19,7 +19,7 @@ REM anfang select drive
 REM ende
 
 REM for /l %%z in (1 26 27) do (
-for %%z in ( 18 19 ) do (
+for %%z in ( 8 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -152,30 +152,57 @@ for %%z in ( 18 19 ) do (
 	)
 	REM ende
 
-	REM anfang 18 - 288115 - BypassTunnel
+	REM anfang 15 - 288115 - BypassTunnel
+	if %%z equ 15 (
+		REM goto :takeTime
+		set proj_Num=288115
+		set interval=4009 10 4099
+		set interval2=5 1 5
+	)
+	REM ende
+
+	REM anfang 16 - 288115 - BypassTunnel -ver Verformung
+	if %%z equ 16 (
+		REM goto :takeTime
+		set proj_Num=288115
+		set interval=2119 10 2119
+		set interval2=15 1 15
+	)
+	REM ende
+
+	REM anfang 17 - 288115 - BypassTunnel
+	if %%z equ 17 (
+		REM goto :takeTime
+		set proj_Num=288115
+		set interval=6019 10 6099
+		set interval2=5 1 5
+	)
+	REM ende
+
+	REM anfang 18 - 288115 - BypassTunnel -ver Verformung
 	if %%z equ 18 (
 		REM goto :takeTime
 		set proj_Num=288115
-		set interval=1019 10 1019
-		set interval2=15 10 25
+		set interval=6119 10 6199
+		set interval2=5 1 5
 	)
 	REM ende
 
-	REM anfang 19 - 288115 - BypassTunnel -ver Verformung
+	REM anfang 19 - 288115 - BypassTunnel 70 zusatz
 	if %%z equ 19 (
 		REM goto :takeTime
 		set proj_Num=288115
-		set interval=1119 10 1119
-		set interval2=15 10 25
+		set interval=2119 1000 3119
+		set interval2=15 10 95
 	)
 	REM ende
 
-	REM anfang 20 - 288115 - BypassTunnel 70 zusatz
+	REM anfang 20 - 288115 - BypassTunnel -ver Verformung 70 zusatz
 	if %%z equ 20 (
 		REM goto :takeTime
 		set proj_Num=288115
-		set interval=1119 10 1119
-		set interval2=51 10 51
+		set interval=2019 1000 3019
+		set interval2=15 10 95
 	)
 	REM ende
 
@@ -183,13 +210,22 @@ for %%z in ( 18 19 ) do (
 	if %%z equ 21 (
 		REM goto :takeTime
 		set proj_Num=288115
-		set interval=1119 10 1199
-		set interval2=31 10 51
+		set interval=1019 1000 1019
+		set interval2=15 10 95
 	)
 	REM ende
 
-	REM anfang 22 - 281314a - B014 Tragrahm
+	REM anfang 22 - 288115 - BypassTunnel -ver Verformung 70 zusatz
 	if %%z equ 22 (
+		REM goto :takeTime
+		set proj_Num=288115
+		set interval=1119 1000 1119
+		set interval2=15 10 95
+	)
+	REM ende
+
+	REM anfang 25 - 281314a - B014 Tragrahm
+	if %%z equ 25 (
 		REM goto :takeTime
 		set proj_Num=281314a
 		set interval=1 1 1
@@ -197,8 +233,8 @@ for %%z in ( 18 19 ) do (
 	)
 	REM ende
 
-	REM anfang 23 - 285614 - S958 Schildschwanz
-	if %%z equ 23 (
+	REM anfang 26 - 285614 - S958 Schildschwanz
+	if %%z equ 26 (
 		REM goto :takeTime
 		set proj_Num=285614
 		set interval=1009 10 1099
@@ -206,8 +242,8 @@ for %%z in ( 18 19 ) do (
 	)
 	REM ende
 
-	REM anfang 24 - 285614 - S958 Schildschwanz
-	if %%z equ 24 (
+	REM anfang 27 - 285614 - S958 Schildschwanz
+	if %%z equ 27 (
 		REM goto :takeTime
 		set proj_Num=285614
 		set interval=5009 10 5009
@@ -215,12 +251,12 @@ for %%z in ( 18 19 ) do (
 	)
 	REM ende
 
-	REM anfang 25 - 289815 - D-778 Schneckenfoerderer
-	if %%z equ 25 (
+	REM anfang 28 - 289815 - D-778 Schneckenfoerderer
+	if %%z equ 28 (
 		REM goto :takeTime
 		set proj_Num=289815
 		set interval=1000 10 1000
-		set interval2=1 1 1
+		set interval2=1 10 1
 	)
 	REM ende
 

@@ -8,9 +8,9 @@
 /plopts,file,on
 /color,pbak,off
 
-*abbr,w32,/sho,term
-*abbr,pw,/gra,powe
-*abbr,fu,/gra,full
+*abbr,w32,/show,term
+*abbr,pw,/graphics,powe
+*abbr,fu,/graphics,full
 *abbr,vii,/vie,1,-1,+.4,-.8
 *abbr,vii2,/vie,1,+1,+.4,-.8
 *abbr,vii3,/vie,1,-1,-.4,-.8
@@ -53,9 +53,9 @@
 *abbr,pnr2,plns,nrre,,,,2
 *abbr,pnr3,plns,nrre,,,,3
 *abbr,pnr4,plns,nrre,,,,4
-*abbr,dsc20,/dsc,1,20
-*abbr,dsc50,/dsc,1,50
-*abbr,dsc100,/dsc,1,100
+!*abbr,dsc20,/dsc,1,20
+!*abbr,dsc50,/dsc,1,50
+!*abbr,dsc100,/dsc,1,100
 
 *abbr,iso,/view,,1,1,1
 *abbr,-iso,/view,,-1,1,-1
@@ -63,12 +63,12 @@
 *abbr,p1,/post1
 *abbr,so,/solu
 *abbr,p26,/post26
-*abbr,last,set,last
-*abbr,list,set,list
-*abbr,first,set,first
-*abbr,prev,set,prev
-*abbr,next,set,next
-*abbr,exit,/exit,nosa
+!*abbr,last,set,last
+!*abbr,list,set,list
+!*abbr,first,set,first
+!*abbr,prev,set,prev
+!*abbr,next,set,next
+!*abbr,exit,/exit,nosa
 *abbr,srat,plns,nl,srat
 *abbr,epeq,plns,nl,epeq
 *abbr,epx,plns,eppl,x
@@ -102,13 +102,15 @@
 	*abbr,noCont,*use,noCont
 	!*abbr,anno4modified,*use,anno4modified
 	*abbr,plotFKN,*use,plotFKN
-	*abbr,plotMat,*use,plotMat
+	!*abbr,plotMat,*use,plotMat
 	*abbr,matPlot,*use,matPlot
 	*abbr,solFy,*use,solFy
-	*abbr,plotFy,*use,plotFy
+	!*abbr,plotFy,*use,plotFy
 	*abbr,bdPlot,*use,bdPlot
+	*abbr,baPlot,*use,baPlot
+	*abbr,laPlot,*use,laPlot
 	!*abbr,ano3d,*use,ano3d
-	*abbr,chPath,*use,chPath
+	*abbr,cdir,*use,cdir
 	!abbr,Chr2sec,*use,Chr2sec
 	!*abbr,r2sec,*use,r2sec
 	*abbr,smisc1,*use,smisc1
@@ -117,8 +119,8 @@
 	*abbr,wpy,*use,wpy
 	*abbr,wpn,*use,wpn
 	*abbr,epll,*use,epll
-	*abbr,di78sm,*use,di78sm		!Thickness according to Section Type
-	*abbr,di78all,*use,di78all		!Thickness according to Section Type
+	!*abbr,di78sm,*use,di78sm		!Thickness according to Section Type
+	!*abbr,di78all,*use,di78all		!Thickness according to Section Type
 	*abbr,cp7,/inp,cp7,mac,E:\__CoreE\
 	!*abbr,plotsm,/inp,pl7sm,mac,E:\__CoreE\
 !ende CUSTOM
