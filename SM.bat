@@ -18,8 +18,8 @@ REM anfang select drive
 	set d=1
 REM ende
 
-REM for /l %%z in (1 26 27) do (
-for %%z in ( 8 ) do (
+REM for /l %%z in ( 41 42 ) do (
+for %%z in ( 28 41 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -92,7 +92,7 @@ for %%z in ( 8 ) do (
 		REM goto :takeTime
 		set proj_Num=281914a
 		set interval=0 1000 0
-		set interval2=1 1 1
+		set interval2=11 1 11
 	)
 	REM ende
 
@@ -338,6 +338,24 @@ for %%z in ( 8 ) do (
 		set proj_Num=289415zz
 		set interval=1119 10 1199
 		set interval2=4 1 6
+	)
+	REM ende
+
+	REM anfang 41 - 289415zz - D-778 Spülsystem
+	if %%z equ 41 (
+		REM goto :takeTime
+		set proj_Num=289815a
+		set interval=1000 10 1000
+		set interval2=1 1 1
+	)
+	REM ende
+
+	REM anfang 42 - 281314 - Sattelauflieger
+	if %%z equ 42 (
+		REM goto :takeTime
+		set proj_Num=281314
+		set interval=200 10 200
+		set interval2=21 1 22
 	)
 	REM ende
 
