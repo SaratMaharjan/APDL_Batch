@@ -16,10 +16,12 @@ REM ende
 REM anfang select drive
 	REM 1: x: ; 2: s:
 	set d=1
+	REM set d=2
 REM ende
 
-REM for /l %%z in ( 41 42 ) do (
-for %%z in ( 28 41 ) do (
+REM for /l %%z in ( 28 41 42 ) do (
+REM for %%z in ( 45 46 ) do (
+for %%z in ( 2 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -28,28 +30,46 @@ for %%z in ( 28 41 ) do (
 	if %%z equ 1 (
 		REM goto :takeTime
 		set proj_Num=279914
-		set interval=2000 10 2000
+		set interval=1000 1000 2000
+		set interval2=1 1 2
+	)
+	REM ende
+
+	REM anfang 2 - 279914 - Vertikalstrebe ACS EW Druck ohne 2T
+	if %%z equ 2 (
+		REM goto :takeTime
+		set proj_Num=279914
+		set interval=1001 1 1025
 		set interval2=1 1 1
 	)
 	REM ende
 
-	REM anfang 2 - 279914b - Vertikalstrebe ACS Druck
-	REM if %%z equ 2 (
-		REM REM goto :takeTime
-		REM set proj_Num=279914b
-		REM set interval=1 1000 4001
-		REM set interval2=21 10 21
-	REM )
-	REM ende
-
-	REM anfang 3 - 279914b - Vertikalstrebe ACS Zug
+	REM anfang 3 - 279914 - Vertikalstrebe ACS EW mit 2T
 	if %%z equ 3 (
 		REM goto :takeTime
-		set proj_Num=279914b
-		set interval=11 1000 4011
-		set interval2=21 10 21
+		set proj_Num=279914
+		set interval=2001 1 2025
+		set interval2=1 1 1
 	)
 	REM ende
+
+	REM REM anfang 2 - 279914b - Vertikalstrebe ACS Druck
+	REM REM if %%z equ 2 (
+		REM REM REM goto :takeTime
+		REM REM set proj_Num=279914b
+		REM REM set interval=1 1000 4001
+		REM REM set interval2=21 10 21
+	REM REM )
+	REM REM ende
+
+	REM REM anfang 3 - 279914b - Vertikalstrebe ACS Zug
+	REM if %%z equ 3 (
+		REM REM goto :takeTime
+		REM set proj_Num=279914b
+		REM set interval=11 1000 4011
+		REM set interval2=21 10 21
+	REM )
+	REM REM ende
 
 	REM anfang 4 - 287715a - S-978 Wuhan Line 8 Lot 3 Volume with TEMP
 	if %%z equ 4 (
@@ -255,8 +275,8 @@ for %%z in ( 28 41 ) do (
 	if %%z equ 28 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=1000 10 1000
-		set interval2=1 10 1
+		set interval=1100 100 1100
+		set interval2=21 10 21
 	)
 	REM ende
 
@@ -341,7 +361,7 @@ for %%z in ( 28 41 ) do (
 	)
 	REM ende
 
-	REM anfang 41 - 289415zz - D-778 Spülsystem
+	REM anfang 41 - 289815a - D-778 Spülsystem
 	if %%z equ 41 (
 		REM goto :takeTime
 		set proj_Num=289815a
@@ -356,6 +376,51 @@ for %%z in ( 28 41 ) do (
 		set proj_Num=281314
 		set interval=200 10 200
 		set interval2=21 1 22
+	)
+	REM ende
+
+	REM anfang 43 - 291115 - S991 / 992 SSW
+	if %%z equ 43 (
+		REM goto :takeTime
+		set proj_Num=291115
+		set interval=1010 10 1010
+		set interval2=1 1 4
+	)
+	REM ende
+
+	REM anfang 44 - 291115 - S991 / 992 SSW -ve
+	if %%z equ 44 (
+		REM goto :takeTime
+		set proj_Num=291115
+		set interval=1110 10 1190
+		set interval2=1 1 4
+	)
+	REM ende
+
+	REM anfang 45 - 291115s - S991 / 992 SSW ONLY
+	if %%z equ 45 (
+		REM goto :takeTime
+		set proj_Num=291115s
+		set interval=1000 10 1090
+		set interval2=1 1 4
+	)
+	REM ende
+
+	REM anfang 46 - 291115s - S991 / 992 SSW -ve SSW ONLY
+	if %%z equ 46 (
+		REM goto :takeTime
+		set proj_Num=291115s
+		set interval=1110 10 1190
+		set interval2=1 1 4
+	)
+	REM ende
+
+	REM anfang 47 - 290515 - S994
+	if %%z equ 47 (
+		REM goto :takeTime
+		set proj_Num=290515
+		set interval=1129 10 1129
+		set interval2=4 1 4
 	)
 	REM ende
 

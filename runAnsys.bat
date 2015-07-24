@@ -71,6 +71,7 @@ if !tCalc! geq 5 (
 endlocal
 
 :takeTime
-timeout /t 60	 
+timeout /t 1	 
 
 :eof
+
