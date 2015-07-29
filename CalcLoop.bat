@@ -41,21 +41,29 @@ for /l %%c in (1 1 2)  do (
 		if %d% equ 1 (
 		echo.
 		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
-		 -i "x:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
+ -i "x:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
+
+		echo.>> D:\%proj_Num%\ANSYS\smAPDL.bat
+		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -i "x:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" >> D:\%proj_Num%\ANSYS\smAPDL.bat
 		echo.
 
 		"C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
-		 -i "x:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
+ -i "x:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
 		)
 
 		if %d% equ 2 (
 		echo.
 		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
-		 -i "s:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
+ -i "s:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
+
+		echo.>> D:\%proj_Num%\ANSYS\smAPDL.bat
+		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -i "s:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2" >> D:\%proj_Num%\ANSYS\smAPDL.bat
 		echo.
 
 		"C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
-		 -i "s:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
+ -i "s:s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
 		)
 
 		REM timeout /t 10

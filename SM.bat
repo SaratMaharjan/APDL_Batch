@@ -8,7 +8,7 @@ REM anfang Selecting Licenses
 		REM 3.	Prfnls
 		REM 4.	Stba
 		REM 6.	Prepost
-	set startValue=3
+	set startValue=2
 	set endValue=!startValue!
 	REM set endValue=3
 REM ende
@@ -20,8 +20,8 @@ REM anfang select drive
 REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
-REM for %%z in ( 45 46 ) do (
-for %%z in ( 2 ) do (
+for %%z in ( 45 46 ) do (
+REM for %%z in ( 99 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -30,8 +30,8 @@ for %%z in ( 2 ) do (
 	if %%z equ 1 (
 		REM goto :takeTime
 		set proj_Num=279914
-		set interval=1000 1000 2000
-		set interval2=1 1 2
+		set interval=1000 1000 1000
+		set interval2=2 1 2
 	)
 	REM ende
 
@@ -39,7 +39,7 @@ for %%z in ( 2 ) do (
 	if %%z equ 2 (
 		REM goto :takeTime
 		set proj_Num=279914
-		set interval=1001 1 1025
+		set interval=1001 1 1001
 		set interval2=1 1 1
 	)
 	REM ende
@@ -48,7 +48,7 @@ for %%z in ( 2 ) do (
 	if %%z equ 3 (
 		REM goto :takeTime
 		set proj_Num=279914
-		set interval=2001 1 2025
+		set interval=2000 1 2000
 		set interval2=1 1 1
 	)
 	REM ende
@@ -383,8 +383,8 @@ for %%z in ( 2 ) do (
 	if %%z equ 43 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1010 10 1010
-		set interval2=1 1 4
+		set interval=1011 1 1011
+		set interval2=1 1 1
 	)
 	REM ende
 
@@ -392,26 +392,26 @@ for %%z in ( 2 ) do (
 	if %%z equ 44 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1110 10 1190
-		set interval2=1 1 4
+		set interval=1011 1 1012
+		set interval2=11 1 14
 	)
 	REM ende
 
 	REM anfang 45 - 291115s - S991 / 992 SSW ONLY
 	if %%z equ 45 (
 		REM goto :takeTime
-		set proj_Num=291115s
-		set interval=1000 10 1090
-		set interval2=1 1 4
+		set proj_Num=291115a
+		set interval=1010 1 1020
+		set interval2=11 1 14
 	)
 	REM ende
 
 	REM anfang 46 - 291115s - S991 / 992 SSW -ve SSW ONLY
 	if %%z equ 46 (
 		REM goto :takeTime
-		set proj_Num=291115s
-		set interval=1110 10 1190
-		set interval2=1 1 4
+		set proj_Num=291115a
+		set interval=1111 1 1120
+		set interval2=11 1 14
 	)
 	REM ende
 
@@ -429,7 +429,7 @@ for %%z in ( 2 ) do (
 	if %%z equ 99 (
 		REM goto :takeTime
 		set proj_Num=Test
-		set interval=1019 10 1019
+		set interval=1010 10 1010
 		set interval2=1 1 1
 	)
 	REM ende
@@ -447,6 +447,7 @@ REM anfang NO NEED to CHANGE BELOW
 
 	del D:\!proj_Num!\ANSYS\*.abt
 	del D:\!proj_Num!\ANSYS\*.lock
+	echo.> D:\!proj_Num!\ANSYS\smAPDL.bat
 
 	set ans_consec=YES
 	set ansys_lock=on
@@ -506,3 +507,5 @@ timeout /t 100
 REM ==================================================================================================
 REM END OF FILE
 REM ==================================================================================================
+
+

@@ -1,0 +1,16 @@
+#ignore files except following
+*
+!*.vim
+!*.gitignore
+!*.snippets
+!*.md
+!*.in
+!*.bat
+!*.mac
+!*.solc
+!*.abt
+!plugin/
+GREP/
+bundle/
+
+
