@@ -10,18 +10,22 @@ REM anfang Selecting Licenses
 		REM 6.	Prepost
 	set startValue=2
 	set endValue=!startValue!
-	REM set endValue=3
+	REM set endValue=6
 REM ende
 
 REM anfang select drive
 	REM 1: x: ; 2: s:
-	set d=1
+	set d=2
 	REM set d=2
 REM ende
 
+REM anfang Redirect or NOT
+	set redirect=0
+REM ende
+
 REM for /l %%z in ( 28 41 42 ) do (
-for %%z in ( 45 46 ) do (
 REM for %%z in ( 99 ) do (
+for %%z in ( 45 46 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -384,7 +388,7 @@ REM for %%z in ( 99 ) do (
 		REM goto :takeTime
 		set proj_Num=291115
 		set interval=1011 1 1011
-		set interval2=1 1 1
+		set interval2=11 1 14
 	)
 	REM ende
 
@@ -392,8 +396,8 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 44 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1011 1 1012
-		set interval2=11 1 14
+		set interval=1011 1 1011
+		set interval2=21 1 24
 	)
 	REM ende
 
@@ -401,7 +405,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 45 (
 		REM goto :takeTime
 		set proj_Num=291115a
-		set interval=1010 1 1020
+		set interval=1021 1 1030
 		set interval2=11 1 14
 	)
 	REM ende
@@ -410,7 +414,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 46 (
 		REM goto :takeTime
 		set proj_Num=291115a
-		set interval=1111 1 1120
+		set interval=1121 1 1130
 		set interval2=11 1 14
 	)
 	REM ende
@@ -430,7 +434,7 @@ REM for %%z in ( 99 ) do (
 		REM goto :takeTime
 		set proj_Num=Test
 		set interval=1010 10 1010
-		set interval2=1 1 1
+		set interval2=1 1 4
 	)
 	REM ende
 
@@ -472,7 +476,9 @@ REM anfang NO NEED to CHANGE BELOW
 		call addZeros.bat :addZero
 		set job=!par!
 		@echo on
+		echo.
 		echo JOB: !job!
+		echo.
 		@echo off
 		for /l %%n in (!interval2!) do (
 			set par=%%n
