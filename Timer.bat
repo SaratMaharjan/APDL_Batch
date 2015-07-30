@@ -24,6 +24,6 @@ goto :eof
 REM  Show timer start/stop/delta
 set elTime=%TookTime:~0,-2%.%TookTimePadded:~-2%
 set /a tCalc=elTime
-echo Converted Time is: %tCalc%
+echo Elasped Time is: %tCalc%
 goto :eof
 

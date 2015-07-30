@@ -8,14 +8,14 @@ REM anfang Selecting Licenses
 		REM 3.	Prfnls
 		REM 4.	Stba
 		REM 6.	Prepost
-	set startValue=2
+	set startValue=6
 	set endValue=!startValue!
 	REM set endValue=6
 REM ende
 
 REM anfang select drive
-	REM 1: x: ; 2: s:
-	set d=2
+	REM 1: x: and file; 2: s: and file2
+	set d=1
 	REM set d=2
 REM ende
 
@@ -24,8 +24,8 @@ REM anfang Redirect or NOT
 REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
-REM for %%z in ( 99 ) do (
-for %%z in ( 45 46 ) do (
+for %%z in ( 99 ) do (
+REM for %%z in ( 45 46 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -434,7 +434,7 @@ for %%z in ( 45 46 ) do (
 		REM goto :takeTime
 		set proj_Num=Test
 		set interval=1010 10 1010
-		set interval2=1 1 4
+		set interval2=1 1 1
 	)
 	REM ende
 
@@ -456,17 +456,17 @@ REM anfang NO NEED to CHANGE BELOW
 	set ans_consec=YES
 	set ansys_lock=on
 
-	if %d% equ 1 (
-		net use x: /dele /y
-		net use x: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
-		set "location=x:"
-	)
-	if %d% equ 2 (
-		net use s: /dele /y
-		net use s: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
-		set "location=s:"
-	)
-	echo Source Location: !location!
+	REM if %d% equ 1 (
+		REM net use x: /dele /y
+		REM net use x: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
+		REM set "location=x:"
+	REM )
+	REM if %d% equ 2 (
+		REM net use s: /dele /y
+		REM net use s: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
+		REM set "location=s:"
+	REM )
+	REM echo Source Location: !location!
 
 	REM goto :takeTime
 
@@ -478,7 +478,6 @@ REM anfang NO NEED to CHANGE BELOW
 		@echo on
 		echo.
 		echo JOB: !job!
-		echo.
 		@echo off
 		for /l %%n in (!interval2!) do (
 			set par=%%n
@@ -486,6 +485,7 @@ REM anfang NO NEED to CHANGE BELOW
 			call addZeros.bat :addZero
 			set lk=!par!
 			@echo on
+			echo.
 			echo ...
 			echo ......
 			echo New Job With
