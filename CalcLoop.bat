@@ -40,7 +40,7 @@ for /l %%c in (1 1 2)  do (
 			echo License: !ansj!
 			echo Processors: !numPro!
 			echo Project: %proj_Num%
-			REM echo source %d% : !location!
+			echo source %d% : !location!
 		REM licenses ende
 
 		call Timer.bat StartTimer
@@ -48,30 +48,30 @@ for /l %%c in (1 1 2)  do (
 	REM anfang Call ANSYS
 		if %d% equ 1 (
 		echo.
-		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz "R:\Maharjan\%proj_Num%"^
- -redirect !redirect! -i "R:\Maharjan\%proj_Num%\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
+		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
 
 		echo.>> D:\%proj_Num%\ANSYS\smAPDL.bat
-		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz "R:\Maharjan\%proj_Num%"^
- -redirect !redirect! -i "R:\Maharjan\%proj_Num%\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" >> D:\%proj_Num%\ANSYS\smAPDL.bat
+		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" >> D:\%proj_Num%\ANSYS\smAPDL.bat
 		echo.
 
-		"C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz "R:\Maharjan\%proj_Num%"^
- -redirect !redirect! -i "R:\Maharjan\%proj_Num%\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
+		"C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
 		)
 
 		if %d% equ 2 (
 		echo.
-		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz "R:\Maharjan\%proj_Num%"^
- -redirect !redirect! -i "R:\Maharjan\%proj_Num%\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
+		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
 
 		echo.>> D:\%proj_Num%\ANSYS\smAPDL.bat
-		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz "R:\Maharjan\%proj_Num%"^
- -redirect !redirect! -i "R:\Maharjan\%proj_Num%\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2" >> D:\%proj_Num%\ANSYS\smAPDL.bat
+		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2" >> D:\%proj_Num%\ANSYS\smAPDL.bat
 		echo.
 
-		"C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz "R:\Maharjan\%proj_Num%"^
- -redirect !redirect! -i "R:\Maharjan\%proj_Num%\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
+		"C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
 		)
 	REM ende Call ANSYS
 
