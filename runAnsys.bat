@@ -51,15 +51,16 @@ echo Display Device: %dispName%
 
 call Timer.bat :StartTimer
 
-echo .
-echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe"  -g -p !ansj! ^
- -dir "D:\%proj_Num%\ANSYS" -j "file1" -s read -l en-us -t -d %dispName% 	 
-echo .
+set apdlCMD="C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe"  -g -p !ansj! ^
+ -dir "D:\%proj_Num%\ANSYS" -j "file1" -s read -l en-us -t -d %dispName%
+
+echo.
+echo !apdlCMD! 	 
+echo.
 
 REM goto :takeTime
-"C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe"  -g -p !ansj! ^
- -dir "D:\%proj_Num%\ANSYS" -j "file1" -s read -l en-us -t -d %dispName% 	
- 
+!apdlCMD!
+
 call Timer.bat :StopTimer	
 call Timer.bat :DisplayTimerResult	
 echo Time Used: !elTime!

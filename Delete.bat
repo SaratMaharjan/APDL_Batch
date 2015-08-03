@@ -1,27 +1,27 @@
 
 :delFiles
 echo Deleting Temporary Files
-del D:\%proj_Num%\ANSYS\*.bcs
-del D:\%proj_Num%\ANSYS\*.dbb
-del D:\%proj_Num%\ANSYS\*.do3
-del D:\%proj_Num%\ANSYS\*.ema
-del D:\%proj_Num%\ANSYS\*.emat
-del D:\%proj_Num%\ANSYS\*.esa
-del D:\%proj_Num%\ANSYS\*.esav
-del D:\%proj_Num%\ANSYS\*.ful
-del D:\%proj_Num%\ANSYS\*.full
-del D:\%proj_Num%\ANSYS\*.ldh
-del D:\%proj_Num%\ANSYS\*.mnt
-del D:\%proj_Num%\ANSYS\*.mod
-del D:\%proj_Num%\ANSYS\*.osa
-del D:\%proj_Num%\ANSYS\*.osav
-del D:\%proj_Num%\ANSYS\*.pcs
-del D:\%proj_Num%\ANSYS\*.pvt
-del D:\%proj_Num%\ANSYS\*.r00
-REM del D:\%proj_Num%\ANSYS\*.r001
-REM del D:\%proj_Num%\ANSYS\*.rdb
-del D:\%proj_Num%\ANSYS\*.sta
-del D:\%proj_Num%\ANSYS\*.tri
-del D:\%proj_Num%\ANSYS\*.lock
+del !wDir!\*.bcs
+del !wDir!\*.dbb
+del !wDir!\*.do3
+del !wDir!\*.ema
+del !wDir!\*.emat
+del !wDir!\*.esa
+del !wDir!\*.esav
+del !wDir!\*.ful
+del !wDir!\*.full
+del !wDir!\*.ldh
+del !wDir!\*.mnt
+del !wDir!\*.mod
+del !wDir!\*.osa
+del !wDir!\*.osav
+del !wDir!\*.pcs
+del !wDir!\*.pvt
+del !wDir!\*.r00
+REM del !wDir!\*.r001
+REM del !wDir!\*.rdb
+del !wDir!\*.sta
+del !wDir!\*.tri
+del !wDir!\*.lock
 
 goto :eof

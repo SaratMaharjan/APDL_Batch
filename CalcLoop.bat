@@ -2,7 +2,7 @@ REM call:%*
 
 :calc
 echo ---------------STARTING CALCULATION------------------
-del D:\%proj_Num%\ANSYS\*.lock
+del !wDir!\*.lock
 
 for /l %%c in (1 1 2)  do (
 	call Timer.bat StartTimer
@@ -44,35 +44,28 @@ for /l %%c in (1 1 2)  do (
 		REM licenses ende
 
 		call Timer.bat StartTimer
+		 
 
 	REM anfang Call ANSYS
+
 		if %d% equ 1 (
-		echo.
-		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
-
-		echo.>> D:\%proj_Num%\ANSYS\smAPDL.bat
-		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" >> D:\%proj_Num%\ANSYS\smAPDL.bat
-		echo.
-
-		"C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS"
+			set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -redirect !redirect! -i "!location!\s.in" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!"
 		)
-
 		if %d% equ 2 (
-		echo.
-		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
-
-		echo.>> D:\%proj_Num%\ANSYS\smAPDL.bat
-		echo "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2" >> D:\%proj_Num%\ANSYS\smAPDL.bat
-		echo.
-
-		"C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe" -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- -redirect !redirect! -i "!location!\s.in" -o "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" -dir "D:\%proj_Num%\ANSYS" -j "file2"
+			set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ -redirect !redirect! -i "!location!\s.in" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!" -j "file2"
 		)
+
+		echo.
+		echo !apdlCMD!
+
+		echo.>> !wDir!\smAPDL.bat
+		echo !apdlCMD! >> !wDir!\smAPDL.bat
+		echo.
+
+		!apdlCMD!
+
 	REM ende Call ANSYS
 
 		REM timeout /t 10
@@ -98,7 +91,7 @@ for /l %%c in (1 1 2)  do (
 		echo       3. Error in Input File "check file.err".
 		echo       4. or Early eof in main input file. & echo.
 		echo  ------------ ----------------- ------------- & echo.
-		copy "D:\%proj_Num%\ANSYS\f!job!-!lk!.out" "D:\%proj_Num%\ANSYS\f!job!-!lk!-lic-!ansj!.out"
+		copy "!wDir!\f!job!-!lk!.out" "!wDir!\f!job!-!lk!-lic-!ansj!.out"
 
 		echo.
 		echo. !ansj! try Failed

@@ -3,11 +3,8 @@
 setlocal EnableDelayedExpansion
 
 REM anfang Selecting Licenses
-		REM 1.	Structural 4 core
-		REM 2.	Structura 2 core
-		REM 3.	Prfnls
-		REM 4.	Stba
-		REM 6.	Prepost
+	set appPath="C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe"
+		REM	1.	Structural4core		2.	Structural2core		3.	Prfnls		4.	Stba		6.	Prepost
 	set startValue=3
 	set endValue=!startValue!
 	REM set endValue=6
@@ -25,7 +22,7 @@ REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 43 ) do (
+for %%z in ( 43 44 45 46 28 41 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -388,7 +385,7 @@ for %%z in ( 43 ) do (
 		REM goto :takeTime
 		set proj_Num=291115
 		set interval=1011 18 1029
-		set interval2=21 10 41
+		set interval2=11 10 41
 	)
 	REM ende
 
@@ -467,15 +464,6 @@ REM anfang NO NEED to CHANGE BELOW
 	echo Changed to Current dir: "%CD%"
 	echo ....
 
-	del D:\!proj_Num!\ANSYS\*.abt
-	del D:\!proj_Num!\ANSYS\*.lock
-	echo.>> D:\!proj_Num!\ANSYS\smAPDL.bat
-	echo REM ------------------- >> D:\!proj_Num!\ANSYS\smAPDL.bat
-	echo REM anfang New Analysis Cases >> D:\!proj_Num!\ANSYS\smAPDL.bat
-
-	set ans_consec=YES
-	set ansys_lock=on
-
 	REM if %d% equ 1 (
 		REM net use x: /dele /y
 		REM net use x: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
@@ -486,10 +474,24 @@ REM anfang NO NEED to CHANGE BELOW
 		REM net use s: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
 		REM set "location=s:"
 	REM )
-	REM echo Source Location: !location!
+
 	set "location=R:\Maharjan\!proj_Num!"
+	set "wDir=D:\!proj_Num!\ANSYS"
+	echo.
+	echo Source Location: !location!
+	echo Working Location: !wDir!
+	echo.
 
 	REM goto :takeTime
+
+	del !wDir!\*.abt
+	del !wDir!\*.lock
+	echo.>> !wDir!\smAPDL.bat
+	echo REM ------------------- >> !wDir!\smAPDL.bat
+	echo REM anfang New Analysis Cases >> !wDir!\smAPDL.bat
+
+	set ans_consec=YES
+	set ansys_lock=on
 
 	for /l %%m in (!interval!) do (
 		set par=%%m
@@ -524,15 +526,15 @@ REM anfang NO NEED to CHANGE BELOW
 			@echo off
 		)
 	)
-	echo. >> D:\!proj_Num!\ANSYS\smAPDL.bat
-	echo REM ende New Analysis Cases >> D:\!proj_Num!\ANSYS\smAPDL.bat
-	echo REM ------------------- >> D:\!proj_Num!\ANSYS\smAPDL.bat
+	echo. >> !wDir!\smAPDL.bat
+	echo REM ende New Analysis Cases >> !wDir!\smAPDL.bat
+	echo REM ------------------- >> !wDir!\smAPDL.bat
 
 REM ende NOT Needed TO CHANGE
  )
 endlocal
 goto :takeTime
-pause
+REM pause
 :takeTime
 timeout /t 100
 REM ==================================================================================================
