@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 REM anfang Selecting Licenses
 	set appPath="C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe"
 		REM	1.	Structural4core		2.	Structural2core		3.	Prfnls		4.	Stba		6.	Prepost
-	set startValue=3
+	set startValue=4
 	set endValue=!startValue!
 	REM set endValue=6
 REM ende
@@ -22,7 +22,7 @@ REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 43 44 45 46 28 41 ) do (
+for %%z in ( 56 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -276,8 +276,8 @@ for %%z in ( 43 44 45 46 28 41 ) do (
 	if %%z equ 28 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=1000 100 1100
-		set interval2=21 10 31
+		set interval=1100 10 1110
+		set interval2=21 10 21
 	)
 	REM ende
 
@@ -402,7 +402,7 @@ for %%z in ( 43 44 45 46 28 41 ) do (
 	if %%z equ 45 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1011 118 1129
+		set interval=1029 118 1129
 		set interval2=13 10 43
 	)
 	REM ende
@@ -440,6 +440,15 @@ for %%z in ( 43 44 45 46 28 41 ) do (
 		set proj_Num=290515
 		set interval=1129 10 1129
 		set interval2=4 1 4
+	)
+	REM ende
+
+	REM anfang 56 - 290915 - S990 Bohrkopf
+	if %%z equ 56 (
+		REM goto :takeTime
+		set proj_Num=290915
+		set interval=1001 1 1005
+		set interval2=1 1 1
 	)
 	REM ende
 
