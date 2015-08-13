@@ -64,7 +64,9 @@ for /l %%c in (1 1 2)  do (
 		echo !apdlCMD! >> !wDir!\smAPDL.bat
 		echo.
 
-		!apdlCMD!
+		if %execute% equ 1 (		
+			!apdlCMD!
+		)
 
 	REM ende Call ANSYS
 
@@ -119,4 +121,6 @@ for /l %%c in (1 1 2)  do (
 	timeout /t 30
 
 )
+
 goto :eof
+
