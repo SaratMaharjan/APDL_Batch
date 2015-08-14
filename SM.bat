@@ -23,7 +23,7 @@ REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 60 ) do (
+for %%z in ( 60 28 29 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -304,14 +304,24 @@ for %%z in ( 60 ) do (
 	if %%z equ 28 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=1101 10 1111
-		set interval2=21 10 21
+		set interval=1100 10 1110
+		set interval2=11 10 21
 		set append=1
 	)
 	REM ende
 
-	REM anfang 29 - 288915 - S-970 Fahrträger
+	REM anfang 29 - 289815 - D-778 Schneckenfoerderer
 	if %%z equ 29 (
+		REM goto :takeTime
+		set proj_Num=289815
+		set interval=1101 10 1111
+		set interval2=11 10 21
+		set append=1
+	)
+	REM ende
+
+	REM anfang 30 - 288915 - S-970 Fahrträger
+	if %%z equ 30 (
 		REM goto :takeTime
 		set proj_Num=288915
 		set interval=1000 10 1020
@@ -504,8 +514,8 @@ for %%z in ( 60 ) do (
 	if %%z equ 60 (
 		REM goto :takeTime
 		set proj_Num=291415
-		set interval=1001 1 1001
-		set interval2=1 1 2
+		set interval=1000 1 1000
+		set interval2=1 1 4
 		set append=1
 	)
 	REM ende
