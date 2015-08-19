@@ -23,7 +23,7 @@ REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 60 ) do (
+for %%z in ( 60 43 44 45 46 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -515,7 +515,7 @@ for %%z in ( 60 ) do (
 		REM goto :takeTime
 		set proj_Num=291415
 		set interval=1000 1 1000
-		set interval2=2 1 2
+		set interval2=1 1 5
 		set append=1
 	)
 	REM ende

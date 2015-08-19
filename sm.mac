@@ -45,113 +45,113 @@ abs
 	*abbr,epll,*use,epll
 	!*abbr,di78sm,*use,di78sm		!Thickness according to Section Type
 	!*abbr,di78all,*use,di78all		!Thickness according to Section Type
-	*abbr,cp7,/inp,cp7,mac,E:\__CoreE\
+	*abbr,cp7,/inp,cp7,mac,D:\zCore\
 	!*abbr,plotsm,/inp,pl7sm,mac,E:\__CoreE\
 !ende _____________________________________________________________________________
 /eof
 ec0
 !*ulib,sm,mac,E:
 !anfang ______________________________ec0_____________________________________________
-!show element vectors
-/psymb,esys,0
-eplo
+	!show element vectors
+	/psymb,esys,0
+	eplo
 !ende _____________________________________________________________________________
 /eof
 ec1
 !anfang _______________________________ec1____________________________________________
-!show element vectors
-/psymb,esys,1
-eplo
+	!show element vectors
+	/psymb,esys,1
+	eplo
 !ende _____________________________________________________________________________
 /eof
 ac0
 !anfang _______________________________ac0____________________________________________
-!show element vectors
-/psymb,adir,0
-aplo
+	!show element vectors
+	/psymb,adir,0
+	aplot
 !ende _____________________________________________________________________________
 /eof
 ac1
 !anfang _______________________________ac1____________________________________________
-!show element vectors
-/psymb,adir,1
-aplo
+	!show element vectors
+	/psymb,adir,1
+	aplot
 !ende _____________________________________________________________________________
 /eof
 estt
 !anfang _________________________________estt__________________________________________
-!auswählen von TargetElemente (ohne Targetfläche)
-!arg1, arg2: real des Kontakflächenpaares
-esel,s,real,,arg1,arg2
-esel,r,ename,,170
-nsle
-!eplo
+	!auswählen von TargetElemente (ohne Targetfläche)
+	!arg1, arg2: real des Kontakflächenpaares
+	esel,s,real,,arg1,arg2
+	esel,r,ename,,170
+	nsle
+	!eplo
 !ende _____________________________________________________________________________
 /eof
 cg
 !anfang _______________________________________cg____________________________________
-!Calculate C.G. of selection
+	!Calculate C.G. of selection
 
-*get,tmCount,node,,count
-*get,nodeMin,node,,num,min
+	*get,tmCount,node,,count
+	*get,nodeMin,node,,num,min
 
-xsum=0
-ysum=0
-zsum=0
+	xsum=0
+	ysum=0
+	zsum=0
 
-*do,i,1,tmCount
-	xsum=xsum+nx(nodeMin)
-	ysum=ysum+ny(nodeMin)
-	zsum=zsum+nz(nodeMin)
-	*get,nodeMin,node,nodeMin,nxth
-*enddo
+	*do,i,1,tmCount
+		xsum=xsum+nx(nodeMin)
+		ysum=ysum+ny(nodeMin)
+		zsum=zsum+nz(nodeMin)
+		*get,nodeMin,node,nodeMin,nxth
+	*enddo
 
-xsum=xsum/tmCount
-ysum=ysum/tmCount
-zsum=zsum/tmCount
+	xsum=xsum/tmCount
+	ysum=ysum/tmCount
+	zsum=zsum/tmCount
 
-!*msg,,xsum,ysum,zsum
-!C.G. = %G , %G, %G
-/com,
-/com, C.G. : %xsum%, %ysum%, %zsum%
-/com,
+	!*msg,,xsum,ysum,zsum
+	!C.G. = %G , %G, %G
+	/com,
+	/com, C.G. : %xsum%, %ysum%, %zsum%
+	/com,
 
-spoint,,xsum,ysum,zsum
+	spoint,,xsum,ysum,zsum
 
 !ende _______________________________________name____________________________________
 /eof
 bnode
 !anfang _______________________________________bnode____________________________________
 
-esel,s,ename,,188
-nsle
+	esel,s,ename,,188
+	nsle
 
-*if,arg1,eq,1,then
-	*if,arg2,eq,1,then
-		*get,nMin,node,,mxloc,x
+	*if,arg1,eq,1,then
+		*if,arg2,eq,1,then
+			*get,nMin,node,,mxloc,x
+		*else
+			*get,nMin,node,,mnloc,x
+		*endif
+		nsel,r,loc,x,nMin
+	*elseif,arg1,eq,2,then
+		*if,arg2,eq,1,then
+			*get,nMin,node,,mxloc,y
+		*else
+			*get,nMin,node,,mnloc,y
+		*endif
+		nsel,r,loc,y,nMin
 	*else
-		*get,nMin,node,,mnloc,x
+		*if,arg2,eq,1,then
+			*get,nMin,node,,mxloc,z
+		*else
+			*get,nMin,node,,mnloc,z
+		*endif
+		nsel,r,loc,z,nMin
 	*endif
-	nsel,r,loc,x,nMin
-*elseif,arg1,eq,2,then
-	*if,arg2,eq,1,then
-		*get,nMin,node,,mxloc,y
-	*else
-		*get,nMin,node,,mnloc,y
-	*endif
-	nsel,r,loc,y,nMin
-*else
-	*if,arg2,eq,1,then
-		*get,nMin,node,,mxloc,z
-	*else
-		*get,nMin,node,,mnloc,z
-	*endif
-	nsel,r,loc,z,nMin
-*endif
 
-/pbc,nfor,,1
-nplo
-fsum
+	/pbc,nfor,,1
+	nplo
+	fsum
 
 !ende _______________________________________name____________________________________
 /eof
@@ -593,42 +593,42 @@ rlot
 /eof
 ano3d
 !anfang _______________________________________an03d____________________________________
-!Need to give co-ordinates from arg1 to arg6 first
-!	n1x n1y n1z n2x n2y n2z
-!Erstellt 3D-Notation
-	!arg1= x-Koordinate 1
-	!arg2= y-Koordinate 1
-	!arg3= z-Koordinate 1
-	!arg4= x-Koordinate 2
-	!arg5= y-Koordinate 2
-	!arg6= z-Koordinate 3
+	!Need to give co-ordinates from arg1 to arg6 first
+	!	n1x n1y n1z n2x n2y n2z
+	!Erstellt 3D-Notation
+		!arg1= x-Koordinate 1
+		!arg2= y-Koordinate 1
+		!arg3= z-Koordinate 1
+		!arg4= x-Koordinate 2
+		!arg5= y-Koordinate 2
+		!arg6= z-Koordinate 3
 
-/tspec,15
+	/tspec,15
 
-csys
+	csys
 
-*if,arg1,ne,arg4,then
-	/AN3D,ANUM,0,105,arg1+5/10*(arg4-arg1),arg5,arg6
-	/an3d,ARR2,0.5,arg1+4/10*(arg4-arg1),arg5,arg6,arg1,arg2,arg3
-	/an3d,ARR2,0.5,arg1+6/10*(arg4-arg1),arg5,arg6,arg4,arg5,arg6
-	/an3d,TEXT,arg1+5/10*(arg4-arg1),arg5,arg6,%abs(nint((arg4-arg1)*100)/10)%
-*endif
+	*if,arg1,ne,arg4,then
+		/AN3D,ANUM,0,105,arg1+5/10*(arg4-arg1),arg5,arg6
+		/an3d,ARR2,0.5,arg1+4/10*(arg4-arg1),arg5,arg6,arg1,arg2,arg3
+		/an3d,ARR2,0.5,arg1+6/10*(arg4-arg1),arg5,arg6,arg4,arg5,arg6
+		/an3d,TEXT,arg1+5/10*(arg4-arg1),arg5,arg6,%abs(nint((arg4-arg1)*100)/10)%
+	*endif
 
-*if,arg2,ne,arg5,then
-	/AN3D,ANUM,0,105,arg4,arg2+5/10*(arg5-arg2),arg6
-	/an3d,ARR2,0.5,arg4,arg2+4/10*(arg5-arg2),arg6,arg1,arg2,arg3
-	/an3d,ARR2,0.5,arg4,arg2+6/10*(arg5-arg2),arg6,arg4,arg5,arg6
-	/an3d,TEXT,arg4,arg2+5/10*(arg5-arg2),arg6,%abs(nint((arg5-arg2)*100)/10)%
-*endif
+	*if,arg2,ne,arg5,then
+		/AN3D,ANUM,0,105,arg4,arg2+5/10*(arg5-arg2),arg6
+		/an3d,ARR2,0.5,arg4,arg2+4/10*(arg5-arg2),arg6,arg1,arg2,arg3
+		/an3d,ARR2,0.5,arg4,arg2+6/10*(arg5-arg2),arg6,arg4,arg5,arg6
+		/an3d,TEXT,arg4,arg2+5/10*(arg5-arg2),arg6,%abs(nint((arg5-arg2)*100)/10)%
+	*endif
 
-*if,arg3,ne,arg6,then
-	/AN3D,ANUM,0,105,arg4,arg5,arg3+5/10*(arg6-arg3)
-	/an3d,ARR2,0.5,arg4,arg5,arg3+4/10*(arg6-arg3),arg1,arg2,arg3
-	/an3d,ARR2,0.5,arg4,arg5,arg3+6/10*(arg6-arg3),arg4,arg5,arg6
-	/an3d,TEXT,arg4,arg5,arg3+5/10*(arg6-arg3),%abs(nint((arg6-arg3)*100)/10)%
-*endif
+	*if,arg3,ne,arg6,then
+		/AN3D,ANUM,0,105,arg4,arg5,arg3+5/10*(arg6-arg3)
+		/an3d,ARR2,0.5,arg4,arg5,arg3+4/10*(arg6-arg3),arg1,arg2,arg3
+		/an3d,ARR2,0.5,arg4,arg5,arg3+6/10*(arg6-arg3),arg4,arg5,arg6
+		/an3d,TEXT,arg4,arg5,arg3+5/10*(arg6-arg3),%abs(nint((arg6-arg3)*100)/10)%
+	*endif
 
-/tspec,15
+	/tspec,15
 !ende _______________________________________name____________________________________
 /eof
 cdir
