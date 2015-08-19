@@ -9,6 +9,8 @@
 !*.mac
 !*.solc
 !*.abt
+!*.csv
+!*.xla
 !plugin/
 GREP/
 bundle/

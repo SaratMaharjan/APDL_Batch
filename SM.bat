@@ -515,7 +515,7 @@ for %%z in ( 60 ) do (
 		REM goto :takeTime
 		set proj_Num=291415
 		set interval=1000 1 1000
-		set interval2=1 1 5
+		set interval2=2 1 2
 		set append=1
 	)
 	REM ende
