@@ -1,0 +1,1101 @@
+! ADPL-Macro :  Ergebnisdarstellung mit Beschriftung (Annotation)
+
+! 18.8.03 / 17.10.03 / 13.4.04 / 26.7.05 / 10.8.06 ge
+! 15.09.10 wa radialverfornung rsys,5
+
+! arg1 : Darstellung von
+!
+!                        = eplo : eplo
+!                        = nplo : nplo
+!                        = gplo : gplo
+!                        = lplo : lplo
+!                        = aplo : aplo
+!
+!                        = u    : pldi
+!                        = usum : plns,u,sum
+!                        = ux   : plns,u,x
+!                        = uy   : plns,u,y
+!                        = uz   : plns,u,z
+!                        = ur   : plns,u,x , rsys,1
+!                        = ut   : plns,u,y , rsys,1
+!                        = ur5   : plns,u,y , rsys,5
+!
+!                        = sige : plns,sige
+!                        = sigs : plns,sige (2 Plots, ohne/mit Skalierung)
+!                        = sx   : plns,sx
+!                        = sy   : plns,sy
+!                        = sz   : plns,sz
+!                        = sr   : plns,sx  , rsys,1
+!                        = st   : plns,sy  , rsys,1
+!                        = sxy  : plns,sxy
+!                        = syz  : plns,syz
+!                        = sxz  : plns,sxz
+!                        = s1   : plns,s,1
+!                        = s2   : plns,s,2
+!                        = s3   : plns,s,3
+!
+!                        = eppl : plns,eppl,eqv
+!                        = epps : plns,eppl,eqv (2 Plots, ohne/mit Skalierung)
+!
+!                        = sipl : plns,sige +
+!                                 plns,eppl,eqv (2 Plots)
+!                        = sips : plns,sige +
+!                               : plns,eppl,eqv (4 Plots, ohne/mit Skalierung)
+!
+!                        = fw   : Laengskraefte
+!                        = fwm  : Schraubenlaengskraefte
+!                        = fwms :    "      (2 Plots, ohne/mit Skalierung)
+!                        = fwq  : Schraubenquerkraefte
+!                        = fwc  : Kontaktkraefte
+!                        = fwr  : Reibungskraefte
+!                        = fwel : elastische Dehnungen LINK8  
+!                        = fwpl : plastische Dehnungen LINK8  
+!                        = fwx  : ohne Beschriftung
+!                        = fwn  : Schraubennormalkraefte beam188
+!                        = fwv  : Schraubenquerkraefte beam188
+!
+!                        = pcp  : Kontaktdruck  (Contac173)
+!                        = pcs  : Kontaktstatus (Contac173)
+!                        = pcf  : Kontaktfriction (Contac173)
+!                        = pcd  : Kontaktslide (Contac173)
+!                        = pcg  : Kontaktgap (Contac173)
+!                        = pce  : Kontaktpenetration (Contac173)
+!
+!                        = pcps : Kontaktdruck  (2 Plots, ohne/mit Skalierung)
+!
+! arg2 : darstellungsspezifische Angaben :
+!
+!    fuer s...           = 1    : Spannung-top   (mit /gra,full)
+!                        = 2    : Spannung-mid   (mit /gra,full)
+!                        = 3    : Spannung-bot   (mit /gra,full)
+!                        ohne   :                     /gra,powe
+!
+!    fuer u.             = 1    : mit unverformten System
+!         pldi
+!
+!    fuer sigs, sips     Skalierungswert (i.a. Fliessgrenze)
+!
+!    fuer f...           = Skalierungsfaktor
+!
+! arg3 : darstellungsspezifische Angaben :
+!
+!    fuer fw...          = 1     : Summe mit angeben
+!    fuer eppl           = 1     : auch zeigen, wenn keine plastischen Dehnungen vorhanden sind
+!
+! subtitles 1 - 4        werden als Annotation uebernommen
+!                        ausser bei eplo, nplo werden stit3, stit4 benutzt
+!
+! englisch_ :            Variable (aussen gesetzt) = 1 : englische Texte
+!
+! einheit_  :            Variable (aussen gesetzt) = 1 : mm , N/mm2
+!                                                    2 : m  , MN/m2
+!                                                    3 : m  , N/m2
+!
+!
+
+! arg4 : 1 if requested JPG, 9 if requested TIFF
+!Customized 2014.12.11
+
+/nopr
+/plo,info,on
+tsize_=0.8
+/tspec,15,tsize_,1,0,0
+/anno,tmod,1
+/anum,1
+
+! Subtitles uebernehmen
+c01_='                        '
+c02_='                        '
+c03_='                        '
+c04_='                        '
+
+c1_='        '
+*get,c1_,active,,title,1,start,1
+*if,c1_,ne,'        ',then
+	c01_=c1_
+	*get,c1_,active,,title,1,start,9
+	c01_=strfill(c01_,c1_,9)
+	*get,c1_,active,,title,1,start,17
+	c01_=strfill(c01_,c1_,17)
+	*get,c1_,active,,title,1,start,25
+	c01_=strfill(c01_,c1_,25)
+	/tlab, +1.040,-0.745,%c01_%
+*endif
+
+c1_='        '
+*get,c1_,active,,title,2,start,1
+*if,c1_,ne,'        ',then
+	c02_=c1_
+	*get,c1_,active,,title,2,start,9
+	c02_=strfill(c02_,c1_,9)
+	*get,c1_,active,,title,2,start,17
+	c02_=strfill(c02_,c1_,17)
+	*get,c1_,active,,title,2,start,25
+	c02_=strfill(c02_,c1_,25)
+	/tlab, +1.040,-0.790,%c02_%
+*endif
+
+c1_='        '
+*get,c1_,active,,title,3,start,1
+*if,c1_,ne,'        ',then
+	c03_=c1_
+	*get,c1_,active,,title,3,start,9
+	c03_=strfill(c03_,c1_,9)
+	*get,c1_,active,,title,3,start,17
+	c03_=strfill(c03_,c1_,17)
+	*get,c1_,active,,title,3,start,25
+	c03_=strfill(c03_,c1_,25)
+	/tlab, +1.040,-0.835,%c03_%
+*endif
+
+c1_='        '
+*get,c1_,active,,title,4,start,1
+*if,c1_,ne,'        ',then
+	c04_=c1_
+	*get,c1_,active,,title,4,start,9
+	c04_=strfill(c04_,c1_,9)
+	*get,c1_,active,,title,4,start,17
+	c04_=strfill(c04_,c1_,17)
+	*get,c1_,active,,title,4,start,25
+	c04_=strfill(c04_,c1_,25)
+	/tlab, +1.040,-0.880,%c04_%
+*endif
+
+! deutsch / englisch
+*if,englisch_,lt,0.001,then
+	englisch_=0
+*endif
+
+*if,englisch_,eq,1,then
+	gesamt_='Total'
+	versch_=' displacements'
+	spann_ =' stresses'
+	top_   ='top side'
+	mid_   ='midplane'
+	bot_   ='bottom side'
+	sum_   ='sum'
+*else
+	gesamt_='Gesamt'
+	versch_='-Verschiebungen'
+	spann_ ='-Spannungen'
+	top_   ='Oberseite'
+	mid_   ='Membran'
+	bot_   ='Unterseite'
+	sum_   ='Summe'
+*endif
+
+! Einheiten
+
+*if,einheit_,lt,0.001,then
+	einheit_=0
+*endif
+
+*if,einheit_,eq,1,then
+	cm_='(mm)'
+	kN_='(N)'
+	kNcm2_='(N/mm2)'
+*elseif,einheit_,eq,2,then
+	cm_='(m)'
+	kN_='(MN)'
+	kNcm2_='(MN/m2)'
+*elseif,einheit_,eq,3,then
+	cm_='(m)'
+	kN_='(N)'
+	kNcm2_='(N/m2)'
+*else
+	cm_='(cm)'
+	kN_='(kN)'
+	kNcm2_='(kN/cm2)'
+*endif
+
+! Darstellung entsprechend arg1
+
+*if,arg1,eq,'eplo',then
+	eplo
+*elseif,arg1,eq,'nplo',then
+	nplo
+*elseif,arg1,eq,'gplo',then
+	gplo
+*elseif,arg1,eq,'lplo',then
+	lplo
+*elseif,arg1,eq,'aplo',then
+	aplo
+*elseif,arg1,eq,'usum',then
+	/tlab, +1.040,-0.935,%Gesamt_%%versch_%
+	/tlab, +1.040,-0.980,%cm_%
+	plns,u,sum,arg2
+*elseif,arg1,eq,'ux',then
+	/tlab, +1.040,-0.935,x%versch_%
+	/tlab, +1.040,-0.980,%cm_%
+	plns,ux,,arg2
+*elseif,arg1,eq,'uy',then
+	/tlab, +1.040,-0.935,y%versch_%
+	/tlab, +1.040,-0.980,%cm_%
+	plns,uy,,arg2
+*elseif,arg1,eq,'uz',then
+	/tlab, +1.040,-0.935,z%versch_%
+	/tlab, +1.040,-0.980,%cm_%
+	plns,uz,,arg2
+*elseif,arg1,eq,'ur',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Radial-Verschiebungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,radial displacements
+	*endif
+	/tlab, +1.040,-0.980,%cm_%
+	rsys,1
+	plns,ux,,arg2
+	rsys
+*elseif,arg1,eq,'ur5',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Radial-Verschiebungen
+	*elseif,englisch_,eq,1,then
+	/tlab, +1.040,-0.935,radial displacements
+	*endif
+	/tlab, +1.040,-0.980,%cm_%
+	rsys,5
+	plns,ux,,arg2
+	rsys
+*elseif,arg1,eq,'ut',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Tangential-Verschiebungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,tangential displacements
+	*endif
+	/tlab, +1.040,-0.980,%cm_%
+	rsys,1
+	plns,uy,,arg2
+	rsys
+*elseif,arg1,eq,'u',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.980,Verformungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.980,deformations
+	*endif
+	pldi,arg2
+*elseif,arg1,eq,'sige',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Vergleichsspannungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,von Mises stresses
+	*endif
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,sige
+	top
+*elseif,arg1,eq,'sigs',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Vergleichsspannungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,von Mises stresses
+	*endif
+	/gra,powe
+	top
+	/tlab, +1.040,-0.980,%kNcm2_%
+	/cval
+	jplot
+		plns,sige
+	jplot,arg4
+	*if,arg2,gt,0.01,then
+		*get,max_,plns,,max
+		*if,max_,gt,arg2,then
+			v1_=nint(1*arg2/7*100)/100
+			v2_=nint(2*arg2/7*100)/100
+			v3_=nint(3*arg2/7*100)/100
+			v4_=nint(4*arg2/7*100)/100
+			v5_=nint(5*arg2/7*100)/100
+			v6_=nint(6*arg2/7*100)/100
+			/cval,,v1_,v2_,v3_,v4_,v5_,v6_,arg2,max_
+			plns,sige
+			/cval
+		*endif
+	*endif
+*elseif,arg1,eq,'sx',then
+	/tlab, +1.040,-0.935,x%spann_%
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,sx
+	top
+*elseif,arg1,eq,'sy',then
+	/tlab, +1.040,-0.935,y%spann_%
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,sy
+	top
+*elseif,arg1,eq,'sr',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Radial%spann_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,radial stresses
+	*endif
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	rsys,1
+	plns,sx
+	rsys
+	top
+*elseif,arg1,eq,'st',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Umfangs%spann_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,circumferential stresses
+	*endif
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	rsys,1
+	plns,sy
+	rsys
+	top
+*elseif,arg1,eq,'sz',then
+	/tlab, +1.040,-0.935,z%spann_%
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,sz
+	top
+*elseif,arg1,eq,'sxy',then
+	/tlab, +1.040,-0.935,xy%spann_%
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,sxy
+	top
+*elseif,arg1,eq,'syz',then
+	/tlab, +1.040,-0.935,yz%spann_%
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,syz
+	top
+*elseif,arg1,eq,'sxz',then
+	/tlab, +1.040,-0.935,xz%spann_%
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,sxz
+	top
+*elseif,arg1,eq,'s1',then
+	*if,englisch_,eq,0,then
+		!/tlab, +1.040,-0.935,Hauptzugspannung
+		/tlab, +1.040,-0.935,max. Hauptspannung
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,main tension stress
+	*endif
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,s,1
+	top
+*elseif,arg1,eq,'s2',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,2. Hauptspannung
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,2. main stress
+	*endif
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,s,2
+	top
+*elseif,arg1,eq,'s3',then
+	*if,englisch_,eq,0,then
+		!/tlab, +1.040,-0.935,Hauptdruckspannung
+		/tlab, +1.040,-0.935,min. Hauptspannung
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,main pressure stress
+	*endif
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	plns,s,3
+	top
+*elseif,arg1,eq,'eppl',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,plast. Vergleichsdehnungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,equiv. plastic strains
+	*endif
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% (-)
+		/gra,full
+		top
+		nsort,eppl,eqv
+		*get,max_,sort,,max
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% (-)
+		/gra,full
+		top
+		nsort,eppl,eqv
+		*get,maxt_,sort,,max
+		bot
+		nsort,eppl,eqv
+		*get,maxb_,sort,,max
+		max_=max(maxt_,maxb_)
+		mid
+		/gra,powe
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% (-)
+		/gra,full
+		bot
+		nsort,eppl,eqv
+		*get,max_,sort,,max
+		*else
+		/gra,full
+		top
+		nsort,eppl,eqv
+		*get,maxt_,sort,,max
+		bot
+		nsort,eppl,eqv
+		*get,maxb_,sort,,max
+		max_=max(maxt_,maxb_)
+		/gra,powe
+		/tlab, +1.040,-0.980,(-)
+	*endif
+	/anno,refr
+	*if,arg3,eq,1,then
+	*else
+		plns,eppl,eqv
+		*if,max_,gt,1.e-10,then
+			plns,eppl,eqv
+		*endif
+	*endif
+*elseif,arg1,eq,'epps',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,plast. Vergleichsdehnungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,equiv. plastic strains
+	*endif
+	/tlab, +1.040,-0.980,(-)
+	/gra,full
+	*if,arg5,eq,1,then
+		max_=1
+	*else
+		top
+		nsort,eppl,eqv
+		*get,maxt_,sort,,max
+		bot
+		nsort,eppl,eqv
+		*get,maxb_,sort,,max
+		max_=max(maxt_,maxb_)
+		/gra,powe
+	*endif
+	/anno,refr
+	*if,max_,gt,1.e-10,or,arg3,eq,1,then
+		jplot
+		plns,eppl,eqv
+		jplot,arg4
+		*if,max_,gt,1.e-10,then
+			*get,max_,plns,,max
+			v1_=0.0001*max_
+			v2_=0.001*max_
+			v3_=0.01*max_
+			v4_=0.10*max_
+			v5_=0.20*max_
+			v6_=0.50*max_
+			v7_=0.80*max_
+			/cval,,v1_,v2_,v3_,v4_,v5_,v6_,v7_,max_
+			plns,eppl,eqv
+			/cval
+		*endif
+	*endif
+*elseif,arg1,eq,'sipl',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Vergleichsspannungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,von Mises stresses
+	*endif
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% %kNcm2_%
+		/gra,full
+		top
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% %kNcm2_%
+		mid
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% %kNcm2_%
+		/gra,full
+		bot
+	*else
+		/gra,powe
+		top
+		/tlab, +1.040,-0.980,%kNcm2_%
+	*endif
+	
+	plns,sige
+	
+	/anno,dele
+	/tlab, +1.040,-0.745,%c01_%
+	/tlab, +1.040,-0.790,%c02_%
+	/tlab, +1.040,-0.835,%c03_%
+	/tlab, +1.040,-0.880,%c04_%
+	top
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,plast. Vergleichsdehnungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,equiv. plastic strains
+	*endif
+	*if,arg2,eq,1,then
+		/tlab, +1.040,-0.980,%top_% (-)
+		/gra,full
+		top
+		nsort,eppl,eqv
+		*get,max_,sort,,max
+	*elseif,arg2,eq,2,then
+		/tlab, +1.040,-0.980,%mid_% (-)
+		/gra,full
+		top
+		nsort,eppl,eqv
+		*get,maxt_,sort,,max
+		bot
+		nsort,eppl,eqv
+		*get,maxb_,sort,,max
+		max_=max(maxt_,maxb_)
+		mid
+		/gra,powe
+	*elseif,arg2,eq,3,then
+		/tlab, +1.040,-0.980,%bot_% (-)
+		/gra,full
+		bot
+		nsort,eppl,eqv
+		*get,max_,sort,,max
+	*else
+		/gra,full
+		top
+		nsort,eppl,eqv
+		*get,maxt_,sort,,max
+		bot
+		nsort,eppl,eqv
+		*get,maxb_,sort,,max
+		max_=max(maxt_,maxb_)
+		/gra,powe
+		/tlab, +1.040,-0.980,(-)
+	*endif
+	/anno,refr
+	*if,max_,gt,1.e-10,then
+		plns,eppl,eqv
+	*endif
+*elseif,arg1,eq,'sips',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Vergleichsspannungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,von Mises stresses
+	*endif
+		/tlab, +1.040,-0.980,%kNcm2_%
+		/gra,powe
+		top
+		/cval
+		jplot
+		
+		plns,sige
+		
+		jplot,arg4
+	*if,arg2,gt,0.01,then
+		*get,max_,plns,,max
+		*if,max_,gt,arg2,then
+			v1_=nint(1*arg2/7*100)/100
+			v2_=nint(2*arg2/7*100)/100
+			v3_=nint(3*arg2/7*100)/100
+			v4_=nint(4*arg2/7*100)/100
+			v5_=nint(5*arg2/7*100)/100
+			v6_=nint(6*arg2/7*100)/100
+			/cval,,v1_,v2_,v3_,v4_,v5_,v6_,arg2,max_
+			
+			plns,sige
+			
+			/cval
+		*endif
+	*endif
+	/anno,dele
+	/tlab, +1.040,-0.745,%c01_%
+	/tlab, +1.040,-0.790,%c02_%
+	/tlab, +1.040,-0.835,%c03_%
+	/tlab, +1.040,-0.880,%c04_%
+	top
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,plast. Vergleichsdehnungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,equiv. plastic strains
+	*endif
+	/gra,full
+	top
+	nsort,eppl,eqv
+	*get,maxt_,sort,,max
+	bot
+	nsort,eppl,eqv
+	*get,maxb_,sort,,max
+	max_=max(maxt_,maxb_)
+	/gra,powe
+	/tlab, +1.040,-0.980,(-)
+	/anno,refr
+	*if,max_,gt,1.e-10,then
+		/cval
+		jplot
+		
+		plns,eppl,eqv
+		
+		jplot,arg4
+		*get,max_,plns,,max
+		v1_=0.0001*max_
+		v2_=0.001*max_
+		v3_=0.01*max_
+		v4_=0.10*max_
+		v5_=0.20*max_
+		v6_=0.50*max_
+		v7_=0.80*max_
+		/cval,,v1_,v2_,v3_,v4_,v5_,v6_,v7_,max_
+		plns,eppl,eqv
+		/cval
+	*endif
+*elseif,arg1,eq,'fw',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Laengskraefte %kN_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,normal forces %kN_%
+	*endif
+	*if,arg3,ne,0,then
+		etab,fxi,smisc,1
+		ssum
+		*get,f1,ssum,,item,fxi
+		f1=abs(nint(f1*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1% %kN_%
+	*endif
+	fw,arg2
+*elseif,arg1,eq,'fwm',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Schraubenzugkraefte %kN_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,bolt tension forces %kN_%
+	*endif
+	*if,arg3,ne,0,then
+		etab,fxi,smisc,1
+		ssum
+		*get,f1,ssum,,item,fxi
+		f1=abs(nint(f1*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1% %kN_%
+	*endif
+	fw,arg2
+*elseif,arg1,eq,'fwms',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Schraubenzugkraefte %kN_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,bolt tension forces %kN_%
+	*endif
+	etab,fxi,smisc,1
+	*if,arg3,ne,0,then
+		ssum
+		*get,f1,ssum,,item,fxi
+		f1=abs(nint(f1*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1% %kN_%
+	*endif
+	esort,etab,fxi
+	*get,min_,sort,,min
+	*get,max_,sort,,max
+	*if,max_,gt,arg4,then
+		v0=arg4-min_
+		v1_=nint(min_+1*v0/7)
+		v2_=nint(min_+2*v0/7)
+		v3_=nint(min_+3*v0/7)
+		v4_=nint(min_+4*v0/7)
+		v5_=nint(min_+5*v0/7)
+		v6_=nint(min_+6*v0/7)
+		/cval,,v1_,v2_,v3_,v4_,v5_,arg4,max_*1.000001
+	*endif
+	plls,fxi,fxi,arg2
+	/cval
+*elseif,arg1,eq,'fwq',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Schraubenquerkraefte %kN_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,bolt shear forces %kN_%
+	*endif
+	*if,arg3,ne,0,then
+		etab,fyi,smisc,2
+		etab,fzi,smisc,3
+		smult,fyyi,fyi,fyi
+		smult,fzzi,fzi,fzi
+		sadd,yzii,fyyi,fzzi
+		sexp,fyzi,yzii,,0.5
+		ssum
+		*get,f1,ssum,,item,fyzi
+		f1=abs(nint(f1*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1% %kN_%
+	*endif
+	qres,arg2
+*elseif,arg1,eq,'fwc',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Druckkontaktkraefte %kN_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,contact pressure forces %kN_%
+	*endif
+	*if,arg3,ne,0,then
+		etab,fxi,smisc,1
+		ssum
+		*get,f1,ssum,,item,fxi
+		f1=abs(nint(f1*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1% %kN_%
+	*endif
+	fw,arg2
+*elseif,arg1,eq,'fwr',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Reibungskraefte %kN_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,friction forces %kN_%
+	*endif
+	*if,arg3,ne,0,then
+		etab,fyi,smisc,2
+		ssum
+		*get,f1,ssum,,item,fyi
+		f1=abs(nint(f1*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1% %kN_%
+	*endif
+	fws,arg2
+*elseif,arg1,eq,'fwel',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,elastische Dehnungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,elastic strains
+	*endif
+	etab,lepel,lepel,1
+	plls,lepel,lepel,arg2
+	*set,lepel
+*elseif,arg1,eq,'fwpl',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,plastische Dehnungen
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,plastic strains
+	*endif
+	etab,leppl,leppl,1
+	plls,leppl,leppl,arg2
+	*set,leppl
+*elseif,arg1,eq,'fwx',then
+	*if,arg3,ne,0,then
+		etab,fxi,smisc,1
+		ssum
+		*get,f1,ssum,,item,fxi
+		f1=abs(nint(f1*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1% %kN_%
+	*endif
+	fw,arg2
+*elseif,arg1,eq,'fwn',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Schraubenzugkraefte %kN_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,bolt tension forces %kN_%
+	*endif
+	*if,arg3,ne,0,then
+		etab,fxi,smisc,1
+		ssum
+		*get,f1,ssum,,item,fxi
+		f1=abs(nint(f1*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1% %kN_%
+	*endif
+	fw,arg2
+*elseif,arg1,eq,'fwv',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Schraubenquerkraefte %kN_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,bolt shear forces %kN_%
+	*endif
+	*if,arg3,ne,0,then
+		etab,fyi,smisc,5
+		etab,fzi,smisc,6
+		smult,fyyi,fyi,fyi
+		smult,fzzi,fzi,fzi
+		sadd,yzii,fyyi,fzzi
+		sexp,fyzi,yzii,,0.5
+		ssum
+		*get,f1,ssum,,item,fyzi
+		f1=abs(nint(f1*100)/100)
+	/tlab, +1.040,-0.980,%sum_%: %f1% %kN_%
+	*endif
+	qres2,arg2
+*elseif,arg1,eq,'pcp',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Kontaktdruck %kNcm2_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,contact pressure %kNcm2_%
+	*endif
+	*if,arg3,eq,1,then
+		fsum,,cont
+		*get,f1_,fsum,,item,fx
+		*get,f2_,fsum,,item,fy
+		*get,f3_,fsum,,item,fz
+		f1_=sqrt(f1_**2+f2_**2+f3_**2)
+		f1_=abs(nint(f1_*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1_% %kN_%
+	*elseif,arg3,eq,2,then
+		fsum,,cont
+		*get,f1_,fsum,,item,fx
+		*get,f2_,fsum,,item,fy
+		*get,f3_,fsum,,item,fz
+		f1_=abs(nint(f1_))
+		f2_=abs(nint(f2_))
+		f3_=abs(nint(f3_))
+		/tlab, +1.040,-0.980,Fx=%f1_%,Fy=%f2_%,Fz=%f3_% %kN_%
+	*elseif,arg3,eq,3,then
+		fsum,,cont
+		*get,f1_,fsum,,item,fx
+		*get,f2_,fsum,,item,fy
+		*get,f3_,fsum,,item,fz
+		f1_=abs(nint(f1_*10)/10)
+		f2_=abs(nint(f2_*10)/10)
+		f3_=abs(nint(f3_*10)/10)
+		/tlab, +1.040,-0.980,Fx=%f1_%,Fy=%f2_%,Fz=%f3_% %kN_%
+	*endif
+	plns,cont,pres
+*elseif,arg1,eq,'pcs',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Kontaktstatus (0,1=offen;
+		/tlab, +1.040,-0.980, 2=gleiten; 3=haften)
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,contact status
+		/tlab, +1.040,-0.980,(3=stick;2=slide;0,1=open)
+	*endif
+	/cval,1,1,2,3
+	plns,cont,stat
+	/con,1,9
+*elseif,arg1,eq,'pcf',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Kontaktreibung %kNcm2_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,contact friction %kNcm2_%
+	*endif
+	plns,cont,sfric
+*elseif,arg1,eq,'pcd',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Kontakt-Gleitung %cm_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,contact slide %cm_%
+	*endif
+	plns,cont,slide
+*elseif,arg1,eq,'pcg',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Kontakt-Spalt %cm_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,contact gap %cm_%
+	*endif
+	plns,cont,gap
+*elseif,arg1,eq,'pce',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Kontakt-Penetration
+		/tlab, +1.040,-0.980,%cm_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,contact penetration
+		/tlab, +1.040,-0.980,%cm_%
+	*endif
+	plns,cont,pene
+*elseif,arg1,eq,'pcps',then
+	*if,englisch_,eq,0,then
+		/tlab, +1.040,-0.935,Kontaktdruck %kNcm2_%
+	*elseif,englisch_,eq,1,then
+		/tlab, +1.040,-0.935,contact pressure %kNcm2_%
+	*endif
+	*if,arg3,eq,1,then
+		fsum,,cont
+		*get,f1_,fsum,,item,fx
+		*get,f2_,fsum,,item,fy
+		*get,f3_,fsum,,item,fz
+		f1_=sqrt(f1_**2+f2_**2+f3_**2)
+		f1_=abs(nint(f1_*100)/100)
+		/tlab, +1.040,-0.980,%sum_%: %f1_% %kN_%
+	*elseif,arg3,eq,2,then
+		fsum,,cont
+		*get,f1_,fsum,,item,fx
+		*get,f2_,fsum,,item,fy
+		*get,f3_,fsum,,item,fz
+		f1_=abs(nint(f1_))
+		f2_=abs(nint(f2_))
+		f3_=abs(nint(f3_))
+		/tlab, +1.040,-0.980,Fx=%f1_%,Fy=%f2_%,Fz=%f3_% %kN_%
+	*elseif,arg3,eq,3,then
+		fsum,,cont
+		*get,f1_,fsum,,item,fx
+		*get,f2_,fsum,,item,fy
+		*get,f3_,fsum,,item,fz
+		f1_=abs(nint(f1_*10)/10)
+		f2_=abs(nint(f2_*10)/10)
+		f3_=abs(nint(f3_*10)/10)
+		/tlab, +1.040,-0.980,Fx=%f1_%,Fy=%f2_%,Fz=%f3_% %kN_%
+	*endif
+	/cval
+	jplot
+	
+	plns,cont,pres
+	
+	jplot,arg4
+	*get,max_,plns,,max
+	v1_=0.0001*max_
+	v2_=0.001*max_
+	v3_=0.01*max_
+	v4_=0.10*max_
+	v5_=0.20*max_
+	v6_=0.50*max_
+	v7_=0.80*max_
+	/cval,,v1_,v2_,v3_,v4_,v5_,v6_,v7_,max_
+	plns,cont,pres
+	/cval
+*endif
+
+/anno,dele
+/go

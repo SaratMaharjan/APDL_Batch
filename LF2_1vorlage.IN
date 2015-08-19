@@ -1,0 +1,170 @@
+! Erdlasten BQ1
+
+qv = 0.0226*bfe
+qh = 0.0076*bfe
+qh2 = 0.0083*bfe
+qh3 = 0.0166*bfe
+hw = 0.5*(3450+5000)
+
+
+pfett = hw/100000
+
+fcum,add
+sfcum,pres,add
+
+*if,hw,gt,0.01,then	! Wasserdruck
+ 
+ esel,none
+ ess,surf1
+ esa,surf2
+ 
+ *if,ssw,eq,1,then
+ esa,surf3
+ *endif
+
+ sfgrad,pres,0,y,hw,-1e-5*bfe
+ sfe,all,1,pres,0
+
+ sfgrad
+
+*endif				! Ende hw
+
+
+emms,1,2
+lsu,13
+egm1=-fy
+
+ess,surf1,surf2
+lsu,2
+auf1= fy
+
+csys
+ess,surf1,surf2
+nsel,r,loc,y,0,+9999
+esln,r,1
+apy
+apyo11= aprojy
+
+qvu11	= ((qv*apyo11)+ 3/2*(egm1-auf1))/apyo11
+qvu11	= 0.98*0.842*qvu11
+
+!emms,2
+!lsu,13
+!egm2=-fy
+!
+!ess,surf2
+!lsu,2
+!auf2= fy
+!
+!csys
+!ess,surf2
+!nsel,r,loc,y,0,+9999
+!esln,r,1
+!apy
+!apyo12= aprojy
+!
+!qvu12	= ((qv*apyo12)+ 3/2*(egm2-auf2))/apyo12
+!qvu12	= 1*qvu12
+
+*if,ssw,eq,1,then
+
+emms,3
+lsu,3
+egm3=-fy
+
+ess,surf3
+lsu,2
+auf3= fy
+
+ess,surf3
+nsel,r,loc,y,0,+9999
+esln,r,1
+apy
+apyo13= aprojy
+
+qvu13	= ((qv*apyo13)+ 3/2*(egm3-auf3))/apyo13 
+qvu13	= 0.94*0.67*qvu13 
+
+*endif
+
+esel,none
+! Erddruck 
+
+ ess,erd1,erd2
+ nsel,r,loc,y,ybet2,+999
+ esln,r,
+ phvts,qh,qv
+
+ ess,erd1,erd2
+ nsel,r,loc,y,ybet2,0
+ esln,r,1
+ phvts,qh2,qv
+ 
+ ess,erd1,erd2
+ nsel,r,loc,y,0,ybet3
+ esln,r,1
+ phvts,qh2,qvu11
+ 
+ ess,erd1,erd2
+ nsel,r,loc,y,ybet3,-9999
+ esln,r,
+ phvts,qh3,qvu11
+ 
+ !ess,erd2
+ !nsel,r,loc,y,ybet2,+999
+ !esln,r,
+ !phvts,qh,qv
+!
+ !ess,erd2
+ !nsel,r,loc,y,ybet2,0
+ !esln,r,1
+ !phvts,qh2,qv
+! 
+ !ess,erd2
+ !nsel,r,loc,y,0,ybet3
+ !esln,r,1
+ !phvts,qh2,qvu12
+! 
+ !ess,erd2
+ !nsel,r,loc,y,ybet3,-9999
+ !esln,r,
+ !phvts,qh3,qvu12
+
+*if,ssw,eq,1,then
+ ess,erd3
+ nsel,r,loc,y,ybet2,+999
+ esln,r,
+ phvts,qh,qv
+
+ ess,erd3
+ nsel,r,loc,y,ybet2,0
+ esln,r,1
+ phvts,qh2,qv
+ 
+ ess,erd3
+ nsel,r,loc,y,0,ybet3
+ esln,r,1
+ phvts,qh2,qvu13
+ 
+ ess,erd3
+ nsel,r,loc,y,ybet3,-9999
+ esln,r,
+ phvts,qh3,qvu13
+*endif 
+
+
+alls
+
+*if,ifett,eq,1,then
+ess,surf35
+sfgrad
+sfe,all,1,pres,0,pfett
+*endif
+
+alls
+csys
+
+/eof
+
+
+

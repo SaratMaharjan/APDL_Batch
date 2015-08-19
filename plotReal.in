@@ -1,0 +1,124 @@
+! nur in Post1 !
+*get,rou_,active,,rout
+*if,rou_,eq,31,then
+
+	/nopr
+	/plo,info,on
+	tsize_=0.8
+	/tspec,15,tsize_,1,0,0
+	/anno,tmod,1
+	/anum,1
+
+	cm,ee_,elem
+	cm,nn_,node
+
+	! deutsch / englisch
+	*if,englisch_,lt,0.001,then
+		englisch_=0
+	*endif
+
+	! Elementdicken 
+	*get,r1_,real,,num,max
+	*set,vc3_
+	*dim,vc3_,,r1_
+
+	*do,i,1,r1_
+		vc3_(i)=999999
+		cmse,s,ee_
+		esel,r,real,,i
+		*get,e1_,elem,,count
+		*if,e1_,gt,0,then
+			vc3_(i)=0
+			*get,vc3_(i),rcon,i,const,3			!for FKN
+			vc3_(i)=vc3_(i)*10
+		*endif
+	*enddo
+
+	! verschiedene Elementdicken suchen
+	*set,vc2_
+	*dim,vc2_,,50
+	*do,i,1,50
+		vc2_(i)=999999
+	*enddo
+
+	nv=0
+	*do,i,1,r1_
+		*if,vc3_(i),lt,999999,then
+			*if,nv,eq,0,then
+				nv=nv+1
+				vc2_(nv)=vc3_(i)
+			*endif
+			nvn=0
+			*do,j,1,nv
+				*if,vc3_(i),eq,vc2_(j),then
+					nvn=1
+				*endif
+			*enddo
+			*if,nvn,eq,0,then
+				nv=nv+1
+				vc2_(nv)=vc3_(i)
+			*endif
+		*endif
+	*enddo
+
+	! Elementdicken sortieren
+	*do,i,1,nv-1
+		*do,j,i+1,nv
+			*if,vc2_(i),gt,vc2_(j),then
+				ii=vc2_(i)
+				vc2_(i)=vc2_(j)
+				vc2_(j)=ii
+			*endif
+		*enddo
+	*enddo
+
+	cmse,s,ee_
+	*get,emin_,elem,,num,min
+	*get,emax_,elem,,num,max
+	*get,eanz_,elem,,count
+
+	*set,vec_
+	*dim,vec_,,emax_
+	etab,ddd,smisc,1
+
+	ii=emin_
+	*do,i,1,eanz_
+		vec_(ii)=0
+		*get,rc1_,elem,ii,attr,real
+		vec_(ii)=vc3_(rc1_)
+		*get,ii,elem,ii,nxth
+	*enddo
+
+	*vput,vec_(1),elem,1,etab,ddd
+
+	*if,nv,eq,0,then
+		/cval,1,
+		*elseif,nv,eq,1
+		/cval,1,vc2_(1)
+		*elseif,nv,eq,2
+		/cval,1,vc2_(1),vc2_(2)
+		*elseif,nv,eq,3
+		/cval,1,vc2_(1),vc2_(2),vc2_(3)
+		*elseif,nv,eq,4
+		/cval,1,vc2_(1),vc2_(2),vc2_(3),vc2_(4)
+		*elseif,nv,eq,5
+		/cval,1,vc2_(1),vc2_(2),vc2_(3),vc2_(4),vc2_(5)
+		*elseif,nv,eq,6
+		/cval,1,vc2_(1),vc2_(2),vc2_(3),vc2_(4),vc2_(5),vc2_(6)
+		*elseif,nv,eq,7
+		/cval,1,vc2_(1),vc2_(2),vc2_(3),vc2_(4),vc2_(5),vc2_(6),vc2_(7)
+		*else
+		/cval,1,vc2_(1),vc2_(2),vc2_(3),vc2_(4),vc2_(5),vc2_(6),vc2_(7),vc2_(nv)
+	*endif
+
+	/anno,dele
+	/tlab, +1.040,-0.98,Contact Normal Stiffness
+
+	/anno,refr
+	plet,ddd
+	/anno,dele
+	/cval
+
+	*set,vec_
+	*set,vc2_
+*endif

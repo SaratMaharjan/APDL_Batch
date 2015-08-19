@@ -11,6 +11,10 @@
 !*.abt
 !*.csv
 !*.xla
+!*.dvb
+!*.js
+!*.ans
+!*.xla
 !plugin/
 GREP/
 bundle/

@@ -1,0 +1,22 @@
+
+streck1=35.5/1.0
+streck2=34.5/1.0
+streck3=33.5/1.0
+streck4=32.5/1.0
+streck5=31.5/1.0
+streck6=29.5/1.0
+streck7=28.5/1.0
+streck8=27.5/1.0
+streck9=0.9*49/1.25
+
+
+*do,i,1,9
+  tb,biso,%i%
+  tbda,1,streck%i%
+  tbda,2,21
+*enddo
+
+
+tb,biso,10
+tbda,1,37.0
+tbda,2,21
