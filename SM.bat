@@ -22,7 +22,7 @@ REM anfang Redirect/execute or NOT
 REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
-REM for %%z in ( 99 ) do (
+REM for %%z in ( 61 ) do (
 for %%z in ( 43 44 45 46  ) do (
 
 	REM anfang Projekte
@@ -435,7 +435,7 @@ for %%z in ( 43 44 45 46  ) do (
 		REM goto :takeTime
 		set proj_Num=291115
 		set interval=1011 18 1029
-		set interval2=11 10 41
+		set interval2=11 10 11
 		set append=1
 	)
 	REM ende
@@ -445,7 +445,7 @@ for %%z in ( 43 44 45 46  ) do (
 		REM goto :takeTime
 		set proj_Num=291115
 		set interval=1011 18 1029
-		set interval2=12 10 42
+		set interval2=22 10 22
 		set append=1
 	)
 	REM ende
@@ -454,8 +454,8 @@ for %%z in ( 43 44 45 46  ) do (
 	if %%z equ 45 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1029 118 1129
-		set interval2=13 10 43
+		set interval=1011 118 1129
+		set interval2=13 10 13
 		set append=1
 	)
 	REM ende
@@ -464,8 +464,8 @@ for %%z in ( 43 44 45 46  ) do (
 	if %%z equ 46 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1011 14 1025
-		set interval2=14 10 44
+		set interval=1011 118 1129
+		set interval2=24 10 24
 		set append=1
 	)
 	REM ende
@@ -515,11 +515,20 @@ for %%z in ( 43 44 45 46  ) do (
 		REM goto :takeTime
 		set proj_Num=291415
 		set interval=1000 1 1000
-		set interval2=1 1 5
+		set interval2=5 1 5
 		set append=1
 	)
 	REM ende
 
+	REM anfang 61 - 291915 - S985 Schneidrad
+	if %%z equ 61 (
+		REM goto :takeTime
+		set proj_Num=291915
+		set interval=1000 1 1000
+		set interval2=1 1 2
+		set append=1
+	)
+	REM ende
 
 	REM 99 anfang TEMPORARY CALCULATIONS
 	if %%z equ 99 (
