@@ -434,7 +434,7 @@ for %%z in ( 43 44 45 46  ) do (
 	if %%z equ 43 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1011 18 1029
+		set interval=1011 18 1011
 		set interval2=11 10 11
 		set append=1
 	)
@@ -444,7 +444,7 @@ for %%z in ( 43 44 45 46  ) do (
 	if %%z equ 44 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1011 18 1029
+		set interval=1011 18 1011
 		set interval2=22 10 22
 		set append=1
 	)
@@ -454,7 +454,7 @@ for %%z in ( 43 44 45 46  ) do (
 	if %%z equ 45 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1011 118 1129
+		set interval=1129 118 1129
 		set interval2=13 10 13
 		set append=1
 	)
@@ -464,7 +464,7 @@ for %%z in ( 43 44 45 46  ) do (
 	if %%z equ 46 (
 		REM goto :takeTime
 		set proj_Num=291115
-		set interval=1011 118 1129
+		set interval=1011 118 1011
 		set interval2=24 10 24
 		set append=1
 	)
