@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 REM anfang Selecting Licenses
 	set appPath="C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe"
 		REM	1.	Structural4core		2.	Structural2core		3.	Prfnls		4.	Stba		6.	Prepost
-	set startValue=3
+	set startValue=4
 	set endValue=!startValue!
 	REM set endValue=6
 REM ende
@@ -22,8 +22,9 @@ REM anfang Redirect/execute or NOT
 REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
-REM for %%z in ( 61 ) do (
-for %%z in ( 43 44 45 46  ) do (
+REM for %%z in ( 28 ) do (
+REM for %%z in ( 43 44 45 46  ) do (
+for %%z in ( 45 46 28 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -34,7 +35,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=279914
 		set interval=1000 1000 1000
 		set interval2=2 1 2
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -44,7 +48,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=279914
 		set interval=1001 1 1001
 		set interval2=1 1 1
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -54,7 +61,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=279914
 		set interval=2000 1 2000
 		set interval2=1 1 1
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -64,7 +74,10 @@ for %%z in ( 43 44 45 46  ) do (
 		REM REM set proj_Num=279914b
 		REM REM set interval=1 1000 4001
 		REM REM set interval2=21 10 21
+		REM
 		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
 	REM REM )
 	REM REM ende
 
@@ -74,7 +87,10 @@ for %%z in ( 43 44 45 46  ) do (
 		REM set proj_Num=279914b
 		REM set interval=11 1000 4011
 		REM set interval2=21 10 21
+		REM
 		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
 	REM )
 	REM REM ende
 
@@ -84,7 +100,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=287715a
 		set interval=1009 10 1009
 		set interval2=21 1 22
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -94,7 +113,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=287715a
 		set interval=1119 10 1199
 		set interval2=21 1 22
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -104,7 +126,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=287715a
 		set interval=1009 10 1099
 		set interval2=1 1 2
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -114,7 +139,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=287715a
 		set interval=1119 10 1199
 		set interval2=1 1 2
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -124,7 +152,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=281914a
 		set interval=0 1000 0
 		set interval2=11 1 12
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -134,7 +165,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=287915
 		set interval=1009 10 1099
 		set interval2=1 2 3
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -144,7 +178,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=287915
 		set interval=1119 10 1199
 		set interval2=1 2 3
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -156,7 +193,10 @@ for %%z in ( 43 44 45 46  ) do (
 		REM set interval2=91 1 91
 		set interval2=51 1 52
 		REM set interval2=1 1 1
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -166,7 +206,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=290215
 		set interval=1000 10 1000
 		set interval2=11 1 12
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -176,7 +219,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=290515
 		set interval=1009 10 1099
 		set interval2=1 1 4
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -186,7 +232,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=290515
 		set interval=1119 10 1199
 		set interval2=1 1 4
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -196,7 +245,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=288115
 		set interval=4009 10 4099
 		set interval2=5 1 5
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -206,7 +258,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=288115
 		set interval=2119 10 2119
 		set interval2=15 1 15
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -216,7 +271,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=288115
 		set interval=6019 10 6099
 		set interval2=5 1 5
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -226,7 +284,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=288115
 		set interval=6119 10 6199
 		set interval2=5 1 5
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -236,7 +297,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=288115
 		set interval=2119 1000 3119
 		set interval2=15 10 95
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -246,7 +310,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=288115
 		set interval=2019 1000 3019
 		set interval2=15 10 95
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -256,7 +323,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=288115
 		set interval=1019 1000 1019
 		set interval2=15 10 95
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -266,7 +336,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=288115
 		set interval=1119 1000 1119
 		set interval2=15 10 95
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -276,7 +349,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=281314a
 		set interval=1 1 1
 		set interval2=1 1 2
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -286,7 +362,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=285614
 		set interval=1009 10 1099
 		set interval2=1 1 5
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -296,7 +375,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=285614
 		set interval=5009 10 5009
 		set interval2=23 1 23
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -304,9 +386,12 @@ for %%z in ( 43 44 45 46  ) do (
 	if %%z equ 28 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=1100 10 1110
-		set interval2=11 10 21
+		set interval=1100 10 1100
+		set interval2=11 10 11
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -316,7 +401,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289815
 		set interval=1101 10 1111
 		set interval2=11 10 21
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -326,7 +414,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=288915
 		set interval=1000 10 1020
 		set interval2=11 1 11
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -336,7 +427,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289415a
 		set interval=1029 10 1099
 		set interval2=10 1 10
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -346,7 +440,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289415a
 		set interval=1129 10 1129
 		set interval2=10 1 10
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -356,7 +453,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289415aa
 		set interval=1009 10 1099
 		set interval2=7 1 9
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -366,7 +466,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289415aa
 		set interval=1009 10 1009
 		set interval2=9 1 9
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -376,7 +479,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289415z
 		set interval=1009 10 1099
 		set interval2=7 1 8
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -386,7 +492,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289415z
 		set interval=1179 10 1179
 		set interval2=7 1 7
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -396,7 +505,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289415zz
 		set interval=1009 10 1099
 		set interval2=4 1 6
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -406,7 +518,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289415zz
 		set interval=1119 10 1199
 		set interval2=4 1 6
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -416,7 +531,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=289815a
 		set interval=1000 10 1000
 		set interval2=1 1 1
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -426,7 +544,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=281314
 		set interval=200 10 200
 		set interval2=21 1 22
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -436,7 +557,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=291115
 		set interval=1011 18 1011
 		set interval2=11 10 11
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -446,7 +570,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=291115
 		set interval=1011 18 1011
 		set interval2=22 10 22
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -456,7 +583,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=291115
 		set interval=1129 118 1129
 		set interval2=13 10 13
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -466,7 +596,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=291115
 		set interval=1011 118 1011
 		set interval2=24 10 24
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -476,7 +609,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=291115a
 		set interval=1030 1 1030
 		set interval2=13 1 13
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -486,7 +622,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=291115a
 		set interval=1121 1 1130
 		set interval2=11 1 14
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -496,7 +635,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=290515
 		set interval=1129 10 1129
 		set interval2=4 1 4
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -506,7 +648,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=290915
 		set interval=1001 1 1005
 		set interval2=1 1 1
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -516,7 +661,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=291415
 		set interval=1000 1 1000
 		set interval2=5 1 5
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -526,7 +674,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=291915
 		set interval=1000 1 1000
 		set interval2=1 1 2
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -536,7 +687,10 @@ for %%z in ( 43 44 45 46  ) do (
 		set proj_Num=Test
 		set interval=1010 10 1010
 		set interval2=1 1 1
+
 		set append=1
+		set pathBefore=D:
+		set pathAfter=ANSYS
 	)
 	REM ende
 
@@ -563,7 +717,7 @@ REM anfang NO NEED to CHANGE BELOW
 	REM )
 
 	set "location=R:\Maharjan\!proj_Num!"
-	set "wDir=D:\!proj_Num!\ANSYS"
+	set "wDir=!pathBefore!\!proj_Num!\!pathAfter!"
 	echo.
 	echo Source Location: !location!
 	echo Working Location: !wDir!
