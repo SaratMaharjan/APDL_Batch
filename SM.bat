@@ -22,9 +22,9 @@ REM anfang Redirect/execute or NOT
 REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
-for %%z in ( 28 ) do (
+REM for %%z in ( 28 ) do (
 REM for %%z in ( 43 44 45 46  ) do (
-REM for %%z in ( 45 46 28 ) do (
+for %%z in ( 28 29 30 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -386,8 +386,8 @@ REM for %%z in ( 45 46 28 ) do (
 	if %%z equ 28 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=3101 1000 3101
-		set interval2=11 10 11
+		set interval=2111 1000 3111
+		set interval2=21 10 21
 
 		set append=1
 		set pathBefore=D:
@@ -399,8 +399,8 @@ REM for %%z in ( 45 46 28 ) do (
 	if %%z equ 29 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=1101 10 1101
-		set interval2=11 10 11
+		set interval=2101 1000 3101
+		set interval2=21 10 21
 
 		set append=1
 		set pathBefore=D:
@@ -408,12 +408,12 @@ REM for %%z in ( 45 46 28 ) do (
 	)
 	REM ende
 
-	REM anfang 30 - 288915 - S-970 Fahrträger
+	REM anfang 30 - 289815 - D-778 Schneckenfoerderer
 	if %%z equ 30 (
 		REM goto :takeTime
-		set proj_Num=288915
-		set interval=1000 10 1020
-		set interval2=11 1 11
+		set proj_Num=289815
+		set interval=3101 1000 3101
+		set interval2=11 10 11
 
 		set append=1
 		set pathBefore=D:
