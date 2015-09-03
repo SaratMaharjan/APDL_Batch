@@ -1,0 +1,192 @@
+<UserUnitSystem DisplayName="ANAKON" Name="ANAKON" BaseUnitSystem="SI">
+  <BaseUnits>
+    <QuantityType Name="Angle" Unit="degree" />
+    <QuantityType Name="Chemical Amount" Unit="mol" />
+    <QuantityType Name="Current" Unit="A" />
+    <QuantityType Name="Length" Unit="cm" />
+    <QuantityType Name="Luminance" Unit="cd" />
+    <QuantityType Name="Mass" Unit="kg" />
+    <QuantityType Name="Solid Angle" Unit="sr" />
+    <QuantityType Name="Temperature" Unit="C" />
+    <QuantityType Name="Time" Unit="s" />
+  </BaseUnits>
+  <CommonUnits>
+    <QuantityType Name="Electric Charge" Unit="coulomb" />
+    <QuantityType Name="Energy" Unit="erg" />
+    <QuantityType Name="Force" Unit="N" />
+    <QuantityType Name="Pressure" Unit="MPa" />
+    <QuantityType Name="Power" Unit="W" />
+    <QuantityType Name="Voltage" Unit="V" />
+  </CommonUnits>
+  <OtherUnits>
+    <QuantityType Name="Acceleration" Unit="cm s^-2" />
+    <QuantityType Name="Angular Acceleration" Unit="rad s^-2" />
+    <QuantityType Name="Angular Velocity" Unit="rev s^-1" />
+    <QuantityType Name="Area" Unit="cm^2" />
+    <QuantityType Name="Capacitance" Unit="farad" />
+    <QuantityType Name="Compressibility" Unit="MPa^-1" />
+    <QuantityType Name="Concentration" Unit="cm^-3" />
+    <QuantityType Name="Contact Resistance" Unit="cm^2 s g^-1" />
+    <QuantityType Name="Current Transfer Coefficient" Unit="A cm^-2 V^-1" />
+    <QuantityType Name="Decay Constant" Unit="s^-1" />
+    <QuantityType Name="Density" Unit="g cm^-3" />
+    <QuantityType Name="Density Derivative" Unit="cm^-2 s^2" />
+    <QuantityType Name="Density Derivative wrt Pressure" Unit="cm^-2 s^2" />
+    <QuantityType Name="Density Derivative wrt Temperature" Unit="g cm^-3 C^-1" />
+    <QuantityType Name="Dielectric Contact Resistance" Unit="farad^-1 cm^2" />
+    <QuantityType Name="Dynamic Viscosity" Unit="MPa s" />
+    <QuantityType Name="Electric Charge Density" Unit="coulomb cm^-3" />
+    <QuantityType Name="Electric Charge Transfer Coefficient" Unit="farad cm^-2" />
+    <QuantityType Name="Electric Conductance Per Unit Area" Unit="A^2 s^3 g^-1 cm^-4" />
+    <QuantityType Name="Electric Current Density" Unit="A cm^-2" />
+    <QuantityType Name="Electric Current Source" Unit="A cm^-3" />
+    <QuantityType Name="Electric Flux Density" Unit="coulomb cm^-2" />
+    <QuantityType Name="Electric Field" Unit="V cm^-1" />
+    <QuantityType Name="Electrical Conductance" Unit="A^2 s^3 g^-1 cm^-2" />
+    <QuantityType Name="Electrical Conductivity" Unit="A^2 s^3 g^-1 cm^-3" />
+    <QuantityType Name="Electrical Contact Resistance" Unit="A^-2 s^-3 g cm^4" />
+    <QuantityType Name="Electrical Permittivity" Unit="farad cm^-1" />
+    <QuantityType Name="Electrical Resistance" Unit="ohm" />
+    <QuantityType Name="Electrical Resistivity" Unit="ohm cm" />
+    <QuantityType Name="Energy Density by Mass" Unit="dyne cm g^-1" />
+    <QuantityType Name="Energy Source" Unit="W cm^-3" />
+    <QuantityType Name="Energy Source Coefficient" Unit="W cm^-3 C^-1" />
+    <QuantityType Name="Enthalpy Variance" Unit="cm^4 s^-4" />
+    <QuantityType Name="Epsilon" Unit="cm^2 s^-3" />
+    <QuantityType Name="Epsilon Flux" Unit="W cm^-2 s^-1" />
+    <QuantityType Name="Epsilon Flux Coefficient" Unit="g cm^-2 s^-2" />
+    <QuantityType Name="Epsilon Source" Unit="W cm^-3 s^-1" />
+    <QuantityType Name="Epsilon Source Coefficient" Unit="g cm^-3 s^-2" />
+    <QuantityType Name="Flame Surface Density Source" Unit="cm^-1 s^-1" />
+    <QuantityType Name="Force Intensity" Unit="N m^-1" />
+    <QuantityType Name="Force Per Angular Unit" Unit="dyne rad^-1" />
+    <QuantityType Name="Fracture Energy" Unit="dyne cm^-1" />
+    <QuantityType Name="Frequency" Unit="Hz" />
+    <QuantityType Name="Gasket Stiffness" Unit="dyne cm^-3" />
+    <QuantityType Name="Heat Flux" Unit="W cm^-2" />
+    <QuantityType Name="Heat Flux in" Unit="W cm^-2" />
+    <QuantityType Name="Heat Generation" Unit="W cm^-3" />
+    <QuantityType Name="Heat Rate" Unit="W" />
+    <QuantityType Name="Heat Transfer Coefficient" Unit="W cm^-2 C^-1" />
+    <QuantityType Name="Impulse" Unit="N s" />
+    <QuantityType Name="Impulse Per Angular Unit" Unit="dyne s rad^-1" />
+    <QuantityType Name="Inductance" Unit="H" />
+    <QuantityType Name="Interphase Transfer Coefficient" Unit="g cm^-2 s^-1" />
+    <QuantityType Name="Inverse Angle" Unit="degree^-1" />
+    <QuantityType Name="Inverse Area" Unit="cm^-2" />
+    <QuantityType Name="Inverse Length" Unit="cm^-1" />
+    <QuantityType Name="Inverse Stress" Unit="cm^2 dyne^-1" />
+    <QuantityType Name="k" Unit="cm^2 s^-2" />
+    <QuantityType Name="k Flux" Unit="W cm^-2" />
+    <QuantityType Name="k Flux Coefficient" Unit="g cm^-2 s^-1" />
+    <QuantityType Name="k Source" Unit="W cm^-3" />
+    <QuantityType Name="k Source Coefficient" Unit="g cm^-3 s^-1" />
+    <QuantityType Name="Kinematic Diffusivity" Unit="cm^2 s^-1" />
+    <QuantityType Name="Magnetic Field" Unit="Oe" />
+    <QuantityType Name="Magnetic Field Intensity" Unit="Oe" />
+    <QuantityType Name="Magnetic Flux" Unit="Mx" />
+    <QuantityType Name="Magnetic Flux Density" Unit="gauss" />
+    <QuantityType Name="Magnetic Induction" Unit="T" />
+    <QuantityType Name="Magnetic Potential" Unit="T cm" />
+    <QuantityType Name="Magnetic Permeability" Unit="H cm^-1" />
+    <QuantityType Name="MAPDL Enthalpy" Unit="erg cm^-3" />
+    <QuantityType Name="Mass Concentration" Unit="g cm^-3" />
+    <QuantityType Name="Mass Concentration Rate" Unit="g cm^-3 s^-1" />
+    <QuantityType Name="Mass Flow" Unit="kg s^-1" />
+    <QuantityType Name="Mass Flow in" Unit="kg s^-1" />
+    <QuantityType Name="Mass Flux" Unit="g s^-1 cm^-2" />
+    <QuantityType Name="Mass Flux Coefficient" Unit="g s^-1 cm^-2" />
+    <QuantityType Name="Mass Flux Pressure Coefficient" Unit="g s^-1 dyne^-1" />
+    <QuantityType Name="Mass Fraction" Unit="kg kg^-1" />
+    <QuantityType Name="Mass Per Area" Unit="g cm^-2" />
+    <QuantityType Name="Mass Source" Unit="g s^-1 cm^-3" />
+    <QuantityType Name="Mass Source Coefficient" Unit="g s^-1 cm^-3" />
+    <QuantityType Name="Mass Source Pressure Coefficient" Unit="dyne^-1 g s^-1 cm^-1" />
+    <QuantityType Name="Total Mass Source Pressure Coefficient" Unit="kg s^-1 MPa^-1" />
+    <QuantityType Name="Material Impedance" Unit="g cm^-2 s^-1" />
+    <QuantityType Name="Molar Concentration" Unit="mol cm^-3" />
+    <QuantityType Name="Molar Concentration Henry Coefficient" Unit="dyne cm mol^-1" />
+    <QuantityType Name="Molar Concentration Rate" Unit="mol cm^-3 s^-1" />
+    <QuantityType Name="Molar Energy" Unit="erg mol^-1" />
+    <QuantityType Name="Molar Entropy" Unit="erg mol^-1 C^-1" />
+    <QuantityType Name="Molar Fraction" Unit="mol mol^-1" />
+    <QuantityType Name="Molar Mass" Unit="kg mol^-1" />
+    <QuantityType Name="Molar Volume" Unit="cm^3 mol^-1" />
+    <QuantityType Name="Moment" Unit="dyne cm" />
+    <QuantityType Name="Moment of Inertia of Area" Unit="cm^2 cm^2" />
+    <QuantityType Name="Moment of Inertia of Mass" Unit="g cm^2" />
+    <QuantityType Name="Momentum Source" Unit="g cm^-2 s^-2" />
+    <QuantityType Name="Momentum Source Lin Coeff" Unit="g cm^-3 s^-1" />
+    <QuantityType Name="Momentum Source Quad Coeff" Unit="g cm^-4" />
+    <QuantityType Name="Number Source" Unit="cm^-3 s^-1" />
+    <QuantityType Name="Omega Source" Unit="g cm^-3 s^-2" />
+    <QuantityType Name="Per Mass" Unit="kg^-1" />
+    <QuantityType Name="Per Mass Flow" Unit="s kg^-1" />
+    <QuantityType Name="Per Time" Unit="s^-1" />
+    <QuantityType Name="Pressure Derivative wrt Temperature" Unit="MPa C^-1" />
+    <QuantityType Name="Pressure Derivative wrt Volume" Unit="g^2 s^-2 cm^-4" />
+    <QuantityType Name="Pressure Gradient" Unit="dyne cm^-3" />
+    <QuantityType Name="PSD Acceleration" Unit="cm^2 s^-4 Hz^-1" />
+    <QuantityType Name="PSD Acceleration Gravity" Unit="gravity^2 Hz^-1" />
+    <QuantityType Name="PSD Displacement" Unit="cm^2 Hz^-1" />
+    <QuantityType Name="PSD Force" Unit="N^2 Hz^-1" />
+    <QuantityType Name="PSD Moment" Unit="dyne^2 cm^2 Hz^-1" />
+    <QuantityType Name="PSD Pressure" Unit="MPa^2 Hz^-1" />
+    <QuantityType Name="PSD Strain" Unit="cm^2 cm^-2 Hz^-1" />
+    <QuantityType Name="PSD Stress" Unit="dyne^2 cm^-4 Hz^-1" />
+    <QuantityType Name="PSD Velocity" Unit="cm^2 s^-2 Hz^-1" />
+    <QuantityType Name="Relative Permeability" Unit="H H^-1" />
+    <QuantityType Name="Relative Permittivity" Unit="farad farad^-1" />
+    <QuantityType Name="Rotational Damping" Unit="dyne cm s rad^-1" />
+    <QuantityType Name="Rotational Stiffness" Unit="dyne cm rad^-1" />
+    <QuantityType Name="RS Acceleration Gravity" Unit="gravity" />
+    <QuantityType Name="Section Modulus" Unit="cm^3" />
+    <QuantityType Name="Seebeck Coefficient" Unit="V C^-1" />
+    <QuantityType Name="Shear Strain" Unit="rad" />
+    <QuantityType Name="Shear Strain Rate" Unit="s^-1" />
+    <QuantityType Name="Shock Velocity" Unit="s cm^-1" />
+    <QuantityType Name="Soot Cross Coefficient" Unit="cm^3 mol^-1 s^-1" />
+    <QuantityType Name="Soot PX Factor" Unit="mol kg^-1 s^-1" />
+    <QuantityType Name="Specific" Unit="kg kg^-1" />
+    <QuantityType Name="Specific Concentration" Unit="mol kg^-1" />
+    <QuantityType Name="Specific Energy" Unit="erg g^-1" />
+    <QuantityType Name="Specific Enthalpy" Unit="erg g^-1" />
+    <QuantityType Name="Specific Entropy" Unit="erg g^-1 C^-1" />
+    <QuantityType Name="Specific Flame Surface Density" Unit="cm^2 g^-1" />
+    <QuantityType Name="Specific Heat Capacity" Unit="dyne cm g^-1 C^-1" />
+    <QuantityType Name="Specific Volume" Unit="g^-1 cm^3" />
+    <QuantityType Name="Specific Weight" Unit="dyne cm^-3" />
+    <QuantityType Name="Stiffness" Unit="dyne cm^-1" />
+    <QuantityType Name="Strain" Unit="cm cm^-1" />
+    <QuantityType Name="Strength" Unit="MPa" />
+    <QuantityType Name="Stress" Unit="dyne cm^-2" />
+    <QuantityType Name="Stress Intensity Factor" Unit="dyne cm^-1.5" />
+    <QuantityType Name="Stress Per Temperature" Unit="dyne cm^-2 C^-1" />
+    <QuantityType Name="Surface Charge Density" Unit="A s cm^-2" />
+    <QuantityType Name="Surface Tension" Unit="dyne cm^-1" />
+    <QuantityType Name="Temperature Difference" Unit="C" />
+    <QuantityType Name="Temperature Gradient" Unit="C cm^-1" />
+    <QuantityType Name="InvTemp1" Unit="C^-1" />
+    <QuantityType Name="InvTemp2" Unit="C^-2" />
+    <QuantityType Name="InvTemp3" Unit="C^-3" />
+    <QuantityType Name="InvTemp4" Unit="C^-4" />
+    <QuantityType Name="Temperature Variance" Unit="K^2" />
+    <QuantityType Name="Temperature Variance Source" Unit="g cm^-3 s^-1 K^2" />
+    <QuantityType Name="Thermal Capacitance" Unit="erg C^-1" />
+    <QuantityType Name="Thermal Conductance" Unit="W C^-1" />
+    <QuantityType Name="Thermal Conductivity" Unit="W cm^-1 C^-1" />
+    <QuantityType Name="Thermal Contact Resistance" Unit="W^-1 cm^2 C" />
+    <QuantityType Name="Thermal Expansivity" Unit="C^-1" />
+    <QuantityType Name="Torque" Unit="dyne cm" />
+    <QuantityType Name="Torsional Spring Constant" Unit="dyne cm radian^-1" />
+    <QuantityType Name="Total Radiative Intensity" Unit="W cm^-2 sr^-1" />
+    <QuantityType Name="Translational Damping" Unit="dyne s cm^-1" />
+    <QuantityType Name="Turbulent Heat Flux" Unit="cm^3 s^-3" />
+    <QuantityType Name="Velocity" Unit="cm s^-1" />
+    <QuantityType Name="Volume" Unit="cm^3" />
+    <QuantityType Name="Volumetric" Unit="g cm^-3" />
+    <QuantityType Name="Volumetric Flow" Unit="cm^3 s^-1" />
+    <QuantityType Name="Volumetric Flow in" Unit="cm^3 s^-1" />
+    <QuantityType Name="Warping Factor" Unit="cm^6" />
+  </OtherUnits>
+</UserUnitSystem>

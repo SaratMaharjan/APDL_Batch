@@ -15,6 +15,7 @@
 !*.js
 !*.ans
 !*.xla
+!*.xml
 !*.dotm
 !*.cuix
 !plugin/
