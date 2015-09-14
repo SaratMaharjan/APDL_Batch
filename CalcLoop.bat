@@ -4,10 +4,10 @@ REM call:%*
 echo ---------------STARTING CALCULATION------------------
 del !wDir!\*.lock
 
-for /l %%c in (1 1 2)  do (
-	call Timer.bat StartTimer
+for /l %%c in (1 1 10)  do (
+	REM call Timer.bat StartTimer
 	echo.
-	set tBackUp=!Start100S!
+	REM set tBackUp=!Start100S!
 	echo. Starting License Loop
 	echo.
 
@@ -44,7 +44,7 @@ for /l %%c in (1 1 2)  do (
 		REM licenses ende
 
 		call Timer.bat StartTimer
-		 
+		echo 0 > !wDir!\license.txt
 
 	REM anfang Call ANSYS
 
@@ -78,7 +78,13 @@ for /l %%c in (1 1 2)  do (
 		REM set tim=!tCalc!
 		REM echo !tim!
 
-		if !tCalc! geq 5 (
+		set /p inPrep=<!wDir!\license.txt
+		echo.
+		echo isLicenseAvailable: !inPrep!
+		echo.
+
+		REM if !tCalc! geq 5 (
+		if !inPrep! equ 1 (
 			echo.
 			echo --------CALCULATED with License: !ansj! --- Processors: !numPro!----------
 			echo.
@@ -105,11 +111,12 @@ for /l %%c in (1 1 2)  do (
 	echo. License Loop Finished
 	echo.
 
-	set Start100S=!tBackUp!
-	call Timer.bat StopTimer
-	call Timer.bat DisplayTimerResult
+	REM set Start100S=!tBackUp!
+	REM call Timer.bat StopTimer
+	REM call Timer.bat DisplayTimerResult
 
-	if !tCalc! geq 15 (
+	REM if !tCalc! geq 15 (
+	if !inPrep! equ 1 (
 		echo.
 		echo ------------------ CALCULATED after retry: !c! -----------------
 		echo.

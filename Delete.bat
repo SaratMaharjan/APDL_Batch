@@ -18,8 +18,8 @@ del !wDir!\*.osav
 del !wDir!\*.pcs
 del !wDir!\*.pvt
 del !wDir!\*.r00
-REM del !wDir!\*.r001
-REM del !wDir!\*.rdb
+del !wDir!\*.r001
+del !wDir!\*.rdb
 del !wDir!\*.sta
 del !wDir!\*.tri
 del !wDir!\*.lock
