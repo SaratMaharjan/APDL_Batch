@@ -10,10 +10,26 @@ REM anfang Selecting Licenses
 	REM set endValue=6
 REM ende
 
-REM anfang select drive
+REM anfang select drive and Initial Values
 	REM 1: x: and file; 2: s: and file2
 	set d=1
 	REM set d=2
+
+	REM path after and before Project Name + append to BAT
+		hostname.exe>hostname.txt
+		set /p host=<hostname.txt
+		echo Hostname: !host!
+
+		set append=1
+		if "!host!" equ "ansys2" (
+			set sourcePre=R:\maharjan
+			set pathBefore=D:\maharjan
+			set pathAfter=ANSYS
+		) else (
+			set sourcePre=R:\maharjan
+			set pathBefore=D:
+			set pathAfter=ANSYS
+		)
 REM ende
 
 REM anfang Redirect/execute or NOT
@@ -23,7 +39,7 @@ REM ende
 
 REM for /l %%z in ( 28 41 42 ) do (
 REM for %%z in ( 31 32 33 34 ) do (
-for %%z in ( 33 ) do (
+for %%z in ( 32 34 ) do (
 REM for %%z in ( 28 29 30 ) do (
 
 	REM anfang Projekte
@@ -36,9 +52,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1009 10 1009
 		set interval2=21 1 22
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -49,9 +68,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1119 10 1199
 		set interval2=21 1 22
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -62,9 +84,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1009 10 1099
 		set interval2=1 1 2
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -75,9 +100,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1119 10 1199
 		set interval2=1 1 2
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -88,9 +116,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=0 1000 0
 		set interval2=11 1 12
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -101,9 +132,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1009 10 1099
 		set interval2=1 2 3
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -114,9 +148,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1119 10 1199
 		set interval2=1 2 3
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -127,9 +164,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1009 10 1099
 		set interval2=1 1 4
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -140,9 +180,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1119 10 1199
 		set interval2=1 1 4
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -153,9 +196,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=4009 10 4099
 		set interval2=5 1 5
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -166,9 +212,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=2119 10 2119
 		set interval2=15 1 15
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -179,9 +228,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=6019 10 6099
 		set interval2=5 1 5
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -192,9 +244,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=6119 10 6199
 		set interval2=5 1 5
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -205,9 +260,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=2119 1000 3119
 		set interval2=15 10 95
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -218,9 +276,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=2019 1000 3019
 		set interval2=15 10 95
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -231,9 +292,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1019 1000 1019
 		set interval2=15 10 95
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -244,9 +308,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1119 1000 1119
 		set interval2=15 10 95
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -257,9 +324,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1 1 1
 		set interval2=1 1 2
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -270,9 +340,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1009 10 1099
 		set interval2=1 1 5
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -283,9 +356,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=5009 10 5009
 		set interval2=23 1 23
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -296,9 +372,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=2111 1000 3111
 		set interval2=21 10 21
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -309,9 +388,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=2101 1000 3101
 		set interval2=21 10 21
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -322,9 +404,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=3101 1000 3101
 		set interval2=11 10 11
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -335,9 +420,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1000 10 1000
 		set interval2=1 1 1
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -348,9 +436,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1009 10 1099
 		set interval2=1 1 7
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -359,11 +450,14 @@ REM for %%z in ( 28 29 30 ) do (
 		REM goto :takeTime
 		set proj_Num=289415a
 		set interval=1119 10 1199
-		set interval2=1 1 7
+		set interval2=1 1 4
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -371,12 +465,15 @@ REM for %%z in ( 28 29 30 ) do (
 	if %%z equ 33 (
 		REM goto :takeTime
 		set proj_Num=289415z
-		set interval=1019 10 1099
-		set interval2=6 1 6
+		set interval=1009 10 1099
+		set interval2=1 1 6
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -387,9 +484,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1119 10 1199
 		set interval2=1 1 6
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -400,9 +500,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=200 10 200
 		set interval2=21 1 22
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -413,9 +516,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1011 18 1011
 		set interval2=11 10 11
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -426,9 +532,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1011 18 1011
 		set interval2=22 10 22
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -439,9 +548,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1129 118 1129
 		set interval2=13 10 13
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -452,9 +564,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1011 118 1011
 		set interval2=24 10 24
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -465,9 +580,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1129 10 1129
 		set interval2=4 1 4
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -478,9 +596,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1001 1 1005
 		set interval2=1 1 1
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -491,9 +612,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1003 1 1003
 		set interval2=2 1 2
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -504,9 +628,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1000 1 1000
 		set interval2=1 1 2
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -517,9 +644,12 @@ REM for %%z in ( 28 29 30 ) do (
 		set interval=1010 10 1010
 		set interval2=1 1 1
 
-		set append=1
-		set pathBefore=D:
-		set pathAfter=ANSYS
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
 	)
 	REM ende
 
@@ -545,7 +675,7 @@ REM anfang NO NEED to CHANGE BELOW
 		REM set "location=s:"
 	REM )
 
-	set "location=R:\Maharjan\!proj_Num!"
+	set "location=!sourcePre!\!proj_Num!"
 	set "wDir=!pathBefore!\!proj_Num!\!pathAfter!"
 	echo.
 	echo Source Location: !location!
@@ -559,8 +689,7 @@ REM anfang NO NEED to CHANGE BELOW
 
 	if !append! equ 1 (
 		echo.>> !wDir!\smAPDL.bat
-	)
-	if !append! equ 0 (
+	) else (
 		echo.> !wDir!\smAPDL.bat
 	)
 

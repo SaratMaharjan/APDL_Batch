@@ -20,20 +20,15 @@ for /l %%c in (1 1 10)  do (
 			if %%r equ 1 (
 				set ansj=struct
 				set numPro=4
-			)
-			if %%r equ 2 (
+			) else if %%r equ 2 (
 				set ansj=struct
-			)
-			if %%r equ 3 (
+			) else if %%r equ 3 (
 				set ansj=prfnls
-			)
-			if %%r equ 4 (
+			) else if %%r equ 4 (
 				set ansj=stba
-			)
-			if %%r equ 5 (
+			) else if %%r equ 5 (
 				set ansj=ansys
-			)
-			if %%r equ 6 (
+			) else (
 				set ansj=preppost
 			)
 
@@ -51,8 +46,7 @@ for /l %%c in (1 1 10)  do (
 		if %d% equ 1 (
 			set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
  -redirect !redirect! -i "!location!\s.in" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!"
-		)
-		if %d% equ 2 (
+		) else (
 			set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
  -redirect !redirect! -i "!location!\s.in" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!" -j "file2"
 		)
