@@ -434,7 +434,7 @@ REM for %%z in ( 28 29 30 ) do (
 		REM goto :takeTime
 		set proj_Num=289415a
 		set interval=1009 10 1099
-		set interval2=1 1 7
+		set interval2=1 1 4
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -466,7 +466,7 @@ REM for %%z in ( 28 29 30 ) do (
 		REM goto :takeTime
 		set proj_Num=289415z
 		set interval=1009 10 1099
-		set interval2=1 1 6
+		set interval2=1 1 3
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -482,7 +482,7 @@ REM for %%z in ( 28 29 30 ) do (
 		REM goto :takeTime
 		set proj_Num=289415z
 		set interval=1119 10 1199
-		set interval2=1 1 6
+		set interval2=1 1 3
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -737,6 +737,7 @@ REM anfang NO NEED to CHANGE BELOW
 	echo REM ------------------- >> !wDir!\smAPDL.bat
 
 REM ende NOT Needed TO CHANGE
+
  )
 endlocal
 goto :takeTime

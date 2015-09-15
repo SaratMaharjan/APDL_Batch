@@ -39,7 +39,11 @@ for /l %%c in (1 1 10)  do (
 		REM licenses ende
 
 		call Timer.bat StartTimer
-		echo 0 > !wDir!\license.txt
+		if %execute% equ 1 (
+			echo 0 > !wDir!\license.txt
+		) else (
+			echo 1 > !wDir!\license.txt
+		)
 
 	REM anfang Call ANSYS
 
