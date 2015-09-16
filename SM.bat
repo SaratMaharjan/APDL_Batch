@@ -37,10 +37,10 @@ REM anfang Redirect/execute or NOT
 	set execute=1
 REM ende
 
-REM for /l %%z in ( 28 41 42 ) do (
-REM for %%z in ( 31 32 33 34 ) do (
-for %%z in ( 32 34 ) do (
-REM for %%z in ( 28 29 30 ) do (
+REM for /l %%z in ( 1 1 5 ) do (
+REM for %%z in ( 99 ) do (
+for %%z in ( 29 ) do (
+REM for %%z in ( 32 31 33 34 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -449,7 +449,7 @@ REM for %%z in ( 28 29 30 ) do (
 	if %%z equ 32 (
 		REM goto :takeTime
 		set proj_Num=289415a
-		set interval=1119 10 1199
+		set interval=1179 10 1199
 		set interval2=1 1 4
 
 		REM set append=1
@@ -641,7 +641,7 @@ REM for %%z in ( 28 29 30 ) do (
 	if %%z equ 99 (
 		REM goto :takeTime
 		set proj_Num=Test
-		set interval=1010 10 1010
+		set interval=1012 10 1012
 		set interval2=1 1 1
 
 		REM set append=1
@@ -693,7 +693,9 @@ REM anfang NO NEED to CHANGE BELOW
 		echo.> !wDir!\smAPDL.bat
 	)
 
+	set todayNow=On %date:~6,4%-%date:~3,2%-%date:~0,2% at %time:~0,2%:%time:~3,2%
 	echo REM ------------------- >> !wDir!\smAPDL.bat
+	echo REM                          ___!todayNow!___ >> !wDir!\smAPDL.bat
 	echo REM anfang New Analysis Cases >> !wDir!\smAPDL.bat
 
 	set ans_consec=YES
