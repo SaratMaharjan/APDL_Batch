@@ -4,12 +4,14 @@ REM call:%*
 echo ---------------STARTING CALCULATION------------------
 del !wDir!\*.lock
 
-for /l %%c in ( 1 1 1 ) do (
+for /l %%c in ( 1 1 50 ) do (
 	REM call Timer.bat StartTimer
 	echo.
 	REM set tBackUp=!Start100S!
 	echo. Starting License Loop
 	echo.
+
+	set retry=%%c
 
 	for /l %%r in ( !startValue! 1 !endValue! ) do (
 	REM for %%r in ( 4 3 2 ) do (
@@ -95,7 +97,7 @@ for /l %%c in ( 1 1 1 ) do (
 		echo       1. License may not be available.
 		echo       2. Solution Request from WB not removed.
 		echo       3. Error in Input File "check file.err".
-		echo       4. or Early eof in main input file. & echo.
+		echo       4. Early eof in Input Files. & echo.
 		echo  ------------ ----------------- ------------- & echo.
 		copy "!wDir!\f!job!-!lk!.out" "!wDir!\f!job!-!lk!-lic-!ansj!.out"
 
@@ -116,12 +118,12 @@ for /l %%c in ( 1 1 1 ) do (
 	REM if !tCalc! geq 15 (
 	if !inPrep! equ 1 (
 		echo.
-		echo ------------------ CALCULATED after retry: !c! -----------------
+		echo ------------------ CALCULATED after retry: !retry! -----------------
 		echo.
 		goto :eof
 	)
 	echo.
-	echo ---------- COULD NOT CALCULATE Try: !c! ----------
+	echo ---------- COULD NOT CALCULATE Try: !retry! ----------
 	echo.
 	timeout /t 30
 
