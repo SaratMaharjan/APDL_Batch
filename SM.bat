@@ -38,9 +38,9 @@ REM anfang Redirect/execute or NOT
 REM ende
 
 REM for /l %%z in ( 1 1 5 ) do (
-REM for %%z in ( 99 ) do (
+for %%z in ( 99 ) do (
 REM for %%z in ( 25 ) do (
-for %%z in ( 37 ) do (
+REM for %%z in ( 1 2 37 25 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -609,7 +609,7 @@ for %%z in ( 37 ) do (
 	if %%z equ 37 (
 		REM goto :takeTime
 		set proj_Num=291415
-		set interval=1005 1 1010
+		set interval=1006 1 1010
 		set interval2=2 1 2
 
 		REM set append=1
@@ -658,11 +658,7 @@ for %%z in ( 37 ) do (
 
 REM anfang NO NEED to CHANGE BELOW
 
-	echo Launch dir: "%~dp0"
-	echo Current dir: "!CD!"
-	cd /D "%~dp0"
-	echo Changed Directory to Launch-Dir: "!CD!"
-	echo ....
+	call %~dp0%l2cur.bat
 
 	REM if %d% equ 1 (
 		REM net use x: /dele /y

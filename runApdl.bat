@@ -1,0 +1,96 @@
+
+REM read Argument
+set drive=%1
+
+setlocal EnableDelayedExpansion	
+
+		hostname.exe>hostname.txt
+		set /p host=<hostname.txt
+		echo Hostname: !host!
+
+		if "!host!" equ "ansys2" (
+			if %drive% equ 1 (
+				set pathBefore=D:\maharjan
+				set pathAfter=ANSYS
+			) else (
+				set pathBefore=E:\maharjan
+				set pathAfter=ANSYS
+			)
+		) else (
+			if %drive% equ 1 (
+				set pathBefore=D:
+				set pathAfter=ANSYS
+			) else (
+				set pathBefore=E:\_ANSYScalc
+				set pathAfter=ANSYS
+			)
+		)
+
+set /p proj_Num=Enter The Project Num (Folder):%=%
+set /p r=Enter License to Use (1 (default): prepost, 2: struct, 3: prfnls):%=%
+set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
+
+if not "%proj_Num%" == "" (
+	echo Project : %proj_Num%
+) else (
+	set proj_Num=288115
+	echo Default Project  : !proj_Num!
+)
+
+set ansj=preppost
+if "%r%" equ "2" (
+	set ansj=struct
+)
+if "%r%" equ "3" (
+	set ansj=prfnls
+)
+echo License: !ansj!
+
+if not "%disp%" == "" (
+	echo Display Num: %disp%
+) else (
+	set disp=1
+	echo Default Display Num  : !disp!
+)
+
+set dispName=3D
+if "%disp%" == "2" (
+	set dispName=win32c
+)
+if "%disp%" == "3" (
+	set dispName=win32
+)
+echo Display Device: %dispName%
+
+echo License: !ansj!
+echo Project: %proj_Num%
+echo Display Device: %dispName%	
+
+call Timer.bat :StartTimer
+
+set apdlCMD="C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe"  -g -p !ansj! ^
+ -dir "!pathBefore!\%proj_Num%\!pathAfter!" -j "file1" -s read -l en-us -t -d %dispName%
+
+echo.
+echo !apdlCMD!
+echo.
+
+REM goto :takeTime
+REM start "" !apdlCMD!
+!apdlCMD!
+
+call Timer.bat :StopTimer	
+call Timer.bat :DisplayTimerResult	
+echo Time Used: !elTime!
+
+if !tCalc! geq 5 (
+	echo --------Complete----------
+	goto :eof
+)
+endlocal
+
+:takeTime
+timeout /t 5
+
+:eof
+
