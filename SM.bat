@@ -38,9 +38,9 @@ REM anfang Redirect/execute or NOT
 REM ende
 
 REM for /l %%z in ( 1 1 5 ) do (
-for %%z in ( 99 ) do (
+REM for %%z in ( 99 ) do (
 REM for %%z in ( 25 ) do (
-REM for %%z in ( 1 2 37 25 ) do (
+for %%z in ( 2 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -65,8 +65,8 @@ REM for %%z in ( 1 2 37 25 ) do (
 	if %%z equ 2 (
 		REM goto :takeTime
 		set proj_Num=287715
-		set interval=1119 10 1199
-		set interval2=21 1 22
+		set interval=2199 10 2199
+		set interval2=22 1 22
 
 		REM set append=1
 		REM set pathBefore=D:
