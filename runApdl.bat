@@ -26,15 +26,16 @@ setlocal EnableDelayedExpansion
 			)
 		)
 
-set /p proj_Num=Enter The Project Num (Folder):%=%
+set /p proj_Num=Enter The Project Num (Folder, default: test):%=%
 set /p r=Enter License to Use (1 (default): prepost, 2: struct, 3: prfnls):%=%
 set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
 
 if not "%proj_Num%" == "" (
-	echo Project : %proj_Num%
+	REM echo Project : %proj_Num%
+	echo.
 ) else (
-	set proj_Num=288115
-	echo Default Project  : !proj_Num!
+	set proj_Num="test"
+	REM echo Default Project  : !proj_Num!
 )
 
 set ansj=preppost
@@ -44,15 +45,13 @@ if "%r%" equ "2" (
 if "%r%" equ "3" (
 	set ansj=prfnls
 )
-echo License: !ansj!
 
 if not "%disp%" == "" (
 	echo Display Num: %disp%
 ) else (
 	set disp=1
-	echo Default Display Num  : !disp!
+	REM echo Default Display Num  : !disp!
 )
-
 set dispName=3D
 if "%disp%" == "2" (
 	set dispName=win32c
@@ -60,7 +59,6 @@ if "%disp%" == "2" (
 if "%disp%" == "3" (
 	set dispName=win32
 )
-echo Display Device: %dispName%
 
 echo License: !ansj!
 echo Project: %proj_Num%
@@ -69,7 +67,8 @@ echo Display Device: %dispName%
 call Timer.bat :StartTimer
 
 set apdlCMD="C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe"  -g -p !ansj! ^
- -dir "!pathBefore!\%proj_Num%\!pathAfter!" -j "file1" -s read -l en-us -t -d %dispName%
+ -dir "!pathBefore!\%proj_Num%\!pathAfter!" -j "file1" -s read -l en-us -t -d %dispName% ^
+ -m 8192 -db 4096
 
 echo.
 echo !apdlCMD!
