@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<shortcuts xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1">
+  <shortcut command="Hide" key="F9" />
+  <shortcut command="Isolate" key="Ctrl+F9" />
+  <shortcut command="ShowAll" key="Shift+F9" />
+  <shortcut command="NewLayer" mnemonic="N" />
+  <shortcut command="RenameLayerItem" mnemonic="Y" />
+  <shortcut command="SplitBodyTool" mnemonic="Q" />
+  <shortcut command="CaeMidsurface" mnemonic="W" />
+  <shortcut command="IntersectAdd" mnemonic="G" />
+</shortcuts>

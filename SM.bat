@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 REM anfang Selecting Licenses
 	set appPath="C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\ansys161.exe"
 		REM	1.	Structural4core		2.	Structural2core		3.	Prfnls		4.	Stba		6.	Prepost
-	set startValue=3
+	set startValue=6
 	set endValue=!startValue!
 	REM set endValue=4
 REM ende
@@ -39,7 +39,8 @@ REM ende
 
 REM for /l %%z in ( 1 1 5 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 1 2 ) do (
+REM for %%z in ( 1 2 ) do (
+for %%z in ( 24 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -400,8 +401,8 @@ for %%z in ( 1 2 ) do (
 	if %%z equ 24 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=3101 1000 3101
-		set interval2=11 10 11
+		set interval=4101 1000 4101
+		set interval2=21 10 31
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -647,7 +648,7 @@ for %%z in ( 1 2 ) do (
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
 		REM set redirect=0
-		REM set execute=1
+		REM set execute=0
 		REM set sourcePre=R:\maharjan
 	)
 	REM ende
@@ -689,6 +690,7 @@ REM anfang NO NEED to CHANGE BELOW
 	)
 
 	set todayNow=On %date:~6,4%-%date:~3,2%-%date:~0,2% at %time:~0,2%:%time:~3,2%
+	echo *set,hostname,'!host!' > !wDir!\host.csv
 	echo REM ------------------- >> !wDir!\smAPDL.bat
 	echo REM                          ___!todayNow!___ >> !wDir!\smAPDL.bat
 	echo REM anfang New Analysis Cases >> !wDir!\smAPDL.bat

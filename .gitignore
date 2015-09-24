@@ -4,6 +4,7 @@
 !*.ans
 !*.arg
 !*.bat
+!*.config
 !*.csv
 !*.cuix
 !*.dotm
