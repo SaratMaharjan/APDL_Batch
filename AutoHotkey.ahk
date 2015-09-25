@@ -330,6 +330,8 @@ Return
 	;return
 ;#IfWinActive
 
+#Include VolumeOSD.ahk 
+
 ;FUNCTIONS**************************************************************
 	ToggleWinMinimize(TheWindowTitle) {
 		SetTitleMatchMode,2
