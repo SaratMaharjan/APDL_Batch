@@ -22,8 +22,10 @@ return
 #v::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "E:\SM\VIMinstall\Vim\vim74\gvim.exe"
-	} else {
+	} else if (InStr(A_ComputerName,"ANSYS2")) {
 		Run "D:\maharjan\VIMinstall\Vim\vim74\gvim.exe"
+	} else {
+		Run "C:\Users\Sarat\Dropbox\VimInstall\Vim\vim74\gvim.exe"
 	}
 return
 #x::
@@ -78,7 +80,7 @@ return
 	if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
 		run "R:\Maharjan"
 	} else {
-		run "C:\__Drive__"
+		run "C:\_________Drive"
 	}
 return
 
