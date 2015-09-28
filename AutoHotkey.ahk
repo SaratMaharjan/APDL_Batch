@@ -4,6 +4,8 @@
 ; Note: From now on whenever you run AutoHotkey directly, this script ; will be loaded.  So feel free to customize it to suit your needs.
 ; Please read the QUICK-START TUTORIAL near the top of the help file.  ; It explains how to perform common automation tasks such as sending ; keystrokes and mouse clicks.  It also explains more about hotkeys.
 
+;anfang My Commands
+
 ;NumPadDot::Send, {ASC 0046}
 #1::Msgbox, %A_ComputerName%
 ;!x::ToggleWinMinimize("Microsoft Excel")
@@ -11,7 +13,15 @@
 ;!v::ToggleWinMinimize("win7_64Bit")
 ^space::  Winset, Alwaysontop, , A
 
-;#!x::Run "D:\zCore\setnetUseS.bat"
+;anfang Local Locations
+
+#a::
+	if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
+		run "R:\Maharjan"
+	} else {
+		run "C:\__Drive__"
+	}
+return
 #n::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "E:\Installs\Notepad++\notepad++.exe"
@@ -54,36 +64,27 @@ return
 		Run "D:\maharjan\SM.bat"
 	}
 return
-
 #y::
-;Run "C:\Program Files (x86)\Everything\Everything.exe"
+	;Run "C:\Program Files (x86)\Everything\Everything.exe"
 	Run "C:\locate32\locate32.exe"
 return
-
 ;#w::
 	;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
 ;return
-
-#u::Run "C:\Users\Maharjan\Desktop\untermStrich.url"
+#u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
+#!w:: Run "C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\launcher162.exe"
+^!w:: Run "C:\Program Files\ANSYS Inc\v162\Framework\bin\Win64\runwb2.exe"
+#h:: Run "C:\Program Files\ANSYS Inc\v162\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
 ;#!e::Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
 ^!p:: Run "E:\SM\PortableApps\StartPortableApps.exe"
 ^+c:: Run "E:\SM\PortableApps\PortableApps"
 ^!c:: Run "E:\SM\vim"
+#b:: Run "R:\ansys\macros"
+#.:: Run "R:\Literatur\Eurocode\Normen-HanbÃ¼cher\Gescannt"
 
-#!w:: Run "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\launcher161.exe"
-^!w:: Run "C:\Program Files\ANSYS Inc\v161\Framework\bin\Win64\runwb2.exe"
-#h::Run "C:\Program Files\ANSYS Inc\v161\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
+;ende Local Locations
 
-#a::
-	if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
-		run "R:\Maharjan"
-	} else {
-		run "C:\__Drive__"
-	}
-return
-
-#b::Run "R:\ansys\macros"
-#.::Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
+;anfang Internet Addresses
 
 #space::Run www.google.com.np
 #f::
@@ -98,7 +99,9 @@ Return
 	Run, http://dict.leo.org/#/search=%Clipboard%&searchLoc=0&resultOrder=basic&multiwordShowSingle=on
 Return
 
-;To delete Images
+;ende Internet Addresses
+
+;anfang Delete Images
 #IfWinActive ahk_class CabinetWClass
 	#p::
 
@@ -121,11 +124,11 @@ Return
 
 	return
 #IfWinActive
+;ende Delete Images
 
-;Delete Temporary Files
+;anfang Delete Temporary Files
 #IfWinActive ahk_class CabinetWClass
-	#ü::
-
+	#+p::
 		; get full path from open windows
 		WinGetText, FullPath, A
  
@@ -191,19 +194,9 @@ Return
 
 	return
 #IfWinActive
+;ende Delete Temp Files Ansys
 
-#IfWinActive ahk_class CabinetWClass ; for use in explorer.
-	#c::
-		ClipSaved := ClipboardAll
-		Send !e
-		Sleep 10
-		Send ^c
-		Run, cmd /K "cd `"%clipboard%`""
-		Clipboard := ClipSaved
-		ClipSaved =
-	return
-#IfWinActive
-
+;anfang Create File
 #IfWinActive ahk_class CabinetWClass
 	^!n::
 		; get full path from open windows
@@ -232,6 +225,21 @@ Return
 		run %FullPath%\%UserInput%
 	return
 #IfWinActive
+;ende Create File
+
+;anfang Not Necessary
+
+;#IfWinActive ahk_class CabinetWClass ; for use in explorer.
+	;#c::
+		;ClipSaved := ClipboardAll
+		;Send !e
+		;Sleep 10
+		;Send ^c
+		;Run, cmd /K "cd `"%clipboard%`""
+		;Clipboard := ClipSaved
+		;ClipSaved =
+	;return
+;#IfWinActive
 
 ;#IfWinActive ahk_class CabinetWClass
 	;^!m::
@@ -328,7 +336,12 @@ Return
 	;return
 ;#IfWinActive
 
-;FUNCTIONS**************************************************************
+;ende Not Necessary
+
+;ende My Commands
+
+;anfang FUNCTIONS
+
 	ToggleWinMinimize(TheWindowTitle) {
 		SetTitleMatchMode,2
 		DetectHiddenWindows, Off
@@ -357,4 +370,77 @@ Return
 		;msgbox, %FullPath%
 		return FullPath
 	}
+
+;ende Functions
+
+;anfang External Functions
+
+;anfang Volume 
+	$Volume_Up::
+	+WheelUp::
+		{
+			Send {Volume_Up}
+			Gosub, vupdt
+			return
+		}
+
+	$Volume_Down::
+	+WheelDown::
+		{
+			Send {Volume_Down}
+			Gosub, vupdt
+			return
+		}
+
+	$Volume_Mute::
+		{
+			Send {Volume_Mute}
+			Gosub, vupdt
+			return
+		}
+
+	; display volume bar
+	vupdt:
+	IfWinExist, ahkvolume
+	{
+		SoundGet, master_volume
+		SoundGet, v_m, master, mute
+		GuiControl,, MP, %master_volume%
+		if v_m = On
+			GuiControl,, Pic1, *Icon40 %a_windir%\system32\mmsys.cpl
+		else 
+			GuiControl,, Pic1, *Icon1 %a_windir%\system32\mmsys.cpl
+			SetTimer,vclose, 2000
+		return
+	}
+	SoundGet, master_volume
+	SoundGet, v_m, master, mute
+
+	IfWinNotExist, ahkvolume
+	{
+		Gui, +ToolWindow -Caption +0x400000 +alwaysontop
+		Gui, Add, GroupBox, x3 y2 w40 h45 cblack,
+		Gui, Add, text, x97 y2 ,Volume:
+		Gui, Add, Progress,horizontal vMP x48 y18 w160 h20 c333cc,%master_volume% 
+		if v_m = On
+			Gui, Add, pic, x7 y13 vPic1 icon40, %a_windir%\system32\mmsys.cpl
+		else
+			Gui, Add, pic, x7 y13 vPic1 icon1, %a_windir%\system32\mmsys.cpl
+			SysGet, screenx, 0
+			SysGet, screeny, 1
+			; adjust display to show in bottom right corner
+			xpos:=screenx-275
+			ypos:=screeny-100
+			Gui, Show, NoActivate x%xpos% y%ypos% h48 w213, ahkvolume
+	}
+	SetTimer,vclose, 2000
+	return
+
+	vclose:
+	SetTimer,vclose, off
+	Gui, destroy
+	return
+;ende volume
+
+;ende External Commands
 
