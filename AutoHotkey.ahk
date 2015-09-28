@@ -32,8 +32,10 @@ return
 #v::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "E:\SM\VIMinstall\Vim\vim74\gvim.exe"
-	} else {
+	} else if (InStr(A_ComputerName,"ANSYS2")) {
 		Run "D:\maharjan\VIMinstall\Vim\vim74\gvim.exe"
+	} else {
+		Run "C:\Users\Sarat\Dropbox\VimInstall\Vim\vim74\gvim.exe"
 	}
 return
 #x::
@@ -82,7 +84,21 @@ return
 #b:: Run "R:\ansys\macros"
 #.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 
+<<<<<<< HEAD
 ;ende Local Locations
+=======
+#!w:: Run "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\launcher161.exe"
+^!w:: Run "C:\Program Files\ANSYS Inc\v161\Framework\bin\Win64\runwb2.exe"
+#h::Run "C:\Program Files\ANSYS Inc\v161\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
+
+#a::
+	if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
+		run "R:\Maharjan"
+	} else {
+		run "C:\_________Drive"
+	}
+return
+>>>>>>> 527ba92ecc2c5bd6021bab5d9289befb8b410b93
 
 ;anfang Internet Addresses
 
@@ -336,12 +352,18 @@ Return
 	;return
 ;#IfWinActive
 
+<<<<<<< HEAD
 ;ende Not Necessary
 
 ;ende My Commands
 
 ;anfang FUNCTIONS
 
+=======
+#Include VolumeOSD.ahk 
+
+;FUNCTIONS**************************************************************
+>>>>>>> 527ba92ecc2c5bd6021bab5d9289befb8b410b93
 	ToggleWinMinimize(TheWindowTitle) {
 		SetTitleMatchMode,2
 		DetectHiddenWindows, Off
