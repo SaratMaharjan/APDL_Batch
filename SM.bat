@@ -1,11 +1,13 @@
 @echo off
-
+set /a waitSec=3600*0/4
+echo Waiting Before Execution: %waitSec% Seconds
+timeout /t %waitSec%
 setlocal EnableDelayedExpansion
 
 REM anfang Selecting Licenses
 	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 		REM	1.	Structural4core		2.	Structural2core		3.	Prfnls		4.	Stba		6.	Prepost
-	set startValue=6
+	set startValue=3
 	set endValue=!startValue!
 	REM set endValue=4
 REM ende
@@ -40,7 +42,7 @@ REM ende
 REM for /l %%z in ( 1 1 5 ) do (
 REM for %%z in ( 99 ) do (
 REM for %%z in ( 1 2 ) do (
-for %%z in ( 25 ) do (
+for %%z in ( 24 40 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -401,7 +403,7 @@ for %%z in ( 25 ) do (
 	if %%z equ 24 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=4101 2000 6101
+		set interval=3101 1000 4101
 		set interval2=1 10 1
 
 		REM set append=1
@@ -417,7 +419,7 @@ for %%z in ( 25 ) do (
 	if %%z equ 25 (
 		REM goto :takeTime
 		set proj_Num=289815a
-		set interval=1000 10 1000
+		set interval=1000 1 1000
 		set interval2=1 1 1
 
 		REM set append=1
@@ -627,6 +629,22 @@ for %%z in ( 25 ) do (
 		set proj_Num=291915
 		set interval=1000 1 1000
 		set interval2=1 1 2
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM ende
+
+	REM anfang 40 - 289815 - D-778 Schneckenfoerderer
+	if %%z equ 40 (
+		REM goto :takeTime
+		set proj_Num=289815
+		set interval=2101 1000 2101
+		set interval2=1 10 1
 
 		REM set append=1
 		REM set pathBefore=D:

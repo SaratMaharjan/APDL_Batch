@@ -1,8 +1,10 @@
-; IMPORTANT INFO ABOUT GETTING STARTED: Lines that start with a ; semicolon, such as this one, are comments.  They are not executed.
+﻿; IMPORTANT INFO ABOUT GETTING STARTED: Lines that start with a ; semicolon, such as this one, are comments.  They are not executed.
 ; This script has a special filename and path because it is automatically ; launched when you run the program directly.  Also, any text file whose ; name ends in .ahk is associated with the program, which means that it ; can be launched simply by double-clicking it.  You can have as many .ahk ; files as you want, located in any folder.  You can also run more than ; one .ahk file simultaneously and each will get its own tray icon.
 ; SAMPLE HOTKEYS: Below are two sample hotkeys.  The first is Win+Z and it ; launches a web site in the default browser.  The second is Control+Alt+N ; and it launches a new Notepad window (or activates an existing one).  To ; try out these hotkeys, run AutoHotkey again, which will load this file.
 ; Note: From now on whenever you run AutoHotkey directly, this script ; will be loaded.  So feel free to customize it to suit your needs.
 ; Please read the QUICK-START TUTORIAL near the top of the help file.  ; It explains how to perform common automation tasks such as sending ; keystrokes and mouse clicks.  It also explains more about hotkeys.
+
+;If problem with encoding: set bomb in VIM and save
 
 ;anfang My Commands
 
@@ -84,21 +86,7 @@ return
 #b:: Run "R:\ansys\macros"
 #.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 
-<<<<<<< HEAD
 ;ende Local Locations
-=======
-#!w:: Run "C:\Program Files\ANSYS Inc\v161\ANSYS\bin\winx64\launcher161.exe"
-^!w:: Run "C:\Program Files\ANSYS Inc\v161\Framework\bin\Win64\runwb2.exe"
-#h::Run "C:\Program Files\ANSYS Inc\v161\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
-
-#a::
-	if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
-		run "R:\Maharjan"
-	} else {
-		run "C:\_________Drive"
-	}
-return
->>>>>>> 527ba92ecc2c5bd6021bab5d9289befb8b410b93
 
 ;anfang Internet Addresses
 
@@ -144,7 +132,8 @@ Return
 
 ;anfang Delete Temporary Files
 #IfWinActive ahk_class CabinetWClass
-	#+p::
+	;#+p::
+	#ü::
 		; get full path from open windows
 		WinGetText, FullPath, A
  
@@ -352,18 +341,13 @@ Return
 	;return
 ;#IfWinActive
 
-<<<<<<< HEAD
 ;ende Not Necessary
 
 ;ende My Commands
 
 ;anfang FUNCTIONS
 
-=======
-#Include VolumeOSD.ahk 
-
 ;FUNCTIONS**************************************************************
->>>>>>> 527ba92ecc2c5bd6021bab5d9289befb8b410b93
 	ToggleWinMinimize(TheWindowTitle) {
 		SetTitleMatchMode,2
 		DetectHiddenWindows, Off

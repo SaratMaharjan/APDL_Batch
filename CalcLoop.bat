@@ -4,7 +4,7 @@ REM call:%*
 echo ---------------STARTING CALCULATION------------------
 del !wDir!\*.lock
 
-for /l %%c in ( 1 1 1 ) do (
+for /l %%c in ( 1 1 6 ) do (
 	REM call Timer.bat StartTimer
 	echo.
 	REM set tBackUp=!Start100S!
@@ -125,7 +125,7 @@ for /l %%c in ( 1 1 1 ) do (
 	echo.
 	echo ---------- COULD NOT CALCULATE Try: !retry! ----------
 	echo.
-	timeout /t 30
+	timeout /t 900
 
 )
 
