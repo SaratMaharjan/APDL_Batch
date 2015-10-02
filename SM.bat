@@ -42,7 +42,7 @@ REM ende
 REM for /l %%z in ( 1 1 5 ) do (
 REM for %%z in ( 99 ) do (
 REM for %%z in ( 1 2 ) do (
-for %%z in ( 24 40 ) do (
+for %%z in ( 24 39 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -403,7 +403,7 @@ for %%z in ( 24 40 ) do (
 	if %%z equ 24 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=3101 1000 4101
+		set interval=1101 1000 1101
 		set interval2=1 10 1
 
 		REM set append=1
@@ -639,12 +639,12 @@ for %%z in ( 24 40 ) do (
 	)
 	REM ende
 
-	REM anfang 40 - 289815 - D-778 Schneckenfoerderer
-	if %%z equ 40 (
+	REM anfang 39 - ------ - Rollengehäuse
+	if %%z equ 39 (
 		REM goto :takeTime
-		set proj_Num=289815
-		set interval=2101 1000 2101
-		set interval2=1 10 1
+		set proj_Num=292715
+		set interval=1000 1 1000
+		set interval2=1 1 6
 
 		REM set append=1
 		REM set pathBefore=D:
