@@ -84,7 +84,8 @@ return
 ^+c:: Run "E:\SM\PortableApps\PortableApps"
 ^!c:: Run "E:\SM\vim"
 #b:: Run "R:\ansys\macros"
-#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
+;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
+#.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
 
 ;ende Local Locations
 
