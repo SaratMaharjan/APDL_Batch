@@ -1,6 +1,11 @@
 
 REM read Argument
 set drive=%1
+if exist lastRun.txt (
+	echo "last run exists."
+) else (
+	echo "test"> lastRun.txt
+)
 
 setlocal EnableDelayedExpansion	
 
@@ -26,17 +31,22 @@ setlocal EnableDelayedExpansion
 			)
 		)
 
-set /p proj_Num=Enter The Project Num (Folder, default: test):%=%
-set /p r=Enter License to Use (1 (default): prepost, 2: struct, 3: prfnls):%=%
-set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
+REM set proj_Num="test"
+set /p proj_Num=<lastRun.txt
 
-if not "%proj_Num%" == "" (
+set /p proj_Num2=Enter The Project Num (Folder, default: %proj_Num%):%=%
+if not "%proj_Num2%" == "" (
 	REM echo Project : %proj_Num%
+	(echo %proj_Num2%) > lastRun.txt
+	set proj_Num=%proj_Num2%
 	echo.
 ) else (
-	set proj_Num="test"
+	REM set proj_Num="test"
 	REM echo Default Project  : !proj_Num!
 )
+
+set /p r=Enter License to Use (1 (default): prepost, 2: struct, 3: prfnls):%=%
+set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
 
 set ansj=preppost
 if "%r%" equ "2" (

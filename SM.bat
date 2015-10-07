@@ -403,7 +403,7 @@ for %%z in ( 24 39 ) do (
 	if %%z equ 24 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=1101 1000 1101
+		set interval=1101 1000 2101
 		set interval2=1 10 1
 
 		REM set append=1
@@ -643,7 +643,7 @@ for %%z in ( 24 39 ) do (
 	if %%z equ 39 (
 		REM goto :takeTime
 		set proj_Num=292715
-		set interval=1000 1 1000
+		set interval=2000 1 2000
 		set interval2=1 1 6
 
 		REM set append=1
