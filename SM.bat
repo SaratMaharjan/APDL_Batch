@@ -41,7 +41,8 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 2 ) do (
+REM for %%z in ( 5 6 7 8 9 ) do (
+for %%z in ( 1 10 ) do (
 REM for %%z in ( 1 10 2 ) do (
 
 	REM anfang Projekte
@@ -51,7 +52,7 @@ REM for %%z in ( 1 10 2 ) do (
 	if %%z equ 1 (
 		REM goto :takeTime
 		set proj_Num=289815
-		set interval=2101 1000 2101
+		set interval=4101 1000 5101
 		set interval2=1 1 1
 
 		REM set append=1
@@ -67,8 +68,8 @@ REM for %%z in ( 1 10 2 ) do (
 	if %%z equ 2 (
 		REM goto :takeTime
 		set proj_Num=292715
-		set interval=4010 1 4011
-		set interval2=26 1 26
+		set interval=4001 1 4001
+		set interval2=26 5 26
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -83,8 +84,8 @@ REM for %%z in ( 1 10 2 ) do (
 	if %%z equ 3 (
 		REM goto :takeTime
 		set proj_Num=292715
-		set interval=4010 1 4011
-		set interval2=21 1 26
+		set interval=4011 1 4011
+		set interval2=26 5 26
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -99,8 +100,8 @@ REM for %%z in ( 1 10 2 ) do (
 	if %%z equ 4 (
 		REM goto :takeTime
 		set proj_Num=292715
-		set interval=4100 1 4101
-		set interval2=21 1 26
+		set interval=4101 1 4101
+		set interval2=21 5 26
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -115,8 +116,8 @@ REM for %%z in ( 1 10 2 ) do (
 	if %%z equ 5 (
 		REM goto :takeTime
 		set proj_Num=292715
-		set interval=4110 1 4111
-		set interval2=21 1 26
+		set interval=4111 1 4111
+		set interval2=21 5 26
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -132,7 +133,7 @@ REM for %%z in ( 1 10 2 ) do (
 		REM goto :takeTime
 		set proj_Num=292715
 		set interval=4000 1 4001
-		set interval2=51 1 56
+		set interval2=51 5 56
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -148,7 +149,7 @@ REM for %%z in ( 1 10 2 ) do (
 		REM goto :takeTime
 		set proj_Num=292715
 		set interval=4010 1 4011
-		set interval2=51 1 56
+		set interval2=51 5 56
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -164,7 +165,7 @@ REM for %%z in ( 1 10 2 ) do (
 		REM goto :takeTime
 		set proj_Num=292715
 		set interval=4100 1 4101
-		set interval2=51 1 56
+		set interval2=51 5 56
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -180,7 +181,7 @@ REM for %%z in ( 1 10 2 ) do (
 		REM goto :takeTime
 		set proj_Num=292715
 		set interval=4110 1 4111
-		set interval2=51 1 56
+		set interval2=51 5 56
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -195,8 +196,8 @@ REM for %%z in ( 1 10 2 ) do (
 	if %%z equ 10 (
 		REM goto :takeTime
 		set proj_Num=293315
-		set interval=1000 1000 2000
-		set interval2=1 10 11
+		set interval=1000 1 1001
+		set interval2=51 40 51
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -207,72 +208,55 @@ REM for %%z in ( 1 10 2 ) do (
 	)
 	REM ende
 
+	REM REM anfang 11 - 289815a - D-778 Spülsystem
+	if %%z equ 11 (
+		REM goto :takeTime
+		set proj_Num=289815a
+		set interval=1000 1 1000
+		set interval2=1 1 1
 
-
-
-	REM REM anfang 3 - 289815 - D-778 Schneckenfoerderer
-	REM if %%z equ 3 (
-		REM REM goto :takeTime
-		REM set proj_Num=289815
-		REM set interval=2111 1000 3111
-		REM set interval2=21 10 21
-
-		REM REM set append=1
-		REM REM set pathBefore=D:
-		REM REM set pathAfter=ANSYS
-		REM REM set redirect=0
-		REM REM set execute=1
-		REM REM set sourcePre=R:\maharjan
-	REM )
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
 	REM REM ende
 
-	REM REM anfang 4 - 289815 - D-778 Schneckenfoerderer
-	REM if %%z equ 4 (
-		REM REM goto :takeTime
-		REM set proj_Num=289815
-		REM set interval=2101 1000 3101
-		REM set interval2=21 10 21
+	REM REM anfang 12 - 290515 - S-994 SSW Volume
+	if %%z equ 12 (
+		REM goto :takeTime
+		set proj_Num=290515
+		set interval=1009 1 1009
+		set interval2=1 1 1
 
-		REM REM set append=1
-		REM REM set pathBefore=D:
-		REM REM set pathAfter=ANSYS
-		REM REM set redirect=0
-		REM REM set execute=1
-		REM REM set sourcePre=R:\maharjan
-	REM )
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
 	REM REM ende
 
-	REM REM anfang 5 - 289815a - D-778 Spülsystem
-	REM if %%z equ 5 (
-		REM REM goto :takeTime
-		REM set proj_Num=289815a
-		REM set interval=1000 1 1000
-		REM set interval2=1 1 1
 
-		REM REM set append=1
-		REM REM set pathBefore=D:
-		REM REM set pathAfter=ANSYS
-		REM REM set redirect=0
-		REM REM set execute=1
-		REM REM set sourcePre=R:\maharjan
-	REM )
-	REM REM ende
+	REM 99 anfang TEMPORARY CALCULATIONS
+	if %%z equ 99 (
+		REM goto :takeTime
+		set proj_Num=Test
+		set interval=1012 10 1012
+		set interval2=1 1 1
 
-	REM REM anfang 6 - 291415 - S881 Saugplatte
-	REM if %%z equ 6 (
-		REM REM goto :takeTime
-		REM set proj_Num=291415
-		REM set interval=1000 1 1000
-		REM set interval2=1 1 5
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=0
+		REM set sourcePre=R:\maharjan
+	)
+	REM ende
 
-		REM REM set append=1
-		REM REM set pathBefore=D:
-		REM REM set pathAfter=ANSYS
-		REM REM set redirect=0
-		REM REM set execute=1
-		REM REM set sourcePre=R:\maharjan
-	REM )
-	REM REM ende
 
 	REM anfang ################### PROJEKTE: not Active #################
 
@@ -646,21 +630,6 @@ REM for %%z in ( 1 10 2 ) do (
 
 	REM ende ################### PROJEKTE: not Active #################
 
-	REM 99 anfang TEMPORARY CALCULATIONS
-	if %%z equ 99 (
-		REM goto :takeTime
-		set proj_Num=Test
-		set interval=1012 10 1012
-		set interval2=1 1 1
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=0
-		REM set execute=0
-		REM set sourcePre=R:\maharjan
-	)
-	REM ende
 
 	REM ==================================================================================================
 	REM ende Projekte
