@@ -41,9 +41,8 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-REM for %%z in ( 7 8 9 ) do (
-for %%z in ( 12 ) do (
-REM for %%z in ( 1 10 2 ) do (
+for %%z in ( 18 ) do (
+REM for %%z in ( 12 13 14 15 16 17 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -96,101 +95,101 @@ REM for %%z in ( 1 10 2 ) do (
 	)
 	REM ende
 
-	REM anfang 4 - ------ - Rollengehäuse
-	if %%z equ 4 (
-		REM goto :takeTime
-		set proj_Num=292715
-		set interval=4101 1 4101
-		set interval2=21 1 27
+	REM REM anfang 4 - ------ - Rollengehäuse
+	REM if %%z equ 4 (
+		REM REM goto :takeTime
+		REM set proj_Num=292715
+		REM set interval=4101 1 4101
+		REM set interval2=21 1 27
 
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=0
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM ende
+		REM REM set append=1
+		REM REM set pathBefore=D:
+		REM REM set pathAfter=ANSYS
+		REM REM set redirect=0
+		REM REM set execute=1
+		REM REM set sourcePre=R:\maharjan
+	REM )
+	REM REM ende
 
-	REM anfang 5 - ------ - Rollengehäuse
-	if %%z equ 5 (
-		REM goto :takeTime
-		set proj_Num=292715
-		set interval=4111 1 4111
-		set interval2=21 1 27
+	REM REM anfang 5 - ------ - Rollengehäuse
+	REM if %%z equ 5 (
+		REM REM goto :takeTime
+		REM set proj_Num=292715
+		REM set interval=4111 1 4111
+		REM set interval2=21 1 27
 
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=0
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM ende
+		REM REM set append=1
+		REM REM set pathBefore=D:
+		REM REM set pathAfter=ANSYS
+		REM REM set redirect=0
+		REM REM set execute=1
+		REM REM set sourcePre=R:\maharjan
+	REM )
+	REM REM ende
 
-	REM anfang 6 - ------ - Rollengehäuse
-	if %%z equ 6 (
-		REM goto :takeTime
-		set proj_Num=292715
-		set interval=4001 1 4001
-		set interval2=51 1 57
+	REM REM anfang 6 - ------ - Rollengehäuse
+	REM if %%z equ 6 (
+		REM REM goto :takeTime
+		REM set proj_Num=292715
+		REM set interval=4001 1 4001
+		REM set interval2=51 1 57
 
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=0
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM ende
+		REM REM set append=1
+		REM REM set pathBefore=D:
+		REM REM set pathAfter=ANSYS
+		REM REM set redirect=0
+		REM REM set execute=1
+		REM REM set sourcePre=R:\maharjan
+	REM )
+	REM REM ende
 
-	REM anfang 7 - ------ - Rollengehäuse
-	if %%z equ 7 (
-		REM goto :takeTime
-		set proj_Num=292715
-		set interval=4011 1 4011
-		set interval2=51 1 57
+	REM REM anfang 7 - ------ - Rollengehäuse
+	REM if %%z equ 7 (
+		REM REM goto :takeTime
+		REM set proj_Num=292715
+		REM set interval=4011 1 4011
+		REM set interval2=51 1 57
 
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=0
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM ende
+		REM REM set append=1
+		REM REM set pathBefore=D:
+		REM REM set pathAfter=ANSYS
+		REM REM set redirect=0
+		REM REM set execute=1
+		REM REM set sourcePre=R:\maharjan
+	REM )
+	REM REM ende
 
-	REM anfang 8 - ------ - Rollengehäuse
-	if %%z equ 8 (
-		REM goto :takeTime
-		set proj_Num=292715
-		set interval=4101 1 4101
-		set interval2=51 1 57
+	REM REM anfang 8 - ------ - Rollengehäuse
+	REM if %%z equ 8 (
+		REM REM goto :takeTime
+		REM set proj_Num=292715
+		REM set interval=4101 1 4101
+		REM set interval2=51 1 57
 
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=0
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM ende
+		REM REM set append=1
+		REM REM set pathBefore=D:
+		REM REM set pathAfter=ANSYS
+		REM REM set redirect=0
+		REM REM set execute=1
+		REM REM set sourcePre=R:\maharjan
+	REM )
+	REM REM ende
 
-	REM anfang 9 - ------ - Rollengehäuse
-	if %%z equ 9 (
-		REM goto :takeTime
-		set proj_Num=292715
-		set interval=4111 1 4111
-		set interval2=51 1 57
+	REM REM anfang 9 - ------ - Rollengehäuse
+	REM if %%z equ 9 (
+		REM REM goto :takeTime
+		REM set proj_Num=292715
+		REM set interval=4111 1 4111
+		REM set interval2=51 1 57
 
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=0
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM ende
+		REM REM set append=1
+		REM REM set pathBefore=D:
+		REM REM set pathAfter=ANSYS
+		REM REM set redirect=0
+		REM REM set execute=1
+		REM REM set sourcePre=R:\maharjan
+	REM )
+	REM REM ende
 
 	REM anfang 10 - D-768 - Haltevorrichtung
 	if %%z equ 10 (
@@ -228,13 +227,17 @@ REM for %%z in ( 1 10 2 ) do (
 	if %%z equ 12 (
 		REM goto :takeTime
 		set proj_Num=290515
-		set interval=1001 1 1001
-		set interval2=14 1 14
+
+		set interval=1000 1 1009
+		set interval2=14 1 15
+
+		REM set interval=1001 1 1001
+		REM set interval2=15 1 15
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=0
+		REM set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -244,7 +247,7 @@ REM for %%z in ( 1 10 2 ) do (
 	if %%z equ 13 (
 		REM goto :takeTime
 		set proj_Num=290515
-		set interval=1100 1 1112
+		set interval=1101 1 1109
 		set interval2=14 1 15
 
 		REM set append=1
@@ -256,6 +259,85 @@ REM for %%z in ( 1 10 2 ) do (
 	)
 	REM REM ende
 
+	REM REM anfang 14 - 290515 - S-994 SSW Volume
+	if %%z equ 14 (
+		REM goto :takeTime
+		set proj_Num=290515
+		set interval=1006 1 1008
+		set interval2=13 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 15 - 290515 - S-994 SSW Volume
+	if %%z equ 15 (
+		REM goto :takeTime
+		set proj_Num=290515
+		set interval=1109 1 1109
+		set interval2=13 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 16 - 290515 - S-994 SSW Volume
+	if %%z equ 16 (
+		REM goto :takeTime
+		set proj_Num=290515
+		set interval=1007 1 1012
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 17 - 290515 - S-994 SSW Volume
+	if %%z equ 17 (
+		REM goto :takeTime
+		set proj_Num=290515
+		set interval=1101 1 1112
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 18 - 293715 - --- Spreizeinheit
+	if %%z equ 18 (
+		REM goto :takeTime
+		set proj_Num=293715
+		set interval=1000 1 1000
+		set interval2=1 1 1
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
 
 
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
@@ -298,38 +380,6 @@ REM for %%z in ( 1 10 2 ) do (
 			set proj_Num=287915
 			set interval=1119 10 1199
 			set interval2=1 2 3
-
-			REM set append=1
-			REM set pathBefore=D:
-			REM set pathAfter=ANSYS
-			REM set redirect=0
-			REM set execute=1
-			REM set sourcePre=R:\maharjan
-		)
-		REM ende
-
-		REM anfang 53 - 290515 - Eppenbergtunnel
-		if %%z equ 53 (
-			REM goto :takeTime
-			set proj_Num=290515
-			set interval=1009 10 1099
-			set interval2=1 1 4
-
-			REM set append=1
-			REM set pathBefore=D:
-			REM set pathAfter=ANSYS
-			REM set redirect=0
-			REM set execute=1
-			REM set sourcePre=R:\maharjan
-		)
-		REM ende
-
-		REM anfang 54 - 290515 - Eppenbergtunnel -ver Verformung
-		if %%z equ 54 (
-			REM goto :takeTime
-			set proj_Num=290515
-			set interval=1119 10 1199
-			set interval2=1 1 4
 
 			REM set append=1
 			REM set pathBefore=D:
