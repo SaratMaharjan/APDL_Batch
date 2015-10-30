@@ -7,7 +7,7 @@ setlocal EnableDelayedExpansion
 REM anfang Selecting Licenses
 	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 		REM	1.	Structural4core		2.	Structural2core		3.	Prfnls		4.	Stba		6.	Prepost
-	set startValue=3
+	set startValue=2
 	set endValue=!startValue!
 	REM set endValue=4
 REM ende
@@ -327,8 +327,8 @@ REM for %%z in ( 12 13 14 15 16 17 ) do (
 	if %%z equ 18 (
 		REM goto :takeTime
 		set proj_Num=293715
-		set interval=1000 1 1000
-		set interval2=1 1 1
+		set interval=2000 1 2000
+		set interval2=21 10 21
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -344,8 +344,8 @@ REM for %%z in ( 12 13 14 15 16 17 ) do (
 	if %%z equ 99 (
 		REM goto :takeTime
 		set proj_Num=Test
-		set interval=1012 10 1012
-		set interval2=1 1 1
+		set interval=1000 10 1000
+		set interval2=51 20 51
 
 		REM set append=1
 		REM set pathBefore=D:
