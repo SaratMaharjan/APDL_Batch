@@ -7,15 +7,15 @@ setlocal EnableDelayedExpansion
 REM anfang Selecting Licenses
 	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 		REM	1.	Structural4core		2.	Structural2core		3.	Prfnls		4.	Stba		6.	Prepost
-	set startValue=2
+	set startValue=3
 	set endValue=!startValue!
 	REM set endValue=4
 REM ende
 
 REM anfang select drive and Initial Values
 	REM 1: x: and file; 2: s: and file2
-	set d=1
-	REM set d=2
+	REM set d=1
+	set d=2
 
 	REM path after and before Project Name + append to BAT
 		hostname.exe>hostname.txt
@@ -41,7 +41,7 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 18 ) do (
+for %%z in ( 19 ) do (
 REM for %%z in ( 12 13 14 15 16 17 ) do (
 
 	REM anfang Projekte
@@ -327,8 +327,24 @@ REM for %%z in ( 12 13 14 15 16 17 ) do (
 	if %%z equ 18 (
 		REM goto :takeTime
 		set proj_Num=293715
-		set interval=2000 1 2000
-		set interval2=21 10 21
+		set interval=3000 1 3000
+		set interval2=1 10 1
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 19 - 294215 - S-955 Anhänglasche
+	if %%z equ 19 (
+		REM goto :takeTime
+		set proj_Num=294215
+		set interval=1000 1 1000
+		set interval2=1 10 1
 
 		REM set append=1
 		REM set pathBefore=D:
