@@ -41,7 +41,7 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 19 ) do (
+for %%z in ( 20 ) do (
 REM for %%z in ( 12 13 14 15 16 17 ) do (
 
 	REM anfang Projekte
@@ -345,6 +345,22 @@ REM for %%z in ( 12 13 14 15 16 17 ) do (
 		set proj_Num=294215
 		set interval=1000 1 1000
 		set interval2=1 10 1
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=0
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 20 - 294515 - S-454.1 Schneidrad
+	if %%z equ 20 (
+		REM goto :takeTime
+		set proj_Num=294515
+		set interval=1002 1 1002
+		set interval2=1 1 4
 
 		REM set append=1
 		REM set pathBefore=D:
