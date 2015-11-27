@@ -18,20 +18,18 @@ for /l %%c in ( 1 1 6 ) do (
 		
 		REM licenses anfang
 			REM echo %%r
-			set numPro=2
+			set numPro=!numPro!
+
 			if %%r equ 1 (
 				set ansj=struct
-				set numPro=4
 			) else if %%r equ 2 (
-				set ansj=struct
-			) else if %%r equ 3 (
 				set ansj=prfnls
-			) else if %%r equ 4 (
+			) else if %%r equ 3 (
 				set ansj=stba
-			) else if %%r equ 5 (
-				set ansj=ansys
-			) else (
+			) else if %%r equ 4 (
 				set ansj=preppost
+			) else (
+				set ansj=ansys
 			)
 
 			echo License: !ansj!
