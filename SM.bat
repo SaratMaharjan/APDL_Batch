@@ -8,7 +8,7 @@ REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 		REM
 		REM	1.	Structural		2.	Prfnls		3.	Stba		4.	Prepost
-	set startValue=3
+	set startValue=1
 	set endValue=!startValue!
 	REM set endValue=4
 
@@ -17,7 +17,7 @@ REM anfang Selecting Licenses and Processors
 
 REM ende
 
-REM anfang select drive and Initial Values
+REM anfang Select Drive and Initial Values, File Name
 	REM 1: x: and file; 2: s: and file2
 	set d=1
 	REM set d=2
@@ -39,7 +39,7 @@ REM anfang select drive and Initial Values
 		)
 REM ende
 
-REM anfang Redirect/execute or NOT
+REM anfang Defaults for redirect/execute
 	set redirect=0
 	set execute=1
 REM ende
@@ -56,7 +56,7 @@ REM for %%z in ( 2 3 ) do (
 	if %%z equ 1 (
 		REM goto :takeTime
 		set proj_Num=293715
-		set interval=6000 1 6000
+		set interval=7000 1 7000
 		set interval2=1 10 1
 
 		REM set append=1
