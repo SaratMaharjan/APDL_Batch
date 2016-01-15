@@ -45,6 +45,13 @@ if not "%proj_Num2%" == "" (
 	REM echo Default Project  : !proj_Num!
 )
 
+set /p proj_sub=Enter The SubFolder (Folder, default: %pathAfter%):%=%
+if not "%proj_sub%" == "" (
+	REM echo Project : %proj_sub%
+	set pathAfter=%proj_sub%
+	echo.
+)
+
 set /p r=Enter License to Use (1 (default): prepost, 2: struct, 3: prfnls):%=%
 set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
 

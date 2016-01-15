@@ -8,7 +8,7 @@ REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 		REM
 		REM	1.	Structural		2.	Prfnls		3.	Stba		4.	Prepost
-	set startValue=1
+	set startValue=2
 	set endValue=!startValue!
 	REM set endValue=4
 
@@ -46,8 +46,8 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 1 ) do (
-REM for %%z in ( 2 3 ) do (
+for %%z in ( 10 ) do (
+REM for %%z in ( 7 8 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -148,13 +148,79 @@ REM for %%z in ( 2 3 ) do (
 	)
 	REM REM ende
 
+	REM REM anfang 7 - 286715 - S-1012 Bözberg
+	if %%z equ 7 (
+		REM goto :takeTime
+		set proj_Num=286715
+		set interval=1000 10 1000
+		REM set interval=1050 10 1090
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 8 - 286715 - S-1012 Bözberg -ve
+	if %%z equ 8 (
+		REM goto :takeTime
+		set proj_Num=286715
+		set interval=1110 10 1190
+		REM set interval=1110 10 1150
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 9 - 286715 - S-1012 Bözberg Special
+	if %%z equ 9 (
+		REM goto :takeTime
+		set proj_Num=286715
+		set interval=1110 10 1110
+		set interval2=12 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 10 - 295815 - S-738 Förderschnecke
+	if %%z equ 10 (
+		REM goto :takeTime
+		set proj_Num=295815
+		set interval=2 1000 1002
+		set interval2=1 10 11
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
 
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
 	if %%z equ 99 (
 		REM goto :takeTime
 		set proj_Num=Test
 		set interval=2000 1 2000
-		set interval2=1 1 1
+		set interval2=71 10 71
 
 		REM set append=1
 		REM set pathBefore=D:
