@@ -7,7 +7,7 @@ setlocal EnableDelayedExpansion
 REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 		REM
-		REM	1.	Structural		2.	Prfnls		3.	Stba		4.	Prepost
+		REM	1.	Structural/ANSYS		2.	Prfnls		3.	Stba/MEBA		4.	Prepost
 	set startValue=2
 	set endValue=!startValue!
 	REM set endValue=4
@@ -46,7 +46,7 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 10 ) do (
+for %%z in ( 13 14 ) do (
 REM for %%z in ( 7 8 ) do (
 
 	REM anfang Projekte
@@ -148,10 +148,10 @@ REM for %%z in ( 7 8 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 7 - 286715 - S-1012 Bözberg
+	REM REM anfang 7 - 296316 - S-1012 Bözberg
 	if %%z equ 7 (
 		REM goto :takeTime
-		set proj_Num=286715
+		set proj_Num=296316
 		set interval=1000 10 1000
 		REM set interval=1050 10 1090
 		set interval2=11 1 12
@@ -165,10 +165,10 @@ REM for %%z in ( 7 8 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 8 - 286715 - S-1012 Bözberg -ve
+	REM REM anfang 8 - 296316 - S-1012 Bözberg -ve
 	if %%z equ 8 (
 		REM goto :takeTime
-		set proj_Num=286715
+		set proj_Num=296316
 		set interval=1110 10 1190
 		REM set interval=1110 10 1150
 		set interval2=11 1 12
@@ -182,10 +182,10 @@ REM for %%z in ( 7 8 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 9 - 286715 - S-1012 Bözberg Special
+	REM REM anfang 9 - 296316 - S-1012 Bözberg Special
 	if %%z equ 9 (
 		REM goto :takeTime
-		set proj_Num=286715
+		set proj_Num=296316
 		set interval=1110 10 1110
 		set interval2=12 1 12
 
@@ -202,8 +202,8 @@ REM for %%z in ( 7 8 ) do (
 	if %%z equ 10 (
 		REM goto :takeTime
 		set proj_Num=295815
-		set interval=2 1000 1002
-		set interval2=1 10 11
+		set interval=3 1000 3
+		set interval2=31 10 31
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -213,6 +213,71 @@ REM for %%z in ( 7 8 ) do (
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
+
+	REM REM anfang 11 - 296516 - Gubristtunnel SSW
+	if %%z equ 11 (
+		REM goto :takeTime
+		set proj_Num=296516
+		set interval=1000 10 1090
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 12 - 296516 - Gubristtunnel SSW -ve
+	if %%z equ 12 (
+		REM goto :takeTime
+		set proj_Num=296516
+		set interval=1110 10 1190
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 13 - 296816 - S1018-19
+	if %%z equ 13 (
+		REM goto :takeTime
+		set proj_Num=296816
+		set interval=1000 10 1090
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 14 - 296816 - S1018-19 -ve
+	if %%z equ 14 (
+		REM goto :takeTime
+		set proj_Num=296816
+		set interval=1110 10 1190
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
 
 
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§

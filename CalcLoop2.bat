@@ -17,13 +17,15 @@ for /l %%c in (1 1 100)  do (
 			set numPro=4
 		)
 		if %%r equ 2 (
-			set ansj=struct
+			REM set ansj=struct
+			set ansj=ansys
 		)
 		if %%r equ 3 (
 			set ansj=prfnls
 		)
 		if %%r equ 4 (
-			set ansj=stba
+			REM set ansj=stba
+			set ansj=meba
 		)
 		if %%r equ 5 (
 			set ansj=ansys

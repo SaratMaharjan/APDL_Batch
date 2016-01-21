@@ -21,11 +21,13 @@ for /l %%c in ( 1 1 6 ) do (
 			set numPro=!numPro!
 
 			if %%r equ 1 (
-				set ansj=struct
+				REM set ansj=struct
+				set ansj=ansys
 			) else if %%r equ 2 (
 				set ansj=prfnls
 			) else if %%r equ 3 (
-				set ansj=stba
+				REM set ansj=stba
+				set ansj=meba
 			) else if %%r equ 4 (
 				set ansj=preppost
 			) else (

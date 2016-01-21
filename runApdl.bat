@@ -57,7 +57,8 @@ set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):
 
 set ansj=preppost
 if "%r%" equ "2" (
-	set ansj=struct
+	REM set ansj=struct
+	set ansj=ansys
 )
 if "%r%" equ "3" (
 	set ansj=prfnls
