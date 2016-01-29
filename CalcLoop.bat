@@ -70,6 +70,7 @@ for /l %%c in ( 1 1 6 ) do (
 
 		call Timer.bat StopTimer
 		call Timer.bat DisplayTimerResult
+		echo                        +++++++ Time Required: !tCalc! Seconds +++++++ >> !wDir!\smAPDL.bat
 		REM echo Time Used: !elTime!
 		REM set tim=!tCalc!
 		REM echo !tim!

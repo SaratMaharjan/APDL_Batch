@@ -46,8 +46,8 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 13 14 ) do (
-REM for %%z in ( 7 8 ) do (
+for %%z in ( 4 5 ) do (
+REM for %%z in ( 17 18 15 16 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -104,7 +104,7 @@ REM for %%z in ( 7 8 ) do (
 	if %%z equ 4 (
 		REM goto :takeTime
 		set proj_Num=294815
-		set interval=1020 10 1090
+		set interval=1000 10 1090
 		set interval2=11 1 14
 
 		REM set append=1
@@ -120,13 +120,13 @@ REM for %%z in ( 7 8 ) do (
 	if %%z equ 5 (
 		REM goto :takeTime
 		set proj_Num=294815
-		set interval=1110 10 1110
+		set interval=1110 10 1190
 		set interval2=11 1 14
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=0
+		REM set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -251,7 +251,7 @@ REM for %%z in ( 7 8 ) do (
 		REM goto :takeTime
 		set proj_Num=296816
 		set interval=1000 10 1090
-		set interval2=11 1 14
+		set interval2=15 1 15
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -267,7 +267,7 @@ REM for %%z in ( 7 8 ) do (
 		REM goto :takeTime
 		set proj_Num=296816
 		set interval=1110 10 1190
-		set interval2=11 1 14
+		set interval2=15 1 15
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -278,6 +278,85 @@ REM for %%z in ( 7 8 ) do (
 	)
 	REM REM ende
 
+	REM REM anfang 15 - 294115 - S900 VOLU SSW
+	if %%z equ 15 (
+		REM goto :takeTime
+		set proj_Num=294115
+		set interval=1010 10 1010
+		set interval2=11 1 11
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 16 - 294115 - S900 VOLU SSW -ve
+	if %%z equ 16 (
+		REM goto :takeTime
+		set proj_Num=294115
+		set interval=1110 10 1190
+		set interval2=11 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 17 - 297116 - S977 SSW
+	if %%z equ 17 (
+		REM goto :takeTime
+		set proj_Num=297116
+		set interval=1000 10 1090
+		set interval2=11 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 18 - 297116 - S977 SSW -ve
+	if %%z equ 18 (
+		REM goto :takeTime
+		set proj_Num=297116
+		set interval=1110 10 1190
+		set interval2=11 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 20 - 294115a - S900 FULL EW
+	if %%z equ 20 (
+		REM goto :takeTime
+		set proj_Num=294115a
+		set interval=1010 10 1010
+		set interval2=11 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
 
 
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
