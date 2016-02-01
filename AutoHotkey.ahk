@@ -28,14 +28,14 @@ return
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "E:\Installs\Notepad++\notepad++.exe"
 	} else {
-		Run "D:\Maharjan\Notepad++\notepad++.exe"
+		Run "E:\Maharjan\Notepad++\notepad++.exe"
 	}
 return
 #v::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "E:\SM\VIMinstall\Vim\vim74\gvim.exe"
 	} else if (InStr(A_ComputerName,"ANSYS2")) {
-		Run "D:\maharjan\VIMinstall\Vim\vim74\gvim.exe"
+		Run "E:\maharjan\VIMinstall\Vim\vim74\gvim.exe"
 	} else {
 		Run "C:\Users\Sarat\Dropbox\VimInstall\Vim\vim74\gvim.exe"
 	}
@@ -44,28 +44,28 @@ return
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "D:\zCore\setnetUse.bat"
 	} else {
-		Run "D:\maharjan\setnetUse.bat"
+		Run "E:\maharjan\setnetUse.bat"
 	}
 return
 #w::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "D:\zCore\runAnsys.bat"
 	} else {
-		Run "D:\maharjan\runAnsys.bat"
+		Run "E:\maharjan\runAnsys.bat"
 	}
 return
 #q::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "D:\zCore\runAnsysE.bat"
 	} else {
-		Run "D:\maharjan\runAnsysE.bat"
+		Run "E:\maharjan\runAnsysE.bat"
 	}
 return
 #!r::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "D:\zCore\SM.bat"
 	} else {
-		Run "D:\maharjan\SM.bat"
+		Run "E:\maharjan\SM.bat"
 	}
 return
 #y::
@@ -86,6 +86,7 @@ return
 #b:: Run "R:\ansys\macros"
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 #.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
+#ß:: Run "\\ansys2\Maharjan"
 
 ;ende Local Locations
 

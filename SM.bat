@@ -30,7 +30,7 @@ REM anfang Select Drive and Initial Values, File Name
 		set append=1
 		if "!host!" equ "ansys2" (
 			set sourcePre=R:\maharjan
-			set pathBefore=D:\maharjan
+			set pathBefore=E:\Maharjan
 			set pathAfter=ANSYS
 		) else (
 			set sourcePre=R:\maharjan
@@ -46,8 +46,8 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 4 5 ) do (
-REM for %%z in ( 17 18 15 16 ) do (
+REM for %%z in ( 5 ) do (
+for %%z in ( 15 16 17 18 ) do (
 
 	REM anfang Projekte
 	REM ==================================================================================================
@@ -121,7 +121,7 @@ REM for %%z in ( 17 18 15 16 ) do (
 		REM goto :takeTime
 		set proj_Num=294815
 		set interval=1110 10 1190
-		set interval2=11 1 14
+		set interval2=11 2 13
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -282,8 +282,8 @@ REM for %%z in ( 17 18 15 16 ) do (
 	if %%z equ 15 (
 		REM goto :takeTime
 		set proj_Num=294115
-		set interval=1010 10 1010
-		set interval2=11 1 11
+		set interval=1010 10 1090
+		set interval2=11 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
