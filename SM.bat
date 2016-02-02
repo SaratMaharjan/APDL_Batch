@@ -8,7 +8,7 @@ REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 		REM
 		REM	1.	Structural/ANSYS		2.	Prfnls		3.	Stba/MEBA		4.	Prepost
-	set startValue=2
+	set startValue=3
 	set endValue=!startValue!
 	REM set endValue=4
 
@@ -46,10 +46,10 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-REM for %%z in ( 5 ) do (
-for %%z in ( 15 16 17 18 ) do (
+for %%z in ( 16 21 ) do (
+REM for %%z in ( 15 16 17 18 ) do (
 
-	REM anfang Projekte
+	REM anfang Projekte (Active: 1-50)
 	REM ==================================================================================================
 
 	REM REM anfang 1 - 293715 - --- Spreizeinheit
@@ -84,33 +84,17 @@ for %%z in ( 15 16 17 18 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 3 - 294915 - S-980 Muckring
-	if %%z equ 3 (
-		REM goto :takeTime
-		set proj_Num=294915
-		set interval=1001 1 1001
-		set interval2=1 1 1
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
 	REM REM anfang 4 - 294815 - S-1007 SSW
 	if %%z equ 4 (
 		REM goto :takeTime
 		set proj_Num=294815
-		set interval=1000 10 1090
-		set interval2=11 1 14
+		set interval=1090 10 1090
+		set interval2=12 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=0
+		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -120,13 +104,13 @@ for %%z in ( 15 16 17 18 ) do (
 	if %%z equ 5 (
 		REM goto :takeTime
 		set proj_Num=294815
-		set interval=1110 10 1190
-		set interval2=11 2 13
+		set interval=1110 10 1110
+		set interval2=14 2 14
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -298,8 +282,8 @@ for %%z in ( 15 16 17 18 ) do (
 	if %%z equ 16 (
 		REM goto :takeTime
 		set proj_Num=294115
-		set interval=1110 10 1190
-		set interval2=11 1 13
+		set interval=1180 10 1180
+		set interval2=12 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -358,6 +342,22 @@ for %%z in ( 15 16 17 18 ) do (
 	)
 	REM REM ende
 
+	REM REM anfang 21 - 294115 - S900 VOLU SSW -ve
+	if %%z equ 21 (
+		REM goto :takeTime
+		set proj_Num=294115
+		set interval=1190 10 1190
+		set interval2=11 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
 
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
 	if %%z equ 99 (
@@ -375,7 +375,7 @@ for %%z in ( 15 16 17 18 ) do (
 	)
 	REM ende -----------------------------------------------------------
 
-	REM anfang ################### PROJEKTE: not Active #################
+	REM anfang ################### PROJEKTE: not Active (ab 51) #################
 
 	REM anfang 51 - D-768 - Haltevorrichtung
 	if %%z equ 51 (
