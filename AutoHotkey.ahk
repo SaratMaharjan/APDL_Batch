@@ -21,7 +21,7 @@
 	if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
 		run "R:\Maharjan"
 	} else {
-		run "C:\__Drive__"
+		run "C:\_________Drive"
 	}
 return
 #n::
