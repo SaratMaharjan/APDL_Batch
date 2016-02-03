@@ -8,7 +8,7 @@ REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 		REM
 		REM	1.	Structural/ANSYS		2.	Prfnls		3.	Stba/MEBA		4.	Prepost
-	set startValue=3
+	set startValue=2
 	set endValue=!startValue!
 	REM set endValue=4
 
@@ -46,8 +46,8 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 16 21 ) do (
-REM for %%z in ( 15 16 17 18 ) do (
+REM for %%z in ( 15 ) do (
+for %%z in ( 31 32 33 34 ) do (
 
 	REM anfang Projekte (Active: 1-50)
 	REM ==================================================================================================
@@ -230,43 +230,11 @@ REM for %%z in ( 15 16 17 18 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 13 - 296816 - S1018-19
-	if %%z equ 13 (
-		REM goto :takeTime
-		set proj_Num=296816
-		set interval=1000 10 1090
-		set interval2=15 1 15
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 14 - 296816 - S1018-19 -ve
-	if %%z equ 14 (
-		REM goto :takeTime
-		set proj_Num=296816
-		set interval=1110 10 1190
-		set interval2=15 1 15
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
 	REM REM anfang 15 - 294115 - S900 VOLU SSW
 	if %%z equ 15 (
 		REM goto :takeTime
 		set proj_Num=294115
-		set interval=1010 10 1090
+		set interval=1011 10 1011
 		set interval2=11 1 13
 
 		REM set append=1
@@ -326,12 +294,12 @@ REM for %%z in ( 15 16 17 18 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 20 - 294115a - S900 FULL EW
-	if %%z equ 20 (
+	REM REM anfang 25 - 9999
+	if %%z equ 25 (
 		REM goto :takeTime
-		set proj_Num=294115a
-		set interval=1010 10 1010
-		set interval2=11 1 13
+		set proj_Num=9999
+		set interval=9010 10 9010
+		set interval2=11 1 11
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -342,12 +310,76 @@ REM for %%z in ( 15 16 17 18 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 21 - 294115 - S900 VOLU SSW -ve
-	if %%z equ 21 (
+	REM REM anfang 26 - 9999
+	if %%z equ 26 (
 		REM goto :takeTime
-		set proj_Num=294115
-		set interval=1190 10 1190
-		set interval2=11 1 13
+		set proj_Num=9999
+		set interval=9010 10 9010
+		set interval2=11 1 11
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 31 - 296816 - S1018-19
+	if %%z equ 31 (
+		REM goto :takeTime
+		set proj_Num=296816
+		set interval=1000 10 1090
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 32 - 296816 - S1018-19 -ve
+	if %%z equ 32 (
+		REM goto :takeTime
+		set proj_Num=296816
+		set interval=1110 10 1190
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 33 - 296816 - S1018-19
+	if %%z equ 33 (
+		REM goto :takeTime
+		set proj_Num=296816
+		set interval=1001 10 1091
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 34 - 296816 - S1018-19 -ve
+	if %%z equ 34 (
+		REM goto :takeTime
+		set proj_Num=296816
+		set interval=1111 10 1191
+		set interval2=11 1 14
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -464,7 +496,7 @@ REM anfang NO NEED to CHANGE BELOW
 		echo.> !wDir!\smAPDL.bat
 	)
 
-	set todayNow=On %date:~6,4%-%date:~3,2%-%date:~0,2% at %time:~0,2%:%time:~3,2%
+	set todayNow=On %date:~0,2%.%date:~3,2%.%date:~6,4% at %time:~0,2%:%time:~3,2%
 	echo *set,hostname,'!host!' > !wDir!\host.csv
 	echo REM ------------------- >> !wDir!\smAPDL.bat
 	echo REM                          ___!todayNow!___ >> !wDir!\smAPDL.bat
