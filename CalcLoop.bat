@@ -4,8 +4,8 @@ REM call:%*
 echo ---------------STARTING CALCULATION------------------
 del !wDir!\*.lock
 
-for /l %%c in ( 1 1 6 ) do (
-	REM call Timer.bat StartTimer
+for /l %%c in ( 1 1 5 ) do (
+	REM call timer.bat StartTimer
 	echo.
 	REM set tBackUp=!Start100S!
 	echo. Starting License Loop
@@ -40,7 +40,7 @@ for /l %%c in ( 1 1 6 ) do (
 			echo source %d% : !location!
 		REM licenses ende
 
-		call Timer.bat StartTimer
+		call timer.bat StartTimer
 		(echo 0) > !wDir!\license.txt
 
 	REM anfang Call ANSYS
@@ -68,8 +68,8 @@ for /l %%c in ( 1 1 6 ) do (
 
 		REM timeout /t 10
 
-		call Timer.bat StopTimer
-		call Timer.bat DisplayTimerResult
+		call timer.bat StopTimer
+		call timer.bat DisplayTimerResult
 		set /a mins=!tCalc!/60
 		echo                        REM +++++++ Time Required: !tCalc! Seconds OR !mins! Minutes +++++++ >> !wDir!\smAPDL.bat
 		REM echo Time Used: !elTime!
@@ -114,8 +114,8 @@ for /l %%c in ( 1 1 6 ) do (
 	echo.
 
 	REM set Start100S=!tBackUp!
-	REM call Timer.bat StopTimer
-	REM call Timer.bat DisplayTimerResult
+	REM call timer.bat StopTimer
+	REM call timer.bat DisplayTimerResult
 
 	REM if !tCalc! geq 15 (
 	if !inPrep! equ 1 (

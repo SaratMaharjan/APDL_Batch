@@ -4,10 +4,19 @@ echo Waiting Before Execution: %waitSec% Seconds
 timeout /t %waitSec%
 setlocal EnableDelayedExpansion
 
+REM anfang get HostName and define Initial File Name
+	REM Initial File Name: 1-file; 2-file2
+	set d=1
+	REM set d=2
+
+	hostname.exe>hostname.txt
+	set /p host=<hostname.txt
+	echo Hostname: !host!
+REM ende
+
 REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
-		REM
-		REM	1.	Structural/ANSYS		2.	Prfnls		3.	Stba/MEBA		4.	Prepost
+	REM	1.	Structural/ANSYS		2.	Prfnls		3.	Stba/MEBA		4.	Prepost
 	set startValue=2
 	set endValue=!startValue!
 	REM set endValue=4
@@ -17,17 +26,12 @@ REM anfang Selecting Licenses and Processors
 
 REM ende
 
-REM anfang Select Drive and Initial Values, File Name
-	REM 1: x: and file; 2: s: and file2
-	set d=1
-	REM set d=2
+REM for /l %%z in ( 1 1 9 ) do (
+REM for %%z in ( 99 ) do (
+REM for %%z in ( 15 ) do (
+for %%z in ( 34 ) do (
 
-	REM path after and before Project Name + append to BAT
-		hostname.exe>hostname.txt
-		set /p host=<hostname.txt
-		echo Hostname: !host!
-
-		set append=1
+REM anfang Select Drive and Initial Values
 		if "!host!" equ "ansys2" (
 			set sourcePre=R:\maharjan
 			set pathBefore=E:\Maharjan
@@ -37,17 +41,11 @@ REM anfang Select Drive and Initial Values, File Name
 			set pathBefore=D:
 			set pathAfter=ANSYS
 		)
+		set redirect=0
+		set execute=1
+		REM append=1:appends to bat file, else is overwritten
+		set append=1
 REM ende
-
-REM anfang Defaults for redirect/execute
-	set redirect=0
-	set execute=1
-REM ende
-
-REM for /l %%z in ( 1 1 9 ) do (
-REM for %%z in ( 99 ) do (
-REM for %%z in ( 15 ) do (
-for %%z in ( 31 32 33 34 ) do (
 
 	REM anfang Projekte (Active: 1-50)
 	REM ==================================================================================================
@@ -362,8 +360,8 @@ for %%z in ( 31 32 33 34 ) do (
 	if %%z equ 33 (
 		REM goto :takeTime
 		set proj_Num=296816
-		set interval=1001 10 1091
-		set interval2=11 1 14
+		set interval=1081 10 1091
+		set interval2=11 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -378,8 +376,8 @@ for %%z in ( 31 32 33 34 ) do (
 	if %%z equ 34 (
 		REM goto :takeTime
 		set proj_Num=296816
-		set interval=1111 10 1191
-		set interval2=11 1 14
+		set interval=1171 10 1191
+		set interval2=11 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -515,6 +513,9 @@ REM anfang NO NEED to CHANGE BELOW
 		echo JOB: !job!
 		@echo off
 		for /l %%n in (!interval2!) do (
+
+			(echo 0) > !wDir!\success.txt
+
 			set par=%%n
 			set num=2
 			call addZeros.bat :addZero
@@ -528,9 +529,12 @@ REM anfang NO NEED to CHANGE BELOW
 			echo LK: !lk!
 			echo __________Calling CALC.BAT__________ & echo. & echo.
 			@echo off
-			call CalcLoop.bat :calc
+			call calcLoop.bat :calc
 			REM timeout /t 10
-			REM call Delete.bat :delFiles
+			set /p succeed=<!wDir!\success.txt
+			REM if !succeed! equ 1 (
+				call deleteFiles.bat :delFiles
+			REM )
 			@echo on
 			echo ____________________________________
 			echo Job Finished.... ..... ............
