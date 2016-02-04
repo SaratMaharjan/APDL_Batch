@@ -376,7 +376,7 @@ REM ende
 	if %%z equ 34 (
 		REM goto :takeTime
 		set proj_Num=296816
-		set interval=1171 10 1191
+		set interval=1181 10 1191
 		set interval2=11 1 13
 
 		REM set append=1
@@ -485,8 +485,8 @@ REM anfang NO NEED to CHANGE BELOW
 
 	REM goto :takeTime
 
-	del !wDir!\*.abt
-	del !wDir!\*.lock
+	del !wDir!\*.abt >nul 2>&1
+	del !wDir!\*.lock >nul 2>&1
 
 	if !append! equ 1 (
 		echo.>> !wDir!\smAPDL.bat
