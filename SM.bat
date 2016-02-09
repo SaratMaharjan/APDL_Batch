@@ -15,9 +15,10 @@ REM anfang get HostName and define Initial File Name
 REM ende
 
 REM anfang Selecting Licenses and Processors
-	set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
+	REM set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
+	set appPath="C:\Program Files\ANSYS Inc\v170\ANSYS\bin\winx64\ansys170.exe"
 	REM	1.	Structural/ANSYS		2.	Prfnls		3.	Stba/MEBA		4.	Prepost
-	set startValue=2
+	set startValue=3
 	set endValue=!startValue!
 	REM set endValue=4
 
@@ -28,8 +29,8 @@ REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
 REM for %%z in ( 99 ) do (
-REM for %%z in ( 15 ) do (
-for %%z in ( 34 ) do (
+REM for %%z in ( 1 ) do (
+for %%z in ( 22 ) do (
 
 REM anfang Select Drive and Initial Values
 		if "!host!" equ "ansys2" (
@@ -232,14 +233,14 @@ REM ende
 	if %%z equ 15 (
 		REM goto :takeTime
 		set proj_Num=294115
-		set interval=1011 10 1011
+		set interval=9070 10 9070
 		set interval2=11 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
-		REM set execute=1
+		REM set execute=0
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
@@ -292,12 +293,12 @@ REM ende
 	)
 	REM REM ende
 
-	REM REM anfang 25 - 9999
-	if %%z equ 25 (
+	REM REM anfang 19 - 297116 - S977 SSW
+	if %%z equ 19 (
 		REM goto :takeTime
-		set proj_Num=9999
-		set interval=9010 10 9010
-		set interval2=11 1 11
+		set proj_Num=297116
+		set interval=4000 10 4090
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -308,17 +309,49 @@ REM ende
 	)
 	REM REM ende
 
-	REM REM anfang 26 - 9999
-	if %%z equ 26 (
+	REM REM anfang 20 - 297116 - S977 SSW -ve
+	if %%z equ 20 (
 		REM goto :takeTime
-		set proj_Num=9999
-		set interval=9010 10 9010
-		set interval2=11 1 11
+		set proj_Num=297116
+		set interval=4110 10 4190
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 21 - 297616 - Tel Aviv
+	if %%z equ 21 (
+		REM goto :takeTime
+		set proj_Num=297616
+		set interval=1000 10 1090
+		set interval2=11 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 22 - 297616 - Tel Aviv -ve
+	if %%z equ 22 (
+		REM goto :takeTime
+		set proj_Num=297616
+		set interval=1110 10 1110
+		set interval2=13 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -328,8 +361,8 @@ REM ende
 	if %%z equ 31 (
 		REM goto :takeTime
 		set proj_Num=296816
-		set interval=1000 10 1090
-		set interval2=11 1 14
+		set interval=1002 10 1092
+		set interval2=12 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -344,8 +377,8 @@ REM ende
 	if %%z equ 32 (
 		REM goto :takeTime
 		set proj_Num=296816
-		set interval=1110 10 1190
-		set interval2=11 1 14
+		set interval=1112 10 1192
+		set interval2=12 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -356,12 +389,12 @@ REM ende
 	)
 	REM REM ende
 
-	REM REM anfang 33 - 296816 - S1018-19
+	REM REM anfang 33 - 296816a - S295
 	if %%z equ 33 (
 		REM goto :takeTime
-		set proj_Num=296816
-		set interval=1081 10 1091
-		set interval2=11 1 13
+		set proj_Num=296816a
+		set interval=1000 10 1090 
+		set interval2=11 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -372,12 +405,12 @@ REM ende
 	)
 	REM REM ende
 
-	REM REM anfang 34 - 296816 - S1018-19 -ve
+	REM REM anfang 34 - 296816a - s295 -ve
 	if %%z equ 34 (
 		REM goto :takeTime
-		set proj_Num=296816
-		set interval=1181 10 1191
-		set interval2=11 1 13
+		set proj_Num=296816a
+		set interval=1110 10 1190
+		set interval2=11 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -392,9 +425,9 @@ REM ende
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
 	if %%z equ 99 (
 		REM goto :takeTime
-		set proj_Num=Test
-		set interval=2000 1 2000
-		set interval2=71 10 71
+		set proj_Num=VoluSSW
+		set interval=1000 1 1000
+		set interval2=11 10 11
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -485,9 +518,6 @@ REM anfang NO NEED to CHANGE BELOW
 
 	REM goto :takeTime
 
-	del !wDir!\*.abt >nul 2>&1
-	del !wDir!\*.lock >nul 2>&1
-
 	if !append! equ 1 (
 		echo.>> !wDir!\smAPDL.bat
 	) else (
@@ -549,6 +579,7 @@ REM anfang NO NEED to CHANGE BELOW
 REM ende NOT Needed TO CHANGE
 
  )
+
 endlocal
 goto :takeTime
 REM pause

@@ -2,7 +2,8 @@ REM call:%*
 
 :calc
 echo ---------------STARTING CALCULATION------------------
-del !wDir!\*.lock
+del !wDir!\*.lock >nul 2>&1
+del !wDir!\*.abt >nul 2>&1
 
 for /l %%c in ( 1 1 5 ) do (
 	REM call timer.bat StartTimer
