@@ -61,6 +61,13 @@ return
 		Run "E:\maharjan\runAnsysE.bat"
 	}
 return
+#+q::
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+		Run "D:\zCore\runAnsysR.bat"
+	} else {
+		Run "E:\maharjan\runAnsysR.bat"
+	}
+return
 #!r::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "D:\zCore\SM.bat"

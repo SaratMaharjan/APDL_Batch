@@ -30,6 +30,10 @@ setlocal EnableDelayedExpansion
 				set pathAfter=ANSYS
 			)
 		)
+		if %drive% equ 3 (
+			set pathBefore=\\ansys2\maharjan
+			set pathAfter=ANSYS
+		)
 
 REM set proj_Num="test"
 set /p proj_Num=<lastRun.txt
@@ -52,15 +56,15 @@ if not "%proj_sub%" == "" (
 	echo.
 )
 
-set /p r=Enter License to Use (1 (default): prepost, 2: struct, 3: prfnls):%=%
+set /p r=Enter License to Use (1: struct, 2: prflns, 4(default): prepost):%=%
 set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
 
 set ansj=preppost
-if "%r%" equ "2" (
+if "%r%" equ "1" (
 	REM set ansj=struct
 	set ansj=ansys
 )
-if "%r%" equ "3" (
+if "%r%" equ "2" (
 	set ansj=prfnls
 )
 

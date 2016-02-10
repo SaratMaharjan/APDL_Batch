@@ -3,51 +3,29 @@ set /a waitSec=3600*0/4
 echo Waiting Before Execution: %waitSec% Seconds
 timeout /t %waitSec%
 setlocal EnableDelayedExpansion
-
-REM anfang get HostName and define Initial File Name
-	REM Initial File Name: 1-file; 2-file2
-	set d=1
-	REM set d=2
-
-	hostname.exe>hostname.txt
-	set /p host=<hostname.txt
-	echo Hostname: !host!
-REM ende
+call first.bat
 
 REM anfang Selecting Licenses and Processors
 	REM set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 	set appPath="C:\Program Files\ANSYS Inc\v170\ANSYS\bin\winx64\ansys170.exe"
-	REM	1.	Structural/ANSYS		2.	Prfnls		3.	Stba/MEBA		4.	Prepost
-	set startValue=3
-	set endValue=!startValue!
-	REM set endValue=4
-
-	set numPro=2
-	REM set numPro=4
-
+	REM	1.Structural/ANSYS	2.Prfnls	3.Stba/MEBA	4.Prepost
+		set startValue=1
+		set endValue=!startValue!
+		REM set endValue=4
+	REM Number of Processors
+		set numPro=2
+		REM set numPro=4
+	REM Initial File Name: 1-file; 2-file2
+		set d=1
+		REM set d=2
 REM ende
 
 REM for /l %%z in ( 1 1 9 ) do (
-REM for %%z in ( 99 ) do (
+for %%z in ( 99 ) do (
 REM for %%z in ( 1 ) do (
-for %%z in ( 22 ) do (
+REM for %%z in ( 31 ) do (
 
-REM anfang Select Drive and Initial Values
-		if "!host!" equ "ansys2" (
-			set sourcePre=R:\maharjan
-			set pathBefore=E:\Maharjan
-			set pathAfter=ANSYS
-		) else (
-			set sourcePre=R:\maharjan
-			set pathBefore=D:
-			set pathAfter=ANSYS
-		)
-		set redirect=0
-		set execute=1
-		REM append=1:appends to bat file, else is overwritten
-		set append=1
-REM ende
-
+	call initials.bat
 	REM anfang Projekte (Active: 1-50)
 	REM ==================================================================================================
 
@@ -346,12 +324,12 @@ REM ende
 		REM goto :takeTime
 		set proj_Num=297616
 		set interval=1110 10 1110
-		set interval2=13 1 13
+		set interval2=11 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		set redirect=1
+		REM set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -361,13 +339,13 @@ REM ende
 	if %%z equ 31 (
 		REM goto :takeTime
 		set proj_Num=296816
-		set interval=1002 10 1092
-		set interval2=12 1 12
+		set interval=1012 10 1092
+		set interval2=14 1 14
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -493,91 +471,7 @@ REM ende
 
 	REM ==================================================================================================
 	REM ende Projekte
-
-REM anfang NO NEED to CHANGE BELOW
-
-	call %~dp0%l2cur.bat
-
-	REM if %d% equ 1 (
-		REM net use x: /dele /y
-		REM net use x: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
-		REM set "location=x:"
-	REM )
-	REM if %d% equ 2 (
-		REM net use s: /dele /y
-		REM net use s: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
-		REM set "location=s:"
-	REM )
-
-	set "location=!sourcePre!\!proj_Num!"
-	set "wDir=!pathBefore!\!proj_Num!\!pathAfter!"
-	echo.
-	echo Source Location: !location!
-	echo Working Location: !wDir!
-	echo.
-
-	REM goto :takeTime
-
-	if !append! equ 1 (
-		echo.>> !wDir!\smAPDL.bat
-	) else (
-		echo.> !wDir!\smAPDL.bat
-	)
-
-	set todayNow=On %date:~0,2%.%date:~3,2%.%date:~6,4% at %time:~0,2%:%time:~3,2%
-	echo *set,hostname,'!host!' > !wDir!\host.csv
-	echo REM ------------------- >> !wDir!\smAPDL.bat
-	echo REM                          ___!todayNow!___ >> !wDir!\smAPDL.bat
-	echo REM anfang New Analysis Cases >> !wDir!\smAPDL.bat
-
-	set ans_consec=YES
-	set ansys_lock=on
-
-	for /l %%m in (!interval!) do (
-		set par=%%m
-		set num=4
-		call addZeros.bat :addZero
-		set job=!par!
-		@echo on
-		echo.
-		echo JOB: !job!
-		@echo off
-		for /l %%n in (!interval2!) do (
-
-			(echo 0) > !wDir!\success.txt
-
-			set par=%%n
-			set num=2
-			call addZeros.bat :addZero
-			set lk=!par!
-			@echo on
-			echo.
-			echo ...
-			echo ......
-			echo New Job With
-			echo JOB: !job!
-			echo LK: !lk!
-			echo __________Calling CALC.BAT__________ & echo. & echo.
-			@echo off
-			call calcLoop.bat :calc
-			REM timeout /t 10
-			set /p succeed=<!wDir!\success.txt
-			REM if !succeed! equ 1 (
-				call deleteFiles.bat :delFiles
-			REM )
-			@echo on
-			echo ____________________________________
-			echo Job Finished.... ..... ............
-			echo ____________________________________
-			@echo off
-		)
-	)
-	echo. >> !wDir!\smAPDL.bat
-	echo REM ende New Analysis Cases >> !wDir!\smAPDL.bat
-	echo REM ------------------- >> !wDir!\smAPDL.bat
-
-REM ende NOT Needed TO CHANGE
-
+	call calc.bat
  )
 
 endlocal
