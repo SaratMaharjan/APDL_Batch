@@ -15,8 +15,7 @@ for /l %%c in ( 1 1 5 ) do (
 	set retry=%%c
 
 	for /l %%r in ( !startValue! 1 !endValue! ) do (
-	REM for %%r in ( 4 3 2 ) do (
-		
+
 		REM licenses anfang
 			REM echo %%r
 			set numPro=!numPro!

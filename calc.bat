@@ -1,8 +1,4 @@
 
-REM anfang NO NEED to CHANGE BELOW
-
-	call %~dp0%l2cur.bat
-
 	REM if %d% equ 1 (
 		REM net use x: /dele /y
 		REM net use x: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
@@ -67,9 +63,9 @@ REM anfang NO NEED to CHANGE BELOW
 			call calcLoop.bat :calc
 			REM timeout /t 10
 			set /p succeed=<!wDir!\success.txt
-			REM if !succeed! equ 1 (
+			if !succeed! equ 1 (
 				call deleteFiles.bat :delFiles
-			REM )
+			)
 			@echo on
 			echo ____________________________________
 			echo Job Finished.... ..... ............
@@ -80,6 +76,4 @@ REM anfang NO NEED to CHANGE BELOW
 	echo. >> !wDir!\smAPDL.bat
 	echo REM ende New Analysis Cases >> !wDir!\smAPDL.bat
 	echo REM ------------------- >> !wDir!\smAPDL.bat
-
-REM ende NOT Needed TO CHANGE
 

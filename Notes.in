@@ -1,0 +1,20 @@
+!1. Working Folders and Input Folder in initials.bat
+
+!2. at Beginning of s.in
+	inPrep=1
+	/output,license,txt
+		*vwrite,inPrep
+%1I
+	/output
+
+
+!3. at End of s.in before exiting
+	succeed=1
+	/output,success,txt
+		*vwrite,succeed
+%1I
+	/output
+
+!4. instead of /inp,file,in,x: --- use /inp,file,in,verz
+!									ALT:	%verz%/file.in
+
