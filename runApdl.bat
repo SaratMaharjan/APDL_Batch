@@ -6,6 +6,11 @@ if exist lastRun.txt (
 ) else (
 	echo "test"> lastRun.txt
 )
+if exist lastLic.txt (
+	echo "last license exists."
+) else (
+	echo "test"> lastLic.txt
+)
 
 setlocal EnableDelayedExpansion	
 
@@ -26,7 +31,7 @@ setlocal EnableDelayedExpansion
 				set pathBefore=D:
 				set pathAfter=ANSYS
 			) else (
-				set pathBefore=E:\_ANSYScalc
+				set pathBefore=E:
 				set pathAfter=ANSYS
 			)
 		)
@@ -56,10 +61,9 @@ if not "%proj_sub%" == "" (
 	echo.
 )
 
-set /p r=Enter License to Use (1: struct, 2: prflns, 4(default): prepost):%=%
-set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
-
-set ansj=preppost
+REM set ansj=preppost
+set /p ansj=<lastLic.txt
+set /p r=Enter License to Use (1: struct, 2: prflns, 3: prepost; default: %ansj%):%=%
 if "%r%" equ "1" (
 	REM set ansj=struct
 	set ansj=ansys
@@ -67,7 +71,12 @@ if "%r%" equ "1" (
 if "%r%" equ "2" (
 	set ansj=prfnls
 )
+if "%r%" equ "3" (
+	set ansj=preppost
+)
+(echo %ansj%) > lastLic.txt
 
+set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
 if not "%disp%" == "" (
 	echo Display Num: %disp%
 ) else (
