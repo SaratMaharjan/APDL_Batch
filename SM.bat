@@ -20,8 +20,8 @@ REM ende
 
 REM for /l %%z in ( 21 1 26 ) do (
 REM for %%z in ( 99 ) do (
-REM for %%z in ( 15 16 ) do (
-for %%z in ( 36 ) do (
+REM for %%z in ( 36 ) do (
+for %%z in ( 37 38 39 40 41 42 ) do (
 
 	call initials.bat
 	REM anfang Projekte (Active: 1-50)
@@ -465,13 +465,13 @@ for %%z in ( 36 ) do (
 	if %%z equ 36 (
 		REM goto :takeTime
 		set proj_Num=297716
-		set interval=2069 10 2099
-		set interval2=14 1 14
+		set interval=2099 10 2099
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -482,7 +482,7 @@ for %%z in ( 36 ) do (
 		REM goto :takeTime
 		set proj_Num=297716
 		set interval=2119 10 2199
-		set interval2=14 1 14
+		set interval2=11 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -515,6 +515,54 @@ for %%z in ( 36 ) do (
 		set proj_Num=297716
 		set interval=2119 10 2199
 		set interval2=21 1 22
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 40 - 297716 - s1001 Machine -ve
+	if %%z equ 40 (
+		REM goto :takeTime
+		set proj_Num=297716
+		set interval=2119 10 2199
+		set interval2=14 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 41 - 297716 - s1001 Machine
+	if %%z equ 41 (
+		REM goto :takeTime
+		set proj_Num=297716
+		set interval=2009 10 2099
+		set interval2=24 1 24
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 42 - 297716 - s1001 Machine -ve
+	if %%z equ 42 (
+		REM goto :takeTime
+		set proj_Num=297716
+		set interval=2119 10 2199
+		set interval2=24 1 24
 
 		REM set append=1
 		REM set pathBefore=D:
