@@ -459,29 +459,29 @@ Return
 
 ;ende External Commands
 
-~CapsLock::
-GetKeyState, state, CapsLock, T 
-if state = D ;  D=Caps is OFF, turn it ON
-{
-	   ;Progress, CWSilver CTGreen B2 ZH0 fs11 WS900 W1000 H28  X00 Y1050, CAPSLOCK ON
-	   Progress, CWfb7b55 CTfde3f9 B2 ZH0 fs11 WS900 W1000 H28 Y1050, CAPSLOCK ON
-}
-else if state = U ; U= Caps is ON, SET IT OFF
-	{
-	   Progress, Off
-	}
-return
+;~CapsLock::
+;GetKeyState, state, CapsLock, T 
+;if state = D ;  D=Caps is OFF, turn it ON
+;{
+	   ;;Progress, CWSilver CTGreen B2 ZH0 fs11 WS900 W1000 H28  X00 Y1050, CAPSLOCK ON
+	   ;Progress, CWfb7b55 CTfde3f9 B2 ZH0 fs11 WS900 W1000 H28 Y1050, CAPSLOCK ON
+;}
+;else if state = U ; U= Caps is ON, SET IT OFF
+	;{
+	   ;Progress, Off
+	;}
+;return
 
-~NumLock::
-GetKeyState, state, NumLock, T 
-if state = D ;  D=Numpack is OFF, turn it ON
-{
-	   Progress, Off
-}
-else if state = U ; U= Numpad is ON, SET IT OFF
-	{
-	   ;Progress, CWSilver CTGreen B2 ZH0 fs11 WS900 W1000 H28  X00 Y1050, NUMPAD LOCKED
-	   Progress, CWfb7b55 CTfde3f9 B2 ZH0 fs11 WS900 W1000 H28 Y1050, NUMPAD LOCKED
-	}
-return
+;~NumLock::
+;GetKeyState, state, NumLock, T 
+;if state = D ;  D=Numpack is OFF, turn it ON
+;{
+	   ;Progress, Off
+;}
+;else if state = U ; U= Numpad is ON, SET IT OFF
+	;{
+	   ;;Progress, CWSilver CTGreen B2 ZH0 fs11 WS900 W1000 H28  X00 Y1050, NUMPAD LOCKED
+	   ;Progress, CWfb7b55 CTfde3f9 B2 ZH0 fs11 WS900 W1000 H28 Y1050, NUMPAD LOCKED
+	;}
+;return
 

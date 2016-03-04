@@ -20,8 +20,8 @@ REM ende
 
 REM for /l %%z in ( 21 1 26 ) do (
 REM for %%z in ( 99 ) do (
-REM for %%z in ( 36 ) do (
-for %%z in ( 37 38 39 40 41 42 ) do (
+REM for %%z in ( 21 22 ) do (
+for %%z in ( 41 42 15 36 37 38 ) do (
 
 	call initials.bat
 	REM anfang Projekte (Active: 1-50)
@@ -209,7 +209,7 @@ for %%z in ( 37 38 39 40 41 42 ) do (
 	if %%z equ 15 (
 		REM goto :takeTime
 		set proj_Num=294115
-		set interval=1098 10 1098
+		set interval=1098 100 1198
 		set interval2=11 1 11
 
 		REM set append=1
@@ -465,11 +465,11 @@ for %%z in ( 37 38 39 40 41 42 ) do (
 	if %%z equ 36 (
 		REM goto :takeTime
 		set proj_Num=297716
-		set interval=2099 10 2099
-		set interval2=13 1 13
+		set interval=2029 10 2029
+		set interval2=11 1 11
 
 		REM set append=1
-		REM set pathBefore=D:
+		set pathBefore=E:
 		REM set pathAfter=ANSYS
 		set redirect=1
 		REM set execute=1
@@ -481,13 +481,13 @@ for %%z in ( 37 38 39 40 41 42 ) do (
 	if %%z equ 37 (
 		REM goto :takeTime
 		set proj_Num=297716
-		set interval=2119 10 2199
-		set interval2=11 1 12
+		set interval=2029 10 2029
+		set interval2=22 1 22
 
 		REM set append=1
-		REM set pathBefore=D:
+		set pathBefore=E:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -497,13 +497,13 @@ for %%z in ( 37 38 39 40 41 42 ) do (
 	if %%z equ 38 (
 		REM goto :takeTime
 		set proj_Num=297716
-		set interval=2009 10 2099
-		set interval2=21 1 22
+		set interval=2099 10 2099
+		set interval2=13 1 13
 
 		REM set append=1
-		REM set pathBefore=D:
+		set pathBefore=E:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -549,7 +549,7 @@ for %%z in ( 37 38 39 40 41 42 ) do (
 		set interval2=24 1 24
 
 		REM set append=1
-		REM set pathBefore=D:
+		set pathBefore=E:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
 		REM set execute=1
@@ -565,7 +565,7 @@ for %%z in ( 37 38 39 40 41 42 ) do (
 		set interval2=24 1 24
 
 		REM set append=1
-		REM set pathBefore=D:
+		set pathBefore=E:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
 		REM set execute=1
@@ -641,7 +641,6 @@ for %%z in ( 37 38 39 40 41 42 ) do (
 		REM ende
 
 	REM ende ################### PROJEKTE: not Active #################
-
 
 	REM ==================================================================================================
 	REM ende Projekte

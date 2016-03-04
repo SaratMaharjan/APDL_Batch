@@ -6,7 +6,7 @@ REM Select Drive and Initial Values
 			set pathAfter=ANSYS
 		) else (
 			set sourcePre=R:\maharjan
-			set pathBefore=E:
+			set pathBefore=D:
 			set pathAfter=ANSYS
 		)
 
