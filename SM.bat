@@ -20,8 +20,8 @@ REM ende
 
 REM for /l %%z in ( 21 1 26 ) do (
 REM for %%z in ( 99 ) do (
-REM for %%z in ( 21 22 ) do (
-for %%z in ( 41 42 15 36 37 38 ) do (
+for %%z in ( 1 ) do (
+REM for %%z in ( 41 42 ) do (
 
 	call initials.bat
 	REM anfang Projekte (Active: 1-50)
@@ -31,7 +31,7 @@ for %%z in ( 41 42 15 36 37 38 ) do (
 	if %%z equ 1 (
 		REM goto :takeTime
 		set proj_Num=293715
-		set interval=8000 1 8000
+		set interval=7000 1 7000
 		set interval2=1 10 1
 
 		REM set append=1
@@ -321,13 +321,13 @@ for %%z in ( 41 42 15 36 37 38 ) do (
 	if %%z equ 22 (
 		REM goto :takeTime
 		set proj_Num=297616
-		set interval=1110 10 1190
-		set interval2=11 1 13
+		set interval=1140 1000 2140
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
@@ -501,7 +501,7 @@ for %%z in ( 41 42 15 36 37 38 ) do (
 		set interval2=13 1 13
 
 		REM set append=1
-		set pathBefore=E:
+		REM set pathBefore=E:
 		REM set pathAfter=ANSYS
 		set redirect=1
 		REM set execute=1
@@ -565,7 +565,7 @@ for %%z in ( 41 42 15 36 37 38 ) do (
 		set interval2=24 1 24
 
 		REM set append=1
-		set pathBefore=E:
+		REM set pathBefore=E:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
 		REM set execute=1
@@ -645,7 +645,7 @@ for %%z in ( 41 42 15 36 37 38 ) do (
 	REM ==================================================================================================
 	REM ende Projekte
 	call calc.bat
- )
+)
 
 endlocal
 goto :takeTime
