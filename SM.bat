@@ -10,7 +10,7 @@ REM anfang Selecting Licenses and Processors
 	REM set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 	set appPath="C:\Program Files\ANSYS Inc\v170\ANSYS\bin\winx64\ansys170.exe"
 	REM	1.Structural/ANSYS	2.Prfnls	3.Stba/MEBA	4.Prepost
-		set startValue=2
+		set startValue=1
 		set endValue=!startValue!
 		REM set endValue=4
 	REM Number of Processors
@@ -20,8 +20,8 @@ REM ende
 
 REM for /l %%z in ( 21 1 26 ) do (
 REM for %%z in ( 99 ) do (
-for %%z in ( 1 ) do (
-REM for %%z in ( 41 42 ) do (
+REM for %%z in ( 47 ) do (
+for %%z in ( 48 ) do (
 
 	call initials.bat
 	REM anfang Projekte (Active: 1-50)
@@ -568,6 +568,54 @@ REM for %%z in ( 41 42 ) do (
 		REM set pathBefore=E:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 46 - 298616 - S-920 Poller
+	if %%z equ 46 (
+		REM goto :takeTime
+		set proj_Num=298616
+		set interval=8010 10 8010
+		set interval2=101 1 101
+
+		REM set append=1
+		REM set pathBefore=E:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 47 - 298716 - S-1028-31 Maschine
+	if %%z equ 47 (
+		REM goto :takeTime
+		set proj_Num=298716
+		set interval=2099 90 2099
+		set interval2=13 10 23
+
+		REM set append=1
+		REM set pathBefore=E:
+		REM set pathAfter=ANSYS
+		set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 48 - 298716 - S-1028-31 Maschine
+	if %%z equ 48 (
+		REM goto :takeTime
+		set proj_Num=298716a
+		set interval=2009 90 2009
+		set interval2=13 10 13
+
+		REM set append=1
+		REM set pathBefore=E:
+		REM set pathAfter=ANSYS
+		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
