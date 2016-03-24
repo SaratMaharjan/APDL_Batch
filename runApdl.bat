@@ -106,21 +106,13 @@ echo !apdlCMD!
 echo.
 
 REM goto :takeTime
-REM start "" !apdlCMD!
+REM start "" /B !apdlCMD!
 !apdlCMD!
 
 call Timer.bat :StopTimer	
 call Timer.bat :DisplayTimerResult	
 echo Time Used: !elTime!
 
-if !tCalc! geq 5 (
-	echo --------Complete----------
-	goto :eof
-)
 endlocal
-
-:takeTime
 timeout /t 5
-
-:eof
 
