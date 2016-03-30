@@ -19,9 +19,9 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 21 1 26 ) do (
-REM for %%z in ( 47 48 49 50 ) do (
-REM for %%z in ( 21 22 ) do (
-for %%z in ( 47 ) do (
+for %%z in ( 47 48 49 50 ) do (
+REM for %%z in ( 21 ) do (
+REM for %%z in ( 1 ) do (
 
 	call initials.bat
 	REM anfang Projekte (Active: 1-50)
@@ -305,8 +305,8 @@ for %%z in ( 47 ) do (
 	if %%z equ 21 (
 		REM goto :takeTime
 		set proj_Num=297616
-		set interval=1000 10 1090
-		set interval2=11 1 12
+		set interval=8000 10 8000
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -609,8 +609,8 @@ for %%z in ( 47 ) do (
 	if %%z equ 47 (
 		REM goto :takeTime
 		set proj_Num=298716
-		set interval=2009 10 2009
-		set interval2=11 10 11
+		set interval=2019 10 2019
+		set interval2=11 2 11
 
 		REM set append=1
 		REM set pathBefore=E:
@@ -625,8 +625,8 @@ for %%z in ( 47 ) do (
 	if %%z equ 48 (
 		REM goto :takeTime
 		set proj_Num=298716
-		set interval=2029 10 2029
-		set interval2=22 10 22
+		set interval=2119 10 2119
+		set interval2=22 2 22
 
 		REM set append=1
 		REM set pathBefore=E:
@@ -642,7 +642,7 @@ for %%z in ( 47 ) do (
 		REM goto :takeTime
 		set proj_Num=298716
 		set interval=2099 10 2099
-		set interval2=13 10 13
+		set interval2=13 2 13
 
 		REM set append=1
 		REM set pathBefore=E:
@@ -657,8 +657,8 @@ for %%z in ( 47 ) do (
 	if %%z equ 50 (
 		REM goto :takeTime
 		set proj_Num=298716
-		set interval=2099 1 2099
-		set interval2=24 10 24
+		set interval=2099 10 2099
+		set interval2=24 2 24
 
 		REM set append=1
 		REM set pathBefore=E:
