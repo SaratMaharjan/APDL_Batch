@@ -27,6 +27,7 @@
 
 	set todayNow=On %date:~0,2%.%date:~3,2%.%date:~6,4% at %time:~0,2%:%time:~3,2%
 	echo *set,hostname,'!host!' > !wDir!\host.csv
+	echo *abbr,fin,!location!\ >> !wDir!\host.csv
 	echo REM ------------------- >> !wDir!\smAPDL.bat
 	echo REM                          ___!todayNow!___ >> !wDir!\smAPDL.bat
 	echo REM anfang New Analysis Cases >> !wDir!\smAPDL.bat
