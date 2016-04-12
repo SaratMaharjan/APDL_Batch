@@ -20,11 +20,11 @@ REM ende
 
 REM for /l %%z in ( 21 1 26 ) do (
 REM for %%z in ( 47 48 49 50 ) do (
-REM for %%z in ( 21 ) do (
-REM for %%z in ( 38 ) do (
-for %%z in ( 46 38 39 47 48 49 50 51 52 ) do (
+REM for %%z in ( 47 ) do (
+for %%z in ( 38 39 ) do (
+REM for %%z in ( 38 39 47 48 49 50 51 52 ) do (
 REM for %%z in ( 46 ) do (
-REM for %%z in ( 1 ) do (
+REM for %%z in ( 21 ) do (
 
 	call initials.bat
 	REM anfang Projekte (Active: 1-50)
@@ -516,7 +516,7 @@ REM for %%z in ( 1 ) do (
 	if %%z equ 38 (
 		REM goto :takeTime
 		set proj_Num=297116v
-		set interval=1008 10 1098
+		set interval=1018 10 1018
 		set interval2=11 1 13
 
 		REM set append=1
@@ -533,7 +533,7 @@ REM for %%z in ( 1 ) do (
 		REM goto :takeTime
 		set proj_Num=297116v
 		set interval=1118 10 1198
-		set interval2=11 1 13
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=E:

@@ -76,8 +76,12 @@ return
 	}
 return
 #y::
-	;Run "C:\Program Files (x86)\Everything\Everything.exe"
-	Run "C:\locate32\locate32.exe"
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+		Run "D:\zCore"
+		;Run "C:\Program Files (x86)\Everything\Everything.exe"
+	} else {
+		Run "C:\locate32\locate32.exe"
+	}
 return
 ;#w::
 	;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
@@ -94,7 +98,6 @@ return
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 #.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
 #ß:: Run "\\ansys2\Maharjan"
-
 ;ende Local Locations
 
 ;anfang Internet Addresses
