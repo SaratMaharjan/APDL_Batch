@@ -83,6 +83,14 @@ return
 		Run "C:\locate32\locate32.exe"
 	}
 return
+#z::
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+		Run "D:\zCore\zBar.exe"
+		;Run "C:\Program Files (x86)\Everything\Everything.exe"
+	} else {
+		Run "D:\zCore\zBar.exe"
+	}
+return
 ;#w::
 	;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
 ;return

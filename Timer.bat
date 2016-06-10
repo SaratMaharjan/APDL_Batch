@@ -23,7 +23,7 @@ goto :eof
 :DisplayTimerResult
 REM  Show timer start/stop/delta
 set elTime=%TookTime:~0,-2%.%TookTimePadded:~-2%
-set /a tCalc=elTime
-echo Elasped Time is: %tCalc%
+set /a tCalc=elTime/60
+echo Elasped Time is: %tCalc% mins
 goto :eof
 

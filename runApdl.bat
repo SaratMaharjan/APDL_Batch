@@ -13,7 +13,6 @@ if exist lastLic.txt (
 )
 
 setlocal EnableDelayedExpansion	
-
 		hostname.exe>hostname.txt
 		set /p host=<hostname.txt
 		echo Hostname: !host!
@@ -40,6 +39,25 @@ setlocal EnableDelayedExpansion
 			set pathAfter=ANSYS
 		)
 
+REM set ansj=preppost
+set /p ansj=<lastLic.txt
+set /p r=Enter License to Use (1: struct, 2: prflns, 4: prepost; default: %ansj%):%=%
+if "%r%" equ "1" (
+	REM set ansj=struct
+	set ansj=ansys
+)
+if "%r%" equ "2" (
+	set ansj=prfnls
+)
+if "%r%" equ "3" (
+	set ansj=preppost
+)
+if "%r%" equ "4" (
+	set ansj=preppost
+)
+
+(echo %ansj%) > lastLic.txt
+
 REM set proj_Num="test"
 set /p proj_Num=<lastRun.txt
 
@@ -61,34 +79,19 @@ if not "%proj_sub%" == "" (
 	echo.
 )
 
-REM set ansj=preppost
-set /p ansj=<lastLic.txt
-set /p r=Enter License to Use (1: struct, 2: prflns, 3: prepost; default: %ansj%):%=%
-if "%r%" equ "1" (
-	REM set ansj=struct
-	set ansj=ansys
-)
-if "%r%" equ "2" (
-	set ansj=prfnls
-)
-if "%r%" equ "3" (
-	set ansj=preppost
-)
-(echo %ansj%) > lastLic.txt
-
-set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
-if not "%disp%" == "" (
-	echo Display Num: %disp%
-) else (
-	set disp=1
-	REM echo Default Display Num  : !disp!
-)
+REM set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
+REM if not "%disp%" == "" (
+	REM echo Display Num: %disp%
+REM ) else (
+	REM set disp=1
+	REM REM echo Default Display Num  : !disp!
+REM )
 set dispName=3D
-if "%disp%" == "2" (
-	set dispName=win32c
-)
-if "%disp%" == "3" (
-	set dispName=win32
+REM if "%disp%" == "2" (
+	REM set dispName=win32c
+REM )
+REM if "%disp%" == "3" (
+	REM set dispName=win32
 )
 
 echo License: !ansj!

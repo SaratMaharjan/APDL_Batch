@@ -71,7 +71,7 @@ for /l %%c in ( 1 1 5 ) do (
 		call timer.bat StopTimer
 		call timer.bat DisplayTimerResult
 		set /a mins=!tCalc!/60
-		echo                        REM +++++++ Time Required: !tCalc! Seconds OR !mins! Minutes +++++++ >> !wDir!\smAPDL.bat
+		echo                        REM +++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++ >> !wDir!\smAPDL.bat
 		REM echo Time Used: !elTime!
 		REM set tim=!tCalc!
 		REM echo !tim!
