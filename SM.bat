@@ -20,15 +20,7 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 21 1 26 ) do (
-REM for %%z in ( 13 ) do (
-REM for %%z in ( 19 ) do (
-REM for %%z in ( 17 18 19 ) do (
-REM for %%z in ( 47 48 49 50 ) do (
-REM for %%z in ( 38 39 40 41 ) do (
-REM for %%z in ( 15 16 ) do (
-REM for %%z in ( 1 ) do (
-for %%z in ( 5 ) do (
-REM for %%z in ( 21 ) do (
+for %%z in ( 28 29 ) do (
 REM for %%z in ( 99 ) do (
 
 	call initials.bat
@@ -39,7 +31,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 1 (
 		REM goto :takeTime
 		set proj_Num=294915
-		set interval=1011 10 1011
+		set interval=3011 10 3011
 		set interval2=1 1 1
 
 		REM set append=1
@@ -51,15 +43,47 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
+	REM REM anfang 2 - 302716 - D-827 SSW
+	if %%z equ 2 (
+		REM goto :takeTime
+		set proj_Num=302716
+		set interval=1128 10 1128
+		set interval2=14 1 14
+
+		REM set append=1
+		set pathBefore=D:
+		REM set pathAfter=ANSYS
+		set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 3 - 302716 - D-827 SSW -ve
+	if %%z equ 3 (
+		REM goto :takeTime
+		set proj_Num=302716
+		set interval=1168 10 1168
+		set interval2=15 1 15
+
+		REM set append=1
+		set pathBefore=D:
+		REM set pathAfter=ANSYS
+		set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
 	REM REM anfang 5 - 299616 - S-1026 Machine
 	if %%z equ 5 (
 		REM goto :takeTime
 		set proj_Num=299616
-		set interval=2009 10 2009
-		set interval2=11 1 11
+		set interval=2069 10 2099
+		set interval2=11 1 13
 
 		REM set append=1
-		set pathBefore=F:
+		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
 		REM set execute=1
@@ -75,7 +99,7 @@ REM for %%z in ( 99 ) do (
 		set interval2=11 1 13
 
 		REM set append=1
-		set pathBefore=F:
+		REM set pathBefore=F:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
 		REM set execute=1
@@ -87,7 +111,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 7 (
 		REM goto :takeTime
 		set proj_Num=299616
-		set interval=2049 10 2099
+		set interval=2009 10 2099
 		set interval2=21 1 23
 
 		REM set append=1
@@ -119,8 +143,8 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 9 (
 		REM goto :takeTime
 		set proj_Num=300016
-		set interval=1001 1 1001
-		set interval2=11 1 11
+		set interval=1001 1000 1001
+		set interval2=1 1 1
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -131,108 +155,12 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 10 - 295815 - S-738 Förderschnecke
+	REM REM anfang 10 - 300016a S-1012 Spreizeinheit - ARM
 	if %%z equ 10 (
 		REM goto :takeTime
-		set proj_Num=295815
-		set interval=3 1000 3
-		set interval2=31 10 31
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 11 - 296516 - Gubristtunnel SSW
-	if %%z equ 11 (
-		REM goto :takeTime
-		set proj_Num=296516
-		set interval=1000 10 1090
-		set interval2=11 1 12
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 12 - 296516 - Gubristtunnel SSW -ve
-	if %%z equ 12 (
-		REM goto :takeTime
-		set proj_Num=296516
-		set interval=1110 10 1190
-		set interval2=11 1 12
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 13 - 301016 - S-1058 Machine Xiamen
-	if %%z equ 13 (
-		REM goto :takeTime
-		set proj_Num=301016
-		set interval=2009 10 2009
-		set interval2=11 1 11
-
-		REM set append=1
-		REM set pathBefore=E:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 14 - 301016 - S-1058 Machine Xiamen
-	if %%z equ 14 (
-		REM goto :takeTime
-		set proj_Num=301016
-		set interval=2189 10 2199
-		set interval2=11 1 13
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 15 - 301016 - S-1058 Machine Xiamen
-	if %%z equ 15 (
-		REM goto :takeTime
-		set proj_Num=301016
-		set interval=2089 10 2099
-		set interval2=21 1 23
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 16 - 301016 - S-1058 Machine Xiamen
-	if %%z equ 16 (
-		REM goto :takeTime
-		set proj_Num=301016
-		set interval=2119 10 2199
-		set interval2=21 1 23
+		set proj_Num=300016a
+		set interval=1002 1000 1002
+		set interval2=1 1 1
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -247,7 +175,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 17 (
 		REM goto :takeTime
 		set proj_Num=301616
-		set interval=1010 10 1020
+		set interval=1000 10 1010
 		set interval2=1 1 2
 
 		REM set append=1
@@ -311,8 +239,8 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 21 (
 		REM goto :takeTime
 		set proj_Num=301316
-		set interval=1118 10 1118
-		set interval2=14 1 14
+		set interval=1068 10 1098
+		set interval2=12 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -327,20 +255,116 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 22 (
 		REM goto :takeTime
 		set proj_Num=301316
-		set interval=1128 10 1128
-		set interval2=14 1 14
+		set interval=1118 10 1198
+		set interval2=12 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 26 - 303116 - Shantou SSW
+	if %%z equ 26 (
+		REM goto :takeTime
+		set proj_Num=303116
+		set interval=1096 10 1096
+		set interval2=11 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
 		set redirect=1
 		REM set execute=1
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
 
-	REM REM anfang 31 - 296816 - S1018-19
+	REM REM anfang 27 - 303116 - Shantou SSW -ve
+	if %%z equ 27 (
+		REM goto :takeTime
+		set proj_Num=303116
+		set interval=2176 10 2196
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 28 - 303216 - Beijing
+	if %%z equ 28 (
+		REM goto :takeTime
+		set proj_Num=303216
+		set interval=1016 10 1196
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 29 - 303216 - Beijing
+	if %%z equ 29 (
+		REM goto :takeTime
+		set proj_Num=303216
+		set interval=2016 10 2196
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 30 - 303416 - South Hartford
+	if %%z equ 30 (
+		REM goto :takeTime
+		set proj_Num=303416
+		set interval=1008 10 1098
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 31 - 303416 - South Hartford -ve
 	if %%z equ 31 (
+		REM goto :takeTime
+		set proj_Num=303416
+		set interval=1158 10 1198
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 32 - 296816 - S1018-19
+	if %%z equ 32 (
 		REM goto :takeTime
 		set proj_Num=296816
 		set interval=1012 10 1092
@@ -355,8 +379,8 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 32 - 296816 - S1018-19 -ve
-	if %%z equ 32 (
+	REM REM anfang 33 - 296816 - S1018-19 -ve
+	if %%z equ 33 (
 		REM goto :takeTime
 		set proj_Num=296816
 		set interval=1112 10 1192
@@ -371,8 +395,8 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 33 - 296816a - S295
-	if %%z equ 33 (
+	REM REM anfang 34 - 296816a - S295
+	if %%z equ 34 (
 		REM goto :takeTime
 		set proj_Num=296816a
 		set interval=1000 10 1090 
@@ -387,8 +411,8 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 34 - 296816a - s295 -ve
-	if %%z equ 34 (
+	REM REM anfang 35 - 296816a - s295 -ve
+	if %%z equ 35 (
 		REM goto :takeTime
 		set proj_Num=296816a
 		set interval=1110 10 1190
@@ -403,117 +427,6 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 38 - 300516 - S1034
-	if %%z equ 38 (
-		REM goto :takeTime
-		set proj_Num=300516
-		set interval=2009 10 2099
-		set interval2=11 1 14
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 39 - 300516 - S1034 -ve
-	if %%z equ 39 (
-		REM goto :takeTime
-		set proj_Num=300516
-		set interval=2119 10 2199
-		set interval2=11 1 14
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 40 - 300516 - S1034
-	if %%z equ 40 (
-		REM goto :takeTime
-		set proj_Num=300516
-		set interval=2009 10 2099
-		set interval2=21 1 24
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 41 - 300516 - S1034
-	if %%z equ 41 (
-		REM goto :takeTime
-		set proj_Num=300516
-		set interval=2199 10 2199
-		set interval2=21 1 24
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 42 - 300516a - S1034ssw
-	if %%z equ 42 (
-		REM goto :takeTime
-		set proj_Num=300516a
-		set interval=1017 10 1037
-		set interval2=23 2 23
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 43 - 300516a - S1034ssw
-	if %%z equ 43 (
-		REM goto :takeTime
-		set proj_Num=300516a
-		set interval=1117 10 1197
-		set interval2=22 2 24
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 46 - 299416 - S-979 Schneckenförderer
-	if %%z equ 46 (
-		REM goto :takeTime
-		set proj_Num=299416
-		set interval=1000 10 1000
-		set interval2=11 1 11
-
-		REM set append=1
-		REM set pathBefore=E:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
 
 
 	REM REM anfang 56 - 299816 - S-764 Maschine
