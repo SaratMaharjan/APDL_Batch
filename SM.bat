@@ -202,7 +202,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 11 (
 		REM goto :takeTime
 		set proj_Num=303816
-		set interval=1000 1000 1000
+		set interval=2000 1000 2000
 		set interval2=1 1 4
 
 		REM set append=1
@@ -457,13 +457,13 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 41 (
 		REM goto :takeTime
 		set proj_Num=302716
-		set interval=1008 10 1098
+		set interval=1098 10 1098
 		set interval2=16 1 16
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set extVar=1
 		REM set sourcePre=R:\maharjan
@@ -474,7 +474,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 42 (
 		REM gouo :takeTime
 		set proj_Num=302716
-		set interval=1118 10 1198
+		set interval=1198 10 1198
 		set interval2=16 1 16
 
 		REM set append=1
@@ -490,13 +490,13 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 43 (
 		REM goto :takeTime
 		set proj_Num=302716a
-		set interval=1008 10 1098
-		set interval2=15 1 15
+		set interval=1098 10 1098
+		set interval2=16 1 16
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set extVar=1
 		REM set sourcePre=R:\maharjan
@@ -507,8 +507,8 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 44 (
 		REM goto :takeTime
 		set proj_Num=302716a
-		set interval=1018 10 1098
-		set interval2=15 1 15
+		set interval=1198 10 1198
+		set interval2=16 1 16
 
 		REM set append=1
 		REM set pathBefore=D:

@@ -8,6 +8,11 @@
 
 ;anfang My Commands
 
+#UseHook
+F1::Send {Esc}
+#UseHook off
+^F1::Send {F1}
+
 ;NumPadDot::Send, {ASC 0046}
 #1::Msgbox, %A_ComputerName%
 ;!x::ToggleWinMinimize("Microsoft Excel")
