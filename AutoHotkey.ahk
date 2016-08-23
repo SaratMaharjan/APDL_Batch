@@ -6,8 +6,27 @@
 
 ;If problem with encoding: set bomb in VIM and save
 
-;anfang My Commands
+#IfWinActive, ANSYS
+	RButton::
+		SendInput {Ctrl down}{RButton down}
+		Keywait, RButton
+		SendInput {RButton up}{Ctrl up}
+	Return
+	MButton::
+		SendInput {Ctrl down}{LButton down}
+		Keywait, MButton
+		SendInput {LButton up}{Ctrl up}
+	Return
+#IfWinActive
 
+#IfWinActive, Creo Elements/Direct 3D Access
+	RButton:: MButton
+	MButton:: RButton
+	WheelDown::WheelUp
+	WheelUp::WheelDown
+#IfWinActive
+
+;anfang My Commands
 #UseHook
 F1::Send {Esc}
 #UseHook off
@@ -367,11 +386,9 @@ Return
 ;#IfWinActive
 
 ;ende Not Necessary
-
 ;ende My Commands
 
 ;anfang FUNCTIONS
-
 ;FUNCTIONS**************************************************************
 	ToggleWinMinimize(TheWindowTitle) {
 		SetTitleMatchMode,2
@@ -401,78 +418,75 @@ Return
 		;msgbox, %FullPath%
 		return FullPath
 	}
-
 ;ende Functions
 
 ;anfang External Functions
+	;anfang Volume 
+		$Volume_Up::
+		+WheelUp::
+			{
+				Send {Volume_Up}
+				Gosub, vupdt
+				return
+			}
 
-;anfang Volume 
-	$Volume_Up::
-	+WheelUp::
+		$Volume_Down::
+		+WheelDown::
+			{
+				Send {Volume_Down}
+				Gosub, vupdt
+				return
+			}
+
+		$Volume_Mute::
+			{
+				Send {Volume_Mute}
+				Gosub, vupdt
+				return
+			}
+
+		; display volume bar
+		vupdt:
+		IfWinExist, ahkvolume
 		{
-			Send {Volume_Up}
-			Gosub, vupdt
+			SoundGet, master_volume
+			SoundGet, v_m, master, mute
+			GuiControl,, MP, %master_volume%
+			if v_m = On
+				GuiControl,, Pic1, *Icon40 %a_windir%\system32\mmsys.cpl
+			else 
+				GuiControl,, Pic1, *Icon1 %a_windir%\system32\mmsys.cpl
+				SetTimer,vclose, 2000
 			return
 		}
-
-	$Volume_Down::
-	+WheelDown::
-		{
-			Send {Volume_Down}
-			Gosub, vupdt
-			return
-		}
-
-	$Volume_Mute::
-		{
-			Send {Volume_Mute}
-			Gosub, vupdt
-			return
-		}
-
-	; display volume bar
-	vupdt:
-	IfWinExist, ahkvolume
-	{
 		SoundGet, master_volume
 		SoundGet, v_m, master, mute
-		GuiControl,, MP, %master_volume%
-		if v_m = On
-			GuiControl,, Pic1, *Icon40 %a_windir%\system32\mmsys.cpl
-		else 
-			GuiControl,, Pic1, *Icon1 %a_windir%\system32\mmsys.cpl
-			SetTimer,vclose, 2000
+
+		IfWinNotExist, ahkvolume
+		{
+			Gui, +ToolWindow -Caption +0x400000 +alwaysontop
+			Gui, Add, GroupBox, x3 y2 w40 h45 cblack,
+			Gui, Add, text, x97 y2 ,Volume:
+			Gui, Add, Progress,horizontal vMP x48 y18 w160 h20 c333cc,%master_volume% 
+			if v_m = On
+				Gui, Add, pic, x7 y13 vPic1 icon40, %a_windir%\system32\mmsys.cpl
+			else
+				Gui, Add, pic, x7 y13 vPic1 icon1, %a_windir%\system32\mmsys.cpl
+				SysGet, screenx, 0
+				SysGet, screeny, 1
+				; adjust display to show in bottom right corner
+				xpos:=screenx-275
+				ypos:=screeny-100
+				Gui, Show, NoActivate x%xpos% y%ypos% h48 w213, ahkvolume
+		}
+		SetTimer,vclose, 2000
 		return
-	}
-	SoundGet, master_volume
-	SoundGet, v_m, master, mute
 
-	IfWinNotExist, ahkvolume
-	{
-		Gui, +ToolWindow -Caption +0x400000 +alwaysontop
-		Gui, Add, GroupBox, x3 y2 w40 h45 cblack,
-		Gui, Add, text, x97 y2 ,Volume:
-		Gui, Add, Progress,horizontal vMP x48 y18 w160 h20 c333cc,%master_volume% 
-		if v_m = On
-			Gui, Add, pic, x7 y13 vPic1 icon40, %a_windir%\system32\mmsys.cpl
-		else
-			Gui, Add, pic, x7 y13 vPic1 icon1, %a_windir%\system32\mmsys.cpl
-			SysGet, screenx, 0
-			SysGet, screeny, 1
-			; adjust display to show in bottom right corner
-			xpos:=screenx-275
-			ypos:=screeny-100
-			Gui, Show, NoActivate x%xpos% y%ypos% h48 w213, ahkvolume
-	}
-	SetTimer,vclose, 2000
-	return
-
-	vclose:
-	SetTimer,vclose, off
-	Gui, destroy
-	return
-;ende volume
-
+		vclose:
+		SetTimer,vclose, off
+		Gui, destroy
+		return
+	;ende volume
 ;ende External Commands
 
 ;~CapsLock::

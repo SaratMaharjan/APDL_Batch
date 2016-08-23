@@ -254,7 +254,7 @@ REM for %%z in ( 99 ) do (
 		REM goto :takeTime
 		set proj_Num=303916
 		set interval=2000 10 2000
-		set interval2=1 1 1
+		set interval2=3 1 5
 
 		REM set append=1
 		REM set pathBefore=D:
