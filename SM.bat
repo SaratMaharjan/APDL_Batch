@@ -10,7 +10,7 @@ REM anfang Selecting Licenses and Processors
 	REM set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 	set appPath="C:\Program Files\ANSYS Inc\v170\ANSYS\bin\winx64\ansys170.exe"
 	REM	1.Structural/ANSYS	2.Prfnls	3.Stba/MEBA	4.Prepost
-		set startValue=2
+		set startValue=3
 		REM set startValue=4
 		set endValue=!startValue!
 		REM set endValue=4
@@ -20,7 +20,7 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 41 1 48 ) do (
-for %%z in ( 11 ) do (
+for %%z in ( 16 ) do (
 REM for %%z in ( 100 ) do (
 REM for %%z in ( 99 ) do (
 
@@ -203,7 +203,7 @@ REM for %%z in ( 99 ) do (
 		REM goto :takeTime
 		set proj_Num=303816
 		set interval=2000 1000 2000
-		set interval2=1 1 4
+		set interval2=1 1 6
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -215,16 +215,16 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 17 - 301616 - D-768 Vortriebsrohr
-	if %%z equ 17 (
+	REM REM anfang 13 - 304216 - S-1068 Sutong
+	if %%z equ 13 (
 		REM goto :takeTime
-		set proj_Num=301616
-		set interval=1000 10 1010
-		set interval2=1 1 2
+		set proj_Num=304216
+		set interval=1018 10 1098
+		set interval2=15 1 15
 
 		REM set append=1
 		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
+		REM set pathAfter=ANSYSec
 		REM set redirect=1
 		REM set execute=1
 		REM set extVar=9
@@ -232,16 +232,16 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 18 - 301616 - D-768 Vortriebsrohr
-	if %%z equ 18 (
+	REM REM anfang 14 - 304216 - S-1068 Sutong
+	if %%z equ 14 (
 		REM goto :takeTime
-		set proj_Num=301616
-		set interval=1110 10 1120
-		set interval2=1 1 2
+		set proj_Num=304216
+		set interval=1118 10 1198
+		set interval2=15 1 15
 
 		REM set append=1
 		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
+		REM set pathAfter=ANSYSec
 		REM set redirect=1
 		REM set execute=1
 		REM set extVar=9
@@ -249,32 +249,15 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 19 - 301616 - D-768 Vortriebsrohr
-	if %%z equ 19 (
+	REM REM anfang 16 - 303916 - S-1020 Bohrkopf
+	if %%z equ 16 (
 		REM goto :takeTime
-		set proj_Num=301616
-		set interval=1000 10 1000
-		set interval2=3 1 5
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set extVar=9
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 20 - 301616a - D-768 Vortriebsrohr-Tür
-	if %%z equ 20 (
-		REM goto :takeTime
-		set proj_Num=301616a
-		set interval=6000 10 6000
+		set proj_Num=303916
+		set interval=2000 10 2000
 		set interval2=1 1 1
 
 		REM set append=1
-		set pathBefore=D:
+		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
 		REM set execute=1
@@ -524,13 +507,13 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 45 (
 		REM goto :takeTime
 		set proj_Num=302716b
-		set interval=1008 10 1018
+		set interval=1098 10 1098
 		set interval2=16 1 16
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		set extVar=1
 		REM set sourcePre=R:\maharjan
@@ -541,7 +524,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 46 (
 		REM goto :takeTime
 		set proj_Num=302716b
-		set interval=1098 10 1098
+		set interval=1198 10 1198
 		set interval2=16 1 16
 
 		REM set append=1

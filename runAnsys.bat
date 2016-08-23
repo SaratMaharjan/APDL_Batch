@@ -1,6 +1,6 @@
 
 @echo off
 call %~dp0%l2cur.bat
-call runApdl.bat 1
+call runApdl2.bat 1 2
 REM pause
 
