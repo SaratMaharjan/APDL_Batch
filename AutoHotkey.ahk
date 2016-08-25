@@ -20,10 +20,37 @@
 #IfWinActive
 
 #IfWinActive, Creo Elements/Direct 3D Access
-	RButton:: MButton
-	MButton:: RButton
+	RButton::MButton
+	MButton::RButton
 	WheelDown::WheelUp
 	WheelUp::WheelDown
+	^ & LButton::
+		SendInput {RButton down}
+		Keywait LButton
+		SendInput {RButton up}
+		;GetKeyState, state, Ctrl
+		;if state = D
+		;{
+			;click down right
+			;keywait LButton
+			;click up right
+			;Return
+		;}
+	Return
+	^RButton::
+		GetKeyState, state, Ctrl
+		;;MsgBox "Control Key State: " %state%
+		if state = D
+		{
+			;SendInput {MButton down}
+			;Keywait RButton
+			;SendInput {MButton up}
+			click down middle
+			keywait RButton
+			click up middle
+			Return
+		}
+	Return
 #IfWinActive
 
 ;anfang My Commands
@@ -113,6 +140,13 @@ return
 		;Run "C:\Program Files (x86)\Everything\Everything.exe"
 	} else {
 		Run "D:\zCore\zBar.exe"
+	}
+return
+#c::
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+		Run "D:\zCore\Zizorz.exe"
+	} else {
+		Run "D:\zCore\Zizorz.exe"
 	}
 return
 ;#w::
@@ -514,4 +548,12 @@ Return
 	   ;Progress, CWfb7b55 CTfde3f9 B2 ZH0 fs11 WS900 W1000 H28 Y1050, NUMPAD LOCKED
 	;}
 ;return
+
+;anfang Useful Ones:
+			;MsgBox, 4,, Would you like to continue? (press Yes or No)
+			;IfMsgBox Yes
+				;MsgBox You pressed Yes.
+			;else
+				;MsgBox You pressed No.
+;ende
 

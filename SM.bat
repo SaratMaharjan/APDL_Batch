@@ -10,7 +10,7 @@ REM anfang Selecting Licenses and Processors
 	REM set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 	set appPath="C:\Program Files\ANSYS Inc\v170\ANSYS\bin\winx64\ansys170.exe"
 	REM	1.Structural/ANSYS	2.Prfnls	3.Stba/MEBA	4.Prepost
-		set startValue=3
+		set startValue=2
 		REM set startValue=4
 		set endValue=!startValue!
 		REM set endValue=4
@@ -253,12 +253,12 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 16 (
 		REM goto :takeTime
 		set proj_Num=303916
-		set interval=2000 10 2000
-		set interval2=3 1 5
+		set interval=1000 10 1000
+		set interval2=1 1 5
 
 		REM set append=1
 		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
+		set pathAfter=ANSYS_
 		REM set redirect=1
 		REM set execute=1
 		REM set extVar=9
