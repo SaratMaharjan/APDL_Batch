@@ -19,6 +19,9 @@
 	Return
 #IfWinActive
 
+;NumPadDot::Send, {ASC 0046}
+NumPadDot::Send, {.}
+
 #IfWinActive, Creo Elements/Direct 3D Access
 	RButton::MButton
 	MButton::RButton
@@ -59,7 +62,6 @@ F1::Send {Esc}
 #UseHook off
 ^F1::Send {F1}
 
-;NumPadDot::Send, {ASC 0046}
 #1::Msgbox, %A_ComputerName%
 ;!x::ToggleWinMinimize("Microsoft Excel")
 ;!c::ToggleWinMinimize("Java")

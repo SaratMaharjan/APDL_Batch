@@ -44,14 +44,15 @@ for /l %%c in ( 1 1 5 ) do (
 		(echo 0) > !wDir!\license.txt
 
 	REM anfang Call ANSYS
+		del "!wDir!\f!job!-!lk!.err" >nul 2>&1
 
-		if %d% equ 1 (
+		REM if %d% equ 1 (
+			REM set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+ REM -redirect !redirect! -i "!location!\s.in" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!" -extVar !extVar!
+		REM ) else (
 			set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- -redirect !redirect! -i "!location!\s.in" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!" -extVar !extVar!
-		) else (
-			set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- -redirect !redirect! -i "!location!\s.in" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!" -j "file2" -extVar !extVar!
-		)
+ -redirect !redirect! -i "!location!\s.in" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!" -j "f!job!-!lk!" -extVar !extVar!
+		REM )
 
 		echo.
 		echo !apdlCMD!

@@ -20,7 +20,7 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 41 1 48 ) do (
-for %%z in ( 16 ) do (
+for %%z in ( 49 ) do (
 REM for %%z in ( 100 ) do (
 REM for %%z in ( 99 ) do (
 
@@ -168,7 +168,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 9 (
 		REM goto :takeTime
 		set proj_Num=300016
-		set interval=1001 1000 1001
+		set interval=1003 1000 1003
 		set interval2=1 1 1
 
 		REM set append=1
@@ -258,7 +258,7 @@ REM for %%z in ( 99 ) do (
 
 		REM set append=1
 		REM set pathBefore=D:
-		set pathAfter=ANSYS_
+		set pathAfter=ANSYS
 		REM set redirect=1
 		REM set execute=1
 		REM set extVar=9
@@ -567,6 +567,23 @@ REM for %%z in ( 99 ) do (
 		REM set redirect=1
 		REM set execute=1
 		set extVar=9
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 49 - 304016 - S-1045 Fahrträger
+	if %%z equ 49 (
+		REM goto :takeTime
+		set proj_Num=304016
+		set interval=1000 10 1000
+		set interval2=1 1 1
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=9
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
