@@ -10,7 +10,7 @@ function csys_Rename() {
 		var c6 = c4.Children.Item(i);
 		c6.Name = "csys_local" + (i-1);
 		c6.AnsysSystemAuto = 0;
-		c6.AnsysSystemNumber = 100 + i - 1;
+		c6.AnsysSystemNumber = 20 + i - 1;
 		c6.PrimaryAxis = 3;
 		//c6.PrimaryAxisAlignment = 4;
 		c6.PrimaryAxisAlignment = 1;

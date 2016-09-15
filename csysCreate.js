@@ -105,7 +105,7 @@ function td_remove_sel_ns(ns) {
 
 var SC = DS.Script; 
 var SM = SC.sm; 
-for(var ii = 1; ii <= 82; ii++){
+for(var ii = 33; ii <= 48; ii++){
 	td_new_sel_ns("Group"+ii);
 	SC.doCreateCoordinateSystem();
 }
