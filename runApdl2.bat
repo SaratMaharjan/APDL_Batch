@@ -40,12 +40,6 @@ setlocal EnableDelayedExpansion
 			set pathAfter=ANSYS
 		)
 
-		if %fname% equ 1 (
-			set filNam="file1gui"
-		) else (
-			set filNam="file2gui"
-		)
-
 REM set ansj=preppost
 set /p ansj=<lastLic.txt
 set /p r=Enter License to Use (1: struct, 2: prflns, 4: prepost; default: %ansj%):%=%
@@ -100,6 +94,22 @@ REM )
 REM if "%disp%" == "3" (
 	REM set dispName=win32
 )
+
+set runNum=0
+if exist !pathBefore!\%proj_Num%\!pathAfter!\running.txt (
+	set /p runNum=<!pathBefore!\%proj_Num%\!pathAfter!\running.txt
+)
+if "%runNum%" geq "1" (
+	set /a runNum=%runNum%+1
+) else (
+	set runNum=1
+)
+(echo %runNum%) > !pathBefore!\%proj_Num%\!pathAfter!\running.txt
+		REM if %fname% equ 1 (
+			set filNam="file%runNum%GUI"
+		REM ) else (
+			REM set filNam="file2gui"
+		REM )
 
 echo License: !ansj!
 echo Project: %proj_Num%

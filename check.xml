@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<simulation-wizard version="1.0"> 
+<object-groups> 
+<object-group name="component"> 
+<object-type class="id_Component" /> 
+</object-group> 
+</object-groups> 
+<strings> 
+<language xml:lang="en-us"> 
+<string id="title_string"> 
+Test code 
+</string> 
+<string id="description_string"> 
+The following is used to get at the contents of the list view. 
+</string> 
+</language> 
+</strings> 
+<body> 
+<group id="Title" caption="title_string" description="description_string"> 
+</group> 
+<group id="GeometryUpdate" caption="Geometry Update"> 
+<iframe src=".\test.htm"/> 
+</group> 
+</body> 
+</simulation-wizard> 

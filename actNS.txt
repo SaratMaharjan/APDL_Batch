@@ -1,0 +1,3 @@
+ExtAPI.SelectionManager.NewSelection(feature.Bodies)
+ns = ExtAPI.DataModel.FeatureManager.CreateNamedSelection()
+ns.Name = "NS_Name"
