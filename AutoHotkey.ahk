@@ -93,13 +93,13 @@ return
 		Run "C:\Users\Sarat\Dropbox\VimInstall\Vim\vim74\gvim.exe"
 	}
 return
-#x::
-	if(InStr(A_ComputerName,"SMAHARJAN")){
-		Run "D:\zCore\setnetUse.bat"
-	} else {
-		Run "E:\maharjan\setnetUse.bat"
-	}
-return
+;#x::
+	;if(InStr(A_ComputerName,"SMAHARJAN")){
+		;Run "D:\zCore\setnetUse.bat"
+	;} else {
+		;Run "E:\maharjan\setnetUse.bat"
+	;}
+;return
 #w::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "D:\zCore\runAnsys.bat"
@@ -149,6 +149,13 @@ return
 		Run "D:\zCore\Zizorz.exe"
 	} else {
 		Run "D:\zCore\Zizorz.exe"
+	}
+return
+#x::
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+		Run "D:\zCore\replSolu.exe"
+	} else {
+		;Run "D:\zCore\Zizorz.exe"
 	}
 return
 ;#w::
