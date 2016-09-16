@@ -66,7 +66,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 3 (
 		REM goto :takeTime
 		set proj_Num=305216
-		set interval=1000 10 1000
+		set interval=1002 10 1002
 		set interval2=1 1 1
 
 		REM set append=1
