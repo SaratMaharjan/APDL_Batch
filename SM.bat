@@ -8,7 +8,7 @@ call first.bat
 
 REM anfang Selecting Licenses and Processors
 	REM set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
-	set appPath="C:\Program Files\ANSYS Inc\v170\ANSYS\bin\winx64\ansys170.exe"
+	set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 	REM	1.Structural/ANSYS	2.Prfnls	3.Stba/MEBA	4.Prepost
 		set startValue=2
 		REM set startValue=4
@@ -66,7 +66,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 3 (
 		REM goto :takeTime
 		set proj_Num=305216
-		set interval=1002 10 1002
+		set interval=1000 10 1000
 		set interval2=1 1 1
 
 		REM set append=1
@@ -83,13 +83,13 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 5 (
 		REM goto :takeTime
 		set proj_Num=299616
-		set interval=2069 10 2099
-		set interval2=11 1 13
+		set interval=2159 10 2159
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set extVar=9
 		REM set sourcePre=R:\maharjan
@@ -100,15 +100,15 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 6 (
 		REM goto :takeTime
 		set proj_Num=299616
-		set interval=2119 10 2199
-		set interval2=11 1 13
+		set interval=2009 10 2009
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=F:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
-		REM set extVar=9
+		set extVar=1
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
@@ -117,13 +117,13 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 7 (
 		REM goto :takeTime
 		set proj_Num=299616
-		set interval=2009 10 2099
-		set interval2=21 1 23
+		set interval=2129 10 2129
+		set interval2=13 1 13
 
 		REM set append=1
-		set pathBefore=F:
+		REM set pathBefore=F:
 		REM set pathAfter=ANSYS
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set extVar=9
 		REM set sourcePre=R:\maharjan
@@ -138,7 +138,7 @@ REM for %%z in ( 99 ) do (
 		set interval2=21 1 23
 
 		REM set append=1
-		set pathBefore=F:
+		REM set pathBefore=F:
 		REM set pathAfter=ANSYS
 		REM set redirect=1
 		REM set execute=1

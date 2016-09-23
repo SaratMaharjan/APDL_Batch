@@ -117,9 +117,8 @@ echo Display Device: %dispName%
 
 call Timer.bat :StartTimer
 
-set apdlCMD="C:\Program Files\ANSYS Inc\v170\ANSYS\bin\winx64\ansys170.exe"  -g -p !ansj! ^
- -dir "!pathBefore!\%proj_Num%\!pathAfter!" -j %filNam% -s read -l en-us -t -d %dispName% ^
- -m 8192 -db 4096
+set apdlCMD="C:\Program Files\ANSYS Inc\v172\ansys\bin\winx64\ansys172.exe"  -g -p !ansj! ^
+ -dir "!pathBefore!\%proj_Num%\!pathAfter!" -j %filNam% -s read -m 8192 -db 4096 -l en-us -t -d %dispName%
 
 echo.
 echo !apdlCMD!
