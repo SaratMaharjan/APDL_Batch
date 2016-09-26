@@ -1,11 +1,32 @@
-﻿; IMPORTANT INFO ABOUT GETTING STARTED: Lines that start with a ; semicolon, such as this one, are comments.  They are not executed.
-; This script has a special filename and path because it is automatically ; launched when you run the program directly.  Also, any text file whose ; name ends in .ahk is associated with the program, which means that it ; can be launched simply by double-clicking it.  You can have as many .ahk ; files as you want, located in any folder.  You can also run more than ; one .ahk file simultaneously and each will get its own tray icon.
-; SAMPLE HOTKEYS: Below are two sample hotkeys.  The first is Win+Z and it ; launches a web site in the default browser.  The second is Control+Alt+N ; and it launches a new Notepad window (or activates an existing one).  To ; try out these hotkeys, run AutoHotkey again, which will load this file.
-; Note: From now on whenever you run AutoHotkey directly, this script ; will be loaded.  So feel free to customize it to suit your needs.
-; Please read the QUICK-START TUTORIAL near the top of the help file.  ; It explains how to perform common automation tasks such as sending ; keystrokes and mouse clicks.  It also explains more about hotkeys.
+﻿; This script has a special filename and path because it is automatically launched when you run the program directly.
+; Also, any text file whose name ends in .ahk is associated with the program, which means that it can be launched simply by double-clicking it.
+; You can have as many .ahk files as you want, located in any folder.
+; You can also run more than one .ahk file simultaneously and each will get its own tray icon.
+												;If problem with encoding: set bomb in VIM and save
 
-;If problem with encoding: set bomb in VIM and save
+; Numpad , replaced by .
+; NumPadDot::Send, {ASC 0046}
+NumPadDot::Send, {.}
 
+; F1 replaced by Control + F1
+#UseHook
+F1::Send {Esc}
+#UseHook off
+^F1::Send {F1}
+
+; Set window always on TOP
+^space::  Winset, Alwaysontop, , A
+
+; Get Computer Name
+#1::Msgbox, %A_ComputerName%
+
+; Get Windows Title
+F6::
+	WinGetTitle, Title, A
+	MsgBox, The active window is "%Title%".
+Return
+
+;anfang APDL mouse settings
 #IfWinActive, ANSYS
 	RButton::
 		SendInput {Ctrl down}{RButton down}
@@ -18,10 +39,32 @@
 		SendInput {LButton up}{Ctrl up}
 	Return
 #IfWinActive
+;ende APDL mouse
 
-;NumPadDot::Send, {ASC 0046}
-NumPadDot::Send, {.}
+;anfang Spaceclaim hide unhide
+#IfWinActive, A:Static Structural - SYS - SpaceClaim
+	F9::
+		Click Right
+		sleep, 20
+		Send {Down 7}
+		Send {Enter}
+		;SendInput {Ctrl down}{h down}
+		;SendInput {Ctrl up}{h up}
+	Return
+	+F9::
+		Click Right
+		sleep, 20
+		Send {Down 8}
+		Send {Enter}
+		;SendInput {Ctrl down}{Shift down}{i down}
+		;SendInput {Ctrl up}{Shift up}{i up}
+		;SendInput {Ctrl down}{h down}
+		;SendInput {Ctrl up}{h up}
+	Return
+#IfWinActive
+;ende
 
+;anfang Creo Mouse Settings
 #IfWinActive, Creo Elements/Direct 3D Access
 	RButton::MButton
 	MButton::RButton
@@ -55,21 +98,9 @@ NumPadDot::Send, {.}
 		}
 	Return
 #IfWinActive
-
-;anfang My Commands
-#UseHook
-F1::Send {Esc}
-#UseHook off
-^F1::Send {F1}
-
-#1::Msgbox, %A_ComputerName%
-;!x::ToggleWinMinimize("Microsoft Excel")
-;!c::ToggleWinMinimize("Java")
-;!v::ToggleWinMinimize("win7_64Bit")
-^space::  Winset, Alwaysontop, , A
+;ende CREO mouse settings
 
 ;anfang Local Locations
-
 #a::
 	if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
 		run "R:\Maharjan"
@@ -176,7 +207,6 @@ return
 ;ende Local Locations
 
 ;anfang Internet Addresses
-
 #space::Run www.google.com.np
 #f::
 	Run "C:\Program Files (x86)\Mozilla Firefox\Firefox.exe"
@@ -189,101 +219,88 @@ Return
 	Send, ^c
 	Run, http://dict.leo.org/#/search=%Clipboard%&searchLoc=0&resultOrder=basic&multiwordShowSingle=on
 Return
-
 ;ende Internet Addresses
 
 ;anfang Delete Images
 #IfWinActive ahk_class CabinetWClass
 	#p::
-
 		FullPath := GetActivePath()
 		; an error occurred with the SetWorkingDir directive
-		if ErrorLevel
-			return
-
+			if ErrorLevel
+				return
 		;FileCopy,D:\delPics.bat,%FullPath%\*,*,1
-
 		;Run %FullPath%\delPics.bat
 		;FileDelete,%FullPath%\delPics.bat
-		FileDelete,%FullPath%\*.jpg
-		FileDelete,%FullPath%\*.tif
-		FileDelete,%FullPath%\*.tiff
-		FileDelete,%FullPath%\*.png
-		;FileDelete,%FullPath%\*.lis
-		;FileDelete,%FullPath%\*.csv
+			FileDelete,%FullPath%\*.jpg
+			FileDelete,%FullPath%\*.tif
+			FileDelete,%FullPath%\*.tiff
+			FileDelete,%FullPath%\*.png
+			;FileDelete,%FullPath%\*.lis
+			;FileDelete,%FullPath%\*.csv
 		msgBox, Files Deleted!!!
-
 	return
 #IfWinActive
 ;ende Delete Images
 
 ;anfang Delete Temporary Files
 #IfWinActive ahk_class CabinetWClass
-	;#+p::
 	#ü::
 		; get full path from open windows
-		WinGetText, FullPath, A
- 
+			WinGetText, FullPath, A
 		; split up result (returns paths seperated by newlines [also lame])
-		StringSplit, PathArray, FullPath, `n
- 
+			StringSplit, PathArray, FullPath, `n
 		; get first item
-		FullPath = %PathArray1%
-		StringTrimRight, path1, FullPath, 1
-		StringTrimLeft, FullPath, path1, 9
-
-		;msgbox, %FullPath%
-		 
+			FullPath = %PathArray1%
+			StringTrimRight, path1, FullPath, 1
+			StringTrimLeft, FullPath, path1, 9
+			;msgbox, %FullPath%
 		; an error occurred with the SetWorkingDir directive
-		if ErrorLevel
-			return
-
+			if ErrorLevel
+				return
 		;FileCopy,D:\delPics.bat,%FullPath%\*,*,1
-
 		;Run %FullPath%\delPics.bat
 		;FileDelete,%FullPath%\delPics.bat
-		FileDelete,%FullPath%\*.bcs
-		FileDelete,%FullPath%\*.dbb
-		FileDelete,%FullPath%\*.do3
-		FileDelete,%FullPath%\*.ema
-		FileDelete,%FullPath%\*.emat
-		FileDelete,%FullPath%\*.esa
-		FileDelete,%FullPath%\*.esav
-		FileDelete,%FullPath%\*.ful
-		FileDelete,%FullPath%\*.full
-		FileDelete,%FullPath%\*.ldh
-		FileDelete,%FullPath%\*.mnt
-		FileDelete,%FullPath%\*.mod
-		FileDelete,%FullPath%\*.osa
-		FileDelete,%FullPath%\*.osav
-		FileDelete,%FullPath%\*.pcs
-		FileDelete,%FullPath%\*.pvt
-		FileDelete,%FullPath%\*.r00
-		FileDelete,%FullPath%\*.r001
-		FileDelete,%FullPath%\*.r002
-		FileDelete,%FullPath%\*.r003
-		FileDelete,%FullPath%\*.r004
-		FileDelete,%FullPath%\*.r005
-		FileDelete,%FullPath%\*.r006
-		FileDelete,%FullPath%\*.r007
-		FileDelete,%FullPath%\*.r008
-		FileDelete,%FullPath%\*.r009
-		FileDelete,%FullPath%\*.nr00
-		FileDelete,%FullPath%\*.nr001
-		FileDelete,%FullPath%\*.nr002
-		FileDelete,%FullPath%\*.nr003
-		FileDelete,%FullPath%\*.nr004
-		FileDelete,%FullPath%\*.nr005
-		FileDelete,%FullPath%\*.nr006
-		FileDelete,%FullPath%\*.nr007
-		FileDelete,%FullPath%\*.nr008
-		FileDelete,%FullPath%\*.nr009
-		FileDelete,%FullPath%\*.rdb
-		FileDelete,%FullPath%\*.sta
-		FileDelete,%FullPath%\*.tri
-		FileDelete,%FullPath%\*.lock
+			FileDelete,%FullPath%\*.bcs
+			FileDelete,%FullPath%\*.dbb
+			FileDelete,%FullPath%\*.do3
+			FileDelete,%FullPath%\*.ema
+			FileDelete,%FullPath%\*.emat
+			FileDelete,%FullPath%\*.esa
+			FileDelete,%FullPath%\*.esav
+			FileDelete,%FullPath%\*.ful
+			FileDelete,%FullPath%\*.full
+			FileDelete,%FullPath%\*.ldh
+			FileDelete,%FullPath%\*.mnt
+			FileDelete,%FullPath%\*.mod
+			FileDelete,%FullPath%\*.osa
+			FileDelete,%FullPath%\*.osav
+			FileDelete,%FullPath%\*.pcs
+			FileDelete,%FullPath%\*.pvt
+			FileDelete,%FullPath%\*.r00
+			FileDelete,%FullPath%\*.r001
+			FileDelete,%FullPath%\*.r002
+			FileDelete,%FullPath%\*.r003
+			FileDelete,%FullPath%\*.r004
+			FileDelete,%FullPath%\*.r005
+			FileDelete,%FullPath%\*.r006
+			FileDelete,%FullPath%\*.r007
+			FileDelete,%FullPath%\*.r008
+			FileDelete,%FullPath%\*.r009
+			FileDelete,%FullPath%\*.nr00
+			FileDelete,%FullPath%\*.nr001
+			FileDelete,%FullPath%\*.nr002
+			FileDelete,%FullPath%\*.nr003
+			FileDelete,%FullPath%\*.nr004
+			FileDelete,%FullPath%\*.nr005
+			FileDelete,%FullPath%\*.nr006
+			FileDelete,%FullPath%\*.nr007
+			FileDelete,%FullPath%\*.nr008
+			FileDelete,%FullPath%\*.nr009
+			FileDelete,%FullPath%\*.rdb
+			FileDelete,%FullPath%\*.sta
+			FileDelete,%FullPath%\*.tri
+			FileDelete,%FullPath%\*.lock
 		msgBox, Files Deleted!!!
-
 	return
 #IfWinActive
 ;ende Delete Temp Files Ansys
@@ -292,147 +309,141 @@ Return
 #IfWinActive ahk_class CabinetWClass
 	^!n::
 		; get full path from open windows
-		WinGetText, FullPath, A
- 
+			WinGetText, FullPath, A
 		; split up result (returns paths seperated by newlines [also lame])
-		StringSplit, PathArray, FullPath, `n
- 
+			StringSplit, PathArray, FullPath, `n
 		; get first item
-		FullPath = %PathArray1%
-		StringTrimRight, path1, FullPath, 1
-		StringTrimLeft, FullPath, path1, 9
-
+			FullPath = %PathArray1%
+			StringTrimRight, path1, FullPath, 1
+			StringTrimLeft, FullPath, path1, 9
 		;If Ctrl+Alt+N is pressed in Windows Explorer
-		;WinGetActiveTitle, title
-
+			;WinGetActiveTitle, title
 		; Display input box for filename
-		InputBox, UserInput, Enter Name (example: GoodFile.ext), , , 400, 100
-		 
+			InputBox, UserInput, Enter Name (Example: GoodFile.ext), , , 400, 100
 		; User pressed cancel
-		If ErrorLevel
-			Return
-
+			If ErrorLevel
+				Return
 		; Create file
-		FileAppend, , %FullPath%\%UserInput%
-		run %FullPath%\%UserInput%
+			FileAppend, , %FullPath%\%UserInput%
+			run %FullPath%\%UserInput%
 	return
 #IfWinActive
 ;ende Create File
 
 ;anfang Not Necessary
+	;!x::ToggleWinMinimize("Microsoft Excel")
+	;!c::ToggleWinMinimize("Java")
+	;!v::ToggleWinMinimize("win7_64Bit")
 
-;#IfWinActive ahk_class CabinetWClass ; for use in explorer.
-	;#c::
-		;ClipSaved := ClipboardAll
-		;Send !e
-		;Sleep 10
-		;Send ^c
-		;Run, cmd /K "cd `"%clipboard%`""
-		;Clipboard := ClipSaved
-		;ClipSaved =
-	;return
-;#IfWinActive
+	;#IfWinActive ahk_class CabinetWClass ; for use in explorer.
+		;#c::
+			;ClipSaved := ClipboardAll
+			;Send !e
+			;Sleep 10
+			;Send ^c
+			;Run, cmd /K "cd `"%clipboard%`""
+			;Clipboard := ClipSaved
+			;ClipSaved =
+		;return
+	;#IfWinActive
 
-;#IfWinActive ahk_class CabinetWClass
-	;^!m::
-		;;If Ctrl+Alt+m is pressed in Windows Explorer
-		 
-		;; get full path from open windows
-		;WinGetText, FullPath, A
-		 
-		;; split up result (returns paths seperated by newlines [also lame])
-		;StringSplit, PathArray, FullPath, `n
-		 
-		;; get first item
-		;FullPath = %PathArray1%
-		;StringTrimRight, path1, FullPath, 1
-		;StringTrimLeft, FullPath, path1, 9
+	;#IfWinActive ahk_class CabinetWClass
+		;^!m::
+			;;If Ctrl+Alt+m is pressed in Windows Explorer
+			 
+			;; get full path from open windows
+			;WinGetText, FullPath, A
+			 
+			;; split up result (returns paths seperated by newlines [also lame])
+			;StringSplit, PathArray, FullPath, `n
+			 
+			;; get first item
+			;FullPath = %PathArray1%
+			;StringTrimRight, path1, FullPath, 1
+			;StringTrimLeft, FullPath, path1, 9
 
-		;FileMove,C:\Users\HP\shared1\VirtualShare\JobFiles\*.*, %FullPath%\*.*
-		;;msgBox, %FullPath%
-	;return
-;#IfWinActive
+			;FileMove,C:\Users\HP\shared1\VirtualShare\JobFiles\*.*, %FullPath%\*.*
+			;;msgBox, %FullPath%
+		;return
+	;#IfWinActive
 
-;;To generate file to change working directory
-;#IfWinActive ahk_class CabinetWClass
-	;^!l::
-		;;If Ctrl+Alt+N is pressed in Windows Explorer
+	;;To generate file to change working directory
+	;#IfWinActive ahk_class CabinetWClass
+		;^!l::
+			;;If Ctrl+Alt+N is pressed in Windows Explorer
 
-		;; get full path from open windows
-		;WinGetText, FullPath, A
-		 
-		;; split up result (returns paths seperated by newlines [also lame])
-		;StringSplit, PathArray, FullPath, `n
-		 
-		;; get first item
-		;FullPath = %PathArray1%
-		;StringTrimRight, path1, FullPath, 1
-		;StringTrimLeft, FullPath, path1, 9
+			;; get full path from open windows
+			;WinGetText, FullPath, A
+			 
+			;; split up result (returns paths seperated by newlines [also lame])
+			;StringSplit, PathArray, FullPath, `n
+			 
+			;; get first item
+			;FullPath = %PathArray1%
+			;StringTrimRight, path1, FullPath, 1
+			;StringTrimLeft, FullPath, path1, 9
 
-		;;msgbox, %FullPath%
-		 
-		;; an error occurred with the SetWorkingDir directive
-		;if ErrorLevel
-			;return
-		 
-		;; display input box for file name
-		;UserInput = cdir
+			;;msgbox, %FullPath%
+			 
+			;; an error occurred with the SetWorkingDir directive
+			;if ErrorLevel
+				;return
+			 
+			;; display input box for file name
+			;UserInput = cdir
 
-		;text = /CWD,'%FullPath%'
-		;;msgbox,%text%
-		 
-		;; user pressed cancel
-		;if ErrorLevel
-			;return
-		 
-		;; success! output file with user input
+			;text = /CWD,'%FullPath%'
+			;;msgbox,%text%
+			 
+			;; user pressed cancel
+			;if ErrorLevel
+				;return
+			 
+			;; success! output file with user input
 
-		;else
-			;filePath = %FullPath%\%UserInput%.mac
-			;;msgbox, %filePath%
-			;FileDelete, %filePath%
-			;FileAppend, %text% ,%filePath%
-			;;run %filePath%
+			;else
+				;filePath = %FullPath%\%UserInput%.mac
+				;;msgbox, %filePath%
+				;FileDelete, %filePath%
+				;FileAppend, %text% ,%filePath%
+				;;run %filePath%
 
-		;FileCopy,%FullPath%\%UserInput%.mac, C:\Users\HP\shared1\VirtualShare\forHost\*.*,1
-		;;msgBox, Created and Copied
-		;run C:\Users\HP\shared1\VirtualShare\forHost\cdir.mac
+			;FileCopy,%FullPath%\%UserInput%.mac, C:\Users\HP\shared1\VirtualShare\forHost\*.*,1
+			;;msgBox, Created and Copied
+			;run C:\Users\HP\shared1\VirtualShare\forHost\cdir.mac
 
-	;return
-;#IfWinActive
+		;return
+	;#IfWinActive
 
-;To Update Maximum Values
-;#IfWinActive ahk_class CabinetWClass
-	;^!c::
-		;;If Ctrl+Alt+Y is pressed in Windows Explorer
+	;To Update Maximum Values
+	;#IfWinActive ahk_class CabinetWClass
+		;^!c::
+			;;If Ctrl+Alt+Y is pressed in Windows Explorer
 
-		;; get full path from open windows
-		;WinGetText, FullPath, A
-		 
-		;; split up result (returns paths seperated by newlines [also lame])
-		;StringSplit, PathArray, FullPath, `n
-		 
-		;; get first item
-		;FullPath = %PathArray1%
-		;StringTrimRight, path1, FullPath, 1
-		;StringTrimLeft, FullPath, path1, 9
-		;;msgBox, %FullPath%
-		 
-		;; an error occurred with the SetWorkingDir directive
-		;if ErrorLevel
-			;return
+			;; get full path from open windows
+			;WinGetText, FullPath, A
+			 
+			;; split up result (returns paths seperated by newlines [also lame])
+			;StringSplit, PathArray, FullPath, `n
+			 
+			;; get first item
+			;FullPath = %PathArray1%
+			;StringTrimRight, path1, FullPath, 1
+			;StringTrimLeft, FullPath, path1, 9
+			;;msgBox, %FullPath%
+			 
+			;; an error occurred with the SetWorkingDir directive
+			;if ErrorLevel
+				;return
 
-		;FileCopy,%FullPath%\maxValues.txt, C:\Users\HP\shared1\VirtualShare\_MaxValueFile\*.*,1
-		;msgBox, Updated!!!
-		;;run \\VBOXSVR\VirtualShare\_MaxValueFile\maxValues.txt
-	;return
-;#IfWinActive
-
+			;FileCopy,%FullPath%\maxValues.txt, C:\Users\HP\shared1\VirtualShare\_MaxValueFile\*.*,1
+			;msgBox, Updated!!!
+			;;run \\VBOXSVR\VirtualShare\_MaxValueFile\maxValues.txt
+		;return
+	;#IfWinActive
 ;ende Not Necessary
-;ende My Commands
 
 ;anfang FUNCTIONS
-;FUNCTIONS**************************************************************
 	ToggleWinMinimize(TheWindowTitle) {
 		SetTitleMatchMode,2
 		DetectHiddenWindows, Off
@@ -532,37 +543,41 @@ Return
 	;ende volume
 ;ende External Commands
 
-;~CapsLock::
-;GetKeyState, state, CapsLock, T 
-;if state = D ;  D=Caps is OFF, turn it ON
-;{
-	   ;;Progress, CWSilver CTGreen B2 ZH0 fs11 WS900 W1000 H28  X00 Y1050, CAPSLOCK ON
-	   ;Progress, CWfb7b55 CTfde3f9 B2 ZH0 fs11 WS900 W1000 H28 Y1050, CAPSLOCK ON
-;}
-;else if state = U ; U= Caps is ON, SET IT OFF
+;anfang Capslock State
+	;~CapsLock::
+	;GetKeyState, state, CapsLock, T 
+	;if state = D ;  D=Caps is OFF, turn it ON
 	;{
-	   ;Progress, Off
+	;;Progress, CWSilver CTGreen B2 ZH0 fs11 WS900 W1000 H28  X00 Y1050, CAPSLOCK ON
+	;Progress, CWfb7b55 CTfde3f9 B2 ZH0 fs11 WS900 W1000 H28 Y1050, CAPSLOCK ON
 	;}
-;return
+	;else if state = U ; U= Caps is ON, SET IT OFF
+		;{
+			;Progress, Off
+		;}
+	;return
+;ende Capslock State
 
-;~NumLock::
-;GetKeyState, state, NumLock, T 
-;if state = D ;  D=Numpack is OFF, turn it ON
-;{
-	   ;Progress, Off
-;}
-;else if state = U ; U= Numpad is ON, SET IT OFF
+;anfang Numlock State
+	;~NumLock::
+	;GetKeyState, state, NumLock, T 
+	;if state = D ;  D=Numpack is OFF, turn it ON
 	;{
-	   ;;Progress, CWSilver CTGreen B2 ZH0 fs11 WS900 W1000 H28  X00 Y1050, NUMPAD LOCKED
-	   ;Progress, CWfb7b55 CTfde3f9 B2 ZH0 fs11 WS900 W1000 H28 Y1050, NUMPAD LOCKED
+		;Progress, Off
 	;}
-;return
+	;else if state = U ; U= Numpad is ON, SET IT OFF
+		;{
+			;;Progress, CWSilver CTGreen B2 ZH0 fs11 WS900 W1000 H28  X00 Y1050, NUMPAD LOCKED
+			;Progress, CWfb7b55 CTfde3f9 B2 ZH0 fs11 WS900 W1000 H28 Y1050, NUMPAD LOCKED
+		;}
+	;return
+;ende Numlock State
 
-;anfang Useful Ones:
-			;MsgBox, 4,, Would you like to continue? (press Yes or No)
-			;IfMsgBox Yes
-				;MsgBox You pressed Yes.
-			;else
-				;MsgBox You pressed No.
-;ende
+;anfang Useful Notes:
+	;MsgBox, 4,, Would you like to continue? (press Yes or No)
+	;IfMsgBox Yes
+		;MsgBox You pressed Yes.
+	;else
+		;MsgBox You pressed No.
+;ende Useful Notes
 
