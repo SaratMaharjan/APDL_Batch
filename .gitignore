@@ -23,6 +23,7 @@
 !*.xla
 !*.xml
 !*.exe
+!*.zip
 !PhraseExpress
 !Data
 !*.dll
