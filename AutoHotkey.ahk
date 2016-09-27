@@ -189,6 +189,11 @@ return
 		;Run "D:\zCore\Zizorz.exe"
 	}
 return
+#!x::
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+		Run "D:\zCore\replaceLines.exe"
+	}
+return
 ;#w::
 	;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
 ;return
