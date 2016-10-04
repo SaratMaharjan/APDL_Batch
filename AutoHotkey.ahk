@@ -4,6 +4,8 @@
 ; You can also run more than one .ahk file simultaneously and each will get its own tray icon.
 												;If problem with encoding: set bomb in VIM and save
 
+SetTitleMatchMode, 2
+
 ; Numpad , replaced by .
 ; NumPadDot::Send, {ASC 0046}
 NumPadDot::Send, {.}
@@ -42,24 +44,24 @@ Return
 ;ende APDL mouse
 
 ;anfang Spaceclaim hide unhide
-#IfWinActive, A:Static Structural - SYS - SpaceClaim
+#IfWinActive, SpaceClaim
 	F9::
-		Click Right
-		sleep, 20
-		Send {Down 7}
-		Send {Enter}
-		;SendInput {Ctrl down}{h down}
-		;SendInput {Ctrl up}{h up}
+		;Click Right
+		;sleep, 20
+		;Send {Down 7}
+		;Send {Enter}
+		SendInput {Ctrl down}{h down}
+		SendInput {Ctrl up}{h up}
 	Return
-	+F9::
-		Click Right
-		sleep, 20
-		Send {Down 8}
-		Send {Enter}
-		;SendInput {Ctrl down}{Shift down}{i down}
-		;SendInput {Ctrl up}{Shift up}{i up}
-		;SendInput {Ctrl down}{h down}
-		;SendInput {Ctrl up}{h up}
+	^F9::
+		;Click Right
+		;sleep, 20
+		;Send {Down 8}
+		;Send {Enter}
+		SendInput {Ctrl down}{Shift down}{i down}
+		SendInput {Ctrl up}{Shift up}{i up}
+		SendInput {Ctrl down}{h down}
+		SendInput {Ctrl up}{h up}
 	Return
 #IfWinActive
 ;ende
@@ -198,9 +200,9 @@ return
 	;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
 ;return
 #u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
-#!w:: Run "C:\Program Files\ANSYS Inc\v170\ANSYS\bin\winx64\launcher.exe"
+#!w:: Run "C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\launcher.exe"
 ^!w:: Run "C:\Program Files\ANSYS Inc\v172\Framework\bin\Win64\runwb2.exe"
-#h:: Run "C:\Program Files\ANSYS Inc\v170\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
+#h:: Run "C:\Program Files\ANSYS Inc\v172\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
 ;#!e::Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
 ^!p:: Run "E:\SM\PortableApps\StartPortableApps.exe"
 ^+c:: Run "E:\SM\PortableApps\PortableApps"
