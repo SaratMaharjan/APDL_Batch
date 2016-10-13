@@ -4,7 +4,7 @@
 ; You can also run more than one .ahk file simultaneously and each will get its own tray icon.
 												;If problem with encoding: set bomb in VIM and save
 
-SetTitleMatchMode, 2
+SetTitleMatchMode, RegEx
 
 ; Numpad , replaced by .
 ; NumPadDot::Send, {ASC 0046}
@@ -22,14 +22,14 @@ F1::Send {Esc}
 ; Get Computer Name
 #1::Msgbox, %A_ComputerName%
 
-; Get Windows Title
-F6::
-	WinGetTitle, Title, A
-	MsgBox, The active window is "%Title%".
-Return
+;; Get Windows Title
+;F6::
+	;WinGetTitle, Title, A
+	;MsgBox, The active window is "%Title%".
+;Return
 
 ;anfang APDL mouse settings
-#IfWinActive, ANSYS
+#IfWinActive, ^ANSYS
 	RButton::
 		SendInput {Ctrl down}{RButton down}
 		Keywait, RButton
@@ -43,9 +43,25 @@ Return
 #IfWinActive
 ;ende APDL mouse
 
+;anfang ANSYS Mechanical
+#IfWinActive, ANSYS.*Mechanical
+	y::	Send {F9}
+	^y::
+		SendInput {Ctrl down}{F9 down}
+		SendInput {F9 up}{Ctrl up} 
+	Return
+	+y::
+		SendInput {Shift down}{F9 down}
+		SendInput {F9 up}{Shift up} 
+	Return
+	z:: Send {F7}
+	F5::
+#IfWinActive
+;ende APDL mouse
+
 ;anfang Spaceclaim hide unhide
 #IfWinActive, SpaceClaim
-	F9::
+	y::
 		;Click Right
 		;sleep, 20
 		;Send {Down 7}
@@ -53,15 +69,17 @@ Return
 		SendInput {Ctrl down}{h down}
 		SendInput {Ctrl up}{h up}
 	Return
-	^F9::
+	^y::
 		;Click Right
 		;sleep, 20
 		;Send {Down 8}
 		;Send {Enter}
-		SendInput {Ctrl down}{Shift down}{i down}
-		SendInput {Ctrl up}{Shift up}{i up}
-		SendInput {Ctrl down}{h down}
-		SendInput {Ctrl up}{h up}
+		SendInput {Alt down}{h down}
+		SendInput {Alt up}{h up}
+	Return
+	^T::
+	F5::
+	F6::
 	Return
 #IfWinActive
 ;ende
