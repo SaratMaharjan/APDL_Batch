@@ -20,7 +20,7 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 41 1 48 ) do (
-for %%z in ( 4 ) do (
+for %%z in ( 4 5 6 7 ) do (
 REM for %%z in ( 100 ) do (
 REM for %%z in ( 99 ) do (
 
@@ -83,8 +83,8 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 4 (
 		REM goto :takeTime
 		set proj_Num=304516
-		set interval=2009 10 2009
-		set interval2=11 1 11
+		set interval=1009 10 1099
+		set interval2=11 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -100,7 +100,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 5 (
 		REM goto :takeTime
 		set proj_Num=304516
-		set interval=2119 10 2199
+		set interval=1119 10 1199
 		set interval2=11 1 12
 
 		REM set append=1
@@ -117,7 +117,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 6 (
 		REM goto :takeTime
 		set proj_Num=304516
-		set interval=2009 10 2009
+		set interval=1009 10 1099
 		set interval2=21 1 22
 
 		REM set append=1
@@ -134,7 +134,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 7 (
 		REM goto :takeTime
 		set proj_Num=304516
-		set interval=2119 10 2199
+		set interval=1119 10 1199
 		set interval2=21 1 22
 
 		REM set append=1

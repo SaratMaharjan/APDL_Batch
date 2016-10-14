@@ -45,12 +45,12 @@ F1::Send {Esc}
 
 ;anfang ANSYS Mechanical
 #IfWinActive, ANSYS.*Mechanical
-	y::	Send {F9}
-	^y::
+	<::	Send {F9}
+	^<::
 		SendInput {Ctrl down}{F9 down}
 		SendInput {F9 up}{Ctrl up} 
 	Return
-	+y::
+	+<::
 		SendInput {Shift down}{F9 down}
 		SendInput {F9 up}{Shift up} 
 	Return
@@ -60,8 +60,8 @@ F1::Send {Esc}
 ;ende APDL mouse
 
 ;anfang Spaceclaim hide unhide
-#IfWinActive, SpaceClaim
-	y::
+#IfWinActive, SpaceClaim$
+	<::
 		;Click Right
 		;sleep, 20
 		;Send {Down 7}
@@ -69,7 +69,7 @@ F1::Send {Esc}
 		SendInput {Ctrl down}{h down}
 		SendInput {Ctrl up}{h up}
 	Return
-	^y::
+	^<::
 		;Click Right
 		;sleep, 20
 		;Send {Down 8}
