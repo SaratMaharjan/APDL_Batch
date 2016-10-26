@@ -44,7 +44,7 @@ F1::Send {Esc}
 ;ende APDL mouse
 
 ;anfang ANSYS Mechanical
-#IfWinActive, ANSYS.*Mechanical
+#IfWinActive, Mechanical.*ANSYS
 	<::	Send {F9}
 	^<::
 		SendInput {Ctrl down}{F9 down}

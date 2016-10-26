@@ -10,7 +10,7 @@ REM anfang Selecting Licenses and Processors
 	REM set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 	set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 	REM	1.Structural/ANSYS	2.Prfnls	3.Stba/MEBA	4.Prepost
-		set startValue=2
+		set startValue=1
 		REM set startValue=4
 		set endValue=!startValue!
 		REM set endValue=4
@@ -20,7 +20,7 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 41 1 48 ) do (
-for %%z in ( 4 5 6 7 ) do (
+for %%z in ( 11 12 ) do (
 REM for %%z in ( 100 ) do (
 REM for %%z in ( 99 ) do (
 
@@ -83,8 +83,8 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 4 (
 		REM goto :takeTime
 		set proj_Num=304516
-		set interval=1009 10 1099
-		set interval2=11 1 12
+		set interval=2009 10 2009
+		set interval2=11 10 21
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -157,6 +157,74 @@ REM for %%z in ( 99 ) do (
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=9
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 11 - 302016 - Brenner
+	if %%z equ 11 (
+		REM goto :takeTime
+		set proj_Num=302016
+		set interval=1006 10 1096
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=9
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 12 - 302016 - Brenner -ve
+	if %%z equ 12 (
+		REM goto :takeTime
+		set proj_Num=302016
+		set interval=1116 10 1196
+		set interval2=11 1 14
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=9
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 13 - 302016 - Brenner
+	if %%z equ 13 (
+		REM goto :takeTime
+		set proj_Num=302016
+		set interval=1046 10 1096
+		set interval2=12 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=9
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 14 - 302016 - Brenner -ve
+	if %%z equ 14 (
+		REM goto :takeTime
+		set proj_Num=302016
+		set interval=1046 10 1096
+		set interval2=11 1 11
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYS
 		REM set redirect=1
 		REM set execute=1
 		REM set extVar=9

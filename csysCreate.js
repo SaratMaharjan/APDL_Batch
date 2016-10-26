@@ -105,7 +105,7 @@ function td_remove_sel_ns(ns) {
 
 var SC = DS.Script; 
 var SM = SC.sm; 
-for(var ii = 1; ii <= 13; ii++){
+for(var ii = 1; ii <= 11; ii++){
 	td_new_sel_ns("kc"+ii);
 	SC.doCreateCoordinateSystem();
 }
