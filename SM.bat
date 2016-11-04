@@ -9,8 +9,8 @@ call first.bat
 REM anfang Selecting Licenses and Processors
 	REM set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
 	set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
-	REM	1.Structural/ANSYS	2.Prfnls	3.Stba/MEBA	4.Prepost
-		set startValue=1
+	REM	1.Structural/ANSYS	2.Mech_2	3.Stba/MEBA	4.Prepost
+		set startValue=2
 		REM set startValue=4
 		set endValue=!startValue!
 		REM set endValue=4
@@ -20,7 +20,7 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 41 1 48 ) do (
-for %%z in ( 11 12 ) do (
+for %%z in ( 21 ) do (
 REM for %%z in ( 100 ) do (
 REM for %%z in ( 99 ) do (
 
@@ -283,12 +283,12 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 21 - 301316 - S-1042
+	REM REM anfang 21 - 306416 - M-2141M
 	if %%z equ 21 (
 		REM goto :takeTime
-		set proj_Num=301316
-		set interval=1068 10 1098
-		set interval2=12 1 12
+		set proj_Num=306416
+		set interval=1009 10 1009
+		set interval2=11 10 41
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -300,12 +300,12 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 22 - 301316 - S-1042 -ve
+	REM REM anfang 22 - 306416 - M-2141M -ve
 	if %%z equ 22 (
 		REM goto :takeTime
-		set proj_Num=301316
-		set interval=1118 10 1198
-		set interval2=12 1 12
+		set proj_Num=306416
+		set interval=1119 10 1199
+		set interval2=11 1 11
 
 		REM set append=1
 		REM set pathBefore=D:

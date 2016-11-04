@@ -41,13 +41,13 @@ setlocal EnableDelayedExpansion
 
 REM set ansj=preppost
 set /p ansj=<lastLic.txt
-set /p r=Enter License to Use (1: struct, 2: prflns, 4: prepost; default: %ansj%):%=%
+set /p r=Enter License to Use (1: struct, 2: mech_2, 4: prepost; default: %ansj%):%=%
 if "%r%" equ "1" (
 	REM set ansj=struct
 	set ansj=ansys
 )
 if "%r%" equ "2" (
-	set ansj=prfnls
+	set ansj=mech_2
 )
 if "%r%" equ "3" (
 	set ansj=preppost

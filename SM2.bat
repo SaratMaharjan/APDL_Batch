@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 REM anfang Selecting Licenses
 		REM 1.	Structural 4 core
 		REM 2.	Structura 2 core
-		REM 3.	Prfnls
+		REM 3.	Mech_2
 		REM 4.	Stba
 		REM 6.	Prepost
 	set startValue=2

@@ -42,13 +42,13 @@ set /p resuSub=Enter Last Substep:%=%
 
 REM set ansj=preppost
 set /p ansj=<lastResLic.txt
-set /p r=Enter License to Use (1: struct, 2: prflns, 3: meba; default: %ansj%):%=%
+set /p r=Enter License to Use (1: struct, 2: mech_2, 3: meba; default: %ansj%):%=%
 if "%r%" equ "1" (
 	REM set ansj=struct
 	set ansj=ansys
 )
 if "%r%" equ "2" (
-	set ansj=prfnls
+	set ansj=mech_2
 )
 if "%r%" equ "3" (
 	set ansj=meba

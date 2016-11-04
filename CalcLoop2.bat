@@ -21,7 +21,7 @@ for /l %%c in (1 1 100)  do (
 			set ansj=ansys
 		)
 		if %%r equ 3 (
-			set ansj=prfnls
+			set ansj=mech_2
 		)
 		if %%r equ 4 (
 			REM set ansj=stba

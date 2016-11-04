@@ -24,7 +24,7 @@ for /l %%c in ( 1 1 5 ) do (
 				REM set ansj=struct
 				set ansj=ansys
 			) else if %%r equ 2 (
-				set ansj=prfnls
+				set ansj=mech_2
 			) else if %%r equ 3 (
 				REM set ansj=stba
 				set ansj=meba
