@@ -42,6 +42,8 @@ del !wDir!\f!job!-!lk!.rdb >nul 2>&1
 del !wDir!\f!job!-!lk!.sta >nul 2>&1
 del !wDir!\f!job!-!lk!.tri >nul 2>&1
 del !wDir!\f!job!-!lk!.lock >nul 2>&1
+del !wDir!\f!job!-!ldhi!.lock >nul 2>&1
+del !wDir!\f!job!-!mntr!.lock >nul 2>&1
 
 echo .............................
 echo ....... File Deletion Completed
