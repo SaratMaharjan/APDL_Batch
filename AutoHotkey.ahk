@@ -141,7 +141,7 @@ return
 	} else if (InStr(A_ComputerName,"ANSYS2")) {
 		Run "E:\maharjan\VIMinstall\Vim\vim74\gvim.exe"
 	} else {
-		Run "C:\Users\Sarat\Dropbox\VimInstall\Vim\vim74\gvim.exe"
+		Run "C:\Users\Sarat.LAPTOP-Q276ID9D\Dropbox\VimInstall\Vim\vim74\gvim.exe"
 	}
 return
 ;#x::
