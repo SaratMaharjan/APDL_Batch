@@ -20,8 +20,8 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 41 1 48 ) do (
-for %%z in ( 21 ) do (
-REM for %%z in ( 1 ) do (
+for %%z in ( 9 ) do (
+REM for %%z in ( 12 ) do (
 REM for %%z in ( 99 ) do (
 
 	call initials.bat
@@ -32,7 +32,7 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 1 (
 		REM goto :takeTime
 		set proj_Num=303416a
-		set interval=1009 10 1019
+		set interval=2009 10 2009
 		set interval2=12 1 12
 
 		REM set append=1
@@ -169,7 +169,7 @@ REM for %%z in ( 99 ) do (
 		REM goto :takeTime
 		set proj_Num=306416
 		set interval=1002 10 1002
-		set interval2=21 10 41
+		set interval2=31 10 31
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -198,35 +198,34 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-
-	REM REM anfang 56 - 299816 - S-764 Maschine
-	if %%z equ 56 (
+	REM REM anfang 11 - 307116 - S-1055 SSW
+	if %%z equ 11 (
 		REM goto :takeTime
-		set proj_Num=299816
-		set interval=9411 100 9411
-		set interval2=12 1 12
+		set proj_Num=307116
+		set interval=1006 10 1096
+		set interval2=11 1 11
 
 		REM set append=1
-		set pathBefore=D:
+		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		set redirect=1
+		REM set redirect=1
 		REM set execute=1
 		REM set extVar=9
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
 
-	REM REM anfang 57 - 299816 - S-764 Maschine
-	if %%z equ 57 (
+	REM REM anfang 12 - 307116 - S-1055 SSW -ve
+	if %%z equ 12 (
 		REM goto :takeTime
-		set proj_Num=299816
-		set interval=9311 100 9311
-		set interval2=13 1 13
+		set proj_Num=307116
+		set interval=1116 10 1196
+		set interval2=11 1 11
 
 		REM set append=1
-		set pathBefore=D:
+		REM set pathBefore=D:
 		REM set pathAfter=ANSYS
-		set redirect=1
+		REM set redirect=1
 		REM set execute=1
 		REM set extVar=9
 		REM set sourcePre=R:\maharjan
