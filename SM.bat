@@ -168,8 +168,8 @@ REM for %%z in ( 99 ) do (
 	if %%z equ 9 (
 		REM goto :takeTime
 		set proj_Num=306416
-		set interval=1002 10 1002
-		set interval2=31 10 31
+		set interval=1009 10 1009
+		set interval2=11 10 41
 
 		REM set append=1
 		REM set pathBefore=D:
