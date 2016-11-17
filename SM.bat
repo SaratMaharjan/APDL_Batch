@@ -28,10 +28,10 @@ REM for %%z in ( 99 ) do (
 	REM anfang Projekte (Active: 1-50)
 	REM ==================================================================================================
 
-	REM REM anfang 1 - 303416a - South Hartford
+	REM REM anfang 1 - 303416 - South Hartford
 	if %%z equ 1 (
 		REM goto :takeTime
-		set proj_Num=303416a
+		set proj_Num=303416
 		set interval=2009 10 2009
 		set interval2=12 1 12
 
@@ -45,10 +45,10 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 2 - 303416a - South Hartford -ve
+	REM REM anfang 2 - 303416 - South Hartford -ve
 	if %%z equ 2 (
 		REM goto :takeTime
-		set proj_Num=303416a
+		set proj_Num=303416
 		set interval=2009 10 2039
 		set interval2=12 1 12
 
@@ -198,39 +198,6 @@ REM for %%z in ( 99 ) do (
 	)
 	REM REM ende
 
-	REM REM anfang 11 - 307116 - S-1055 SSW
-	if %%z equ 11 (
-		REM goto :takeTime
-		set proj_Num=307116
-		set interval=1006 10 1096
-		set interval2=11 1 11
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set extVar=9
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 12 - 307116 - S-1055 SSW -ve
-	if %%z equ 12 (
-		REM goto :takeTime
-		set proj_Num=307116
-		set interval=1116 10 1196
-		set interval2=11 1 11
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		REM set redirect=1
-		REM set execute=1
-		REM set extVar=9
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
 
 
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
