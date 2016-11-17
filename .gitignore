@@ -12,26 +12,27 @@
 !*.dll
 !*.dotm
 !*.dvb
+!*.exe
 !*.gitignore
+!*.html
+!*.ico
 !*.in
+!*.ini
 !*.js
+!*.jpg
 !*.md
-!*.snippets
 !*.mac
+!*.png
+!*.snippets
 !*.solc
 !*.txt
 !*.vim
+!*.wav
 !*.xla
 !*.xml
-!*.exe
 !*.zip
-!PhraseExpress
-!Data
-!*.dll
-!*.png
 
-!plugin/
-GREP/
+!*/
 bundle/
-
+ag/
 

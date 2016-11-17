@@ -1,0 +1,86 @@
+
+job3, jobt
+absm
+*abbr, crplim, /view,1,-1,+.4,-.8
+inPrep = 1
+/output, license, txt
+	*vwrite, inPrep
+%1I
+/output
+/show, jpeg
+/view, 1, 1, 1, 1
+/vup, , y
+/pbc, u, ,1
+/pbc, rot, , 1
+/pbc, forc, , 2
+/prep7
+	n, 1, 0, 0, 0
+	n, 2, 0, 0, 100
+
+	mp, ex, 1, 21000
+	mp, nuxy, 1, 0.3
+	mp, dens, 1, 7.85e-3
+
+		et, 1, beam188
+		sectype, 1, beam, RECT
+		secdata, 10, 10
+		r, 1
+
+		mat, 1
+		real, 1
+		type, 1
+		secnum, 1
+
+	e, 1, 2
+	d, 1, all
+fini
+/solu
+		antype, static, new, 
+		eqslv, sparse
+		bcsoption, , incore
+		autots, on
+		nlgeom, on
+		sstif, on
+		outres, all, all
+		rescontrol, define, all, all, 3
+		nropt, auto
+		solcontrol, on
+		nldiag, nrre, on
+		fcum, replace
+	alls
+	csys
+
+	time, 1
+	nsubst, 3
+	f, 2, fy, 100*joblk1
+	lswrite, 1
+	eplot
+
+	time, 2
+	nsubst, 3
+	f, 2, fy, 200*joblk1
+	lswrite, 2
+	eplot
+
+	lssolve, 1, 2, 1
+	save
+fini
+/post1
+	alls
+	csys
+	plnsol, u, sum
+fini
+/post26
+	nsol, 2, 2, u, x, ux
+	nsol, 3, 2, u, y, uy
+	nsol, 4, 2, u, z, uz
+	plvar, 2, 3, 4
+fini
+/show
+	succeed = 1
+	/output, success, txt
+		*vwrite, succeed
+%1I
+	/output
+/exit, solu
+
