@@ -23,3 +23,5 @@ REM Select Drive and Initial Values
 			REM set d=1
 			set d=2
 
+		set sourceFile=s.in
+
