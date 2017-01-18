@@ -22,11 +22,11 @@ F1::Send {Esc}
 ; Get Computer Name
 #1::Msgbox, %A_ComputerName%
 
-;; Get Windows Title
-;F6::
-	;WinGetTitle, Title, A
-	;MsgBox, The active window is "%Title%".
-;Return
+; Get Windows Title
+#2::
+	WinGetTitle, Title, A
+	MsgBox, The active window is "%Title%".
+Return
 
 ;anfang APDL mouse settings
 #IfWinActive, ^ANSYS
@@ -128,13 +128,13 @@ F1::Send {Esc}
 		run "C:\_________Drive"
 	}
 return
-#n::
-	if(InStr(A_ComputerName,"SMAHARJAN")){
-		Run "E:\Installs\Notepad++\notepad++.exe"
-	} else {
-		Run "E:\Maharjan\Notepad++\notepad++.exe"
-	}
-return
+;#n::
+	;if(InStr(A_ComputerName,"SMAHARJAN")){
+		;Run "E:\Installs\Notepad++\notepad++.exe"
+	;} else {
+		;Run "E:\Maharjan\Notepad++\notepad++.exe"
+	;}
+;return
 #v::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "E:\SM\VIMinstall\Vim\vim74\gvim.exe"
@@ -179,14 +179,14 @@ return
 		Run "E:\maharjan\SM.bat"
 	}
 return
-#y::
-	if(InStr(A_ComputerName,"SMAHARJAN")){
-		Run "D:\zCore"
-		;Run "C:\Program Files (x86)\Everything\Everything.exe"
-	} else {
-		Run "C:\locate32\locate32.exe"
-	}
-return
+;#y::
+	;if(InStr(A_ComputerName,"SMAHARJAN")){
+		;Run "D:\zCore"
+		;;Run "C:\Program Files (x86)\Everything\Everything.exe"
+	;} else {
+		;Run "C:\locate32\locate32.exe"
+	;}
+;return
 #z::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "D:\zCore\zBar.exe"
@@ -214,11 +214,11 @@ return
 		Run "D:\zCore\replaceLines.exe"
 	}
 return
-#!f::
-	if(InStr(A_ComputerName,"SMAHARJAN")){
-		Run "E:\SM\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
-	}
-return
+;#!f::
+	;if(InStr(A_ComputerName,"SMAHARJAN")){
+		;Run "E:\SM\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
+	;}
+;return
 ;#w::
 	;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
 ;return
@@ -226,10 +226,10 @@ return
 #!w:: Run "C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\launcher.exe"
 ^!w:: Run "C:\Program Files\ANSYS Inc\v172\Framework\bin\Win64\runwb2.exe"
 #h:: Run "C:\Program Files\ANSYS Inc\v172\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
-;#!e::Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
+;;#!e::Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
 ^!p:: Run "E:\SM\PortableApps\StartPortableApps.exe"
-^+c:: Run "E:\SM\PortableApps\PortableApps"
-^!c:: Run "E:\SM\vim"
+^+p:: Run "E:\SM\PortableApps\PortableApps"
+^!v:: Run "E:\SM\vim"
 #b:: Run "R:\ansys\macros"
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 #.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
