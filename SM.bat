@@ -7,10 +7,9 @@ setlocal EnableDelayedExpansion
 call first.bat
 
 REM anfang Selecting Licenses and Processors
-	REM set appPath="C:\Program Files\ANSYS Inc\v162\ANSYS\bin\winx64\ansys162.exe"
-	set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
+	set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
 	REM	1.Structural/ANSYS	2.Mech_2	3.Stba/MEBA	4.Prepost
-		set startValue=1
+		set startValue=2
 		REM set startValue=4
 		set endValue=!startValue!
 		REM set endValue=4
@@ -20,117 +19,64 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 41 1 48 ) do (
-REM for %%z in ( 10 ) do (
-REM for %%z in ( 4 ) do (
-for %%z in ( 100 ) do (
+REM for %%z in ( 1 2 ) do (
+for %%z in ( 3 ) do (
+REM for %%z in ( 100 ) do (
 
 	call initials.bat
 	REM anfang Projekte (Active: 1-50)
 	REM ==================================================================================================
 
-	REM REM anfang 4 - 304516 - S-1053 Dubai Metro
-	if %%z equ 4 (
+	REM REM anfang 1 - 308917 - S-1087 Hinkley
+	if %%z equ 1 (
 		REM goto :takeTime
-		set proj_Num=304516
-		set interval=2119 10 2119
-		set interval2=21 1 21
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYSec
-		set redirect=1
-		REM set execute=1
-		set extVar=0
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 5 - 304516 - S-1053 Dubai Metro -ve
-	if %%z equ 5 (
-		REM goto :takeTime
-		set proj_Num=304516
-		set interval=2149 10 2149
-		set interval2=12 1 12
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYSec
-		set redirect=1
-		REM set execute=1
-		set extVar=0
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 6 - 304516 - S-1053 Dubai Metro
-	if %%z equ 6 (
-		REM goto :takeTime
-		set proj_Num=304516
-		set interval=2009 10 2099
-		set interval2=21 1 22
+		set proj_Num=308917
+		set interval=2006 10 2096
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYSec
 		REM set redirect=1
 		REM set execute=1
-		REM set extVar=9
+		REM set extVar=0
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
 
-	REM REM anfang 7 - 304516 - S-1053 Dubai Metro -ve
-	if %%z equ 7 (
+	REM REM anfang 2 - 308917 - S-1087 Hinkley -ve
+	if %%z equ 2 (
 		REM goto :takeTime
-		set proj_Num=304516
-		set interval=2119 10 2199
-		set interval2=21 1 22
+		set proj_Num=308917
+		set interval=2116 10 2196
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYSec
 		REM set redirect=1
 		REM set execute=1
-		REM set extVar=9
+		REM set extVar=0
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
 
-	REM REM anfang 9 - 306416 - M-2141M
-	if %%z equ 9 (
+	REM REM anfang 3 - 308817 - BBM1500 Vortriebsrohr
+	if %%z equ 3 (
 		REM goto :takeTime
-		set proj_Num=306416
-		set interval=2002 10 2002
-		set interval2=11 10 51
+		set proj_Num=308817
+		set interval=1000 10 1000
+		set interval2=2 1 2
 
 		REM set append=1
 		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
+		REM set pathAfter=ANSYSec
 		REM set redirect=1
 		REM set execute=1
-		REM set extVar=9
+		REM set extVar=0
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
-
-	REM REM anfang 10 - 306416 - M-2141M -ve
-	if %%z equ 10 (
-		REM goto :takeTime
-		set proj_Num=306416
-		set interval=2019 10 2019
-		set interval2=11 10 11
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYS
-		set redirect=1
-		REM set execute=1
-		REM set extVar=9
-		REM set sourcePre=R:\maharjan
-		REM set sourceFile=s1resume.in
-	)
-	REM REM ende
-
 
 
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
