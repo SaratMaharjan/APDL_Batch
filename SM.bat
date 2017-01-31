@@ -9,7 +9,7 @@ call first.bat
 REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
 	REM	1.Structural/ANSYS	2.Mech_2	3.Stba/MEBA	4.Prepost
-		set startValue=2
+		set startValue=3
 		REM set startValue=4
 		set endValue=!startValue!
 		REM set endValue=4
@@ -19,8 +19,8 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM for /l %%z in ( 41 1 48 ) do (
-REM for %%z in ( 1 2 ) do (
-for %%z in ( 3 ) do (
+REM for %%z in ( 3 ) do (
+for %%z in ( 4 5 3 6 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
@@ -63,6 +63,57 @@ REM for %%z in ( 100 ) do (
 
 	REM REM anfang 3 - 308817 - BBM1500 Vortriebsrohr
 	if %%z equ 3 (
+		REM goto :takeTime
+		set proj_Num=308817
+		set interval=1000 10 1000
+		set interval2=1 2 3
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=0
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 4 - 309017 - Brenner Basis Baulos
+	if %%z equ 4 (
+		REM goto :takeTime
+		set proj_Num=309017
+		set interval=2009 10 2099
+		set interval2=11 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=0
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 5 - 309017 - Brenner Basis Baulos -ve
+	if %%z equ 5 (
+		REM goto :takeTime
+		set proj_Num=309017
+		set interval=2119 10 2199
+		set interval2=11 1 13
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=0
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 6 - 308817 - BBM1500 Vortriebsrohr
+	if %%z equ 6 (
 		REM goto :takeTime
 		set proj_Num=308817
 		set interval=1000 10 1000
