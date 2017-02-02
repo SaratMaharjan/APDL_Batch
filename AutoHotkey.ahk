@@ -17,7 +17,7 @@ F1::Send {Esc}
 ^F1::Send {F1}
 
 ; Set window always on TOP
-^space::  Winset, Alwaysontop, , A
+^!space::  Winset, Alwaysontop, , A
 
 ; Get Computer Name
 #1::Msgbox, %A_ComputerName%

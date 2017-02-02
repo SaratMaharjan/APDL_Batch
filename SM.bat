@@ -8,6 +8,7 @@ call first.bat
 
 REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
+	REM set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 	REM	1.Structural/ANSYS	2.Mech_2	3.Stba/MEBA	4.Prepost
 		set startValue=3
 		REM set startValue=4
@@ -18,9 +19,7 @@ REM anfang Selecting Licenses and Processors
 		REM set numPro=4
 REM ende
 
-REM for /l %%z in ( 41 1 48 ) do (
-REM for %%z in ( 3 ) do (
-for %%z in ( 4 5 3 6 ) do (
+for %%z in ( 4 5 6  3 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
@@ -66,7 +65,7 @@ REM for %%z in ( 100 ) do (
 		REM goto :takeTime
 		set proj_Num=308817
 		set interval=1000 10 1000
-		set interval2=1 2 3
+		set interval2=1 1 3
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -82,13 +81,13 @@ REM for %%z in ( 100 ) do (
 	if %%z equ 4 (
 		REM goto :takeTime
 		set proj_Num=309017
-		set interval=2009 10 2099
-		set interval2=11 1 13
+		set interval=2199 10 2199
+		set interval2=11 1 11
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYSec
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set extVar=0
 		REM set sourcePre=R:\maharjan
@@ -99,30 +98,30 @@ REM for %%z in ( 100 ) do (
 	if %%z equ 5 (
 		REM goto :takeTime
 		set proj_Num=309017
-		set interval=2119 10 2199
-		set interval2=11 1 13
+		set interval=2139 10 2139
+		set interval2=12 1 12
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYSec
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set extVar=0
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
 
-	REM REM anfang 6 - 308817 - BBM1500 Vortriebsrohr
+	REM REM anfang 6 - 309017 - Brenner Basis Baulos -ve
 	if %%z equ 6 (
 		REM goto :takeTime
-		set proj_Num=308817
-		set interval=1000 10 1000
-		set interval2=2 1 2
+		set proj_Num=309017
+		set interval=2079 10 2079
+		set interval2=13 1 13
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYSec
-		REM set redirect=1
+		set redirect=1
 		REM set execute=1
 		REM set extVar=0
 		REM set sourcePre=R:\maharjan
