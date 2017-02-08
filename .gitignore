@@ -20,20 +20,24 @@
 !*.ini
 !*.js
 !*.jpg
-!*.md
+!*.json
+!*.log
 !*.mac
+!*.map
+!*.md
 !*.png
 !*.php
 !*.snippets
 !*.solc
 !*.txt
+!*.ts
 !*.vim
 !*.wav
 !*.xla
 !*.xml
 !*.zip
 
-!*/
+!**/
 bundle/
 ag/
 phpMyAdmin/

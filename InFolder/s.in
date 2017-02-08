@@ -13,6 +13,7 @@ inPrep = 1
 /pbc, u, ,1
 /pbc, rot, , 1
 /pbc, forc, , 2
+
 /prep7
 	n, 1, 0, 0, 0
 	n, 2, 0, 0, 100
