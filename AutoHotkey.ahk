@@ -197,9 +197,11 @@ return
 return
 #c::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
-		Run "D:\zCore\Zizorz.exe"
+		;Run "D:\zCore\Zizorz.exe"
+		Run "snippingTool"
 	} else {
-		Run "D:\zCore\Zizorz.exe"
+		;Run "D:\zCore\Zizorz.exe"
+		Run "snippingTool"
 	}
 return
 #x::
@@ -234,6 +236,8 @@ return
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 #.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
 #ß:: Run "\\ansys2\Maharjan"
+^!s:: Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
+
 ;ende Local Locations
 
 ;anfang Internet Addresses
