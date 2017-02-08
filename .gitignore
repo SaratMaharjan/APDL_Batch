@@ -51,7 +51,7 @@
 !*.xml
 !*.zip
 
-!**/
+!*/
 bundle/
 ag/
 phpMyAdmin/
