@@ -55,5 +55,5 @@
 bundle/
 ag/
 phpMyAdmin/
-angularQS/node_modules/**/*.*
+angularQS/node_modules/*
 
