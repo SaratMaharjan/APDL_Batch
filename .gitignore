@@ -52,8 +52,8 @@
 !*.zip
 
 !**/
-!**/quickstart
 bundle/
 ag/
 phpMyAdmin/
+quickstart/node_modules/*.*
 
