@@ -225,9 +225,15 @@ return
 	;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
 ;return
 #u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
+
+;#!w:: Run "C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\launcher.exe"
 #!w:: Run "C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\launcher.exe"
+
+;^!w:: Run "C:\Program Files\ANSYS Inc\v172\Framework\bin\Win64\runwb2.exe"
 ^!w:: Run "C:\Program Files\ANSYS Inc\v180\Framework\bin\Win64\runwb2.exe"
+
 #h:: Run "C:\Program Files\ANSYS Inc\v180\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
+
 ;;#!e::Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
 ^!p:: Run "E:\SM\PortableApps\StartPortableApps.exe"
 ^+p:: Run "E:\SM\PortableApps\PortableApps"
