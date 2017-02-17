@@ -7,10 +7,10 @@ setlocal EnableDelayedExpansion
 call first.bat
 
 REM anfang Selecting Licenses and Processors
-	REM REM set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
-	set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
+	set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
+	REM set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 	REM	1.Structural/ANSYS	2.Mech_2	3.Stba/MEBA	4.Prepost
-		set startValue=2
+		set startValue=4
 		REM set startValue=4
 		set endValue=!startValue!
 		REM set endValue=4
@@ -19,7 +19,7 @@ REM anfang Selecting Licenses and Processors
 		REM set numPro=4
 REM ende
 
-for %%z in ( 9 ) do (
+for %%z in ( 13 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
@@ -179,6 +179,56 @@ REM for %%z in ( 100 ) do (
 	)
 	REM REM ende
 
+	REM REM anfang 11 - 309717 - Hinkley 1088
+	if %%z equ 11 (
+		REM goto :takeTime
+		set proj_Num=309717
+		set interval=1006 10 1096
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=0
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 12 - 309717 - Hinkley 1088 -ve
+	if %%z equ 12 (
+		REM goto :takeTime
+		set proj_Num=309717
+		set interval=1116 10 1196
+		set interval2=11 1 12
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=0
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 13 - 309817 - S-1071 Fahrträger
+	if %%z equ 13 (
+		REM goto :takeTime
+		set proj_Num=309817
+		set interval=1000 10 1000
+		set interval2=1 1 1
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=0
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
 
 
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
