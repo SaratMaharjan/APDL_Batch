@@ -15,6 +15,7 @@
 !*.docx
 !*.dotm
 !*.dvb
+!*.eot
 !*.exe
 !*.exportedUI
 !*.fas
@@ -39,13 +40,16 @@
 !*.scscript
 !*.snippets
 !*.solc
+!*.svg
 !*.tiff
-!*.txt
+!*.ttf
 !*.ts
+!*.txt
 !*.vbs
 !*.vim
 !*.wav
 !*.wbjn
+!*.woff
 !*.xla
 !*.xlsx
 !*.xml
