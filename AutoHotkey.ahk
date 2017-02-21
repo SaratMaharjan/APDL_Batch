@@ -216,11 +216,13 @@ return
 		Run "D:\zCore\replaceLines.exe"
 	}
 return
-;#!f::
-	;if(InStr(A_ComputerName,"SMAHARJAN")){
-		;Run "E:\SM\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
-	;}
-;return
+#!f::
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+		Run "E:\SM\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
+	} else {
+		Run "E:\SM\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
+	}
+return
 ;#w::
 	;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
 ;return
