@@ -137,11 +137,11 @@ return
 ;return
 #v::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
-		Run "E:\SM\VIMinstall\Vim\vim74\gvim.exe"
+		Run "E:\SM\VIMinstall\Vim\vim80\gvim.exe"
 	} else if (InStr(A_ComputerName,"ANSYS2")) {
-		Run "E:\maharjan\VIMinstall\Vim\vim74\gvim.exe"
+		Run "E:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
 	} else {
-		Run "C:\Users\Sarat.LAPTOP-Q276ID9D\Dropbox\VimInstall\Vim\vim74\gvim.exe"
+		Run "C:\Users\Sarat.LAPTOP-Q276ID9D\Dropbox\VimInstall\Vim\vim80\gvim.exe"
 	}
 return
 ;#x::
