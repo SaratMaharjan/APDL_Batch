@@ -218,9 +218,9 @@ return
 return
 #!f::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
-		Run "E:\SM\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
+		Run "E:\SM\PortableApps\PortableApps\FreeFileSync8.9\FreeFileSync.exe"
 	} else {
-		Run "E:\SM\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
+		Run "E:\SM\PortableApps\PortableApps\FreeFileSync8.9\FreeFileSync.exe"
 	}
 return
 ;#w::
