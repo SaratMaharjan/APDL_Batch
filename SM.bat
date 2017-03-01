@@ -19,12 +19,46 @@ REM anfang Selecting Licenses and Processors
 		REM set numPro=4
 REM ende
 
-for %%z in ( 13 ) do (
+for %%z in ( 1 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
 	REM anfang Projekte (Active: 1-50)
 	REM ==================================================================================================
+
+	REM REM anfang 1 - 310117 - Forderschnecke
+	if %%z equ 1 (
+		REM goto :takeTime
+		set proj_Num=310117
+		set interval=0 10 0
+		set interval2=7 1 7
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=0
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
+
+	REM REM anfang 2 - 310117 - Forderschnecke
+	if %%z equ 2 (
+		REM goto :takeTime
+		set proj_Num=310117
+		set interval=1 10 1
+		set interval2=5 1 5
+
+		REM set append=1
+		REM set pathBefore=D:
+		REM set pathAfter=ANSYSec
+		REM set redirect=1
+		REM set execute=1
+		REM set extVar=0
+		REM set sourcePre=R:\maharjan
+	)
+	REM REM ende
 
 	REM REM anfang 3 - 308817 - BBM1500 Vortriebsrohr
 	if %%z equ 3 (
