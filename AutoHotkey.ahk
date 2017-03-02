@@ -220,7 +220,7 @@ return
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "E:\SM\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
 	} else {
-		Run "E:\SM\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
+		Run "C:\_________Drive\anakon\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
 	}
 return
 ;#w::
