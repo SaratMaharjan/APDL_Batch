@@ -30,8 +30,8 @@ REM for %%z in ( 100 ) do (
 	if %%z equ 1 (
 		REM goto :takeTime
 		set proj_Num=310117
-		set interval=2 10 2
-		set interval2=8 1 8
+		set interval=0 10 0
+		set interval2=9 1 9
 
 		REM set append=1
 		REM set pathBefore=D:
