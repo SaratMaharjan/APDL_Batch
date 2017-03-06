@@ -19,7 +19,7 @@ REM anfang Selecting Licenses and Processors
 		REM set numPro=4
 REM ende
 
-for %%z in ( 1 13 ) do (
+for %%z in ( 13 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
