@@ -30,11 +30,13 @@ Return
 
 ;anfang APDL mouse settings
 #IfWinActive, ^ANSYS
+
 	RButton::
 		SendInput {Ctrl down}{RButton down}
 		Keywait, RButton
 		SendInput {RButton up}{Ctrl up}
 	Return
+
 	MButton::
 		SendInput {Ctrl down}{LButton down}
 		Keywait, MButton
@@ -45,22 +47,29 @@ Return
 
 ;anfang ANSYS Mechanical
 #IfWinActive, Mechanical.*ANSYS
+
 	<::	Send {F9}
+
 	^<::
 		SendInput {Ctrl down}{F9 down}
 		SendInput {F9 up}{Ctrl up} 
 	Return
+
 	+<::
 		SendInput {Shift down}{F9 down}
 		SendInput {F9 up}{Shift up} 
 	Return
+
 	z:: Send {F7}
+
 	F5::
+
 #IfWinActive
 ;ende APDL mouse
 
 ;anfang Spaceclaim hide unhide
 #IfWinActive, SpaceClaim$
+
 	<::
 		;Click Right
 		;sleep, 20
@@ -69,6 +78,7 @@ Return
 		SendInput {Ctrl down}{h down}
 		SendInput {Ctrl up}{h up}
 	Return
+
 	^<::
 		;Click Right
 		;sleep, 20
@@ -77,19 +87,28 @@ Return
 		SendInput {Alt down}{h down}
 		SendInput {Alt up}{h up}
 	Return
+
 	^T::
+
 	F5::
+
 	F6::
 	Return
+
 #IfWinActive
 ;ende
 
 ;anfang Creo Mouse Settings
 #IfWinActive, Creo Elements/Direct 3D Access
+
 	RButton::MButton
+
 	MButton::RButton
+
 	WheelDown::WheelUp
+
 	WheelUp::WheelDown
+
 	^ & LButton::
 		SendInput {RButton down}
 		Keywait LButton
@@ -103,6 +122,7 @@ Return
 			;Return
 		;}
 	Return
+
 	^RButton::
 		GetKeyState, state, Ctrl
 		;;MsgBox "Control Key State: " %state%
@@ -117,6 +137,7 @@ Return
 			Return
 		}
 	Return
+
 #IfWinActive
 ;ende CREO mouse settings
 
@@ -128,6 +149,7 @@ Return
 		run "C:\_________Drive"
 	}
 return
+
 ;#n::
 	;if(InStr(A_ComputerName,"SMAHARJAN")){
 		;Run "E:\Installs\Notepad++\notepad++.exe"
@@ -135,97 +157,158 @@ return
 		;Run "E:\Maharjan\Notepad++\notepad++.exe"
 	;}
 ;return
+
 #v::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		Run "E:\SM\VIMinstall\Vim\vim80\gvim.exe"
+
 	} else if (InStr(A_ComputerName,"ANSYS2")) {
+
 		Run "E:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
+
 	} else {
+
 		Run "C:\Users\Sarat.LAPTOP-Q276ID9D\Dropbox\VimInstall\Vim\vim80\gvim.exe"
+
 	}
 return
+
 ;#x::
 	;if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		;Run "D:\zCore\setnetUse.bat"
+
 	;} else {
+
 		;Run "E:\maharjan\setnetUse.bat"
+
 	;}
 ;return
+
 #w::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		Run "D:\zCore\runAnsys.bat"
+
 	} else {
+
 		Run "E:\maharjan\runAnsys.bat"
+
 	}
 return
+
 #q::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		Run "D:\zCore\runAnsysE.bat"
+
 	} else {
+
 		Run "E:\maharjan\runAnsysE.bat"
+
 	}
 return
+
 #+q::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		Run "D:\zCore\runAnsysR.bat"
+
 	} else {
+
 		Run "E:\maharjan\runAnsysR.bat"
 	}
 return
+
 #!r::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		Run "D:\zCore\SM.bat"
+
 	} else {
+
 		Run "E:\maharjan\SM.bat"
+
 	}
 return
+
 ;#y::
 	;if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		;Run "D:\zCore"
 		;;Run "C:\Program Files (x86)\Everything\Everything.exe"
+
 	;} else {
+
 		;Run "C:\locate32\locate32.exe"
+
 	;}
 ;return
+
 #z::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		Run "D:\zCore\zBar.exe"
 		;Run "C:\Program Files (x86)\Everything\Everything.exe"
+
 	} else {
+
 		Run "D:\zCore\zBar.exe"
+
 	}
 return
+
 #c::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		;Run "D:\zCore\Zizorz.exe"
 		Run "snippingTool"
+
 	} else {
+
 		;Run "D:\zCore\Zizorz.exe"
 		Run "snippingTool"
+
 	}
 return
+
 #x::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		Run "D:\zCore\replSolu.exe"
+
 	} else {
+
 		;Run "D:\zCore\Zizorz.exe"
+
 	}
 return
+
 #!x::
+
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 		Run "D:\zCore\replaceLines.exe"
+
 	}
 return
+
 #!f::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
+
 		Run "E:\SM\PortableApps\PortableApps\FreeFileSync8.9\FreeFileSync.exe"
+
 	} else {
-		Run "C:\_________Drive\anakon\PortableApps\PortableApps\FreeFileSync\FreeFileSync.exe"
+
+		Run "C:\_________Drive\anakon\PortableApps\PortableApps\Synchredible\Synchredible.exe"
+
 	}
 return
+
 ;#w::
 	;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
 ;return
+
 #u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
 
 ;#!w:: Run "C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\launcher.exe"
@@ -236,27 +319,65 @@ return
 
 #h:: Run "C:\Program Files\ANSYS Inc\v180\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
 
-;;#!e::Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
-^!p:: Run "E:\SM\PortableApps\StartPortableApps.exe"
-^+p:: Run "E:\SM\PortableApps\PortableApps"
+;;#!e::
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+
+		Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
+
+	} else {
+
+		Run "C:\_________Drive\anakon\PortableApps\XYexplorer\XYplorerFree.exe"
+
+	}
+
+^!p::
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+
+		Run "E:\SM\PortableApps\StartPortableApps.exe"
+
+	} else {
+
+		Run "C:\_________Drive\anakon\PortableApps\StartPortableApps.exe"
+
+	}
+
+^+p::
+	if(InStr(A_ComputerName,"SMAHARJAN")){
+
+		Run "E:\SM\PortableApps\PortableApps"
+
+	} else {
+
+		Run "C:\_________Drive\anakon\PortableApps\PortableApps"
+
+	}
+
 ^!v:: Run "E:\SM\vim"
+
 #b:: Run "R:\ansys\macros"
+
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
+
 #.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
+
 #ß:: Run "\\ansys2\Maharjan"
+
 ^!s:: Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
 
 ;ende Local Locations
 
 ;anfang Internet Addresses
 #space::Run www.google.com.np
+
 #f::
 	Run "C:\Program Files (x86)\Mozilla Firefox\Firefox.exe"
 return
+
 #s::
 	Send, ^c
 	Run, http://www.google.com/search?q=%Clipboard%
 Return
+
 #g::
 	Send, ^c
 	Run, http://dict.leo.org/#/search=%Clipboard%&searchLoc=0&resultOrder=basic&multiwordShowSingle=on
