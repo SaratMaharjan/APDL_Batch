@@ -19,7 +19,7 @@ REM anfang Selecting Licenses and Processors
 		REM set numPro=4
 REM ende
 
-for %%z in ( 1 ) do (
+for %%z in ( 13 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
@@ -30,7 +30,7 @@ REM for %%z in ( 100 ) do (
 	if %%z equ 1 (
 		REM goto :takeTime
 		set proj_Num=310117
-		set interval=2 10 2
+		set interval=9 10 9
 		set interval2=8 1 8
 
 		REM set append=1
