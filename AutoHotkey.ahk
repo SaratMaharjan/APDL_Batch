@@ -329,8 +329,9 @@ return
 		Run "C:\_________Drive\anakon\PortableApps\XYexplorer\XYplorerFree.exe"
 
 	}
+return
 
-^!p::
+#!p::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 
 		Run "E:\SM\PortableApps\StartPortableApps.exe"
@@ -340,6 +341,7 @@ return
 		Run "C:\_________Drive\anakon\PortableApps\StartPortableApps.exe"
 
 	}
+return
 
 ^+p::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
@@ -351,6 +353,7 @@ return
 		Run "C:\_________Drive\anakon\PortableApps\PortableApps"
 
 	}
+return
 
 ^!v:: Run "E:\SM\vim"
 
