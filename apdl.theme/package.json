@@ -1,0 +1,22 @@
+{
+    "name": "apdlTheme",
+    "displayName": "apdlTheme",
+    "description": "ANSYS apdl friendly",
+    "version": "0.0.1",
+    "publisher": "smaharjan",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "apdlTheme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/apdlTheme.json"
+            }
+        ]
+    }
+}
