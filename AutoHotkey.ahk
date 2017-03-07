@@ -319,17 +319,17 @@ return
 
 #h:: Run "C:\Program Files\ANSYS Inc\v180\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
 
-;;#!e::
-	if(InStr(A_ComputerName,"SMAHARJAN")){
+;#!e::
+	;if(InStr(A_ComputerName,"SMAHARJAN")){
 
-		Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
+		;Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
 
-	} else {
+	;} else {
 
-		Run "C:\_________Drive\anakon\PortableApps\XYexplorer\XYplorerFree.exe"
+		;Run "C:\_________Drive\anakon\PortableApps\XYexplorer\XYplorerFree.exe"
 
-	}
-return
+	;}
+;return
 
 #!p::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
@@ -343,7 +343,7 @@ return
 	}
 return
 
-^+p::
+#+p::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 
 		Run "E:\SM\PortableApps\PortableApps"
