@@ -4,7 +4,7 @@
   "description": "test batch run",
   "main": "sm.bat",
   "scripts": {
-    "start": "start sm.bat"
+    "start": "start D:\\zcore\\sm.bat"
   },
   "keywords": [
     "tutorial"
