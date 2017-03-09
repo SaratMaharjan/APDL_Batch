@@ -1,0 +1,14 @@
+{
+  "name": "npm_test",
+  "version": "1.0.0",
+  "description": "test batch run",
+  "main": "sm.bat",
+  "scripts": {
+    "start": "start sm.bat"
+  },
+  "keywords": [
+    "tutorial"
+  ],
+  "author": "sm",
+  "license": "ISC"
+}

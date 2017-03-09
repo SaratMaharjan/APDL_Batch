@@ -19,7 +19,8 @@ REM anfang Selecting Licenses and Processors
 		REM set numPro=4
 REM ende
 
-for %%z in ( 13 ) do (
+REM select Calculations to Perform
+for %%z in ( 9 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
@@ -116,7 +117,7 @@ REM for %%z in ( 100 ) do (
 		REM goto :takeTime
 		set proj_Num=309317
 		set interval=1000 10 1000
-		set interval2=4 1 4
+		set interval2=1 1 1
 
 		REM set append=1
 		REM set pathBefore=D:
