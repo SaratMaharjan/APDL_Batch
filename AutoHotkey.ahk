@@ -300,7 +300,7 @@ return
 
 	} else {
 
-		Run "C:\_________Drive\anakon\PortableApps\PortableApps\Synchredible\Synchredible.exe"
+		Run "C:\Program Files\FreeFileSync\FreeFileSync.exe"
 
 	}
 return
