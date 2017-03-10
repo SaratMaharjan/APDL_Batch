@@ -20,7 +20,7 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM select Calculations to Perform
-for %%z in ( 13 ) do (
+for %%z in ( 9 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
