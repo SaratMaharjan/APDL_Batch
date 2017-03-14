@@ -67,6 +67,26 @@ Return
 #IfWinActive
 ;ende APDL mouse
 
+;anfang RSTAB
+#IfWinActive, RSTAB
+
+	RButton::
+		SendInput {Ctrl down}{MButton down}
+		Keywait RButton
+		SendInput {MButton up}
+		SendInput {Ctrl up}
+	Return
+
+	+RButton::
+		SendInput {RButton down}
+		Keywait RButton
+		SendInput {RButton up}
+		SendInput {Shift up}
+	Return
+
+#IfWinActive
+;ende RSTAB mouse
+
 ;anfang Spaceclaim hide unhide
 #IfWinActive, SpaceClaim$
 
@@ -640,74 +660,74 @@ Return
 	}
 ;ende Functions
 
-;anfang External Functions
-	;anfang Volume 
-		$Volume_Up::
-		+WheelUp::
-			{
-				Send {Volume_Up}
-				Gosub, vupdt
-				return
-			}
+;  ;anfang External Functions
+;  	;anfang Volume 
+;  		$Volume_Up::
+;  		+WheelUp::
+;  			{
+;  				Send {Volume_Up}
+;  				Gosub, vupdt
+;  				return
+;  			}
 
-		$Volume_Down::
-		+WheelDown::
-			{
-				Send {Volume_Down}
-				Gosub, vupdt
-				return
-			}
+;  		$Volume_Down::
+;  		+WheelDown::
+;  			{
+;  				Send {Volume_Down}
+;  				Gosub, vupdt
+;  				return
+;  			}
 
-		$Volume_Mute::
-			{
-				Send {Volume_Mute}
-				Gosub, vupdt
-				return
-			}
+;  		$Volume_Mute::
+;  			{
+;  				Send {Volume_Mute}
+;  				Gosub, vupdt
+;  				return
+;  			}
 
-		; display volume bar
-		vupdt:
-		IfWinExist, ahkvolume
-		{
-			SoundGet, master_volume
-			SoundGet, v_m, master, mute
-			GuiControl,, MP, %master_volume%
-			if v_m = On
-				GuiControl,, Pic1, *Icon40 %a_windir%\system32\mmsys.cpl
-			else 
-				GuiControl,, Pic1, *Icon1 %a_windir%\system32\mmsys.cpl
-				SetTimer,vclose, 2000
-			return
-		}
-		SoundGet, master_volume
-		SoundGet, v_m, master, mute
+;  		; display volume bar
+;  		vupdt:
+;  		IfWinExist, ahkvolume
+;  		{
+;  			SoundGet, master_volume
+;  			SoundGet, v_m, master, mute
+;  			GuiControl,, MP, %master_volume%
+;  			if v_m = On
+;  				GuiControl,, Pic1, *Icon40 %a_windir%\system32\mmsys.cpl
+;  			else 
+;  				GuiControl,, Pic1, *Icon1 %a_windir%\system32\mmsys.cpl
+;  				SetTimer,vclose, 2000
+;  			return
+;  		}
+;  		SoundGet, master_volume
+;  		SoundGet, v_m, master, mute
 
-		IfWinNotExist, ahkvolume
-		{
-			Gui, +ToolWindow -Caption +0x400000 +alwaysontop
-			Gui, Add, GroupBox, x3 y2 w40 h45 cblack,
-			Gui, Add, text, x97 y2 ,Volume:
-			Gui, Add, Progress,horizontal vMP x48 y18 w160 h20 c333cc,%master_volume% 
-			if v_m = On
-				Gui, Add, pic, x7 y13 vPic1 icon40, %a_windir%\system32\mmsys.cpl
-			else
-				Gui, Add, pic, x7 y13 vPic1 icon1, %a_windir%\system32\mmsys.cpl
-				SysGet, screenx, 0
-				SysGet, screeny, 1
-				; adjust display to show in bottom right corner
-				xpos:=screenx-275
-				ypos:=screeny-100
-				Gui, Show, NoActivate x%xpos% y%ypos% h48 w213, ahkvolume
-		}
-		SetTimer,vclose, 2000
-		return
+;  		IfWinNotExist, ahkvolume
+;  		{
+;  			Gui, +ToolWindow -Caption +0x400000 +alwaysontop
+;  			Gui, Add, GroupBox, x3 y2 w40 h45 cblack,
+;  			Gui, Add, text, x97 y2 ,Volume:
+;  			Gui, Add, Progress,horizontal vMP x48 y18 w160 h20 c333cc,%master_volume% 
+;  			if v_m = On
+;  				Gui, Add, pic, x7 y13 vPic1 icon40, %a_windir%\system32\mmsys.cpl
+;  			else
+;  				Gui, Add, pic, x7 y13 vPic1 icon1, %a_windir%\system32\mmsys.cpl
+;  				SysGet, screenx, 0
+;  				SysGet, screeny, 1
+;  				; adjust display to show in bottom right corner
+;  				xpos:=screenx-275
+;  				ypos:=screeny-100
+;  				Gui, Show, NoActivate x%xpos% y%ypos% h48 w213, ahkvolume
+;  		}
+;  		SetTimer,vclose, 2000
+;  		return
 
-		vclose:
-		SetTimer,vclose, off
-		Gui, destroy
-		return
-	;ende volume
-;ende External Commands
+;  		vclose:
+;  		SetTimer,vclose, off
+;  		Gui, destroy
+;  		return
+;  	;ende volume
+;  ;ende External Commands
 
 ;anfang Capslock State
 	;~CapsLock::

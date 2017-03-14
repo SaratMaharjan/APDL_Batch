@@ -63,3 +63,4 @@ ag/
 phpMyAdmin/
 angularQS/node_modules/*
 node_modules/
+.history/
