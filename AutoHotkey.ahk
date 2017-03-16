@@ -194,6 +194,9 @@ return
 	}
 return
 
+#c:: Run "C:\Program Files (x86)\Microsoft VS Code\Code.exe" -n
+
+
 ;#x::
 	;if(InStr(A_ComputerName,"SMAHARJAN")){
 
@@ -279,7 +282,7 @@ return
 	}
 return
 
-#c::
+#!c::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 
 		;Run "D:\zCore\Zizorz.exe"

@@ -116,8 +116,8 @@ REM for %%z in ( 100 ) do (
 	if %%z equ 9 (
 		REM goto :takeTime
 		set proj_Num=309317
-		set interval=1001 10 1001
-		set interval2=4 1 4
+		set interval=1000 1 1001
+		set interval2=3 1 3
 
 		REM set append=1
 		REM set pathBefore=D:
@@ -171,7 +171,7 @@ REM for %%z in ( 100 ) do (
 		set interval2=1 1 1
 
 		REM set append=1
-		REM set pathBefore=D:
+		set pathBefore=E:
 		REM set pathAfter=ANSYSec
 		REM set redirect=1
 		REM set execute=1
