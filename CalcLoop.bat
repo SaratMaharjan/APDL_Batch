@@ -5,7 +5,7 @@ echo ---------------STARTING CALCULATION------------------
 del !wDir!\*.lock >nul 2>&1
 del !wDir!\*.abt >nul 2>&1
 
-for /l %%c in ( 1 1 5 ) do (
+for /l %%c in ( 1 1 1 ) do (
 	REM call timer.bat StartTimer
 	echo.
 	REM set tBackUp=!Start100S!
@@ -61,7 +61,7 @@ for /l %%c in ( 1 1 5 ) do (
 		echo !apdlCMD! >> !wDir!\smAPDL.bat
 		echo.
 
-		if %execute% equ 1 (		
+		if %execute% equ 1 (
 			!apdlCMD!
 		)
 
