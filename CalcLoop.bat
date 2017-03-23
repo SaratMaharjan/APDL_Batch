@@ -128,7 +128,7 @@ for /l %%c in ( 1 1 1 ) do (
 	echo.
 	echo ---------- COULD NOT CALCULATE Try: !retry! ----------
 	echo.
-	timeout /t 900
+	timeout /t 60
 
 )
 

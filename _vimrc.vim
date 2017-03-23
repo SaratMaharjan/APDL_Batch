@@ -7,4 +7,3 @@ elseif hostname == "Smaharjan"
 else
 	source C:/users/Sarat/Dropbox/VIM/vimrc.vim
 endif
-
