@@ -52,12 +52,12 @@ Return
 
 	^<::
 		SendInput {Ctrl down}{F9 down}
-		SendInput {F9 up}{Ctrl up} 
+		SendInput {F9 up}{Ctrl up}
 	Return
 
 	+<::
 		SendInput {Shift down}{F9 down}
-		SendInput {F9 up}{Shift up} 
+		SendInput {F9 up}{Shift up}
 	Return
 
 	z:: Send {F7}
@@ -185,7 +185,7 @@ return
 
 	} else if (InStr(A_ComputerName,"ANSYS2")) {
 
-		Run "E:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
+		Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
 
 	} else {
 
@@ -539,13 +539,13 @@ Return
 	;#IfWinActive ahk_class CabinetWClass
 		;^!m::
 			;;If Ctrl+Alt+m is pressed in Windows Explorer
-			 
+
 			;; get full path from open windows
 			;WinGetText, FullPath, A
-			 
+
 			;; split up result (returns paths seperated by newlines [also lame])
 			;StringSplit, PathArray, FullPath, `n
-			 
+
 			;; get first item
 			;FullPath = %PathArray1%
 			;StringTrimRight, path1, FullPath, 1
@@ -563,31 +563,31 @@ Return
 
 			;; get full path from open windows
 			;WinGetText, FullPath, A
-			 
+
 			;; split up result (returns paths seperated by newlines [also lame])
 			;StringSplit, PathArray, FullPath, `n
-			 
+
 			;; get first item
 			;FullPath = %PathArray1%
 			;StringTrimRight, path1, FullPath, 1
 			;StringTrimLeft, FullPath, path1, 9
 
 			;;msgbox, %FullPath%
-			 
+
 			;; an error occurred with the SetWorkingDir directive
 			;if ErrorLevel
 				;return
-			 
+
 			;; display input box for file name
 			;UserInput = cdir
 
 			;text = /CWD,'%FullPath%'
 			;;msgbox,%text%
-			 
+
 			;; user pressed cancel
 			;if ErrorLevel
 				;return
-			 
+
 			;; success! output file with user input
 
 			;else
@@ -611,16 +611,16 @@ Return
 
 			;; get full path from open windows
 			;WinGetText, FullPath, A
-			 
+
 			;; split up result (returns paths seperated by newlines [also lame])
 			;StringSplit, PathArray, FullPath, `n
-			 
+
 			;; get first item
 			;FullPath = %PathArray1%
 			;StringTrimRight, path1, FullPath, 1
 			;StringTrimLeft, FullPath, path1, 9
 			;;msgBox, %FullPath%
-			 
+
 			;; an error occurred with the SetWorkingDir directive
 			;if ErrorLevel
 				;return
@@ -664,7 +664,7 @@ Return
 ;ende Functions
 
 ;  ;anfang External Functions
-;  	;anfang Volume 
+;  	;anfang Volume
 ;  		$Volume_Up::
 ;  		+WheelUp::
 ;  			{
@@ -697,7 +697,7 @@ Return
 ;  			GuiControl,, MP, %master_volume%
 ;  			if v_m = On
 ;  				GuiControl,, Pic1, *Icon40 %a_windir%\system32\mmsys.cpl
-;  			else 
+;  			else
 ;  				GuiControl,, Pic1, *Icon1 %a_windir%\system32\mmsys.cpl
 ;  				SetTimer,vclose, 2000
 ;  			return
@@ -710,7 +710,7 @@ Return
 ;  			Gui, +ToolWindow -Caption +0x400000 +alwaysontop
 ;  			Gui, Add, GroupBox, x3 y2 w40 h45 cblack,
 ;  			Gui, Add, text, x97 y2 ,Volume:
-;  			Gui, Add, Progress,horizontal vMP x48 y18 w160 h20 c333cc,%master_volume% 
+;  			Gui, Add, Progress,horizontal vMP x48 y18 w160 h20 c333cc,%master_volume%
 ;  			if v_m = On
 ;  				Gui, Add, pic, x7 y13 vPic1 icon40, %a_windir%\system32\mmsys.cpl
 ;  			else
@@ -734,7 +734,7 @@ Return
 
 ;anfang Capslock State
 	;~CapsLock::
-	;GetKeyState, state, CapsLock, T 
+	;GetKeyState, state, CapsLock, T
 	;if state = D ;  D=Caps is OFF, turn it ON
 	;{
 	;;Progress, CWSilver CTGreen B2 ZH0 fs11 WS900 W1000 H28  X00 Y1050, CAPSLOCK ON
@@ -749,7 +749,7 @@ Return
 
 ;anfang Numlock State
 	;~NumLock::
-	;GetKeyState, state, NumLock, T 
+	;GetKeyState, state, NumLock, T
 	;if state = D ;  D=Numpack is OFF, turn it ON
 	;{
 		;Progress, Off

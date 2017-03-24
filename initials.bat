@@ -2,7 +2,7 @@
 REM Select Drive and Initial Values
 		if "!host!" equ "ansys2" (
 			set sourcePre=R:\maharjan
-			set pathBefore=E:\Maharjan
+			set pathBefore=D:\Maharjan
 			set pathAfter=ANSYS
 		) else (
 			set sourcePre=R:\maharjan
