@@ -10,7 +10,7 @@ REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
 	REM set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 	REM	1.Structural/ANSYS	2.Mech_2	3.Stba/MEBA	4.Prepost
-		set startValue=1
+		set startValue=4
 		REM set startValue=4
 		set endValue=!startValue!
 		REM set endValue=4
@@ -20,7 +20,7 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM select Calculations to Perform
-for %%z in ( 9 ) do (
+for %%z in ( 1 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
@@ -32,10 +32,10 @@ REM for %%z in ( 100 ) do (
 		REM goto :takeTime
 		set proj_Num=310117
 		set interval=9 10 9
-		set interval2=8 1 8
+		set interval2=11 1 18
 
 		REM set append=1
-		REM set pathBefore=D:
+		set pathBefore=D:\310117\_d340
 		REM set pathAfter=ANSYSec
 		REM set redirect=1
 		REM set execute=1
@@ -66,46 +66,12 @@ REM for %%z in ( 100 ) do (
 		REM goto :takeTime
 		set proj_Num=308817
 		set interval=1000 10 1000
-		set interval2=2 1 2
+		set interval2=1 1 4
 
 		REM set append=1
 		REM set pathBefore=D:
 		REM set pathAfter=ANSYSec
 		REM set redirect=1
-		REM set execute=1
-		REM set extVar=0
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 7 - 303416 - S-1052
-	if %%z equ 7 (
-		REM goto :takeTime
-		set proj_Num=303416
-		set interval=2089 10 2089
-		set interval2=11 1 11
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYSec
-		set redirect=1
-		REM set execute=1
-		REM set extVar=0
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 8 - 303416 - S-1052 -ve
-	if %%z equ 8 (
-		REM goto :takeTime
-		set proj_Num=303416
-		set interval=2039 10 2039
-		set interval2=12 1 12
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYSec
-		set redirect=1
 		REM set execute=1
 		REM set extVar=0
 		REM set sourcePre=R:\maharjan
@@ -116,62 +82,11 @@ REM for %%z in ( 100 ) do (
 	if %%z equ 9 (
 		REM goto :takeTime
 		set proj_Num=309317
-		set interval=1000 1 1000
-		set interval2=2 1 2
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYSec
-		REM set redirect=1
-		REM set execute=1
-		REM set extVar=0
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 11 - 309717 - Hinkley 1088
-	if %%z equ 11 (
-		REM goto :takeTime
-		set proj_Num=309717
-		set interval=1006 10 1096
-		set interval2=11 1 12
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYSec
-		REM set redirect=1
-		REM set execute=1
-		REM set extVar=0
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 12 - 309717 - Hinkley 1088 -ve
-	if %%z equ 12 (
-		REM goto :takeTime
-		set proj_Num=309717
-		set interval=1116 10 1196
-		set interval2=11 1 12
-
-		REM set append=1
-		REM set pathBefore=D:
-		REM set pathAfter=ANSYSec
-		REM set redirect=1
-		REM set execute=1
-		REM set extVar=0
-		REM set sourcePre=R:\maharjan
-	)
-	REM REM ende
-
-	REM REM anfang 13 - 309817 - S-1071 Fahrträger
-	if %%z equ 13 (
-		REM goto :takeTime
-		set proj_Num=309817
 		set interval=1000 10 1000
-		set interval2=11 10 11
+		set interval2=12 1 12
 
 		REM set append=1
-		set pathBefore=E:
+		REM set pathBefore=D:
 		REM set pathAfter=ANSYSec
 		REM set redirect=1
 		REM set execute=1
@@ -179,6 +94,7 @@ REM for %%z in ( 100 ) do (
 		REM set sourcePre=R:\maharjan
 	)
 	REM REM ende
+
 
 
 	REM 99 anfang TEMPORARY CALCULATIONS §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
