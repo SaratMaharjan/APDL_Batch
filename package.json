@@ -1,14 +1,26 @@
 {
-  "name": "npm_test",
+  "name": "zcore",
   "version": "1.0.0",
-  "description": "test batch run",
+  "description": "General Utilities",
   "main": "sm.bat",
   "scripts": {
-    "start": "start D:\\zcore\\sm.bat"
+    "start": "start D:\\zcore\\sm.bat",
+    "learnyounode": "learnyounode"
   },
   "keywords": [
-    "tutorial"
+    "ansys batch"
   ],
   "author": "sm",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saratmaharjan/APDL_Batch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saratmaharjan/APDL_Batch/issues"
+  },
+  "homepage": "https://github.com/saratmaharjan/APDL_Batch#readme",
+  "devDependencies": {
+    "learnyounode": "^3.5.10"
+  }
 }

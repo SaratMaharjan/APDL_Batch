@@ -10,7 +10,7 @@ REM anfang Selecting Licenses and Processors
 	set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
 	REM set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 	REM	1.Structural/ANSYS	2.Mech_2	3.Stba/MEBA	4.Prepost
-		set startValue=2
+		set startValue=3
 		REM set startValue=4
 		set endValue=!startValue!
 		REM set endValue=4
@@ -20,7 +20,7 @@ REM anfang Selecting Licenses and Processors
 REM ende
 
 REM select Calculations to Perform
-for %%z in ( 12 13 ) do (
+for %%z in ( 5 ) do (
 REM for %%z in ( 100 ) do (
 
 	call initials.bat
@@ -83,7 +83,7 @@ REM for %%z in ( 100 ) do (
 		REM goto :takeTime
 		set proj_Num=310917
 		set interval=1000 1 1000
-		set interval2=5 1 6
+		set interval2=1 1 8
 
 		REM set append=1
 		REM set pathBefore=D:
