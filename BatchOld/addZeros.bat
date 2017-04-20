@@ -1,4 +1,3 @@
-
 :addZero
 set par1=%par%
 if %num% geq 4 (

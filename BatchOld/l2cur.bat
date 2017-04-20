@@ -6,4 +6,4 @@ echo Changed Directory to Launch-Dir: %cd%
 set ldir=%cd%
 echo.
 REM echo ..&
-REM pause
+pause

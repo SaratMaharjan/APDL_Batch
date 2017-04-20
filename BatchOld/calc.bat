@@ -1,4 +1,15 @@
 
+	REM if %d% equ 1 (
+		REM net use x: /dele /y
+		REM net use x: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
+		REM set "location=x:"
+	REM )
+	REM if %d% equ 2 (
+		REM net use s: /dele /y
+		REM net use s: \\SERVER\server_lw_d\Maharjan\!proj_Num! /y
+		REM set "location=s:"
+	REM )
+
 	set "location=!sourcePre!\!proj_Num!"
 	set "wDir=!pathBefore!\!proj_Num!\!pathAfter!"
 	echo.
@@ -66,3 +77,4 @@
 	echo. >> !wDir!\smAPDL.bat
 	echo REM ende New Analysis Cases >> !wDir!\smAPDL.bat
 	echo REM ------------------- >> !wDir!\smAPDL.bat
+
