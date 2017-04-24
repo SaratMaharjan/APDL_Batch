@@ -53,9 +53,9 @@
 			call calcLoop.bat :calc
 			REM timeout /t 10
 			set /p succeed=<!wDir!\success.txt
-			if !succeed! equ 1 (
-				call deleteFiles.bat :delFiles
-			)
+			REM if !succeed! equ 1 (
+			REM 	call deleteFiles.bat :delFiles
+			REM )
 			@echo on
 			echo ____________________________________
 			echo Job Finished.... ..... ............

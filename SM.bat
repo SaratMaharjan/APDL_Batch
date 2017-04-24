@@ -32,11 +32,11 @@ REM ============================================================================
 	REM call 306416n.bat
 	REM call calc.bat
 
-	REM call 306416n.bat
-	REM call calc.bat
+	call 311017.bat
+	call calc.bat
 
-	REM call 306416n.bat
-	REM call calc.bat
+	call 311017n.bat
+	call calc.bat
 
 	REM call 306416n.bat
 	REM call calc.bat
