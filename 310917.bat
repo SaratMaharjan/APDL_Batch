@@ -1,7 +1,7 @@
 
 	set proj_Num=310917
 	set interval=1000 10 1000
-	set interval2=1 1 7
+	set interval2=7 1 8
 
 	REM set sourcePre=R:\maharjan
 	REM set pathBefore=D:\Maharjan

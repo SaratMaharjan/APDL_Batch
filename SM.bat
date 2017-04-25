@@ -20,8 +20,14 @@ REM Number of Processors
 
 REM ==================================================================================================
 
-	call 310917.bat
+	call 311017.bat
 	call calc.bat
+
+	call 311017n.bat
+	call calc.bat
+
+	REM call 310917.bat
+	REM call calc.bat
 
 	REM call 310917a.bat
 	REM call calc.bat
@@ -31,12 +37,6 @@ REM ============================================================================
 
 	REM call 306416n.bat
 	REM call calc.bat
-
-	call 311017.bat
-	call calc.bat
-
-	call 311017n.bat
-	call calc.bat
 
 	REM call 306416n.bat
 	REM call calc.bat

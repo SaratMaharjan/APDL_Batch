@@ -187,6 +187,10 @@ return
 
 		Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
 
+	} else if (InStr(A_ComputerName,"hgebhardt1")) {
+
+		Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
+
 	} else {
 
 		Run "C:\Users\Sarat.LAPTOP-Q276ID9D\Dropbox\VimInstall\Vim\vim80\gvim.exe"

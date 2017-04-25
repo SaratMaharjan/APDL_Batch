@@ -1,7 +1,7 @@
 
 	set proj_Num=311017
-	set interval=1019 10 1099
-	set interval2=11 1 16
+	set interval=1069 10 1099
+	set interval2=14 1 14
 
 	REM set sourcePre=R:\maharjan
 	set pathBefore=E:
