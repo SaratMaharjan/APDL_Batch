@@ -12,3 +12,5 @@
 	REM set extVar=0
 	REM set execute=1
 	REM set append=1
+
+	call calc.bat

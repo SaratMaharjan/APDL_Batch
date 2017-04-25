@@ -1,6 +1,6 @@
 
 	set proj_Num=311017
-	set interval=1069 10 1099
+	set interval=1089 10 1099
 	set interval2=14 1 14
 
 	REM set sourcePre=R:\maharjan
@@ -12,3 +12,5 @@
 	REM set extVar=0
 	REM set execute=1
 	REM set append=1
+
+	call calc.bat
