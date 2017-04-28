@@ -13,35 +13,35 @@ REM set extVar=0
 REM FS+MS
 	set proj_Num=306416
 	set interval=2002 10 2002
-	set interval2=11 10 51
+	set interval2=11 10 11
 		call calc.bat
 
-REM SSW ohne vv
-	set proj_Num=306416
-	set interval=1007 70 1007
-	set interval2=11 1 11
-		call calc.bat
+REM REM SSW ohne vv
+REM 	set proj_Num=306416
+REM 	set interval=1007 70 1007
+REM 	set interval2=11 1 11
+REM 		call calc.bat
 
-REM SSW +ve
-	set proj_Num=306416
-	set interval=1017 70 1087
-	set interval2=11 1 11
-		call calc.bat
+REM REM SSW +ve
+REM 	set proj_Num=306416
+REM 	set interval=1017 70 1087
+REM 	set interval2=11 1 11
+REM 		call calc.bat
 
-REM ssw -ve
-	set proj_Num=306416
-	set interval=1117 70 1187
-	set interval2=11 1 11
-		call calc.bat
+REM REM ssw -ve
+REM 	set proj_Num=306416
+REM 	set interval=1117 70 1187
+REM 	set interval2=11 1 11
+REM 		call calc.bat
 
-REM ssw +ve
-	set proj_Num=306416
-	set interval=1037 30 1097
-	set interval2=11 1 11
-		call calc.bat
+REM REM ssw +ve
+REM 	set proj_Num=306416
+REM 	set interval=1037 30 1097
+REM 	set interval2=11 1 11
+REM 		call calc.bat
 
-REM ssw -ve
-	set proj_Num=306416
-	set interval=1137 30 1197
-	set interval2=11 1 11
-		call calc.bat
+REM REM ssw -ve
+REM 	set proj_Num=306416
+REM 	set interval=1137 30 1197
+REM 	set interval2=11 1 11
+REM 		call calc.bat

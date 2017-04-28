@@ -20,14 +20,14 @@ REM Number of Processors
 	REM set numPro=4
 
 REM if 0: only write Batch files
-	set execute=0
-	REM set execute=1
+	REM set execute=0
+	set execute=1
 
 REM ==================================================================================================
 
 	call 306416.bat
 
-	REM call 311017.bat
+	call 309317.bat
 
 	REM call 310917.bat
 
