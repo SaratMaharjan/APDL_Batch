@@ -5,7 +5,6 @@ echo Waiting Before Execution: %waitSec% Seconds
 timeout /t %waitSec%
 setlocal EnableDelayedExpansion
 call first.bat
-call initials.bat
 
 set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
@@ -24,11 +23,11 @@ REM ============================================================================
 
 	call 311017n.bat
 
-	REM call 310917.bat
+	call 311017a.bat
 
-	REM call 310917a.bat
+	call 311017b.bat
 
-	REM call 306416.bat
+	call 311017.bat
 
 	REM call 306416n.bat
 

@@ -2,7 +2,7 @@
 call reset.bat
 
 set proj_Num=311017
-set interval=1159 10 1199
+set interval=1119 10 1149
 set interval2=14 1 14
 
 REM set sourcePre=R:\maharjan

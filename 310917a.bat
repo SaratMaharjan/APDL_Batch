@@ -1,16 +1,18 @@
 
-	set proj_Num=310917
-	set interval=1000 10 1000
-	set interval2=2 1 3
+call reset.bat
 
-	REM set sourcePre=R:\maharjan
-	REM set pathBefore=D:\Maharjan
-	REM set pathAfter=ANSYS
-	REM set sourceFile=s.in
+set proj_Num=310917
+set interval=1000 10 1000
+set interval2=2 1 3
 
-	REM set redirect=0
-	REM set extVar=0
-	REM set execute=1
-	REM set append=1
+REM set sourcePre=R:\maharjan
+REM set pathBefore=D:\Maharjan
+REM set pathAfter=ANSYS
+REM set sourceFile=s.in
 
-	call calc.bat
+REM set redirect=0
+REM set extVar=0
+REM set execute=1
+REM set append=1
+
+call calc.bat
