@@ -16,9 +16,9 @@ if "!host!" equ "Smaharjan" (
 )
 
 set redirect=0
-
 set extVar=0
-set execute=1
+
 REM append=1:appends to bat file, else is overwritten
-	set append=1
 	REM set append=0
+	set append=1
+
