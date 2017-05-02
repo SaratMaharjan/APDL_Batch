@@ -13,7 +13,7 @@ REM set extVar=0
 REM FS+MS
 	set proj_Num=306416
 	set interval=2002 10 2002
-	set interval2=11 10 11
+	set interval2=21 10 51
 		call calc.bat
 
 REM REM SSW ohne vv

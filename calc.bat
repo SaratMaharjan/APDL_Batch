@@ -63,9 +63,9 @@ for /l %%m in (!interval!) do (
 
 		set /p succeed=<!wDir!\success.txt
 
-		REM if !succeed! equ 1 (
-		REM 	call deleteFiles.bat :delFiles
-		REM )
+		if !succeed! equ 1 (
+			call deleteFiles.bat :delFiles
+		)
 
 		@echo on
 		echo ____________________________________
