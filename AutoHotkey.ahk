@@ -388,7 +388,16 @@ return
 
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 
-#.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
+; #.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
+#IfWinActive ahk_class CabinetWClass
+	#.::
+		FullPath := GetActivePath()
+		; an error occurred with the SetWorkingDir directive
+			if ErrorLevel
+				return
+		run, %ComSpec% /c "code .", %FullPath%
+	return
+#IfWinActive
 
 #ß:: Run "\\ansys2\Maharjan"
 
