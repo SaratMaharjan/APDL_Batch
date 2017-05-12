@@ -1,10 +1,10 @@
 
-var SC = DS.Script; 
-var SM = SC.sm; 
+var SC = DS.Script;
+var SM = SC.sm;
 function csys_Rename() {
 	//debugger;
-	var c4 = DS.Tree.FirstActiveBranch.CoordinateSystemGroup; 
-	var c5 = c4.Children.Count; 
+	var c4 = DS.Tree.FirstActiveBranch.CoordinateSystemGroup;
+	var c5 = c4.Children.Count;
 	for(var i = 2; i <= c5; i++) {
 		//c4.Children.Item(2).CoordinateSystemType = SC.id_Cylindrical
 		var c6 = c4.Children.Item(i);
@@ -19,8 +19,7 @@ function csys_Rename() {
 		//var part_id = SM.SelectedPartID(1);
 		//var part = SM.PartMgr.PartById(part_id);
 	}
-	SC.refreshTree(); 
+	SC.refreshTree();
 }
 
 csys_Rename();
-

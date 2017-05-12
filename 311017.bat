@@ -10,32 +10,29 @@ REM set sourceFile=s.in
 REM set redirect=0
 REM set extVar=0
 
-REM +ve
-	REM set proj_Num=311017
-	REM set interval=1009 40 1009
-	REM set interval2=11 3 14
-	REM 	call calc.bat
+set proj_Num=311017
 
-REM +ve CS 1
-	set proj_Num=311017
-	set interval=1019 10 1019
-	set interval2=11 3 14
-		call calc.bat
+REM REM +ve
+REM 	set interval=1009 40 1009
+REM 	set interval2=12 1 13
+REM 		call calc.bat
+
+REM REM +ve CS 1
+REM 	set interval=1029 10 1049
+REM 	set interval2=14 1 14
+REM 		call calc.bat
 
 REM +ve CS 4
-	set proj_Num=311017
-	set interval=1059 10 1099
-	set interval2=14 10 14
+	set interval=1129 10 1149
+	set interval2=14 1 14
 		call calc.bat
 
 REM -ve CS 4
-	set proj_Num=311017
-	set interval=1159 10 1199
+	set interval=1119 30 1119
 	set interval2=14 10 14
 		call calc.bat
 
-REM -ve CS 4
-	set proj_Num=311017
-	set interval=1099 100 1199
-	set interval2=11 10 11
-		call calc.bat
+REM REM -ve CS 4
+REM 	set interval=1099 100 1199
+REM 	set interval2=11 10 11
+REM 		call calc.bat
