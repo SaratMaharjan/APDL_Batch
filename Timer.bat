@@ -26,4 +26,3 @@ set elTime=%TookTime:~0,-2%.%TookTimePadded:~-2%
 set /a tCalc=elTime/60
 echo Elasped Time is: %tCalc% mins
 goto :eof
-

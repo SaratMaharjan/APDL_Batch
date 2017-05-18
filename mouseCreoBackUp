@@ -1,0 +1,185 @@
+;; Be aware that the names of the functions must not be changed. Otherwise 
+;; the functions won't be called. 
+;;
+;; Some of the possible shortcuts are already used by Creo Elements/Direct Modeling
+;; internally and cannot be customized. In such a case, the related function
+;; definition is marked with an appropriate comment. 
+;;
+;; It is not guaranteed that shortcuts which are available for 
+;; user customizations in the current version will also be 
+;; available in future versions.
+
+(in-package :mei)
+
+(defun Button1 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun Button2 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun Button2Up (&rest args)
+  ;; performed unless no dynamic viewing action via middle-mouse button
+  ;; dragging took place before
+  (declare (ignore args))
+  (if (elan::in-list-selection-mode-p)
+      (vp-end-selection-list)
+    (put-buffer "complete"))
+  (values))
+
+;; required to emulate the middle button on a two button mouse:
+(setf (symbol-function 'Button1Button3Up) #'Button2Up)
+
+(defun Button3 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun Button1Button2 (&rest args)
+  (declare (ignore args)))
+
+(defun Button2Button3 (&rest args)
+  (declare (ignore args)))
+
+(defun ControlButton1 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun ControlButton2 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun ControlButton3 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun ShiftButton1 (&rest args)
+  (declare (ignore args)))
+
+(defun ShiftButton1Up (&rest args)
+  (declare (ignore args))
+  (vp-start-selection-list-pick))
+
+(defun ShiftButton2Up (&rest args)
+  (declare (ignore args))
+  (vp-end-selection-list))
+
+;; required to emulate the middle button on a two-button mouse:
+(setf (symbol-function 'ShiftButton1Button3Up) #'ShiftButton2Up)
+
+(defun ShiftButton3 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun MetaButton1 (&rest args)
+  (declare (ignore args)))
+
+(defun MetaButton2 (&rest args)
+  (declare (ignore args))
+  ;; until SolidDesigner 2001:
+  ;; (put-buffer "cancel")
+  ;; until OneSpace Designer 2004:
+  ;; (ui::uic-new-wp-on-face :construction)
+  ;;   or project as real geometry:
+  ;;   (ui::uic-new-wp-on-face :real)
+  ;;   or no geometry projection at all:
+  ;;   (ui::uic-new-wp-on-face)
+  (oli:sd-put-buffer "2dcopilot :face_or_wp") 
+  (oli:sd-put-buffer (oli:sd-get-last-vp-pick))
+  (values))
+
+;; required to emulate the middle button on a two-button mouse
+(setf (symbol-function 'MetaButton1Button3) #'MetaButton2)
+
+(defun MetaButton3 (&rest args)
+  (declare (ignore args)))
+
+(defun ShiftControlButton1 (&rest args)
+  (declare (ignore args))
+  ;; (vp-catch-center-pick)
+  (oli:sd-put-buffer "set_catch_parameters :next_catch")
+  (oli:sd-put-buffer "set_catch_parameters :center")
+  (oli:sd-put-buffer (oli:sd-get-last-vp-pick)))
+
+(defun ShiftControlButton2 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun ShiftControlButton3 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun MetaControlButton1 (&rest args)
+  (declare (ignore args)))
+
+(defun MetaControlButton2 (&rest args)
+  (declare (ignore args)))
+
+(defun MetaControlButton3 (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun MetaShiftButton1 (&rest args)
+  (declare (ignore args))
+  (ui::uic-move-face-by-pick :2pnts))
+
+(defun MetaShiftButton2 (&rest args)
+  (declare (ignore args))
+  (ui::uic-move-face-by-pick :normal_len))
+
+(defun MetaShiftButton3 (&rest args)
+  (declare (ignore args)))
+
+(defun MetaShiftControlButton1 (&rest args)
+  (declare (ignore args)))
+
+(defun MetaShiftControlButton2 (&rest args)
+  (declare (ignore args)))
+
+(defun MetaShiftControlButton3 (&rest args)
+  (declare (ignore args)))
+
+;; Double click definitions. 
+;; They are not defined for all possible combinations. The function name
+;; will be the same as for the single click definitions. Only the suffix
+;; 'Down2x' has to be appended.
+(defun Button1Down2x (&rest args)
+  ;; not available for customization
+  (declare (ignore args)))
+
+(defun Button2Down2x (&rest args)
+  (declare (ignore args)))
+
+(defun Button3Down2x (&rest args)
+  (declare (ignore args)))
+
+(defun ControlButton1Down2x (&rest args)
+  (declare (ignore args)))
+
+(defun ControlButton2Down2x (&rest args)
+  (declare (ignore args)))
+
+(defun ControlButton3Down2x (&rest args)
+  (declare (ignore args)))
+
+(defun ShiftButton1Down2x (&rest args)
+  (declare (ignore args))
+  ;; treat shift-button-1-double-click as second shift-single-button-1-click
+  (ShiftButton1))
+
+(defun ShiftButton2Down2x (&rest args)
+  (declare (ignore args)))
+
+(defun ShiftButton3Down2x (&rest args)
+  (declare (ignore args)))
+
+(defun MetaButton1Down2x (&rest args)
+  (declare (ignore args)))
+
+(defun MetaButton2Down2x (&rest args)
+  (declare (ignore args)))
+
+(defun MetaButton3Down2x (&rest args)
+  (declare (ignore args)))
+
+

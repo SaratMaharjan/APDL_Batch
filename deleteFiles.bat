@@ -13,8 +13,12 @@ del !wDir!\f!job!-!lk!.esav >nul 2>&1
 del !wDir!\f!job!-!lk!.ful >nul 2>&1
 del !wDir!\f!job!-!lk!.full >nul 2>&1
 del !wDir!\f!job!-!lk!.ldh >nul 2>&1
+del !wDir!\f!job!-!lk!.ldhi >nul 2>&1
+del !wDir!\f!job!-!lk!.lock >nul 2>&1
 del !wDir!\f!job!-!lk!.mnt >nul 2>&1
+del !wDir!\f!job!-!lk!.mntr >nul 2>&1
 del !wDir!\f!job!-!lk!.mod >nul 2>&1
+del !wDir!\f!job!-!lk!.mode >nul 2>&1
 del !wDir!\f!job!-!lk!.osa >nul 2>&1
 del !wDir!\f!job!-!lk!.osav >nul 2>&1
 del !wDir!\f!job!-!lk!.pcs >nul 2>&1
@@ -40,14 +44,11 @@ del !wDir!\f!job!-!lk!.nr008 >nul 2>&1
 del !wDir!\f!job!-!lk!.nr009 >nul 2>&1
 del !wDir!\f!job!-!lk!.rdb >nul 2>&1
 del !wDir!\f!job!-!lk!.sta >nul 2>&1
+del !wDir!\f!job!-!lk!.stat >nul 2>&1
 del !wDir!\f!job!-!lk!.tri >nul 2>&1
-del !wDir!\f!job!-!lk!.lock >nul 2>&1
-del !wDir!\f!job!-!ldhi!.lock >nul 2>&1
-del !wDir!\f!job!-!mntr!.lock >nul 2>&1
 
 echo .............................
 echo ....... File Deletion Completed
 echo.
 
 goto :eof
-

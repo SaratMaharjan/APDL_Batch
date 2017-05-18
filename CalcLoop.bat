@@ -6,9 +6,8 @@ del !wDir!\*.lock >nul 2>&1
 del !wDir!\*.abt >nul 2>&1
 
 for /l %%c in ( 1 1 1 ) do (
-	REM call timer.bat StartTimer
+
 	echo.
-	REM set tBackUp=!Start100S!
 	echo. Starting License Loop
 	echo.
 
@@ -17,21 +16,30 @@ for /l %%c in ( 1 1 1 ) do (
 	for /l %%r in ( !startValue! 1 !endValue! ) do (
 
 		REM licenses anfang
-			REM echo %%r
 			set numPro=!numPro!
 
 			if %%r equ 1 (
+
 				REM set ansj=struct
 				set ansj=ansys
+
 			) else if %%r equ 2 (
+
 				set ansj=mech_2
+
 			) else if %%r equ 3 (
+
 				REM set ansj=stba
 				set ansj=meba
+
 			) else if %%r equ 4 (
+
 				set ansj=preppost
+
 			) else (
+
 				set ansj=ansys
+
 			)
 
 			echo License: !ansj!
@@ -43,16 +51,11 @@ for /l %%c in ( 1 1 1 ) do (
 		call timer.bat StartTimer
 		(echo 0) > !wDir!\license.txt
 
-	REM anfang Call ANSYS
+		REM anfang Call ANSYS
 		del "!wDir!\f!job!-!lk!.err" >nul 2>&1
 
-		REM if %d% equ 1 (
-			REM set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- REM -redirect !redirect! -i "!location!\s.in" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!" -extVar !extVar!
-		REM ) else (
-			set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+		set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
  -redirect !redirect! -i "!location!\!sourceFile!" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!" -j "f!job!-!lk!" -extVar !extVar!
-		REM )
 
 		echo.
 		echo !apdlCMD!
@@ -62,36 +65,39 @@ for /l %%c in ( 1 1 1 ) do (
 		echo.
 
 		if %execute% equ 1 (
+
 			!apdlCMD!
+
 		)
-
-	REM ende Call ANSYS
-
-		REM timeout /t 10
+		REM ende Call ANSYS
 
 		call timer.bat StopTimer
 		call timer.bat DisplayTimerResult
 		set /a mins=!tCalc!/60
 		echo                        REM +++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++ >> !wDir!\smAPDL.bat
-		REM echo Time Used: !elTime!
-		REM set tim=!tCalc!
-		REM echo !tim!
 
 		if %execute% equ 1 (
+
 			set /p inPrep=<!wDir!\license.txt
+
 		) else (
+
 			set inPrep=1
+
 		)
+
 		echo.
 		echo isLicenseAvailable: !inPrep!
 		echo.
 
 		REM if !tCalc! geq 5 (
 		if !inPrep! equ 1 (
+
 			echo.
 			echo --------CALCULATED with License: !ansj! --- Processors: !numPro!----------
 			echo.
 			goto :checkOuter
+
 		)
 		REM print message anfang
 		echo.
@@ -108,23 +114,22 @@ for /l %%c in ( 1 1 1 ) do (
 		echo. !ansj! try Failed
 		echo.
 		REM print message ende
+
 	 )
 
 	:checkOuter
 	echo. License Loop Finished
 	echo.
 
-	REM set Start100S=!tBackUp!
-	REM call timer.bat StopTimer
-	REM call timer.bat DisplayTimerResult
-
-	REM if !tCalc! geq 15 (
 	if !inPrep! equ 1 (
+
 		echo.
 		echo ------------------ CALCULATED after retry: !retry! -----------------
 		echo.
 		goto :eof
+
 	)
+
 	echo.
 	echo ---------- COULD NOT CALCULATE Try: !retry! ----------
 	echo.
@@ -133,4 +138,3 @@ for /l %%c in ( 1 1 1 ) do (
 )
 
 goto :eof
-

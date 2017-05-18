@@ -187,6 +187,10 @@ return
 
 		Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
 
+	} else if (InStr(A_ComputerName,"hgebhardt1")) {
+
+		Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
+
 	} else {
 
 		Run "C:\Users\Sarat.LAPTOP-Q276ID9D\Dropbox\VimInstall\Vim\vim80\gvim.exe"
@@ -384,7 +388,16 @@ return
 
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 
-#.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
+; #.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
+#IfWinActive ahk_class CabinetWClass
+	#.::
+		FullPath := GetActivePath()
+		; an error occurred with the SetWorkingDir directive
+			if ErrorLevel
+				return
+		run, %ComSpec% /c "code .", %FullPath%
+	return
+#IfWinActive
 
 #ß:: Run "\\ansys2\Maharjan"
 
