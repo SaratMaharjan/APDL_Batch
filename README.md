@@ -3,7 +3,7 @@
 # My Notes
 
 ##VIM
-	```
+	<pre>
 	* :changes - to view changes
 	* :gv - reselect last selection
 	* # - Search words under Cursor backwards
@@ -87,7 +87,7 @@
 			Uppercase 'HellO' to 'HELLO' with gU then a movement.
 			Lowercase 'HellO' to 'hello' with gu then a movement.
 	* Use [Num]gt to go to tab Number
-	```
+	</pre>
 
 ##GIT
 	```
