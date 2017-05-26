@@ -339,12 +339,12 @@ return
 #u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
 
 ;#!w:: Run "C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\launcher.exe"
-#!w:: Run "C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\launcher.exe"
+#!w:: Run "C:\Program Files\ANSYS Inc\v181\ANSYS\bin\winx64\launcher.exe"
 
 ;^!w:: Run "C:\Program Files\ANSYS Inc\v172\Framework\bin\Win64\runwb2.exe"
-^!w:: Run "C:\Program Files\ANSYS Inc\v180\Framework\bin\Win64\runwb2.exe"
+^!w:: Run "C:\Program Files\ANSYS Inc\v181\Framework\bin\Win64\runwb2.exe"
 
-#h:: Run "C:\Program Files\ANSYS Inc\v180\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
+#h:: Run "C:\Program Files\ANSYS Inc\v181\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
 
 ;#!e::
 	;if(InStr(A_ComputerName,"SMAHARJAN")){

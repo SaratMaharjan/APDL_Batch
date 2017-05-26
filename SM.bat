@@ -6,7 +6,8 @@ timeout /t %waitSec%
 setlocal EnableDelayedExpansion
 call first.bat
 
-set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
+set appPath="C:\Program Files\ANSYS Inc\v181\ANSYS\bin\winx64\ansys181.exe"
+REM set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 
 REM	1.Structural/ANSYS	2.Mech_2	3.Stba/MEBA	4.Prepost

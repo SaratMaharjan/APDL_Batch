@@ -19,28 +19,28 @@ REM 		call calc.bat
 
 REM +ve CS 1
 	set interval=2009 10 2009
-	set interval2=14 1 16
+	set interval2=11 10 21
 		call calc.bat
 
-REM +ve CS 4
-	set interval=2019 10 2099
-	set interval2=14 1 14
-		call calc.bat
+REM REM +ve CS 4
+REM 	set interval=2009 10 2009
+REM 	set interval2=12 1 16
+REM 		call calc.bat
 
-REM +ve CS 4
-	set interval=2119 10 2199
-	set interval2=14 1 14
-		call calc.bat
+REM REM +ve CS 4
+REM 	set interval=2009 10 2009
+REM 	set interval2=22 1 26
+REM 		call calc.bat
 
-REM +ve CS 4
-	set interval=2019 10 2099
-	set interval2=24 1 24
-		call calc.bat
+REM REM +ve CS 4
+REM 	set interval=2019 10 2099
+REM 	set interval2=24 1 24
+REM 		call calc.bat
 
-REM +ve CS 4
-	set interval=2119 10 2199
-	set interval2=24 1 24
-		call calc.bat
+REM REM +ve CS 4
+REM 	set interval=2119 10 2199
+REM 	set interval2=24 1 24
+REM 		call calc.bat
 
 REM REM +ve CS 4
 REM 	set interval=2009 10 2009
