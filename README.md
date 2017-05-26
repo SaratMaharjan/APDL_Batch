@@ -1,4 +1,5 @@
 # APDL_Batch
+	Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes I often require.
 
 # My Notes
 
@@ -134,6 +135,15 @@
 	git pull origin master (to Update from repository)
 </pre>
 
+##Node and NPM
+<pre>
+	list available scripts
+		npm run
+	list installed packages
+		npm ls --depth 0
+		npm ls --global --depth 0
+</pre>
+
 ##OTHERS
 <pre>
 	Autocad Command: IMAGEFRAME
@@ -144,44 +154,55 @@
 
 	ren ???????????.jpg	????????1??.jpg :::replaces anything to 1 and third last position.
 
-	forfiles /m *.jpg /c "cmd /c ren @file prefix@file" 		:: adding prefix to file Name
-			Recursively rename file extensions
-			forfiles /S /M *.ext1 /C "cmd /c rename @file @fname.ext2"
+	adding prefix to file Name
+		forfiles /m *.jpg /c "cmd /c ren @file prefix@file"
 
-			Remove file extensions
-			forfiles /S /M *.ext /C "cmd /c rename @file @fname"
+	Recursively rename file extensions
+		forfiles /S /M *.ext1 /C "cmd /c rename @file @fname.ext2"
 
-			Add prefix to file names
-			forfiles /S /M *.jpg /C "cmd /c rename @file photo@file"
+	Remove file extensions
+		forfiles /S /M *.ext /C "cmd /c rename @file @fname"
 
-			Handling names with white spaces
-			forfiles /M *.jpg /C "cmd /c rename @file \"@fname - pic.jpg\""
+	Add prefix to file names
+		forfiles /S /M *.jpg /C "cmd /c rename @file photo@file"
+
+	Handling names with white spaces
+		forfiles /M *.jpg /C "cmd /c rename @file \"@fname - pic.jpg\""
 
 	Add suffix to File Name
-			for %a in (*.txt) do ren "%~a" "%~naThingsToAdd%~xa"
+		for %a in (*.txt) do ren "%~a" "%~naThingsToAdd%~xa"
 
 	AutoCAD
-			IMAGEFRAME command in AUTOCAD
-				rtdisplay -> 0
-			Show open/show dialog boxes
-				filedia : 1
-			Useonly one window for multiple drawing
-				taskbar -> 0
-			Hide IMAGE FRAME
-				imageframe = 0
-			Back to AutoCAD classic View
-				_-TOOLBAR Draw _Show
-				_-TOOLBAR Modify _Show
-				_-TOOLBAR Properties _Show
-				_-TOOLBAR Layers _Show
-				_-TOOLBAR Styles _Show
-				_-TOOLBAR Standard _Show
-				_RIBBONCLOSE
-				MENUBAR 1
+		IMAGEFRAME command in AUTOCAD
+			rtdisplay -> 0
+		Show open/show dialog boxes
+			filedia : 1
+		Useonly one window for multiple drawing
+			taskbar -> 0
+		Hide IMAGE FRAME
+			imageframe = 0
+		Back to AutoCAD classic View
+			_-TOOLBAR Draw _Show
+			_-TOOLBAR Modify _Show
+			_-TOOLBAR Properties _Show
+			_-TOOLBAR Layers _Show
+			_-TOOLBAR Styles _Show
+			_-TOOLBAR Standard _Show
+			_RIBBONCLOSE
+			MENUBAR 1
 
 	Word template location : %appdata%\Microsoft\Templates\
 
-	* If Spaceclaim is slow: Right click on "My Computer" and go to
+	If Spaceclaim is slow: Right click on "My Computer" and go to
 	Properties > Advanced System Settings > Environment Variables
 	and create a new System Variable called SPACECLAIM_STARTUP_TRACE and set the value to 1.
+
+	source: light-fs getify
+	Arguments are the values you pass in,
+	and parameters are the named variables inside the function that receive those passed in values.
+			function foo(x,y,z) {
+				// ..
+			}
+	foo(..) expects three arguments, because it has three declared parameters. This count has a special term: arity. Arity is the number of parameters in a function declaration. The arity of foo(..) is 3.
+
 </pre>

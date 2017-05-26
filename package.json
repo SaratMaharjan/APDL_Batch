@@ -4,8 +4,7 @@
   "description": "General Utilities",
   "main": "sm.bat",
   "scripts": {
-    "start": "start D:\\zcore\\sm.bat",
-    "learnyounode": "learnyounode"
+    "start": "start D:\\zcore\\sm.bat"
   },
   "keywords": [
     "ansys batch"
@@ -19,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/saratmaharjan/APDL_Batch/issues"
   },
-  "homepage": "https://github.com/saratmaharjan/APDL_Batch#readme",
-  "devDependencies": {
-    "learnyounode": "^3.5.10"
-  }
+  "homepage": "https://github.com/saratmaharjan/APDL_Batch#readme"
 }
