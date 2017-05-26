@@ -3,6 +3,7 @@
 # My Notes
 
 ##VIM
+		```
 		* :changes - to view changes
 		* :gv - reselect last selection
 		* # - Search words under Cursor backwards
@@ -86,9 +87,10 @@
 				Uppercase 'HellO' to 'HELLO' with gU then a movement.
 				Lowercase 'HellO' to 'hello' with gu then a movement.
 		* Use [Num]gt to go to tab Number
-
+		```
 
 ##GIT
+		```
 		git config --global user.name "saratmaharjan"
 		git config --global user.email sarat.maharjan@gmail.com"
 		git config --global color.ui true
@@ -103,8 +105,10 @@
 		git commit !to commit for push
 		git pusht !to update the repository
 		git pull origin master !to Update from repository
+		```
 
 ##{OTHERS
+		```
 		*. Autocad Command: IMAGEFRAME
 
 		* To use macros.xla: In excel: start-add-ins and add macros.xla
@@ -150,5 +154,5 @@
 
 		* Word template location : %appdata%\Microsoft\Templates\
 
-
-	 * Right click on "My Computer" and go to Properties > Advanced System Settings > Environment Variables and create a new System Variable called SPACECLAIM_STARTUP_TRACE and set the value to 1.
+		* Right click on "My Computer" and go to Properties > Advanced System Settings > Environment Variables and create a new System Variable called SPACECLAIM_STARTUP_TRACE and set the value to 1.
+		```
