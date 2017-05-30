@@ -1,10 +1,10 @@
-/* 
+/*
 	attributePrefix is intended to be the prefix of the attribute used
-	in the CAD to represent mesh-sizing.  
+	in the CAD to represent mesh-sizing.
 */
 
 
-var attributePrefix = "mode"
+var attributePrefix = "mode";
 
 convertAttributesToMeshSizing();
 
@@ -21,7 +21,7 @@ function convertAttributesToMeshSizing()
 
 	var Parts = asm.Parts;
 	var partCt = Parts.Count;
-  
+
 	for(j = 1; j <= partCt; j++)
 	{
 		var part = Parts(j);
@@ -29,15 +29,15 @@ function convertAttributesToMeshSizing()
 		var attribs = part.AttributesByName(attributePrefix + "*");
 		var attrCt = attribs.Count;
 //		WBScript.Out ("Num of attributes for " + part.Name + " = " + attrCt, true);
-		
+
 		if(attrCt == 0)
 		{
 			//WBScript.Out ("No attributes on " + part.Name, true);
 			continue;
 		}
-	
+
 		SM.Clear();
-		
+
 		for(k = 1; k <= attrCt; k++)
 		{
 			var attrib = attribs(k);
@@ -53,7 +53,7 @@ function convertAttributesToMeshSizing()
 				// sizing only appropriate on body, face or edge
 				if(EntityDimension < 1)
 				{
-					WBScript.Out("Attribute " + attrib.Name + " has a bad reference.", true)
+					WBScript.Out("Attribute " + attrib.Name + " has a bad reference.", true);
 					continue;
 				}
 				SM.ForceSelect(part.ID, TopoId);
@@ -61,7 +61,7 @@ function convertAttributesToMeshSizing()
 				var sizeControl = meshGroup.AddMeshControl(SM, DS.Script.id_Size);
 				if( !sizeControl ) return;
 
-				var meshGroupNode = DS.Script.GetNode (meshGroup.ID)
+				var meshGroupNode = DS.Script.GetNode (meshGroup.ID);
 				DS.Script.addNodeAndChildren(sizeControl, meshGroupNode);
 
 				sizeControl.ESize = 0.05;
@@ -86,5 +86,5 @@ function DetermineEntityDimension(TopoId)
 	else if(TopoId < 3221225473)
 		return 2;
 	else
-		return 3;		
+		return 3;
 }

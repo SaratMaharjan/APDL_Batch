@@ -4,7 +4,7 @@
   "description": "General Utilities",
   "main": "sm.bat",
   "scripts": {
-    "start": "start D:\\zcore\\sm.bat"
+    "calc": "start D:\\zcore\\sm.bat"
   },
   "keywords": [
     "ansys batch"
@@ -13,10 +13,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/saratmaharjan/APDL_Batch.git"
+    "url": "https://github.com/smhrjn/APDL_Batch.git"
   },
   "bugs": {
-    "url": "https://github.com/saratmaharjan/APDL_Batch/issues"
+    "url": "https://github.com/smhrjn/APDL_Batch/issues"
   },
-  "homepage": "https://github.com/saratmaharjan/APDL_Batch#readme"
+  "homepage": "https://github.com/smhrjn/APDL_Batch#readme"
 }
