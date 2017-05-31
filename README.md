@@ -205,4 +205,12 @@
 			}
 	foo(..) expects three arguments, because it has three declared parameters. This count has a special term: arity. Arity is the number of parameters in a function declaration. The arity of foo(..) is 3.
 
+	cmd: ipconfig -> IPv4-Address : lan ip address
+
+	taskkill /f /im someProcess.exe
+
+	tasklist /nh | sort
+
+	tasklist /? : for help
+
 </pre>
