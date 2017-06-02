@@ -16,7 +16,7 @@ $(document).ready(function() {
       val = val.slice(0, val.indexOf('.') + 1);
       var i = 0;
       while (valTest[i] < 1) {
-        i++
+        i++;
       }
       valTest = valTest.join('').slice(0, i + 2);
       if (valTest[valTest.length-1] === '0') {
