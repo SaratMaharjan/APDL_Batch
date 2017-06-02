@@ -6,7 +6,6 @@ set direc=D:
 set /p direc=Enter Parent Directory (default: %direc%): %=%
 
 if not "%project%" == "" (
-
 	echo Creating Folder Structure .. ... .... ..........
 
 	%direc%
@@ -24,13 +23,9 @@ if not "%project%" == "" (
 	mkdir 07_mathcad
 	mkdir 08_rstab
 	mkdir 09_dokumentation
-
 	echo ___________________________Completed________________________
-
 ) else (
-
 	echo Name not Provided, aborting .. ... .... ..........
-
 )
 
 timeout /t 10
