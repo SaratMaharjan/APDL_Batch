@@ -19,7 +19,7 @@ REM 		call calc.bat
 
 REM +ve CS 1
 	set interval=2009 10 2009
-	set interval2=21 10 21
+	set interval2=14 10 24
 		call calc.bat
 
 REM REM +ve CS 4

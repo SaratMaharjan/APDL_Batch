@@ -28,7 +28,7 @@ function convertAttributesToMeshSizing()
 
 		var attribs = part.AttributesByName(attributePrefix + "*");
 		var attrCt = attribs.Count;
-//		WBScript.Out ("Num of attributes for " + part.Name + " = " + attrCt, true);
+		// WBScript.Out ("Num of attributes for " + part.Name + " = " + attrCt, true);
 
 		if(attrCt == 0)
 		{
