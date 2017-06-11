@@ -7,7 +7,6 @@
 %1I
 	/output
 
-
 !3. at End of s.in before exiting
 	succeed=1
 	/output,success,txt
@@ -17,4 +16,3 @@
 
 !4. instead of /inp,file,in,x: --- use /inp,file,in,verz
 !									ALT:	%verz%/file.in
-

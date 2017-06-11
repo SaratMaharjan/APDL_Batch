@@ -4,10 +4,10 @@
 ; master and/or wave volume.  Both volumes are displayed as different
 ; color bar graphs.
 
-;_________________________________________________ 
-;_______User Settings_____________________________ 
+;_________________________________________________
+;_______User Settings_____________________________
 
-; Make customisation only in this area or hotkey area only!! 
+; Make customisation only in this area or hotkey area only!!
 
 ; The percentage by which to raise or lower the volume each time:
 vol_Step = 4
@@ -40,8 +40,8 @@ HotKey, +#Up, vol_WaveUp       ; Shift+Win+UpArrow
 HotKey, +#Down, vol_WaveDown
 
 
-;___________________________________________ 
-;_____Auto Execute Section__________________ 
+;___________________________________________
+;_____Auto Execute Section__________________
 
 ; DON'T CHANGE ANYTHING HERE (unless you know what you're doing).
 
@@ -70,8 +70,7 @@ if vol_PosY >= 0
 SetBatchLines, 10ms
 Return
 
-
-;___________________________________________ 
+;___________________________________________
 
 vol_WaveUp:
 SoundSet, +%vol_Step%, Wave

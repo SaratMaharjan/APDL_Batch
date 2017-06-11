@@ -13,7 +13,7 @@ if exist lastLic.txt (
 	echo "test"> lastLic.txt
 )
 
-setlocal EnableDelayedExpansion	
+setlocal EnableDelayedExpansion
 		hostname.exe>hostname.txt
 		set /p host=<hostname.txt
 		echo Hostname: !host!
@@ -113,11 +113,11 @@ if "%runNum%" geq "1" (
 
 echo License: !ansj!
 echo Project: %proj_Num%
-echo Display Device: %dispName%	
+echo Display Device: %dispName%
 
 call Timer.bat :StartTimer
 
-set apdlCMD="C:\Program Files\ANSYS Inc\v180\ansys\bin\winx64\ansys180.exe"  -g -p !ansj! ^
+set apdlCMD="C:\Program Files\ANSYS Inc\v181\ansys\bin\winx64\ansys181.exe"  -g -p !ansj! ^
  -dir "!pathBefore!\%proj_Num%\!pathAfter!" -j %filNam% -s read -m 8192 -db 4096 -l en-us -t -d %dispName%
 
 echo.
@@ -128,8 +128,8 @@ REM goto :takeTime
 REM start "" /B !apdlCMD!
 !apdlCMD!
 
-call Timer.bat :StopTimer	
-call Timer.bat :DisplayTimerResult	
+call Timer.bat :StopTimer
+call Timer.bat :DisplayTimerResult
 echo Time Used: !elTime!
 
 endlocal
