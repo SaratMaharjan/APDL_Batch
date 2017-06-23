@@ -1,7 +1,7 @@
 
 call reset.bat
 
-REM set pathBefore=E:
+set pathBefore=E:
 REM set pathAfter=ANSYS
 
 REM set sourcePre=R:\maharjan

@@ -7,13 +7,9 @@ echo Working Location: !wDir!
 echo.
 
 if !append! equ 1 (
-
 	echo.>> !wDir!\smAPDL.bat
-
 ) else (
-
 	echo.> !wDir!\smAPDL.bat
-
 )
 
 set todayNow=On %date:~0,2%.%date:~3,2%.%date:~6,4% at %time:~0,2%:%time:~3,2%
@@ -27,7 +23,6 @@ set ans_consec=YES
 set ansys_lock=on
 
 for /l %%m in (!interval!) do (
-
 	set par=%%m
 	set num=4
 
@@ -40,7 +35,6 @@ for /l %%m in (!interval!) do (
 	@echo off
 
 	for /l %%n in (!interval2!) do (
-
 		(echo 0) > !wDir!\success.txt
 
 		set par=%%n
@@ -72,9 +66,7 @@ for /l %%m in (!interval!) do (
 		echo Job Finished.... ..... ............
 		echo ____________________________________
 		@echo off
-
 	)
-
 )
 
 echo. >> !wDir!\smAPDL.bat

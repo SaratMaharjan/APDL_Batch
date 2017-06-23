@@ -527,7 +527,7 @@ Return
 				Return
 		; Create file
 			FileAppend, , %FullPath%\%UserInput%
-			run %FullPath%\%UserInput%
+			;run %FullPath%\%UserInput%
 	return
 #IfWinActive
 ;ende Create File

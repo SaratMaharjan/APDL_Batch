@@ -1,7 +1,7 @@
 @echo off
 call %~dp0%l2cur.bat
 
-setlocal EnableDelayedExpansion	
+setlocal EnableDelayedExpansion
 	hostname.exe>hostname.txt
 	set /p host=<hostname.txt
 	echo Hostname: !host!
@@ -70,10 +70,9 @@ echo.
 
 !apdlCMD!
 
-call Timer.bat :StopTimer	
-call Timer.bat :DisplayTimerResult	
+call Timer.bat :StopTimer
+call Timer.bat :DisplayTimerResult
 echo Time Used: !elTime!
 
 endlocal
 timeout /t 5
-

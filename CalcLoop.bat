@@ -6,7 +6,6 @@ del !wDir!\*.lock >nul 2>&1
 del !wDir!\*.abt >nul 2>&1
 
 for /l %%c in ( 1 1 1 ) do (
-
 	echo.
 	echo. Starting License Loop
 	echo.
@@ -14,32 +13,21 @@ for /l %%c in ( 1 1 1 ) do (
 	set retry=%%c
 
 	for /l %%r in ( !startValue! 1 !endValue! ) do (
-
 		REM licenses anfang
 			set numPro=!numPro!
 
 			if %%r equ 1 (
-
 				REM set ansj=struct
 				set ansj=ansys
-
 			) else if %%r equ 2 (
-
 				set ansj=mech_2
-
 			) else if %%r equ 3 (
-
 				REM set ansj=stba
 				set ansj=meba
-
 			) else if %%r equ 4 (
-
 				set ansj=preppost
-
 			) else (
-
 				set ansj=ansys
-
 			)
 
 			echo License: !ansj!
@@ -65,9 +53,7 @@ for /l %%c in ( 1 1 1 ) do (
 		echo.
 
 		if %execute% equ 1 (
-
 			!apdlCMD!
-
 		)
 		REM ende Call ANSYS
 
@@ -77,13 +63,9 @@ for /l %%c in ( 1 1 1 ) do (
 		echo                        REM +++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++ >> !wDir!\smAPDL.bat
 
 		if %execute% equ 1 (
-
 			set /p inPrep=<!wDir!\license.txt
-
 		) else (
-
 			set inPrep=1
-
 		)
 
 		echo.
@@ -92,12 +74,10 @@ for /l %%c in ( 1 1 1 ) do (
 
 		REM if !tCalc! geq 5 (
 		if !inPrep! equ 1 (
-
 			echo.
 			echo --------CALCULATED with License: !ansj! --- Processors: !numPro!----------
 			echo.
 			goto :checkOuter
-
 		)
 		REM print message anfang
 		echo.
@@ -114,7 +94,6 @@ for /l %%c in ( 1 1 1 ) do (
 		echo. !ansj! try Failed
 		echo.
 		REM print message ende
-
 	 )
 
 	:checkOuter
@@ -122,19 +101,16 @@ for /l %%c in ( 1 1 1 ) do (
 	echo.
 
 	if !inPrep! equ 1 (
-
 		echo.
 		echo ------------------ CALCULATED after retry: !retry! -----------------
 		echo.
 		goto :eof
-
 	)
 
 	echo.
 	echo ---------- COULD NOT CALCULATE Try: !retry! ----------
 	echo.
 	timeout /t 60
-
 )
 
 goto :eof
