@@ -216,11 +216,11 @@ return
 #w::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 
-		Run "D:\zCore\runAnsys.bat"
+		Run "D:\zCore\run-ansys.bat"
 
 	} else {
 
-		Run "E:\maharjan\runAnsys.bat"
+		Run "E:\maharjan\run-ansys.bat"
 
 	}
 return
@@ -228,11 +228,11 @@ return
 #q::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 
-		Run "D:\zCore\runAnsysE.bat"
+		Run "D:\zCore\run-ansys-e.bat"
 
 	} else {
 
-		Run "E:\maharjan\runAnsysE.bat"
+		Run "E:\maharjan\run-ansys-e.bat"
 
 	}
 return
@@ -240,22 +240,22 @@ return
 #+q::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 
-		Run "D:\zCore\runAnsysR.bat"
+		Run "D:\zCore\run-ansys-r.bat"
 
 	} else {
 
-		Run "E:\maharjan\runAnsysR.bat"
+		Run "E:\maharjan\run-ansys-r.bat"
 	}
 return
 
 #!r::
 	if(InStr(A_ComputerName,"SMAHARJAN")){
 
-		Run "D:\zCore\SM.bat"
+		Run "D:\zCore\sm.bat"
 
 	} else {
 
-		Run "E:\maharjan\SM.bat"
+		Run "E:\maharjan\sm.bat"
 
 	}
 return

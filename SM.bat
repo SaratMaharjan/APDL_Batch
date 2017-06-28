@@ -26,9 +26,9 @@ REM if 0: only write Batch files
 
 REM ==================================================================================================
 
-	REM call 311017a.bat
+	call 311017a.bat
 
-	call 312017.bat
+	REM call 312017.bat
 
 	REM call 312017a.bat
 

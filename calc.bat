@@ -7,17 +7,17 @@ echo Working Location: !wDir!
 echo.
 
 if !append! equ 1 (
-	echo.>> !wDir!\smAPDL.bat
+	echo.>> !wDir!\sm-apdl.bat
 ) else (
-	echo.> !wDir!\smAPDL.bat
+	echo.> !wDir!\sm-apdl.bat
 )
 
 set todayNow=On %date:~0,2%.%date:~3,2%.%date:~6,4% at %time:~0,2%:%time:~3,2%
 echo *set,hostname,'!host!' > !wDir!\host.csv
 echo *abbr,fin,!location!\ >> !wDir!\host.csv
-echo REM ------------------- >> !wDir!\smAPDL.bat
-echo REM                          ___!todayNow!___ >> !wDir!\smAPDL.bat
-echo REM anfang New Analysis Cases >> !wDir!\smAPDL.bat
+echo REM ------------------- >> !wDir!\sm-apdl.bat
+echo REM                          ___!todayNow!___ >> !wDir!\sm-apdl.bat
+echo REM anfang New Analysis Cases >> !wDir!\sm-apdl.bat
 
 set ans_consec=YES
 set ansys_lock=on
@@ -26,7 +26,7 @@ for /l %%m in (!interval!) do (
 	set par=%%m
 	set num=4
 
-	call addZeros.bat :addZero
+	call add-zeroes.bat :addZero
 
 	set job=!par!
 	@echo on
@@ -40,7 +40,7 @@ for /l %%m in (!interval!) do (
 		set par=%%n
 		set num=2
 
-		call addZeros.bat :addZero
+		call add-zeroes.bat :addZero
 
 		set lk=!par!
 		@echo on
@@ -53,12 +53,12 @@ for /l %%m in (!interval!) do (
 		echo __________Calling CALC.BAT__________ & echo. & echo.
 		@echo off
 
-		call calcLoop.bat :calc
+		call calc-loop.bat :calc
 
 		set /p succeed=<!wDir!\success.txt
 
 		if !succeed! equ 1 (
-			call deleteFiles.bat :delFiles
+			call delete-files.bat :delFiles
 		)
 
 		@echo on
@@ -69,6 +69,6 @@ for /l %%m in (!interval!) do (
 	)
 )
 
-echo. >> !wDir!\smAPDL.bat
-echo REM ende New Analysis Cases >> !wDir!\smAPDL.bat
-echo REM ------------------- >> !wDir!\smAPDL.bat
+echo. >> !wDir!\sm-apdl.bat
+echo REM ende New Analysis Cases >> !wDir!\sm-apdl.bat
+echo REM ------------------- >> !wDir!\sm-apdl.bat

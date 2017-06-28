@@ -59,7 +59,7 @@ echo License: !ansj!
 echo Project: %proj_Num%
 echo Jobname: !jobname!
 
-call Timer.bat :StartTimer
+call timer.bat :startTimer
 
 			set apdlCMD="C:\Program Files\ANSYS Inc\v170\ANSYS\bin\winx64\ansys170.exe" -s read -m 4096 -db 8192 -np 2 -b -p !ansj! -dir "!pathBefore!\%proj_Num%\!pathAfter!"^
  -j !jobname! -i "R:\maharjan\%proj_Num%\restart.in" -o "!pathBefore!\%proj_Num%\!pathAfter!\!jobname!res.out" -resuStep !resuStep! -resuSub !resuSub!
@@ -70,8 +70,8 @@ echo.
 
 !apdlCMD!
 
-call Timer.bat :StopTimer
-call Timer.bat :DisplayTimerResult
+call timer.bat :stopTimer
+call timer.bat :displayTimerResult
 echo Time Used: !elTime!
 
 endlocal
