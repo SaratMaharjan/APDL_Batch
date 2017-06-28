@@ -39,7 +39,7 @@
 
 	zj - move down to top of next fold
 
-	zk	- move up to bottom of previous fold
+	zk - move up to bottom of previous fold
 
 	:vimgrep pattern **/*.ext - to search recursively in folder
 
@@ -131,7 +131,7 @@
 	git status (to check changes)
 	git add/rm (to add or remove files)
 	git commit (to commit for push)
-	git pusht (to update the repository)
+	git push (to update the repository)
 	git pull origin master (to Update from repository)
 </pre>
 
@@ -167,7 +167,8 @@
 
 ## Windows Command Line
 <pre>
-	ren ???????????.jpg	????????1??.jpg :::replaces anything to 1 and third last position.
+	replace anything to 1 and third last position.
+		ren ???????????.jpg	????????1??.jpg
 
 	adding prefix to file Name
 		forfiles /m *.jpg /c "cmd /c ren @file prefix@file"
@@ -187,7 +188,8 @@
 	Add suffix to File Name
 		for %a in (*.txt) do ren "%~a" "%~naThingsToAdd%~xa"
 
-	ipconfig -> IPv4-Address : lan ip address
+	lan ip address
+		ipconfig -> IPv4-Address
 
 	taskkill /f /im someProcess.exe
 
@@ -214,5 +216,7 @@
 			function foo(x,y,z) {
 				// ..
 			}
-	foo(..) expects three arguments, because it has three declared parameters. This count has a special term: arity. Arity is the number of parameters in a function declaration. The arity of foo(..) is 3.
+	foo(..) expects three arguments, because it has three declared parameters.
+	This count has a special term: arity. Arity is the number of parameters in a function declaration.
+	The arity of foo(..) is 3.
 </pre>
