@@ -2,15 +2,15 @@
 REM read Argument
 set drive=%1
 set fname=%2
-if exist lastRun.txt (
+if exist last-run.txt (
 	echo "last run exists."
 ) else (
-	echo "test"> lastRun.txt
+	echo "test"> last-run.txt
 )
-if exist lastLic.txt (
+if exist last-lic.txt (
 	echo "last license exists."
 ) else (
-	echo "test"> lastLic.txt
+	echo "test"> last-lic.txt
 )
 
 setlocal EnableDelayedExpansion
@@ -41,7 +41,7 @@ setlocal EnableDelayedExpansion
 		)
 
 REM set ansj=preppost
-set /p ansj=<lastLic.txt
+set /p ansj=<last-lic.txt
 set /p r=Enter License to Use (1: struct, 2: mech_2, 4: prepost; default: %ansj%):%=%
 if "%r%" equ "1" (
 	REM set ansj=struct
@@ -57,15 +57,15 @@ if "%r%" equ "4" (
 	set ansj=preppost
 )
 
-(echo %ansj%) > lastLic.txt
+(echo %ansj%) > last-lic.txt
 
 REM set proj_Num="test"
-set /p proj_Num=<lastRun.txt
+set /p proj_Num=<last-run.txt
 
 set /p proj_Num2=Enter The Project Num (Folder, default: %proj_Num%):%=%
 if not "%proj_Num2%" == "" (
 	REM echo Project : %proj_Num%
-	(echo %proj_Num2%) > lastRun.txt
+	(echo %proj_Num2%) > last-run.txt
 	set proj_Num=%proj_Num2%
 	echo.
 ) else (

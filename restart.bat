@@ -15,12 +15,12 @@ setlocal EnableDelayedExpansion
 	)
 
 REM set proj_Num="test"
-set /p proj_Num=<lastRun.txt
+set /p proj_Num=<last-run.txt
 
 set /p proj_Num2=Enter The Project Num (Folder, default: %proj_Num%):%=%
 if not "%proj_Num2%" == "" (
 	REM echo Project : %proj_Num%
-	(echo %proj_Num2%) > lastRun.txt
+	(echo %proj_Num2%) > last-run.txt
 	set proj_Num=%proj_Num2%
 	echo.
 ) else (
@@ -41,7 +41,7 @@ set /p resuStep=Enter Step to Resume:%=%
 set /p resuSub=Enter Last Substep:%=%
 
 REM set ansj=preppost
-set /p ansj=<lastResLic.txt
+set /p ansj=<last-res-lic.txt
 set /p r=Enter License to Use (1: struct, 2: mech_2, 3: meba; default: %ansj%):%=%
 if "%r%" equ "1" (
 	REM set ansj=struct
@@ -53,7 +53,7 @@ if "%r%" equ "2" (
 if "%r%" equ "3" (
 	set ansj=meba
 )
-(echo %ansj%) > lastResLic.txt
+(echo %ansj%) > last-res-lic.txt
 
 echo License: !ansj!
 echo Project: %proj_Num%
