@@ -1,9 +1,24 @@
 # APDL_Batch
+
 	Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes used often.
 
-# Notes
+<!-- TOC -->
 
-## VIM
+- [APDL_Batch](#apdl_batch)
+	- [Notes](#notes)
+		- [VIM](#vim)
+		- [GIT](#git)
+		- [Node and NPM](#node-and-npm)
+		- [AutoCAD](#autocad)
+		- [Windows Command Line](#windows-command-line)
+		- [OTHERS](#others)
+
+<!-- /TOC -->
+
+## Notes
+
+### VIM
+
 <pre>
 	:changes - to view changes
 
@@ -84,7 +99,7 @@
 			Change each 'foo' (case sensitive) to 'bar'; ask for confirmation.
 			This may be wanted after using :set ignorecase to make searches case insensitive.
 
-	:mksession ~/mysession.vim		OR :mks
+	:mksession ~/mysession.vim OR :mks
 	:source ~/mysession.vim
 
 	To close all TABS
@@ -93,7 +108,7 @@
 		To save work in all tabs and quit:
 			:wqa
 
-	:ls	for list of open buffers
+	:ls for list of open buffers
 		:bp previous buffer
 		:bn next buffer
 		:bn (n a number) move to n'th buffer
@@ -117,7 +132,8 @@
 	Use [Num]gt to go to tab Number
 </pre>
 
-## GIT
+### GIT
+
 <pre>
 	git config --global user.name "smhrjn"
 	git config --global user.email sarat.maharjan@gmail.com"
@@ -135,7 +151,8 @@
 	git pull origin master (to Update from repository)
 </pre>
 
-## Node and NPM
+### Node and NPM
+
 <pre>
 	list available scripts
 		npm run
@@ -144,7 +161,8 @@
 		npm ls --global --depth 0
 </pre>
 
-## AutoCAD
+### AutoCAD
+
 <pre>
 	IMAGEFRAME command in AUTOCAD
 		rtdisplay -> 0
@@ -165,10 +183,11 @@
 		MENUBAR 1
 </pre>
 
-## Windows Command Line
+### Windows Command Line
+
 <pre>
 	replace anything to 1 and third last position.
-		ren ???????????.jpg	????????1??.jpg
+		ren ???????????.jpg ????????1??.jpg
 
 	adding prefix to file Name
 		forfiles /m *.jpg /c "cmd /c ren @file prefix@file"
@@ -198,7 +217,8 @@
 	tasklist /? : for help
 </pre>
 
-## OTHERS
+### OTHERS
+
 <pre>
 	To use macros.xla: In excel: start-add-ins and add macros.xla
 
