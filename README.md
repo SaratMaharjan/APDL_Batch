@@ -1,9 +1,9 @@
 # APDL_Batch
-	Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes I often require.
+	Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes used often.
 
-# My Notes
+# Notes
 
-##VIM
+## VIM
 <pre>
 	:changes - to view changes
 
@@ -117,14 +117,14 @@
 	Use [Num]gt to go to tab Number
 </pre>
 
-##GIT
+## GIT
 <pre>
-	git config --global user.name "saratmaharjan"
+	git config --global user.name "smhrjn"
 	git config --global user.email sarat.maharjan@gmail.com"
 	git config --global color.ui true
 
-	git config remote.origin.url https://saratmaharjan:password@github.com/saratmaharjan/vim.git
-	git config remote.origin.url https://saratmaharjan:password@github.com/saratmaharjan/APDL_Batch.git
+	git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/vim.git
+	git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/APDL_Batch.git
 
 	git init NAME
 	git clone URL (To get repository to LOCAL directory)
@@ -135,7 +135,7 @@
 	git pull origin master (to Update from repository)
 </pre>
 
-##Node and NPM
+## Node and NPM
 <pre>
 	list available scripts
 		npm run
@@ -144,14 +144,29 @@
 		npm ls --global --depth 0
 </pre>
 
-##OTHERS
+## AutoCAD
 <pre>
-	Autocad Command: IMAGEFRAME
+	IMAGEFRAME command in AUTOCAD
+		rtdisplay -> 0
+	Show open/show dialog boxes
+		filedia : 1
+	Useonly one window for multiple drawing
+		taskbar -> 0
+	Hide IMAGE FRAME
+		imageframe = 0
+	Back to AutoCAD classic View
+		_-TOOLBAR Draw _Show
+		_-TOOLBAR Modify _Show
+		_-TOOLBAR Properties _Show
+		_-TOOLBAR Layers _Show
+		_-TOOLBAR Styles _Show
+		_-TOOLBAR Standard _Show
+		_RIBBONCLOSE
+		MENUBAR 1
+</pre>
 
-	To use macros.xla: In excel: start-add-ins and add macros.xla
-
-	Replace with ^p to replace with new line. NOTEPAD++??
-
+## Windows Command Line
+<pre>
 	ren ???????????.jpg	????????1??.jpg :::replaces anything to 1 and third last position.
 
 	adding prefix to file Name
@@ -172,24 +187,20 @@
 	Add suffix to File Name
 		for %a in (*.txt) do ren "%~a" "%~naThingsToAdd%~xa"
 
-	AutoCAD
-		IMAGEFRAME command in AUTOCAD
-			rtdisplay -> 0
-		Show open/show dialog boxes
-			filedia : 1
-		Useonly one window for multiple drawing
-			taskbar -> 0
-		Hide IMAGE FRAME
-			imageframe = 0
-		Back to AutoCAD classic View
-			_-TOOLBAR Draw _Show
-			_-TOOLBAR Modify _Show
-			_-TOOLBAR Properties _Show
-			_-TOOLBAR Layers _Show
-			_-TOOLBAR Styles _Show
-			_-TOOLBAR Standard _Show
-			_RIBBONCLOSE
-			MENUBAR 1
+	ipconfig -> IPv4-Address : lan ip address
+
+	taskkill /f /im someProcess.exe
+
+	tasklist /nh | sort
+
+	tasklist /? : for help
+</pre>
+
+## OTHERS
+<pre>
+	To use macros.xla: In excel: start-add-ins and add macros.xla
+
+	Replace with ^p to replace with new line. NOTEPAD++??
 
 	Word template location : %appdata%\Microsoft\Templates\
 
@@ -204,13 +215,4 @@
 				// ..
 			}
 	foo(..) expects three arguments, because it has three declared parameters. This count has a special term: arity. Arity is the number of parameters in a function declaration. The arity of foo(..) is 3.
-
-	cmd: ipconfig -> IPv4-Address : lan ip address
-
-	taskkill /f /im someProcess.exe
-
-	tasklist /nh | sort
-
-	tasklist /? : for help
-
 </pre>
