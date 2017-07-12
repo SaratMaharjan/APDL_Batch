@@ -2,5 +2,8 @@
 	"vsicons.presets.angular": true,
 	"angulardoc.repoId": "ebbb9074-1ce5-4231-94ad-ef09a3d24ed0",
 	"angulardoc.lastSync": 0,
-	"eslint.enable": false
+	"eslint.enable": false,
+	"favorites.resources": [
+		"server.js"
+	]
 }
