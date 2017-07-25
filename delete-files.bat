@@ -6,6 +6,12 @@ echo Deleting Temporary Files ..
 del !wDir!\f!job!-!lk!.bcs >nul 2>&1
 del !wDir!\f!job!-!lk!.dbb >nul 2>&1
 del !wDir!\f!job!-!lk!.do3 >nul 2>&1
+del !wDir!\f!job!-!lk!.dsp >nul 2>&1
+del !wDir!\f!job!-!lk!.dspmatk >nul 2>&1
+del !wDir!\f!job!-!lk!.dspstack >nul 2>&1
+del !wDir!\f!job!-!lk!.dspsymb >nul 2>&1
+del !wDir!\f!job!-!lk!.dsptri >nul 2>&1
+del !wDir!\f!job!-!lk!.dsptriu >nul 2>&1
 del !wDir!\f!job!-!lk!.ema >nul 2>&1
 del !wDir!\f!job!-!lk!.emat >nul 2>&1
 del !wDir!\f!job!-!lk!.esa >nul 2>&1

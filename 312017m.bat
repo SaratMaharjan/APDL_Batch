@@ -10,7 +10,7 @@ REM set sourceFile=s.in
 set redirect=0
 REM set extVar=0
 
-set proj_Num=312017
+set proj_Num=312017m
 
 REM REM +ve CS 1
 REM 	set interval=1008 10 1098
@@ -18,8 +18,8 @@ REM 	set interval2=11 1 11
 REM 		call calc.bat
 
 REM +ve CS 1
-	set interval=1188 20 1188
-	set interval2=11 1 11
+	set interval=2009 20 2009
+	set interval2=11 10 21
 		call calc.bat
 
 REM REM set redirect=1
