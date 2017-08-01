@@ -198,7 +198,7 @@ return
 	}
 return
 
-#c:: Run "C:\Program Files (x86)\Microsoft VS Code\Code.exe" -n
+#c:: Run "C:\Program Files\Microsoft VS Code\Code.exe" -n
 
 
 ;#x::
