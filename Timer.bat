@@ -2,14 +2,14 @@ call:%*
 
 goto :eof
 
-:StartTimer
+:startTimer
 REM  Store start time
 set StartTIME=%TIME%
 for /f "usebackq tokens=1-4 delims=:., " %%f in (`echo %StartTIME: =0%`) do set /a Start100S=1%%f*360000+1%%g*6000+1%%h*100+1%%i-36610100
 echo Started: %StartTime%
 goto :eof
 
-:StopTimer
+:stopTimer
 REM  Get the end time
 set StopTIME=%TIME%
 for /f "usebackq tokens=1-4 delims=:., " %%f in (`echo %StopTIME: =0%`) do set /a Stop100S=1%%f*360000+1%%g*6000+1%%h*100+1%%i-36610100
@@ -20,7 +20,7 @@ set TookTimePadded=0%TookTime%
 echo Stopped: %StopTime%
 goto :eof
 
-:DisplayTimerResult
+:displayTimerResult
 REM  Show timer start/stop/delta
 set elTime=%TookTime:~0,-2%.%TookTimePadded:~-2%
 set /a tCalc=elTime/60

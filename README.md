@@ -1,9 +1,24 @@
 # APDL_Batch
-	Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes I often require.
 
-# My Notes
+	Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes used often.
 
-##VIM
+<!-- TOC -->
+
+- [APDL_Batch](#apdl_batch)
+	- [Notes](#notes)
+		- [VIM](#vim)
+		- [GIT](#git)
+		- [Node and NPM](#node-and-npm)
+		- [AutoCAD](#autocad)
+		- [Windows Command Line](#windows-command-line)
+		- [OTHERS](#others)
+
+<!-- /TOC -->
+
+## Notes
+
+### VIM
+
 <pre>
 	:changes - to view changes
 
@@ -39,7 +54,7 @@
 
 	zj - move down to top of next fold
 
-	zk	- move up to bottom of previous fold
+	zk - move up to bottom of previous fold
 
 	:vimgrep pattern **/*.ext - to search recursively in folder
 
@@ -84,7 +99,7 @@
 			Change each 'foo' (case sensitive) to 'bar'; ask for confirmation.
 			This may be wanted after using :set ignorecase to make searches case insensitive.
 
-	:mksession ~/mysession.vim		OR :mks
+	:mksession ~/mysession.vim OR :mks
 	:source ~/mysession.vim
 
 	To close all TABS
@@ -93,7 +108,7 @@
 		To save work in all tabs and quit:
 			:wqa
 
-	:ls	for list of open buffers
+	:ls for list of open buffers
 		:bp previous buffer
 		:bn next buffer
 		:bn (n a number) move to n'th buffer
@@ -117,25 +132,27 @@
 	Use [Num]gt to go to tab Number
 </pre>
 
-##GIT
+### GIT
+
 <pre>
-	git config --global user.name "saratmaharjan"
+	git config --global user.name "smhrjn"
 	git config --global user.email sarat.maharjan@gmail.com"
 	git config --global color.ui true
 
-	git config remote.origin.url https://saratmaharjan:password@github.com/saratmaharjan/vim.git
-	git config remote.origin.url https://saratmaharjan:password@github.com/saratmaharjan/APDL_Batch.git
+	git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/vim.git
+	git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/APDL_Batch.git
 
 	git init NAME
 	git clone URL (To get repository to LOCAL directory)
 	git status (to check changes)
 	git add/rm (to add or remove files)
 	git commit (to commit for push)
-	git pusht (to update the repository)
+	git push (to update the repository)
 	git pull origin master (to Update from repository)
 </pre>
 
-##Node and NPM
+### Node and NPM
+
 <pre>
 	list available scripts
 		npm run
@@ -144,15 +161,33 @@
 		npm ls --global --depth 0
 </pre>
 
-##OTHERS
+### AutoCAD
+
 <pre>
-	Autocad Command: IMAGEFRAME
+	IMAGEFRAME command in AUTOCAD
+		rtdisplay -> 0
+	Show open/show dialog boxes
+		filedia : 1
+	Useonly one window for multiple drawing
+		taskbar -> 0
+	Hide IMAGE FRAME
+		imageframe = 0
+	Back to AutoCAD classic View
+		_-TOOLBAR Draw _Show
+		_-TOOLBAR Modify _Show
+		_-TOOLBAR Properties _Show
+		_-TOOLBAR Layers _Show
+		_-TOOLBAR Styles _Show
+		_-TOOLBAR Standard _Show
+		_RIBBONCLOSE
+		MENUBAR 1
+</pre>
 
-	To use macros.xla: In excel: start-add-ins and add macros.xla
+### Windows Command Line
 
-	Replace with ^p to replace with new line. NOTEPAD++??
-
-	ren ???????????.jpg	????????1??.jpg :::replaces anything to 1 and third last position.
+<pre>
+	replace anything to 1 and third last position.
+		ren ???????????.jpg ????????1??.jpg
 
 	adding prefix to file Name
 		forfiles /m *.jpg /c "cmd /c ren @file prefix@file"
@@ -172,24 +207,22 @@
 	Add suffix to File Name
 		for %a in (*.txt) do ren "%~a" "%~naThingsToAdd%~xa"
 
-	AutoCAD
-		IMAGEFRAME command in AUTOCAD
-			rtdisplay -> 0
-		Show open/show dialog boxes
-			filedia : 1
-		Useonly one window for multiple drawing
-			taskbar -> 0
-		Hide IMAGE FRAME
-			imageframe = 0
-		Back to AutoCAD classic View
-			_-TOOLBAR Draw _Show
-			_-TOOLBAR Modify _Show
-			_-TOOLBAR Properties _Show
-			_-TOOLBAR Layers _Show
-			_-TOOLBAR Styles _Show
-			_-TOOLBAR Standard _Show
-			_RIBBONCLOSE
-			MENUBAR 1
+	lan ip address
+		ipconfig -> IPv4-Address
+
+	taskkill /f /im someProcess.exe
+
+	tasklist /nh | sort
+
+	tasklist /? : for help
+</pre>
+
+### OTHERS
+
+<pre>
+	To use macros.xla: In excel: start-add-ins and add macros.xla
+
+	Replace with ^p to replace with new line. NOTEPAD++??
 
 	Word template location : %appdata%\Microsoft\Templates\
 
@@ -203,14 +236,7 @@
 			function foo(x,y,z) {
 				// ..
 			}
-	foo(..) expects three arguments, because it has three declared parameters. This count has a special term: arity. Arity is the number of parameters in a function declaration. The arity of foo(..) is 3.
-
-	cmd: ipconfig -> IPv4-Address : lan ip address
-
-	taskkill /f /im someProcess.exe
-
-	tasklist /nh | sort
-
-	tasklist /? : for help
-
+	foo(..) expects three arguments, because it has three declared parameters.
+	This count has a special term: arity. Arity is the number of parameters in a function declaration.
+	The arity of foo(..) is 3.
 </pre>

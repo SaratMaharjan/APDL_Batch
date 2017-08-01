@@ -9,18 +9,18 @@
 	REM goto :takeTime
 
 	if !append! equ 1 (
-		REM echo.>> !wDir!\smAPDL.bat
-		echo.>> smAPDL.bat
+		REM echo.>> !wDir!\sm-apdl.bat
+		echo.>> sm-apdl.bat
 	) else (
-		echo.> smAPDL.bat
+		echo.> sm-apdl.bat
 	)
 
 	set todayNow=On %date:~0,2%.%date:~3,2%.%date:~6,4% at %time:~0,2%:%time:~3,2%
 	echo *set,hostname,'!host!' > host.csv
 	echo *abbr,fin,!location!\ >> host.csv
-	echo REM ------------------- >> smAPDL.bat
-	echo REM                          ___!todayNow!___ >> smAPDL.bat
-	echo REM anfang New Analysis Cases >> smAPDL.bat
+	echo REM ------------------- >> sm-apdl.bat
+	echo REM                          ___!todayNow!___ >> sm-apdl.bat
+	echo REM anfang New Analysis Cases >> sm-apdl.bat
 
 	set ans_consec=YES
 	set ansys_lock=on
@@ -28,7 +28,7 @@
 	for /l %%m in (!interval!) do (
 		set par=%%m
 		set num=4
-		call addZeros.bat :addZero
+		call add-zeroes.bat :addZero
 		set job=!par!
 		@echo on
 		echo.
@@ -40,7 +40,7 @@
 
 			set par=%%n
 			set num=2
-			call addZeros.bat :addZero
+			call add-zeroes.bat :addZero
 			set lk=!par!
 			@echo on
 			echo.
@@ -51,11 +51,11 @@
 			echo LK: !lk!
 			echo __________Calling CALC.BAT__________ & echo. & echo.
 			@echo off
-			call calcLoop.bat :calc
+			call calc-loop.bat :calc
 			REM timeout /t 10
 			set /p succeed=<success.txt
 			if !succeed! equ 1 (
-				call deleteFiles.bat :delFiles
+				call delete-files.bat :delFiles
 			)
 			@echo on
 			echo ____________________________________
@@ -64,7 +64,7 @@
 			@echo off
 		)
 	)
-	echo. >> smAPDL.bat
-	echo REM ende New Analysis Cases >> smAPDL.bat
-	echo REM ------------------- >> smAPDL.bat
+	echo. >> sm-apdl.bat
+	echo REM ende New Analysis Cases >> sm-apdl.bat
+	echo REM ------------------- >> sm-apdl.bat
 

@@ -2,7 +2,7 @@
 call reset.bat
 
 REM set pathBefore=D:\Maharjan
-set pathAfter=ANSYSq
+set pathAfter=ansysq
 
 REM set sourcePre=R:\maharjan
 REM set sourceFile=s.in
