@@ -1,5 +1,5 @@
 const compose = (...fns) => start =>
-	fns.reduceRight((state, fn) => fn(state), start);
+  fns.reduceRight((state, fn) => fn(state), start);
 
 const curry = fn => (...args) => args.length >= fn.length
   ? fn(...args)
