@@ -1,4 +1,5 @@
 
+/* eslint-disable */
 function td_does_ns_exist(ns) {
   var tree_id = DS.Tree.FindObjectByString(ns, true, true);
   if (tree_id == 0) {

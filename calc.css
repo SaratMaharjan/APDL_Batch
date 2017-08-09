@@ -70,14 +70,14 @@ button:active {
   margin-top: -52px;
 }
 
-#equalButton {
+#equal-button {
   position: absolute;
   margin-left: 12px;
   margin-top: -50px;
   height: 90px;
 }
 
-#zeroButton {
+#zero-button {
   width: 117px;
 }
 

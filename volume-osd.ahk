@@ -52,18 +52,18 @@ vol_BarOptionsWave   = 2:B ZH%vol_Thick% ZX0 ZY0 W%vol_Width% CB%vol_CBW% CW%vol
 ; Otherwise, omit it to center the bar horizontally:
 if vol_PosX >= 0
 {
-	vol_BarOptionsMaster = %vol_BarOptionsMaster% X%vol_PosX%
-	vol_BarOptionsWave   = %vol_BarOptionsWave% X%vol_PosX%
+  vol_BarOptionsMaster = %vol_BarOptionsMaster% X%vol_PosX%
+  vol_BarOptionsWave   = %vol_BarOptionsWave% X%vol_PosX%
 }
 
 ; If the Y position has been specified, add it to the options.
 ; Otherwise, omit it to have it calculated later:
 if vol_PosY >= 0
 {
-	vol_BarOptionsMaster = %vol_BarOptionsMaster% Y%vol_PosY%
-	vol_PosY_wave = %vol_PosY%
-	vol_PosY_wave += %vol_Thick%
-	vol_BarOptionsWave = %vol_BarOptionsWave% Y%vol_PosY_wave%
+  vol_BarOptionsMaster = %vol_BarOptionsMaster% Y%vol_PosY%
+  vol_PosY_wave = %vol_PosY%
+  vol_PosY_wave += %vol_Thick%
+  vol_BarOptionsWave = %vol_BarOptionsWave% Y%vol_PosY_wave%
 }
 
 #SingleInstance
@@ -96,20 +96,20 @@ vol_ShowBars:
 ; To prevent the "flashing" effect, only create the bar window if it
 ; doesn't already exist:
 IfWinNotExist, vol_Wave
-	Progress, %vol_BarOptionsWave%, , , vol_Wave
+  Progress, %vol_BarOptionsWave%, , , vol_Wave
 IfWinNotExist, vol_Master
 {
-	; Calculate position here in case screen resolution changes while
-	; the script is running:
-	if vol_PosY < 0
-	{
-		; Create the Wave bar just above the Master bar:
-		WinGetPos, , vol_Wave_Posy, , , vol_Wave
-		vol_Wave_Posy -= %vol_Thick%
-		Progress, %vol_BarOptionsMaster% Y%vol_Wave_Posy%, , , vol_Master
-	}
-	else
-		Progress, %vol_BarOptionsMaster%, , , vol_Master
+  ; Calculate position here in case screen resolution changes while
+  ; the script is running:
+  if vol_PosY < 0
+  {
+    ; Create the Wave bar just above the Master bar:
+    WinGetPos, , vol_Wave_Posy, , , vol_Wave
+    vol_Wave_Posy -= %vol_Thick%
+    Progress, %vol_BarOptionsMaster% Y%vol_Wave_Posy%, , , vol_Master
+  }
+  else
+    Progress, %vol_BarOptionsMaster%, , , vol_Master
 }
 ; Get both volumes in case the user or an external program changed them:
 SoundGet, vol_Master, Master

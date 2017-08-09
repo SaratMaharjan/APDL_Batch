@@ -13,6 +13,6 @@ REM set extVar=0
 set proj_Num=310917
 
 REM All load cases
-	set interval=1000 10 1000
-	set interval2=1 1 8
-		call calc.bat
+  set interval=1000 10 1000
+  set interval2=1 1 8
+    call calc.bat

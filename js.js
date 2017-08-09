@@ -1,3 +1,4 @@
+/* eslint-disable */
 $(document).ready(function() {
   // Add smooth scrolling
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {

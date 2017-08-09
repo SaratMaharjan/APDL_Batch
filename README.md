@@ -1,17 +1,17 @@
 # APDL_Batch
 
-	Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes used often.
+  Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes used often.
 
 <!-- TOC -->
 
 - [APDL_Batch](#apdl_batch)
-	- [Notes](#notes)
-		- [VIM](#vim)
-		- [GIT](#git)
-		- [Node and NPM](#node-and-npm)
-		- [AutoCAD](#autocad)
-		- [Windows Command Line](#windows-command-line)
-		- [OTHERS](#others)
+  - [Notes](#notes)
+    - [VIM](#vim)
+    - [GIT](#git)
+    - [Node and NPM](#node-and-npm)
+    - [AutoCAD](#autocad)
+    - [Windows Command Line](#windows-command-line)
+    - [OTHERS](#others)
 
 <!-- /TOC -->
 
@@ -20,223 +20,223 @@
 ### VIM
 
 <pre>
-	:changes - to view changes
+  :changes - to view changes
 
-	:gv - reselect last selection
+  :gv - reselect last selection
 
-	# - Search words under Cursor backwards
+  # - Search words under Cursor backwards
 
-	* - Search words under Cursor forwards
+  * - Search words under Cursor forwards
 
-	:%s/pattern//gn - count number of occurences of pattern
+  :%s/pattern//gn - count number of occurences of pattern
 
-	To search and replace in selection
-		press :, selection symbol auto appears then press s/pattern/replacement/gc
+  To search and replace in selection
+    press :, selection symbol auto appears then press s/pattern/replacement/gc
 
-	:g; to go to last edit position, mapped to g-
+  :g; to go to last edit position, mapped to g-
 
-	gi command switches Vim to Insert mode and places cursor in the same position as
-		where Insert mode was stopped last time.
+  gi command switches Vim to Insert mode and places cursor in the same position as
+    where Insert mode was stopped last time.
 
-	byw - yank word under cursor
+  byw - yank word under cursor
 
-	viw - select word under cursor
+  viw - select word under cursor
 
-	:ve - to see version Information
+  :ve - to see version Information
 
-	:argdo %s/file:\/\/\/.\\/file: /gc - Replace in all buffers.... SEE BELOW
+  :argdo %s/file:\/\/\/.\\/file: /gc - Replace in all buffers.... SEE BELOW
 
-	:sp filename for a horizontal split
-			:vsp filename or :vs filename for a vertical split
-			If no filename give same file opens
+  :sp filename for a horizontal split
+      :vsp filename or :vs filename for a vertical split
+      If no filename give same file opens
 
-	:%s/.\{80}/&\r/g - New line after 80 charachters (&\r means Match and New Line)
+  :%s/.\{80}/&\r/g - New line after 80 charachters (&\r means Match and New Line)
 
-	zj - move down to top of next fold
+  zj - move down to top of next fold
 
-	zk - move up to bottom of previous fold
+  zk - move up to bottom of previous fold
 
-	:vimgrep pattern **/*.ext - to search recursively in folder
+  :vimgrep pattern **/*.ext - to search recursively in folder
 
-	to open all *.in Files
-		:args *.in
-		:tab all
+  to open all *.in Files
+    :args *.in
+    :tab all
 
-	to search and replace in all open buffers/args	, e means ignore error - match not found
-		:bufdo %s/cmd/command/ge
-		:add | update to save files automatically
-		:arg *.cpp	All *.cpp files in current directory.
-		:argadd *.h	And all *.h files.
-		:arg	Optional: Display the current arglist.
-		:argdo %s/pattern/replace/ge | update	Search and replace in all files in arglist.
-												"- | update" to save the files
+  to search and replace in all open buffers/args  , e means ignore error - match not found
+    :bufdo %s/cmd/command/ge
+    :add | update to save files automatically
+    :arg *.cpp  All *.cpp files in current directory.
+    :argadd *.h  And all *.h files.
+    :arg  Optional: Display the current arglist.
+    :argdo %s/pattern/replace/ge | update  Search and replace in all files in arglist.
+                        "- | update" to save the files
 
-		:%s#\($\n\s*\)\+\%$##
-		Note that this removes all trailing lines that contain only whitespace.
-		To remove only truly empty lines, remove the \s* from the above command.
-			Explanation:
-			\( ..... Start a match group
-			$\n ... Match a new line (end-of-line character followed by a carriage return).
-			\s* ... Allow any amount of whitespace on this new line
-			\) ..... End the match group
-			\+ ..... Allow any number of occurrences of this group (one or more).
-			\%$ ... Match the end of the file
+    :%s#\($\n\s*\)\+\%$##
+    Note that this removes all trailing lines that contain only whitespace.
+    To remove only truly empty lines, remove the \s* from the above command.
+      Explanation:
+      \( ..... Start a match group
+      $\n ... Match a new line (end-of-line character followed by a carriage return).
+      \s* ... Allow any amount of whitespace on this new line
+      \) ..... End the match group
+      \+ ..... Allow any number of occurrences of this group (one or more).
+      \%$ ... Match the end of the file
 
-	SEARCH AND REPLACE
-		:%s/foo/bar/g
-			Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
-			g means global: all occurence in a line.... when not used. only first occurence
-		:s/foo/bar/g
-			Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
-		:%s/foo/bar/gc
-			Change each 'foo' to 'bar', but ask for confirmation first.
-		:%s/\<foo\>/bar/gc
-			Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
-		:%s/foo/bar/gci
-			Change each 'foo' (case insensitive) to 'bar'; ask for confirmation.
-			This may be wanted after using :set noignorecase to make searches case sensitive (the default).
-		:%s/foo/bar/gcI
-			Change each 'foo' (case sensitive) to 'bar'; ask for confirmation.
-			This may be wanted after using :set ignorecase to make searches case insensitive.
+  SEARCH AND REPLACE
+    :%s/foo/bar/g
+      Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
+      g means global: all occurence in a line.... when not used. only first occurence
+    :s/foo/bar/g
+      Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
+    :%s/foo/bar/gc
+      Change each 'foo' to 'bar', but ask for confirmation first.
+    :%s/\<foo\>/bar/gc
+      Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
+    :%s/foo/bar/gci
+      Change each 'foo' (case insensitive) to 'bar'; ask for confirmation.
+      This may be wanted after using :set noignorecase to make searches case sensitive (the default).
+    :%s/foo/bar/gcI
+      Change each 'foo' (case sensitive) to 'bar'; ask for confirmation.
+      This may be wanted after using :set ignorecase to make searches case insensitive.
 
-	:mksession ~/mysession.vim OR :mks
-	:source ~/mysession.vim
+  :mksession ~/mysession.vim OR :mks
+  :source ~/mysession.vim
 
-	To close all TABS
-		Shortest/simplest/fastest way would be:
-			:qa
-		To save work in all tabs and quit:
-			:wqa
+  To close all TABS
+    Shortest/simplest/fastest way would be:
+      :qa
+    To save work in all tabs and quit:
+      :wqa
 
-	:ls for list of open buffers
-		:bp previous buffer
-		:bn next buffer
-		:bn (n a number) move to n'th buffer
-		:b <filename-part>
-		:b fileName : to switch to file
-		:b# go to last visited file.... so switching easy
+  :ls for list of open buffers
+    :bp previous buffer
+    :bn next buffer
+    :bn (n a number) move to n'th buffer
+    :b <filename-part>
+    :b fileName : to switch to file
+    :b# go to last visited file.... so switching easy
 
-	:scriptnames -shows all loaded scripts
+  :scriptnames -shows all loaded scripts
 
-	Ctrl-W s and Ctrl-W v to split the current window horizontally and vertically.
-	You can also use :split and :vertical split (:sp and :vs)
+  Ctrl-W s and Ctrl-W v to split the current window horizontally and vertically.
+  You can also use :split and :vertical split (:sp and :vs)
 
-	Vap to select Paragraph
+  Vap to select Paragraph
 
-	,m to activate highlights.vim - then numbers in Number Pads to assign highlight group to selection
+  ,m to activate highlights.vim - then numbers in Number Pads to assign highlight group to selection
 
-	Toggle case 'HellO' to 'hELLo' with g~ then a movement.
-			Uppercase 'HellO' to 'HELLO' with gU then a movement.
-			Lowercase 'HellO' to 'hello' with gu then a movement.
+  Toggle case 'HellO' to 'hELLo' with g~ then a movement.
+      Uppercase 'HellO' to 'HELLO' with gU then a movement.
+      Lowercase 'HellO' to 'hello' with gu then a movement.
 
-	Use [Num]gt to go to tab Number
+  Use [Num]gt to go to tab Number
 </pre>
 
 ### GIT
 
 <pre>
-	git config --global user.name "smhrjn"
-	git config --global user.email sarat.maharjan@gmail.com"
-	git config --global color.ui true
+  git config --global user.name "smhrjn"
+  git config --global user.email sarat.maharjan@gmail.com"
+  git config --global color.ui true
 
-	git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/vim.git
-	git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/APDL_Batch.git
+  git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/vim.git
+  git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/APDL_Batch.git
 
-	git init NAME
-	git clone URL (To get repository to LOCAL directory)
-	git status (to check changes)
-	git add/rm (to add or remove files)
-	git commit (to commit for push)
-	git push (to update the repository)
-	git pull origin master (to Update from repository)
+  git init NAME
+  git clone URL (To get repository to LOCAL directory)
+  git status (to check changes)
+  git add/rm (to add or remove files)
+  git commit (to commit for push)
+  git push (to update the repository)
+  git pull origin master (to Update from repository)
 </pre>
 
 ### Node and NPM
 
 <pre>
-	list available scripts
-		npm run
-	list installed packages
-		npm ls --depth 0
-		npm ls --global --depth 0
+  list available scripts
+    npm run
+  list installed packages
+    npm ls --depth 0
+    npm ls --global --depth 0
 </pre>
 
 ### AutoCAD
 
 <pre>
-	IMAGEFRAME command in AUTOCAD
-		rtdisplay -> 0
-	Show open/show dialog boxes
-		filedia : 1
-	Useonly one window for multiple drawing
-		taskbar -> 0
-	Hide IMAGE FRAME
-		imageframe = 0
-	Back to AutoCAD classic View
-		_-TOOLBAR Draw _Show
-		_-TOOLBAR Modify _Show
-		_-TOOLBAR Properties _Show
-		_-TOOLBAR Layers _Show
-		_-TOOLBAR Styles _Show
-		_-TOOLBAR Standard _Show
-		_RIBBONCLOSE
-		MENUBAR 1
+  IMAGEFRAME command in AUTOCAD
+    rtdisplay -> 0
+  Show open/show dialog boxes
+    filedia : 1
+  Useonly one window for multiple drawing
+    taskbar -> 0
+  Hide IMAGE FRAME
+    imageframe = 0
+  Back to AutoCAD classic View
+    _-TOOLBAR Draw _Show
+    _-TOOLBAR Modify _Show
+    _-TOOLBAR Properties _Show
+    _-TOOLBAR Layers _Show
+    _-TOOLBAR Styles _Show
+    _-TOOLBAR Standard _Show
+    _RIBBONCLOSE
+    MENUBAR 1
 </pre>
 
 ### Windows Command Line
 
 <pre>
-	replace anything to 1 and third last position.
-		ren ???????????.jpg ????????1??.jpg
+  replace anything to 1 and third last position.
+    ren ???????????.jpg ????????1??.jpg
 
-	adding prefix to file Name
-		forfiles /m *.jpg /c "cmd /c ren @file prefix@file"
+  adding prefix to file Name
+    forfiles /m *.jpg /c "cmd /c ren @file prefix@file"
 
-	Recursively rename file extensions
-		forfiles /S /M *.ext1 /C "cmd /c rename @file @fname.ext2"
+  Recursively rename file extensions
+    forfiles /S /M *.ext1 /C "cmd /c rename @file @fname.ext2"
 
-	Remove file extensions
-		forfiles /S /M *.ext /C "cmd /c rename @file @fname"
+  Remove file extensions
+    forfiles /S /M *.ext /C "cmd /c rename @file @fname"
 
-	Add prefix to file names
-		forfiles /S /M *.jpg /C "cmd /c rename @file photo@file"
+  Add prefix to file names
+    forfiles /S /M *.jpg /C "cmd /c rename @file photo@file"
 
-	Handling names with white spaces
-		forfiles /M *.jpg /C "cmd /c rename @file \"@fname - pic.jpg\""
+  Handling names with white spaces
+    forfiles /M *.jpg /C "cmd /c rename @file \"@fname - pic.jpg\""
 
-	Add suffix to File Name
-		for %a in (*.txt) do ren "%~a" "%~naThingsToAdd%~xa"
+  Add suffix to File Name
+    for %a in (*.txt) do ren "%~a" "%~naThingsToAdd%~xa"
 
-	lan ip address
-		ipconfig -> IPv4-Address
+  lan ip address
+    ipconfig -> IPv4-Address
 
-	taskkill /f /im someProcess.exe
+  taskkill /f /im someProcess.exe
 
-	tasklist /nh | sort
+  tasklist /nh | sort
 
-	tasklist /? : for help
+  tasklist /? : for help
 </pre>
 
 ### OTHERS
 
 <pre>
-	To use macros.xla: In excel: start-add-ins and add macros.xla
+  To use macros.xla: In excel: start-add-ins and add macros.xla
 
-	Replace with ^p to replace with new line. NOTEPAD++??
+  Replace with ^p to replace with new line. NOTEPAD++??
 
-	Word template location : %appdata%\Microsoft\Templates\
+  Word template location : %appdata%\Microsoft\Templates\
 
-	If Spaceclaim is slow: Right click on "My Computer" and go to
-	Properties > Advanced System Settings > Environment Variables
-	and create a new System Variable called SPACECLAIM_STARTUP_TRACE and set the value to 1.
+  If Spaceclaim is slow: Right click on "My Computer" and go to
+  Properties > Advanced System Settings > Environment Variables
+  and create a new System Variable called SPACECLAIM_STARTUP_TRACE and set the value to 1.
 
-	source: light-fs getify
-	Arguments are the values you pass in,
-	and parameters are the named variables inside the function that receive those passed in values.
-			function foo(x,y,z) {
-				// ..
-			}
-	foo(..) expects three arguments, because it has three declared parameters.
-	This count has a special term: arity. Arity is the number of parameters in a function declaration.
-	The arity of foo(..) is 3.
+  source: light-fs getify
+  Arguments are the values you pass in,
+  and parameters are the named variables inside the function that receive those passed in values.
+      function foo(x,y,z) {
+        // ..
+      }
+  foo(..) expects three arguments, because it has three declared parameters.
+  This count has a special term: arity. Arity is the number of parameters in a function declaration.
+  The arity of foo(..) is 3.
 </pre>

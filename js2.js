@@ -1,4 +1,5 @@
 
+/* eslint-disable */
 $(document).ready(function(){
   // For touchscreens. Recoment the code using by mobile devices
   /*$(document).on("touchstart",".mob-nav", function() {

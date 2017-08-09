@@ -1,4 +1,3 @@
 
 Copy both files: CustomizeShortcuts.dll and CustomizeShortcuts.xml in Folder
-	: C:\ProgramData\SpaceClaim\Addins\CustomizeShortcuts
-
+  : C:\ProgramData\SpaceClaim\Addins\CustomizeShortcuts

@@ -1,6 +1,7 @@
+/* eslint-disable */
 // This string contains the HTML code for the dialog box
 // we will present to the user
-var html_text = 
+var html_text =
 '<html xmlns="http://www.w3.org/1999/xhtml" >\n'+
 '<head>\n'+
 '<title>Slice Plane Creation Tool</title>\n'+
@@ -88,7 +89,7 @@ var SC = DS.Script;
 
 // Entry point for the whole script.
 function main() {
- 
+
     // Create the dialog
     var slice_plane_dialog =
         SC.CreateActiveXObject(
@@ -118,7 +119,7 @@ function main() {
     xfer('wb') = WB;
     xfer('dlg') = slice_plane_dialog;
     var csys_group = get_coordinate_system_group();
-    
+
     if(csys_group == null) {
         SC.WBScript.Out('Cannot find the coordinate system group in the tree.' +
                         ' Please create a coordinate system first', true);
@@ -139,10 +140,10 @@ function main() {
                                           b_modal,
                                           width,
                                           height,
-                                          flags, 
+                                          flags,
                                           caption);
     if (ret == 1) {
-        // We get here if the user presses OK on the dialog, 
+        // We get here if the user presses OK on the dialog,
         // so lets grab the user's choices back from the selection.
         var selected_csys = xfer('CSYS');
         var create_plane = xfer('CreateSlicePlane');
@@ -153,7 +154,7 @@ function main() {
         var y_axis = get_coordinate_system_y_axis(selected_csys);
         // Bail out if we can't create the vectors for the coordinate system
         if (origin == null || z_axis == null || y_axis == null) {
-            SC.WBScript.Out('Cannot determine the coordinate system vectors.' + 
+            SC.WBScript.Out('Cannot determine the coordinate system vectors.' +
                             ' Unable to create slice plane', true);
             return;
         }
@@ -186,7 +187,7 @@ function write_html(path) {
     output.WriteLine('\'\';');
     output.Close();
     input.Close();
-}    
+}
 
 // Return the origin of a given coordinate system
 function get_coordinate_system_origin(csys_id) {
@@ -194,7 +195,7 @@ function get_coordinate_system_origin(csys_id) {
     if (csys == null) {
         return null;
     }
-    return [csys.OriginXLocation, 
+    return [csys.OriginXLocation,
             csys.OriginYLocation,
             csys.OriginZLocation];
 }
@@ -309,7 +310,7 @@ function normalize(va) {
 // Calculate the cross product of two vectors
 function cross(va, vb) {
     return [va[1] * vb[2] - va[2] * vb[1],
-            va[2] * vb[0] - va[0] * vb[2], 
+            va[2] * vb[0] - va[0] * vb[2],
             va[0] * vb[1] - va[1] * vb[0]];
 }
 
@@ -340,7 +341,7 @@ function are_perpendicular(va, vb, tol) {
     return (Math.abs(dot(va, vb)) / (norm(va) * norm(vb))) < tol ? true : false;
 }
 
-// Rotate the view around so that we are looking in the 
+// Rotate the view around so that we are looking in the
 // direction of the desired view
 function rotate_view(desired_view) {
     // Get the camera and graphics objects
@@ -348,7 +349,7 @@ function rotate_view(desired_view) {
     var graphics = DS.Graphics;
     // This is our tolerance for being parallel to the desired view
     var eps = 1e-7;
-    // This is the maximum number of iterations we'll try.  
+    // This is the maximum number of iterations we'll try.
     // While loops with a tolerance check only scare me...
     var max_iter = 200;
     // Get the current view
@@ -386,7 +387,7 @@ function rotate_view(desired_view) {
         current_up = normalize(cross(trial, vd));
         // Rotate back so we don't lose our place
         camera.rotate(-trial_ang, 0);
-        
+
 
         vd = normalize([camera.ViewDirectionX,
                         camera.ViewDirectionY,
@@ -421,9 +422,9 @@ function rotate_view(desired_view) {
             // and our current view direction
             dot_product = dot(vp, vd);
             needed_rotation = Math.acos(dot(vp, vd)) * 180 / Math.PI
-            
+
             // Knock it down by a factor associated with our iteration
-            // scheme.  This helps prevent spurious jittering as we 
+            // scheme.  This helps prevent spurious jittering as we
             // make our way there.
             needed_rotation *= (1.0 - factor);
             if (b_first_arg) {
@@ -433,8 +434,8 @@ function rotate_view(desired_view) {
                     previous_up = needed_rotation;
                 }
                 camera.rotate(up_factor * needed_rotation, 0.0);
-                
-                
+
+
             } else {
                 if (previous_right < needed_rotation) {
                     right_factor = (right_factor < 0.0) ? 1.0 : -1.0;
@@ -453,11 +454,11 @@ function rotate_view(desired_view) {
         b_first_arg = !b_first_arg;
 //        DS.Graphics.Refresh();
     } while (cnt++ < max_iter);
-        
+
 }
 
 function rotate_up(desired_up_vector) {
-    
+
     // Get the camera and graphics objects
     var camera = DS.Graphics.Camera;
     var graphics = DS.Graphics;
@@ -563,7 +564,7 @@ function pan_view(desired_point) {
                  camera.FocusPointZ];
         // In world coordinates, see which direction this pan took us
         pd = sub(trial, fp);
-        // Project this onto a plane defined by the current view 
+        // Project this onto a plane defined by the current view
         // vector
         pd_in_view = cross(vd, cross(pd, vd));
 
@@ -592,7 +593,7 @@ function pan_view(desired_point) {
 
             pan_amount = trial_pan * dot(fp_to_dp_in_view, pd_in_view);
             // Knock it down by a factor associated with our iteration
-            // scheme.  This helps prevent spurious jittering as we 
+            // scheme.  This helps prevent spurious jittering as we
             // make our way there.
             var factor = cnt / max_iter;
             pan_amount *= (1.0 - factor * factor * factor);

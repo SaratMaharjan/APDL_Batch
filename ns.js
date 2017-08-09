@@ -1,11 +1,12 @@
+/* eslint-disable */
 /****************************************************************************
  *                                                      Phoenix Analysis And
  *                                                       Design Technologies
  ****************************************************************************
  *  This script is designed to be run from the Tools->Run Macro menu from
  *  within ANSYS Mechanical.  The purpose of the script is to create a named
- *  selection for each individual face within the currently selected body.  
- *  This script makes use of the addNamedSelection() ANSYS Mechanical function 
+ *  selection for each individual face within the currently selected body.
+ *  This script makes use of the addNamedSelection() ANSYS Mechanical function
  *  to actually create the component once the selection has been made.
  ***************************************************************************/
 
@@ -24,10 +25,10 @@ var basename = 'faces';
 //  that are defined in the ANSYS mechanical javascript files
 var SC = DS.Script;
 
-//  The selection manager object is a reference to the ANSYS mechanical 
-//  geometry selection tool.  This is a complex object that contains 
+//  The selection manager object is a reference to the ANSYS mechanical
+//  geometry selection tool.  This is a complex object that contains
 //  references to the currently selected set of geometric entities.  More
-//  importantly, it contains back pointers to entity ids within the 
+//  importantly, it contains back pointers to entity ids within the
 //  Mechanical BREP structure.
 var SM = SC.sm;
 
@@ -55,7 +56,7 @@ var VERT_TOPO_TYPE = 0;
 //  find the entry point to the script.  There is a call to this function at
 //  the bottom of this script
 function main() {
-    // First, see if we have a body selected.  If not, report to 
+    // First, see if we have a body selected.  If not, report to
     // the user that a body must be selected first.
     if (SM.Parts > 0) {
         // Do the real work
@@ -84,7 +85,7 @@ function classify_entity_type(topo_id) {
 
 
 // This function creates a named selection of all the faces associated with
-// the currently selected body(s).  
+// the currently selected body(s).
 // Pre Condition:   At least one body must be selected.
 // Post Condition:  The selection manager will be cleared and a new named
 //                  selection will exist for each face in the body.  The
@@ -110,20 +111,20 @@ function create_faces_ns_from_body() {
         // for this is the Cell function with the topological id for
         // the body of interest
         body = brep.Cell(topo_id);
-                
+
         // This array will be used to hold a list of face ids for a given
         // body.
         var face_ids = new Array();
         // These are the actual face objects associated with this body
         var faces = body.Faces;
-	// var oneFace=faces(1);
-	// var areaOne=oneFace.Area;
-	// debugger; 
+  // var oneFace=faces(1);
+  // var areaOne=oneFace.Area;
+  // debugger;
         // Now store all of the face ids in our face id list
         for (var f = 1; f <= faces.Count; f++) {
-	    if(faces(f).Area>115/(100*100) && faces(f).Area<116/(100*100)){
-		face_ids.push(faces(f).Id);
-	    }
+      if(faces(f).Area>115/(100*100) && faces(f).Area<116/(100*100)){
+    face_ids.push(faces(f).Id);
+      }
         }
         // Now that we have the face ids, put them into an array of structures
         // that each look like the following:
@@ -151,10 +152,10 @@ function create_faces_ns_from_body() {
             name = basename + '_' + part_id.toString() + '_' + face_ids[j].toString();
             SM.AddToSelection(part_id, face_ids[j], false);
             // Create the component
-	    // if(faces(j).Area==0){
-		            SC.addNamedSelection(false, name, SC.id_NS_UnknownMultiCriterion);         
-	    // }
-  
+      // if(faces(j).Area==0){
+                SC.addNamedSelection(false, name, SC.id_NS_UnknownMultiCriterion);
+      // }
+
         }
     }
     // Clear out the selection manager
