@@ -1,18 +1,23 @@
-!1. Working Folders and Input Folder in initials.bat
+! 1. Working Folders and Input Folder in initials.bat
 
-!2. at Beginning of s.in
+! 2. at Beginning of s.in
   inPrep=1
   /output,license,txt
     *vwrite,inPrep
 %1I
   /output
 
-!3. at End of s.in before exiting
+! 3. at End of s.in before exiting
   succeed=1
   /output,success,txt
     *vwrite,succeed
 %1I
   /output
 
-!4. instead of /inp,file,in,x: --- use /inp,file,in,verz
+! 4. instead of /inp,file,in,x: --- use /inp,file,in,verz
 !       ALT:  %verz%/file.in
+
+! 5. for dmp calculation:
+! "C:\Program Files\ANSYS Inc\v181\ANSYS\bin\winx64\ansys181.exe" -dis -mpi PCMPI -np 2 -b -p mech_2 -jobstg 2009
+  ! -jobt 11 -verz R:\maharjan\312017m -redirect 0 -i "R:\maharjan\312017m\s-alt.in" -o "E:\312017m\ansys-cadfem-retry\f2009-11.out"
+  ! -dir "E:\312017m\ansys-cadfem-retry" -j "f2009-11" -extVar 0

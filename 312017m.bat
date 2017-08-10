@@ -15,7 +15,7 @@ set proj_Num=312017m
 
 REM +ve CS 1
   set interval=2009 10 2009
-  set interval2=11 10 21
+  set interval2=21 10 21
     call calc.bat
 
 REM REM +ve CS 1

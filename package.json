@@ -21,5 +21,8 @@
   "homepage": "https://github.com/smhrjn/APDL_Batch#readme",
   "devDependencies": {
     "express": "^4.15.3"
+  },
+  "dependencies": {
+    "rxjs": "^5.4.2"
   }
 }

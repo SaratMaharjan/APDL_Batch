@@ -26,3 +26,7 @@ REM endlocal
   REM setlocal EnableDelayedExpansion
 REM for /l %%t in (1 1 3)  do (
 REM for %%t in (1,2,3)  do (
+
+for /f %i in (non-essential-files.txt) do del %i /f /s /q
+rd .git /s /q
+rd e2e /s /q

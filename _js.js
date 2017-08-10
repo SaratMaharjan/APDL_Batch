@@ -20,6 +20,55 @@ if (!Function.prototype.bind) {
   };
 } */
 
+/*
+This
+::foo.bar
+is equivaleent to
+foo.bar.bind(foo)
+in ES7
+ */
+
+const rxjs_ = () => {
+  const Rx = require('rxjs/Rx');
+  // import { Observable } from 'rxjs/Observable';
+  // import 'rxjs/add/observable/of';
+  // import 'rxjs/add/operator/map';
+
+  const myObservable = new Rx.Subject();
+  myObservable.subscribe(value => console.log(value));
+  myObservable.next('foo');
+  myObservable.next('fooooo');
+
+  const myObservable2 = Rx.Observable.create(observer => {
+    observer.next('foo');
+    // setTimeout(() => observer.next('bar'), 1000);
+    setInterval(() => observer.next('bar'), 1000);
+  });
+  // myObservable2.subscribe(value => console.log(value));
+
+  // let input = Rx.Observable.fromEvent(document.querySelector('input'), 'input');
+
+  let stopStream = Rx.Observable.create(observer => {
+    setTimeout(() => observer.next('stopStream'), 6000);
+  });
+  stopStream.subscribe(value => console.log('stop stream occured'));
+
+  // Filter out target values less than 3 characters long
+  myObservable2.filter(event => true)
+    // Let through latest event after 200 ms
+    .debounceTime(200)
+    // Only let through an event every 200 ms
+    .throttleTime(2000)
+    // Delay the events
+    .delay(200)
+    // .take(5)
+    .takeUntil(stopStream)
+    .pluck(' value')
+    .pairwise()
+    .map(event => event + event)
+    .subscribe(value => console.log(value));
+};
+
 const utils = {
   steuerlastfall() {
     // units cm
@@ -110,4 +159,18 @@ const utils = {
   }
 };
 
-utils.forceComp();
+// utils.forceComp();
+
+const sum = [0, 1, 2, 3].reduce(function(acc, val) {
+  return acc + val;
+}, 0);
+console.log(sum);
+
+const flatten = arr => arr.reduce(
+  (acc, val, index, array) => acc.concat(
+    Array.isArray(val) ? flatten(val) : val
+  ),
+  []
+);
+const list1 = [[0, 1], [2, 3], [4, 5]];
+console.log(flatten(list1)); // returns [0, 1, 2, 3, 4, 5]
