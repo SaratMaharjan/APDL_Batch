@@ -1,3 +1,6 @@
+'use strict';
+/* eslint no-unused-vars: 'off' */
+
 /* // Polyfill for bind Method
 if (!Function.prototype.bind) {
   Function.prototype.bind = function(oThis) {
@@ -26,6 +29,15 @@ This
 is equivaleent to
 foo.bar.bind(foo)
 in ES7
+*/
+
+/*
+const deepFrozen = (() => {
+  const deepFreeze = require('deep-freeze');
+  let someObj = { value: 5 };
+  deepFreeze(someObj);
+  someObj.value = 10;
+})();
  */
 
 const rxjs_ = () => {
@@ -68,6 +80,98 @@ const rxjs_ = () => {
     .map(event => event + event)
     .subscribe(value => console.log(value));
 };
+// rxjs_();
+
+const reduceFlatten = () => {
+  const sum = [0, 1, 2, 3].reduce(function(acc, val) {
+    return acc + val;
+  }, 0);
+  console.log(sum);
+
+  const flatten = arr => arr.reduce(
+    (acc, val, index, array) => acc.concat(
+      Array.isArray(val) ? flatten(val) : val
+    ),
+    []
+  );
+  const list1 = [[0, 1], [2, 3], [4, 5]];
+  console.log(flatten(list1)); // returns [0, 1, 2, 3, 4, 5]
+};
+// reduceFlatten();
+
+const assign = () => {
+  // Merge an object
+  let first = { name: 'Tony' };
+  let last = { lastName: 'Stark' };
+  let person = Object.assign(first, last);
+  console.log(person);
+  console.log(first);
+
+  // Merge multiple sources
+  let a = Object.assign({ foo: 0 }, { bar: 1 }, { baz: 2 });
+  console.log(a);
+
+  // Merge and overwrite equal keys
+  let b = Object.assign({ foo: 0 }, { foo: 1 }, { foo: 2 });
+  console.log(b);
+
+  // Clone an object
+  let obj = { person: 'Thor Odinson' };
+  let clone = Object.assign({}, obj);
+  console.log(clone);
+};
+// assign();
+
+const lodashes = () => {
+  const _ = require('lodash');
+  // console.log(_.chunk(['a', 'b', 'c', 'd'], 2));
+  // console.log(_.compact([0, 1, false, 2, '', 3]));
+  // console.log(_.concat([1], 2, [3], [[4]]));
+  // console.log(_.flattenDeep([1, [2, [3, [4]], 5]]));
+
+  let foo = { a: 'a property' };
+  let bar = { b: 4, c: 'an other property' };
+  let result = _.assign({ a: 'an old property' }, foo, bar);
+  console.log(result);
+
+  _.times(5, () => {
+    console.log(Math.round(Math.random() * 100));
+  });
+
+  const users = [
+    { firstName: 'John', lastName: 'Doe', age: 28, gender: 'male' },
+    { firstName: 'Jane', lastName: 'Doe', age: 5, gender: 'female' },
+    { firstName: 'Jim', lastName: 'Carrey', age: 54, gender: 'male' },
+    { firstName: 'Kate', lastName: 'Winslet', age: 40, gender: 'female' }
+  ];
+  console.log(_.find(users, { lastName: 'Doe', gender: 'male' }));
+  console.log(_.find(users, user => user.age < 18));
+  _.set(users, 'foo.items[0]', 'An item');
+  console.log(users);
+  console.log(_.get(users, 'name', 'Default Return if key doesnot exist'));
+
+  let original = { foo: 'bar' };
+  let copy = _.cloneDeep(original);
+  copy.foo = 'new value';
+  console.log(original);
+  console.log(copy);
+
+  let sortedArray = [1, 1, 2, 3, 3, 3, 5, 8, 8];
+  console.log(_.sortedUniq(sortedArray));
+
+  console.log(_.random(15, 20));
+
+  let objA = { 'name': 'colin', 'car': 'suzuki', 'age': 17 };
+  let objB = _.omit(objA, ['car']);
+  console.log(objB);
+  objB = _.omitBy(objB, _.isNumber);
+  console.log(objB);
+  objB = _.pick(objA, ['car', 'age']);
+  console.log(objB);
+  console.log(objA);
+  console.log(_.sample(objA));
+};
+// lodashes();
 
 const utils = {
   steuerlastfall() {
@@ -158,19 +262,4 @@ const utils = {
     }
   }
 };
-
-// utils.forceComp();
-
-const sum = [0, 1, 2, 3].reduce(function(acc, val) {
-  return acc + val;
-}, 0);
-console.log(sum);
-
-const flatten = arr => arr.reduce(
-  (acc, val, index, array) => acc.concat(
-    Array.isArray(val) ? flatten(val) : val
-  ),
-  []
-);
-const list1 = [[0, 1], [2, 3], [4, 5]];
-console.log(flatten(list1)); // returns [0, 1, 2, 3, 4, 5]
+utils.forceComp();
