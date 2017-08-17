@@ -8,6 +8,9 @@
   - [Notes](#notes)
     - [VIM](#vim)
     - [GIT](#git)
+      - [If chages made without creating branch](#if-chages-made-without-creating-branch)
+        - [If no commits are made](#if-no-commits-are-made)
+        - [If already commited](#if-already-commited)
     - [Node and NPM](#node-and-npm)
     - [AutoCAD](#autocad)
     - [Windows Command Line](#windows-command-line)
@@ -134,6 +137,8 @@
 
 ### GIT
 
+Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
+
 <pre>
   git config --global user.name "smhrjn"
   git config --global user.email sarat.maharjan@gmail.com"
@@ -150,6 +155,26 @@
   git push (to update the repository)
   git pull origin master (to Update from repository)
 </pre>
+
+#### If chages made without creating branch
+
+##### If no commits are made
+
+  <pre>
+    git stash
+    git checkout -b feature/new-feature
+    git stash pop
+  </pre>
+
+##### If already commited
+
+  <pre>
+    git push origin development:fix/fix-name
+    git checkout master
+    git fetch
+    git checkout development
+    git checkout fix/fix-name
+  </pre>
 
 ### Node and NPM
 
