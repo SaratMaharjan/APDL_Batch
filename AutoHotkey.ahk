@@ -323,7 +323,7 @@ return
 #!f::
   if(InStr(A_ComputerName,"SMAHARJAN")){
 
-    Run "E:\SM\PortableApps\PortableApps\FreeFileSync8.9\FreeFileSync.exe"
+    Run "E:\SM\PortableApps\PortableApps\FreeFileSync9.3DonationEdition\FreeFileSync.exe"
 
   } else {
 

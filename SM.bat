@@ -17,8 +17,8 @@ REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
   REM set endValue=4
 
 REM Number of Processors
-  REM set numPro=2
-  set numPro=4
+  set numPro=2
+  REM set numPro=8
 
 REM if 0: only write Batch files
   REM set execute=0
