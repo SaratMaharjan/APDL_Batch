@@ -106,14 +106,14 @@ function td_remove_sel_ns(ns) {
 
 var SC = DS.Script;
 var SM = SC.sm;
-for(var ii = 1; ii <= 8; ii++){
-  td_new_sel_ns("kc"+ii);
+for(var ii = 2; ii <= 162; ii=ii+2){
+  td_new_sel_ns("Group"+ii);
   SC.doCreateCoordinateSystem();
 }
-for(var ii = 1; ii <= 4; ii++){
-  td_new_sel_ns("etkc"+ii);
-  SC.doCreateCoordinateSystem();
-}
+// for(var ii = 1; ii <= 4; ii++){
+//   td_new_sel_ns("etkc"+ii);
+//   SC.doCreateCoordinateSystem();
+// }
 //td_new_sel_ns("Group2");
 //SC.doCreateCoordinateSystem();
 //td_new_sel_ns("Group3");

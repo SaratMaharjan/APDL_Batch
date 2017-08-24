@@ -14,31 +14,32 @@ if exist last-lic.txt (
 )
 
 setlocal EnableDelayedExpansion
-    hostname.exe>hostname.txt
-    set /p host=<hostname.txt
-    echo Hostname: !host!
+  hostname.exe>hostname.txt
+  set /p host=<hostname.txt
+  echo Hostname: !host!
 
-    if "!host!" equ "ansys2" (
-      if %drive% equ 1 (
-        set pathBefore=D:\maharjan
-        set pathAfter=ANSYS
-      ) else (
-        set pathBefore=E:\maharjan
-        set pathAfter=ANSYS
-      )
+  if "!host!" equ "ansys2" (
+    if %drive% equ 1 (
+      set pathBefore=D:\maharjan
+      set pathAfter=ansys
     ) else (
-      if %drive% equ 1 (
-        set pathBefore=D:
-        set pathAfter=ANSYS
-      ) else (
-        set pathBefore=E:
-        set pathAfter=ANSYS
-      )
+      set pathBefore=E:\maharjan
+      set pathAfter=ansys
     )
-    if %drive% equ 3 (
-      set pathBefore=\\ansys2\maharjan
-      set pathAfter=ANSYS
+  ) else (
+    if %drive% equ 1 (
+      set pathBefore=D:
+      set pathAfter=ansys
+    ) else (
+      set pathBefore=E:
+      set pathAfter=ansys
     )
+  )
+
+  if %drive% equ 3 (
+    set pathBefore=\\ansys2\maharjan
+    set pathAfter=ansys
+  )
 
 REM set ansj=preppost
 set /p ansj=<last-lic.txt
@@ -125,7 +126,7 @@ echo !apdlCMD!
 echo.
 
 REM goto :takeTime
-REM start "" /B !apdlCMD!
+REM start "" /b !apdlCMD!
 !apdlCMD!
 
 call timer.bat :stopTimer
@@ -134,4 +135,3 @@ echo Time Used: !elTime!
 
 endlocal
 timeout /t 5
-

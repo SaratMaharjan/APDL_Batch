@@ -6,9 +6,14 @@
 
 - [APDL_Batch](#apdl_batch)
   - [Notes](#notes)
+    - [Node and NPM](#node-and-npm)
+      - [Essential Globals](#essential-globals)
+    - [Heroku](#heroku)
     - [VIM](#vim)
     - [GIT](#git)
-    - [Node and NPM](#node-and-npm)
+      - [If chages made without creating branch](#if-chages-made-without-creating-branch)
+        - [If no commits are made](#if-no-commits-are-made)
+        - [If already commited](#if-already-commited)
     - [AutoCAD](#autocad)
     - [Windows Command Line](#windows-command-line)
     - [OTHERS](#others)
@@ -16,6 +21,33 @@
 <!-- /TOC -->
 
 ## Notes
+
+### Node and NPM
+
+<pre>
+  update global packages
+    npm update -g
+  list available scripts
+    npm run
+  list installed packages
+    npm ls --depth 0
+    npm ls --global --depth 0
+</pre>
+
+#### Essential Globals
+
+- @angular/cli
+- eslint
+- eslint-config-google
+- eslint-plugin-html
+- eslint-plugin-import
+- surge
+- vsce
+
+### Heroku
+
+- Heroku CLI
+- heroku-repo
 
 ### VIM
 
@@ -134,13 +166,15 @@
 
 ### GIT
 
+Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
+
 <pre>
   git config --global user.name "smhrjn"
   git config --global user.email sarat.maharjan@gmail.com"
   git config --global color.ui true
 
-  git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/vim.git
-  git config remote.origin.url https://smhrjn:password@github.com/saratmaharjan/APDL_Batch.git
+  git config remote.origin.url https://smhrjn:password@github.com/smhrjn/vim.git
+  git config remote.origin.url https://smhrjn:password@github.com/smhrjn/APDL_Batch.git
 
   git init NAME
   git clone URL (To get repository to LOCAL directory)
@@ -151,15 +185,25 @@
   git pull origin master (to Update from repository)
 </pre>
 
-### Node and NPM
+#### If chages made without creating branch
 
-<pre>
-  list available scripts
-    npm run
-  list installed packages
-    npm ls --depth 0
-    npm ls --global --depth 0
-</pre>
+##### If no commits are made
+
+  <pre>
+    git stash
+    git checkout -b feature/new-feature
+    git stash pop
+  </pre>
+
+##### If already commited
+
+  <pre>
+    git push origin development:fix/fix-name
+    git checkout master
+    git fetch
+    git checkout development
+    git checkout fix/fix-name
+  </pre>
 
 ### AutoCAD
 

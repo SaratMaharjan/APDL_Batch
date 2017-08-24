@@ -11,22 +11,22 @@ REM set sourceFile=s-restart.in
 set redirect=0
 REM set extVar=0
 
-set proj_Num=312017m
+set proj_Num=313817
 
 REM +ve CS 1
-  set interval=2079 10 2099
-  set interval2=11 10 11
+  set interval=1000 10 1000
+  set interval2=1 10 1
     call calc.bat
 
-REM +ve CS 1
-  set interval=2119 20 2199
-  set interval2=11 10 11
-    call calc.bat
+REM REM +ve CS 1
+REM   set interval=2019 20 2099
+REM   set interval2=11 10 21
+REM     call calc.bat
 
 REM REM set redirect=1
 REM REM +ve CS 2
-REM   set interval=2019 10 2019
-REM   set interval2=11 10 11
+REM   set interval=2119 20 2199
+REM   set interval2=11 10 21
 REM     call calc.bat
 
 REM REM +ve CS 1
