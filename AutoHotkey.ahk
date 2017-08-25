@@ -2,7 +2,8 @@
 ; Also, any text file whose name ends in .ahk is associated with the program, which means that it can be launched simply by double-clicking it.
 ; You can have as many .ahk files as you want, located in any folder.
 ; You can also run more than one .ahk file simultaneously and each will get its own tray icon.
-                        ;If problem with encoding: set bomb in VIM and save
+
+;If problem with encoding: set bomb in VIM and save
 
 SetTitleMatchMode, RegEx
 
@@ -47,7 +48,6 @@ Return
 
 ;anfang ANSYS Mechanical
 #IfWinActive, Mechanical.*ANSYS
-
   <::  Send {F9}
 
   ^<::
@@ -63,13 +63,11 @@ Return
   z:: Send {F7}
 
   F5::
-
 #IfWinActive
 ;ende APDL mouse
 
 ;anfang RSTAB
 #IfWinActive, RSTAB
-
   RButton::
     SendInput {Ctrl down}{MButton down}
     Keywait RButton
@@ -83,13 +81,11 @@ Return
     SendInput {RButton up}
     SendInput {Shift up}
   Return
-
 #IfWinActive
 ;ende RSTAB mouse
 
 ;anfang Spaceclaim hide unhide
 #IfWinActive, SpaceClaim$
-
   <::
     ;Click Right
     ;sleep, 20
@@ -114,13 +110,11 @@ Return
 
   F6::
   Return
-
 #IfWinActive
 ;ende
 
 ;anfang Creo Mouse Settings
 #IfWinActive, Creo Elements/Direct 3D Access
-
   RButton::MButton
 
   MButton::RButton
@@ -157,7 +151,6 @@ Return
       Return
     }
   Return
-
 #IfWinActive
 ;ende CREO mouse settings
 
@@ -180,161 +173,87 @@ return
 
 #v::
   if(InStr(A_ComputerName,"SMAHARJAN")){
-
     Run "E:\SM\VIMinstall\Vim\vim80\gvim.exe"
-
   } else if (InStr(A_ComputerName,"ANSYS2")) {
-
     Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
-
   } else if (InStr(A_ComputerName,"hgebhardt1")) {
-
     Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
-
   } else {
-
-    Run "C:\Users\Sarat.LAPTOP-Q276ID9D\Dropbox\VimInstall\Vim\vim80\gvim.exe"
-
+    Run "C:\Users\Sarat\Dropbox\VimInstall\Vim\vim80\gvim.exe"
   }
 return
 
 #c:: Run "C:\Program Files\Microsoft VS Code\Code.exe" -n
 
-
 ;#x::
   ;if(InStr(A_ComputerName,"SMAHARJAN")){
-
     ;Run "D:\zCore\setnetUse.bat"
-
   ;} else {
-
     ;Run "E:\maharjan\setnetUse.bat"
-
   ;}
 ;return
 
 #w::
   if(InStr(A_ComputerName,"SMAHARJAN")){
-
     Run "D:\zCore\run-ansys.bat"
-
   } else {
-
     Run "E:\maharjan\run-ansys.bat"
-
   }
 return
 
 #q::
   if(InStr(A_ComputerName,"SMAHARJAN")){
-
     Run "D:\zCore\run-ansys-e.bat"
-
   } else {
-
     Run "E:\maharjan\run-ansys-e.bat"
-
   }
 return
 
 #+q::
   if(InStr(A_ComputerName,"SMAHARJAN")){
-
     Run "D:\zCore\run-ansys-r.bat"
-
   } else {
-
     Run "E:\maharjan\run-ansys-r.bat"
   }
 return
 
 #!r::
   if(InStr(A_ComputerName,"SMAHARJAN")){
-
     Run "D:\zCore\sm.bat"
-
   } else {
-
     Run "E:\maharjan\sm.bat"
-
   }
 return
 
-;#y::
-  ;if(InStr(A_ComputerName,"SMAHARJAN")){
-
-    ;Run "D:\zCore"
-    ;;Run "C:\Program Files (x86)\Everything\Everything.exe"
-
-  ;} else {
-
-    ;Run "C:\locate32\locate32.exe"
-
-  ;}
-;return
-
 #z::
   if(InStr(A_ComputerName,"SMAHARJAN")){
-
     Run "D:\zCore\zBar.exe"
-    ;Run "C:\Program Files (x86)\Everything\Everything.exe"
-
   } else {
-
     Run "D:\zCore\zBar.exe"
-
   }
 return
 
 #!c::
   if(InStr(A_ComputerName,"SMAHARJAN")){
-
-    ;Run "D:\zCore\Zizorz.exe"
     Run "snippingTool"
-
   } else {
-
-    ;Run "D:\zCore\Zizorz.exe"
     Run "snippingTool"
-
   }
 return
 
 #x::
   if(InStr(A_ComputerName,"SMAHARJAN")){
-
     Run "D:\zCore\replSolu.exe"
-
   } else {
-
     ;Run "D:\zCore\Zizorz.exe"
-
   }
 return
 
 #!x::
-
   if(InStr(A_ComputerName,"SMAHARJAN")){
     Run "D:\zCore\replaceLines.exe"
-
   }
 return
-
-#!f::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-
-    Run "E:\SM\PortableApps\PortableApps\FreeFileSync9.3DonationEdition\FreeFileSync.exe"
-
-  } else {
-
-    Run "C:\Program Files\FreeFileSync\FreeFileSync.exe"
-
-  }
-return
-
-;#w::
-  ;Run "C:\__Drive__\German\_____Dictionaries\Office Bibliothek_Duden_Brockhaus_Langenscheidt_Meyer"
-;return
 
 #u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
 
@@ -345,42 +264,6 @@ return
 ^!w:: Run "C:\Program Files\ANSYS Inc\v181\Framework\bin\Win64\runwb2.exe"
 
 #h:: Run "C:\Program Files\ANSYS Inc\v181\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
-
-;#!e::
-  ;if(InStr(A_ComputerName,"SMAHARJAN")){
-
-    ;Run "E:\SM\PortableApps\PortableApps\XYexplorer\XYplorerFree.exe"
-
-  ;} else {
-
-    ;Run "C:\_________Drive\anakon\PortableApps\XYexplorer\XYplorerFree.exe"
-
-  ;}
-;return
-
-#!p::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-
-    Run "E:\SM\PortableApps\StartPortableApps.exe"
-
-  } else {
-
-    Run "C:\_________Drive\anakon\PortableApps\StartPortableApps.exe"
-
-  }
-return
-
-#+p::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-
-    Run "E:\SM\PortableApps\PortableApps"
-
-  } else {
-
-    Run "C:\_________Drive\anakon\PortableApps\PortableApps"
-
-  }
-return
 
 ^!v:: Run "E:\SM\vim"
 
@@ -402,7 +285,6 @@ return
 #ß:: Run "\\ansys2\Maharjan"
 
 ^!s:: Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
-
 ;ende Local Locations
 
 ;anfang Internet Addresses
@@ -782,4 +664,3 @@ Return
   ;else
     ;MsgBox You pressed No.
 ;ende Useful Notes
-
