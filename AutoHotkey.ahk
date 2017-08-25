@@ -270,8 +270,8 @@ return
 #b:: Run "R:\ansys\macros"
 
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
+;#.:: Run "E:\SM\_modified-literatur-eurocode-normen-handbücher-gescannt"
 
-; #.:: Run "E:\RLiteraturEurocodeNormenHandbücherGescannt-MODIFIED"
 #IfWinActive ahk_class CabinetWClass
   #.::
     FullPath := GetActivePath()

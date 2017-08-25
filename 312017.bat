@@ -12,13 +12,13 @@ REM set extVar=0
 
 set proj_Num=312017
 
-REM REM +ve CS 1
-REM   set interval=1008 10 1098
-REM   set interval2=11 1 11
-REM     call calc.bat
+REM +ve CS 1
+  set interval=1008 10 1098
+  set interval2=11 1 11
+    call calc.bat
 
 REM +ve CS 1
-  set interval=1188 20 1188
+  set interval=1188 20 1198
   set interval2=11 1 11
     call calc.bat
 

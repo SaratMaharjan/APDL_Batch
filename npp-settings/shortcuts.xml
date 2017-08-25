@@ -1,12 +1,19 @@
 <NotepadPlus>
     <InternalCommands>
-        <Shortcut id="41014" Ctrl="no" Alt="no" Shift="no" Key="116" />
+        <Shortcut id="41014" Ctrl="yes" Alt="no" Shift="no" Key="82" />
         <Shortcut id="49000" Ctrl="no" Alt="no" Shift="no" Key="0" />
     </InternalCommands>
     <Macros>
         <Macro name="Trim Trailing Space and Save" Ctrl="no" Alt="yes" Shift="yes" Key="83">
             <Action type="2" message="0" wParam="42024" lParam="0" sParam="" />
             <Action type="2" message="0" wParam="41006" lParam="0" sParam="" />
+        </Macro>
+        <Macro name="Refresh" Ctrl="no" Alt="no" Shift="no" Key="116">
+            <Action type="0" message="2025" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2422" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2325" wParam="0" lParam="0" sParam="" />
+            <Action type="2" message="0" wParam="41014" lParam="0" sParam="" />
+            <Action type="0" message="2318" wParam="0" lParam="0" sParam="" />
         </Macro>
     </Macros>
     <UserDefinedCommands>

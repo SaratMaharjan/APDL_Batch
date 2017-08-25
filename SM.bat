@@ -17,8 +17,8 @@ REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
   REM set endValue=4
 
 REM Number of Processors
-  set numPro=2
-  REM set numPro=8
+  REM set numPro=2
+  set numPro=4
 
 REM if 0: only write Batch files
   REM set execute=0
@@ -28,15 +28,15 @@ REM ============================================================================
 
   REM call 311017a.bat
 
-  REM call 312017.bat
-
   REM call 279914.bat
 
   REM call 312017m.bat
 
-  call 313217.bat
+  REM call 313217.bat
 
-  REM call 313817.bat
+  call 313817.bat
+
+  call 312017.bat
 
   REM call 314017.bat
 
