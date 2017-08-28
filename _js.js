@@ -381,4 +381,12 @@ let thisClosureBugFix = () => {
   };
   user.clickHandler();
 };
-thisClosureBugFix();
+// thisClosureBugFix();
+let bitWiseOddEven = (number) => {
+  if ((number & 1) == 0) {
+    console.log(`${number} is even.`);
+  } else {
+    console.log(`${number} is odd.`);
+  }
+};
+bitWiseOddEven(3);
