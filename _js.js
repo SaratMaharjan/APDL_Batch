@@ -262,4 +262,123 @@ const utils = {
     }
   }
 };
-utils.forceComp();
+// utils.forceComp();
+
+/*
+Closures store references to the outer function’s variables; they do not store the actual value.
+Closures get more interesting when the value of the outer function’s variable changes before the closure is called.
+Because closures have access to the updated values of the outer function’s variables,
+they can also lead to bugs when the outer function’s variable changes with a for loop.
+*/
+let closureBug = () => {
+  // This example is explained in detail below (just after this code box).
+  var celebrityIDCreator = function (theCelebrities) {
+    var i;
+    var uniqueID = 100;
+    for (i = 0; i < theCelebrities.length; i++) {
+      theCelebrities[i]['id'] = function ()  {
+        return uniqueID + i;
+      }
+    }
+    return theCelebrities;
+  };
+  var actionCelebs = [{name:'Stallone', id:0}, {name:'Cruise', id:0}, {name:'Willis', id:0}];
+  var createIdForActionCelebs = celebrityIDCreator(actionCelebs);
+  var stalloneID = createIdForActionCelebs[0];
+  console.log(stalloneID.id()); // 103
+};
+// closureBug();
+let closureBugFixed = () => {
+  function celebrityIDCreator (theCelebrities) {
+    var i;
+    var uniqueID = 100;
+    for (i = 0; i < theCelebrities.length; i++) {
+        theCelebrities[i]['id'] = function (j)  { // the j parametric variable is the i passed in on invocation of this IIFE​
+            return function () {
+                return uniqueID + j; // each iteration of the for loop passes the current value of i into this IIFE and it saves the correct value to the array​
+            } () // BY adding () at the end of this function, we are executing it immediately and returning just the value of uniqueID + j, instead of returning a function.​
+        } (i); // immediately invoke the function passing the i variable as a parameter​
+    }
+    return theCelebrities;
+  }
+  var actionCelebs = [{name:'Stallone', id:0}, {name:'Cruise', id:0}, {name:'Willis', id:0}];
+  var createIdForActionCelebs = celebrityIDCreator (actionCelebs);
+  var stalloneID = createIdForActionCelebs[0];
+  console.log(stalloneID.id); // 100​
+  var cruiseID = createIdForActionCelebs[1];
+  console.log(cruiseID.id); // 101
+};
+// closureBugFixed();
+// understand this
+let understandThis = () => {
+  var obj = {
+    value: 'hi',
+    printThis: function() {
+        console.log(this);
+    }
+  };
+  var print = obj.printThis;
+  obj.printThis(); // -> {value: 'hi', printThis: ƒ}
+  print(); // -> Window {stop: ƒ, open: ƒ, alert: ƒ, ...}, undefined in node
+};
+// understandThis();
+
+/*
+Call and apply are pretty interchangeable.
+Just decide whether it’s easier to send in an array or a comma separated list of arguments.
+I always remember which one is which by remembering that Call is for comma (separated list) and Apply is for Array.
+Bind is a bit different. It returns a new function.
+Call and Apply execute the current function immediately. (Call is a bit faster.)
+Bind is great for a lot of things. We can use it to curry functions like in the above example.
+We can take a simple hello function and turn it into a helloJon or helloKelly.
+We can also use it for events like onClick where we don’t know when they’ll be fired but we know what context we want them to have.
+
+setTimeout Variables are Executed in the Global Scope.
+
+Another instance when this is misunderstood is when we use an inner method (a closure).
+It is important to take note that closures cannot access the outer function’s this variable by using the this keyword
+because the this variable is accessible only by the function itself, not by inner functions.
+*/
+
+let thisClosureBug = () => {
+  let user = {
+    tournament:'The Masters',
+    data: [
+      { name: 'T. Woods', age: 37 },
+      { name: 'P. Mickelson', age: 43 }
+    ],
+    clickHandler:function () {
+      // the use of this.data here is fine, because 'this' refers to the user object, and data is a property on the user object.
+      this.data.forEach(function(person) {
+        // But here inside the anonymous function (that we pass to the forEach method), 'this' no longer refers to the user object.
+        // This inner function cannot access the outer function's 'this'
+        console.log('What is This referring to? ' + this); //[object Window]
+        console.log(person.name + ' is playing at ' + this.tournament);
+        // T. Woods is playing at undefined​
+        // P. Mickelson is playing at undefined​
+      });
+    }
+  };
+  user.clickHandler(); // What is 'this' referring to? [object Window]
+};
+// thisClosureBug();
+let thisClosureBugFix = () => {
+  let user = {
+    tournament: 'The Masters',
+    data: [
+      { name: 'T. Woods', age: 37 },
+      { name: 'P. Mickelson', age: 43 }
+    ],
+    clickHandler: function(event) {
+      // To capture the value of 'this' when it refers to the user object, we have to set it to another variable here:
+      // We set the value of 'this' to theUserObj variable, so we can use it later
+      var theUserObj = this;
+      this.data.forEach(function(person) {
+        // Instead of using this.tournament, we now use theUserObj.tournament
+        console.log(person.name + ' is playing at ' + theUserObj.tournament);
+      });
+    }
+  };
+  user.clickHandler();
+};
+thisClosureBugFix();

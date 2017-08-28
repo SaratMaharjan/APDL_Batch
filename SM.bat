@@ -30,13 +30,13 @@ REM ============================================================================
 
   REM call 279914.bat
 
-  REM call 312017m.bat
+  REM call 312017.bat
+
+  call 312017m.bat
 
   REM call 313217.bat
 
-  call 313817.bat
-
-  call 312017.bat
+  REM call 313817.bat
 
   REM call 314017.bat
 
