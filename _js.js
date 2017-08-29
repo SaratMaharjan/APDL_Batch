@@ -389,4 +389,35 @@ let bitWiseOddEven = (number) => {
     console.log(`${number} is odd.`);
   }
 };
-bitWiseOddEven(3);
+// bitWiseOddEven(3);
+let findIndex = () => {
+  let arrayNoDups = ['a', 'b', 'c', 'd', 'e'];
+  let arrayDups = ['a', 'b', 'c', 'd', 'e', 'e'];
+  console.log(arrayNoDups.find(x => x === 'e'));
+  console.log(arrayDups.findIndex(x => x === 'e'));
+};
+// findIndex();
+let stringIncludes = () => {
+  console.log('Name_'.repeat(3));
+  console.log('hello'.startsWith('ello', 1));
+  console.log('hello'.endsWith('hell', 4));
+  console.log('hello'.includes('ello'));
+  console.log('hello'.includes('ello', 1));
+  console.log('hello hello hello'.includes('ello', 2));
+};
+// stringIncludes();
+let checkNumber = () => {
+  console.log(Number.isNaN(42));
+  console.log(Number.isNaN(NaN));
+  console.log(Number.isFinite(Infinity));
+  console.log(Number.isFinite(-Infinity));
+  console.log(Number.isFinite(NaN));
+  console.log(Number.isFinite(42));
+  console.log(Math.sign(42));
+  console.log(Math.sign(-42));
+  console.log(Math.sign(0));
+  console.log(Math.sign(-0));
+  console.log(Math.sign(NaN));
+  console.log(Math.sign(Infinity));
+};
+checkNumber();
