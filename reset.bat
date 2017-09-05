@@ -2,6 +2,7 @@
 set sourcePre=R:\maharjan
 set pathAfter=ANSYS
 set sourceFile=s.in
+set nPrefix=f
 
 REM Select Drive and Initial Values
 if "!host!" equ "Smaharjan" (

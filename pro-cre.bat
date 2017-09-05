@@ -1,31 +1,30 @@
 
 @echo off
 
+set name="new-project"
 set /p project=Enter Project Number: %=%
-set direc=D:
-set /p direc=Enter Parent Directory (default: %direc%): %=%
+set /p name=Enter Project Name: %=%
 
 if not "%project%" == "" (
   echo Creating Folder Structure .. ... .... ..........
 
-  %direc%
-
+  REM %direc%
   mkdir %project%
-
   cd %project%
 
-  mkdir 01_ansys
-  mkdir 02_eingang
-  mkdir 03_ausgang
-  mkdir 04_unterlagen
-  mkdir 05_zeichnungen
-  mkdir 06_excel
-  mkdir 07_mathcad
-  mkdir 08_rstab
-  mkdir 09_dokumentation
+  mkdir 01_Eingang
+  mkdir 02_Ausgang
+  mkdir 03_Unterlagen
+  mkdir 04_Dokumentation
+  mkdir 05_Nebenrechnungen
+  mkdir 06_Zeichnungen
+  mkdir 07_ansys
+  mkdir 08_wb
+  mkdir 09_rstab
+  echo .>"%name%.json"
   echo ___________________________Completed________________________
 ) else (
-  echo Name not Provided, aborting .. ... .... ..........
+  echo Number not Provided, aborting .. ... .... ..........
 )
 
 timeout /t 10

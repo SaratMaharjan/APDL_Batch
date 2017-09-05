@@ -9,6 +9,9 @@ REM set sourceFile=s.in
 
 REM set redirect=0
 REM set extVar=0
+REM if %extVar% equ 1 (
+REM   set nPrefix=d
+REM )
 
 set proj_Num=311017a
 

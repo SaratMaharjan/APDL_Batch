@@ -257,13 +257,9 @@ return
 
 #u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
 
-;#!w:: Run "C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\launcher.exe"
-#!w:: Run "C:\Program Files\ANSYS Inc\v181\ANSYS\bin\winx64\launcher.exe"
-
-;^!w:: Run "C:\Program Files\ANSYS Inc\v172\Framework\bin\Win64\runwb2.exe"
-^!w:: Run "C:\Program Files\ANSYS Inc\v181\Framework\bin\Win64\runwb2.exe"
-
-#h:: Run "C:\Program Files\ANSYS Inc\v181\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
+#!w:: Run "C:\Program Files\ANSYS Inc\v182\ANSYS\bin\winx64\launcher.exe"
+^!w:: Run "C:\Program Files\ANSYS Inc\v182\Framework\bin\Win64\runwb2.exe"
+#h:: Run "C:\Program Files\ANSYS Inc\v182\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
 
 ^!v:: Run "E:\SM\vim"
 

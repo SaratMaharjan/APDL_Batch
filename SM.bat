@@ -6,7 +6,8 @@ timeout /t %waitSec%
 setlocal EnableDelayedExpansion
 call first.bat
 
-set appPath="C:\Program Files\ANSYS Inc\v181\ANSYS\bin\winx64\ansys181.exe"
+set appPath="C:\Program Files\ANSYS Inc\v182\ANSYS\bin\winx64\ansys182.exe"
+REM set appPath="C:\Program Files\ANSYS Inc\v181\ANSYS\bin\winx64\ansys181.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 
@@ -26,15 +27,15 @@ REM if 0: only write Batch files
 
 REM ==================================================================================================
 
-  REM call 311017a.bat
+  call 311017a.bat
 
   REM call 279914.bat
 
   REM call 312017.bat
 
-  call 312017m.bat
+  REM call 312017m.bat
 
-  REM call 313217.bat
+  REM call 314417.bat
 
   REM call 313817.bat
 

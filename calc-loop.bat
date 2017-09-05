@@ -43,7 +43,8 @@ for /l %%c in ( 1 1 1 ) do (
     del "!wDir!\f!job!-!lk!.err" >nul 2>&1
 
     set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
- -redirect !redirect! -i "!location!\!sourceFile!" -o "!wDir!\f!job!-!lk!.out" -dir "!wDir!" -j "f!job!-!lk!" -extVar !extVar!
+ -redirect !redirect! -i "!location!\!sourceFile!" -o "!wDir!\!nPrefix!!job!-!lk!.out" -dir "!wDir!"^
+ -j "!nPrefix!!job!-!lk!" -extVar !extVar! -nPrefix "!nPrefix!"
 
     echo.
     echo !apdlCMD!
