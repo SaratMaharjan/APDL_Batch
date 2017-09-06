@@ -290,15 +290,15 @@ return
   Run "C:\Program Files (x86)\Mozilla Firefox\Firefox.exe"
 return
 
-#s::
-  Send, ^c
-  Run, http://www.google.com/search?q=%Clipboard%
-Return
+; #s::
+;   Send, ^c
+;   Run, http://www.google.com/search?q=%Clipboard%
+; Return
 
-#g::
-  Send, ^c
-  Run, http://dict.leo.org/#/search=%Clipboard%&searchLoc=0&resultOrder=basic&multiwordShowSingle=on
-Return
+; #g::
+;   Send, ^c
+;   Run, http://dict.leo.org/#/search=%Clipboard%&searchLoc=0&resultOrder=basic&multiwordShowSingle=on
+; Return
 ;ende Internet Addresses
 
 ;anfang Delete Images
