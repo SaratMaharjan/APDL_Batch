@@ -270,6 +270,7 @@ Closures get more interesting when the value of the outer function’s variable 
 Because closures have access to the updated values of the outer function’s variables,
 they can also lead to bugs when the outer function’s variable changes with a for loop.
 */
+/*
 let closureBug = () => {
   // This example is explained in detail below (just after this code box).
   var celebrityIDCreator = function (theCelebrities) {
@@ -293,18 +294,18 @@ let closureBugFixed = () => {
     var i;
     var uniqueID = 100;
     for (i = 0; i < theCelebrities.length; i++) {
-        theCelebrities[i]['id'] = function (j)  { // the j parametric variable is the i passed in on invocation of this IIFE​
+        theCelebrities[i]['id'] = function (j)  { // the j parametric variable is the i passed in on invocation of this IIFE
             return function () {
-                return uniqueID + j; // each iteration of the for loop passes the current value of i into this IIFE and it saves the correct value to the array​
-            } () // BY adding () at the end of this function, we are executing it immediately and returning just the value of uniqueID + j, instead of returning a function.​
-        } (i); // immediately invoke the function passing the i variable as a parameter​
+                return uniqueID + j; // each iteration of the for loop passes the current value of i into this IIFE and it saves the correct value to the array
+            } () // BY adding () at the end of this function, we are executing it immediately and returning just the value of uniqueID + j, instead of returning a function.
+        } (i); // immediately invoke the function passing the i variable as a parameter
     }
     return theCelebrities;
   }
   var actionCelebs = [{name:'Stallone', id:0}, {name:'Cruise', id:0}, {name:'Willis', id:0}];
   var createIdForActionCelebs = celebrityIDCreator (actionCelebs);
   var stalloneID = createIdForActionCelebs[0];
-  console.log(stalloneID.id); // 100​
+  console.log(stalloneID.id); // 100
   var cruiseID = createIdForActionCelebs[1];
   console.log(cruiseID.id); // 101
 };
@@ -322,7 +323,7 @@ let understandThis = () => {
   print(); // -> Window {stop: ƒ, open: ƒ, alert: ƒ, ...}, undefined in node
 };
 // understandThis();
-
+*/
 /*
 Call and apply are pretty interchangeable.
 Just decide whether it’s easier to send in an array or a comma separated list of arguments.
@@ -339,7 +340,7 @@ Another instance when this is misunderstood is when we use an inner method (a cl
 It is important to take note that closures cannot access the outer function’s this variable by using the this keyword
 because the this variable is accessible only by the function itself, not by inner functions.
 */
-
+/*
 let thisClosureBug = () => {
   let user = {
     tournament:'The Masters',
@@ -354,8 +355,8 @@ let thisClosureBug = () => {
         // This inner function cannot access the outer function's 'this'
         console.log('What is This referring to? ' + this); //[object Window]
         console.log(person.name + ' is playing at ' + this.tournament);
-        // T. Woods is playing at undefined​
-        // P. Mickelson is playing at undefined​
+        // T. Woods is playing at undefined
+        // P. Mickelson is playing at undefined
       });
     }
   };
@@ -382,6 +383,8 @@ let thisClosureBugFix = () => {
   user.clickHandler();
 };
 // thisClosureBugFix();
+*/
+
 let bitWiseOddEven = (number) => {
   if ((number & 1) == 0) {
     console.log(`${number} is even.`);

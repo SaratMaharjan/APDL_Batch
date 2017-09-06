@@ -12,7 +12,7 @@ REM set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 
 REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
-  set startValue=3
+  set startValue=2
   REM set startValue=4
   set endValue=!startValue!
   REM set endValue=4

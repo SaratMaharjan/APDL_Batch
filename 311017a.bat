@@ -2,7 +2,7 @@
 call reset.bat
 
 REM set pathBefore=E:
-REM set pathAfter=ansys
+set pathAfter=ansys-tl
 
 REM set sourcePre=R:\maharjan
 REM set sourceFile=s.in
