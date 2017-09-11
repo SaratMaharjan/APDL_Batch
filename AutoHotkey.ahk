@@ -241,7 +241,7 @@ return
   }
 return
 
-#x::
+#+x::
   if(InStr(A_ComputerName,"SMAHARJAN")){
     Run "D:\zCore\replSolu.exe"
   } else {
