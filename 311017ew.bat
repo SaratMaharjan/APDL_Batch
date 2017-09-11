@@ -15,21 +15,21 @@ REM )
 
 set proj_Num=311017ew
 
-REM for %%b in (1) do (
-  REM REM +ve CS 1-6
-  REM set bq=%%b
-  REM   set interval=1006 10 1096
-  REM   set interval2=1!bq! 1 1!bq!
-  REM     call calc.bat
+REM for /l %%b in (1 1 1) do (
+REM   REM REM +ve CS 1-6
+REM   REM set bq=%%b
+REM   REM   set interval=1086 10 1096
+REM   REM   set interval2=1!bq! 1 1!bq!
+REM   REM     call calc.bat
 
 REM   REM +ve CS 1-6
+REM   set bq=%%b
 REM     set interval=1156 10 1196
-REM     REM set interval2=1!bq! 1 1!bq!
-REM     set interval2=11 1 11
+REM     set interval2=1!bq! 1 1!bq!
 REM       call calc.bat
-REM REM )
+REM )
 
-for %%b in (4 2 5 3 6) do (
+for %%b in (3 6) do (
   REM +ve CS 1-6
   set bq=%%b
     set interval=1006 10 1096
@@ -37,6 +37,7 @@ for %%b in (4 2 5 3 6) do (
       call calc.bat
 
   REM +ve CS 1-6
+  set bq=%%b
     set interval=1116 10 1196
     set interval2=1!bq! 1 1!bq!
       call calc.bat
