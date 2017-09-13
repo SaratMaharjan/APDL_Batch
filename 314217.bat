@@ -15,10 +15,10 @@ REM )
 
 set proj_Num=314217
 
-for /l %%b in (1 1 1) do (
+for /l %%b in (2 1 2) do (
   REM +ve CS 1-6
   set bq=%%b
-    set interval=1009 10 1009
+    set interval=2009 10 2009
     set interval2=1!bq! 1 1!bq!
       call calc.bat
 

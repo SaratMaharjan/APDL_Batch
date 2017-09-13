@@ -1,38 +1,44 @@
 
 call reset.bat
 
-set pathBefore=E:
-REM set pathAfter=ANSYS
+REM set pathBefore=E:
+REM set pathAfter=ansys
 
 REM set sourcePre=R:\maharjan
 REM set sourceFile=s.in
 
 REM set redirect=0
 REM set extVar=0
+REM if %extVar% equ 1 (
+REM   set nPrefix=d
+REM )
 
 set proj_Num=311017
 
-REM REM +ve
-REM   set interval=1009 40 1009
-REM   set interval2=12 1 13
-REM     call calc.bat
+REM for /l %%b in (1 1 1) do (
+REM   REM REM +ve CS 1-6
+REM   REM set bq=%%b
+REM   REM   set interval=1086 10 1096
+REM   REM   set interval2=1!bq! 1 1!bq!
+REM   REM     call calc.bat
 
-REM REM +ve CS 1
-REM   set interval=1029 10 1049
-REM   set interval2=14 1 14
-REM     call calc.bat
+REM   REM +ve CS 1-6
+REM   set bq=%%b
+REM     set interval=1156 10 1196
+REM     set interval2=1!bq! 1 1!bq!
+REM       call calc.bat
+REM )
 
-REM +ve CS 4
-  set interval=1129 10 1149
-  set interval2=14 1 14
-    call calc.bat
+for %%b in (2 4 6) do (
+  REM +ve CS 1-6
+  set bq=%%b
+    set interval=1009 10 1099
+    set interval2=1!bq! 1 1!bq!
+      call calc.bat
 
-REM -ve CS 4
-  set interval=1119 30 1119
-  set interval2=14 10 14
-    call calc.bat
-
-REM REM -ve CS 4
-REM   set interval=1099 100 1199
-REM   set interval2=11 10 11
-REM     call calc.bat
+  REM +ve CS 1-6
+  set bq=%%b
+    set interval=1119 10 1199
+    set interval2=1!bq! 1 1!bq!
+      call calc.bat
+)
