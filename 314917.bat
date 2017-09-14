@@ -44,4 +44,3 @@ REM for %%b in (1 2) do (
   REM   set interval2=1!bq! 1 1!bq!
   REM     call calc.bat
 )
-
