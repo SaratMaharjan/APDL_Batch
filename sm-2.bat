@@ -12,7 +12,7 @@ REM set appPath="C:\Program Files\ANSYS Inc\v180\ANSYS\bin\winx64\ansys180.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
 
 REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
-  set startValue=1
+  set startValue=2
   set endValue=!startValue!
   REM set endValue=4
 
@@ -24,7 +24,7 @@ REM if 0: only write Batch files
 
 REM ==================================================================================================
 
-  REM call 311017a.bat
+  call 311017a.bat
 
   REM call 311017ew.bat
 

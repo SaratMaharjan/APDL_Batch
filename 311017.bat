@@ -29,16 +29,18 @@ REM     set interval2=1!bq! 1 1!bq!
 REM       call calc.bat
 REM )
 
-for %%b in (2 4 6) do (
+REM for %%b in (2 4 6) do (
   REM +ve CS 1-6
-  set bq=%%b
+  REM set bq=%%b
     set interval=1009 10 1099
-    set interval2=1!bq! 1 1!bq!
+    REM set interval2=1!bq! 1 1!bq!
+    set interval2=11 2 15
       call calc.bat
 
   REM +ve CS 1-6
-  set bq=%%b
+  REM set bq=%%b
     set interval=1119 10 1199
-    set interval2=1!bq! 1 1!bq!
+    REM set interval2=1!bq! 1 1!bq!
+    set interval2=11 2 15
       call calc.bat
-)
+REM )
