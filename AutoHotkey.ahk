@@ -22,7 +22,6 @@ F1::Send {Esc}
 
 ; Get Computer Name
 #1::Msgbox, %A_ComputerName%
-
 ; Get Windows Title
 #2::
   WinGetTitle, Title, A
@@ -31,7 +30,6 @@ Return
 
 ;anfang APDL mouse settings
 #IfWinActive, ^ANSYS
-
   RButton::
     SendInput {Ctrl down}{RButton down}
     Keywait, RButton
@@ -155,13 +153,13 @@ Return
 ;ende CREO mouse settings
 
 ;anfang Local Locations
-#a::
-  if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
-    run "R:\Maharjan"
-  } else {
-    run "C:\_________Drive"
-  }
-return
+; #a::
+;   if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
+;     run "R:\Maharjan"
+;   } else {
+;     run "C:\_________Drive"
+;   }
+; return
 
 ;#n::
   ;if(InStr(A_ComputerName,"SMAHARJAN")){
@@ -182,7 +180,6 @@ return
     Run "C:\Users\Sarat\Dropbox\VimInstall\Vim\vim80\gvim.exe"
   }
 return
-
 #c:: Run "C:\Program Files\Microsoft VS Code\Code.exe" -n
 
 ;#x::
@@ -201,22 +198,6 @@ return
   }
 return
 
-#q::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-    Run "D:\zCore\run-ansys-e.bat"
-  } else {
-    Run "E:\maharjan\run-ansys-e.bat"
-  }
-return
-
-#+q::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-    Run "D:\zCore\run-ansys-r.bat"
-  } else {
-    Run "E:\maharjan\run-ansys-r.bat"
-  }
-return
-
 #!r::
   if(InStr(A_ComputerName,"SMAHARJAN")){
     Run "D:\zCore\sm.bat"
@@ -225,45 +206,45 @@ return
   }
 return
 
-#z::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-    Run "D:\zCore\zBar.exe"
-  } else {
-    Run "D:\zCore\zBar.exe"
-  }
-return
-
-#!c::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-    Run "snippingTool"
-  } else {
-    Run "snippingTool"
-  }
-return
-
-#+x::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-    Run "D:\zCore\replSolu.exe"
-  } else {
-    ;Run "D:\zCore\Zizorz.exe"
-  }
-return
-
-#!x::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-    Run "D:\zCore\replaceLines.exe"
-  }
-return
-
 #u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
 
-#!w:: Run "C:\Program Files\ANSYS Inc\v182\ANSYS\bin\winx64\launcher.exe"
-^!w:: Run "C:\Program Files\ANSYS Inc\v182\Framework\bin\Win64\runwb2.exe"
-#h:: Run "C:\Program Files\ANSYS Inc\v182\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
+; #z::
+;   if(InStr(A_ComputerName,"SMAHARJAN")){
+;     Run "D:\zCore\zBar.exe"
+;   } else {
+;     Run "D:\zCore\zBar.exe"
+;   }
+; return
 
-^!v:: Run "E:\SM\vim"
+; #!c::
+;   if(InStr(A_ComputerName,"SMAHARJAN")){
+;     Run "snippingTool"
+;   } else {
+;     Run "snippingTool"
+;   }
+; return
 
-#b:: Run "R:\ansys\macros"
+; #+x::
+;   if(InStr(A_ComputerName,"SMAHARJAN")){
+;     Run "D:\zCore\replSolu.exe"
+;   } else {
+;     ;Run "D:\zCore\Zizorz.exe"
+;   }
+; return
+
+; #!x::
+;   if(InStr(A_ComputerName,"SMAHARJAN")){
+;     Run "D:\zCore\replaceLines.exe"
+;   }
+; return
+
+
+; #!w:: Run "C:\Program Files\ANSYS Inc\v182\ANSYS\bin\winx64\launcher.exe"
+; ^!w:: Run "C:\Program Files\ANSYS Inc\v182\Framework\bin\Win64\runwb2.exe"
+; #h:: Run "C:\Program Files\ANSYS Inc\v182\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
+
+; ^!v:: Run "E:\SM\vim"
+; #b:: Run "R:\ansys\macros"
 
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 ;#.:: Run "E:\SM\_modified-literatur-eurocode-normen-handbücher-gescannt"
@@ -278,17 +259,15 @@ return
   return
 #IfWinActive
 
-#ß:: Run "\\ansys2\Maharjan"
-
-^!s:: Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
+; ^!s:: Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
 ;ende Local Locations
 
 ;anfang Internet Addresses
-#space::Run www.google.com.np
+; #space::Run www.google.com.np
 
-#f::
-  Run "C:\Program Files (x86)\Mozilla Firefox\Firefox.exe"
-return
+; #f::
+;   Run "C:\Program Files (x86)\Mozilla Firefox\Firefox.exe"
+; return
 
 ; #s::
 ;   Send, ^c
