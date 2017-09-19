@@ -7,18 +7,17 @@
 
 SetTitleMatchMode, RegEx
 
+; Set window always on TOP
+^!space::  Winset, Alwaysontop, , A
+
 ; Numpad , replaced by .
 ; NumPadDot::Send, {ASC 0046}
 NumPadDot::Send, {.}
-
 ; F1 replaced by Control + F1
 #UseHook
 F1::Send {Esc}
 #UseHook off
 ^F1::Send {F1}
-
-; Set window always on TOP
-^!space::  Winset, Alwaysontop, , A
 
 ; Get Computer Name
 #1::Msgbox, %A_ComputerName%
@@ -152,6 +151,166 @@ Return
 #IfWinActive
 ;ende CREO mouse settings
 
+#w::
+  if(InStr(A_ComputerName,"SMAHARJAN")){
+    Run "D:\zCore\run-ansys.bat"
+  } else {
+    Run "E:\maharjan\run-ansys.bat"
+  }
+return
+
+#u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
+
+#IfWinActive ahk_class CabinetWClass
+  #.::
+    FullPath := GetActivePath()
+    ; an error occurred with the SetWorkingDir directive
+      if ErrorLevel
+        return
+    run, %ComSpec% /c "code .", %FullPath%
+  return
+#IfWinActive
+
+;anfang Delete Images
+#IfWinActive ahk_class CabinetWClass
+  #p::
+    FullPath := GetActivePath()
+    ; an error occurred with the SetWorkingDir directive
+      if ErrorLevel
+        return
+    ;FileCopy,D:\delPics.bat,%FullPath%\*,*,1
+    ;Run %FullPath%\delPics.bat
+    ;FileDelete,%FullPath%\delPics.bat
+      FileDelete,%FullPath%\*.jpg
+      FileDelete,%FullPath%\*.tif
+      FileDelete,%FullPath%\*.tiff
+      FileDelete,%FullPath%\*.png
+      ;FileDelete,%FullPath%\*.lis
+      ;FileDelete,%FullPath%\*.csv
+    msgBox, Files Deleted!!!
+  return
+#IfWinActive
+;ende Delete Images
+
+;anfang Create File works only on win 7
+#IfWinActive ahk_class CabinetWClass
+  ^!n::
+    ; get full path from open windows
+      WinGetText, FullPath, A
+    ; split up result (returns paths seperated by newlines [also lame])
+      StringSplit, PathArray, FullPath, `n
+    ; get first item
+      FullPath = %PathArray1%
+      StringTrimRight, path1, FullPath, 1
+      StringTrimLeft, FullPath, path1, 9
+    ;If Ctrl+Alt+N is pressed in Windows Explorer
+      ;WinGetActiveTitle, title
+    ; Display input box for filename
+      InputBox, UserInput, Enter Name (Example: GoodFile.ext), , , 400, 100
+    ; User pressed cancel
+      If ErrorLevel
+        Return
+    ; Create file
+      FileAppend, , %FullPath%\%UserInput%
+      ;run %FullPath%\%UserInput%
+  return
+#IfWinActive
+;ende Create File
+
+;anfang FUNCTIONS
+  ToggleWinMinimize(TheWindowTitle) {
+    SetTitleMatchMode,2
+    DetectHiddenWindows, Off
+    IfWinActive, %TheWindowTitle%
+    {
+      WinMinimize, %TheWindowTitle%
+    } else {
+      IfWinExist, %TheWindowTitle%
+      {
+        WinGet, winid, ID, %TheWindowTitle%
+        DllCall("SwitchToThisWindow", "UInt", winid, "UInt", 1)
+      }
+    }
+    return
+  }
+
+  GetActivePath() {
+    ; get full path from open windows
+    WinGetText, FullPath, A
+    ; split up result (returns paths seperated by newlines [also lame])
+    StringSplit, PathArray, FullPath, `n
+    ; get first item
+    FullPath = %PathArray1%
+    StringTrimRight, path1, FullPath, 1
+    StringTrimLeft, FullPath, path1, 9
+    ;msgbox, %FullPath%
+    return FullPath
+  }
+;ende Functions
+
+; ;anfang Delete Temporary Files
+; #IfWinActive ahk_class CabinetWClass
+;   #ü::
+;     ; get full path from open windows
+;       WinGetText, FullPath, A
+;     ; split up result (returns paths seperated by newlines [also lame])
+;       StringSplit, PathArray, FullPath, `n
+;     ; get first item
+;       FullPath = %PathArray1%
+;       StringTrimRight, path1, FullPath, 1
+;       StringTrimLeft, FullPath, path1, 9
+;       ;msgbox, %FullPath%
+;     ; an error occurred with the SetWorkingDir directive
+;       if ErrorLevel
+;         return
+;     ;FileCopy,D:\delPics.bat,%FullPath%\*,*,1
+;     ;Run %FullPath%\delPics.bat
+;     ;FileDelete,%FullPath%\delPics.bat
+;       FileDelete,%FullPath%\*.bcs
+;       FileDelete,%FullPath%\*.dbb
+;       FileDelete,%FullPath%\*.do3
+;       FileDelete,%FullPath%\*.ema
+;       FileDelete,%FullPath%\*.emat
+;       FileDelete,%FullPath%\*.esa
+;       FileDelete,%FullPath%\*.esav
+;       FileDelete,%FullPath%\*.ful
+;       FileDelete,%FullPath%\*.full
+;       FileDelete,%FullPath%\*.ldh
+;       FileDelete,%FullPath%\*.mnt
+;       FileDelete,%FullPath%\*.mod
+;       FileDelete,%FullPath%\*.osa
+;       FileDelete,%FullPath%\*.osav
+;       FileDelete,%FullPath%\*.pcs
+;       FileDelete,%FullPath%\*.pvt
+;       FileDelete,%FullPath%\*.r00
+;       FileDelete,%FullPath%\*.r001
+;       FileDelete,%FullPath%\*.r002
+;       FileDelete,%FullPath%\*.r003
+;       FileDelete,%FullPath%\*.r004
+;       FileDelete,%FullPath%\*.r005
+;       FileDelete,%FullPath%\*.r006
+;       FileDelete,%FullPath%\*.r007
+;       FileDelete,%FullPath%\*.r008
+;       FileDelete,%FullPath%\*.r009
+;       FileDelete,%FullPath%\*.nr00
+;       FileDelete,%FullPath%\*.nr001
+;       FileDelete,%FullPath%\*.nr002
+;       FileDelete,%FullPath%\*.nr003
+;       FileDelete,%FullPath%\*.nr004
+;       FileDelete,%FullPath%\*.nr005
+;       FileDelete,%FullPath%\*.nr006
+;       FileDelete,%FullPath%\*.nr007
+;       FileDelete,%FullPath%\*.nr008
+;       FileDelete,%FullPath%\*.nr009
+;       FileDelete,%FullPath%\*.rdb
+;       FileDelete,%FullPath%\*.sta
+;       FileDelete,%FullPath%\*.tri
+;       FileDelete,%FullPath%\*.lock
+;     msgBox, Files Deleted!!!
+;   return
+; #IfWinActive
+; ;ende Delete Temp Files Ansys
+
 ;anfang Local Locations
 ; #a::
 ;   if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
@@ -169,18 +328,19 @@ Return
   ;}
 ;return
 
-#v::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-    Run "E:\SM\VIMinstall\Vim\vim80\gvim.exe"
-  } else if (InStr(A_ComputerName,"ANSYS2")) {
-    Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
-  } else if (InStr(A_ComputerName,"hgebhardt1")) {
-    Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
-  } else {
-    Run "C:\Users\Sarat\Dropbox\VimInstall\Vim\vim80\gvim.exe"
-  }
-return
-#c:: Run "C:\Program Files\Microsoft VS Code\Code.exe" -n
+; #v::
+;   if(InStr(A_ComputerName,"SMAHARJAN")){
+;     Run "E:\SM\VIMinstall\Vim\vim80\gvim.exe"
+;   } else if (InStr(A_ComputerName,"ANSYS2")) {
+;     Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
+;   } else if (InStr(A_ComputerName,"hgebhardt1")) {
+;     Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
+;   } else {
+;     Run "C:\Users\Sarat\Dropbox\VimInstall\Vim\vim80\gvim.exe"
+;   }
+; return
+
+; #c:: Run "C:\Program Files\Microsoft VS Code\Code.exe" -n
 
 ;#x::
   ;if(InStr(A_ComputerName,"SMAHARJAN")){
@@ -190,23 +350,13 @@ return
   ;}
 ;return
 
-#w::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-    Run "D:\zCore\run-ansys.bat"
-  } else {
-    Run "E:\maharjan\run-ansys.bat"
-  }
-return
-
-#!r::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
-    Run "D:\zCore\sm.bat"
-  } else {
-    Run "E:\maharjan\sm.bat"
-  }
-return
-
-#u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
+; #!r::
+;   if(InStr(A_ComputerName,"SMAHARJAN")){
+;     Run "D:\zCore\sm.bat"
+;   } else {
+;     Run "E:\maharjan\sm.bat"
+;   }
+; return
 
 ; #z::
 ;   if(InStr(A_ComputerName,"SMAHARJAN")){
@@ -242,23 +392,10 @@ return
 ; #!w:: Run "C:\Program Files\ANSYS Inc\v182\ANSYS\bin\winx64\launcher.exe"
 ; ^!w:: Run "C:\Program Files\ANSYS Inc\v182\Framework\bin\Win64\runwb2.exe"
 ; #h:: Run "C:\Program Files\ANSYS Inc\v182\commonfiles\help\HelpViewer\ANSYSHelpViewer.exe"
-
 ; ^!v:: Run "E:\SM\vim"
 ; #b:: Run "R:\ansys\macros"
-
 ;#.:: Run "R:\Literatur\Eurocode\Normen-Hanbücher\Gescannt"
 ;#.:: Run "E:\SM\_modified-literatur-eurocode-normen-handbücher-gescannt"
-
-#IfWinActive ahk_class CabinetWClass
-  #.::
-    FullPath := GetActivePath()
-    ; an error occurred with the SetWorkingDir directive
-      if ErrorLevel
-        return
-    run, %ComSpec% /c "code .", %FullPath%
-  return
-#IfWinActive
-
 ; ^!s:: Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
 ;ende Local Locations
 
@@ -279,115 +416,6 @@ return
 ;   Run, http://dict.leo.org/#/search=%Clipboard%&searchLoc=0&resultOrder=basic&multiwordShowSingle=on
 ; Return
 ;ende Internet Addresses
-
-;anfang Delete Images
-#IfWinActive ahk_class CabinetWClass
-  #p::
-    FullPath := GetActivePath()
-    ; an error occurred with the SetWorkingDir directive
-      if ErrorLevel
-        return
-    ;FileCopy,D:\delPics.bat,%FullPath%\*,*,1
-    ;Run %FullPath%\delPics.bat
-    ;FileDelete,%FullPath%\delPics.bat
-      FileDelete,%FullPath%\*.jpg
-      FileDelete,%FullPath%\*.tif
-      FileDelete,%FullPath%\*.tiff
-      FileDelete,%FullPath%\*.png
-      ;FileDelete,%FullPath%\*.lis
-      ;FileDelete,%FullPath%\*.csv
-    msgBox, Files Deleted!!!
-  return
-#IfWinActive
-;ende Delete Images
-
-;anfang Delete Temporary Files
-#IfWinActive ahk_class CabinetWClass
-  #ü::
-    ; get full path from open windows
-      WinGetText, FullPath, A
-    ; split up result (returns paths seperated by newlines [also lame])
-      StringSplit, PathArray, FullPath, `n
-    ; get first item
-      FullPath = %PathArray1%
-      StringTrimRight, path1, FullPath, 1
-      StringTrimLeft, FullPath, path1, 9
-      ;msgbox, %FullPath%
-    ; an error occurred with the SetWorkingDir directive
-      if ErrorLevel
-        return
-    ;FileCopy,D:\delPics.bat,%FullPath%\*,*,1
-    ;Run %FullPath%\delPics.bat
-    ;FileDelete,%FullPath%\delPics.bat
-      FileDelete,%FullPath%\*.bcs
-      FileDelete,%FullPath%\*.dbb
-      FileDelete,%FullPath%\*.do3
-      FileDelete,%FullPath%\*.ema
-      FileDelete,%FullPath%\*.emat
-      FileDelete,%FullPath%\*.esa
-      FileDelete,%FullPath%\*.esav
-      FileDelete,%FullPath%\*.ful
-      FileDelete,%FullPath%\*.full
-      FileDelete,%FullPath%\*.ldh
-      FileDelete,%FullPath%\*.mnt
-      FileDelete,%FullPath%\*.mod
-      FileDelete,%FullPath%\*.osa
-      FileDelete,%FullPath%\*.osav
-      FileDelete,%FullPath%\*.pcs
-      FileDelete,%FullPath%\*.pvt
-      FileDelete,%FullPath%\*.r00
-      FileDelete,%FullPath%\*.r001
-      FileDelete,%FullPath%\*.r002
-      FileDelete,%FullPath%\*.r003
-      FileDelete,%FullPath%\*.r004
-      FileDelete,%FullPath%\*.r005
-      FileDelete,%FullPath%\*.r006
-      FileDelete,%FullPath%\*.r007
-      FileDelete,%FullPath%\*.r008
-      FileDelete,%FullPath%\*.r009
-      FileDelete,%FullPath%\*.nr00
-      FileDelete,%FullPath%\*.nr001
-      FileDelete,%FullPath%\*.nr002
-      FileDelete,%FullPath%\*.nr003
-      FileDelete,%FullPath%\*.nr004
-      FileDelete,%FullPath%\*.nr005
-      FileDelete,%FullPath%\*.nr006
-      FileDelete,%FullPath%\*.nr007
-      FileDelete,%FullPath%\*.nr008
-      FileDelete,%FullPath%\*.nr009
-      FileDelete,%FullPath%\*.rdb
-      FileDelete,%FullPath%\*.sta
-      FileDelete,%FullPath%\*.tri
-      FileDelete,%FullPath%\*.lock
-    msgBox, Files Deleted!!!
-  return
-#IfWinActive
-;ende Delete Temp Files Ansys
-
-;anfang Create File
-#IfWinActive ahk_class CabinetWClass
-  ^!n::
-    ; get full path from open windows
-      WinGetText, FullPath, A
-    ; split up result (returns paths seperated by newlines [also lame])
-      StringSplit, PathArray, FullPath, `n
-    ; get first item
-      FullPath = %PathArray1%
-      StringTrimRight, path1, FullPath, 1
-      StringTrimLeft, FullPath, path1, 9
-    ;If Ctrl+Alt+N is pressed in Windows Explorer
-      ;WinGetActiveTitle, title
-    ; Display input box for filename
-      InputBox, UserInput, Enter Name (Example: GoodFile.ext), , , 400, 100
-    ; User pressed cancel
-      If ErrorLevel
-        Return
-    ; Create file
-      FileAppend, , %FullPath%\%UserInput%
-      ;run %FullPath%\%UserInput%
-  return
-#IfWinActive
-;ende Create File
 
 ;anfang Not Necessary
   ;!x::ToggleWinMinimize("Microsoft Excel")
@@ -501,37 +529,6 @@ return
     ;return
   ;#IfWinActive
 ;ende Not Necessary
-
-;anfang FUNCTIONS
-  ToggleWinMinimize(TheWindowTitle) {
-    SetTitleMatchMode,2
-    DetectHiddenWindows, Off
-    IfWinActive, %TheWindowTitle%
-    {
-      WinMinimize, %TheWindowTitle%
-    } else {
-      IfWinExist, %TheWindowTitle%
-      {
-        WinGet, winid, ID, %TheWindowTitle%
-        DllCall("SwitchToThisWindow", "UInt", winid, "UInt", 1)
-      }
-    }
-    return
-  }
-
-  GetActivePath() {
-    ; get full path from open windows
-    WinGetText, FullPath, A
-    ; split up result (returns paths seperated by newlines [also lame])
-    StringSplit, PathArray, FullPath, `n
-    ; get first item
-    FullPath = %PathArray1%
-    StringTrimRight, path1, FullPath, 1
-    StringTrimLeft, FullPath, path1, 9
-    ;msgbox, %FullPath%
-    return FullPath
-  }
-;ende Functions
 
 ;  ;anfang External Functions
 ;    ;anfang Volume
