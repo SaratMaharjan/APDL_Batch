@@ -106,11 +106,7 @@ if "%runNum%" geq "1" (
   set runNum=1
 )
 (echo %runNum%) > !pathBefore!\%proj_Num%\!pathAfter!\running.txt
-    REM if %fname% equ 1 (
-      set filNam="file%runNum%GUI"
-    REM ) else (
-      REM set filNam="file2gui"
-    REM )
+set filNam="interactive-%runNum%"
 
 echo License: !ansj!
 echo Project: %proj_Num%

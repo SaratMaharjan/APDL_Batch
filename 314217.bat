@@ -1,14 +1,14 @@
 
 call reset.bat
 
-set pathBefore=F:
+REM set pathBefore=F:
 REM set pathAfter=ansys
 
 REM set sourcePre=R:\maharjan
-REM set sourceFile=s.in
+REM set sourceFile=s-alt.in
 
 set redirect=1
-REM set extVar=0
+REM set extVar=1
 REM set nPrefix=d
 
 set proj_Num=314217

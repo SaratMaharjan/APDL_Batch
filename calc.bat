@@ -35,7 +35,6 @@ for /l %%m in (!interval!) do (
   @echo off
 
   for /l %%n in (!interval2!) do (
-    (echo 0) > !wDir!\success.txt
 
     set par=%%n
     set num=2
@@ -43,6 +42,9 @@ for /l %%m in (!interval!) do (
     call add-zeroes.bat :addZero
 
     set lk=!par!
+
+    (echo 0) > !wDir!\success-!nPrefix!!job!-!lk!.txt
+
     @echo on
     echo.
     echo ...
@@ -55,7 +57,7 @@ for /l %%m in (!interval!) do (
 
     call calc-loop.bat :calc
 
-    set /p succeed=<!wDir!\success.txt
+    set /p succeed=<!wDir!\success-!nPrefix!!job!-!lk!.txt
 
     if !succeed! equ 1 (
       call delete-files.bat :delFiles

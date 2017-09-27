@@ -1,7 +1,7 @@
 
 call reset.bat
 
-set pathBefore=F:
+REM set pathBefore=F:
 REM set pathAfter=ansys-tl
 
 REM set sourcePre=R:\maharjan
@@ -15,10 +15,10 @@ REM )
 
 set proj_Num=311017a
 
-REM REM +ve CS 1
-REM   set interval=2199 10 2199
-REM   set interval2=11 10 11
-REM     call calc.bat
+REM +ve CS 1
+  set interval=2199 10 2199
+  set interval2=11 10 11
+    call calc.bat
 
 REM +ve CS 2
   set interval=2179 10 2179

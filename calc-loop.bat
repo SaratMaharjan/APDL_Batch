@@ -37,7 +37,7 @@ for /l %%c in ( 1 1 1 ) do (
     REM licenses ende
 
     call timer.bat startTimer
-    (echo 0) > !wDir!\license.txt
+    (echo 0) > !wDir!\license-!nPrefix!!job!-!lk!.txt
 
     REM anfang Call ANSYS
     del "!wDir!\f!job!-!lk!.err" >nul 2>&1
@@ -64,7 +64,7 @@ for /l %%c in ( 1 1 1 ) do (
     echo                        REM +++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++ >> !wDir!\sm-apdl.bat
 
     if %execute% equ 1 (
-      set /p inPrep=<!wDir!\license.txt
+      set /p inPrep=<!wDir!\license-!nPrefix!!job!-!lk!.txt
     ) else (
       set inPrep=1
     )
