@@ -5,7 +5,7 @@
   "main": "sm.bat",
   "scripts": {
     "calc": "start D:\\zcore\\sm.bat",
-    "push": "start npm-list.bat && git add . && git commit -m 'regular' && git push origin master"
+    "push": "npm-list.bat && git add . && git commit -m 'regular' && git push origin master"
   },
   "keywords": [
     "ansys batch"
