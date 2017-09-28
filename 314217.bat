@@ -5,7 +5,7 @@ REM set pathBefore=F:
 REM set pathAfter=ansys
 
 REM set sourcePre=R:\maharjan
-REM set sourceFile=s-alt.in
+set sourceFile=s-alt.in
 
 set redirect=1
 REM set extVar=1
