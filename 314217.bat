@@ -5,11 +5,11 @@ REM set pathBefore=F:
 REM set pathAfter=ansys
 
 REM set sourcePre=R:\maharjan
-set sourceFile=s-alt.in
+REM set sourceFile=s-alt.in
 
 set redirect=1
 REM set extVar=1
-REM set nPrefix=d
+REM set nPrefix=r
 
 set proj_Num=314217
 
@@ -18,7 +18,7 @@ REM for %%b in (1 2) do (
   REM +ve
   set bq=%%b
     set interval=2139 10 2139
-    set interval2=1!bq! 1 1!bq!
+    set interval2=1!bq! 10 2!bq!
       call calc.bat
 
   REM REM -ve
