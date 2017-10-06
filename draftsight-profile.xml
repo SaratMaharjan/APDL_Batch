@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Warnung! -->
-<!-- Manuelle Änderungen dieser Datei können unvorhersehbares Verhalten der Anwendung hervorrufen. Unter Umständen geht die Funktionalität zur Anpassung und Migration verloren. -->
-<!-- Sofern Sie Daten in dieser Datei ändern müssen, benutzen Sie bitte die entsprechenden Befehle und Dialogfenster in der Software. -->
+<!-- Warning! -->
+<!-- Manually altering this file can generate unpredictable behavior in the application. You can lose customization and migration functionality. -->
+<!-- If you need to change information in the file, use the appropriate commands and dialog boxes in the software. -->
 <settings>
+    <group name="collapsible_group">
+        <setting type="int" value="0" name="all general_collapse"/>
+        <setting type="int" value="0" name="no selection general_collapse"/>
+        <setting type="int" value="0" name="no selection misc_collapse"/>
+        <setting type="int" value="0" name="no selection printstyle_collapse"/>
+        <setting type="int" value="0" name="no selection view_collapse"/>
+    </group>
     <group name="current workspace">
-        <setting type="QString" value="Classic Default" name="workspace name"/>
+        <setting type="QString" value="Drafting and Annotation" name="workspace name"/>
     </group>
     <group name="dialog_data">
+        <group name="cfxdlgabout">
+            <setting type="QByteArray" value="AdnQywACAAAAAALDAAABjQAABL0AAAMbAAACywAAAasAAAS1AAADEwAAAAAAAAAAB4A=" name="geometry"/>
+        </group>
         <group name="cfxdlgbmake">
             <setting type="QByteArray" value="AdnQywABAAAAAALzAAABOAAABKQAAANPAAAC+wAAAVYAAAScAAADRwAAAAAAAA==" name="geometry"/>
         </group>
@@ -20,6 +30,12 @@
         </group>
         <group name="cfxdlgfontstyle">
             <setting type="QByteArray" value="AdnQywABAAAAAAL5AAABrQAABIYAAALaAAADAQAAAcsAAAR+AAAC0gAAAAAAAA==" name="geometry"/>
+        </group>
+        <group name="cfxdlghatchpreview">
+            <setting type="QByteArray" value="AdnQywABAAAAAANhAAABNAAABL4AAANeAAADaQAAAVIAAAS2AAADVgAAAAAAAA==" name="geometry"/>
+        </group>
+        <group name="cfxdlgimageattach">
+            <setting type="QByteArray" value="AdnQywABAAAAAAKqAAABcQAABNUAAAMXAAACsgAAAY8AAATNAAADDwAAAAAAAA==" name="geometry"/>
         </group>
         <group name="cfxdlglayermanager">
             <setting type="int" value="100" name="color_section_size"/>
@@ -39,14 +55,23 @@
         <group name="cfxdlglicenseagreement">
             <setting type="QByteArray" value="AdnQywABAAAAAALIAAABQAAABLcAAANHAAAC0AAAAV4AAASvAAADPwAAAAAAAA==" name="geometry"/>
         </group>
+        <group name="cfxdlgnewhatch">
+            <setting type="QByteArray" value="AdnQywABAAAAAAJvAAABZAAABbEAAAMuAAACdwAAAYIAAAWpAAADJgAAAAAAAA==" name="geometry"/>
+        </group>
         <group name="cfxdlgnoptions">
-            <setting type="QByteArray" value="AdnQywABAAAAAAGnAAAAxgAABdgAAAPBAAABrwAAAOQAAAXQAAADuQAAAAAAAA==" name="geometry"/>
+            <setting type="QByteArray" value="AdnQywACAAAAAAGnAAAAxgAABdgAAAPBAAABrwAAAOQAAAXQAAADuQAAAAAAAAAAB4A=" name="geometry"/>
+        </group>
+        <group name="cfxdlgplotpapersizewarning">
+            <setting type="QByteArray" value="AdnQywABAAAAAAMCAAAB9wAABWAAAAKaAAADCgAAAhUAAAVYAAACkgAAAAAAAA==" name="geometry"/>
         </group>
         <group name="cfxdlgplotpreview">
-            <setting type="QByteArray" value="AdnQywABAAD////4////+AAAB4cAAASPAAACMAAAASMAAAVPAAADegAAAAACAA==" name="geometry"/>
+            <setting type="QByteArray" value="AdnQywABAAD////4////+AAAB4cAAASZAAACMAAAASMAAAVPAAADegAAAAACAA==" name="geometry"/>
         </group>
         <group name="cfxdlgprint">
-            <setting type="QByteArray" value="AdnQywABAAAAAAIdAAABBwAABWMAAAOBAAACJQAAASUAAAVbAAADeQAAAAAAAA==" name="geometry"/>
+            <setting type="QByteArray" value="AdnQywABAAAAAAJOAAABKQAABZQAAAOjAAACVgAAAUcAAAWMAAADmwAAAAAAAA==" name="geometry"/>
+        </group>
+        <group name="cfxdlgprintoptions">
+            <setting type="QByteArray" value="AdnQywABAAAAAAM0AAABzwAABPwAAAL8AAADPAAAAe0AAAT0AAAC9AAAAAAAAA==" name="geometry"/>
         </group>
         <group name="cfxdlgpurge">
             <setting type="QByteArray" value="AdnQywABAAAAAAMPAAABTAAABHEAAAM8AAADFwAAAWoAAARpAAADNAAAAAAAAA==" name="geometry"/>
@@ -56,7 +81,7 @@
         </group>
     </group>
     <group name="files">
-        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Alias\" name="alias_path"/>
+        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\17.3.4122\Alias\" name="alias_path"/>
         <setting type="QString" value="arsimp.shx" name="alt_font_file"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="alt_tablet_menu_file"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="color_book_path"/>
@@ -64,7 +89,8 @@
         <setting type="QString" value="sample.cus" name="custom_dictionary"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="custom_icon_path"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="default_internet_url"/>
-        <setting type="QString" value="C:\ProgramData\Dassault Systemes\DraftSight\Examples\;C:\ProgramData\Dassault Systemes\DraftSight\Examples\" name="drawings_paths"/>
+        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\17.3.4122\Drawing Components\Frames\;C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Drawing Components\Frames\" name="drawing_border_paths"/>
+        <setting type="QString" value="C:\ProgramData\Dassault Systemes\DraftSight\Examples\" name="drawings_paths"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="drivers_path"/>
         <setting type="QString" value="." name="enterprise_menu_file"/>
         <setting type="QString" value="C:\Program Files\Dassault Systemes\DraftSight\Fonts\fonts.fmp" name="font_file_map"/>
@@ -72,10 +98,10 @@
         <setting type="QString" value="E:\SM\PortableApps\PortableApps\Dassault Systemes\DraftSight\Help\german\DraftSight.chm" name="help_file"/>
         <setting type="QString" value="" name="license_server"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Linestyles\" name="linetypes_path"/>
-        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="log_file_path"/>
+        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\17.3.4122\" name="log_file_path"/>
         <setting type="QString" value="enu" name="main_dictionary"/>
         <setting type="QString" value="" name="menu_file"/>
-        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\UI\" name="menus_paths"/>
+        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\17.3.4122\UI\" name="menus_paths"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\RichLine Styles\" name="multiline_style_path"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="page_setup_overrides_template_path"/>
         <setting type="QString" value="C:\ProgramData\Dassault Systemes\DraftSight\Examples\." name="plot_file"/>
@@ -90,16 +116,17 @@
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="printer_desc_path"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="printer_style_sheet_path"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Template\standardiso.dwt" name="smartnew_template_file"/>
-        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Support\;C:\Program Files\Dassault Systemes\DraftSight\Default Files\Support\;C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Support\;E:\SM\PortableApps\PortableApps\Dassault Systemes\DraftSight\Default Files\Support\" name="support_paths"/>
+        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\17.3.4122\Support\;C:\Program Files\Dassault Systemes\DraftSight\Default Files\Support\;C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Support\;E:\SM\PortableApps\PortableApps\Dassault Systemes\DraftSight\Default Files\Support\;C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Support\;E:\SM\PortableApps\PortableApps\Dassault Systemes\DraftSight\Default Files\Support" name="support_paths"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Local\Temp\DraftSight_temp" name="temp_path"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Template\" name="template_dwg_path"/>
         <setting type="QString" value="Internal" name="text_editor"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="texture_map_path"/>
+        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\17.3.4122\Drawing Components\Title Blocks\;C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Drawing Components\Title Blocks\" name="title_block_paths"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="tool_palette_path"/>
         <setting type="QString" value="" name="vsta_hostid"/>
         <setting type="QString" value="E:\SM\PortableApps\PortableApps\Dassault Systemes\DraftSight\VSTATemplates" name="vsta_templates"/>
         <setting type="QString" value="C:\ProgramData\Dassault Systemes\DraftSight\Examples\" name="wblock_path"/>
-        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Workspace\" name="workspace_path"/>
+        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\17.3.4122\Workspace\" name="workspace_path"/>
         <setting type="QString" value="C:\ProgramData\Dassault Systemes\DraftSight\Examples\" name="xref_path"/>
     </group>
     <group name="gesturewidget">
@@ -118,11 +145,24 @@
         <setting type="QString" value="8" name="activescheme"/>
         <setting type="QString" value="1" name="enablemousegesture"/>
     </group>
+    <group name="preferences_advancedattedit">
+        <setting type="bool" value="true" name="hideproperties"/>
+    </group>
+    <group name="preferences_autocomplete">
+        <setting type="bool" value="true" name="alias"/>
+        <setting type="bool" value="true" name="autocorrect"/>
+        <setting type="bool" value="true" name="commandwithalias"/>
+        <setting type="bool" value="true" name="listdisplay"/>
+        <setting type="bool" value="true" name="midstring"/>
+        <setting type="int" value="3" name="midstringcharcount"/>
+        <setting type="bool" value="true" name="systemvariable"/>
+    </group>
     <group name="preferences_designresources">
         <setting type="int" value="0" name="contentviewtype"/>
         <setting type="QString" value="" name="favorites"/>
         <setting type="QString" value="" name="homelocation"/>
         <setting type="QString" value="" name="lastaccessedlocation"/>
+        <setting type="QString" value="" name="lastbrowsepath"/>
         <setting type="bool" value="true" name="portdesignlibraryfolders"/>
         <setting type="bool" value="true" name="previewvisibilty"/>
         <setting type="QString" value="" name="properties"/>
@@ -140,10 +180,11 @@
         <setting type="bool" value="false" name="ignorepolylinewidth"/>
         <setting type="bool" value="true" name="maintainassociativity"/>
         <setting type="bool" value="true" name="optimizepolyline"/>
-        <setting type="double" value="1e-06" name="tolerance"/>
+        <setting type="double" value="9.9999999999999995e-07" name="tolerance"/>
     </group>
     <group name="preferences_display">
         <setting type="int" value="16777215" name="autotrackingveccolor"/>
+        <setting type="int" value="1" name="clextensionconstantwithviewport"/>
         <setting type="int" value="1" name="colorcomboboxsortmode"/>
         <setting type="int" value="1" name="crosshairtintmode"/>
         <setting type="int" value="255" name="crosshairxaxiscolor"/>
@@ -157,6 +198,8 @@
         <setting type="int" value="16777215" name="graphicswinlayoutbackgrndcolor"/>
         <setting type="int" value="0" name="graphicswinmodelbackgrndcolor"/>
         <setting type="int" value="400" name="historylines"/>
+        <setting type="int" value="32" name="largeribbonbigbuttoniconsize"/>
+        <setting type="int" value="24" name="largeribbonsmallbuttoniconsize"/>
         <setting type="int" value="24" name="largetoolbarsiconsize"/>
         <setting type="int" value="0" name="layoutautotrackingveccolor"/>
         <setting type="int" value="1" name="layoutcreateviewport"/>
@@ -170,11 +213,18 @@
         <setting type="int" value="8388479" name="modelcrosshaircolor"/>
         <setting type="int" value="0" name="optionstoolbarmode"/>
         <setting type="int" value="0" name="propertieswindowdisplaymode"/>
+        <setting type="int" value="10066329" name="quickinputbkgcolor"/>
+        <setting type="int" value="0" name="quickinputbordercolor"/>
+        <setting type="int" value="10066329" name="quickinputdimlinescolor"/>
+        <setting type="int" value="0" name="quickinputtextcolor"/>
         <setting type="int" value="5987163" name="refeditbackgrndcolor"/>
         <setting type="int" value="0" name="ribbondisplaymode"/>
         <setting type="int" value="0" name="ribbonminimizedmode"/>
         <setting type="int" value="1" name="ribbonworkspacevisible"/>
+        <setting type="int" value="24" name="smallribbonbigbuttoniconsize"/>
+        <setting type="int" value="20" name="smallribbonsmallbuttoniconsize"/>
         <setting type="int" value="20" name="smalltoolbarsiconsize"/>
+        <setting type="int" value="0" name="stylemode"/>
         <setting type="QString" value="Arial" name="textfont"/>
         <setting type="int" value="10" name="textfontsize"/>
         <setting type="int" value="0" name="textfontstyle"/>
@@ -187,11 +237,17 @@
         <setting type="int" value="0" name="alignmentpointacquisition"/>
         <setting type="int" value="65535" name="dynasnapmarkercolor"/>
         <setting type="int" value="10" name="dynasnapmarkersize"/>
+        <setting type="int" value="-4" name="modelannoautoscalevalue"/>
+        <setting type="int" value="-4" name="sheetannoautoscalevalue"/>
     </group>
     <group name="preferences_dwgstandards">
         <setting type="bool" value="false" name="isautomaticallyfixedon"/>
         <setting type="bool" value="true" name="isshowignoredissueson"/>
         <setting type="QString" value="" name="preferreddwsfile"/>
+    </group>
+    <group name="preferences_dynamic_inputs">
+        <setting type="int" value="0" name="tooltipssize"/>
+        <setting type="int" value="0" name="tooltipstransparency"/>
     </group>
     <group name="preferences_enterpoint">
         <setting type="int" value="0" name="angdisttogether"/>
@@ -201,17 +257,41 @@
     <group name="preferences_hatch">
         <setting type="int" value="1" name="defaultgradientcolor"/>
     </group>
+    <group name="preferences_headsupdisplay">
+        <setting type="bool" value="true" name="headsupdisplayenabled"/>
+    </group>
+    <group name="preferences_layerstate">
+        <setting type="bool" value="false" name="hidedeletedlayersarea"/>
+        <setting type="bool" value="true" name="hideunusedlayers"/>
+        <setting type="bool" value="true" name="viewportoverrides"/>
+    </group>
     <group name="preferences_matrixtoolbar">
         <setting type="int" value="1" name="extendedview"/>
         <setting type="int" value="1" name="preferredcolumncount"/>
     </group>
+    <group name="preferences_mleadersettings">
+        <setting type="QString" value="" name="leaderblockname"/>
+        <setting type="int" value="0" name="leadercontenttype"/>
+        <setting type="double" value="0" name="leaderendangle"/>
+        <setting type="bool" value="true" name="leaderlandingline"/>
+        <setting type="double" value="8" name="leaderlandinglinelength"/>
+        <setting type="int" value="0" name="leaderoptions"/>
+        <setting type="double" value="0" name="leaderstartangle"/>
+        <setting type="int" value="0" name="leadertype"/>
+        <setting type="int" value="2" name="leadervertex"/>
+    </group>
+    <group name="preferences_oleeditor">
+        <setting type="bool" value="true" name="inplaceeditorenabled"/>
+    </group>
     <group name="preferences_opensave">
         <setting type="int" value="0" name="autoaudit"/>
+        <setting type="int" value="1" name="automaticpurgeunspecifieddata"/>
         <setting type="int" value="1" name="forceopenwithcodepage"/>
         <setting type="int" value="0" name="forceopenwithctbprintmode"/>
         <setting type="int" value="0" name="fullcrcvalidation"/>
         <setting type="QString" value="standard.dwt" name="imperialtemplate"/>
         <setting type="QString" value="standardiso.dwt" name="metrictemplate"/>
+        <setting type="int" value="0" name="preserveoriginalformat"/>
         <setting type="int" value="1" name="proxyimage"/>
         <setting type="int" value="36" name="saveastype"/>
         <setting type="QString" value="ds$" name="tempfileextension"/>
@@ -234,7 +314,7 @@
         <setting type="int" value="0" name="plotstampdisplayplotstamp"/>
         <setting type="QString" value="" name="plotstampfile"/>
         <setting type="QString" value="Tahoma" name="plotstampfontname"/>
-        <setting type="double" value="5.08" name="plotstampfontsize"/>
+        <setting type="double" value="5.0800000000000001" name="plotstampfontsize"/>
         <setting type="int" value="2" name="plotstamplocation"/>
         <setting type="QString" value="plot.log" name="plotstamplogfilepath"/>
         <setting type="double" value="2.54" name="plotstampoffsetx"/>
@@ -299,8 +379,10 @@
     <group name="preferences_plotsettings_model">
         <setting type="QString" value="A4" name="canonicalmedianame"/>
         <setting type="QString" value="monochrome.ctb" name="currentstylesheet"/>
-        <setting type="double" value="0.0393700787401575" name="customprintscaledenominator"/>
+        <setting type="double" value="1" name="customprintscaledenominator"/>
         <setting type="double" value="1" name="customprintscalenumerator"/>
+        <setting type="double" value="0" name="paperimageoriginx"/>
+        <setting type="double" value="0" name="paperimageoriginy"/>
         <setting type="int" value="1" name="plotcentered"/>
         <setting type="QString" value="\\SERVER\KONICA MINOLTA C224e (farbe)" name="plotcfgname"/>
         <setting type="int" value="1" name="plotpaperunits"/>
@@ -310,13 +392,13 @@
         <setting type="qulonglong" value="0" name="plotviewhandle"/>
         <setting type="double" value="138348.045437394" name="plotwindowareaxmax"/>
         <setting type="double" value="138051.045437394" name="plotwindowareaxmin"/>
-        <setting type="double" value="-1460.40350050767" name="plotwindowareaymax"/>
-        <setting type="double" value="-1670.4035005077" name="plotwindowareaymin"/>
+        <setting type="double" value="-1460.4035005076701" name="plotwindowareaymax"/>
+        <setting type="double" value="-1670.4035005077001" name="plotwindowareaymin"/>
         <setting type="double" value="138348.045437394" name="plotwindowareazmax"/>
-        <setting type="double" value="-1670.4035005077" name="plotwindowareazmin"/>
+        <setting type="double" value="-1670.4035005077001" name="plotwindowareazmin"/>
         <setting type="int" value="1" name="printlineweights"/>
         <setting type="double" value="-4.23000000001048" name="printoffsetx"/>
-        <setting type="double" value="-4.23000000001457" name="printoffsety"/>
+        <setting type="double" value="-4.2300000000145701" name="printoffsety"/>
         <setting type="int" value="0" name="printstamp"/>
         <setting type="int" value="0" name="printtofile"/>
         <setting type="int" value="150" name="shadeplotcustomdpi"/>
@@ -330,6 +412,8 @@
         <setting type="QString" value="" name="currentstylesheet"/>
         <setting type="double" value="1" name="customprintscaledenominator"/>
         <setting type="double" value="1" name="customprintscalenumerator"/>
+        <setting type="double" value="0" name="paperimageoriginx"/>
+        <setting type="double" value="0" name="paperimageoriginy"/>
         <setting type="int" value="1" name="plotcentered"/>
         <setting type="QString" value="" name="plotcfgname"/>
         <setting type="int" value="0" name="plotpaperunits"/>
@@ -370,6 +454,7 @@
         <setting type="int" value="100000" name="maxarray"/>
         <setting type="int" value="100" name="outputmaxlinecount"/>
         <setting type="int" value="0" name="printdialogquickpreview"/>
+        <setting type="int" value="1" name="reportmissingxrefsenabled"/>
         <setting type="int" value="42" name="savedsystemlanguage"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Support\scalelist.xml" name="scalelistfilename"/>
         <setting type="int" value="1" name="scalelistismetric"/>
@@ -377,7 +462,6 @@
         <setting type="int" value="0" name="showwarningmessages"/>
         <setting type="int" value="1" name="storesqlindex"/>
         <setting type="int" value="0" name="tablesreadonly"/>
-        <setting type="int" value="0" name="toplevelmode"/>
     </group>
     <group name="preferences_tablet">
         <setting type="QString" value="0,0" name="secteighthleft"/>
@@ -413,7 +497,7 @@
     </group>
     <group name="profile">
         <setting type="QString" value="" name="description"/>
-        <setting type="QString" value="&lt;&lt;unnamed profile>>" name="name"/>
+        <setting type="QString" value="DraftSightProfile" name="name"/>
     </group>
     <group name="variables">
         <setting type="short" value="19" name="3dmoptions"/>
@@ -424,10 +508,17 @@
         <setting type="bool" value="true" name="acadlspasdoc"/>
         <setting type="int" value="1" name="acisproxymode"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\Actions\" name="actpath"/>
+        <setting type="bool" value="false" name="allowsavingemptyacisobjects"/>
+        <setting type="int" value="-4" name="annoautoscale"/>
         <setting type="short" value="0" name="apilanguage"/>
         <setting type="short" value="0" name="apilevel"/>
         <setting type="QString" value="" name="apipath"/>
+        <setting type="short" value="1" name="arrayassociativity"/>
+        <setting type="short" value="0" name="arraytype"/>
+        <setting type="short" value="0" name="attipe"/>
+        <setting type="short" value="1" name="attmulti"/>
         <setting type="short" value="0" name="auditctl"/>
+        <setting type="short" value="63" name="autosnap"/>
         <setting type="short" value="2" name="backgroundplot"/>
         <setting type="QString" value="" name="bactioncolor"/>
         <setting type="int" value="1" name="bdependencyenblentselhlt"/>
@@ -445,6 +536,7 @@
         <setting type="long" value="16291880" name="cdefaultcolor"/>
         <setting type="short" value="0" name="centermt"/>
         <setting type="short" value="5" name="cmdinputhistorymax"/>
+        <setting type="short" value="1" name="colortheme"/>
         <setting type="short" value="0" name="compass"/>
         <setting type="short" value="3" name="constraintbardisplay"/>
         <setting type="short" value="4095" name="constraintbarmode"/>
@@ -457,7 +549,7 @@
         <setting type="QString" value="Normal" name="deflplstyle"/>
         <setting type="short" value="3" name="demandload"/>
         <setting type="long" value="1" name="devoptions"/>
-        <setting type="QString" value="0.0000" name="dgnimportmax"/>
+        <setting type="ulong" value="0" name="dgnimportmax"/>
         <setting type="bool" value="false" name="dgnosnap"/>
         <setting type="short" value="3" name="dimconstrainticon"/>
         <setting type="long" value="0" name="displayoptions"/>
@@ -522,23 +614,30 @@
         <setting type="short" value="0" name="facetratio"/>
         <setting type="short" value="0" name="fcmultisel"/>
         <setting type="short" value="1" name="fielddisplay"/>
+        <setting type="short" value="1" name="filetabpreview"/>
+        <setting type="short" value="0" name="filetabstate"/>
         <setting type="short" value="0" name="fullplotpath"/>
         <setting type="QString" value="" name="getactdict"/>
         <setting type="QString" value="" name="getlstattchpth"/>
-        <setting type="QString" value="E:\SM\" name="getlstopnpth"/>
+        <setting type="QString" value="D:\zzCore\_Vorlagen_und_Info\" name="getlstopnpth"/>
+        <setting type="QString" value="" name="graebertstorageserver"/>
         <setting type="short" value="140" name="gripdyncolor"/>
+        <setting type="short" value="0" name="gripmultifunctional"/>
         <setting type="short" value="2" name="groupdisplaymode"/>
         <setting type="short" value="1" name="gtauto"/>
         <setting type="short" value="0" name="gtdefault"/>
         <setting type="short" value="0" name="gtlocation"/>
         <setting type="short" value="0" name="hideprecision"/>
         <setting type="short" value="0" name="highlightcolor"/>
+        <setting type="short" value="0" name="hpannotative"/>
+        <setting type="short" value="0" name="hplinetype"/>
         <setting type="short" value="1" name="impliedface"/>
         <setting type="int" value="0" name="importmsg"/>
         <setting type="QString" value="APPLICATION.INI" name="inifilename"/>
         <setting type="short" value="0" name="initgetflag"/>
         <setting type="int" value="0" name="initgetflags"/>
         <setting type="short" value="15" name="inputhistorymode"/>
+        <setting type="short" value="400" name="inputsearchdelay"/>
         <setting type="int" value="0" name="insunitsdeflgcytarget"/>
         <setting type="short" value="20" name="intelligentupdate"/>
         <setting type="int" value="20" name="intelligentupgetdtjul"/>
@@ -552,6 +651,7 @@
         <setting type="short" value="50" name="laylockfadectl"/>
         <setting type="long" value="2" name="layoutregenctl"/>
         <setting type="short" value="70" name="lgcyacisoutver"/>
+        <setting type="short" value="-4" name="lgcyannoautoscale"/>
         <setting type="short" value="1" name="lgcydefaultlighting"/>
         <setting type="short" value="1" name="lgcydefaultlightingtype"/>
         <setting type="short" value="3" name="lgcydimfit"/>
@@ -565,6 +665,7 @@
         <setting type="int" value="0" name="lgcyperspective"/>
         <setting type="int" value="3" name="lgcypickbox"/>
         <setting type="short" value="0" name="lgcyrasterthreshold"/>
+        <setting type="short" value="1" name="lgcyselectionannodisplay"/>
         <setting type="QString" value="" name="lgcyshpname"/>
         <setting type="QString" value="" name="lgcyssethtchptrn"/>
         <setting type="short" value="1" name="lgcystartup"/>
@@ -600,9 +701,10 @@
         <setting type="short" value="0" name="lgcywmfbkgnd"/>
         <setting type="short" value="0" name="lgcywmfforegnd"/>
         <setting type="short" value="60" name="lgcyzoomfactor"/>
+        <setting type="short" value="0" name="linesmoothing"/>
         <setting type="short" value="1" name="lispinit"/>
         <setting type="QString" value="pathname" name="localrootprefix"/>
-        <setting type="short" value="0" name="lockui"/>
+        <setting type="short" value="5" name="lockui"/>
         <setting type="short" value="1000" name="maxsort"/>
         <setting type="short" value="1" name="measureinit"/>
         <setting type="short" value="1" name="menuctl"/>
@@ -610,7 +712,9 @@
         <setting type="QString" value="Intrenal" name="mtexted"/>
         <setting type="short" value="2" name="mtextfixed"/>
         <setting type="short" value="0" name="mtmode"/>
-        <setting type="short" value="0" name="olehide"/>
+        <setting type="short" value="0" name="objectisolationmode"/>
+        <setting type="int" value="0" name="olehide"/>
+        <setting type="long" value="1024" name="opengltexturesizemax"/>
         <setting type="short" value="1" name="openpartial"/>
         <setting type="long" value="0" name="osnaphatch"/>
         <setting type="long" value="0" name="osnapnodelegacy"/>
@@ -650,16 +754,21 @@
         <setting type="bool" value="true" name="recomputedimblocksrequired"/>
         <setting type="short" value="1" name="recoverymode"/>
         <setting type="short" value="0" name="rememberfolders"/>
-        <setting type="short" value="0" name="ribbonstate"/>
+        <setting type="bool" value="true" name="restorehatchfromblkref"/>
+        <setting type="short" value="1" name="revcloudcreatemode"/>
+        <setting type="short" value="1" name="revcloudgrips"/>
+        <setting type="short" value="1" name="ribbonstate"/>
         <setting type="bool" value="true" name="savedwgchecksum"/>
         <setting type="short" value="1" name="savefidelity"/>
         <setting type="bool" value="false" name="saveroundtrip"/>
         <setting type="bool" value="false" name="sdi"/>
+        <setting type="int" value="1" name="selectionannodisplay"/>
         <setting type="short" value="1" name="selectionarea"/>
         <setting type="short" value="25" name="selectionareaopacity"/>
         <setting type="short" value="3" name="selectionpreview"/>
+        <setting type="short" value="130" name="selectsimilarmode"/>
         <setting type="short" value="0" name="setactblkinsunt"/>
-        <setting type="long" value="1" name="setactlang"/>
+        <setting type="long" value="2" name="setactlang"/>
         <setting type="QString" value="ByLayer" name="setactprnstyl"/>
         <setting type="QString" value="" name="setaltbgfnt"/>
         <setting type="QString" value="arsimp.shx" name="setaltfnt"/>
@@ -668,6 +777,7 @@
         <setting type="short" value="16" name="setbattmode"/>
         <setting type="short" value="0" name="setblkdefinsunt"/>
         <setting type="QString" value="http://www.DraftSight.com" name="setbrwsrurl"/>
+        <setting type="short" value="255" name="setbylayermode"/>
         <setting type="short" value="90" name="setccsaxisang"/>
         <setting type="int" value="0" name="setcmdprmtlvl"/>
         <setting type="short" value="50" name="setcompedfd"/>
@@ -682,7 +792,7 @@
         <setting type="short" value="16" name="setdxfprc"/>
         <setting type="short" value="1" name="setegripactclr"/>
         <setting type="short" value="100" name="setegripdsplmt"/>
-        <setting type="short" value="1" name="setegripdspmode"/>
+        <setting type="short" value="2" name="setegripdspmode"/>
         <setting type="short" value="5" name="setegripinactclr"/>
         <setting type="short" value="3" name="setegripmseovrclr"/>
         <setting type="short" value="5" name="setegripsz"/>
@@ -705,13 +815,13 @@
         <setting type="short" value="1" name="sethtchrltvmode"/>
         <setting type="ulong" value="1000000" name="sethtchwrnglvl"/>
         <setting type="short" value="0" name="setlogmode"/>
-        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="setlogpth"/>
+        <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\17.3.4122\" name="setlogpth"/>
         <setting type="QString" value="0.3000" name="setlwtdspscl"/>
         <setting type="short" value="1" name="setlwtunt"/>
         <setting type="short" value="0" name="setmnuecho"/>
         <setting type="QString" value="" name="setnotesamptxt"/>
         <setting type="short" value="0" name="setofstgapmode"/>
-        <setting type="short" value="3" name="setoleqlty"/>
+        <setting type="int" value="3" name="setoleqlty"/>
         <setting type="long" value="0" name="setopnftyp"/>
         <setting type="double" value="0.5" name="setpanscl"/>
         <setting type="double" value="90" name="setpgdang"/>
@@ -756,6 +866,7 @@
         <setting type="short" value="0" name="tabmode"/>
         <setting type="short" value="1" name="taskbar"/>
         <setting type="short" value="0" name="tbcustomize"/>
+        <setting type="short" value="9" name="textalignmodemode"/>
         <setting type="short" value="2" name="texted"/>
         <setting type="short" value="0" name="texteval"/>
         <setting type="short" value="1" name="thumbsize"/>
@@ -769,6 +880,7 @@
         <setting type="double" value="1" name="tspacefac"/>
         <setting type="short" value="1" name="tspacetype"/>
         <setting type="short" value="0" name="uosnap"/>
+        <setting type="ulong" value="0" name="verticalapplicationsmode"/>
         <setting type="short" value="0" name="vshideprecision"/>
         <setting type="int" value="0" name="vslgcyhalogap"/>
         <setting type="QString" value="7" name="vslgcyintersectioncolor"/>
@@ -781,6 +893,7 @@
         <setting type="short" value="1" name="whiparc"/>
         <setting type="short" value="1" name="whipthread"/>
         <setting type="short" value="5" name="windowareacolor"/>
+        <setting type="short" value="50" name="xdwgfadectl"/>
         <setting type="short" value="2" name="xloadctl"/>
         <setting type="QString" value="C:\Users\Maharjan\AppData\Roaming\DraftSight\11.2.001\" name="xloadpath"/>
         <setting type="short" value="0" name="xrefctl"/>
@@ -788,23 +901,120 @@
     </group>
     <group name="window">
         <setting type="QByteArray" value="AQD///0C///73gAAAQoAAAIuAA==" name="3dexperience"/>
-        <group name="c:\users\maharjan\appdata\roaming\draftsight\11.2.001\ui\german\application.xml">
-            <setting type="QByteArray" value="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" name="layout"/>
+        <group name="c:">
+            <group name="users">
+                <group name="maharjan">
+                    <group name="appdata">
+                        <group name="roaming">
+                            <group name="draftsight">
+                                <group name="11.2.001">
+                                    <group name="ui">
+                                        <group name="german">
+                                            <group name="application.xml">
+                                                <setting type="QByteArray" value="AAAA/wAAAAD9AAAABAAAAAAAAAEKAAAD3/wCAAAAB/sAAAAWAFgAUgBlAGYATQBhAG4AYQBnAGUAcgAAAAAA/////wAAABUA////+wAAAB4ATABpAGcAaAB0AEwAaQBzAHQAVwBpAG4AZABvAHcAAAAAAP////8AAACRAP////wAAABRAAACKwAAAAAA////+gAAAAACAAAAAfsAAAAQAFQAYQBzAGsAcABhAG4AZQEAAAAA/////wAAAAAAAAAA+wAAACAATQBhAGMAVABvAG8AbABiAGEAcgBXAGkAbgBkAG8AdwAAAAAA/////wAAAAAAAAAA/AAAADQAAAPfAAAAjQD////6AAAAAwIAAAAE+wAAACYATQBhAHQAcgBpAHgAVABvAG8AbABiAGEAcgBXAGkAbgBkAG8AdwAAAAAA/////wAAAGQA////+wAAABwAUAByAG8AcABlAHIAdAB5AFcAaQBuAGQAbwB3AAAAAAD/////AAAAowD////7AAAAGAAzAEQARQB4AHAAZQByAGkAZQBuAGMAZQEAAAAA/////wAAAAAAAAAA+wAAAAgASABvAG0AZQEAAAAA/////wAAAI0A////+wAAABIAQwBvAG0AbQB1AG4AaQB0AHkAAAAAAP////8AAAAAAAAAAPsAAAAgAEQAZQBzAGkAZwBuACAAUgBlAHMAbwB1AHIAYwBlAHMAAAAAAP////8AAAAAAAAAAAAAAAEAAAAAAAAAAPwCAAAAAfsAAAAgAEcALQBjAG8AZABlACAARwBlAG4AZQByAGEAdABvAHIAAAAAAP////8AAAAAAAAAAAAAAAIAAATC/////PwBAAAAAfsAAAAaAE8AcAB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAABLAP///wAAAAMAAAeAAAAASfwBAAAAAfsAAAAaAEMAbwBtAG0AYQBuAGQAVwBpAG4AZABvAHcBAAAAAAAAB4AAAAFYAP///wAABnIAAAPfAAAABAAAAAQAAAAIAAAACPwAAAASAAAAAAAAAAEAAAAsAEkAZABfAE0AYQBpAG4ARwByAG8AdQBwAF8ASQBEAF8AVABiAEQAcgBhAHcAAAAAAAAAA1wEUQEbAB6A5gAAAAAAAAABAAAAMABJAGQAXwBNAGEAaQBuAEcAcgBvAHUAcABfAEkA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" name="layout"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                    </group>
+                </group>
+            </group>
         </group>
-        <setting type="QByteArray" value="AQAAAAAAAAAEDQAAB4AAAABJAQ==" name="commandwindow"/>
+        <setting type="QByteArray" value="AQAAAAAAAAAEFwAAB4AAAABJAQ==" name="commandwindow"/>
         <setting type="QByteArray" value="AAAAAAAAAAAAAAAAAQQAAAB4AA==" name="community"/>
         <setting type="QByteArray" value="AAAAAAAAAAAAAAAAAWMAAAJvAA==" name="design resources"/>
-        <setting type="QString" value="3DExperience|CommandWindow|Community|Design Resources|G-code Generator|Home|LightListWindow|MatrixToolbarWindow|OptionToolBar|PropertyWindow|Taskpane|XRefManager|" name="dockwidgets"/>
+        <setting type="QString" value="3DExperience|CommandWindow|Community|Design Resources|G-code Generator|Home|LightListWindow|MatrixToolbarWindow|OptionToolBar|PropertyWindow|Taskpane|XRefManager|" name="dockwidgets">
+            <group name="commandwindow">
+                <setting type="int" value="8" name="dockpos"/>
+                <setting type="bool" value="false" name="floating"/>
+                <setting type="int" value="64" name="h"/>
+                <setting type="bool" value="false" name="isautohideenabled"/>
+                <setting type="bool" value="true" name="ontop"/>
+                <setting type="bool" value="true" name="visible"/>
+                <setting type="int" value="1920" name="w"/>
+                <setting type="int" value="0" name="x"/>
+                <setting type="int" value="1071" name="y"/>
+            </group>
+            <group name="home">
+                <setting type="int" value="1" name="dockpos"/>
+                <setting type="bool" value="false" name="floating"/>
+                <setting type="int" value="857" name="h"/>
+                <setting type="bool" value="false" name="isautohideenabled"/>
+                <setting type="bool" value="false" name="ontop"/>
+                <setting type="bool" value="false" name="visible"/>
+                <setting type="int" value="186" name="w"/>
+                <setting type="int" value="21" name="x"/>
+                <setting type="int" value="210" name="y"/>
+            </group>
+            <group name="lightlistwindow">
+                <setting type="int" value="1" name="dockpos"/>
+                <setting type="bool" value="false" name="floating"/>
+                <setting type="int" value="124" name="h"/>
+                <setting type="bool" value="false" name="isautohideenabled"/>
+                <setting type="bool" value="false" name="ontop"/>
+                <setting type="bool" value="false" name="visible"/>
+                <setting type="int" value="124" name="w"/>
+                <setting type="int" value="0" name="x"/>
+                <setting type="int" value="0" name="y"/>
+            </group>
+            <group name="matrixtoolbarwindow">
+                <setting type="int" value="1" name="dockpos"/>
+                <setting type="bool" value="false" name="floating"/>
+                <setting type="int" value="910" name="h"/>
+                <setting type="bool" value="false" name="isautohideenabled"/>
+                <setting type="bool" value="false" name="ontop"/>
+                <setting type="bool" value="false" name="visible"/>
+                <setting type="int" value="323" name="w"/>
+                <setting type="int" value="0" name="x"/>
+                <setting type="int" value="157" name="y"/>
+            </group>
+            <group name="optiontoolbar">
+                <setting type="int" value="4" name="dockpos"/>
+                <setting type="bool" value="false" name="floating"/>
+                <setting type="int" value="49" name="h"/>
+                <setting type="bool" value="false" name="isautohideenabled"/>
+                <setting type="bool" value="false" name="ontop"/>
+                <setting type="bool" value="false" name="visible"/>
+                <setting type="int" value="1920" name="w"/>
+                <setting type="int" value="0" name="x"/>
+                <setting type="int" value="157" name="y"/>
+            </group>
+            <group name="propertywindow">
+                <setting type="int" value="2" name="dockpos"/>
+                <setting type="bool" value="false" name="floating"/>
+                <setting type="int" value="910" name="h"/>
+                <setting type="bool" value="false" name="isautohideenabled"/>
+                <setting type="bool" value="true" name="ontop"/>
+                <setting type="bool" value="true" name="visible"/>
+                <setting type="int" value="326" name="w"/>
+                <setting type="int" value="1594" name="x"/>
+                <setting type="int" value="157" name="y"/>
+            </group>
+            <group name="xrefmanager">
+                <setting type="int" value="1" name="dockpos"/>
+                <setting type="bool" value="false" name="floating"/>
+                <setting type="int" value="857" name="h"/>
+                <setting type="bool" value="false" name="isautohideenabled"/>
+                <setting type="bool" value="false" name="ontop"/>
+                <setting type="bool" value="false" name="visible"/>
+                <setting type="int" value="302" name="w"/>
+                <setting type="int" value="21" name="x"/>
+                <setting type="int" value="210" name="y"/>
+            </group>
+        </setting>
         <setting type="QByteArray" value="AAAAAAAAAAAAAAAAAK4AAACOAA==" name="g-code generator"/>
-        <setting type="QByteArray" value="AdnQywABAAD////4////+AAAB4cAAASPAAACgAAAAVQAAAT/AAADMwAAAAACAA==" name="geometry"/>
-        <setting type="QByteArray" value="AAAAAAAfAAAAUgAAAQoAAAOiAA==" name="home"/>
-        <setting type="QByteArray" value="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" name="layout"/>
+        <setting type="QByteArray" value="AdnQywACAAD////4////+AAAB4cAAASZAAAClAAAAW0AAAUJAAADQQAAAAACAAAAB4A=" name="geometry"/>
+        <setting type="QByteArray" value="AQAAAAAAAAAANAAAAQoAAAPfAQ==" name="home"/>
+        <setting type="QByteArray" value="AAAA/wAAAAD9AAAABAAAAAAAAAEKAAAD3/wCAAAAB/sAAAAWAFgAUgBlAGYATQBhAG4AYQBnAGUAcgAAAAAA/////wAAABUA////+wAAAB4ATABpAGcAaAB0AEwAaQBzAHQAVwBpAG4AZABvAHcAAAAAAP////8AAACRAP////wAAABRAAACKwAAAAAA////+gAAAAACAAAAAfsAAAAQAFQAYQBzAGsAcABhAG4AZQEAAAAA/////wAAAAAAAAAA+wAAACAATQBhAGMAVABvAG8AbABiAGEAcgBXAGkAbgBkAG8AdwAAAAAA/////wAAAAAAAAAA/AAAADQAAAPfAAAAjQD////6AAAAAwIAAAAE+wAAACYATQBhAHQAcgBpAHgAVABvAG8AbABiAGEAcgBXAGkAbgBkAG8AdwAAAAAA/////wAAAGQA////+wAAABwAUAByAG8AcABlAHIAdAB5AFcAaQBuAGQAbwB3AAAAAAD/////AAAAowD////7AAAAGAAzAEQARQB4AHAAZQByAGkAZQBuAGMAZQEAAAAA/////wAAAAAAAAAA+wAAAAgASABvAG0AZQEAAAAA/////wAAAI0A////+wAAABIAQwBvAG0AbQB1AG4AaQB0AHkAAAAAAP////8AAAAAAAAAAPsAAAAgAEQAZQBzAGkAZwBuACAAUgBlAHMAbwB1AHIAYwBlAHMAAAAAAP////8AAAAAAAAAAAAAAAEAAAAAAAAAAPwCAAAAAfsAAAAgAEcALQBjAG8AZABlACAARwBlAG4AZQByAGEAdABvAHIAAAAAAP////8AAAAAAAAAAAAAAAIAAATC/////PwBAAAAAfsAAAAaAE8AcAB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAABLAP///wAAAAMAAAeAAAAASfwBAAAAAfsAAAAaAEMAbwBtAG0AYQBuAGQAVwBpAG4AZABvAHcBAAAAAAAAB4AAAAFYAP///wAABnIAAAPfAAAABAAAAAQAAAAIAAAACPwAAAASAAAAAAAAAAEAAAAsAEkAZABfAE0AYQBpAG4ARwByAG8AdQBwAF8ASQBEAF8AVABiAEQAcgBhAHcAAAAAAAAAA1wEUQEbAB6A5gAAAAAAAAABAAAAMABJAGQAXwBNAGEAaQBuAEcAcgBvAHUAcABfAEkA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" name="layout"/>
         <setting type="QByteArray" value="AAAAAAAAAAAAAAAAAMgAAADIAA==" name="lightlistwindow"/>
         <setting type="QByteArray" value="AAAAAAAfAAAAUgAAAOgAAAMWAA==" name="matrixtoolbarwindow"/>
         <setting type="QByteArray" value="AAAAAAAAAAAAAAAAAGQAAAAeAA==" name="optiontoolbar"/>
         <setting type="QByteArray" value="AAAAAAAAAAAANAAAAQoAAAPVAA==" name="propertywindow"/>
         <setting type="QByteArray" value="AdnQywABAAAAAAKIAAABfgAABPYAAALyAAACkAAAAZwAAATuAAAC6gAAAAAAAA==" name="second_cmdwnd_geometry"/>
         <setting type="QByteArray" value="AQD///0q///7EwAAAOIAAAL5AAAAAQ==" name="taskpane"/>
+        <setting type="int" value="2" name="version"/>
         <setting type="QByteArray" value="AAAAAAAAAAAAAAAAARIAAAItAA==" name="xrefmanager"/>
     </group>
 </settings>

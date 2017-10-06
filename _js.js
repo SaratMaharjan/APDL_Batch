@@ -1,6 +1,7 @@
 'use strict';
 /* eslint no-unused-vars: 'off' */
 
+// region
 /* // Polyfill for bind Method
 if (!Function.prototype.bind) {
   Function.prototype.bind = function(oThis) {
@@ -22,6 +23,7 @@ if (!Function.prototype.bind) {
     return fBound;
   };
 } */
+// endregion
 
 /*
 This
