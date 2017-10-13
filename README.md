@@ -169,6 +169,14 @@
 Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
 
 <pre>
+  git log --oneline --graph --decorate --all -20 (numbers of commits to display)
+
+  git config --global alias.ssb "status -sb"
+  git config --global alias.logo "log --oneline --decorate --graph --all"
+  git config --global alias.who "shortlog -n -s --no-merges"
+  git config --global alias.oneweek "log --since='1 week ago'"
+  git config --global alias.fivedays "log --since='5 days ago'"
+
   git config --global user.name "smhrjn"
   git config --global user.email sarat.maharjan@gmail.com"
   git config --global color.ui true
@@ -183,6 +191,50 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
   git commit (to commit for push)
   git push (to update the repository)
   git pull origin master (to Update from repository)
+
+  git fetch -all : to update references with master
+
+  git rebase other branch - makes commit clean, commits on other branch applied first and commits on current branch added, fast forward merge possible
+
+  git stash save "stash name" (save changes for later)
+  git stash apply stash@{index} (use stash with index, without stash@{index} uses last one)
+  git stash list
+  git stash drop stash@{index} (delete last stash)
+  git stash -u (include untracked files too)
+  git stash pop (apply + drop)
+  git stash show stash@{index} (0 is latest)
+  git stash clear (remove all stashes)
+  git stash branch BRANCH-NAME (create new branch and apply the stash, and drop stash, useful if changed made but should be in other branch)
+
+  ANNOTATION TAGS (represent release versions)
+  git tag -a TAG-NAME commit-id-to-tag -m "message"
+  git tag -a TAG-NAME -f commit-id-to-tag (to correct tag to other commit, use force option)
+  git push origin TAG-NAME (to push tags to remote)
+  git push origin BRANCH-NAME --tags (to push all tags)
+  git tag --list
+  git push origin :TAG-NAME (delete this tag from remote repo)
+  git diff TAG-1 TAG-2
+
+  LIGHTWEIGHT TAG
+  git tag TAG-NAME
+  git tag --list
+  git show TAG-NAME
+  git tag --delete TAG-NAME
+
+  git remote show -v
+  git remote add -m master NAME URL
+  git remote add -t BRANCH NAME URL
+  git remote add -f NAME URL
+
+  git blame FILE -s
+
+  TO INVESTIGATE BUG
+  git bisect start
+  git bisect HASH good
+  git bisect HASH bad
+  git bisect reset
+
+  also look git-subtree.md
 </pre>
 
 #### If chages made without creating branch
