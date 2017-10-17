@@ -1,7 +1,8 @@
 /* eslint-disable */
 const store = new Vuex.Store({
   state: {
-    todos: [{
+    todos: [
+      {
         task: 'Code',
         completed: true,
         id: uuid.v4()
@@ -27,8 +28,8 @@ const store = new Vuex.Store({
         task: payload,
         completed: false,
         id: uuid.v4()
-      }
-      console.log(state)
+      };
+      console.log(state);
       state.todos.unshift(task);
     },
     toggleTodo: (state, payload) => {
@@ -38,27 +39,27 @@ const store = new Vuex.Store({
             task: t.task,
             completed: !t.completed,
             id: t.id
-          }
+          };
         }
         return t;
-      })
+      });
     },
     deleteTodo: (state, payload) => {
       const index = state.todos.findIndex(t => t.id === payload);
-      state.todos.splice(index, 1)
-      console.log(index)
+      state.todos.splice(index, 1);
+      console.log(index);
     }
   }
-})
+});
 
 const todoList = {
   props: ['todos'],
   methods: {
-    toggleTodo: function (id) {
-      this.$store.commit('toggleTodo', id)
+    toggleTodo: function(id) {
+      this.$store.commit('toggleTodo', id);
     },
-    deleteTodo: function (id) {
-      this.$store.commit('deleteTodo', id)
+    deleteTodo: function(id) {
+      this.$store.commit('deleteTodo', id);
     }
   },
   template: `
@@ -67,24 +68,24 @@ const todoList = {
         <li v-for="t in todos" :class="{completed: t.completed}" @click="toggleTodo(t.id)" @dblclick="deleteTodo(t.id)">{{t.task}}</li>
       </ul>
     </div>
-  `,
-}
+  `
+};
 
 var App = new Vue({
-  data: function () {
+  data: function() {
     return {
       task: ''
-    }
+    };
   },
   computed: {
-    todos: function () {
-      return this.$store.getters.todos
+    todos: function() {
+      return this.$store.getters.todos;
     }
   },
   methods: {
-    addTodo: function () {
-      this.$store.commit('addTodo', this.task)
-      this.task = ''
+    addTodo: function() {
+      this.$store.commit('addTodo', this.task);
+      this.task = '';
     }
   },
   template: `

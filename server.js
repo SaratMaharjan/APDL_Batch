@@ -9,5 +9,5 @@ app.use(express.static(__dirname));
 
 app.listen(port, err => {
   if (err) return console.log('cannot start server.');
-  console.log(`Listening on port ${ port }`);
+  console.log(`Listening on port ${port}`);
 });

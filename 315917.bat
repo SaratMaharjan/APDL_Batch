@@ -9,16 +9,16 @@ REM set sourceFile=s.in
 
 REM set redirect=1
 REM set extVar=1
-set nPrefix=f
+REM set nPrefix=qvDown
 
-set proj_Num=314917
+set proj_Num=315917
 
-for /l %%b in (2 1 2) do (
+for /l %%b in (1 1 9) do (
 REM for %%b in (1 2) do (
   REM +ve
   set bq=%%b
-    set interval=1710 40 1710
-    set interval2=10!bq! 1 10!bq!
+    set interval=1 40 1
+    set interval2=!bq! 1 !bq!
       call calc.bat
 
   REM REM -ve

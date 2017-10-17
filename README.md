@@ -181,6 +181,10 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
   git config --global user.email sarat.maharjan@gmail.com"
   git config --global color.ui true
 
+  git config --global --unset-all diff.tool
+  git config --global diff.tool vimdiff
+  git config --global difftool.prompt false
+
   git config remote.origin.url https://smhrjn:password@github.com/smhrjn/vim.git
   git config remote.origin.url https://smhrjn:password@github.com/smhrjn/APDL_Batch.git
 
