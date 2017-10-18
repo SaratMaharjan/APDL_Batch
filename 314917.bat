@@ -5,7 +5,7 @@ REM set pathBefore=F:
 REM set pathAfter=ansys
 
 REM set sourcePre=R:\maharjan
-REM set sourceFile=s.in
+REM set sourceFile=s-alt.in
 
 REM set redirect=1
 REM set extVar=1
@@ -17,8 +17,8 @@ for /l %%b in (2 1 2) do (
 REM for %%b in (1 2) do (
   REM +ve
   set bq=%%b
-    set interval=1710 40 1710
-    set interval2=10!bq! 1 10!bq!
+    set interval=2710 600 2710
+    set interval2=80!bq! 1 80!bq!
       call calc.bat
 
   REM REM -ve

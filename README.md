@@ -238,6 +238,18 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
   git bisect HASH bad
   git bisect reset
 
+  GIT LOCAL REMOTE REPO
+  on remote folder
+    git init --bare
+  on working folder
+    git init
+    git add .
+    git commit -m "message"
+    git remote add origin file:///path-to-remote-folder
+    git push origin master
+  to clone
+    git clone file:///path-to-remote-folder
+
   also look git-subtree.md
 </pre>
 
