@@ -8,7 +8,7 @@ REM set sourcePre=R:\maharjan
 REM set sourceFile=s.in
 
 set redirect=0
-REM set extVar=0
+REM set extVar=1
 
 set proj_Num=279914
 
