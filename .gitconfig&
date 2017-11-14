@@ -1,0 +1,17 @@
+[user]
+	name = smhrjn
+	email = sarat.maharjan@gmail.com
+[gui]
+	recentrepo = D:/zCore
+[alias]
+	ssb = status -sb
+	logo = log --oneline --decorate --graph --all
+	logon = log --oneline --decorate --graph --all -n 20
+	who = shortlog -n -s --no-merges
+	oneweek = log --since='1 week ago'
+	fivedays = log --since='5 days ago'
+[diff]
+[difftool]
+	prompt = false
+[diff]
+	tool = vimdiff
