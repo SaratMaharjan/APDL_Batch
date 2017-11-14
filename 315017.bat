@@ -13,11 +13,11 @@ REM set nPrefix=qvDown
 
 set proj_Num=315017
 
-for /l %%b in (1 1 1) do (
+for /l %%b in (1 1 4) do (
 REM for %%b in (1 2) do (
   REM +ve
   set bq=%%b
-    set interval=1000 10 1000
+    set interval=2000 1000 2000
     set interval2=!bq! 1 !bq!
       call calc.bat
 

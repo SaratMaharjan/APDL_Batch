@@ -1,4 +1,3 @@
-
 /* eslint-disable */
 function td_does_ns_exist(ns) {
   var tree_id = DS.Tree.FindObjectByString(ns, true, true);
@@ -106,8 +105,8 @@ function td_remove_sel_ns(ns) {
 
 var SC = DS.Script;
 var SM = SC.sm;
-for(var ii = 1; ii <= 7; ii=ii+1){
-  td_new_sel_ns("kfc"+ii);
+for (var ii = 1; ii <= 34; ii = ii + 1) {
+  td_new_sel_ns('Group' + ii);
   SC.doCreateCoordinateSystem();
 }
 // for(var ii = 1; ii <= 4; ii++){

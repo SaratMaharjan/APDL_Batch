@@ -37,7 +37,7 @@ for /l %%m in (!interval!) do (
   for /l %%n in (!interval2!) do (
 
     set par=%%n
-    set num=2
+    set num=3
 
     call add-zeroes.bat :addZero
 

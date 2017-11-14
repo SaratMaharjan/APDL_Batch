@@ -1,0 +1,302 @@
+! ---------------
+! Last Modified: Tuesday, November 14th 2017, 11:43:06 am
+! Modified By: mhrjn
+! ---------------
+
+fini
+/fil, f2000-001
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2000-002
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2000-003
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2000-004
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+! /com, first
+! a= 2
+! *if, a, eq, 1, then
+! *return, -1
+! *endif
+! /inp, s61, in, verz
+! /com, second
+! ! schraub931, 42, 8.8, 5
+! ! schraub931, 42, 10.9, 5
+! ! schraub931, 42, 12.9, 5
+! /eof
+
+! /nopr
+! emms, 3
+! plnsol, s, eqv
+! /output, test, csv
+! *do, i, 1, 200
+  ! *get, aaa, common, , cpost1, , int, %i%
+  ! ! *get, aaa, common, , acelcm, , real, %i%
+  ! /com, %i%: %aaa%
+! *enddo
+! /output
+! /gopr
+! /eof
+
+! /cwd, D:\303416\ANSYS
+
+! ! *do, cpLoop, 1, 8
+!   fini
+!   /clear
+!   cploop = 1
+!   /fil, f1000-0%cpLoop%
+!   resu
+!   p1
+!   ! keyw, pr_sgvof, 1
+!   ! /inp, newComp, in, verz
+!   ! save
+!   /inp, s61, in, verz
+! ! *enddo
+
+! ! *do, cpLoop, 1, 8
+!   fini
+!   /clear
+!   cploop = 2
+!   /fil, f1000-0%cpLoop%
+!   resu
+!   p1
+!   ! keyw, pr_sgvof, 1
+!   ! /inp, newComp, in, verz
+!   ! save
+!   /inp, s61, in, verz
+! ! *enddo
+
+vii2
+pl7, 'ux'
+pl7, 'uy'
+pl7, 'uz'
+vii5
+pl7, 'ux'
+pl7, 'uy'
+pl7, 'uz'
+vii2
+pl7, 'sx'
+pl7, 'sy'
+pl7, 'sz'
+pl7, sip, sgv
+vii5
+pl7, 'sx'
+pl7, 'sy'
+pl7, 'sz'
+pl7, sip, sgv
+
+/eof
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 1
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 2
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 3
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 4
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+/eof
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 3
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 4
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 5
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 6
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 7
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 8
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  /inp, s61, in, verz
+! *enddo
+
+
+! ! *do, cpLoop, 1, 8
+!   fini
+!   /clear
+!   cploop = 4
+!   /fil, f1000-0%cpLoop%
+!   resu
+!   p1
+!   ! keyw, pr_sgvof, 1
+!   ! /inp, newComp, in, verz
+!   ! save
+!   /inp, s61, in, verz
+! ! *enddo
+
+/eof
+
+! *do, cpLoop, 1, 8
+  fini
+  /clear
+  cploop = 5
+  /fil, f1000-0%cpLoop%
+  resu
+  p1
+  ! keyw, pr_sgvof, 1
+  ! /inp, newComp, in, verz
+  ! save
+  jplot, 9
+  /inp, belastungPlot, in, verz
+  jplot
+! *enddo
+
+
+/eof
+
+  /cwd, D:\304516\ANSYS
+  job3, jobt
+  resu
+    ! anfang To check if license was available
+    inPrep = 1
+    /output, license, txt
+      *vwrite, inPrep
+  %1I
+    /output
+    ! ende check License
+  /inp, s61, in, verz
+
+/eof
+
+  /com, ----------------- VERIFICATION ---------------
+  /com, ------------------ VALUES USED ---------------
+  *msg, , joblk1, joblk2, jobset
+  joblk1: %G ; joblk2: %G ; jobset: %G ;
+  /com, --------------------------------------------
+
+/eof

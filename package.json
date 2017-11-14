@@ -5,11 +5,10 @@
   "main": "sm.bat",
   "scripts": {
     "calc": "start D:\\zcore\\sm.bat",
-    "push": "npm-list.bat && git add . && git commit -m 'regular' && git push origin master"
+    "push":
+      "copy C:\\Users\\Maharjan\\.gitconfig D:\\zcore\\.gitconfig && npm-list.bat && git add . && git commit -m 'regular' && git push origin master"
   },
-  "keywords": [
-    "ansys batch"
-  ],
+  "keywords": ["ansys batch"],
   "author": "sm",
   "license": "ISC",
   "repository": {

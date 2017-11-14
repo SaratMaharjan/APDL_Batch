@@ -68,7 +68,8 @@ const rxjs_ = () => {
   stopStream.subscribe(value => console.log('stop stream occured'));
 
   // Filter out target values less than 3 characters long
-  myObservable2.filter(event => true)
+  myObservable2
+    .filter(event => true)
     // Let through latest event after 200 ms
     .debounceTime(200)
     // Only let through an event every 200 ms
@@ -90,12 +91,12 @@ const reduceFlatten = () => {
   }, 0);
   console.log(sum);
 
-  const flatten = arr => arr.reduce(
-    (acc, val, index, array) => acc.concat(
-      Array.isArray(val) ? flatten(val) : val
-    ),
-    []
-  );
+  const flatten = arr =>
+    arr.reduce(
+      (acc, val, index, array) =>
+        acc.concat(Array.isArray(val) ? flatten(val) : val),
+      []
+    );
   const list1 = [[0, 1], [2, 3], [4, 5]];
   console.log(flatten(list1)); // returns [0, 1, 2, 3, 4, 5]
 };
@@ -163,7 +164,7 @@ const lodashes = () => {
 
   console.log(_.random(15, 20));
 
-  let objA = { 'name': 'colin', 'car': 'suzuki', 'age': 17 };
+  let objA = { name: 'colin', car: 'suzuki', age: 17 };
   let objB = _.omit(objA, ['car']);
   console.log(objB);
   objB = _.omitBy(objB, _.isNumber);
@@ -188,31 +189,39 @@ const utils = {
     const fMom = 0.65 * force;
     // const fEff = 0.25 * force;
 
-    console.log( 'Math.PI : ' + Math.PI );
+    console.log('Math.PI : ' + Math.PI);
 
-    const pMom = fMom / ( Math.PI * cylDia );
+    const pMom = fMom / (Math.PI * cylDia);
 
     const moment = 1 / 2 * pMom * cylRad * cylRad * Math.PI;
-    console.log( 'Moment : ' + moment );
+    console.log('Moment : ' + moment);
 
     // var earthMoment = 1 / 2 * fMom * cylRad * cylRad * Math.PI;
     // console.log( 'Earth Moment : ' + earthMoment );
 
-    const pres = 3 / 2 * Math.PI * pMom * (cylRad * cylRad) / (length * length) * 1 / diameter;
+    const pres =
+      3 /
+      2 *
+      Math.PI *
+      pMom *
+      (cylRad * cylRad) /
+      (length * length) *
+      1 /
+      diameter;
     const presEffective = 1.5 * pres;
 
-    console.log( 'Pressure : ' + pres );
-    console.log( '1.5x Pressure : ' + presEffective );
+    console.log('Pressure : ' + pres);
+    console.log('1.5x Pressure : ' + presEffective);
 
     const presOriginal = 0.081;
     let presAdd = presOriginal + presEffective;
     let presSub = presOriginal - presEffective;
 
-    if ( presSub < 0 ) {
+    if (presSub < 0) {
       presAdd -= presSub;
       presSub -= presSub;
     }
-    console.log( 'New Pressure: ' + presAdd + ' and ' + presSub );
+    console.log('New Pressure: ' + presAdd + ' and ' + presSub);
   },
 
   radius(area) {
@@ -233,7 +242,9 @@ const utils = {
     const sangle1 = Math.sin(28 * Math.PI / 180);
     const sangle2 = Math.sin(23.7 * Math.PI / 180);
     const force1 = 1900 / (sangle1 + cangle1 / cangle2 * sangle2);
-    console.log('F1: ' + force1 + ' and ' + 'F2: ' + force1 * cangle1 / cangle2);
+    console.log(
+      'F1: ' + force1 + ' and ' + 'F2: ' + force1 * cangle1 / cangle2
+    );
   },
 
   tuts() {
@@ -243,17 +254,17 @@ const utils = {
     console.log(i + 1); // Numerical addition: show the number 6
 
     const name = prompt('Enter your first name:');
-    alert(`Hello, ${ name }`);
+    alert(`Hello, ${name}`);
 
     const expression = 1;
     switch (expression) {
-    case 0:
-      // Code to run when the expression matches value1
-      break;
-    case 1:
-      // Code to run when the expression matches value2
-      break;
-    default:
+      case 0:
+        // Code to run when the expression matches value1
+        break;
+      case 1:
+        // Code to run when the expression matches value2
+        break;
+      default:
       // Code to run when neither case matches
     }
 
@@ -387,7 +398,7 @@ let thisClosureBugFix = () => {
 // thisClosureBugFix();
 */
 
-let bitWiseOddEven = (number) => {
+let bitWiseOddEven = number => {
   if ((number & 1) == 0) {
     console.log(`${number} is even.`);
   } else {
@@ -425,4 +436,21 @@ let checkNumber = () => {
   console.log(Math.sign(NaN));
   console.log(Math.sign(Infinity));
 };
-checkNumber();
+// checkNumber();
+
+let doubleAfter2Seconds = x => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(x * 2);
+    }, 2000);
+  });
+};
+let addAsync = async x => {
+  const a = await doubleAfter2Seconds(10);
+  const b = await doubleAfter2Seconds(20);
+  const c = await doubleAfter2Seconds(30);
+  return x + a + b + c;
+};
+addAsync(10).then(sum => {
+  console.log(sum);
+});
