@@ -1,7 +1,7 @@
 # The basics
 
 ## Converting to observables
-<!-- skip-example -->
+
 ```js
 // From one or multiple values
 Rx.Observable.of('foo', 'bar');
@@ -27,7 +27,9 @@ rename('file.txt', 'else.txt').subscribe(() => console.log('Renamed!'));
 ```
 
 ## Creating observables
+
 Externally produce new events.
+
 ```js
 var myObservable = new Rx.Subject();
 myObservable.subscribe(value => console.log(value));
@@ -35,6 +37,7 @@ myObservable.next('foo');
 ```
 
 Internally produce new events.
+
 ```js
 var myObservable = Rx.Observable.create(observer => {
   observer.next('foo');
@@ -46,6 +49,7 @@ myObservable.subscribe(value => console.log(value));
 Which one you choose depends on the scenario. The normal **Observable** is great when you want to wrap functionality that produces values over time. An example would be a websocket connection. With **Subject** you can trigger new events from anywhere really and you can connect existing observables to it.
 
 ## Controlling the flow
+
 ```js
 // typing "hello world"
 var input = Rx.Observable.fromEvent(document.querySelector('input'), 'input');
@@ -83,6 +87,7 @@ input.takeUntil(stopStream)
 ```
 
 ## Producing values
+
 ```js
 // typing "hello world"
 var input = Rx.Observable.fromEvent(document.querySelector('input'), 'input');

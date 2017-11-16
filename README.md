@@ -36,13 +36,7 @@
 
 #### Essential Globals
 
-- @angular/cli
-- eslint
-- eslint-config-google
-- eslint-plugin-html
-- eslint-plugin-import
-- surge
-- vsce
+- file: npm-lsit.txt
 
 ### Heroku
 
