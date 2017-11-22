@@ -1,10 +1,10 @@
 ! ---------------
-! Last Modified: Tuesday, November 14th 2017, 11:43:06 am
+! Last Modified: Wednesday, November 22nd 2017, 11:16:13 am
 ! Modified By: mhrjn
 ! ---------------
 
 fini
-/fil, f2000-001
+/fil, f2100-101
 resu
 p1
 jplot, 9
@@ -13,7 +13,7 @@ inq, 'gs61'
 jplot
 
 fini
-/fil, f2000-002
+/fil, f2100-201
 resu
 p1
 jplot, 9
@@ -22,7 +22,7 @@ inq, 'gs61'
 jplot
 
 fini
-/fil, f2000-003
+/fil, f2100-301
 resu
 p1
 jplot, 9
@@ -31,7 +31,43 @@ inq, 'gs61'
 jplot
 
 fini
-/fil, f2000-004
+/fil, f2100-401
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2100-501
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2100-601
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2100-701
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2100-801
 resu
 p1
 jplot, 9

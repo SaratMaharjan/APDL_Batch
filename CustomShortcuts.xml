@@ -3,12 +3,11 @@
   <shortcut command="Rotate" key="Ctrl+J" />
   <shortcut command="SplitBodyTool" mnemonic="Q" />
   <shortcut command="CaeMidsurface" mnemonic="W" />
-  <shortcut command="SplitFace" key="Alt+F" />
   <shortcut command="StyleOpaque" mnemonic="O" />
   <shortcut command="RandomizeColors" key="Alt+X" />
   <shortcut command="ProjectToSolid" mnemonic="+" />
   <shortcut command="CaeShowAllBodies" mnemonic="&gt;" />
-  <shortcut command="ShowOptions" key="Alt+O" />
+  <shortcut command="ShowOptions" key="Ctrl+F12" />
   <shortcut command="DebugReverseFaceNormal" key="Alt+N" />
   <shortcut command="AnalysisNormal" mnemonic="N" />
   <shortcut command="CurveOffset" mnemonic="Ö" />
@@ -16,4 +15,6 @@
   <shortcut command="CreateRefDatum" key="Alt+P" />
   <shortcut command="SnapView" key="Alt+Up" />
   <shortcut command="PlaceInComponent" key="Ctrl+Shift+N" />
+  <shortcut command="ToolGuideAnchor" key="Alt+A" />
+  <shortcut command="SplitFace" key="Alt+F" />
 </shortcuts>
