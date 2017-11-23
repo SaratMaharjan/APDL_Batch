@@ -1,79 +1,54 @@
 ! ---------------
-! Last Modified: Wednesday, November 22nd 2017, 11:16:13 am
+! Last Modified: Thursday, November 23rd 2017, 11:13:00 am
 ! Modified By: mhrjn
 ! ---------------
 
 fini
-/fil, f2100-101
+/fil, f2049-11
 resu
 p1
 jplot, 9
-jptf = 9
-inq, 'gs61'
+jptf=9
+inq, 's61'
 jplot
 
 fini
-/fil, f2100-201
+/fil, f2019-12
 resu
 p1
 jplot, 9
-jptf = 9
-inq, 'gs61'
+jptf=9
+inq, 's61'
 jplot
 
 fini
-/fil, f2100-301
+/fil, f2049-12
 resu
 p1
 jplot, 9
-jptf = 9
-inq, 'gs61'
+jptf=9
+inq, 's61'
 jplot
 
 fini
-/fil, f2100-401
+/fil, f2049-13
 resu
 p1
 jplot, 9
-jptf = 9
-inq, 'gs61'
+jptf=9
+inq, 's61'
 jplot
 
 fini
-/fil, f2100-501
+/fil, f2079-13
 resu
 p1
 jplot, 9
-jptf = 9
-inq, 'gs61'
+jptf=9
+inq, 's61'
 jplot
 
-fini
-/fil, f2100-601
-resu
-p1
-jplot, 9
-jptf = 9
-inq, 'gs61'
-jplot
-
-fini
-/fil, f2100-701
-resu
-p1
-jplot, 9
-jptf = 9
-inq, 'gs61'
-jplot
-
-fini
-/fil, f2100-801
-resu
-p1
-jplot, 9
-jptf = 9
-inq, 'gs61'
-jplot
+/eof
 
 ! /com, first
 ! a= 2

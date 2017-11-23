@@ -17,8 +17,8 @@ for /l %%b in (1 1 1) do (
 REM for %%b in (1 2) do (
   REM +ve
   set bq=%%b
-    set interval=2200 1 2200
-    set interval2=10!bq! 100 80!bq!
+    set interval=2300 1 2300
+    set interval2=10!bq! 100 10!bq!
       call calc.bat
 
   REM REM -ve
