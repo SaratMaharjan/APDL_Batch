@@ -331,6 +331,7 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
   Replace with ^p to replace with new line. NOTEPAD++??
 
   Word template location : %appdata%\Microsoft\Templates\
+  Windows 10 startup location : windows+R -> shell:startup
 
   If Spaceclaim is slow: Right click on "My Computer" and go to
   Properties > Advanced System Settings > Environment Variables

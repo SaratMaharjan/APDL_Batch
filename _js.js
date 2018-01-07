@@ -452,6 +452,11 @@ let addAsync = async x => {
   const c = await doubleAfter2Seconds(30);
   return x + a + b + c;
 };
-addAsync(10).then(sum => {
-  console.log(sum);
-});
+// addAsync(10).then(sum => {
+//   console.log(sum);
+// });
+
+// Regex
+const regexLiteral = /cat/gi;
+const regexConstr = new RegExp('cat');
+console.log(regexLiteral.test('iscatinside'));
