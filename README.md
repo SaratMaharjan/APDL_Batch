@@ -1,22 +1,22 @@
 # APDL_Batch
 
-  Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes used often.
+Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes used often.
 
 <!-- TOC -->
 
-- [APDL_Batch](#apdl_batch)
-  - [Notes](#notes)
-    - [Node and NPM](#node-and-npm)
-      - [Essential Globals](#essential-globals)
-    - [Heroku](#heroku)
-    - [VIM](#vim)
-    - [GIT](#git)
-      - [If chages made without creating branch](#if-chages-made-without-creating-branch)
-        - [If no commits are made](#if-no-commits-are-made)
-        - [If already commited](#if-already-commited)
-    - [AutoCAD](#autocad)
-    - [Windows Command Line](#windows-command-line)
-    - [OTHERS](#others)
+* [APDL_Batch](#apdl_batch)
+  * [Notes](#notes)
+    * [Node and NPM](#node-and-npm)
+      * [Essential Globals](#essential-globals)
+    * [Heroku](#heroku)
+    * [VIM](#vim)
+    * [GIT](#git)
+      * [If chages made without creating branch](#if-chages-made-without-creating-branch)
+        * [If no commits are made](#if-no-commits-are-made)
+        * [If already commited](#if-already-commited)
+    * [AutoCAD](#autocad)
+    * [Windows Command Line](#windows-command-line)
+    * [OTHERS](#others)
 
 <!-- /TOC -->
 
@@ -36,12 +36,12 @@
 
 #### Essential Globals
 
-- file: npm-lsit.txt
+* file: npm-lsit.txt
 
 ### Heroku
 
-- Heroku CLI
-- heroku-repo
+* Heroku CLI
+* heroku-repo
 
 ### VIM
 
@@ -164,23 +164,6 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
 
 <pre>
   git log --oneline --graph --decorate --all -20 (numbers of commits to display)
-
-  git config --global alias.ssb "status -sb"
-  git config --global alias.logo "log --oneline --decorate --graph --all"
-  git config --global alias.who "shortlog -n -s --no-merges"
-  git config --global alias.oneweek "log --since='1 week ago'"
-  git config --global alias.fivedays "log --since='5 days ago'"
-
-  git config --global user.name "smhrjn"
-  git config --global user.email sarat.maharjan@gmail.com"
-  git config --global color.ui true
-
-  git config --global --unset-all diff.tool
-  git config --global diff.tool vimdiff
-  git config --global difftool.prompt false
-
-  git config remote.origin.url https://smhrjn:password@github.com/smhrjn/vim.git
-  git config remote.origin.url https://smhrjn:password@github.com/smhrjn/APDL_Batch.git
 
   git init NAME
   git clone URL (To get repository to LOCAL directory)
