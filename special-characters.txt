@@ -1,0 +1,41 @@
+ä : alt 132
+Ä : alt 142
+ö : alt 148
+Ö : alt 153
+ü : alt 129
+Ü : alt 154
+ß : alt 225
+
+~ : alt 126
+® : alt 169
+½ : alt 171
+¼ : alt 172
+¡ : alt 173
+« : alt 174
+» : alt 175
+░ : alt 176
+▒ : alt 177
+▓ : alt 178
+© : alt 184
+█ : alt 219
+▄ : alt 220
+▀ : alt 223
+± : alt 241
+¾ : alt 243
+§ : alt 245
+÷ : alt 246
+° : alt 248
+· : alt 250
+¹ : alt 251
+³ : alt 252
+² : alt 253
+■ : alt 254
+× : alt 158
+Ø : alt 157
+ƒ : alt 159
+µ : alt 230
+€ : alt 0128
+
+
+­
+­
