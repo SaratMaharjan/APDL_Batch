@@ -4,48 +4,84 @@
 ! ---------------
 
 fini
-/fil, f2049-11
+/fil, f1100-101
 resu
 p1
+jptf = 9
 jplot, 9
-jptf=9
-inq, 's61'
+inq, 'gs61'
 jplot
 
 fini
-/fil, f2019-12
+/fil, f1100-201
 resu
 p1
+jptf = 9
 jplot, 9
-jptf=9
-inq, 's61'
+inq, 'gs61'
 jplot
 
 fini
-/fil, f2049-12
+/fil, f1100-301
 resu
 p1
+jptf = 9
 jplot, 9
-jptf=9
-inq, 's61'
+inq, 'gs61'
 jplot
 
 fini
-/fil, f2049-13
+/fil, f1100-401
 resu
 p1
+jptf = 9
 jplot, 9
-jptf=9
-inq, 's61'
+inq, 'gs61'
 jplot
 
 fini
-/fil, f2079-13
+/fil, f1100-501
 resu
 p1
+jptf = 9
 jplot, 9
-jptf=9
-inq, 's61'
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1100-601
+resu
+p1
+jptf = 9
+jplot, 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1100-701
+resu
+p1
+jptf = 9
+jplot, 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1100-801
+resu
+p1
+jptf = 9
+jplot, 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1100-901
+resu
+p1
+jptf = 9
+jplot, 9
+inq, 'gs61'
 jplot
 
 /eof

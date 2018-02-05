@@ -152,12 +152,14 @@ Return
 ;ende CREO mouse settings
 
 #w::
-  if(InStr(A_ComputerName,"SMAHARJAN")){
+  if(InStr(A_ComputerName,"ANSYS2")){
     Run "D:\zCore\run-ansys.bat"
   } else {
     Run "E:\maharjan\run-ansys.bat"
   }
 return
+
+#k:: Run "E:\SM\PortableApps\PortableApps\Keypirinha\keypirinha.exe"
 
 #u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
 

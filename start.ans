@@ -16,7 +16,7 @@
 !
 !*ABBR,REPLOT  ,/REPLOT           ! Replots the last graphics display
 !*ABBR,ISO     ,/VIEW,,1,1,1      ! Changes the view to isometric
-!*ABBR,FRONT   ,/VIEW,,0,0,1      ! Changes the view to front view 
+!*ABBR,FRONT   ,/VIEW,,0,0,1      ! Changes the view to front view
 !*ABBR,VECTOR  ,/DEVICE,VECT,ON   ! Specifies vector mode for graphics displays
 !*ABBR,RASTER  ,/DEVICE,VECT,OFF  ! Specifies raster mode for graphics displays
 !*ABBR,NOERASE ,/NOERASE          ! Does not erase the screen between plots
@@ -30,7 +30,7 @@
 !
 ! The next abbreviations are system-dependent:
 !
-! To invoke a system editor: 
+! To invoke a system editor:
 !*ABBR,SYS_EDIT,/SYS,xterm -title 'ANSYS  vi_Editor' -e vi &    ! UNIX
 !*ABBR,SYS_EDIT,/SYS,start notepad                              ! Windows-NT
 !
@@ -102,7 +102,7 @@
 !/MSTART,HARD,ON     ! Displays Hard Copy dialog box
 !/MSTART,HELP,ON     ! Displays ANSYS Help System
 !
-! The /MPLIB command controls the default path used to find and display 
+! The /MPLIB command controls the default path used to find and display
 ! the material library files.
 !
 ! UNIX example:
@@ -114,26 +114,27 @@
 !
 !/GOPR             ! Activates the printout previously suppressed by /NOPR
 !
-!/UIS,BORD,1,2,3    ! Sets Dynamic mode button order to default 
+!/UIS,BORD,1,2,3    ! Sets Dynamic mode button order to default
 !                    (left= 1,center= 2,right= 3)
 !                    Button 1 is xy translate in dynamic mode
 !                    Button 2 is zoom and rotate about view vector
-!                    Button 3 is rotate about x or y axis      
+!                    Button 3 is rotate about x or y axis
 !
 ! ***********************  End of sample START.ANS file  ***********************
-/psearch,\\server\server_lw_d\ansys\macros
-/mstart,tool,off
-/mstart,util,off
-/mstart,zoom,off
+! /psearch, \\server\server_lw_d\ansys\macros
+/psearch, D:\macros
+/mstart, tool, off
+/mstart, util, off
+/mstart, zoom, off
 
-*abbr,p7,/prep7
-*abbr,p1,/post1
-*abbr,kdi,kdis,p
+*abbr, p7, /prep7
+*abbr, p1, /post1
+*abbr, kdi, kdis, p
+*abbr, cp7, /input, cp7sm, mac, D:\zcore\macros
 
-!*ulib,sm,mac,D:\zzCore
-!*use,abs
+!*ulib, sm, mac, D:\zzCore
+!*use, abs
 absm
 
-/color,pbak,off
-!/config,nproc,2
-
+/color, pbak, off
+!/config, nproc, 2

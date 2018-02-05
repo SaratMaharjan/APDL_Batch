@@ -19,7 +19,7 @@ if (header1 && header1 != '') {
 }
 console.info('Header: ' + header);
 
-let projectPath = 'C:\\Users\\maharjan\\OneDrive - ANAKON GmbH\\apdl\\';
+let projectPath = 'x:\\ins\\';
 let completePath = projectPath + project;
 console.info(`Project Path: ${completePath}`);
 
@@ -58,4 +58,5 @@ fs.readdir(completePath, (err, files) => {
   });
 });
 
-setTimeout(() => console.log('exiting...'), 5000);
+// let exitCode = readline.question(`Enter to exit... `);
+// setTimeout(() => console.log('exiting...'), 5000);

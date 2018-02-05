@@ -18,7 +18,7 @@ setlocal EnableDelayedExpansion
   set /p host=<hostname.txt
   echo Hostname: !host!
 
-  if "!host!" equ "ansys2" (
+  if "!host!" neq "ansys2" (
     if %drive% equ 1 (
       set pathBefore=D:\maharjan
       set pathAfter=ansys
@@ -114,7 +114,7 @@ echo Display Device: %dispName%
 
 call timer.bat :startTimer
 
-set apdlCMD="C:\Program Files\ANSYS Inc\v182\ansys\bin\winx64\ansys182.exe"  -g -p !ansj! ^
+set apdlCMD="C:\Program Files\ANSYS Inc\v190\ansys\bin\winx64\ansys190.exe"  -g -p !ansj! ^
  -dir "!pathBefore!\%proj_Num%\!pathAfter!" -j %filNam% -s read -m 8192 -db 4096 -l en-us -t -d %dispName%
 
 echo.
