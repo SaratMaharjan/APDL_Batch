@@ -1,1 +1,1 @@
-node D:\zCore\rLines.js
+node %userprofile%\dropbox\zCore\rLines.js

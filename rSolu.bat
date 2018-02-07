@@ -1,1 +1,1 @@
-node D:\zCore\rSolu.js
+node %userprofile%\dropbox\zCore\rSolu.js

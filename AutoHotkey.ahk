@@ -153,7 +153,7 @@ Return
 
 #w::
   if(InStr(A_ComputerName,"ANSYS2")){
-    Run "D:\zCore\run-ansys.bat"
+    Run "C:\Users\maharjan\Dropbox\zCore\run-ansys.bat"
   } else {
     Run "E:\maharjan\run-ansys.bat"
   }
