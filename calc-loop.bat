@@ -13,7 +13,7 @@ for /l %%c in ( 1 1 1 ) do (
   set retry=%%c
 
   for /l %%r in ( !startValue! 1 !endValue! ) do (
-    REM licenses anfang
+    REM licenses region
       set numPro=!numPro!
 
       if %%r equ 1 (
@@ -34,34 +34,34 @@ for /l %%c in ( 1 1 1 ) do (
       echo Processors: !numPro!
       echo Project: %proj_Num%
       echo source %d% : !location!
-    REM licenses ende
+    REM licenses endregion
 
     call timer.bat startTimer
     (echo 0) > !wDir!\license-!nPrefix!!job!-!lk!.txt
 
-    REM anfang Call ANSYS
+    REM region Call ANSYS
     del "!wDir!\f!job!-!lk!.err" >nul 2>&1
 
-    set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -verz !location!^
+    set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -dis -mpi INTELMPI -jobstg !job!  -jobt !lk! -verz !location!^
  -redirect !redirect! -i "!location!\!sourceFile!" -o "!wDir!\!nPrefix!!job!-!lk!.out" -dir "!wDir!"^
  -j "!nPrefix!!job!-!lk!" -extVar !extVar! -nPrefix "!nPrefix!"
 
     echo.
     echo !apdlCMD!
 
-    echo.>> !wDir!\sm-apdl.bat
-    echo !apdlCMD! >> !wDir!\sm-apdl.bat
+    echo.>> !bDir!\run-calc.bat
+    echo !apdlCMD! >> !bDir!\run-calc.bat
     echo.
 
     if %execute% equ 1 (
       !apdlCMD!
     )
-    REM ende Call ANSYS
+    REM endregion Call ANSYS
 
     call timer.bat stopTimer
     call timer.bat displayTimerResult
     set /a mins=!tCalc!/60
-    echo                        REM +++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++ >> !wDir!\sm-apdl.bat
+    echo                        REM +++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++ >> !bDir!\run-calc.bat
 
     if %execute% equ 1 (
       set /p inPrep=<!wDir!\license-!nPrefix!!job!-!lk!.txt
@@ -80,7 +80,7 @@ for /l %%c in ( 1 1 1 ) do (
       echo.
       goto :checkOuter
     )
-    REM print message anfang
+    REM print message region
     echo.
     echo  ------------ COULDN'T CALCULATE ------------- & echo.
     echo PROBABLE REASONS:
@@ -94,7 +94,7 @@ for /l %%c in ( 1 1 1 ) do (
     echo.
     echo. !ansj! try Failed
     echo.
-    REM print message ende
+    REM print message endregion
    )
 
   :checkOuter

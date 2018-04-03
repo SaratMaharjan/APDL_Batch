@@ -27,7 +27,7 @@ F1::Send {Esc}
   MsgBox, The active window is "%Title%".
 Return
 
-;anfang APDL mouse settings
+;region APDL mouse settings
 #IfWinActive, ^ANSYS
   RButton::
     SendInput {Ctrl down}{RButton down}
@@ -43,7 +43,7 @@ Return
 #IfWinActive
 ;ende APDL mouse
 
-;anfang ANSYS Mechanical
+;region ANSYS Mechanical
 #IfWinActive, Mechanical.*ANSYS
   <::  Send {F9}
 
@@ -63,7 +63,7 @@ Return
 #IfWinActive
 ;ende APDL mouse
 
-;anfang RSTAB
+;region RSTAB
 #IfWinActive, RSTAB
   RButton::
     SendInput {Ctrl down}{MButton down}
@@ -81,7 +81,7 @@ Return
 #IfWinActive
 ;ende RSTAB mouse
 
-;anfang Spaceclaim hide unhide
+;region Spaceclaim hide unhide
 #IfWinActive, SpaceClaim$
   <::
     ;Click Right
@@ -110,7 +110,7 @@ Return
 #IfWinActive
 ;ende
 
-;anfang Creo Mouse Settings
+;region Creo Mouse Settings
 #IfWinActive, Creo Elements/Direct 3D Access
   RButton::MButton
 
@@ -159,7 +159,13 @@ Return
   }
 return
 
-#k:: Run "E:\SM\PortableApps\PortableApps\Keypirinha\keypirinha.exe"
+#k::
+  if(InStr(A_ComputerName,"ANSYS2")){
+    Run "C:\Users\sarat\Google Drive (sarat.maharaja@gmail.com)\PortableApps\PortableApps\_Keypirinha\keypirinha.exe"
+  } else {
+    Run "C:\Users\sarat\Google Drive (sarat.maharaja@gmail.com)\PortableApps\PortableApps\_Keypirinha\keypirinha.exe"
+  }
+return
 
 #u:: Run "C:\Users\Maharjan\Desktop\untermStrich.url"
 
@@ -173,7 +179,7 @@ return
   return
 #IfWinActive
 
-;anfang Delete Images
+;region Delete Images
 #IfWinActive ahk_class CabinetWClass
   #p::
     FullPath := GetActivePath()
@@ -194,7 +200,7 @@ return
 #IfWinActive
 ;ende Delete Images
 
-;anfang Create File works only on win 7
+;region Create File works only on win 7
 #IfWinActive ahk_class CabinetWClass
   ^!n::
     ; get full path from open windows
@@ -219,7 +225,7 @@ return
 #IfWinActive
 ;ende Create File
 
-;anfang FUNCTIONS
+;region FUNCTIONS
   ToggleWinMinimize(TheWindowTitle) {
     SetTitleMatchMode,2
     DetectHiddenWindows, Off
@@ -250,7 +256,7 @@ return
   }
 ;ende Functions
 
-; ;anfang Delete Temporary Files
+; ;region Delete Temporary Files
 ; #IfWinActive ahk_class CabinetWClass
 ;   #ü::
 ;     ; get full path from open windows
@@ -313,7 +319,7 @@ return
 ; #IfWinActive
 ; ;ende Delete Temp Files Ansys
 
-;anfang Local Locations
+;region Local Locations
 ; #a::
 ;   if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
 ;     run "R:\Maharjan"
@@ -401,7 +407,7 @@ return
 ; ^!s:: Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
 ;ende Local Locations
 
-;anfang Internet Addresses
+;region Internet Addresses
 ; #space::Run www.google.com.np
 
 ; #f::
@@ -419,7 +425,7 @@ return
 ; Return
 ;ende Internet Addresses
 
-;anfang Not Necessary
+;region Not Necessary
   ;!x::ToggleWinMinimize("Microsoft Excel")
   ;!c::ToggleWinMinimize("Java")
   ;!v::ToggleWinMinimize("win7_64Bit")
@@ -532,8 +538,8 @@ return
   ;#IfWinActive
 ;ende Not Necessary
 
-;  ;anfang External Functions
-;    ;anfang Volume
+;  ;region External Functions
+;    ;region Volume
 ;      $Volume_Up::
 ;      +WheelUp::
 ;        {
@@ -601,7 +607,7 @@ return
 ;    ;ende volume
 ;  ;ende External Commands
 
-;anfang Capslock State
+;region Capslock State
   ;~CapsLock::
   ;GetKeyState, state, CapsLock, T
   ;if state = D ;  D=Caps is OFF, turn it ON
@@ -616,7 +622,7 @@ return
   ;return
 ;ende Capslock State
 
-;anfang Numlock State
+;region Numlock State
   ;~NumLock::
   ;GetKeyState, state, NumLock, T
   ;if state = D ;  D=Numpack is OFF, turn it ON
@@ -631,7 +637,7 @@ return
   ;return
 ;ende Numlock State
 
-;anfang Useful Notes:
+;region Useful Notes:
   ;MsgBox, 4,, Would you like to continue? (press Yes or No)
   ;IfMsgBox Yes
     ;MsgBox You pressed Yes.

@@ -1,7 +1,9 @@
 
 REM set sourcePre=R:\maharjan
 set sourcePre=x:\ins
-set pathAfter=ANSYS
+set batPre=x:\projekte
+set pathAfter=ansys
+set batAfter=07_ansys
 set sourceFile=s.in
 set nPrefix=f
 
@@ -10,7 +12,7 @@ if "!host!" equ "ansys2" (
   set pathBefore=D:
   REM set pathBefore=E:
 ) else (
-  set pathBefore=D:\Maharjan
+  set pathBefore=D:\maharjan
 )
 
 set redirect=0

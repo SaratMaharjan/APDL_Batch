@@ -4,19 +4,20 @@ Main Contents are batch files to run ansys apdl calculation. Additionally contai
 
 <!-- TOC -->
 
-* [APDL_Batch](#apdl_batch)
-  * [Notes](#notes)
-    * [Node and NPM](#node-and-npm)
-      * [Essential Globals](#essential-globals)
-    * [Heroku](#heroku)
-    * [VIM](#vim)
-    * [GIT](#git)
-      * [If chages made without creating branch](#if-chages-made-without-creating-branch)
-        * [If no commits are made](#if-no-commits-are-made)
-        * [If already commited](#if-already-commited)
-    * [AutoCAD](#autocad)
-    * [Windows Command Line](#windows-command-line)
-    * [OTHERS](#others)
+- [APDL_Batch](#apdl_batch)
+  - [Notes](#notes)
+    - [Node and NPM](#node-and-npm)
+      - [Essential Globals](#essential-globals)
+    - [Heroku](#heroku)
+    - [VIM](#vim)
+    - [GIT](#git)
+      - [If chages made without creating branch](#if-chages-made-without-creating-branch)
+        - [If no commits are made](#if-no-commits-are-made)
+        - [If already commited](#if-already-commited)
+    - [AutoCAD](#autocad)
+    - [Windows Command Line](#windows-command-line)
+    - [Sysinternal](#sysinternal)
+    - [OTHERS](#others)
 
 <!-- /TOC -->
 
@@ -261,6 +262,8 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
     taskbar -> 0
   Hide IMAGE FRAME
     imageframe = 0
+  Hide Start Tab
+    startmode = 0
   Back to AutoCAD classic View
     _-TOOLBAR Draw _Show
     _-TOOLBAR Modify _Show
@@ -270,6 +273,13 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
     _-TOOLBAR Standard _Show
     _RIBBONCLOSE
     MENUBAR 1
+  TASKBAR
+    0 only one icon in taskbar
+    1 one for each open file
+  PSLTSCALE
+    0 - to use same lt scale as model in paper space
+  -RENAME
+  REPLACE
 </pre>
 
 ### Windows Command Line
@@ -304,7 +314,22 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
   tasklist /nh | sort
 
   tasklist /? : for help
+
+  NETWORKING:
+    ping
+    tracert
+    ipconfig /all
+    nslookup
 </pre>
+
+### Sysinternal
+
+  live.sysinternals.com
+  %_NT_SYMBOL_PATH% -> srv*c:\symbols*http://msdl.microsoft.com/download/symbols
+  sysdm.cpl
+  psexec /accepteula
+  taskmgr
+  set
 
 ### OTHERS
 

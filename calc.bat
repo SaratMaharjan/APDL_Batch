@@ -1,23 +1,26 @@
 
 set "location=!sourcePre!\!proj_Num!"
 set "wDir=!pathBefore!\!proj_Num!\!pathAfter!"
+set "bDir=!batPre!\!proj_Num!\!batAfter!"
 echo.
 echo Source Location: !location!
 echo Working Location: !wDir!
 echo.
 
+copy "%userprofile%\dropbox\zcore\cp7run.mac" "!wDir!\cp7run.mac"
+
 if !append! equ 1 (
-  echo.>> !wDir!\sm-apdl.bat
+  echo.>> !bDir!\run-calc.bat
 ) else (
-  echo.> !wDir!\sm-apdl.bat
+  echo.> !bDir!\run-calc.bat
 )
 
 set todayNow=On %date:~0,2%.%date:~3,2%.%date:~6,4% at %time:~0,2%:%time:~3,2%
 echo *set,hostname,'!host!' > !wDir!\host.csv
 echo *abbr,fin,!location!\ >> !wDir!\host.csv
-echo REM ------------------- >> !wDir!\sm-apdl.bat
-echo REM                          ___!todayNow!___ >> !wDir!\sm-apdl.bat
-echo REM anfang New Analysis Cases >> !wDir!\sm-apdl.bat
+echo REM ------------------- >> !bDir!\run-calc.bat
+echo REM                          ___!todayNow!___ >> !bDir!\run-calc.bat
+echo REM region New Analysis Cases >> !bDir!\run-calc.bat
 
 set ans_consec=YES
 set ansys_lock=on
@@ -71,6 +74,6 @@ for /l %%m in (!interval!) do (
   )
 )
 
-echo. >> !wDir!\sm-apdl.bat
-echo REM ende New Analysis Cases >> !wDir!\sm-apdl.bat
-echo REM ------------------- >> !wDir!\sm-apdl.bat
+echo. >> !bDir!\run-calc.bat
+echo REM endregion New Analysis Cases >> !bDir!\run-calc.bat
+echo REM ------------------- >> !bDir!\run-calc.bat

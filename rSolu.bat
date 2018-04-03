@@ -1,1 +1,1 @@
-node %userprofile%\dropbox\zCore\rSolu.js
+node %userprofile%\dropbox\zCore\rSoluStream.js
