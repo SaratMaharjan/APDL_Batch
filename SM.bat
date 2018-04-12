@@ -11,7 +11,7 @@ echo %~n0
 echo %~n0%~x0
 echo %~nx0
 if exist %~n0.lock goto instanceRunning
-echo.>> %~n0.lock
+echo %date%-%time% >> %~n0.lock
 
 set appPath="C:\Program Files\ANSYS Inc\v190\ANSYS\bin\winx64\ansys190.exe"
 
@@ -30,9 +30,11 @@ REM ============================================================================
 
   REM call 314917.bat
 
+  REM call 319718.bat
+
   REM call 319218m.bat
 
-  REM call 320218.bat
+  call 320218.bat
 
 REM ==================================================================================================
 

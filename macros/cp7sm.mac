@@ -1,25 +1,32 @@
 ! ---------------
-! Last Modified: Monday, March 5th 2018, 9:42:17 am
+! Last Modified: Thursday, April 12th 2018, 1:55:25 pm
 ! Modified By: mhrjn
 ! ---------------
 
 fini
-/fil, f1000-101
+/fil, f0100-101
 resu
 p1
-isRad=1
-jptf = 9
 jplot, 9
+jptf=9
 inq, 'gs61'
 jplot
 
 fini
-/fil, f1000-201
+/fil, f0100-201
 resu
 p1
-isRad=1
-jptf = 9
 jplot, 9
+jptf=9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f0100-301
+resu
+p1
+jplot, 9
+jptf=9
 inq, 'gs61'
 jplot
 
