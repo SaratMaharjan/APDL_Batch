@@ -12,7 +12,7 @@ REM set redirect=1
 REM set extVar=1
 REM set nPrefix=m
 
-for /l %%b in (1 1 3) do (
+for /l %%b in (1 1 1) do (
 REM for %%b in (1 2) do (
 
   set bq=%%b
@@ -23,8 +23,8 @@ REM for %%b in (1 2) do (
   REM     call calc.bat
 
   REM +ve
-    set interval=0 100 0
-    set interval2=10!bq! 100 20!bq!
+    set interval=1000 100 1000
+    set interval2=10!bq! 100 40!bq!
       call calc.bat
 
   REM REM -ve

@@ -1,10 +1,19 @@
 ! ---------------
-! Last Modified: Thursday, April 12th 2018, 1:55:25 pm
+! Last Modified: Monday, April 16th 2018, 8:47:10 am
 ! Modified By: mhrjn
 ! ---------------
 
+! fini
+! /fil, f0000-101
+! resu
+! p1
+! jplot, 9
+! jptf=9
+! inq, 'gs61'
+! jplot
+
 fini
-/fil, f0100-101
+/fil, f0000-102
 resu
 p1
 jplot, 9
@@ -13,7 +22,7 @@ inq, 'gs61'
 jplot
 
 fini
-/fil, f0100-201
+/fil, f0000-103
 resu
 p1
 jplot, 9
@@ -22,7 +31,25 @@ inq, 'gs61'
 jplot
 
 fini
-/fil, f0100-301
+/fil, f0000-201
+resu
+p1
+jplot, 9
+jptf=9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f0000-202
+resu
+p1
+jplot, 9
+jptf=9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f0000-203
 resu
 p1
 jplot, 9

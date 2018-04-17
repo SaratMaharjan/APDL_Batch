@@ -34,7 +34,9 @@ REM ============================================================================
 
   REM call 319218m.bat
 
-  call 320218.bat
+  REM call 320218.bat
+
+  call 321018.bat
 
 REM ==================================================================================================
 
@@ -51,6 +53,6 @@ echo.
 echo ########## Instance of Batch File is Already Running ###########
 echo.
 
-start /min sound.bat
 :takeTime
+start /min sound.bat
 timeout /t 100
