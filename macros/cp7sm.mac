@@ -1,5 +1,5 @@
 ! ---------------
-! Last Modified: Monday, April 16th 2018, 8:47:10 am
+! Last Modified: Monday, June 4th 2018, 11:30:26 am
 ! Modified By: mhrjn
 ! ---------------
 
@@ -13,49 +13,31 @@
 ! jplot
 
 fini
-/fil, f0000-102
+/fil, f1000-101
 resu
 p1
 jplot, 9
 jptf=9
-inq, 'gs61'
+inq, 'belastungPlot'
 jplot
 
 fini
-/fil, f0000-103
+/fil, f1000-201
 resu
 p1
 jplot, 9
 jptf=9
-inq, 'gs61'
+inq, 'belastungPlot'
 jplot
 
-fini
-/fil, f0000-201
-resu
-p1
-jplot, 9
-jptf=9
-inq, 'gs61'
-jplot
-
-fini
-/fil, f0000-202
-resu
-p1
-jplot, 9
-jptf=9
-inq, 'gs61'
-jplot
-
-fini
-/fil, f0000-203
-resu
-p1
-jplot, 9
-jptf=9
-inq, 'gs61'
-jplot
+! fini
+! /fil, f1000-301
+! resu
+! p1
+! jplot, 9
+! jptf=9
+! inq, 'belastungPlot'
+! jplot
 
 /eof
 

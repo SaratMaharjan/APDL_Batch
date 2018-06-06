@@ -1,17 +1,14 @@
-[user]
-	name = smhrjn
-	email = sarat.maharjan@gmail.com
-[gui]
-	recentrepo = D:/zCore
+[winUpdater]
+	recentlySeenVersion = 2.15.1.windows.2
 [alias]
 	ssb = status -sb
 	logo = log --oneline --decorate --graph --all
-	logon = log --oneline --decorate --graph --all -n 20
+	logon = log --oneline --decorate --graph --all -20
 	who = shortlog -n -s --no-merges
 	oneweek = log --since='1 week ago'
 	fivedays = log --since='5 days ago'
-[diff]
-[difftool]
-	prompt = false
-[diff]
-	tool = vimdiff
+[user]
+	name = smhrjn
+	email = sarat.maharjan@gmail.com
+[color]
+	ui = true

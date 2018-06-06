@@ -13,7 +13,7 @@ REM set nPrefix=i
 
 set proj_Num=314917
 
-for /l %%b in (2 1 2) do (
+for /l %%b in (1 1 2) do (
 REM for %%b in (1 2) do (
   REM REM FS
   REM set bq=%%b
@@ -29,8 +29,8 @@ REM for %%b in (1 2) do (
 
   REM GS + SSW
   set bq=%%b
-    set interval=2701 1 2718
-    set interval2=30!bq! 100 30!bq!
+    set interval=2100 1 2100
+    set interval2=10!bq! 100 80!bq!
       call calc.bat
 
   REM REM FS + Innen Teleskop

@@ -5,16 +5,17 @@
   <shortcut command="CaeMidsurface" mnemonic="W" />
   <shortcut command="StyleOpaque" mnemonic="O" />
   <shortcut command="RandomizeColors" key="Alt+X" />
-  <shortcut command="ProjectToSolid" mnemonic="+" />
-  <shortcut command="CaeShowAllBodies" mnemonic="&gt;" />
+  <shortcut command="ProjectToSolid" mnemonic="=" />
   <shortcut command="ShowOptions" key="Ctrl+F12" />
   <shortcut command="DebugReverseFaceNormal" key="Alt+N" />
   <shortcut command="AnalysisNormal" mnemonic="N" />
-  <shortcut command="CurveOffset" mnemonic="Ö" />
+  <shortcut command="CurveOffset" key="Alt+O" />
   <shortcut command="CaeConvertToSelection" mnemonic="ß" />
   <shortcut command="CreateRefDatum" key="Alt+P" />
   <shortcut command="SnapView" key="Alt+Up" />
   <shortcut command="PlaceInComponent" key="Ctrl+Shift+N" />
   <shortcut command="ToolGuideAnchor" key="Alt+A" />
   <shortcut command="SplitFace" key="Alt+F" />
+  <shortcut command="Pan" mnemonic="H" />
+  <shortcut command="Home" key="Ctrl+D0" />
 </shortcuts>

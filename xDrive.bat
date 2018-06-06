@@ -1,4 +1,4 @@
-subst x: "C:\Users\maharjan\ANAKON GmbH\Matthias Kurz - Anakon alle\maharjan"
+subst x: "C:\Users\maharjan\OneDrive - ANAKON GmbH\maharjan"
 subst y: "C:\Users\maharjan\Dropbox\anakon"
 subst z: "C:\Users\maharjan\Dropbox\zCore"
 

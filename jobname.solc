@@ -1,1 +1,4 @@
 outs, 5
+solcontrol,off
+cnvtol,f,,0.001 
+cnvtol,m,,0.01

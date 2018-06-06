@@ -111,7 +111,7 @@ Return
 ;ende
 
 ;region Creo Mouse Settings
-#IfWinActive, Creo Elements/Direct 3D Access
+#IfWinActive, CCCCCreo Elements/Direct 3D Access
   RButton::MButton
 
   MButton::RButton

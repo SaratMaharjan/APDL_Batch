@@ -28,15 +28,29 @@ REM if 0: only write Batch files
 
 REM ==================================================================================================
 
-  REM call 314917.bat
-
   REM call 319718.bat
 
   REM call 319218m.bat
 
   REM call 320218.bat
 
-  call 321018.bat
+  REM call 314917.bat
+
+  REM call 321018.bat
+
+  REM call 321218.bat
+
+  REM call 320018.bat
+
+  REM call 300316.bat
+
+  REM call 321918.bat
+
+  REM call 322018.bat
+
+  call 322218.bat
+
+  REM call 322418.bat
 
 REM ==================================================================================================
 
@@ -54,5 +68,5 @@ echo ########## Instance of Batch File is Already Running ###########
 echo.
 
 :takeTime
-start /min sound.bat
+call sound.bat
 timeout /t 100
