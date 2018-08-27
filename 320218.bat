@@ -2,10 +2,10 @@
 call reset.bat
 set proj_Num=%~n0
 
-REM set pathBefore=E:
+set pathBefore=E:
 REM set pathAfter=ansys
 
-REM set sourcePre=x:\ins
+set sourcePre=E:\320218\ins
 REM set sourceFile=s-alt.in
 
 REM set redirect=1
@@ -24,7 +24,7 @@ REM for %%b in (1 2) do (
 
   REM +ve
     set interval=0 100 0
-    set interval2=10!bq! 100 10!bq!
+    set interval2=101 1 103
       call calc.bat
 
   REM REM -ve

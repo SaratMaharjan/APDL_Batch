@@ -155,7 +155,7 @@ Return
   if(InStr(A_ComputerName,"ANSYS2")){
     Run "C:\Users\maharjan\Dropbox\zCore\run-ansys.bat"
   } else {
-    Run "E:\maharjan\run-ansys.bat"
+    Run "C:\Users\asus\Dropbox\zCore\run-ansys.bat"
   }
 return
 

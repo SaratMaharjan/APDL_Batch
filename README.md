@@ -14,7 +14,6 @@ Main Contents are batch files to run ansys apdl calculation. Additionally contai
       - [If chages made without creating branch](#if-chages-made-without-creating-branch)
         - [If no commits are made](#if-no-commits-are-made)
         - [If already commited](#if-already-commited)
-    - [AutoCAD](#autocad)
     - [Windows Command Line](#windows-command-line)
     - [Sysinternal](#sysinternal)
     - [OTHERS](#others)
@@ -250,37 +249,6 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
     git checkout development
     git checkout fix/fix-name
   </pre>
-
-### AutoCAD
-
-<pre>
-  IMAGEFRAME command in AUTOCAD
-    rtdisplay -> 0
-  Show open/show dialog boxes
-    filedia : 1
-  Useonly one window for multiple drawing
-    taskbar -> 0
-  Hide IMAGE FRAME
-    imageframe = 0
-  Hide Start Tab
-    startmode = 0
-  Back to AutoCAD classic View
-    _-TOOLBAR Draw _Show
-    _-TOOLBAR Modify _Show
-    _-TOOLBAR Properties _Show
-    _-TOOLBAR Layers _Show
-    _-TOOLBAR Styles _Show
-    _-TOOLBAR Standard _Show
-    _RIBBONCLOSE
-    MENUBAR 1
-  TASKBAR
-    0 only one icon in taskbar
-    1 one for each open file
-  PSLTSCALE
-    0 - to use same lt scale as model in paper space
-  -RENAME
-  REPLACE
-</pre>
 
 ### Windows Command Line
 

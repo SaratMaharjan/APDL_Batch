@@ -10,9 +10,13 @@ set nPrefix=f
 REM Select Drive and Initial Values
 if "!host!" equ "ansys2" (
   set pathBefore=D:
-  REM set pathBefore=E:
+  REM set pathBefore=E
 ) else (
-  set pathBefore=D:\maharjan
+  if "!host!" equ "osmhrjn" (
+    set pathBefore=E:
+  ) else (
+    set pathBefore=D:\maharjan
+  )
 )
 
 set redirect=0

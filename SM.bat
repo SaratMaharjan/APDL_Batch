@@ -13,7 +13,8 @@ echo %~nx0
 if exist %~n0.lock goto instanceRunning
 echo %date%-%time% >> %~n0.lock
 
-set appPath="C:\Program Files\ANSYS Inc\v190\ANSYS\bin\winx64\ansys190.exe"
+REM set appPath="C:\Program Files\ANSYS Inc\v190\ANSYS\bin\winx64\ansys190.exe"
+set appPath="C:\Program Files\ANSYS Inc\v191\ANSYS\bin\winx64\ansys191.exe"
 
 REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
   set startValue=2
@@ -22,35 +23,44 @@ REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
 
 REM Number of Processors
   set numPro=8
+  if "!host!" equ "osmhrjn" (
+    set numPro=4
+  )
 
 REM if 0: only write Batch files
   set execute=1
 
 REM ==================================================================================================
 
-  REM call 319718.bat
-
-  REM call 319218m.bat
-
-  REM call 320218.bat
-
   REM call 314917.bat
-
-  REM call 321018.bat
-
-  REM call 321218.bat
 
   REM call 320018.bat
 
-  REM call 300316.bat
+  REM call 320218.bat
 
-  REM call 321918.bat
+  REM call 300316.bat
 
   REM call 322018.bat
 
-  call 322218.bat
+  REM call 322218.bat
 
   REM call 322418.bat
+
+  REM call 323018.bat
+
+  REM call 323318.bat
+
+  REM call 321918.bat
+
+  REM call 321918d.bat
+
+  REM call 321918de.bat
+
+  REM call 321918dt.bat
+
+  call 321918fw.bat
+
+  REM call 323918.bat
 
 REM ==================================================================================================
 

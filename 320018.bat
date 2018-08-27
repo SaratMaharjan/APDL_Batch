@@ -18,7 +18,7 @@ REM for %%b in (1 2) do (
   set bq=%%b
 
   set interval=1000 1 1000
-  set interval2=40!bq! 200 40!bq!
+  set interval2=10!bq! 100 30!bq!
     call calc.bat
 
 )
@@ -29,7 +29,7 @@ REM for %%b in (1 2) do (
   set bq=%%b
 
   set interval=1000 1 1000
-  set interval2=20!bq! 200 20!bq!
+  set interval2=50!bq! 100 50!bq!
     call calc.bat
 
 )

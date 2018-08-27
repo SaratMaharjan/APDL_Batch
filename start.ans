@@ -86,12 +86,6 @@
 ! The /MSTART command controls which GUI components initially appear
 ! at program start-up.
 !
-!/MSTART,MAIN,OFF    ! Suppresses Main Menu       (ON by default)
-!/MSTART,INPUT,OFF   ! Suppresses Input Window    (ON by default)
-!/MSTART,GRPH,OFF    ! Suppresses Graphics Window (ON by default)
-!/MSTART,TOOL,OFF    ! Suppresses Toolbar         (ON by default)
-!/MSTART,UTIL,OFF     ! Suppresses Utility Menu    (ON by default)
-!
 !/MSTART,ZOOM,ON     ! Displays Pan-Zoom-Rotate dialog box
 !/MSTART,WORK,ON     ! Displays Offset Working Plane dialog box
 !/MSTART,WPSET,ON    ! Displays Working Plane Settings dialog box
@@ -100,17 +94,16 @@
 !/MSTART,SELE,ON     ! Displays Select Entities dialog box
 !/MSTART,ANNO,ON     ! Displays Annotation dialog box
 !/MSTART,HARD,ON     ! Displays Hard Copy dialog box
-!/MSTART,HELP,ON     ! Displays ANSYS Help System
 !
 ! The /MPLIB command controls the default path used to find and display
 ! the material library files.
 !
 ! UNIX example:
-!/MPLIB,READ,/ansys_inc/v180/ansys/matlib
+!/MPLIB,READ,/ansys_inc/v190/ansys/matlib
 !
 ! PC example:
 ! NOTE: Pathname must be enclosed in SINGLE quotes
-!/MPLIB,READ,'C:\Program Files\Ansys Inc\v180\ansys\matlib'
+!/MPLIB,READ,'C:\Program Files\Ansys Inc\v190\ansys\matlib'
 !
 !/GOPR             ! Activates the printout previously suppressed by /NOPR
 !
@@ -122,7 +115,7 @@
 !
 ! ***********************  End of sample START.ANS file  ***********************
 ! /psearch, \\server\server_lw_d\ansys\macros
-/psearch, D:\macros
+/psearch, Y:\macros
 /mstart, tool, off
 /mstart, util, off
 /mstart, zoom, off
