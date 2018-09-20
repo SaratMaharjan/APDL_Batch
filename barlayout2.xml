@@ -3,15 +3,15 @@
   <docksite size="0" dockingside="Bottom" originaldocksitesize="0" />
   <docksite size="304" dockingside="Left" originaldocksitesize="0">
     <dockcontainer orientation="1" w="0" h="0">
-      <barcontainer w="301" h="550">
+      <barcontainer w="301" h="515">
         <bar name="structureViewSideBar" dockline="-1" layout="2" dockoffset="0" state="2" dockside="1" fpos="-50,420,300,300" visible="true">
           <items>
             <item name="structureViewDockItem" origBar="" origPos="-1" pos="0" />
           </items>
         </bar>
       </barcontainer>
-      <barcontainer w="301" h="272">
-        <bar name="propertiesDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Properties" dockline="0" dockoffset="553" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="1" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
+      <barcontainer w="301" h="314">
+        <bar name="propertiesDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Properties" dockline="0" dockoffset="518" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="1" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
           <items>
             <item name="propertiesDockItem" origBar="" origPos="-1" pos="0" />
           </items>
@@ -21,7 +21,7 @@
   </docksite>
   <docksite size="470" dockingside="Right" originaldocksitesize="0">
     <dockcontainer orientation="0" w="0" h="0">
-      <dockcontainer orientation="1" w="247" h="651">
+      <dockcontainer orientation="1" w="247" h="658">
         <barcontainer w="247" h="314">
           <bar name="toolOptionsDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Options" dockline="0" dockoffset="0" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="2" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
             <items>
@@ -32,7 +32,7 @@
           </bar>
         </barcontainer>
         <barcontainer w="247" h="341">
-          <bar name="selectionViewDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Selection" dockline="-1" dockoffset="313" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="2" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" seldocktab="0" hidein="false" autocaptionsync="true">
+          <bar name="selectionViewDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Selection" dockline="-1" dockoffset="317" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="2" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" seldocktab="0" hidein="false" autocaptionsync="true">
             <items>
               <item name="selectionViewDockItem" origBar="" origPos="-1" pos="0" />
               <item name="cameraOptionsDockItem" origBar="" origPos="-1" pos="1" />
@@ -42,7 +42,7 @@
           </bar>
         </barcontainer>
       </dockcontainer>
-      <barcontainer w="217" h="651">
+      <barcontainer w="217" h="658">
         <bar name="namedGroupDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Groups" dockline="999" dockoffset="0" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="2" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
           <items>
             <item name="namedGroupDockItem" origBar="" origPos="-1" pos="0" />

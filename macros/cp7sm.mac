@@ -1,19 +1,64 @@
 ! ---------------
-! Last Modified: Friday, August 24th 2018, 3:32:14 pm
+! Last Modified: Thursday, September 13th 2018, 6:50:27 pm
 ! Modified By: mhrjn
 ! ---------------
 
+fini
+/fil, f1000-101
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1000-201
+resu
+p1
+jplot, 9
+jptf=9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1000-301
+resu
+p1
+jplot, 9
+jptf=9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1100-301
+resu
+p1
+jplot, 9
+jptf=9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1200-301
+resu
+p1
+jplot, 9
+jptf=9
+inq, 'gs61'
+jplot
+
 ! fini
-! /fil, f1000-101
+! /fil, f1300-301
 ! resu
 ! p1
 ! jplot, 9
-! jptf = 9
+! jptf=9
 ! inq, 'gs61'
 ! jplot
 
 ! fini
-! /fil, f1000-201
+! /fil, f1400-301
 ! resu
 ! p1
 ! jplot, 9
@@ -22,7 +67,16 @@
 ! jplot
 
 fini
-/fil, f1000-301
+/fil, f1000-401
+resu
+p1
+jplot, 9
+jptf=9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1000-501
 resu
 p1
 jplot, 9
