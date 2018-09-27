@@ -10,7 +10,7 @@ REM set sourceFile=s-alt.in
 
 REM set redirect=1
 REM set extVar=1
-REM set nPrefix=m
+set nPrefix=m
 
 for /l %%b in (1 1 1) do (
 REM for %%b in (1 2) do (
