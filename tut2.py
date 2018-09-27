@@ -6,4 +6,4 @@ myMessage = "LikeGeeks" * 2
 print(myMessage)
 
 str = "welcome to likegeeks website"
-print(str.find("likegeeks",12))
+print(str.find("likegeeks", 12))

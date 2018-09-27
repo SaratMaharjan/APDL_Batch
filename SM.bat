@@ -17,7 +17,7 @@ REM set appPath="C:\Program Files\ANSYS Inc\v190\ANSYS\bin\winx64\ansys190.exe"
 set appPath="C:\Program Files\ANSYS Inc\v191\ANSYS\bin\winx64\ansys191.exe"
 
 REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
-  set startValue=2
+  set startValue=1
   set endValue=!startValue!
   REM set endValue=4
 
@@ -66,11 +66,13 @@ REM ============================================================================
 
   REM call 323918.bat
 
-  call 324618.bat
+  REM call 324618.bat
+
+  REM call 324618sh.bat
 
   REM call 325518.bat
 
-  REM call 325618.bat
+  call 325618.bat
 
   REM call 325918.bat
 

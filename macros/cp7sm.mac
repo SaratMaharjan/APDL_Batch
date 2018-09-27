@@ -4,13 +4,24 @@
 ! ---------------
 
 fini
-/fil, f1000-101
+/fil, f2000-101
 resu
 p1
 jplot, 9
 jptf = 9
 inq, 'gs61'
 jplot
+
+! fini
+! /fil, f2100-201
+! resu
+! p1
+! jplot, 9
+! jptf = 9
+! inq, 'gs61'
+! jplot
+
+/eof
 
 fini
 /fil, f1000-201

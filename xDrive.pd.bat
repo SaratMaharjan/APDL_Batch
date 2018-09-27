@@ -4,14 +4,14 @@ subst x: "F:\OneDrive - ANAKON GmbH\maharjan"
 
 REM net use r: "\\192.168.99.1\server_lw_d"
 
-REM start /d "C:\Users\asus\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\_Keypirinha" keypirinha.exe
+start /d "C:\Users\asus\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\_Keypirinha" keypirinha.exe
 start /d "C:\Users\asus\Dropbox\zCore" AutoHotkey.exe
 
 REM timeout /t 120
-REM start /d "C:\Users\maharjan\Google Drive\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
+start /d "C:\Users\maharjan\Google Drive\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
 
 REM timeout /t 120
-REM start /d "C:\Users\maharjan\Google Drive\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28\SysinternalsSuite" procexp64.exe
+start /d "C:\Users\maharjan\Google Drive\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28\SysinternalsSuite" procexp64.exe
 
 REM timeout /t 120
 REM start outlook.exe
