@@ -151,19 +151,19 @@ Return
 #IfWinActive
 ;ende CREO mouse settings
 
-#w::
-  if(InStr(A_ComputerName,"ANSYS2")){
-    Run "C:\Users\maharjan\Dropbox\zCore\run-ansys.bat"
+#!w::
+  if(InStr(A_ComputerName,"ansys2")){
+    Run "C:\Users\sarat\Dropbox\zCore\run-ansys.bat"
   } else {
     Run "C:\Users\asus\Dropbox\zCore\run-ansys.bat"
   }
 return
 
 #k::
-  if(InStr(A_ComputerName,"ANSYS2")){
-    Run "C:\Users\sarat\Google Drive (sarat.maharaja@gmail.com)\PortableApps\PortableApps\_Keypirinha\keypirinha.exe"
+  if(InStr(A_ComputerName,"ansys2")){
+    Run "C:\Users\sarat\dropbox\_Keypirinha\keypirinha.exe"
   } else {
-    Run "C:\Users\sarat\Google Drive (sarat.maharaja@gmail.com)\PortableApps\PortableApps\_Keypirinha\keypirinha.exe"
+    Run "C:\Users\sarat\dropbox\_Keypirinha\keypirinha.exe"
   }
 return
 
@@ -171,10 +171,13 @@ return
 
 #IfWinActive ahk_class CabinetWClass
   #.::
-    FullPath := GetActivePath()
-    ; an error occurred with the SetWorkingDir directive
-      if ErrorLevel
-        return
+    ; FullPath := GetActivePath()
+    for w in ComObjCreate("Shell.Application").Windows
+      Fullpath := w.Document.Folder.Self.Path
+    ; ; an error occurred with the SetWorkingDir directive
+    ;   if ErrorLevel
+    ;     return
+    ; msgBox % FullPath
     run, %ComSpec% /c "code .", %FullPath%
   return
 #IfWinActive
@@ -182,20 +185,22 @@ return
 ;region Delete Images
 #IfWinActive ahk_class CabinetWClass
   #p::
-    FullPath := GetActivePath()
+    ; FullPath := GetActivePath()
+    for w in ComObjCreate("Shell.Application").Windows
+      Fullpath := w.Document.Folder.Self.Path
     ; an error occurred with the SetWorkingDir directive
       if ErrorLevel
         return
     ;FileCopy,D:\delPics.bat,%FullPath%\*,*,1
     ;Run %FullPath%\delPics.bat
-    ;FileDelete,%FullPath%\delPics.bat
-      FileDelete,%FullPath%\*.jpg
-      FileDelete,%FullPath%\*.tif
-      FileDelete,%FullPath%\*.tiff
-      FileDelete,%FullPath%\*.png
-      ;FileDelete,%FullPath%\*.lis
-      ;FileDelete,%FullPath%\*.csv
-    msgBox, Files Deleted!!!
+    ;FileRecycle,%FullPath%\delPics.bat
+      ;FileRecycle,%FullPath%\*.jpg
+      ;FileRecycle,%FullPath%\*.tif
+      ;FileRecycle,%FullPath%\*.tiff
+      ;FileRecycle,%FullPath%\*.png
+      ;FileRecycle,%FullPath%\*.lis
+      ;FileRecycle,%FullPath%\*.csv
+    msgBox, Files Sent to Recycle Bin from %FullPath% !!!
   return
 #IfWinActive
 ;ende Delete Images
@@ -321,7 +326,7 @@ return
 
 ;region Local Locations
 ; #a::
-;   if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ANSYS2")){
+;   if(InStr(A_ComputerName,"SMAHARJAN") || InStr(A_ComputerName,"ansys2")){
 ;     run "R:\Maharjan"
 ;   } else {
 ;     run "C:\_________Drive"
@@ -339,7 +344,7 @@ return
 ; #v::
 ;   if(InStr(A_ComputerName,"SMAHARJAN")){
 ;     Run "E:\SM\VIMinstall\Vim\vim80\gvim.exe"
-;   } else if (InStr(A_ComputerName,"ANSYS2")) {
+;   } else if (InStr(A_ComputerName,"ansys2")) {
 ;     Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"
 ;   } else if (InStr(A_ComputerName,"hgebhardt1")) {
 ;     Run "D:\maharjan\VIMinstall\Vim\vim80\gvim.exe"

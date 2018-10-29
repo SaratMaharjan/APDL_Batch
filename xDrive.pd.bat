@@ -1,17 +1,23 @@
-subst y: "C:\Users\asus\Dropbox\anakon"
-subst z: "C:\Users\asus\Dropbox\zCore"
+subst y: "%userprofile%\Dropbox\anakon"
+subst z: "%userprofile%\Dropbox\zCore"
 subst x: "E:\anakon\OneDrive - ANAKON GmbH\maharjan"
 
 net use r: "\\192.168.99.1\server_lw_d"
 
-start /d "C:\Users\asus\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\_Keypirinha" keypirinha.exe
-start /d "C:\Users\asus\Dropbox\zCore" AutoHotkey.exe
+start /d "%userprofile%\dropbox\_Keypirinha" keypirinha.exe
+start /d "%userprofile%\Dropbox\zCore" AutoHotkey.exe
 
 REM timeout /t 120
-start /d "C:\Users\Asus\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
+start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
 
 REM timeout /t 120
-start /d "C:\Users\maharjan\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28\SysinternalsSuite" procexp64.exe
+start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\_Rainmeter" Rainmeter.exe
+
+REM timeout /t 120
+start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\StickiesPortable" StickiesPortable.exe
+
+REM timeout /t 120
+start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28\SysinternalsSuite" procexp64.exe
 
 timeout /t 120
 start outlook.exe

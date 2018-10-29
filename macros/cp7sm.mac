@@ -1,16 +1,39 @@
 ! ---------------
-! Last Modified: Thursday, September 13th 2018, 6:50:27 pm
+! Last Modified: Tuesday, October 16th 2018, 12:29:15 pm
 ! Modified By: mhrjn
 ! ---------------
 
 fini
-/fil, f2000-101
+/fil, f1000-301
 resu
 p1
 jplot, 9
 jptf = 9
+inq, 'managecomp2'
 inq, 'gs61'
 jplot
+
+fini
+/fil, f1000-401
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'managecomp2'
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1000-501
+resu
+p1
+jplot, 9
+jptf = 9
+inq, 'managecomp2'
+inq, 'gs61'
+jplot
+
+/eof
 
 ! fini
 ! /fil, f2100-201

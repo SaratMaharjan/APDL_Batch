@@ -6,6 +6,11 @@ timeout /t %waitSec%
 setlocal EnableDelayedExpansion
 call first.bat
 
+REM shutdown computer
+  REM shutdown.exe /s /t 00
+REM restart computer
+  REM shutdown.exe /r
+
 echo %cd%\%0
 echo %~n0
 echo %~n0%~x0
@@ -14,7 +19,8 @@ if exist %~n0.lock goto instanceRunning
 echo %date%-%time% >> %~n0.lock
 
 REM set appPath="C:\Program Files\ANSYS Inc\v190\ANSYS\bin\winx64\ansys190.exe"
-set appPath="C:\Program Files\ANSYS Inc\v191\ANSYS\bin\winx64\ansys191.exe"
+REM set appPath="C:\Program Files\ANSYS Inc\v191\ANSYS\bin\winx64\ansys191.exe"
+set appPath="C:\Program Files\ANSYS Inc\v192\ANSYS\bin\winx64\ansys192.exe"
 
 REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
   set startValue=2
@@ -68,11 +74,19 @@ REM ============================================================================
 
   REM call 324618.bat
 
+  REM call 324618sh.bat
+
   REM call 325518.bat
 
   REM call 325618.bat
 
-  call 325918.bat
+  call 325618.bat
+
+  REM call 325918ssw.bat
+
+  REM call 326318.bat
+
+  REM call 326318a.bat
 
 REM ==================================================================================================
 

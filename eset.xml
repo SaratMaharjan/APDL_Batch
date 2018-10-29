@@ -1,0 +1,2134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ESET>
+ <SECTION ID="1000105">
+  <SETTINGS>
+   <SCANNERS>
+    <SCANNER ID="0">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1010100">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="1" TYPE="DWORD" />
+      <NODE NAME="Active" VALUE="@Smart scan" TYPE="STRING" />
+      <NODE NAME="@In-depth scan" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+      <NODE NAME="@Shellext scan" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+      <NODE NAME="@Smart scan" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1010101">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1010102">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1010104">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1020100">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1020101">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1020102">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1020103">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1020104">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1020200">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1020201">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1030200">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+    <SCANNER ID="1030201">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="SignaturesEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="HeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedHeuristicsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdwareEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnwantedEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="UnsafeEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FileEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SectorEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SfxEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RtpEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MailEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MemoryEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MaxArchiveLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxScanFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MaxTempFileSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanObjectTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CleanLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogAllEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SmartEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Extensions" TYPE="SUBNODE">
+        <NODE NAME="AddExtensions" VALUE="|*|" TYPE="STRING" />
+        <NODE NAME="RemoveExtensions" VALUE="" TYPE="STRING" />
+        <NODE NAME="ExcludeExtensions" VALUE="" TYPE="STRING" />
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </SCANNER>
+   </SCANNERS>
+   <ANTISPAM>
+    <ANTISPAM ID="0">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="Enabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SpamSensibilityLevel" VALUE="3" TYPE="DWORD" />
+       <NODE NAME="DnsblService" VALUE="" TYPE="STRING" />
+      </NODE>
+     </PROFILES>
+    </ANTISPAM>
+    <ANTISPAM ID="1010100">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="Enabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SpamSensibilityLevel" VALUE="3" TYPE="DWORD" />
+       <NODE NAME="DnsblService" VALUE="" TYPE="STRING" />
+      </NODE>
+     </PROFILES>
+    </ANTISPAM>
+    <ANTISPAM ID="1010101">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="Enabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SpamSensibilityLevel" VALUE="3" TYPE="DWORD" />
+       <NODE NAME="DnsblService" VALUE="" TYPE="STRING" />
+      </NODE>
+     </PROFILES>
+    </ANTISPAM>
+    <ANTISPAM ID="1010102">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="Enabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SpamSensibilityLevel" VALUE="3" TYPE="DWORD" />
+       <NODE NAME="DnsblService" VALUE="" TYPE="STRING" />
+      </NODE>
+     </PROFILES>
+    </ANTISPAM>
+    <ANTISPAM ID="1020100">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="Enabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SpamSensibilityLevel" VALUE="3" TYPE="DWORD" />
+       <NODE NAME="DnsblService" VALUE="" TYPE="STRING" />
+      </NODE>
+     </PROFILES>
+    </ANTISPAM>
+    <ANTISPAM ID="1030200">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="Enabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SpamSensibilityLevel" VALUE="3" TYPE="DWORD" />
+       <NODE NAME="DnsblService" VALUE="" TYPE="STRING" />
+      </NODE>
+     </PROFILES>
+    </ANTISPAM>
+   </ANTISPAM>
+   <PLUGINS>
+    <PLUGIN ID="1000600">
+     <PROFILES>
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="ScannerCnt" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AntistealthEnabled" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ScanUnwantedApp" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ElevationFlags" VALUE="2" TYPE="DWORD" />
+       <NODE NAME="WUWarningLevel" VALUE="4" TYPE="DWORD" />
+       <NODE NAME="AutoDeleteLogs" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogsLifetime" VALUE="5A" TYPE="DWORD" />
+       <NODE NAME="AutoOptimizeLogs" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LogsOptimizePercent" VALUE="19" TYPE="DWORD" />
+       <NODE NAME="LogsDefaultFilter" VALUE="8000001F" TYPE="DWORD" />
+       <NODE NAME="PlainTextLog" VALUE="" TYPE="STRING" />
+       <NODE NAME="DefaultMessageAccount" VALUE="Administrator" TYPE="STRING" />
+       <NODE NAME="RAClientEnabled" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RAClientInterval" VALUE="A" TYPE="DWORD" />
+       <NODE NAME="EWAID" VALUE="AAAAAAAAAAA=" TYPE="BINARY" />
+       <NODE NAME="RAClientServer" VALUE="192.168.99.1" TYPE="STRING" />
+       <NODE NAME="RAClientPort" VALUE="8AE" TYPE="DWORD" />
+       <NODE NAME="RAClientPassword" VALUE="U9bh6Z7wzfJuZHathsgoda0xGrx7+O0MCd0z3YDKOkxSSBVQlW/5DIuzmRb6xx2xTRNL7T4RpuLRQ+qTCgBo7VN8xfQENzCm/Yw5LeC4acw=" TYPE="PASS" />
+       <NODE NAME="RAClientDisNonEncConn" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RAClientServerAlt" VALUE="" TYPE="STRING" />
+       <NODE NAME="RAClientPortAlt" VALUE="8AE" TYPE="DWORD" />
+       <NODE NAME="RAClientPasswordAlt" VALUE="U9bh6Z7wzfJuZHathsgoda0xGrx7+O0MCd0z3YDKOkxSSBVQlW/5DIuzmRb6xx2xTRNL7T4RpuLRQ+qTCgBo7VN8xfQENzCm/Yw5LeC4acw=" TYPE="PASS" />
+       <NODE NAME="RAClientDisNonEncConnAlt" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RAClientCustom" VALUE="" TYPE="STRING" />
+       <NODE NAME="RAClientFirstQuarantineCommandDelay" VALUE="12C" TYPE="DWORD" />
+       <NODE NAME="SMTP_Enabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SMTP_Flags" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SMTP_Server" VALUE="" TYPE="STRING" />
+       <NODE NAME="SMTP_SenderAddress" VALUE="" TYPE="STRING" />
+       <NODE NAME="SMTP_Address" VALUE="" TYPE="STRING" />
+       <NODE NAME="SMTP_Username" VALUE="" TYPE="STRING" />
+       <NODE NAME="SMTP_Password" VALUE="" TYPE="PASS" />
+       <NODE NAME="Winpopup_Enabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Winpopup_Address" VALUE="" TYPE="STRING" />
+       <NODE NAME="Winpopup_Timeout" VALUE="3C" TYPE="DWORD" />
+       <NODE NAME="MsgFormatVirus" VALUE="%TimeStamp% - Modul %Scanner% - Alarm ausgelöst auf Computer %ComputerName%:  %InfectedObject% enthält %VirusName%." TYPE="STRING" />
+       <NODE NAME="MsgFormatError" VALUE="%TimeStamp% - Beim Ausführen von %ProgramName% auf dem Computer %ComputerName% wurde folgende Warnmeldung erzeugt: %ErrorDescription%" TYPE="STRING" />
+       <NODE NAME="MsgMinStatusSend" VALUE="40000000" TYPE="DWORD" />
+       <NODE NAME="MsgMinStatusLog" VALUE="10000000" TYPE="DWORD" />
+       <NODE NAME="ProxyEnabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ProxyAddress" VALUE="" TYPE="STRING" />
+       <NODE NAME="ProxyPort" VALUE="C38" TYPE="DWORD" />
+       <NODE NAME="ProxyUser" VALUE="" TYPE="STRING" />
+       <NODE NAME="ProxyPassword" VALUE="" TYPE="PASS" />
+       <NODE NAME="QuarantineUpdateScan" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="IncomingEmailTagLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="IncomingEmailSubjectModify" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="OutgoingEmailTagLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="OutgoingEmailSubjectModify" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="EmailSubjectFormat" VALUE="[virus %VIRUSNAME%]" TYPE="STRING" />
+       <NODE NAME="NapSupportEnabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SchedulerStartupDelay" VALUE="FFFFFFFF" TYPE="DWORD" />
+       <NODE NAME="GamerModeFullScreenEnabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="GamerModeTimeoutEnabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="GamerModeTimeout" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CrashDumpSupport" VALUE="2" TYPE="DWORD" />
+       <NODE NAME="SchedulerRandDispersion" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudEnabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudFlags" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudTarget" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudLog" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CloudExclude" VALUE="*.doc|*.rtf|*.xl?|*.dbf|*.mdb|*.sxw|*.sxc|*.doc?|*.dot?|*.xls?|*.xlt?|*.ppt?|*.pot?|*.pps?" TYPE="STRING" />
+       <NODE NAME="CloudMail" VALUE="" TYPE="STRING" />
+       <NODE NAME="NotifyIdleSettings" VALUE="7" TYPE="DWORD" />
+       <NODE NAME="RAClientDisableMacEnum" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="PlainLog" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="PlainLogType" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="PlainLogDir" VALUE="" TYPE="STRING" />
+       <NODE NAME="LockPassword" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="IgnoreUserSettings" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="GraphicMode" VALUE="FFFFFFFF" TYPE="DWORD" />
+       <NODE NAME="ShowSplash" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="PageMode" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SimpleMenu" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="AdvancedMenu" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ShowMenu" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ShowToolTips" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ShowFocus" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ShowAlert" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SilentMode" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="FullScreenMode" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ShowMomentaryMessageBox" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MomentaryMessageBoxDuration" VALUE="78" TYPE="DWORD" />
+       <NODE NAME="ShowDesktopAlert" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="DesktopAlertDuration" VALUE="A" TYPE="DWORD" />
+       <NODE NAME="DesktopAlertTransparency" VALUE="14" TYPE="DWORD" />
+       <NODE NAME="ShowBalloon" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="BalloonDuration" VALUE="A" TYPE="DWORD" />
+       <NODE NAME="ShowAlertStatus" VALUE="10000000" TYPE="DWORD" />
+       <NODE NAME="AnimateControls" VALUE="FFFFFFFF" TYPE="DWORD" />
+       <NODE NAME="AnimateControlsSpeed" VALUE="9" TYPE="DWORD" />
+       <NODE NAME="AnimateIcons" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="PlaySound" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ShowSchedulerSystemTasks" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SupportMail" VALUE="" TYPE="STRING" />
+       <NODE NAME="SupportCompany" VALUE="" TYPE="STRING" />
+       <NODE NAME="SupportCountry" VALUE="FFFFFFFF" TYPE="DWORD" />
+       <NODE NAME="ShowProtectionTimeout" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ShowTrainingPage" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Scheduler" TYPE="SUBNODE">
+        <TASK>
+         <NODE NAME="Name" VALUE="Log-Wartung" TYPE="STRING" />
+         <NODE NAME="ActionCode" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="ModuleID" VALUE="1000600" TYPE="DWORD" />
+         <NODE NAME="TriggerType" VALUE="2" TYPE="DWORD" />
+         <NODE NAME="TriggerSettings" VALUE="16DA0" TYPE="DWORD" />
+         <NODE NAME="StartFailSettings" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="Enabled" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="LastExec" VALUE="5BC3E6A3" TYPE="DWORD" />
+         <NODE NAME="Flags" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="RegId" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="DeleteThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="EnableThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="DisableThis" VALUE="0" TYPE="DWORD" />
+        </TASK>
+        <TASK>
+         <NODE NAME="Name" VALUE="Automatische Updates in festen Zeitabständen" TYPE="STRING" />
+         <NODE NAME="ActionCode" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="ModuleID" VALUE="1000400" TYPE="DWORD" />
+         <NODE NAME="TriggerType" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="TriggerSettings" VALUE="3C" TYPE="DWORD" />
+         <NODE NAME="StartFailSettings" VALUE="FFFFFFFF" TYPE="DWORD" />
+         <NODE NAME="Enabled" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="LastExec" VALUE="5BC45E16" TYPE="DWORD" />
+         <NODE NAME="Flags" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="RegId" VALUE="64" TYPE="DWORD" />
+         <NODE NAME="DeleteThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="EnableThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="DisableThis" VALUE="0" TYPE="DWORD" />
+        </TASK>
+        <TASK>
+         <NODE NAME="Name" VALUE="Automatische Updates beim Herstellen von DFÜ-Verbindungen" TYPE="STRING" />
+         <NODE NAME="ActionCode" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="ModuleID" VALUE="1000400" TYPE="DWORD" />
+         <NODE NAME="TriggerType" VALUE="4" TYPE="DWORD" />
+         <NODE NAME="TriggerSettings" VALUE="20001" TYPE="DWORD" />
+         <NODE NAME="StartFailSettings" VALUE="FFFFFFFF" TYPE="DWORD" />
+         <NODE NAME="Enabled" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="LastExec" VALUE="FFFFFFFF" TYPE="DWORD" />
+         <NODE NAME="Flags" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="RegId" VALUE="65" TYPE="DWORD" />
+         <NODE NAME="DeleteThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="EnableThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="DisableThis" VALUE="0" TYPE="DWORD" />
+        </TASK>
+        <TASK>
+         <NODE NAME="Name" VALUE="Automatische Updates beim Anmelden des Benutzers" TYPE="STRING" />
+         <NODE NAME="ActionCode" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="ModuleID" VALUE="1000400" TYPE="DWORD" />
+         <NODE NAME="TriggerType" VALUE="4" TYPE="DWORD" />
+         <NODE NAME="TriggerSettings" VALUE="50001" TYPE="DWORD" />
+         <NODE NAME="StartFailSettings" VALUE="FFFFFFFF" TYPE="DWORD" />
+         <NODE NAME="Enabled" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="LastExec" VALUE="FFFFFFFF" TYPE="DWORD" />
+         <NODE NAME="Flags" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="RegId" VALUE="66" TYPE="DWORD" />
+         <NODE NAME="DeleteThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="EnableThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="DisableThis" VALUE="0" TYPE="DWORD" />
+        </TASK>
+        <TASK>
+         <NODE NAME="Name" VALUE="Prüfung Systemstartdateien " TYPE="STRING" />
+         <NODE NAME="ActionCode" VALUE="2" TYPE="DWORD" />
+         <NODE NAME="ModuleID" VALUE="1000600" TYPE="DWORD" />
+         <NODE NAME="TriggerType" VALUE="4" TYPE="DWORD" />
+         <NODE NAME="TriggerSettings" VALUE="50000" TYPE="DWORD" />
+         <NODE NAME="StartFailSettings" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="Enabled" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="LastExec" VALUE="5BC04F4D" TYPE="DWORD" />
+         <NODE NAME="Flags" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="RegId" VALUE="3" TYPE="DWORD" />
+         <NODE NAME="DeleteThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="EnableThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="DisableThis" VALUE="0" TYPE="DWORD" />
+         <PARAMS>
+          <SCHEDULED_TASK PLUGIN="1000600" ACTION="2" DESCRIPTION="">
+           <DATA>
+            <NODE NAME="thread_priority" VALUE="FFFFFFFE" TYPE="DWORD" />
+            <NODE NAME="scan_level" VALUE="1" TYPE="DWORD" />
+           </DATA>
+          </SCHEDULED_TASK>
+         </PARAMS>
+        </TASK>
+        <TASK>
+         <NODE NAME="Name" VALUE="Prüfung Systemstartdateien " TYPE="STRING" />
+         <NODE NAME="ActionCode" VALUE="2" TYPE="DWORD" />
+         <NODE NAME="ModuleID" VALUE="1000600" TYPE="DWORD" />
+         <NODE NAME="TriggerType" VALUE="4" TYPE="DWORD" />
+         <NODE NAME="TriggerSettings" VALUE="30000" TYPE="DWORD" />
+         <NODE NAME="StartFailSettings" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="Enabled" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="LastExec" VALUE="5BC45E2E" TYPE="DWORD" />
+         <NODE NAME="Flags" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="RegId" VALUE="4" TYPE="DWORD" />
+         <NODE NAME="DeleteThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="EnableThis" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="DisableThis" VALUE="0" TYPE="DWORD" />
+         <PARAMS>
+          <SCHEDULED_TASK PLUGIN="1000600" ACTION="2" DESCRIPTION="">
+           <DATA>
+            <NODE NAME="thread_priority" VALUE="FFFFFFFE" TYPE="DWORD" />
+            <NODE NAME="scan_level" VALUE="FFF" TYPE="DWORD" />
+           </DATA>
+          </SCHEDULED_TASK>
+         </PARAMS>
+        </TASK>
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </PLUGIN>
+    <PLUGIN ID="1000001">
+     <PROFILES>
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="enabled" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="selfdefense" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="filteringMode" VALUE="18" TYPE="DWORD" />
+       <NODE NAME="learningModeEnd" VALUE="AAAAAAAAAAA=" TYPE="BINARY" />
+       <NODE NAME="rulesDiff" TYPE="XML">
+        <OPTIONS>
+         <OPTION OPTNAME="LogBlocked" VALUE="0" ID="2" DESC="Alle blockierten Vorgänge in Log aufnehmen" DEFAULT="0" />
+         <OPTION OPTNAME="ReportStartupChangesDefaultOff" VALUE="0" ID="6" DESC="Änderungen an Autostart-Einträgen melden" DEFAULT="0" />
+         <OPTION OPTNAME="MemoryScannerEnabled" VALUE="1" ID="A" DESC="Erweiterte Speicherprüfung aktivieren" DISPLAY_HINT="main" DEFAULT="1" />
+         <OPTION OPTNAME="ExploitShieldEnabled" VALUE="1" ID="B" DESC="Exploit-Blocker aktivieren" DISPLAY_HINT="main" DEFAULT="1" />
+         <OPTION ID="1" VALUE="18" />
+         <OPTION ID="0" VALUE="1" />
+        </OPTIONS>
+        <RULE ID="{0BC1DDC8-6F32-42C4-8EAA-905BD7771F92}" NAME="Für erfolgreichen Systemstart erforderliche Registrierungszugriffe und Treiber zulassen" ACTION="1">
+         <OPERATIONS>
+          <OPERATION ID="Image_LoadDriver" />
+         </OPERATIONS>
+         <TARGETS>
+          <FILE PATH="C:\Windows\system32\drivers\1394ohci.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\ACPI.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\acpipmi.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\adp94xx.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\adpahci.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\adpu320.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\afd.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\agp440.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\aksdf.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\aksfridge.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\akshasp.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\akshhl.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\aksusb.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\aliide.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\amdide.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\amdk8.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\atikmdag.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\atikmpag.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\amdppm.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\amdsata.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\amdsbs.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\amdxata.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\appid.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\arc.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\arcsas.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\asyncmac.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\atapi.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\AtihdW76.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\bxvbda.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\b57nd60a.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\Beep.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\blbdrive.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\bowser.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\BrFiltLo.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\BrFiltUp.sys" />
+          <FILE PATH="C:\Windows\System32\Drivers\Brserid.sys" />
+          <FILE PATH="C:\Windows\System32\Drivers\BrSerWdm.sys" />
+          <FILE PATH="C:\Windows\System32\Drivers\BrUsbMdm.sys" />
+          <FILE PATH="C:\Windows\System32\Drivers\BrUsbSer.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\bthmodem.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\cdrom.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\circlass.sys" />
+          <FILE PATH="C:\Windows\System32\CLFS.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\CmBatt.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\cmdide.sys" />
+          <FILE PATH="C:\Windows\System32\Drivers\cng.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\compbatt.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\CompositeBus.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\cpuz135_x64.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\csc.sys" />
+          <FILE PATH="C:\Windows\System32\Drivers\dfsc.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\discache.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\disk.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\drmkaud.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\dxgkrnl.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\dxgmms1.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\eamonm.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\evbda.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\edevmon.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\ehdrv.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\elxstor.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\epfwwfpr.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\errdev.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\EvoMouseDriverFilterHidUsb.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\EvoMouseDriverMini.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\exfat.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\fastfat.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\fdc.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\fileinfo.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\filetrace.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\flpydisk.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\fltmgr.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\FsDepends.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\fvevol.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\gagp30kx.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\hardlock.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\hcw85cir.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\HdAudio.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\HDAudBus.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\HidBatt.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\hidbth.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\hidir.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\hidusb.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\HpSAMD.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\HTTP.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\hwpolicy.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\i8042prt.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\iaStor.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\iaStorV.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\iirsp.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\RTKVHD64.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\intelide.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\intelppm.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\ipfltdrv.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\IPMIDrv.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\ipnat.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\irenum.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\isapnp.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\msiscsi.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\kbdclass.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\kbdhid.sys" />
+          <FILE PATH="C:\Windows\System32\Drivers\ksecdd.sys" />
+          <FILE PATH="C:\Windows\System32\Drivers\ksecpkg.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\ksthunk.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\lltdio.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\lsi_fc.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\lsi_sas.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\lsi_sas2.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\lsi_scsi.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\luafv.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\megasas.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\MegaSR.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\modem.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\monitor.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\mouclass.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\mouhid.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\mountmgr.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\mpio.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\mpsdrv.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\mrxdav.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\mrxsmb.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\mrxsmb10.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\mrxsmb20.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\msahci.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\msdsm.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\Msfs.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\mshidkmdf.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\msisadrv.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\MSKSSRV.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\MSPCLOCK.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\MSPQM.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\MsRPC.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\mssmbios.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\MSTEE.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\MTConfig.sys" />
+          <FILE PATH="C:\Windows\System32\Drivers\mup.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\nwifi.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\ndis.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\ndiscap.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\ndistapi.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\ndisuio.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\ndiswan.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\NDProxy.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\netbios.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\netbt.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\nfrd960.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\Npfs.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\nsiproxy.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\Ntfs.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\Null.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\nvraid.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\nvstor.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\nv_agp.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\ohci1394.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\parport.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\partmgr.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\pci.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\pciide.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\pcmcia.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\pcw.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\peauth.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\raspptp.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\processr.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\pacer.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\ql2300.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\ql40xx.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\qwavedrv.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\rasacd.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\AgileVpn.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\rasl2tp.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\raspppoe.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\rassstp.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\rdbss.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\rdpbus.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\RDPCDD.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\rdpdr.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\rdpencdd.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\rdprefmp.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\RDPWD.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\rdyboost.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\rspndr.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\Rt64win7.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\vms3cap.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\sbp2port.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\scfilter.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\secdrv.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\serenum.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\serial.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\sermouse.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\sffdisk.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\sffp_mmc.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\sffp_sd.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\sfloppy.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\SiSRaid2.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\sisraid4.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\smb.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\spldr.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\srv.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\srv2.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\srvnet.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\stexstor.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\vmstorfl.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\storvsc.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\swenum.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\tcpip.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\tcpipreg.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\tdpipe.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\tdtcp.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\tdx.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\RtTeam60.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\termdd.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\tpm.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\tssecsrv.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\tsusbflt.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\tunnel.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\uagp35.sys" />
+          <FILE PATH="C:\Windows\System32\DRIVERS\uigxrdr.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\uliagpkx.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\umbus.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\umpass.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\usbccgp.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\usbcir.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\usbehci.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\usbhub.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\usbohci.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\usbprint.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\USBSTOR.SYS" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\usbuhci.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\vdrvroot.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\vgapnp.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\vga.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\vhdmp.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\viaide.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\vmbus.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\VMBusHID.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\volmgr.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\volmgrx.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\volsnap.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\vsmraid.sys" />
+          <FILE PATH="C:\Windows\System32\drivers\vwifibus.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\wacompen.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\wanarp.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\wd.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\Wdf01000.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\wfplwf.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\wimmount.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\WinUsb.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\wmiacpi.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\WudfPf.sys" />
+          <FILE PATH="C:\Windows\system32\DRIVERS\WUDFRd.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\ntoskrnl.exe" />
+          <FILE PATH="C:\Windows\system32\drivers\HAL.dll" />
+          <FILE PATH="C:\Windows\system32\drivers\WDFLDR.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\WMILIB.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\storport.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\TDI.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\NETIO.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\AKSCLASS.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\USBD.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\PCIIDEX.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\CI.dll" />
+          <FILE PATH="C:\Windows\system32\drivers\ataport.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\portcls.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\BATTC.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\CLASSPNP.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\ks.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\drmk.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\watchdog.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\fwpkclnt.sys" />
+          <FILE PATH="C:\Windows\system32\drivers\PSHED.dll" />
+          <FILE PATH="C:\Windows\system32\drivers\HIDPARSE.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\HIDCLASS.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\CLFS.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\1394BUS.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\VIDEOPRT.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\USBPORT.SYS" />
+          <FILE PATH="C:\Windows\system32\drivers\winhv.sys" />
+         </TARGETS>
+        </RULE>
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </PLUGIN>
+    <PLUGIN ID="1000100">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="1" TYPE="DWORD" />
+      <NODE NAME="Active" VALUE="@Smart scan" TYPE="STRING" />
+      <NODE NAME="@In-depth scan" TYPE="SUBNODE">
+       <NODE NAME="AdsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LowBackgroundPriority" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="PreserveFileTimesEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="AutoScroll" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FinishWindow" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Targets" VALUE="" TYPE="STRING" />
+      </NODE>
+      <NODE NAME="@Shellext scan" TYPE="SUBNODE">
+       <NODE NAME="AdsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LowBackgroundPriority" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="PreserveFileTimesEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="AutoScroll" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FinishWindow" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Targets" VALUE="" TYPE="STRING" />
+      </NODE>
+      <NODE NAME="@Smart scan" TYPE="SUBNODE">
+       <NODE NAME="AdsEnable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LowBackgroundPriority" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="PreserveFileTimesEnable" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="AutoScroll" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="FinishWindow" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Targets" VALUE="" TYPE="STRING" />
+      </NODE>
+     </PROFILES>
+    </PLUGIN>
+    <PLUGIN ID="1000101">
+     <PROFILES>
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="DiskFloppy" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="DiskLocal" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="DiskNetwork" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ScanOpen" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ScanExecute" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ScanCreate" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ScanNetworkOnClose" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanOnAccess" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="OptimizeScan" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Autostart" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="OnOpen_RuntimeArchives" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="OnOpen_AutoExecArchives" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="OnOpen_AdvanceHeuristic" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ScanExecuteAH" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="DiskFloppyOnExecuteAH" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="DefaultArchSettings" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ArchiveDepth" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ArchiveMaxFilesize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="AskForScanOfRemovableDevice" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AskForScanOfRemovableDeviceDefaultAction" VALUE="2" TYPE="DWORD" />
+       <NODE NAME="ExcludedProcesses" VALUE="" TYPE="STRING" />
+      </NODE>
+     </PROFILES>
+     <SETTINGS>
+      <NODE NAME="Reload" VALUE="0" TYPE="DWORD" />
+     </SETTINGS>
+    </PLUGIN>
+    <PLUGIN ID="1000102">
+     <PROFILES>
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="ScanIncoming" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ScanOutgoming" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ScanReading" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Hidden_ConvertPlainText" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ScanMarked" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Hidden_ScanPlainText" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Hidden_ScanRTF" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="BuildRescan" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MoveMessage" VALUE="3" TYPE="DWORD" />
+       <NODE NAME="MoveFolder" VALUE="Infected Items" TYPE="STRING" />
+       <NODE NAME="IsEnabled" VALUE="1" TYPE="DWORD" />
+      </NODE>
+     </PROFILES>
+    </PLUGIN>
+    <PLUGIN ID="1000103">
+     <PROFILES>
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="Enable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Register" VALUE="0" TYPE="DWORD" />
+      </NODE>
+     </PROFILES>
+    </PLUGIN>
+    <PLUGIN ID="1000200">
+     <PROFILES>
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="ProxyEnabled" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ProxyAutostart" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="RedirectBy" VALUE="2" TYPE="DWORD" />
+       <NODE NAME="gui_SeeApplicationHow" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AdvancedMode" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="gui_RuleShowLevel" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AllowChangeSignedFile" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="DontAskForTrustedZone" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="SslUseMode" VALUE="2" TYPE="DWORD" />
+       <NODE NAME="AskIfRootCertIsUnknown" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AskIfCertIsNotTrusted" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="HttpsScanMode" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="Pop3sScanMode" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="ImapsScanMode" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="AddRootCertToBrowsers" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="SslCompatibleMode" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="BlockSslV2" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="LearningMode" TYPE="SUBNODE">
+        <NODE NAME="TrustedIn" TYPE="SUBNODE">
+         <NODE NAME="AddApplication" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="AddLocalPort" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="AddRemotePort" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="AddRemoteAddress" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="MaxSameRules" VALUE="3" TYPE="DWORD" />
+        </NODE>
+        <NODE NAME="TrustedOut" TYPE="SUBNODE">
+         <NODE NAME="AddApplication" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="AddLocalPort" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="AddRemotePort" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="AddRemoteAddress" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="MaxSameRules" VALUE="3" TYPE="DWORD" />
+        </NODE>
+        <NODE NAME="UntrustedIn" TYPE="SUBNODE">
+         <NODE NAME="AddApplication" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="AddLocalPort" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="AddRemotePort" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="AddRemoteAddress" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="MaxSameRules" VALUE="3" TYPE="DWORD" />
+        </NODE>
+        <NODE NAME="UntrustedOut" TYPE="SUBNODE">
+         <NODE NAME="AddApplication" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="AddLocalPort" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="AddRemotePort" VALUE="1" TYPE="DWORD" />
+         <NODE NAME="AddRemoteAddress" VALUE="0" TYPE="DWORD" />
+         <NODE NAME="MaxSameRules" VALUE="3" TYPE="DWORD" />
+        </NODE>
+        <NODE NAME="LearningEndTime" VALUE="0" TYPE="DWORD" />
+       </NODE>
+       <NODE NAME="InstallationLevel" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="AllowOnlyWhiteListUrl" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="UpdateModuleAfterRestart" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="analyzer_tempcache_limit_perfile" VALUE="100000" TYPE="DWORD" />
+       <NODE NAME="analyzer_tempcache_limit_total" VALUE="6400000" TYPE="DWORD" />
+       <NODE NAME="ssl_exclude_trusted" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="dump_to_pcaps" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="netprot_test_mode" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ssl_mode" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ask_if_cert_corrupted" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="ask_if_cert_untrusted" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="http_enable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="http_auto_passive_size" VALUE="800" TYPE="DWORD" />
+       <NODE NAME="http_auto_passive_time" VALUE="37" TYPE="DWORD" />
+       <NODE NAME="http_stream_limit" VALUE="500000" TYPE="DWORD" />
+       <NODE NAME="http_ports" VALUE="80, 8080, 3128" TYPE="STRING" />
+       <NODE NAME="https_ports" VALUE="443" TYPE="STRING" />
+       <NODE NAME="http_block_connect_method" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="pop3_enable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="pop3_write" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="pop3_wouldblock_fix" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="pop3_ports" VALUE="110" TYPE="STRING" />
+       <NODE NAME="pop3s_ports" VALUE="995" TYPE="STRING" />
+       <NODE NAME="imap_enable" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="imap_write" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="imap_ports" VALUE="143" TYPE="STRING" />
+       <NODE NAME="imaps_ports" VALUE="585, 993" TYPE="STRING" />
+       <NODE NAME="UrlSets" TYPE="SUBNODE">
+        <NODE NAME="UrlSet" TYPE="SUBNODE" DELETE="0">
+         <NODE NAME="Name" TYPE="STRING" VALUE="Adressen, die nicht geprüft werden" />
+         <NODE NAME="Desc" TYPE="STRING" VALUE="" />
+         <NODE NAME="Masks" TYPE="STRING" VALUE="" />
+         <NODE NAME="Type" TYPE="DWORD" VALUE="0" />
+         <NODE NAME="Flags" TYPE="DWORD" VALUE="5" />
+        </NODE>
+        <NODE NAME="UrlSet" TYPE="SUBNODE" DELETE="0">
+         <NODE NAME="Name" TYPE="STRING" VALUE="Gesperrte Adressen" />
+         <NODE NAME="Desc" TYPE="STRING" VALUE="" />
+         <NODE NAME="Masks" TYPE="STRING" VALUE="" />
+         <NODE NAME="Type" TYPE="DWORD" VALUE="1" />
+         <NODE NAME="Flags" TYPE="DWORD" VALUE="5" />
+        </NODE>
+        <NODE NAME="UrlSet" TYPE="SUBNODE" DELETE="0">
+         <NODE NAME="Name" TYPE="STRING" VALUE="Liste zugelassener Adressen" />
+         <NODE NAME="Desc" TYPE="STRING" VALUE="" />
+         <NODE NAME="Masks" TYPE="STRING" VALUE="" />
+         <NODE NAME="Type" TYPE="DWORD" VALUE="2" />
+         <NODE NAME="Flags" TYPE="DWORD" VALUE="5" />
+        </NODE>
+       </NODE>
+       <NODE NAME="EPFWDATA" TYPE="XML" XML_VERSION="2">
+        <ZONES>
+         <ZONE ID="A2000000" NAME="Von der Protokollprüfung ausgenommene Adressen" FLAGS="0" MODIFIED="2017/02/10 09:35:02" USER_NAME="Import" />
+        </ZONES>
+        <BROWSERS>
+         <BROWSER PATH="C:\Windows\System32\svchost.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\explorer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\GMX\GMX Upload-Manager\DAVSRV.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Mozilla Firefox\firefox.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Mozilla Thunderbird\thunderbird.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Google\Update\GoogleUpdate.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre6\bin\java.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v140\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\ANSYS SCDM\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\ACD Systems\ACDSee\11.0\ACDSee11.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\splwow64.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Corel\CorelDRAW Graphics Suite X5\Programs\CorelPP.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Corel\CorelDRAW Graphics Suite X5\Programs\CorelDRW.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Tracker Software\PDF Viewer\PDFXCview.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Java\Java Update\jusched.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Java\Java Update\jucheck.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\Office14\OUTLOOK.EXE" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\microsoft shared\Source Engine\OSE.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\CDBurnerXP\cdbxpp.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Google\Google Earth\plugin\geplugin.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\tb\EasyBrowse2K2.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre6\bin\javaw.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\Office14\WINWORD.EXE" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\WinSCP\WinSCP.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-6u37-windows-i586-iftw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\msiexec.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Creo Elements\Direct Modeling 17.0\binx64\SolidDesigner.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static\CCC.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_4_402_287.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\notepad.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v130\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Autodesk\DWG TrueView 2012\dwgviewr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\DeviceDisplayObjectProvider.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorsvw.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorsvw.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\install_flashplayer11x32au_mssd_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\install_flashplayer11x32au_mssd_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_5_502_110.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\WerFault.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v145\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\msiexec.exe" APP_FLAGS="1" />
+         <BROWSER PATH="F:\Tools\GPU-Z.0.6.6.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Corel\CorelDRAW Graphics Suite X5\Programs\Cap.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\Office14\EXCEL.EXE" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Common Files\Autodesk Shared\WSCommCntr\lib\WSCommCntr2.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Autodesk\AutoCAD 2011\acad.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\svchost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\AutodeskDesignRevSetup.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Akamai\netsession_win.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Akamai\installer_uploader.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Autodesk\Autodesk Design Review 2013\DesignReview.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashUtil32_11_5_502_110_Plugin.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_5_502_135.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerUpdateService.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{4D78F225-1818-43CE-9462-4702CEF350AD}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\FlashPlayerInstaller.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Creo Elements\Direct 3D Access 17.0\binx64\SolidDesigner.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{B4357CE0-249E-47F2-A643-F06CC49C9CD5}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{180B4731-91D9-463F-A2D8-C525D5569E3F}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Mozilla Thunderbird\updated\thunderbird.exe" APP_FLAGS="D" />
+         <BROWSER PATH="G:\win\x64\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\pft967F.tmp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Google\Google SketchUp 8\SketchUp.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\Office14\CLVIEW.EXE" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\install_flashplayer11x32_mssd_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\install_flashplayer11x32_mssd_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_5_502_149.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{AF83BDD9-CDBD-4805-95B9-3C40B74BA224}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\mstsc.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\lsass.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-7u15-windows-i586-iftw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_6_602_168.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{1BAE574C-6DD3-44B2-BF04-F7DD65DE9A07}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{41F5301B-F7AA-46F3-984D-72E5A7D82AB7}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre7\bin\javaw.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\3Dconnexion\3Dconnexion 3DxSoftware\3DxWare64\3dxrepair.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\Updater6\Adobe_Updater.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-7u17-windows-i586-iftw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\Temp\{00825966-5C9B-41CA-8B35-A756E8F6DD74}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{572ED1B1-B64A-4FEA-AECB-CDF485D5D71C}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_6_602_180.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Internet Explorer\iexplore.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v145\aisol\bin\winx64\AnsysWBU.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre7\bin\java.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\KiesSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Samsung\Kies\Kies.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\InstallShield Installation Information\{758C8301-2696-4855-AF45-534B1200980A}\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\rundll32.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\net.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\ANSYS SCDM\GACInstall.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_7_700_169.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-7u21-windows-i586-iftw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\Temp\{969E531F-1F22-406F-B8EF-4077640455E2}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{689A82C1-C80E-45E2-AA6E-0438DF4666A3}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_7_700_202.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\Office14\POWERPNT.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{AE110175-312E-4873-A1D3-89490309728F}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{0C1431FE-920D-459E-B6DC-B20AD76DAE8E}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Creo Elements\Direct Modeling 17.0\Annotation\binx64\annotator.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_7_700_224.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v145\ansys\bin\winx64\ANSYS.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{36F34893-A21A-4CC2-932B-7DF80444BE44}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{EB08F553-087C-4489-8610-B07714D180C9}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\jre-7u25-windows-i586.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{CB73FC60-CA30-4B82-892F-78270490AD86}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{73A74E30-8B73-4652-9D1B-EE6BDD5E91D8}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{57874FF0-029E-4200-B727-F394ACECB439}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{15155AA7-379D-4C76-97F0-6A47D0EAE490}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{63386A87-2CC7-4C19-BF14-CF9F9CB3DD6F}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_9_900_117.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-7u45-windows-i586-iftw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Creo Elements\Direct 3D Access 18.1\binx64\SolidDesigner.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\is-TMG73.tmp\ApnStub.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Adobe\Acrobat 6.0\Acrobat\Acrobat.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Tracker Software\PDF Editor\PDFXEdit.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\ADE_2.0_Installer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Adobe\Adobe Digital Editions 2.0\DigitalEditions.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Calibre2\calibre.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\Temp\{17693E31-0399-43CD-9480-7011CB0103F1}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{F95E5FE5-65C2-4F06-BA29-D08B58189B35}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Windows Media Player\wmplayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\AGFEO\Tk-Suite\tools\ctimon.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_11_9_900_170.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\is-OIFIK.tmp\PDFXVE3.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\install_flashplayer12x32au_mssd_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\install_flashplayer12x32au_mssd_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_12_0_0_43.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{CFE808B9-35AC-4500-94B6-4FDFB963ABAE}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Creo Elements\Direct Modeling 18.1\binx64\SolidDesigner.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Internet Explorer\iexplore.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\Temp\{99F79203-E8D3-46A8-BCF1-5651814D9F45}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{BC0FD7F9-D877-47FD-8E35-37E83F20837F}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\DWWIN.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_12_0_0_70.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{D926576B-A2BD-4A64-8B13-209997EA7002}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{FEBDAB43-29D3-416D-A447-443E28E86F2D}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_12_0_0_77.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-7u55-windows-i586-iftw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\install_flashplayer13x32_mssd_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\install_flashplayer13x32_mssd_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\W4I1JP8I\install_flashplayer13x32ax_gtbd_chrd_dn_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\install_flashplayer13x32ax_gtbd_chrd_dn_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="F:\9bec899c46632b3fe65b050b\Setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="\\SERVER\server_lw_d\AutoCad_2015\Img\3rdParty\DirectX\DXSETUP.exe" APP_FLAGS="1" />
+         <BROWSER PATH="F:\a0ba05093648418095\Setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\Autodesk Shared\WSCommCntr4\lib\WSCommCntr4.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Autodesk\AutoCAD 2015\acad.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_13_0_0_182.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Autodesk\AutoCAD 2015\AcWebBrowser\AcWebBrowser.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\Temp\{9B895586-05C5-4B91-8C0C-32C643ECEBE9}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{98424344-D8D3-4F53-AF28-1E6493551CAC}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\jxpiinstall.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\Temp\{9B5DFE04-F996-46FF-B7EA-F1C9D47A78E9}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{B0778561-6709-451F-91FA-3B60957E33FD}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_13_0_0_214.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\AMD\Support\14-4-win7-win8-win8.1-64-dd-ccc-whql\Packages\Apps\Raptr\RaptrInstaller\amd_ge_installer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\raptr_stub.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Raptr\raptrstub.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Raptr\raptr.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Raptr\raptr_ep64.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Mozilla Firefox\crashreporter.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Raptr\f2p_ping.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Autodesk\AutoCAD 2015\AcSettingSync.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\install_flashplayer14x32au_mssd_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_14_0_0_125.exe" APP_FLAGS="1" />
+         <BROWSER PATH="G:\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Mathcad Prime 3.0\MathcadPrime.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\PTC\Mathcad Prime 3.0\Help\jre\win32\jre\bin\javaw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\Temp\{6173AB24-1CA4-4FEB-912C-44E724573193}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{21637864-819E-43F8-9CF2-1AE9CB625352}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_14_0_0_145.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-7u65-windows-i586-iftw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\GMX Application {sync-000021}\gmx_mediacenter.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre7\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Dlubal\RSTAB 8.02\RSTAB64.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\PTC\Quality Agent\i486_nt\obj\qualityagent.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_14_0_0_179.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{78506B79-605A-4DBE-9E94-236C14527FBE}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{7F3EFD33-8CDF-4081-85E7-B4407012E655}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\2ad4d6dce60c3619587291\Setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{5856B2F5-4A3A-4D68-859B-BCEFFCB2C672}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_15_0_0_152.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\AMD\AMD-Catalyst-14-9-win7-win8.1-64Bit-dd-ccc-whql\Bin64\InstallManagerApp.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Autodesk\SetupDWGTrueView2015_ENU_64bit\3rdParty\DirectX\DXSETUP.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Autodesk\DWG TrueView 2015 - English\dwgviewr.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\winsxs\x86_microsoft-windows-mediaplayer-setup_31bf3856ad364e35_6.1.7601.17514_none_affb336d34ccf2f8\setup_wm.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Windows Media Player\setup_wm.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\unregmp2.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Mozilla Firefox\updated\firefox.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\install_flashplayer15x32au_mssd_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_15_0_0_189.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{B631F000-78EC-4F9E-939D-794D504937BF}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{E588C628-35EE-4E35-AA29-46733100AA8D}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{10DE9C41-B95A-4A57-8688-020F982F12A5}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{D5C53C2D-FBF0-47A3-875F-90CB2A976B01}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\_setup_5831B16A0742450BAB805AA523B44A17\gmx_mediacenter.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_15_0_0_239.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{6A9F9BE1-FDD6-4634-9359-F49F2C2E9BB1}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{7C7C444B-595C-4EDE-90CF-F77A54C5ADB6}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_15_0_0_246.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\install_flashplayer16x32au_mssd_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\AutoDetectUtilApp.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\AMD\AMD-Catalyst-Omega-14.12-Without-DOTNet45-Win7-64bit\Bin64\InstallManagerApp.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\AMD\AMD-Catalyst-Omega-14.12-Without-DOTNet45-Win7-64bit\Packages\Apps\Raptr\RaptrInstaller\amd_ge_installer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_16_0_0_235.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{6360F82B-508A-4D79-8DD9-E5B2FA662C75}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{56AE16B6-2FDD-4216-9485-C11A9560B6B6}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_16_0_0_257.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\AMD\ATI.ACE\Core-Static\CCC.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{28005E77-F122-4998-B829-5A8BDC2CA7DC}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{5729C101-3F59-452B-A9D0-5B54D7567067}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_16_0_0_287.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{C39A7B67-5D50-41BE-A076-2C44231F2885}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{2B0E64F3-8F1E-45F5-838B-2EF9764E78ED}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-8u31-windows-au.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\MRT.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\IE13942.tmp\IE11-support\ienrcore.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_16_0_0_296.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{06501A8E-29DA-4016-9F27-FC74905AC564}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{5624086E-C10E-4E8B-947F-251EDFA4C7AE}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre1.8.0_31\bin\jp2launcher.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_16_0_0_305.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v160\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v160\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\install_flashplayer17x32_mssd_aaa_aih.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_17_0_0_134.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\smartmontools for Windows\bin\update-smart-drivedb.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Creo Elements\Direct Modeling 18.1\Annotation\binx64\annotator.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{6D1E079F-4C7A-450D-8F6D-D39CF409E2BE}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{1457EA7A-57BB-40BF-9455-EC8AAC6DFD92}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_17_0_0_169.exe" APP_FLAGS="1" />
+         <BROWSER PATH="D:\temp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Mathcad Prime 3.1\MathcadPrime.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\PTC\Mathcad Prime 3.1\Help\jre\win32\jre\bin\javaw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\PTC\DiagnosticTools\x86e_win64\obj\qualityagent.exe" APP_FLAGS="1" />
+         <BROWSER PATH="\\SERVER\server_lw_d\Software\Mathcad Prime 3.1\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\flashplayer17au_ha_install.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_17_0_0_188.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\pftBFD7.tmp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\pftE023.tmp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="D:\temp\temp\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v160\scdm\Updater.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre1.8.0_45\bin\jp2launcher.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v161\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v161\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Intel\Download\w_mpi-rt_p_4.1.3.045\Setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Intel\Intel Software Manager\ism2.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Intel\Intel Software Manager\prdregfixer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Intel\Intel Software Manager\intelremotemonagent2.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\dxdiag.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{58A40EDC-936C-435A-819F-8EBCF8EDEFA2}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\Downloads\flashplayer18au_ha_install.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_18_0_0_160.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{271735F1-CBA6-4EB3-B112-D01D0781FE10}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{675F3971-795E-451A-A5CB-F5568703ACFF}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_18_0_0_194.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Mozilla Firefox\plugin-container.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\WebEx\WebEx\1324\atmgr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Intel\MPI-RT\4.1.3.045\setup\Setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{214CBE8A-DC60-4954-8011-1310138810B2}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{D7D1FEC8-7F8B-46DC-8404-680E5B35CE4D}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_18_0_0_203.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{C06A73C8-02B3-4C33-8BAF-4AA75A89AE50}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{82A20487-576A-4714-814E-1593F5CDD73E}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_18_0_0_209.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-8u51-windows-au.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\ytb.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Yahoo!\yset\{B6C44097-42A9-3149-BD45-41111FBDE14F}\YSearchSetTool.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre1.8.0_51\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{87BF40BC-2FE0-47D3-9EF5-F9C38E8AA63D}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{A2FB401E-68B5-426D-B29A-E177CEBD3F5D}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v162\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v162\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_18_0_0_232.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Dlubal\RSTAB 8.04\RSTAB64.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\AMD\AMD-Catalyst-15.7.1-Without-DOTNet45-Win7-64bit\Bin64\InstallManagerApp.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\AMD\AMD-Catalyst-15.7.1-Without-DOTNet45-Win7-64bit\Packages\Apps\Raptr\RaptrInstaller\amd_ge_installer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{43103341-EBED-430A-98F5-028027FAB0C3}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{6764A423-8EE9-4955-BACA-D0585B3D0CBA}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\winsxs\x86_microsoft-windows-installer-executable_31bf3856ad364e35_6.1.7601.18896_none_4b344ed5e49b1efc\msiexec.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre1.8.0_60\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Akamai\ControlPanel.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Windows Media Player\wmpnetwk.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\~nsu.tmp\Au_.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashUtil32_19_0_0_185_Plugin.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{DE0CE6AF-83BE-4015-A07E-517C2DCDD40F}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_19_0_0_207.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{15C0D16D-F848-400A-8D5F-231FCBCB1F42}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{0055586C-591A-48E4-8092-F53A1E9F079E}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-8u65-windows-au.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_19_0_0_226.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\Temp\{90FDB649-D6A5-4959-AB2C-AD81FA709F67}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Temp\{14ADE0DF-2D4C-4B16-A7FC-6AF413727714}\InstallFlashPlayer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_19_0_0_245.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre1.8.0_65\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\jre-8u66-windows-au.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\3Dconnexion\Viewer and Assembly Demo\bin\3DxAssembly\3DxAssembly.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_20_0_0_235.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_20_0_0_267.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre1.8.0_66\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_20_0_0_286.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre1.8.0_66\bin\javaw.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v170\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v170\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v170\aisol\bin\winx64\AnsysWBU.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_20_0_0_306.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\WebEx\WebEx\1524\atmgr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\eb46ab86b70bd955e5348745\Setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_21_0_0_213.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_21_0_0_242.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_22_0_0_192.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\Kurz\AppData\Local\Temp\ACDWIClient.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\ACD Systems\ACDSee\19.0\DirectX9\DXSETUP.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\ACD Systems\ACDSee\19.0\ACDSee19.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\ACD Systems\ACDSee\19.0\acdIDInTouch2.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_22_0_0_209.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\Office14\ONENOTE.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_23_0_0_162.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v172\aisol\bin\winx64\AnsysWBU.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v172\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\KeyShot6\bin\keyshot6.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\KeyShot6\bin\lux_upd.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\vsta.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_23_0_0_185.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_23_0_0_205.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_23_0_0_207.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_24_0_0_186.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v172\RSM\bin\Ans.Rsm.JMHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerPlugin_24_0_0_194.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v180\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v180\aisol\bin\winx64\AnsysWBU.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\ie4uinit.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" APP_FLAGS="8D" />
+         <BROWSER PATH="C:\Windows\System32\backgroundTaskHost.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\BackgroundTransferHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\wermgr.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\CompatTelRunner.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\dmclient.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Windows Defender\MpCmdRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Microsoft\OneDrive\OneDrive.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\admin\AppData\Local\Microsoft\OneDrive\OneDrive.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\WerFault.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\LMS\LMS.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\wbem\WmiPrvSE.exe" APP_FLAGS="1" />
+         <BROWSER PATH="H:\DWGTrueView_2017_Enu_64bit.sfx.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\_AIC483.tmp\Setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Autodesk\DWG TrueView 2017 - English\AcWebBrowser\AcWebBrowser.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Autodesk\DWG TrueView 2017 - English\DADispatcherService.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\dasHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\Office14\WINWORD.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\Office14\OUTLOOK.EXE" APP_FLAGS="8D" />
+         <BROWSER PATH="C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe" APP_FLAGS="8D" />
+         <BROWSER PATH="C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdgeCP.exe" APP_FLAGS="8D" />
+         <BROWSER PATH="C:\Windows\System32\smartscreen.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\browser_broker.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\taskhostw.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\ImmersiveControlPanel\SystemSettings.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\Source Engine\OSE.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\is-9VTH8.tmp\FreeFileSync_8.9_Windows_Setup.tmp" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\FreeFileSync\Bin\FreeFileSync_x64.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\SIHClient.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIForWindows_3217.30117.1021.0_x64__8wekyb3d8bbwe\PowerBI.Windows.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.NetworkSpeedTest_1.0.0.23_x64__8wekyb3d8bbwe\NetworkSpeedTest.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\ActiproSoftwareLLC.562882FEEB491_2.6.18.18_neutral__24pqs290vpjk0\CodeWriter.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\RuntimeBroker.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\WWAHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\7zS524F.tmp\setup-stub.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\pftD910.tmp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Dlubal\RSTAB 8.07\RSTAB64.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\sdiagnhost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\721FC5D1-33F9-45B3-A341-8EBBC78691B1\atih_installer_shell_standard.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\721FC5D1-33F9-45B3-A341-8EBBC78691B1\report_sender_static_standard.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Acronis\TrueImageHome\TrueImage.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Acronis\TrueImageHome\TrueImageMonitor.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\AdobeSystemsIncorporated.AdobePhotoshopExpress_1.3.1.19_x64__ynb6jyjzte8ga\PSExpress.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\wermgr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\KeePass Password Safe\KeePass.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\F36547FA-E057-43BC-A4D2-B0B1921FEA3F\atih_installer_shell_standard.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\F36547FA-E057-43BC-A4D2-B0B1921FEA3F\report_sender_standard.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11610.1001.25.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\InstallAgentUserBroker.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.MicrosoftStickyNotes_1.6.2.0_x64__8wekyb3d8bbwe\Microsoft.StickyNotes.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\Office14\EXCEL.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneMusic_10.16122.10271.0_x64__8wekyb3d8bbwe\Music.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\Office14\CLVIEW.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\LockHunter\LockHunter.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\D24F0EAB-D7C1-457E-B752-0E1668E8F10F\report_sender_standard.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Intel\Intel(R) Security Assist\isa.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Dlubal\SHAPE-THIN 8.07 (x86)\Duenq.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\LibreOffice 5\program\soffice.bin" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Microsoft.NET\Framework64\v2.0.50727\dw20.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\jds6987843.tmp\JavaSetup8u121.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Java\jre1.8.0_121\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.SkypeApp_11.11.110.0_x64__kzf8qxf38zg5c\SkypeHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneMusic_10.17012.10301.0_x64__8wekyb3d8bbwe\Music.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\AppHostRegistrationVerifier.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_17.214.10010.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Microsoft\OneDrive\Update\OneDriveSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Mozilla Maintenance Service\maintenanceservice.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\GRDmvtOPOHfX\AppData\Local\Microsoft\OneDrive\OneDrive.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\OneDriveSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\GRDmvtOPOHfX\AppData\Local\Microsoft\OneDrive\Update\OneDriveSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\InstallAgent.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Mathcad Prime 4.0\MathcadPrime.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\kurz\AppData\Local\Microsoft\OneDrive\OneDrive.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz\AppData\Local\Microsoft\OneDrive\Update\OneDriveSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Admin.MKURZ\AppData\Local\Microsoft\OneDrive\OneDrive.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Admin.MKURZ\AppData\Local\Microsoft\OneDrive\Update\OneDriveSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.18.37.0_x86__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\jds64172906.tmp\JavaSetup8u121 (1).exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\jds64833843.tmp\jre-8u121-windows-x64.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\7ZipSfx.000\setup.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\ProgramData\Logishrd\LogiOptions\Software\Current\updater.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\Downloads\setupskypeforbusinessentryretail.x86.de-de_.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeC2RClient.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\root\Integration\Integrator.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\root\Integration\OneDriveSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\root\Office16\lync.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\root\Office16\lynchtmlconv.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\dfsvc.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Apps\2.0\HVBT8ALW.BMV\D72NVT7B.TGY\micr..tion_c3bce3770c238a49_0010.0000_f5c0ca3a6dc134da\Microsoft.Online.CSE.Hybrid.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\root\Office16\OcPubMgr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_17.313.10010.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.18.52.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.20.951.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Java\jre1.8.0_121\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.20.1102.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.7967.2139\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\Speech_OneCore\Common\SpeechRuntime.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\Speech_OneCore\Common\SpeechModelDownload.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_17.425.10010.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\jds760171.tmp\jre-8u131-windows-au.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11703.1001.45.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingTranslator_4.8.3.0_x64__8wekyb3d8bbwe\Translator.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.7967.2161\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v181\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v181\aisol\bin\winx64\AnsysWBU.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v181\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Wacker\AppData\Local\Microsoft\OneDrive\OneDrive.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\Wacker\AppData\Local\Microsoft\OneDrive\Update\OneDriveSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\UNP\UNPCampaignManager.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\$WINDOWS.~BT\Sources\SetupHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Windows Defender\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.8126.42377.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.8218.40507.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8067.2115\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\MpSigStub.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\NVIDIA\DisplayDriver\377.35\Win10_64\International\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\temp\NVIDIA\NvDisplayContainerInstallerTemp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\temp\NVIDIA\ControlPanelInstallerTemp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Java\jre1.8.0_131\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.8218.40507.0_x64__8wekyb3d8bbwe\HxMail.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8201.2102\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\DWWIN.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\7zSC7FB.tmp\setup-stub.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11705.1001.21.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsFeedbackHub_1.1704.1603.0_x64__8wekyb3d8bbwe\PilotshubApp.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8229.2073\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8229.2086\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8229.2103\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\maharjan\AppData\Local\Microsoft\OneDrive\OneDrive.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.8400.40745.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2017.35063.13610.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8326.2073\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.8400.40895.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2017.35071.13510.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.8400.40955.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Mozilla Maintenance Service\update\updater.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11706.1001.26.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8326.2076\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\3Dconnexion\3DxWare\3DxWinCore64\3DxService.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v181\Addins\ACT\bin\Win64\Ansys.ACT.Browser.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneVideo_10.17072.13111.0_x64__8wekyb3d8bbwe\Video.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="D:\temp\cpuz_x64.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Akamai\netsession_win.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Akamai\installer_uploader.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Akamai\uninstall.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Hewlett-Packard\Remote Graphics Receiver\rgreceiver.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\HP\HP Performance Advisor\Advisor.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11707.1001.23.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\is-VSH21.tmp\WinSCP-5.9.6-Setup.tmp" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\is-8IKBP.tmp\WinSCP-5.10.4.RC-Setup.tmp" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8326.2096\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.21.2212.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v182\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v182\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\pft64C8.tmp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneMusic_10.17062.14111.0_x64__8wekyb3d8bbwe\Music.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\is-V9OD1.tmp\WinSCP-5.11.1-Setup.tmp" APP_FLAGS="D" />
+         <BROWSER PATH="D:\pdf-3d\acrobatproDC_00000000000000000000000407.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\AdobeGCClient\customhook\gccustomhook.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\AdobeGCClient\AGSService.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\AdobeGCClient\agshelper.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\core\PDapp.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\AdobeGCClient\AdobeGCClient.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\P7\AASIapp.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\Acrobat.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\P7\adobe_licutil.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\AdobeCollabSync.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\LogTransport2.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsFeedbackHub_1.1705.2121.0_x64__8wekyb3d8bbwe\PilotshubApp.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8326.2107\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Autodesk\DWG TrueView 2017 - English\dwgviewr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8431.2079\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneVideo_10.17082.14121.0_x64__8wekyb3d8bbwe\Video.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11708.1001.26.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneMusic_10.17072.16431.0_x64__8wekyb3d8bbwe\Music.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\AuthHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8431.2094\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8431.2107\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11708.1001.30.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\jds179251546.tmp\jre-8u151-windows-au.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8528.2139\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11709.1001.27.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8528.2147\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\MRT-KB890830.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneMusic_10.17083.18321.0_x64__8wekyb3d8bbwe\Music.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftPdfReader.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.MSPaint_3.1710.18037.0_x64__8wekyb3d8bbwe\PaintStudio.View.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8625.2121\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8625.2127\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11710.1001.27.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Microsoft VS Code\Code.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.SkypeApp_12.8.487.0_x64__kzf8qxf38zg5c\SkypeHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.21.2492.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8625.2139\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11711.1001.5.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.12.17007.17123-0\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.12.17007.17123-0\MpCmdRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneVideo_10.17102.13911.0_x64__8wekyb3d8bbwe\Video.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\net.downloadhelper.coapp\bin\net.downloadhelper.coapp-win-64.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneMusic_10.17086.24711.0_x64__8wekyb3d8bbwe\Music.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8730.2127\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneVideo_10.17112.12111.0_x64__8wekyb3d8bbwe\Video.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneVideo_10.17112.13411.0_x64__8wekyb3d8bbwe\Video.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\pft5C4C.tmp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\pft8FA5.tmp\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8730.2165\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11712.1001.11.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8730.2175\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.12.17007.18011-0\MpCmdRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.12.17007.18011-0\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Java\jre1.8.0_151\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.8827.2148\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11712.1001.13.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\jds1124031.tmp\jre-8u161-windows-au.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Mathcad Prime 4.0\Help\jre\win32\jre\bin\javaw.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11712.1001.16.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9001.2138\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.8827.21855.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Wireshark\Wireshark.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2017.39101.16720.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\is-LO6OB.tmp\WinSCP-5.12.2.RC-Setup.tmp" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Common Files\Jumping Bytes\jbUpdater.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Dlubal\RSTAB 8.10\RSTAB64.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9001.2144\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\hasplms.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Jumping Bytes\PureSync\PureSync.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v190\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v190\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v190\aisol\bin\winx64\AnsysWBU.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\is-NJKLM.tmp\FreeFileSync_9.8_Windows_Setup.tmp" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11801.1001.6.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9001.2171\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2018.18011.13110.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\is-0QP90.tmp\WinSCP-5.13-Setup.tmp" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2018.18021.12420.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9029.2167\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.12.17007.18022-0\MpCmdRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.12.17007.18022-0\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.9029.21675.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\deepinvent\MailStore Client\MailStore.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.22.3254.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11802.1001.8.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.9029.22105.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\TeamViewer\TeamViewer.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9029.2253\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\AdobeSystemsIncorporated.AdobePhotoshopExpress_2.1.159.0_x64__ynb6jyjzte8ga\PSExpress.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9126.2116\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.23.10792.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.23.10923.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.ZuneVideo_10.17122.16211.1000_x64__8wekyb3d8bbwe\Video.UI.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.14.17613.18039-0\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9126.2152\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsFeedbackHub_1.1712.811.1000_x64__8wekyb3d8bbwe\PilotshubApp.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.14.17639.18041-0\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Java\jre1.8.0_161\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.9126.21785.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2018.18031.15040.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9226.2114\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\jds803984.tmp\jre-8u171-windows-au.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.SkypeApp_12.1813.286.0_x64__kzf8qxf38zg5c\SkypeHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.SkypeApp_12.1813.286.0_x64__kzf8qxf38zg5c\SkypeApp.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2018.18031.15820.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9226.2126\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.24.11294.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9226.2156\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.14.17639.18041-0\MpCmdRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\TempState\Downloads\GoToAssist Corporate Opener.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\LogMeIn\GoToAssist Corporate\1280\[2018-05-17_14.03.23.294]\G2AC_Comm.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\LogMeIn\GoToAssist Corporate\1280\[2018-05-17_14.11.35.986]\G2AC_Comm.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\LogMeIn\GoToAssist Corporate\1280\[2018-05-17_14.22.52.827]\G2AC_Comm.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\LogMeIn\GoToAssist Corporate\1280\[2018-05-17_14.23.43.014]\G2AC_Comm.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\LogMeIn\GoToAssist Corporate\1280\[2018-05-17_14.47.57.385]\G2AC_Comm.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\LogMeIn\GoToAssist Corporate\1280\[2018-05-17_15.02.32.330]\G2AC_Comm.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\Downloads\Setup.X86.de-de_O365BusinessRetail_18b24198-a283-4299-ba6d-305237837cc1_TX_DB_b_32_.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE" APP_FLAGS="8D" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\TempState\Downloads\Setup.X86.de-de_O365BusinessRetail_18b24198-a283-4299-ba6d-305237837cc1_TX_DB_b_32_.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Integration\Integrator.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Integration\OneDriveSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE" APP_FLAGS="8D" />
+         <BROWSER PATH="C:\Windows\SysWOW64\rundll32.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SystemApps\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\Microsoft.AAD.BrokerPlugin.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\SearchProtocolHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\lync.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\UcMapi.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\lynchtmlconv.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\OLicenseHeartbeat.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\OLCFG.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Getstarted_6.10.10872.0_x64__8wekyb3d8bbwe\WhatsNew.Store.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\WINWORD.EXE" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\protocolhandler.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\MSOSYNC.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_17.9328.1700.0_x64__8wekyb3d8bbwe\Office16\OfficeHubWin32.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\ONENOTE.EXE" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_17.9330.20531.0_x64__8wekyb3d8bbwe\onenoteim.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Windows\System32\MicrosoftEdgeSH.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.16.17656.18052-0\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9330.2087\OfficeClickToRun.exe" APP_FLAGS="D" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\OsfInstaller.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Windows\SysWOW64\fixmapi.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\Downloads\readerdc_de_xa_crd_install.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.9330.2124\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.1806.18062-0\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.10228.20080\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsFeedbackHub_1.1712.1141.0_x64__8wekyb3d8bbwe\PilotshubApp.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Office16\MSOUC.EXE" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.1806.18062-0\MpCmdRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.10228.20104\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.10228.20134\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11806.1001.21.0_x64__8wekyb3d8bbwe\WinStore.App.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Java\jre1.8.0_171\bin\jp2launcher.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.1807.18075-0\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.10325.20082\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.10325.20091.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2018.18051.18420.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.BingWeather_4.25.11802.0_x64__8wekyb3d8bbwe\Microsoft.Msn.Weather.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2018.18061.17410.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.10325.20118\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\jds479875.tmp\jre-8u181-windows-au.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.10730.20088\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.10730.20102\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\Integration\Addons\OneDriveSetup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2018.18081.14710.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Programs\Microsoft VS Code\Code.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.10730.20127\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\is-R7825.tmp\WinSCP-5.13.4-Setup.tmp" APP_FLAGS="1" />
+         <BROWSER PATH="C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.1809.2-0\MsMpEng.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\plug_ins\pi_brokers\32BitMAPIBroker.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\Common Files\microsoft shared\ClickToRun\Updates\16.0.10827.20138\OfficeClickToRun.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\SDXHelper.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\PTC\Creo Elements\Direct 3D Access 20.0\personality\adapters\binx64\nut2acis.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.10827.20137.0_x64__8wekyb3d8bbwe\HxTsr.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\Shared Files\Licensing\winx64\ansysls_client.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v192\Framework\bin\Win64\AnsysFWW.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v192\commonfiles\APIP\bin\winx64\apip-standalone-service.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\Downloads\Intel\w_mpi_p_2017.3.210\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Users\kurz.ANAKON\AppData\Local\Temp\pset_tmp_PSXE2017_Kurz\2018.10.12_09.22.42_0000a6c0\delayed\stat\{eff2ee48-8d7e-4849-843e-ecdb8ecb653c}\setup.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v192\aisol\bin\winx64\AnsysWBU.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\$Windows.~WS\Sources\SetupHost.exe" APP_FLAGS="1" />
+         <BROWSER PATH="C:\Program Files\ANSYS Inc\v192\scdm\SpaceClaim.exe" APP_FLAGS="1" />
+        </BROWSERS>
+        <RULES_PROFILES>
+        </RULES_PROFILES>
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </PLUGIN>
+    <PLUGIN ID="1000400">
+     <PROFILES>
+      <NODE NAME="Enable" VALUE="1" TYPE="DWORD" />
+      <NODE NAME="Active" VALUE="@My profile" TYPE="STRING" />
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="UpdateType" VALUE="22" TYPE="DWORD" />
+       <NODE NAME="SelectedServer" VALUE="AUTOSELECT" TYPE="STRING" />
+       <NODE NAME="Username" VALUE="EAV-67265977" TYPE="STRING" />
+       <NODE NAME="Password" VALUE="BNa/6bnwjfI4ZACtz8grddoxGLw=" TYPE="PASS" />
+       <NODE NAME="UseProxy" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Proxy" VALUE="" TYPE="STRING" />
+       <NODE NAME="ProxyPort" VALUE="C38" TYPE="DWORD" />
+       <NODE NAME="ProxyUsername" VALUE="" TYPE="STRING" />
+       <NODE NAME="ProxyPassword" VALUE="" TYPE="PASS" />
+       <NODE NAME="LanUserType" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="LanUsername" VALUE="" TYPE="STRING" />
+       <NODE NAME="LanPassword" VALUE="" TYPE="PASS" />
+       <NODE NAME="DisconnectLan" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Restart" VALUE="200" TYPE="DWORD" />
+       <NODE NAME="NotifyBeforeUpdate" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="NotifyBeforeUpdateSize" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="UseDevelModules" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="DontShowNotofication" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="CheckForPCUUpdateDisabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Check4OptionalPCU" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MirrorEnabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MirrorFolder" VALUE="C:\ProgramData\ESET\ESET NOD32 Antivirus\mirror" TYPE="STRING" />
+       <NODE NAME="MirrorMode" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MirrorUsername" VALUE="" TYPE="STRING" />
+       <NODE NAME="MirrorPassword" VALUE="" TYPE="PASS" />
+       <NODE NAME="MirrorEnableHTTP" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="MirrorHTTPPort" VALUE="8AD" TYPE="DWORD" />
+       <NODE NAME="MirrorHTTPThreadNumbers" VALUE="6" TYPE="DWORD" />
+       <NODE NAME="MirrorHTTPAuthorizationMethode" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MirrorHTTPHostName" VALUE="" TYPE="STRING" />
+       <NODE NAME="MirrorLocalUserType" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MirrorLocalUserName" VALUE="" TYPE="STRING" />
+       <NODE NAME="MirrorLocalUserPassword" VALUE="" TYPE="PASS" />
+       <NODE NAME="MirrorDisconnectLan" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MirrorSelectedPCUs" VALUE="" TYPE="STRING" />
+       <NODE NAME="MirrorCertificateChainFile" VALUE="" TYPE="STRING" />
+       <NODE NAME="MirrorCertificateType" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="MirrorPrivateKeyFile" VALUE="" TYPE="STRING" />
+       <NODE NAME="MirrorPrivateKeyType" VALUE="0" TYPE="DWORD" />
+      </NODE>
+     </PROFILES>
+     <SETTINGS>
+      <NODE NAME="RegistrationType" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="Registration" VALUE="8" TYPE="DWORD" />
+      <SERVERS>
+      </SERVERS>
+      <NODE NAME="SerialNumber" VALUE="" TYPE="STRING" />
+      <NODE NAME="CountryCode" VALUE="" TYPE="STRING" />
+      <NODE NAME="FirstName" VALUE="" TYPE="STRING" />
+      <NODE NAME="LastName" VALUE="" TYPE="STRING" />
+      <NODE NAME="CompanyName" VALUE="" TYPE="STRING" />
+      <NODE NAME="EmailAddress" VALUE="" TYPE="STRING" />
+      <NODE NAME="PhoneNumber" VALUE="" TYPE="STRING" />
+      <NODE NAME="Note" VALUE="" TYPE="STRING" />
+      <NODE NAME="USCACountryID" VALUE="" TYPE="STRING" />
+      <NODE NAME="Address1" VALUE="" TYPE="STRING" />
+      <NODE NAME="Address2" VALUE="" TYPE="STRING" />
+      <NODE NAME="City" VALUE="" TYPE="STRING" />
+      <NODE NAME="ZipPostalCode" VALUE="" TYPE="STRING" />
+      <NODE NAME="RenewalReminders" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="ProductUpdates" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="ResellerInfoPartnerEmail" VALUE="" TYPE="STRING" />
+      <NODE NAME="ResellerInfoSubPartnerEmail" VALUE="" TYPE="STRING" />
+      <NODE NAME="ResellerInfoPartnerCode" VALUE="" TYPE="STRING" />
+      <NODE NAME="EvCode" VALUE="01003B44-089D-A778-EFE4-47425D3D5230" TYPE="STRING" />
+      <NODE NAME="UsedActivationType" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="CustomCode" VALUE="0" TYPE="DWORD" />
+      <NODE NAME="SnapshotCount" VALUE="2" TYPE="DWORD" />
+      <NODE NAME="BackupEnabled" VALUE="1" TYPE="DWORD" />
+      <NODE NAME="LastBackupTime" VALUE="5BC36D58" TYPE="DWORD" />
+      <NODE NAME="ReenableUpdateTime" VALUE="0" TYPE="DWORD" />
+     </SETTINGS>
+    </PLUGIN>
+    <PLUGIN ID="1000800">
+     <PROFILES>
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="OutlookIntegrationEnabled" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="OEIntegrationEnabled" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="WLMIntegrationEnabled" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="TBIntegrationEnabled" VALUE="1" TYPE="DWORD" />
+       <NODE NAME="DisableInboxChangesChecking" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="OutlookSyncIssuesFix" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="OutlookCOMAddinForced" VALUE="0" TYPE="DWORD" />
+      </NODE>
+     </PROFILES>
+    </PLUGIN>
+    <PLUGIN ID="1000E00">
+     <PROFILES>
+      <NODE NAME="@My profile" TYPE="SUBNODE">
+       <NODE NAME="BlockRemovableDevicesEnabled" VALUE="0" TYPE="DWORD" />
+       <NODE NAME="Rules" TYPE="XML">
+        <RULES>
+        </RULES>
+       </NODE>
+      </NODE>
+     </PROFILES>
+    </PLUGIN>
+   </PLUGINS>
+   <CLIENT>
+    <NODE NAME="GraphicMode" VALUE="FFFFFFFF" TYPE="DWORD" />
+    <NODE NAME="ShowSplash" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="PageMode" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="SimpleMenu" VALUE="0" TYPE="DWORD" />
+    <NODE NAME="AdvancedMenu" VALUE="0" TYPE="DWORD" />
+    <NODE NAME="ShowMenu" VALUE="0" TYPE="DWORD" />
+    <NODE NAME="ShowToolTips" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="ShowFocus" VALUE="0" TYPE="DWORD" />
+    <NODE NAME="ShowAlert" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="AlertPosition1" VALUE="16902DF" TYPE="DWORD" />
+    <NODE NAME="AlertPosition2" VALUE="14B02DF" TYPE="DWORD" />
+    <NODE NAME="SilentMode" VALUE="0" TYPE="DWORD" />
+    <NODE NAME="FullScreenMode" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="ShowMomentaryMessageBox" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="MomentaryMessageBoxDuration" VALUE="78" TYPE="DWORD" />
+    <NODE NAME="LastWindowPosition" VALUE="18B029D" TYPE="DWORD" />
+    <NODE NAME="ShowDesktopAlert" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="DesktopAlertPosition1" VALUE="433024B" TYPE="DWORD" />
+    <NODE NAME="DesktopAlertPosition2" VALUE="103D7" TYPE="DWORD" />
+    <NODE NAME="DesktopAlertDuration" VALUE="A" TYPE="DWORD" />
+    <NODE NAME="DesktopAlertTransparency" VALUE="14" TYPE="DWORD" />
+    <NODE NAME="ShowBalloon" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="BalloonDuration" VALUE="A" TYPE="DWORD" />
+    <NODE NAME="ShowAlertStatus" VALUE="10000000" TYPE="DWORD" />
+    <NODE NAME="AnimateControls" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="AnimateControlsSpeed" VALUE="9" TYPE="DWORD" />
+    <NODE NAME="AnimateIcons" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="PlaySound" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="ShowSchedulerSystemTasks" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="SupportFirstName" VALUE="" TYPE="STRING" />
+    <NODE NAME="SupportLastName" VALUE="" TYPE="STRING" />
+    <NODE NAME="SupportMail" VALUE="" TYPE="STRING" />
+    <NODE NAME="SupportCompany" VALUE="" TYPE="STRING" />
+    <NODE NAME="SupportCountry" VALUE="FFFFFFFF" TYPE="DWORD" />
+    <NODE NAME="LogAutoScroll" VALUE="FFFFFFFF" TYPE="DWORD" />
+    <NODE NAME="ConfigVersion" VALUE="1388" TYPE="DWORD" />
+    <NODE NAME="ShowProtectionTimeout" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="TweakFlags" VALUE="0" TYPE="DWORD" />
+   </CLIENT>
+   <SHELLEXT>
+    <NODE NAME="Installed" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="Active" VALUE="1" TYPE="DWORD" />
+    <NODE NAME="Type" VALUE="0" TYPE="DWORD" />
+   </SHELLEXT>
+  </SETTINGS>
+ </SECTION>
+</ESET>
