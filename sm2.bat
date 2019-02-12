@@ -49,14 +49,13 @@ REM ============================================================================
   REM call 322018.bat
 
   REM call 322218.bat
+  REM call 314917.bat
 
   REM call 322418.bat
 
   REM call 323018.bat
 
   REM call 323318.bat
-
-  REM call 321918.bat
 
   REM call 321918d.bat
 
@@ -80,13 +79,35 @@ REM ============================================================================
 
   REM call 325618.bat
 
-  call 325618.bat
+  REM call 325918.bat
 
   REM call 325918ssw.bat
 
   REM call 326318.bat
 
-  REM call 326318a.bat
+  REM call 327118.bat
+
+  REM call 327118sf.bat
+
+  REM call 327118anlen.bat
+
+  REM call 327118sup.bat
+
+  REM call 321218.bat
+
+  REM call 327418.bat
+
+  REM call 327418br.bat
+
+  call 327818a.bat
+
+  REM call 328118.bat
+
+  REM call 328218.bat
+
+  REM call 321918.bat
+
+  REM call test.bat
 
 REM ==================================================================================================
 

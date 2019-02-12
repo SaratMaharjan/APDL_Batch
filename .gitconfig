@@ -12,3 +12,5 @@
 	email = sarat.maharjan@gmail.com
 [color]
 	ui = true
+[credential]
+	helper = manager

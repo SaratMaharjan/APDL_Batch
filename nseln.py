@@ -2,8 +2,32 @@
 # nsels = ['fs', 'ms', 'ssw', 'm1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'dw1', 'sw1', 'sp1', 'fl1', 'mz1', 'st1', 'st2', 'st3', 'dsi1',
 #          'anl1', 'srt1', 'srt2', 'mrt1', 'etk1', 'etk2', 'etk3', 'etk4', 'fl2', 'fl3', 'strt1', 'zst1', 'gel', 'ring1', 'dsi2', 'anl2']
 
-nsels = ['swn1', 'sfl1']
+# nsels = ['fs', 'ms', 'ssw', 'm1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'mg21', 'mg22',
+#          'mg23', 'mg24', 'mrt1', 'srt1', 'ls1', 'fl1']
 
+# nsels = ['fs', 'ms', 'ssw', 'm1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'mz1', 'dw1',
+#          'sw1', 'st1', 'st2', 'srt1', 'srt2', 'mrt1', 'etk', 'm5a', 'm5b', 'ls1', 'ring1']
+
+# nsels = ['main', 'stiff', 'others', 'vol30', 'vol60', 'vol90', 'd160']
+
+# nsels = ['bracket', 'arm4', 'flpl', 'st1', 'outer', 'arm2', 'arm3', 'arm4a',
+#          'bolz1', 'brack1', 'brack2', 'arm1', 'mainAR4', 'st2', 'st3', 'addedSols',
+#          'vol90', 'vol30', 'vol25', 'vol8', 'd80', 'd100',
+#          'vol60', 'vol20', 'vol35', 'vol50', 'vol80']
+
+# nsels = ['armN1', 'incArm1', 'lascheN1',
+#          'armN2', 'armN3', 'querShell', 'quer2']
+
+nsels = [
+  'vol20',
+  'vol30',
+  'vol40',
+  'vol60',
+  'vol85',
+  'vol120',
+  'vol130',
+  'vol160'
+]
 for item in nsels:
     named_sel = ExtAPI.DataModel.Project.Model.AddNamedSelection()
     # named_sel.SendToSolver = 0

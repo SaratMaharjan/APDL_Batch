@@ -1,0 +1,38 @@
+[Accelerator]
+Count=20
+0 0 0 H selectDollyTool:
+0 0 0 I selectImageIglooTool:
+0 0 0 O selectOrbitTool:
+0 0 0 Z selectZoomTool:
+0 0 1 Z viewZoomExtents:
+0 0 0 A selectArcTool:
+0 0 0 C selectCircleTool:
+0 0 0 E selectEraseTool:
+0 0 0 B selectPaintTool:
+0 0 0 P selectPushPullTool:
+0 0 0 R selectRectangleTool:
+0 0 0 Space selectSelectionTool:
+0 0 0 L selectLineTool:
+0 0 0 K View/Edge Style/Back Edges
+0 0 0 M selectMoveTool:
+0 0 0 G Edit/Make Component...
+0 0 0 T selectMeasureTool:
+0 0 0 F selectOffsetTool:
+0 0 0 Q selectRotateTool:
+0 0 0 S selectScaleTool:
+[File Locations]
+Models=C:\Users\Asus\Documents\
+Classifications=C:\Users\Asus\AppData\Roaming\SketchUp\SketchUp 2016\SketchUp\Classifications\
+Components=C:\Users\Asus\Documents\
+Materials=C:\Users\Asus\Documents\
+Styles=C:\Users\Asus\Documents\
+Textures=C:\Users\Asus\Documents\
+Images=C:\Users\Asus\Documents\
+ImportExport=C:\Users\Asus\Documents\
+ComponentBrowser=C:\Program Files\SketchUp\SketchUp 2016\Components\
+ComponentBrowser1=E:\Sync\shared\_sketchup\components\Landscape\Plant_Materials\Trees_3D\
+ComponentBrowser2=C:\Program Files\SketchUp\SketchUp 2016\Components\
+MaterialsBrowser=C:\Program Files\SketchUp\SketchUp 2016\Materials\Landscaping, Fencing and Vegetation\
+MaterialsBrowser2=C:\Program Files\SketchUp\SketchUp 2016\Materials\
+StylesBrowser=C:\Program Files\SketchUp\SketchUp 2016\Styles\Default Styles\
+StylesBrowser2=C:\Program Files\SketchUp\SketchUp 2016\Styles\

@@ -29,8 +29,8 @@ REM for %%b in (1 2) do (
 
   REM GS + SSW
   set bq=%%b
-    set interval=2100 1 2100
-    set interval2=10!bq! 100 80!bq!
+    set interval=2700 1 2700
+    set interval2=20!bq! 100 80!bq!
       call calc.bat
 
   REM REM FS + Innen Teleskop
