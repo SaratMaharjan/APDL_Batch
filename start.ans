@@ -99,11 +99,11 @@
 ! the material library files.
 !
 ! UNIX example:
-!/MPLIB,READ,/ansys_inc/v190/ansys/matlib
+!/MPLIB,READ,/ansys_inc/v193/ansys/matlib
 !
 ! PC example:
 ! NOTE: Pathname must be enclosed in SINGLE quotes
-!/MPLIB,READ,'C:\Program Files\Ansys Inc\v190\ansys\matlib'
+!/MPLIB,READ,'C:\Program Files\Ansys Inc\v193\ansys\matlib'
 !
 !/GOPR             ! Activates the printout previously suppressed by /NOPR
 !

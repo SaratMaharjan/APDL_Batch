@@ -31,7 +31,7 @@ for /l %%c in ( 1 1 1 ) do (
       )
 
 
-      set dbSize=32768
+      set dbSize=16384
       if !host! equ ansys2 (
         set dbSize=65536
       )

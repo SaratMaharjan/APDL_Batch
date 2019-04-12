@@ -3,15 +3,15 @@
   <docksite size="0" dockingside="Bottom" originaldocksitesize="0" />
   <docksite size="318" dockingside="Left" originaldocksitesize="0">
     <dockcontainer orientation="1" w="0" h="0">
-      <barcontainer w="315" h="343">
+      <barcontainer w="315" h="570">
         <bar name="structureViewSideBar" dockline="-1" layout="2" dockoffset="0" state="2" dockside="1" fpos="-50,420,300,300" visible="true">
           <items>
             <item name="structureViewDockItem" origBar="" origPos="-1" pos="0" />
           </items>
         </bar>
       </barcontainer>
-      <barcontainer w="315" h="708">
-        <bar name="propertiesDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Properties" dockline="0" dockoffset="346" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="1" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
+      <barcontainer w="315" h="481">
+        <bar name="propertiesDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Properties" dockline="0" dockoffset="573" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="1" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
           <items>
             <item name="propertiesDockItem" origBar="" origPos="-1" pos="0" />
           </items>
@@ -19,10 +19,10 @@
       </barcontainer>
     </dockcontainer>
   </docksite>
-  <docksite size="468" dockingside="Right" originaldocksitesize="0">
+  <docksite size="452" dockingside="Right" originaldocksitesize="0">
     <dockcontainer orientation="0" w="0" h="0">
-      <dockcontainer orientation="1" w="237" h="1022">
-        <barcontainer w="237" h="509">
+      <dockcontainer orientation="1" w="221" h="1022">
+        <barcontainer w="221" h="509">
           <bar name="toolOptionsDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Options" dockline="0" dockoffset="0" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="2" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
             <items>
               <item name="toolOptionsDockItem" origBar="" origPos="-1" pos="0" />
@@ -31,7 +31,7 @@
             </items>
           </bar>
         </barcontainer>
-        <barcontainer w="237" h="510">
+        <barcontainer w="221" h="510">
           <bar name="selectionViewDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Selection" dockline="-1" dockoffset="512" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="2" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" seldocktab="0" hidein="false" autocaptionsync="true">
             <items>
               <item name="selectionViewDockItem" origBar="" origPos="-1" pos="0" />
@@ -53,7 +53,7 @@
   </docksite>
   <documents />
   <bars>
-    <bar name="layerEditorDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Layers" dockline="0" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="1" dockside="0" fpos="1938,3,300,1028" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
+    <bar name="layerEditorDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Layers" dockline="0" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="1" dockside="0" fpos="1927,5,300,1028" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
       <items>
         <item name="layerEditorDockItem" origBar="" origPos="-1" pos="0" />
       </items>

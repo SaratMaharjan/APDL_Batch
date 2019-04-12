@@ -20,7 +20,7 @@ REM timeout /t 120
 start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28\SysinternalsSuite" procexp64.exe
 
 REM timeout /t 120
-REM start outlook.exe
+start outlook.exe
 
-timeout /t 300
+REM timeout /t 300
 start /d "C:\Program Files\OpenVPN\bin" openvpn-gui.exe

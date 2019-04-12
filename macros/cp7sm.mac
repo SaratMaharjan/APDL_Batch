@@ -1,5 +1,5 @@
 ! ---------------
-! Last Modified: Tuesday, January 22nd 2019, 10:01:11 am
+! Last Modified: Monday, March 25th 2019, 2:25:42 pm
 ! Modified By: mhrjn
 ! ---------------
 
@@ -9,9 +9,9 @@
 p1
 jplot, 9
 jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 'gs61'
+inq, 'belastungplot'
+! inq, 'managecomp2'
+! inq, 'gs61'
 jplot
 
 /eof
