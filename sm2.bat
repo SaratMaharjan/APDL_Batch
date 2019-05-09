@@ -86,9 +86,9 @@ REM ============================================================================
 
   REM call 326318.bat
 
-  call 327118.bat
+  REM call 327118.bat
 
-  REM call 327118sf.bat
+  call 327118sf.bat
 
   REM call 327118anlen.bat
 

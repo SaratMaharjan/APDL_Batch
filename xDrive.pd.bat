@@ -22,5 +22,7 @@ start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApp
 REM timeout /t 120
 start outlook.exe
 
+start "C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
+
 REM timeout /t 300
 start /d "C:\Program Files\OpenVPN\bin" openvpn-gui.exe

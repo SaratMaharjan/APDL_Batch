@@ -3,7 +3,7 @@ call reset.bat
 set proj_Num=%~n0
 
 REM set pathBefore=E:
-REM set pathAfter=ansys
+set pathAfter=ansysTest
 
 REM set sourcePre=x:\ins
 REM set sourceFile=s-alt.in

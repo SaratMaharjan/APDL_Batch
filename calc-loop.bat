@@ -49,7 +49,11 @@ for /l %%c in ( 1 1 1 ) do (
     rem region Call ANSYS
     del "!wDir!\f!job!-!lk!.err" >nul 2>&1
 
-    set apdlCMD=!appPath! -db !dbSize! -np !numPro! -b -p !ansj! -dis -mpi INTELMPI -jobstg !job! -jobt !lk! -verz !location!^
+REM     set apdlCMD=!appPath! -db !dbSize! -np !numPro! -b -p !ansj! -dis -mpi INTELMPI -jobstg !job! -jobt !lk! -verz !location!^
+REM  -redirect !redirect! -i "!location!\!sourceFile!" -o "!wDir!\!nPrefix!!job!-!lk!.out" -dir "!wDir!"^
+REM  -j "!nPrefix!!job!-!lk!" -extVar !extVar! -nPrefix "!nPrefix!"
+
+    set apdlCMD=!appPath! -np !numPro! -b -p !ansj! -dis -mpi INTELMPI -jobstg !job! -jobt !lk! -verz !location!^
  -redirect !redirect! -i "!location!\!sourceFile!" -o "!wDir!\!nPrefix!!job!-!lk!.out" -dir "!wDir!"^
  -j "!nPrefix!!job!-!lk!" -extVar !extVar! -nPrefix "!nPrefix!"
 
