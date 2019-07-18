@@ -12,7 +12,7 @@ REM  && type z:\pip-list.txt
 
 copy C:\\Users\\Asus\\AppData\\Local\\SpaceClaim\\CustomShortcuts.xml z:\\CustomShortcuts.xml^
  && copy C:\\Users\\Asus\\.gitconfig z:\\.gitconfig^
- && copy C:\\Users\\Asus\\AppData\\Local\\SpaceClaim\\SpaceClaim.exe_Url_kjk2gifgxagupbz2gt1u0hx4plfqiaxf\\1.0.0.0\\user.config z:\\user.config^
+ && copy C:\\Users\\Asus\\AppData\\Local\\SpaceClaim\\SpaceClaim.exe_Url_xb3xyb4vlv00imyzirl0qwfgxmsnge2t\\1.0.0.0\\user.config z:\\user.config^
  && copy C:\\Users\\Asus\\AppData\\Local\\SpaceClaim\\SpaceClaim\\barlayout2.xml z:\\barlayout2.xml^
  && copy C:\\Users\\Asus\\AppData\\Roaming\\Microsoft\\Templates\\Normal.dotm z:\\Normal.dotm^
  && npm list --global --depth=0 > z:\npm-list.txt^

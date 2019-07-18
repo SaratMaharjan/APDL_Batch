@@ -127,7 +127,7 @@ echo Display Device: %dispName%
 
 call timer.bat :startTimer
 
-set apdlCMD="C:\Program Files\ANSYS Inc\v193\ansys\bin\winx64\ansys2019R1.exe"  -g -p !ansj! ^
+set apdlCMD="C:\Program Files\ANSYS Inc\v194\ansys\bin\winx64\ansys2019R2.exe"  -g -p !ansj! ^
  -dir "!pathBefore!\%proj_Num%\!pathAfter!" -j %filNam% -s read -l en-us -t -d %dispName%
 
 echo.

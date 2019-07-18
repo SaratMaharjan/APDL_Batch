@@ -1,11 +1,61 @@
 ! ---------------
-! Last Modified: Wednesday, April 17th 2019, 11:03:31 am
+! Last Modified: Tuesday, July 16th 2019, 7:50:26 am
 ! Modified By: mhrjn
 ! ---------------
 
+fini
+/fil, f2000-101
+resu
+p1
+jplot, 9
+jptf = 9
+! inq, 'belastungplot'
+inq, 'managecomp2'
+inq, 'gs61'
+jplot
+
+/eof
+
 ! fini
-! /fil, f2000-101
+! /fil, f1000-201
 ! resu
+! p1
+! jplot, 9
+! jptf = 9
+! ! inq, 'belastungplot'
+! inq, 'managecomp2'
+! inq, 'gs61'
+! jplot
+
+! fini
+! /clear
+! /fil, m2917-101
+! resu
+! p1
+! jplot, 9
+! jptf = 9
+! ! inq, 'belastungplot'
+! ! inq, 'managecomp2'
+! inq, 's61'
+! jplot
+
+fini
+/clear
+/fil, m2907-202
+resu
+p1
+jplot, 9
+jptf = 9
+! inq, 'belastungplot'
+! inq, 'managecomp2'
+inq, 's61'
+jplot
+
+/eof
+
+fini
+/fil, f1000-401
+resu
 p1
 jplot, 9
 jptf = 9
@@ -17,25 +67,17 @@ jplot
 /eof
 
 fini
-/fil, f1000-201
+/fil, f1000-501
 resu
 p1
 jplot, 9
 jptf = 9
-inq, 'managecomp2'
-inq, 'gs61'
+inq, 'belastungplot'
+! inq, 'managecomp2'
+! inq, 'gs61'
 jplot
 
-fini
-/fil, f1000-301
-resu
-p1
-jplot, 9
-jptf = 9
-inq, 'managecomp2'
-inq, 'gs61'
-jplot
-
+/eof
 /eof
 
 ! fini

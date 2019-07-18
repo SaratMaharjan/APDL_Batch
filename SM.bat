@@ -21,7 +21,8 @@ echo %date%-%time% >> %~n0.lock
 REM set appPath="C:\Program Files\ANSYS Inc\v190\ANSYS\bin\winx64\ansys190.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v191\ANSYS\bin\winx64\ansys191.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v192\ANSYS\bin\winx64\ansys192.exe"
-set appPath="C:\Program Files\ANSYS Inc\v193\ANSYS\bin\winx64\ansys2019R1.exe"
+REM set appPath="C:\Program Files\ANSYS Inc\v193\ANSYS\bin\winx64\ansys2019R1.exe"
+set appPath="C:\Program Files\ANSYS Inc\v194\ANSYS\bin\winx64\ansys2019R2.exe"
 
 REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
   set startValue=2
@@ -78,15 +79,15 @@ REM ============================================================================
 
 
   REM call 325518.bat
-
   REM call 325618.bat
 
-  REM call 325918.bat
+
 
   REM call 325918ssw.bat
 
   REM call 326318.bat
 
+  REM call 329019Lasche.bat
   REM call 327118.bat
 
   REM call 327118sf.bat
@@ -109,7 +110,7 @@ REM ============================================================================
 
   REM call 321918.bat
 
-  REM call 328519.bat
+  call 328519.bat
 
   REM call 328519arm.bat
 
@@ -118,6 +119,8 @@ REM ============================================================================
   REM call 328519br.bat
 
   REM call 328519tr.bat
+
+  REM call 329019.bat
 
   REM call 329219.bat
 
@@ -129,9 +132,18 @@ REM ============================================================================
 
   REM call 329019.bat
 
-  call 329519.bat
+  REM call 329519.bat
+
+  REM call 329519g.bat
 
   REM call 329819.bat
+
+  REM call 331419.bat
+  REM call 331519.bat
+
+  REM call 332319.bat
+  REM call 325918.bat
+  REM call 329019Lasche.bat
 
   REM call test.bat
 

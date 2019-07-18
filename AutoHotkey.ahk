@@ -38,7 +38,7 @@ Return
   MButton::
     SendInput {Ctrl down}{LButton down}
     Keywait, MButton
-    SendInput {LButton up}{Ctrl up}
+    SendInput {Ctrl up}{LButton up}
   Return
 #IfWinActive
 ;ende APDL mouse
@@ -106,7 +106,36 @@ Return
   F5::
 
   F6::
-  Return
+
+  LWin::F4
+  ; RButton::
+  ;   if (GetKeyState("F4"))
+  ;   {
+  ;     SendInput {LButton down}
+  ;     KeyWait RButton
+  ;     SendInput {Esc}
+  ;   } else {
+  ;     SendInput {RButton down}
+  ;     KeyWait RButton
+  ;     SendInput {RButton up}
+  ;   }
+  ; Return
+
+  ; MButton::
+  ;   SendInput {Ctrl down}{MButton down}
+  ;   Keywait MButton
+  ;   SendInput {Ctrl up}{MButton up}
+  ;   ;Send {Esc}
+  ; Return
+
+  ; ^RButton::
+  ;   SendInput $~{MButton down}
+  ;   Keywait Ctrl
+  ;   SendInput $~{MButton up}
+  ;   ;Send {Esc}
+  ; Return
+
+Return
 #IfWinActive
 ;ende
 

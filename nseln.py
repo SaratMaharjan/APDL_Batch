@@ -1,83 +1,83 @@
 
-# named_sel = ExtAPI.DataModel.Project.Model.AddNamedSelection()
-# # named_sel.SendToSolver = 0
-# named_sel.Location = ExtAPI.SelectionManager.CreateSelectionInfo(
-#     SelectionTypeEnum.WorksheetSpecific)
-# named_sel_WS = named_sel.Location
-# named_sel.Name = 'model'
-# named_sel_WS.AddRow()
-# named_sel_WS.SetAction(0, NamedSelectionWorksheetAction.Add)
-# named_sel_WS.SetEntityType(0, NamedSelectionWorksheetEntityType.Body)
-# # NamedSelection Location_X
-# named_sel_WS.SetCriterion(0, NamedSelectionWorksheetCriterion.Type)
-# # Largest Smallest Equal NotEqual LessThan GreaterThan Equal
-# named_sel_WS.SetOperator(0, NamedSelectionWorksheetOperator.Equal)
-# # named_sel_WS.SetValue(0, 1)
-# named_sel_WS.AddRow()
-# named_sel_WS.SetAction(1, NamedSelectionWorksheetAction.Add)
-# named_sel_WS.SetEntityType(1, NamedSelectionWorksheetEntityType.Body)
-# # NamedSelection Location_X
-# named_sel_WS.SetCriterion(1, NamedSelectionWorksheetCriterion.Type)
-# # Largest Smallest Equal NotEqual LessThan GreaterThan Equal
-# named_sel_WS.SetOperator(1, NamedSelectionWorksheetOperator.Equal)
-# # named_sel_WS.SetValue(0, 1)
+named_sel = ExtAPI.DataModel.Project.Model.AddNamedSelection()
+# named_sel.SendToSolver = 0
+named_sel.Location = ExtAPI.SelectionManager.CreateSelectionInfo(
+    SelectionTypeEnum.WorksheetSpecific)
+named_sel_WS = named_sel.Location
+named_sel.Name = 'model'
+named_sel_WS.AddRow()
+named_sel_WS.SetAction(0, NamedSelectionWorksheetAction.Add)
+named_sel_WS.SetEntityType(0, NamedSelectionWorksheetEntityType.Body)
+# NamedSelection Location_X
+named_sel_WS.SetCriterion(0, NamedSelectionWorksheetCriterion.Type)
+# Largest Smallest Equal NotEqual LessThan GreaterThan Equal
+named_sel_WS.SetOperator(0, NamedSelectionWorksheetOperator.Equal)
+# named_sel_WS.SetValue(0, 1)
+named_sel_WS.AddRow()
+named_sel_WS.SetAction(1, NamedSelectionWorksheetAction.Add)
+named_sel_WS.SetEntityType(1, NamedSelectionWorksheetEntityType.Body)
+# NamedSelection Location_X
+named_sel_WS.SetCriterion(1, NamedSelectionWorksheetCriterion.Type)
+# Largest Smallest Equal NotEqual LessThan GreaterThan Equal
+named_sel_WS.SetOperator(1, NamedSelectionWorksheetOperator.Equal)
+# named_sel_WS.SetValue(0, 1)
 
 
-# named_sel = ExtAPI.DataModel.Project.Model.AddNamedSelection()
-# # named_sel.SendToSolver = 0
-# named_sel.Location = ExtAPI.SelectionManager.CreateSelectionInfo(
-#     SelectionTypeEnum.WorksheetSpecific)
-# named_sel_WS = named_sel.Location
-# named_sel.Name = 'shls'
-# named_sel_WS.AddRow()
-# named_sel_WS.SetAction(0, NamedSelectionWorksheetAction.Add)
-# named_sel_WS.SetEntityType(0, NamedSelectionWorksheetEntityType.Body)
-# # NamedSelection Location_X
-# named_sel_WS.SetCriterion(0, NamedSelectionWorksheetCriterion.Type)
-# # Largest Smallest Equal NotEqual LessThan GreaterThan Equal
-# named_sel_WS.SetOperator(0, NamedSelectionWorksheetOperator.Equal)
-# # named_sel_WS.SetValue(0, 1)
+named_sel = ExtAPI.DataModel.Project.Model.AddNamedSelection()
+# named_sel.SendToSolver = 0
+named_sel.Location = ExtAPI.SelectionManager.CreateSelectionInfo(
+    SelectionTypeEnum.WorksheetSpecific)
+named_sel_WS = named_sel.Location
+named_sel.Name = 'shls'
+named_sel_WS.AddRow()
+named_sel_WS.SetAction(0, NamedSelectionWorksheetAction.Add)
+named_sel_WS.SetEntityType(0, NamedSelectionWorksheetEntityType.Body)
+# NamedSelection Location_X
+named_sel_WS.SetCriterion(0, NamedSelectionWorksheetCriterion.Type)
+# Largest Smallest Equal NotEqual LessThan GreaterThan Equal
+named_sel_WS.SetOperator(0, NamedSelectionWorksheetOperator.Equal)
+# named_sel_WS.SetValue(0, 1)
 
-# named_sel = ExtAPI.DataModel.Project.Model.AddNamedSelection()
-# # named_sel.SendToSolver = 0
-# named_sel.Location = ExtAPI.SelectionManager.CreateSelectionInfo(
-#     SelectionTypeEnum.WorksheetSpecific)
-# named_sel_WS = named_sel.Location
-# named_sel.Name = 'sols'
-# named_sel_WS.AddRow()
-# named_sel_WS.SetAction(0, NamedSelectionWorksheetAction.Add)
-# named_sel_WS.SetEntityType(0, NamedSelectionWorksheetEntityType.Body)
-# # NamedSelection Location_X
-# named_sel_WS.SetCriterion(0, NamedSelectionWorksheetCriterion.Type)
-# # Largest Smallest Equal NotEqual LessThan GreaterThan Equal
-# named_sel_WS.SetOperator(0, NamedSelectionWorksheetOperator.Equal)
-# # named_sel_WS.SetValue(0, 1)
+named_sel = ExtAPI.DataModel.Project.Model.AddNamedSelection()
+# named_sel.SendToSolver = 0
+named_sel.Location = ExtAPI.SelectionManager.CreateSelectionInfo(
+    SelectionTypeEnum.WorksheetSpecific)
+named_sel_WS = named_sel.Location
+named_sel.Name = 'sols'
+named_sel_WS.AddRow()
+named_sel_WS.SetAction(0, NamedSelectionWorksheetAction.Add)
+named_sel_WS.SetEntityType(0, NamedSelectionWorksheetEntityType.Body)
+# NamedSelection Location_X
+named_sel_WS.SetCriterion(0, NamedSelectionWorksheetCriterion.Type)
+# Largest Smallest Equal NotEqual LessThan GreaterThan Equal
+named_sel_WS.SetOperator(0, NamedSelectionWorksheetOperator.Equal)
+# named_sel_WS.SetValue(0, 1)
 
 nsels = [
     'stein',
-    'bolzen',
-    'flange',
-    'arm',
-    'dia160',
-    'vol100',
-    'vol200',
-    'vol30',
-    # 'outerAbove',
-    # 'st1',
-    # 'fl2a',
-    # 'flangesAbove',
-    # 'fl1',
-    # 'fl2',
-    # 'fl3',
-    # 'fl4',
-    # 'parSol',
-    # 'vol30,
-    # 'vol60',
-    # 'vol70',
-    # 'vol80',
-    # # 'vol90',
-    # 'vol100',
-    # 'vol120',
+    # 'main',
+    # 'wing',
+    # 'arm',
+    'cLeiste',
+    'upper',
+    'support',
+    'sides',
+    'lower1',
+    'lower2',
+    'lleis',
+    'stiff',
+    'bweld',
+    'welds1',
+    'welds2',
+    'welds',
+    # 'traverse',
+    # 'stiffen2',
+    # 'louter2',
+    # 'cleist2',
+    'd90',
+    # 'd60',
+    # 'd110',
+    # 'd140',
     # 'vol200',
     'Dummy'
 ]
@@ -119,10 +119,11 @@ nsels = [
 #     #     'ls1',
 #     #      'ring1',
 #     #      'sp1',
-#     'mg21',
-#     'mg22',
-#     'mg23',
-#     'mg24'
+#     # 'mg21',
+#     # 'mg22',
+#     # 'mg23',
+#     # 'mg24',
+#     'Dummy'
 # ]
 
 # for item in range(1, 17):

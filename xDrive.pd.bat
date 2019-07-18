@@ -8,16 +8,17 @@ start /d "%userprofile%\dropbox\_Keypirinha" keypirinha.exe
 start /d "%userprofile%\Dropbox\zCore" AutoHotkey.exe
 
 REM timeout /t 120
-start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
+REM start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
+start /d "E:\GoogleDrive\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
 
 REM timeout /t 120
-start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\_Rainmeter" Rainmeter.exe
+start /d "E:\GoogleDrive\PortableApps\PortableApps\_Rainmeter" Rainmeter.exe
 
 REM timeout /t 120
-start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\StickiesPortable" StickiesPortable.exe
+start /d "E:\GoogleDrive\PortableApps\PortableApps\StickiesPortable" StickiesPortable.exe
 
 REM timeout /t 120
-start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28\SysinternalsSuite" procexp64.exe
+start /d "E:\GoogleDrive\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28\SysinternalsSuite" procexp64.exe
 
 REM timeout /t 120
 start outlook.exe

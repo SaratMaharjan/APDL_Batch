@@ -11,7 +11,7 @@ REM timeout /t 120
 REM start /d "C:\Users\maharjan\Google Drive\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
 
 REM timeout /t 120
-start /d "%userprofile%\Google Drive\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28\SysinternalsSuite" procexp64.exe
+start /d "%userprofile%\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28\SysinternalsSuite" procexp64.exe
 
 REM timeout /t 120
 REM start outlook.exe
