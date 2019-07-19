@@ -3,7 +3,7 @@
   <docksite size="0" dockingside="Bottom" originaldocksitesize="0" />
   <docksite size="239" dockingside="Left" originaldocksitesize="0">
     <dockcontainer orientation="1" w="0" h="0">
-      <barcontainer w="236" h="474">
+      <barcontainer w="236" h="472">
         <bar name="structureViewSideBar" dockline="0" layout="2" dockoffset="0" state="2" dockside="1" visible="true" seldocktab="0">
           <items>
             <item name="structureViewDockItem" origBar="" origPos="-1" pos="0" />
@@ -11,7 +11,7 @@
           </items>
         </bar>
       </barcontainer>
-      <barcontainer w="236" h="371">
+      <barcontainer w="236" h="373">
         <bar name="propertiesSideBar" dockline="0" layout="2" dockoffset="666" state="2" dockside="1" visible="true" seldocktab="0">
           <items>
             <item name="propertiesDockItem" origBar="" origPos="-1" pos="0" />
