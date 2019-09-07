@@ -9,7 +9,7 @@ set nPrefix=f
 
 REM Select Drive and Initial Values
 if "!host!" equ "ansys2" (
-  set pathBefore=D:
+  set pathBefore=S:
   REM set pathBefore=E
 ) else (
   if "!host!" equ "osmhrjn" (

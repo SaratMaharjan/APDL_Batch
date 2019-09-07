@@ -8,7 +8,7 @@
 SetTitleMatchMode, RegEx
 
 ; Set window always on TOP
-^!space::  Winset, Alwaysontop, , A
+;^!space::  Winset, Alwaysontop, , A
 
 ; Numpad , replaced by .
 ; NumPadDot::Send, {ASC 0046}
@@ -105,6 +105,9 @@ Return
 
   F5::
 
+  ^#Right::
+ Return
+
   F6::
 
   LWin::F4
@@ -182,7 +185,7 @@ Return
 
 #!w::
   if(InStr(A_ComputerName,"ansys2")){
-    Run "C:\Users\sarat\Dropbox\zCore\run-ansys.bat"
+    Run "D:\Dropbox\zCore\run-ansys.bat"
   } else {
     Run "C:\Users\asus\Dropbox\zCore\run-ansys.bat"
   }
@@ -190,7 +193,7 @@ return
 
 #k::
   if(InStr(A_ComputerName,"ansys2")){
-    Run "C:\Users\sarat\dropbox\_Keypirinha\keypirinha.exe"
+    Run "D:\dropbox\_Keypirinha\keypirinha.exe"
   } else {
     Run "C:\Users\sarat\dropbox\_Keypirinha\keypirinha.exe"
   }

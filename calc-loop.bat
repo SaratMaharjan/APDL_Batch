@@ -149,7 +149,7 @@ REM  -j "!nPrefix!!job!-!lk!" -extVar !extVar! -nPrefix "!nPrefix!"
   echo.
   echo ---------- could not calculate - try: !retry! ----------
   echo.
-  rem timeout /t 60
+  timeout /t 60
 )
 
 goto :eof

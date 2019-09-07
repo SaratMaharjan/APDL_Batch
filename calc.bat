@@ -21,8 +21,10 @@ if !startValue! equ 1 (
   set ansj=ansys
 )
 
-copy "%userprofile%\dropbox\zcore\cp7run.mac" "!wDir!\cp7run.mac"
-copy "%userprofile%\dropbox\zcore\.delImages.bat" "!wDir!\.delImages.bat"
+copy "z:\cp7run.mac" "!wDir!\cp7run.mac"
+REM copy "%userprofile%\dropbox\zcore\cp7run.mac" "!wDir!\cp7run.mac"
+copy "z:\.delImages.bat" "!wDir!\.delImages.bat"
+REM copy "%userprofile%\dropbox\zcore\.delImages.bat" "!wDir!\.delImages.bat"
 
 if !append! equ 1 (
   echo.>> !bDir!\run-calc-!host!.bat
