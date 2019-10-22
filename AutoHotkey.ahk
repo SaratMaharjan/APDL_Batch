@@ -27,6 +27,16 @@ F1::Send {Esc}
   MsgBox, The active window is "%Title%".
 Return
 
+;#E:: Run "E:\GoogleDrive\PortableApps\PortableApps\_OneCommanderPortable\OneCommanderV2.exe"
+
+^#Right::
+  Send {Esc}
+Return
+
+^#Left::
+  Send {Esc}
+Return
+
 ;region APDL mouse settings
 #IfWinActive, ^ANSYS
   RButton::
@@ -83,6 +93,7 @@ Return
 
 ;region Spaceclaim hide unhide
 #IfWinActive, SpaceClaim$
+
   <::
     ;Click Right
     ;sleep, 20
@@ -104,9 +115,6 @@ Return
   ^T::
 
   F5::
-
-  ^#Right::
- Return
 
   F6::
 
@@ -137,8 +145,6 @@ Return
   ;   SendInput $~{MButton up}
   ;   ;Send {Esc}
   ; Return
-
-Return
 #IfWinActive
 ;ende
 

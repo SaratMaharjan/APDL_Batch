@@ -14,21 +14,22 @@ echo %date%-%time% >> %~n0.lock
 
 REM set appPath="C:\Program Files\ANSYS Inc\v192\ANSYS\bin\winx64\ansys192.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v193\ANSYS\bin\winx64\ansys2019R1.exe"
-set appPath="C:\Program Files\ANSYS Inc\v194\ANSYS\bin\winx64\ansys2019R2.exe"
+REM set appPath="C:\Program Files\ANSYS Inc\v194\ANSYS\bin\winx64\ansys2019R2.exe"
+set appPath="C:\Program Files\ANSYS Inc\v195\ANSYS\bin\winx64\ansys2019R3.exe"
 
-if !host! equ ansys2 (
-  set appPath="D:\installations\ANSYS Inc\v194\ANSYS\bin\winx64\ansys2019R2.exe"
-)
+REM if !host! equ ansys2 (
+REM   set appPath="D:\installations\ANSYS Inc\v194\ANSYS\bin\winx64\ansys2019R3.exe"
+REM )
 
 REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
   set startValue=2
   set endValue=!startValue!
-  REM set endValue=4
+  REM set endValue=2
 
 REM Number of Processors
-  set numPro=4
+  set numPro=2
   if "!host!" equ "osmhrjn" (
-    set numPro=4
+    REM set numPro=2
   )
 
 REM if 0: only write Batch files
@@ -58,7 +59,15 @@ REM ============================================================================
   REM call 329519.bat
   REM call 329519g.bat
 
-  call 328519.bat
+  REM call 328519.bat
+
+  REM call 334319.bat
+
+  REM call 334619.bat
+
+  REM call 335419.bat
+
+  call 335519.bat
 
   REM call xxxxxx
   REM call xxxxxx

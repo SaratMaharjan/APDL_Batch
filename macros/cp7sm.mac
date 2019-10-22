@@ -1,31 +1,33 @@
 ! ---------------
-! Last Modified: Wednesday, July 31st 2019, 7:53:42 am
+! Last Modified: Monday, October 14th 2019, 11:19:32 am
 ! Modified By: mhrjn
 ! ---------------
 
 fini
-/fil, f1000-101
+/fil, f2100-101
 resu
 p1
 jplot, 9
 jptf = 9
-inq, 'belastungplot'
-! inq, 'managecomp2'
-! inq, 'gs61'
+! inq, 'belastungplot'
+inq, 'managecomp2'
+inq, 'gs61'
 jplot
 
+/eof
 
 fini
-/fil, f1000-201
+/fil, f1000-701
 resu
 p1
 jplot, 9
 jptf = 9
-inq, 'belastungplot'
-! inq, 'managecomp2'
-! inq, 'gs61'
+! inq, 'belastungplot'
+inq, 'managecomp2'
+inq, 'gs61'
 jplot
 
+/eof
 
 fini
 /fil, f1000-301

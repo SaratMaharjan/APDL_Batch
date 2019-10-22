@@ -27,3 +27,5 @@ start "C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
 
 REM timeout /t 300
 start /d "C:\Program Files\OpenVPN\bin" openvpn-gui.exe
+
+start /d "E:\GoogleDrive\PortableApps\PortableApps\__LiberKey\Apps\Everything\EverythingLKL.exe"
