@@ -1,0 +1,10 @@
+{
+  "menus": [
+    {
+      "display": "Create catalog", 
+      "path": [
+        "Generate Catalog"
+      ]
+    }
+  ]
+}

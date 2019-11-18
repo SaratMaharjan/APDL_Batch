@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<recipe_collection xmlns="http://calibre-ebook.com/recipe_collection">
+
+	<recipe_customization id="builtin:coding_horror" keep_issues="0" custom_tags="" add_title_tag="yes"/>
+
+	<recipe_customization keep_issues="0" custom_tags="" add_title_tag="yes" id="builtin:bild_de"/>
+
+	<recipe_customization keep_issues="0" custom_tags="" add_title_tag="yes" id="builtin:cnn"/>
+
+	<recipe_customization keep_issues="0" custom_tags="" add_title_tag="yes" id="builtin:ekantipur"/>
+
+</recipe_collection>

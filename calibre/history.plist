@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lineedit_history_bulk_edit_replace_with</key>
+	<array>
+	</array>
+	<key>lineedit_history_bulk_edit_search_for</key>
+	<array>
+		<string>.doc</string>
+		<string>Microsoft Word - </string>
+	</array>
+	<key>lineedit_history_bulk_edit_test_test</key>
+	<array>
+	</array>
+	<key>lineedit_history_choose_library_dialog</key>
+	<array>
+		<string>C:\Users\Asus\Box Sync\books</string>
+	</array>
+</dict>
+</plist>

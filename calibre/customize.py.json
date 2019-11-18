@@ -1,0 +1,21 @@
+{
+  "disabled_plugins": {
+    "__class__": "set", 
+    "__value__": []
+  }, 
+  "enabled_plugins": {
+    "__class__": "set", 
+    "__value__": []
+  }, 
+  "filetype_mapping": {}, 
+  "plugin_customization": {}, 
+  "plugins": {
+    "Auto Datestamp and View": "C:\\Users\\Asus\\AppData\\Roaming\\calibre\\plugins\\Auto Datestamp and View.zip", 
+    "Favourites Menu": "C:\\Users\\Asus\\AppData\\Roaming\\calibre\\plugins\\Favourites Menu.zip", 
+    "Find Duplicates": "C:\\Users\\Asus\\AppData\\Roaming\\calibre\\plugins\\Find Duplicates.zip", 
+    "GetFileName": "C:\\Users\\Asus\\AppData\\Roaming\\calibre\\plugins\\GetFileName.zip", 
+    "Job Spy": "C:\\Users\\Asus\\AppData\\Roaming\\calibre\\plugins\\Job Spy.zip", 
+    "MultiColumnSearch": "C:\\Users\\Asus\\AppData\\Roaming\\calibre\\plugins\\MultiColumnSearch.zip", 
+    "Search The Internet": "C:\\Users\\Asus\\AppData\\Roaming\\calibre\\plugins\\Search The Internet.zip"
+  }
+}

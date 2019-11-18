@@ -27,7 +27,7 @@ REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
   REM set endValue=2
 
 REM Number of Processors
-  set numPro=2
+  set numPro=4
   if "!host!" equ "osmhrjn" (
     REM set numPro=2
   )
@@ -67,7 +67,9 @@ REM ============================================================================
 
   REM call 335419.bat
 
-  call 335519.bat
+  REM call 335519.bat
+
+  call 335719.bat
 
   REM call xxxxxx
   REM call xxxxxx

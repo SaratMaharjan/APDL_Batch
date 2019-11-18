@@ -14,10 +14,28 @@ REM set nPrefix=m
 
 REM for /l %%b in (1 1 3) do (
 REM for %%b in (1 2 3) do (
-  REM +ve
-  REM set bq=%%b
+REM   REM +ve
+REM   REM set bq=%%b
+REM   set bq=2
+REM     set interval=2001 10 2001
+REM     set interval2=1!bq! 10 1!bq!
+REM       call calc.bat
+
+REM set nPrefix=m
+REM   set bq=2
+REM     set interval=2001 10 2001
+REM     set interval2=1!bq! 10 1!bq!
+REM       call calc.bat
+
+set nPrefix=f
   set bq=2
-    set interval=2001 10 2001
+    set interval=1001 10 1001
+    set interval2=1!bq! 10 1!bq!
+      call calc.bat
+
+set nPrefix=o
+  set bq=2
+    set interval=1001 10 1001
     set interval2=1!bq! 10 1!bq!
       call calc.bat
 
