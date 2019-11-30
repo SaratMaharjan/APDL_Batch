@@ -18,3 +18,10 @@ for line in fh:
     print(line)
 
 fh.close()
+
+# with as doesnot need .close
+with open("withas.txt", "w") as file:
+    file.write("this is text to write.")
+
+with open("withas.txt", "r") as file:
+    print(str(file.read()))

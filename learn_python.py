@@ -358,8 +358,14 @@ def main():
     # print(Child.__mro__)
     # # print(child_obj)
 
+    l1 = [1, 2, 3]
+    l2 = [4, 5, 6, 8, 10]
 
-# if this file is starting file/main, then executes main(), if loaded as module, then dont
+    for a, b in zip(l1, l2):
+        print(a, " and ", b)
+
+
+        # if this file is starting file/main, then executes main(), if loaded as module, then dont
 if __name__ == "__main__":
     main()
 
