@@ -37,21 +37,10 @@ REM if 0: only write Batch files
 
 REM ==================================================================================================
 
-  REM call 305216.bat
-
   REM call 314917.bat
 
-  REM call 322218.bat
-
-  REM call 332319.bat
-
-  REM call 324618.bat
   REM call 324618sh.bat
-
-  REM call 325918.bat
-  REM call 325918ssw.bat
-
-  REM call 327118.bat
+  REM call 324618.bat
 
   REM call 327418.bat
   REM call 327418br.bat
@@ -59,28 +48,19 @@ REM ============================================================================
   REM call 329519.bat
   REM call 329519g.bat
 
-  REM call 328519.bat
-
-  REM call 334319.bat
-
-  REM call 334619.bat
-
   REM call 335419.bat
 
   REM call 335519.bat
 
   call 335719.bat
 
-  REM call xxxxxx
-  REM call xxxxxx
-  REM call xxxxxx
-  REM call xxxxxx
-  REM call xxxxxx
-  REM call xxxxxx
-  REM call xxxxxx
-  REM call xxxxxx
-  REM call xxxxxx
-  REM call xxxxxx
+  REM call xxxxxx.xxx
+  REM call xxxxxx.xxx
+  REM call xxxxxx.xxx
+  REM call xxxxxx.xxx
+  REM call xxxxxx.xxx
+  REM call xxxxxx.xxx
+  REM call xxxxxx.xxx
 
 REM ==================================================================================================
 
@@ -94,7 +74,7 @@ REM pause
 
 :instanceRunning
 echo.
-echo ########## Instance of Batch File is Already Running ###########
+echo ########## Instance of Batch File is Already Running (sm.lock exists) ###########
 echo.
 
 :takeTime

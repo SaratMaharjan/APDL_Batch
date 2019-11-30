@@ -1,16 +1,67 @@
 ! ---------------
-! Last Modified: Monday, October 14th 2019, 11:19:32 am
+! Last Modified: Friday, November 22nd 2019, 12:18:11 pm
 ! Modified By: mhrjn
 ! ---------------
 
 fini
-/fil, f2100-101
+/fil, f1000-101
+resu
+immed, 0
+p1
+jplot, 9
+jptf = 9
+! inq, 'belastungplot'
+! inq, 'managecomp2'
+inq, 'gs61'
+jplot
+
+
+fini
+/fil, f1000-401
+resu
+immed, 0
+p1
+jplot, 9
+jptf = 9
+! inq, 'belastungplot'
+! inq, 'managecomp2'
+inq, 'gs61'
+jplot
+
+
+fini
+/fil, f1000-801
+resu
+immed, 0
+p1
+jplot, 9
+jptf = 9
+! inq, 'belastungplot'
+! inq, 'managecomp2'
+inq, 'gs61'
+jplot
+
+/eof
+
+fini
+/fil, f1000-301
 resu
 p1
 jplot, 9
 jptf = 9
 ! inq, 'belastungplot'
-inq, 'managecomp2'
+! inq, 'managecomp2'
+inq, 'gs61'
+jplot
+
+fini
+/fil, f1000-401
+resu
+p1
+jplot, 9
+jptf = 9
+! inq, 'belastungplot'
+! inq, 'managecomp2'
 inq, 'gs61'
 jplot
 

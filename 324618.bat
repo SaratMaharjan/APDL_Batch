@@ -25,7 +25,6 @@ REM for %%b in (1 2) do (
 
 )
 
-
 for /l %%b in (1 1 1) do (
 REM for %%b in (1 2) do (
 

@@ -2,8 +2,6 @@ subst y: "%userprofile%\Dropbox\anakon"
 subst z: "%userprofile%\Dropbox\zCore"
 subst x: "E:\anakon\OneDrive - ANAKON GmbH\maharjan"
 
-net use r: "\\192.168.99.1\server_lw_d"
-
 start /d "%userprofile%\dropbox\_Keypirinha" keypirinha.exe
 start /d "%userprofile%\Dropbox\zCore" AutoHotkey.exe
 
@@ -29,3 +27,5 @@ REM timeout /t 300
 start /d "C:\Program Files\OpenVPN\bin" openvpn-gui.exe
 
 start /d "E:\GoogleDrive\PortableApps\PortableApps\__LiberKey\Apps\Everything\EverythingLKL.exe"
+
+net use r: "\\192.168.99.1\server_lw_d"
