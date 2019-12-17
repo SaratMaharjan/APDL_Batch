@@ -31,54 +31,6 @@ con.commit()
 # curobj.execute("INSERT INTO coin VALUES(4, 'USDT', 30, 8)")
 # con.commit()
 
-
-def font_color(amount):
-    if amount >= 0:
-        return "green"
-    else:
-        return "red"
-
-
-def insert_coin():
-    curobj.execute("INSERT INTO coin(symbol, price, amount) VALUES(?, ?, ?)",
-                   (symbol_txt.get(), price_txt.get(), amount_txt.get()))
-    con.commit()
-
-    messagebox.showinfo("Portfolio Notification",
-                        "Coin added successfully")
-    reset()
-
-
-def update_coin():
-    curobj.execute("UPDATE coin SET symbol=?, price=?, amount=? WHERE id=?",
-                   (symbol_update.get(), price_update.get(), amount_update.get(), pid_update.get()))
-    con.commit()
-    messagebox.showinfo("Portfolio Notification",
-                        "Coin updated successfully")
-    reset()
-
-
-def delete_coin():
-    curobj.execute("DELETE FROM coin WHERE id=?",
-                   (pid_delete.get(), ))
-    con.commit()
-    messagebox.showinfo("Portfolio Notification",
-                        "Coin deleted successfully")
-    reset()
-
-
-def reset():
-    for frame in gui.winfo_children():
-        frame.destroy()
-    app_nav()
-    app_header()
-    my_portfolio()
-
-
-def close_app():
-    gui.destroy()
-
-
 def my_portfolio():
     api_request = requests.get(
         "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=1000&convert=USD&CMC_PRO_API_KEY=40f824a0-227b-4714-8059-d7f5000ec7d7")
@@ -87,6 +39,52 @@ def my_portfolio():
 
     curobj.execute("SELECT * FROM coin")
     coins = curobj.fetchall()
+
+    def font_color(amount):
+        if amount >= 0:
+            return "green"
+        else:
+            return "red"
+
+
+    def insert_coin():
+        curobj.execute("INSERT INTO coin(symbol, price, amount) VALUES(?, ?, ?)",
+                      (symbol_txt.get(), price_txt.get(), amount_txt.get()))
+        con.commit()
+
+        messagebox.showinfo("Portfolio Notification",
+                            "Coin added successfully")
+        reset()
+
+
+    def update_coin():
+        curobj.execute("UPDATE coin SET symbol=?, price=?, amount=? WHERE id=?",
+                      (symbol_update.get(), price_update.get(), amount_update.get(), pid_update.get()))
+        con.commit()
+        messagebox.showinfo("Portfolio Notification",
+                            "Coin updated successfully")
+        reset()
+
+
+    def delete_coin():
+        curobj.execute("DELETE FROM coin WHERE id=?",
+                      (pid_delete.get(), ))
+        con.commit()
+        messagebox.showinfo("Portfolio Notification",
+                            "Coin deleted successfully")
+        reset()
+
+
+    def reset():
+        for frame in gui.winfo_children():
+            frame.destroy()
+        app_nav()
+        app_header()
+        my_portfolio()
+
+
+    def close_app():
+        gui.destroy()
 
     gross_pl = 0
     coin_row = 1
@@ -169,8 +167,23 @@ def my_portfolio():
                      padx="5", pady="5", borderwidth=2, relief="groove")
     refresh.grid(row=coin_row+1, column=7, sticky=N+S+E+W)
 
-    # print("Gross Profit: ", "${0:.2f}".format(gross_pl))
 
+    def app_nav():
+        def clear_all():
+            curobj.execute("DELETE FROM coin")
+            con.commit()
+            messagebox.showinfo("Portfolio Notification",
+                                "Portfolio Cleared")
+            reset()
+
+        menu = Menu(gui)
+        file_item = Menu(menu)
+        file_item.add_command(label='clear portfolio', command=clear_all)
+        file_item.add_command(label='close app', command=close_app)
+        menu.add_cascade(label="File", menu=file_item)
+        gui.config(menu=menu)
+
+    app_nav()
 
 def app_header():
     headList = [None, None, None, None, None, None, None, None]
@@ -184,25 +197,7 @@ def app_header():
         headList[cur_column].grid(row=0, column=cur_column, sticky=N+S+E+W)
         cur_column += 1
 
-
-def app_nav():
-    def clear_all():
-        curobj.execute("DELETE FROM coin")
-        con.commit()
-        messagebox.showinfo("Portfolio Notification",
-                            "Portfolio Cleared")
-        reset()
-
-    menu = Menu(gui)
-    file_item = Menu(menu)
-    file_item.add_command(label='clear portfolio', command=clear_all)
-    file_item.add_command(label='close app', command=close_app)
-    menu.add_cascade(label="File", menu=file_item)
-    gui.config(menu=menu)
-
-
 colors = ["gray", "white"]
-app_nav()
 app_header()
 my_portfolio()
 
