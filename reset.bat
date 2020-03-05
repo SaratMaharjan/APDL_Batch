@@ -13,7 +13,7 @@ if "!host!" equ "ansys2" (
   REM set pathBefore=E
 ) else (
   if "!host!" equ "osmhrjn" (
-    set pathBefore=E:
+    set pathBefore=S:
   ) else (
     set pathBefore=D:\maharjan
   )

@@ -1,6 +1,7 @@
 subst y: "%userprofile%\Dropbox\anakon"
 subst z: "%userprofile%\Dropbox\zCore"
 subst x: "E:\anakon\OneDrive - ANAKON GmbH\maharjan"
+subst s: "E:\zComputation"
 
 start /d "%userprofile%\dropbox\_Keypirinha" keypirinha.exe
 start /d "%userprofile%\Dropbox\zCore" AutoHotkey.exe
@@ -21,7 +22,9 @@ start /d "E:\GoogleDrive\PortableApps\PortableApps\__nirsoft_package_enc_1.20.28
 REM timeout /t 120
 start outlook.exe
 
-start "C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
+explorer.exe shell:appsFolder\Microsoft.Todos_8wekyb3d8bbwe!App
+
+REM start "C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
 
 REM timeout /t 300
 start /d "C:\Program Files\OpenVPN\bin" openvpn-gui.exe
