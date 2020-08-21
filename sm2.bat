@@ -10,7 +10,7 @@ echo %~n0
 echo %~n0%~x0
 echo %~nx0
 if exist %~n0.lock goto instanceRunning
-echo %date%-%time% >> %~n0.lock
+echo %date%-%time%>> %~n0.lock
 
 REM set appPath="C:\Program Files\ANSYS Inc\v192\ANSYS\bin\winx64\ansys192.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v193\ANSYS\bin\winx64\ansys2019R1.exe"
@@ -23,7 +23,7 @@ REM   set appPath="D:\installations\ANSYS Inc\v194\ANSYS\bin\winx64\ansys2019R3.
 REM )
 
 REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
-  set startValue=2
+  set startValue=3
   set endValue=!startValue!
   REM set endValue=2
 
@@ -53,7 +53,39 @@ REM ============================================================================
 
   REM call 337319.bat
 
-  call 338420.bat
+
+  REM call 338820.bat
+  REM call 338820a.bat
+  REM call 338820k.bat
+
+  REM call 338920.bat
+
+  REM call 339220.bat
+  REM call 339220s.bat
+  REM call 339220a.bat
+  REM call 339220f.bat
+
+  REM call 338420.bat
+
+  REM call 339920.bat
+
+  REM call 340620.bat
+
+  REM call 340720.bat
+
+  REM call 340820.bat
+
+  REM call 341220.bat
+
+  REM call 341720.bat
+  REM call 341720a.bat
+  REM call 340620.bat
+
+  REM call 342820.bat
+
+  call 343120.bat
+
+  REM call 343920.bat
 
   REM call xxxxxx.xxx
   REM call xxxxxx.xxx

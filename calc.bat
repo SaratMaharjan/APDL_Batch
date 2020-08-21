@@ -34,25 +34,25 @@ if !append! equ 1 (
 
 set todayNow=On %date:~0,2%.%date:~3,2%.%date:~6,4% at %time:~0,2%:%time:~3,2%
 echo *set,hostname,'!host!' > !wDir!\host.csv
-echo *abbr,fin,!location!\ >> !wDir!\host.csv
-echo rem #######________________________________________________________________________________________________________########## >> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________########## >> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________########## >> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________!todayNow!____________________________________________########## >> !bDir!\run-calc-!host!.bat
-echo rem region New Analysis Cases >> !bDir!\run-calc-!host!.bat
-echo @echo off >> !bDir!\run-calc-!host!.bat
-echo setlocal EnableDelayedExpansion >> !bDir!\run-calc-!host!.bat
-echo set ans_consec=yes >> !bDir!\run-calc-!host!.bat
-echo set ansys_lock=on >> !bDir!\run-calc-!host!.bat
-echo del *.lock >> !bDir!\run-calc-!host!.bat
-echo. >> !bDir!\run-calc-!host!.bat
-echo set appPath=!appPath! >> !bDir!\run-calc-!host!.bat
-echo set numpro=!numPro! >> !bDir!\run-calc-!host!.bat
-echo set ansj=!ansj! >> !bDir!\run-calc-!host!.bat
-echo set location=!location! >> !bDir!\run-calc-!host!.bat
-echo set sourceFile=!sourceFile! >> !bDir!\run-calc-!host!.bat
-echo set wDir=!wDir! >> !bDir!\run-calc-!host!.bat
-echo. >> !bDir!\run-calc-!host!.bat
+echo *abbr,fin,!location!\>> !wDir!\host.csv
+echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo rem #######________________________________________!todayNow!____________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo rem region New Analysis Cases>> !bDir!\run-calc-!host!.bat
+echo @echo off>> !bDir!\run-calc-!host!.bat
+echo setlocal EnableDelayedExpansion>> !bDir!\run-calc-!host!.bat
+echo set ans_consec=yes>> !bDir!\run-calc-!host!.bat
+echo set ansys_lock=on>> !bDir!\run-calc-!host!.bat
+echo del *.lock>> !bDir!\run-calc-!host!.bat
+echo.>> !bDir!\run-calc-!host!.bat
+echo set appPath=!appPath!>> !bDir!\run-calc-!host!.bat
+echo set numpro=!numPro!>> !bDir!\run-calc-!host!.bat
+echo set ansj=!ansj!>> !bDir!\run-calc-!host!.bat
+echo set location=!location!>> !bDir!\run-calc-!host!.bat
+echo set sourceFile=!sourceFile!>> !bDir!\run-calc-!host!.bat
+echo set wDir=!wDir!>> !bDir!\run-calc-!host!.bat
+echo.>> !bDir!\run-calc-!host!.bat
 
 set ans_consec=yes
 set ansys_lock=on
@@ -88,11 +88,11 @@ for /l %%m in (!interval!) do (
     echo JOB: !job!
     echo LK: !lk!
 
-    echo set job=!job! >> !bDir!\run-calc-!host!.bat
-    echo set lk=!lk! >> !bDir!\run-calc-!host!.bat
-    echo set nPrefix=!nPrefix! >> !bDir!\run-calc-!host!.bat
-    echo set redirect=!redirect! >> !bDir!\run-calc-!host!.bat
-    echo set extVar=!extVar! >> !bDir!\run-calc-!host!.bat
+    echo set job=!job!>> !bDir!\run-calc-!host!.bat
+    echo set lk=!lk!>> !bDir!\run-calc-!host!.bat
+    echo set nPrefix=!nPrefix!>> !bDir!\run-calc-!host!.bat
+    echo set redirect=!redirect!>> !bDir!\run-calc-!host!.bat
+    echo set extVar=!extVar!>> !bDir!\run-calc-!host!.bat
 
     echo __________calling calc-loop.bat__________ & echo. & echo.
     @echo off
@@ -113,7 +113,7 @@ for /l %%m in (!interval!) do (
   )
 )
 
-echo rem endregion New Analysis Cases >> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________########## >> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________########## >> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________########## >> !bDir!\run-calc-!host!.bat
+echo rem endregion New Analysis Cases>> !bDir!\run-calc-!host!.bat
+echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat

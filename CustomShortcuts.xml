@@ -18,4 +18,5 @@
   <shortcut command="SplitFace" key="Alt+F" />
   <shortcut command="Pan" mnemonic="H" />
   <shortcut command="Home" key="Ctrl+D0" />
+  <shortcut command="LocateInTree" key="Alt+L" />
 </shortcuts>

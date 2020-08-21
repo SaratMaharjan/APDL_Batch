@@ -1,4 +1,5 @@
 C:\Users\Asus\AppData\Roaming\npm
++-- @11ty/eleventy@0.11.0
 +-- @gridsome/cli@0.3.1
 +-- eslint@5.6.0
 +-- eslint-config-google@0.10.0

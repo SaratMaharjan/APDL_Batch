@@ -118,7 +118,7 @@ Return
 
   F6::
 
-  LWin::F4
+  ;LWin::F4
   ; RButton::
   ;   if (GetKeyState("F4"))
   ;   {
@@ -687,3 +687,23 @@ return
   ;else
     ;MsgBox You pressed No.
 ;ende Useful Notes
+
+;#maxThreadsPerHotkey, 2
+;setKeyDelay, 50, 50
+;setMouseDelay, 50
+;banana:=0
+;$f6::
+	;; banana:=!banana .... This assigns banana to the value of NOT (!) banana. so lets
+	;; say banana starts out FALSE (0). you then turn banana to NOT FALSE. which is
+	;; TRUE (1). so now banana is set to TRUE. and then lets say you toggle it again.
+	;; you set banana to NOT TRUE, which is FALSE. banana is now set to FALSE. 
+	;; .... 1 is true, 0 is false. ! is NOT.
+	;banana:=!banana
+	
+	;while (banana=1)
+	;{
+	;	;send, {Right}
+	;	MouseClick, left,
+	;	sleep, 3000
+	;}
+;return

@@ -1,5 +1,5 @@
 {
-  "add books dialog dir": "C:\\Users\\Asus\\Desktop\\print\\calibre\\Seismic", 
+  "add books dialog dir": "C:\\Users\\Asus\\Desktop", 
   "catalog_window_geom": {
     "__class__": "bytearray", 
     "__value__": "AdnQywADAAAAAAeiAAAABQAADt0AAAQMAAAHowAAACQAAA7cAAAECwAAAAEAAAAAB4AAAAejAAAAJAAADtwAAAQL"
@@ -20,11 +20,11 @@
       true
     ], 
     [
-      "#lastopened", 
+      "marked", 
       true
     ], 
     [
-      "title", 
+      "authors", 
       true
     ], 
     [

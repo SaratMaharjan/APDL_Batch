@@ -22,33 +22,33 @@ for /l %%m in (!interval!) do (
 
     set copy1=copy b!bob!-!lk!.db  f!job!-!lk!.db
     echo !copy1!
-    echo !copy1! >> apdl-list.bat
+    echo !copy1!>> apdl-list.bat
     !copy1!
 
     set copy2=copy b!bob!-!lk!.rst f!job!-!lk!.rst
     echo !copy2!
-    echo !copy2! >> apdl-list.bat
+    echo !copy2!>> apdl-list.bat
     !copy2!
 
     set copy3=copy b!bob!-!lk!.s01 f!job!-!lk!.s01
     echo !copy3!
-    echo !copy3! >> apdl-list.bat
+    echo !copy3!>> apdl-list.bat
     !copy3!
 
     set copy4=copy b!bob!-!lk!.s02 f!job!-!lk!.s02
     echo !copy4!
-    echo !copy4! >> apdl-list.bat
+    echo !copy4!>> apdl-list.bat
     !copy4!
 
     set copy5=copy b!bob!-!lk!.s03 f!job!-!lk!.s03
     echo !copy5!
-    echo !copy5! >> apdl-list.bat
+    echo !copy5!>> apdl-list.bat
     !copy5!
 
     set apdlCMD=!appPath! -db 8192 -np !numPro! -b -p !ansj! -jobstg !job!  -jobt !lk! -i "s.in" -o "f!job!-!lk!.out" -j "f!job!-!lk!"
-    echo. >> apdl-list.bat
-    echo !apdlCMD! >> apdl-list.bat
-    echo. >> apdl-list.bat
+    echo.>> apdl-list.bat
+    echo !apdlCMD!>> apdl-list.bat
+    echo.>> apdl-list.bat
       echo.
       echo !apdlCMD!
       echo.

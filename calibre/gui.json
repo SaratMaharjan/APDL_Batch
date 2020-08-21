@@ -66,7 +66,7 @@
   }, 
   "book_details_splitter_horizontal_state": [
     true, 
-    412
+    564
   ], 
   "book_info_dialog_layout": [
     {
@@ -110,7 +110,7 @@
   }, 
   "cover_browser_splitter_vertical_state": [
     false, 
-    299
+    298
   ], 
   "cover_generation_save_settings_for_future": true, 
   "cover_settings_dialog_geom": {
@@ -248,7 +248,7 @@
     "__value__": "AdnQywADAAAAAAoDAAAA6gAADH0AAAMnAAAKBAAAAQkAAAx8AAADJgAAAAEAAAAAB4AAAAoEAAABCQAADHwAAAMm"
   }, 
   "library_usage_stats": {
-    "C:/Users/Asus/Box Sync/books": 38
+    "C:/Users/Asus/Box Sync/books": 53
   }, 
   "metadata_single_gui_geom": {
     "__class__": "bytearray", 
@@ -313,11 +313,11 @@
   "tag browser search box visible": false, 
   "tag_browser_splitter_horizontal_state": [
     true, 
-    295
+    294
   ], 
   "tag_editor_geometry": {
     "__class__": "bytearray", 
     "__value__": "AdnQywADAAAAAAoaAAAAvQAADJsAAAN2AAAKGwAAANwAAAyaAAADdQAAAAEAAAAAB4AAAAobAAAA3AAADJoAAAN1"
   }, 
-  "windows_register_default_programs": "4.1.0"
+  "windows_register_default_programs": "4.10.1"
 }

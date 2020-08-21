@@ -10,9 +10,9 @@ REM set sourceFile=s-alt.in
 
 REM set redirect=1
 REM set extVar=1
-set nPrefix=D1
+set nPrefix=B1
 
-for /l %%b in (1 1 4) do (
+for /l %%b in (1 1 5) do (
 REM for %%b in (1 2) do (
 
   set bq=%%b
@@ -24,4 +24,3 @@ REM for %%b in (1 2) do (
     call calc.bat
 
 )
-

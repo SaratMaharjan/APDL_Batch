@@ -3,14 +3,14 @@ call reset.bat
 set proj_Num=%~n0
 
 REM set pathBefore=E:
-REM set pathAfter=ansysNew
+REM set pathAfter=ansys
 
 REM set sourcePre=x:\ins
 REM set sourceFile=s-alt.in
 
 REM set redirect=1
 REM set extVar=1
-REM set nPrefix=m
+REM set nPrefix=t
 
 for /l %%b in (1 1 1) do (
 REM for %%b in (1 2) do (

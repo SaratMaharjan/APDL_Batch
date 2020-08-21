@@ -1,143 +1,66 @@
 ! ---------------
-! Last Modified: Tuesday, December 17th 2019, 5:02:00 pm
+! Last Modified: Friday, August 7th 2020, 11:50:41 am
 ! Modified By: mhrjn
 ! ---------------
 
 fini
-/fil, f2111-101
+/fil, f2000-301
 resu
+p7
 immed, 0
 p1
 jplot, 9
 jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
+inq, 'belastungPlot'
 jplot
 
-fini
-/fil, f2112-202
-resu
-immed, 0
-p1
-jplot, 9
-jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
-jplot
+! /eof
 
 fini
-/fil, f2112-402
+/fil, f2000-401
 resu
+p7
 immed, 0
 p1
 jplot, 9
 jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
-jplot
-
-fini
-/fil, f2112-502
-resu
-immed, 0
-p1
-jplot, 9
-jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
+inq, 'belastungPlot'
 jplot
 
 /eof
 
 fini
-/fil, f2700-101
+/fil, f1000-301
 resu
+p7
 immed, 0
 p1
 jplot, 9
 jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
+inq, 'belastungplot'
 jplot
 
 fini
-/fil, f2700-202
+/fil, f1000-401
 resu
+p7
 immed, 0
 p1
 jplot, 9
 jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
+inq, 'belastungplot'
 jplot
 
 fini
-/fil, f2700-302
+/fil, f1000-501
 resu
+p7
 immed, 0
 p1
 jplot, 9
 jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
+inq, 'belastungplot'
 jplot
-
-fini
-/fil, f2700-402
-resu
-immed, 0
-p1
-jplot, 9
-jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
-jplot
-
-fini
-/fil, f2700-502
-resu
-immed, 0
-p1
-jplot, 9
-jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
-jplot
-
-fini
-/fil, i1200-101
-resu
-immed, 0
-p1
-jplot, 9
-jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
-jplot
-
-
-fini
-/fil, i1200-102
-resu
-immed, 0
-p1
-jplot, 9
-jptf = 9
-! inq, 'belastungplot'
-inq, 'managecomp2'
-inq, 's61'
-jplot
-
 /eof
 
 ! /com, first

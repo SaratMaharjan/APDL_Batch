@@ -1,7 +1,7 @@
 rem call:%*
 
 :calc
-echo rem ++++++++++++++++++++++++++++++++++++++++++++++++ starting calculation ++++++++++++++++++++++++++++++++++++++++++++++++ >> !bDir!\run-calc-!host!.bat
+echo rem ++++++++++++++++++++++++++++++++++++++++++++++++ starting calculation ++++++++++++++++++++++++++++++++++++++++++++++++>> !bDir!\run-calc-!host!.bat
 del !wDir!\*.lock >nul 2>&1
 del !wDir!\*.abt >nul 2>&1
 
@@ -61,8 +61,8 @@ for /l %%c in ( 1 1 1 ) do (
     echo !apdlCMD!
 
     rem region write to batch file in project folder
-      rem echo !apdlCMD! >> !bDir!\run-calc-!host!.bat
-      echo !apdlCMDtext! >> !bDir!\run-calc-!host!.bat
+      rem echo !apdlCMD!>> !bDir!\run-calc-!host!.bat
+      echo !apdlCMDtext!>> !bDir!\run-calc-!host!.bat
     rem endregion write to batch file in project folder
     echo.
 
@@ -74,28 +74,28 @@ for /l %%c in ( 1 1 1 ) do (
     call timer.bat stopTimer
     call timer.bat displayTimerResult
     set /a mins=!tCalc!/60
-    echo rem +++++++++++++++++++++++++++++++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++++++++++++++++++++++++++++++ >> !bDir!\run-calc-!host!.bat
-    echo rem ++++++++++++++++++++++++++++++++++++++++++++++++++ end of calculation ++++++++++++++++++++++++++++++++++++++++++++++++ >> !bDir!\run-calc-!host!.bat
-    echo del *.lock >> !bDir!\run-calc-!host!.bat
-    echo del *.ema >> !bDir!\run-calc-!host!.bat
-    echo del *.esa >> !bDir!\run-calc-!host!.bat
-    echo del *.osa >> !bDir!\run-calc-!host!.bat
-    echo del *.pcs >> !bDir!\run-calc-!host!.bat
-    echo del *.mnt >> !bDir!\run-calc-!host!.bat
-    echo del *.sta >> !bDir!\run-calc-!host!.bat
-    echo del *.tri >> !bDir!\run-calc-!host!.bat
-    echo del *.r00 >> !bDir!\run-calc-!host!.bat
-    echo del *.rdb >> !bDir!\run-calc-!host!.bat
-    echo del *.ldh >> !bDir!\run-calc-!host!.bat
-    echo del *.full >> !bDir!\run-calc-!host!.bat
-    echo del *.DO3 >> !bDir!\run-calc-!host!.bat
-    echo del *.dbb >> !bDir!\run-calc-!host!.bat
-    echo del *.BCS >> !bDir!\run-calc-!host!.bat
-    echo del *.PVTS >> !bDir!\run-calc-!host!.bat
-    echo del *.mode >> !bDir!\run-calc-!host!.bat
-    echo del *.abt >> !bDir!\run-calc-!host!.bat
-    echo del *.gst >> !bDir!\run-calc-!host!.bat
-    echo. >> !bDir!\run-calc-!host!.bat
+    echo rem +++++++++++++++++++++++++++++++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++++++++++++++++++++++++++++++>> !bDir!\run-calc-!host!.bat
+    echo rem ++++++++++++++++++++++++++++++++++++++++++++++++++ end of calculation ++++++++++++++++++++++++++++++++++++++++++++++++>> !bDir!\run-calc-!host!.bat
+    echo del *.lock>> !bDir!\run-calc-!host!.bat
+    echo del *.ema>> !bDir!\run-calc-!host!.bat
+    echo del *.esa>> !bDir!\run-calc-!host!.bat
+    echo del *.osa>> !bDir!\run-calc-!host!.bat
+    echo del *.pcs>> !bDir!\run-calc-!host!.bat
+    echo del *.mnt>> !bDir!\run-calc-!host!.bat
+    echo del *.sta>> !bDir!\run-calc-!host!.bat
+    echo del *.tri>> !bDir!\run-calc-!host!.bat
+    echo del *.r00>> !bDir!\run-calc-!host!.bat
+    echo del *.rdb>> !bDir!\run-calc-!host!.bat
+    echo del *.ldh>> !bDir!\run-calc-!host!.bat
+    echo del *.full>> !bDir!\run-calc-!host!.bat
+    echo del *.DO3>> !bDir!\run-calc-!host!.bat
+    echo del *.dbb>> !bDir!\run-calc-!host!.bat
+    echo del *.BCS>> !bDir!\run-calc-!host!.bat
+    echo del *.PVTS>> !bDir!\run-calc-!host!.bat
+    echo del *.mode>> !bDir!\run-calc-!host!.bat
+    echo del *.abt>> !bDir!\run-calc-!host!.bat
+    echo del *.gst>> !bDir!\run-calc-!host!.bat
+    echo.>> !bDir!\run-calc-!host!.bat
 
     if %execute% equ 1 (
       set /p inPrep=<!wDir!\license-!nPrefix!!job!-!lk!.txt
