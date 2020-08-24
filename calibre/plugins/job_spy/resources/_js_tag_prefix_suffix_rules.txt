@@ -1,4 +1,0 @@
-"regex","prefix","suffix"
-"^Romance","Fiction:",""
-"^Food","Cooking:",""
-"^Calculus","Mathematics:",""
