@@ -3,7 +3,7 @@
   <docksite size="0" dockingside="Bottom" originaldocksitesize="0" />
   <docksite size="341" dockingside="Left" originaldocksitesize="0">
     <dockcontainer orientation="1" w="0" h="0">
-      <barcontainer w="338" h="326">
+      <barcontainer w="338" h="320">
         <bar name="structureViewSideBar" dockline="0" layout="2" dockoffset="0" state="2" dockside="1" visible="true" seldocktab="0">
           <items>
             <item name="structureViewDockItem" origBar="" origPos="-1" pos="0" />
@@ -11,7 +11,7 @@
           </items>
         </bar>
       </barcontainer>
-      <barcontainer w="338" h="509">
+      <barcontainer w="338" h="515">
         <bar name="propertiesSideBar" dockline="0" layout="2" dockoffset="666" state="2" dockside="1" visible="true" seldocktab="0">
           <items>
             <item name="propertiesDockItem" origBar="" origPos="-1" pos="0" />
@@ -37,7 +37,7 @@
   </docksite>
   <documents />
   <bars>
-    <bar name="layerEditorDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Layers" dockline="999" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="1" dockside="0" fpos="1920,0,300,1057" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
+    <bar name="layerEditorDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Layers" dockline="999" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="1" dockside="0" fpos="1920,0,300,1040" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
       <items>
         <item name="layerEditorDockItem" origBar="" origPos="-1" pos="0" />
       </items>
