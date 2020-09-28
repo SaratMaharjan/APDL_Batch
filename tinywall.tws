@@ -1,432 +1,1342 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ConfigContainer>
-  <Service>
-    <SequenceNumber>1561947173</SequenceNumber>
-    <Blocklists>
-      <EnableBlocklists>true</EnableBlocklists>
-      <EnablePortBlocklist>true</EnablePortBlocklist>
-      <EnableHostsBlocklist>true</EnableHostsBlocklist>
-    </Blocklists>
-    <LockHostsFile>true</LockHostsFile>
-    <LastUpdateCheck>2018-10-09T14:50:04.8243179+02:00</LastUpdateCheck>
-    <AutoUpdateCheck>true</AutoUpdateCheck>
-    <StartupMode>Normal</StartupMode>
-    <SpecialExceptions>
-      <string>AdMuncher</string>
-      <string>avast! Antivirus</string>
-      <string>Avira Antivir</string>
-      <string>Panda Antivirus</string>
-      <string>Filtered_ICMP_Traffic</string>
-      <string>TinyWall</string>
-      <string>Windows_DHCP_Client</string>
-      <string>Windows_DNS_Client</string>
-      <string>Windows_Network_Discovery</string>
-      <string>Windows_Time_Sync</string>
-      <string>Windows_Update</string>
-      <string>Windows_Remote_Assistance</string>
-      <string>Windows_Remote_Desktop</string>
-      <string>File_and_Printer_Sharing</string>
-      <string>Pingable_local_machine</string>
-      <string>VPN_L2TP_IPSec</string>
-      <string>VPN_PPTP</string>
-    </SpecialExceptions>
-    <AllowLocalSubnet>false</AllowLocalSubnet>
-    <AppExceptions>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T14:36:06.6653203+02:00</CreationDate>
-        <AppID>[TWq3CRb1BohsLX]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <ExecutablePath>C:\Program Files\ESET\ESET Endpoint Antivirus\x86\ekrn.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T14:40:24.4133203+02:00</CreationDate>
-        <AppID>[TWuUCgHFJ3Znak]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\Framework\bin\Win64\AnsysFWW.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T15:02:39.1953407+02:00</CreationDate>
-        <AppID>[TWuut1PqmTgXLb]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\Shared Files\Licensing\winx64\ansysli_client.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T15:02:39.1953407+02:00</CreationDate>
-        <AppID>[TWFsv1YItnlnks]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\aisol\bin\winx64\AnsysWBU.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T15:06:44.2858473+02:00</CreationDate>
-        <AppID>[TWHBUf5CPG5grf]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T15:14:31.8205961+02:00</CreationDate>
-        <AppID>[TWyy8kh8N2LO8m]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\Framework\bin\Win64\RunWB2.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T15:15:39.946408+02:00</CreationDate>
-        <AppID>[TW8NRvA39TTogi]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files (x86)\Dropbox\Client\Dropbox.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T15:16:00.298443+02:00</CreationDate>
-        <AppID>[TWYE77p0G6o7HX]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\scdm\SpaceClaim.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T15:45:46.3200367+02:00</CreationDate>
-        <AppID>[TWkJBQNBPpZ7be]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\aisol\bin\winx64\AnsMeshingServer.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T18:51:01.478522+02:00</CreationDate>
-        <AppID>[TWxQr00vxyW2tC]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\commonfiles\MPI\Intel\2017.3.210\winx64\bin\hydra_service.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T18:51:18.2581998+02:00</CreationDate>
-        <AppID>[TWrLwtts7RgTP9]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\commonfiles\MPI\Intel\2017.3.210\winx64\bin\cpuinfo.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T18:51:35.7799518+02:00</CreationDate>
-        <AppID>[TWRn6CrnckFSK5]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\commonfiles\MPI\Intel\2017.3.210\winx64\bin\IMB-MPI1.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T18:51:50.0843821+02:00</CreationDate>
-        <AppID>[TWJVwYge5iurkR]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\commonfiles\MPI\Intel\2017.3.210\winx64\bin\IMB-NBC.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T18:52:06.2189954+02:00</CreationDate>
-        <AppID>[TWaxESO8kOasiN]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\commonfiles\MPI\Intel\2017.3.210\winx64\bin\IMB-RMA.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T19:08:36.3229959+02:00</CreationDate>
-        <AppID>[TW5iKbXHPAcpB4]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\commonfiles\MPI\Intel\2017.3.210\winx64\bin\pmi_proxy.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T19:08:51.715535+02:00</CreationDate>
-        <AppID>[TWStFHI54rMTzl]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\commonfiles\MPI\Intel\2017.3.210\winx64\bin\mpiexec.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T19:09:02.8396473+02:00</CreationDate>
-        <AppID>[TW8xtktLPJN7XF]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\commonfiles\MPI\Intel\2017.3.210\winx64\bin\mpiexec.hydra.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-08-28T19:32:12.1875682+02:00</CreationDate>
-        <AppID>[TWxi0DNSKkDmZF]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v191\commonfiles\Tcl\bin\winx64\wish.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-09-27T09:29:45.7395809+02:00</CreationDate>
-        <AppID>[TW7uP9RHZglHFR]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Windows\System32\mstsc.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:27:29.3463742+02:00</CreationDate>
-        <AppID>[TWWYVJdnATC9VU]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\OpenVPN\bin\openvpn.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:27:38.307759+02:00</CreationDate>
-        <AppID>[TWcQqnEd4AreOz]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\Google\Drive\googledrivesync.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:27:50.3730242+02:00</CreationDate>
-        <AppID>[TWGgfzJiIHCZoX]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Users\Asus\AppData\Local\Programs\Sync\sync-worker.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:27:58.7448638+02:00</CreationDate>
-        <AppID>[TWEdjGASQq2zHP]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience\NVIDIA Share.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:28:52.580422+02:00</CreationDate>
-        <AppID>[TWrweP3viRjvd7]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Users\Asus\AppData\Local\Microsoft\OneDrive\OneDrive.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:30:11.0157057+02:00</CreationDate>
-        <AppID>[TW4xaJyyGgIzim]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v192\ansys\bin\winx64\ANSYS.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:30:51.7612306+02:00</CreationDate>
-        <AppID>[TWe3OgRGOi9mzz]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v192\ansys\bin\winx64\wish84.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:31:44.2740241+02:00</CreationDate>
-        <AppID>[TWuJtVZ7yR17oH]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\Microsoft Office\root\Office16\lync.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:38:02.5077765+02:00</CreationDate>
-        <AppID>[TWZqadlcITHrm7]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v192\commonfiles\MPI\Intel\2017.3.210\winx64\bin\cpuinfo.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:38:18.3731137+02:00</CreationDate>
-        <AppID>[TW8kEIyXyAAxT5]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v192\commonfiles\MPI\Intel\2017.3.210\winx64\bin\hydra_service.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:39:02.6885719+02:00</CreationDate>
-        <AppID>[TWrz4ocC4qWey5]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v192\Framework\bin\Win64\AnsysFWW.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:44:55.2789194+02:00</CreationDate>
-        <AppID>[TWn9ku3OECHeVV]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-02T14:49:34.2703442+02:00</CreationDate>
-        <AppID>[TWxUTCptUOaoat]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v192\scdm\SpaceClaim.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-03T12:20:42.3903384+02:00</CreationDate>
-        <AppID>[TWHs1yWXp5vqad]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Users\Asus\Google Drive (srtmjn@gmail.com)\PortableApps\PortableApps\FirefoxPortable\App\Firefox (1)\firefox.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-04T08:22:01.2757201+02:00</CreationDate>
-        <AppID>[TWHAnWCa9tl4I4]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\ANSYS Inc\v192\aisol\bin\winx64\AnsysWBU.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-10T14:25:08.0418047+02:00</CreationDate>
-        <AppID>[TWKKS1sh2RGS2M]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Windows\SystemApps\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\Microsoft.AAD.BrokerPlugin.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-10T14:27:22.5806085+02:00</CreationDate>
-        <AppID>[TWCA57Gui8ASRt]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Users\Asus\AppData\Local\Viber\Viber.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-10T14:37:16.1231062+02:00</CreationDate>
-        <AppID>[TWpZOaQs3cEIm2]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files (x86)\Internet Download Manager\IDMan.exe</ExecutablePath>
-      </FirewallException>
-      <FirewallException>
-        <Timer>Permanent</Timer>
-        <CreationDate>2018-10-10T18:08:01.6239093+02:00</CreationDate>
-        <AppID>[TW1L0bfyviYQW9]</AppID>
-        <OpenPortOutboundRemoteTCP>*</OpenPortOutboundRemoteTCP>
-        <OpenPortListenLocalTCP>*</OpenPortListenLocalTCP>
-        <OpenPortOutboundRemoteUDP>*</OpenPortOutboundRemoteUDP>
-        <OpenPortListenLocalUDP>*</OpenPortListenLocalUDP>
-        <ExecutablePath>C:\Program Files\WindowsApps\Microsoft.WindowsStore_11809.1001.8.0_x64__8wekyb3d8bbwe\WinStore.App.exe</ExecutablePath>
-      </FirewallException>
-    </AppExceptions>
-  </Service>
+<ConfigContainer xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PKSoft">
   <Controller>
-    <Language>auto</Language>
-    <ConnFormWindowState>Maximized</ConnFormWindowState>
-    <ConnFormWindowLoc>
-      <X>2474</X>
-      <Y>-21</Y>
-    </ConnFormWindowLoc>
-    <ConnFormWindowSize>
-      <Width>827</Width>
-      <Height>386</Height>
-    </ConnFormWindowSize>
-    <ConnFormShowConnections>true</ConnFormShowConnections>
-    <ConnFormShowOpenPorts>false</ConnFormShowOpenPorts>
-    <ConnFormShowBlocked>true</ConnFormShowBlocked>
     <AskForExceptionDetails>true</AskForExceptionDetails>
-    <ManageTabIndex>0</ManageTabIndex>
+    <ConnFormColumnWidths xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colProcess</d3p1:Key>
+        <d3p1:Value>550</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colProtocol</d3p1:Key>
+        <d3p1:Value>75</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colSrcPort</d3p1:Key>
+        <d3p1:Value>68</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colLocalAddress</d3p1:Key>
+        <d3p1:Value>160</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colDstPort</d3p1:Key>
+        <d3p1:Value>92</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colRemoteAddress</d3p1:Key>
+        <d3p1:Value>160</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colState</d3p1:Key>
+        <d3p1:Value>88</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colDirection</d3p1:Key>
+        <d3p1:Value>60</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colTimestamp</d3p1:Key>
+        <d3p1:Value>146</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+    </ConnFormColumnWidths>
+    <ConnFormShowBlocked>true</ConnFormShowBlocked>
+    <ConnFormShowConnections>false</ConnFormShowConnections>
+    <ConnFormShowOpenPorts>false</ConnFormShowOpenPorts>
+    <ConnFormWindowLoc xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:x>404</d3p1:x>
+      <d3p1:y>90</d3p1:y>
+    </ConnFormWindowLoc>
+    <ConnFormWindowSize xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:height>954</d3p1:height>
+      <d3p1:width>1032</d3p1:width>
+    </ConnFormWindowSize>
+    <ConnFormWindowState>Maximized</ConnFormWindowState>
     <EnableGlobalHotkeys>false</EnableGlobalHotkeys>
+    <Language>auto</Language>
+    <ProcessesFormColumnWidths xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colName</d3p1:Key>
+        <d3p1:Value>173</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colPath</d3p1:Key>
+        <d3p1:Value>382</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+    </ProcessesFormColumnWidths>
+    <ProcessesFormWindowLoc xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:x>104</d3p1:x>
+      <d3p1:y>104</d3p1:y>
+    </ProcessesFormWindowLoc>
+    <ProcessesFormWindowSize xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:height>842</d3p1:height>
+      <d3p1:width>604</d3p1:width>
+    </ProcessesFormWindowSize>
+    <ProcessesFormWindowState>Normal</ProcessesFormWindowState>
+    <ServicesFormColumnWidths xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <ServicesFormWindowLoc xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:x>0</d3p1:x>
+      <d3p1:y>0</d3p1:y>
+    </ServicesFormWindowLoc>
+    <ServicesFormWindowSize xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:height>0</d3p1:height>
+      <d3p1:width>0</d3p1:width>
+    </ServicesFormWindowSize>
+    <ServicesFormWindowState>Normal</ServicesFormWindowState>
+    <SettingsFormAppListColumnWidths xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colApplication</d3p1:Key>
+        <d3p1:Value>132</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colType</d3p1:Key>
+        <d3p1:Value>102</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+      <d3p1:KeyValueOfstringint>
+        <d3p1:Key>colDetails</d3p1:Key>
+        <d3p1:Value>356</d3p1:Value>
+      </d3p1:KeyValueOfstringint>
+    </SettingsFormAppListColumnWidths>
+    <SettingsFormWindowLoc xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:x>104</d3p1:x>
+      <d3p1:y>104</d3p1:y>
+    </SettingsFormWindowLoc>
+    <SettingsFormWindowSize xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:height>477</d3p1:height>
+      <d3p1:width>764</d3p1:width>
+    </SettingsFormWindowSize>
+    <SettingsTabIndex>0</SettingsTabIndex>
+    <UwpPackagesFormColumnWidths xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <UwpPackagesFormWindowLoc xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:x>0</d3p1:x>
+      <d3p1:y>0</d3p1:y>
+    </UwpPackagesFormWindowLoc>
+    <UwpPackagesFormWindowSize xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+      <d3p1:height>0</d3p1:height>
+      <d3p1:width>0</d3p1:width>
+    </UwpPackagesFormWindowSize>
+    <UwpPackagesFormWindowState>Normal</UwpPackagesFormWindowState>
   </Controller>
+  <Service xmlns:d2p1="TinyWall">
+    <d2p1:ActiveProfileName>Default</d2p1:ActiveProfileName>
+    <d2p1:AutoUpdateCheck>true</d2p1:AutoUpdateCheck>
+    <d2p1:Blocklists />
+    <d2p1:LockHostsFile>true</d2p1:LockHostsFile>
+    <d2p1:Profiles>
+      <d2p1:ServerProfileConfiguration>
+        <d2p1:AppExceptions>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:55:37.8339898+02:00</d2p1:CreationDate>
+            <d2p1:Id>23c5c5f1-63b1-45c4-81d6-9b22a6c46d8d</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\Program Files\Mozilla Firefox\Firefox.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:55:37.8489496+02:00</d2p1:CreationDate>
+            <d2p1:Id>58a6189b-9149-4385-9a96-06528d7f20d8</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts></d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts></d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\Program Files\Mozilla Firefox\plugin-container.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:55:37.9466884+02:00</d2p1:CreationDate>
+            <d2p1:Id>cc42b1b7-08e4-419b-8f61-c350f912a065</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts></d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts></d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts></d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\Program Files\Google\Drive\googledrivesync.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:55:37.9606787+02:00</d2p1:CreationDate>
+            <d2p1:Id>c94a3e66-4b49-4988-967d-8e2967638647</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts></d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts></d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\Program Files (x86)\Google\Update\GoogleUpdate.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:55:37.9925653+02:00</d2p1:CreationDate>
+            <d2p1:Id>14c0897e-20d4-4d85-bad9-b68bc74983de</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts></d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts></d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\Program Files (x86)\Internet Explorer\iexplore.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:55:37.9925653+02:00</d2p1:CreationDate>
+            <d2p1:Id>db40f565-176c-4b83-9247-13abe4314a46</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts></d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts></d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\Program Files\Internet Explorer\iexplore.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:55:38.012512+02:00</d2p1:CreationDate>
+            <d2p1:Id>5df4e186-767a-4d9f-a1a6-1f0b1a5ea7d4</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts></d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts></d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:55:38.0184948+02:00</d2p1:CreationDate>
+            <d2p1:Id>8d2ba988-1d70-4d49-849f-f04590fb7cb2</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts></d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts></d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:55:38.0225135+02:00</d2p1:CreationDate>
+            <d2p1:Id>4a3348e2-2a8e-48df-912c-07c75e01cb40</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\WINDOWS\System32\smartscreen.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:56:22.1210799+02:00</d2p1:CreationDate>
+            <d2p1:Id>68b9ffd9-6bd2-4ee4-88a5-b23e303048a3</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\users\asus\appdata\local\microsoft\onedrive\onedrive.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:56:26.7520381+02:00</d2p1:CreationDate>
+            <d2p1:Id>bf0e8719-6603-4034-b1a9-6e31dfb8a71e</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>E:\installation\epic games\launcher\portal\binaries\win64\epicgameslauncher.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:56:29.9194446+02:00</d2p1:CreationDate>
+            <d2p1:Id>542b81af-25f7-4f42-9165-e2246b4da4b4</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\users\asus\appdata\local\programs\sync\sync-worker.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:56:35.6157524+02:00</d2p1:CreationDate>
+            <d2p1:Id>80f52146-0032-477e-9608-d96da579b23e</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\users\asus\appdata\local\megasync\megasync.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:56:42.1687155+02:00</d2p1:CreationDate>
+            <d2p1:Id>0d063fda-6992-456f-8342-8cf85e3b8915</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\dropbox\client\dropbox.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:56:53.0498991+02:00</d2p1:CreationDate>
+            <d2p1:Id>2bf8e8fe-e811-428d-84b2-d889ed70f683</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:AppContainerSubject">
+              <d2p1:DisplayName>Microsoft.Todos</d2p1:DisplayName>
+              <d2p1:Publisher>CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</d2p1:Publisher>
+              <d2p1:PublisherId>8wekyb3d8bbwe</d2p1:PublisherId>
+              <d2p1:Sid>S-1-15-2-2537927067-2140208811-1083047336-3825492100-1188134376-3459723148-3131426163</d2p1:Sid>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T12:57:11.7371839+02:00</d2p1:CreationDate>
+            <d2p1:Id>24b3144c-990c-4c77-b23e-e795a357d927</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\windows\system32\mstsc.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:02:01.4478699+02:00</d2p1:CreationDate>
+            <d2p1:Id>d068dc8e-6135-45f6-9eff-32637c945c3e</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\nvidia corporation\nvcontainer\nvcontainer.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:02:04.4320267+02:00</d2p1:CreationDate>
+            <d2p1:Id>38176cb2-17d2-48a3-8c4d-ac1ab2e99a6d</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\eset\eset security\ekrn.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:02:22.6558196+02:00</d2p1:CreationDate>
+            <d2p1:Id>4ae230d4-0eaf-4b9c-a0e3-7ef4784571db</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:AppContainerSubject">
+              <d2p1:DisplayName>Microsoft.SkypeApp</d2p1:DisplayName>
+              <d2p1:Publisher>CN=Skype Software Sarl, O=Microsoft Corporation, L=Luxembourg, S=Luxembourg, C=LU</d2p1:Publisher>
+              <d2p1:PublisherId>kzf8qxf38zg5c</d2p1:PublisherId>
+              <d2p1:Sid>S-1-15-2-2246530975-808720366-1776470054-230329187-4153223113-3550430174-4193313734</d2p1:Sid>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:08:04.8530313+02:00</d2p1:CreationDate>
+            <d2p1:Id>5b86d229-29a4-49fa-8cc3-ccbf82c59870</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:UnrestrictedPolicy" />
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\program files\microsoft office\root\Office16\lync.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:11:52.0734034+02:00</d2p1:CreationDate>
+            <d2p1:Id>7b1557f0-7ca4-4f3c-afca-b1941be60d56</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\Users\Asus\AppData\Local\Discord\app-0.0.306\Discord.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:ChildProcessesInherit>true</d2p1:ChildProcessesInherit>
+            <d2p1:CreationDate>2020-07-03T13:12:42.6293379+02:00</d2p1:CreationDate>
+            <d2p1:Id>adeef342-0e09-444f-a9a2-db097c4c80e3</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:UnrestrictedPolicy" />
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\program files\microsoft office\root\Office16\OUTLOOK.EXE</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:14:37.8325885+02:00</d2p1:CreationDate>
+            <d2p1:Id>474b9499-576c-4298-a3ee-a4776abdf484</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:AppContainerSubject">
+              <d2p1:DisplayName>Microsoft.AAD.BrokerPlugin</d2p1:DisplayName>
+              <d2p1:Publisher>CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</d2p1:Publisher>
+              <d2p1:PublisherId>cw5n1h2txyewy</d2p1:PublisherId>
+              <d2p1:Sid>S-1-15-2-1910091885-1573563583-1104941280-2418270861-3411158377-2822700936-2990310272</d2p1:Sid>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:14:42.8973943+02:00</d2p1:CreationDate>
+            <d2p1:Id>88cad3a3-f00e-4fe8-9983-5f8d9d833e97</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\nvidia corporation\nvidia geforce experience\nvidia share.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:14:56.6162547+02:00</d2p1:CreationDate>
+            <d2p1:Id>834cda20-61a7-4626-96dc-e8e9e8cbf848</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\users\asus\appdata\local\discord\update.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:15:06.2247636+02:00</d2p1:CreationDate>
+            <d2p1:Id>abc18f44-5b03-41df-aa68-062c6f90fbbb</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:AppContainerSubject">
+              <d2p1:DisplayName>Microsoft.Windows.Search</d2p1:DisplayName>
+              <d2p1:Publisher>CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</d2p1:Publisher>
+              <d2p1:PublisherId>cw5n1h2txyewy</d2p1:PublisherId>
+              <d2p1:Sid>S-1-15-2-536077884-713174666-1066051701-3219990555-339840825-1966734348-1611281757</d2p1:Sid>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:15:25.8081563+02:00</d2p1:CreationDate>
+            <d2p1:Id>66a64589-4690-4217-9eb1-834b97ddf1ce</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\common files\microsoft shared\clicktorun\officeclicktorun.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:16:03.008807+02:00</d2p1:CreationDate>
+            <d2p1:Id>f3b40252-39fd-4155-b08d-968212111808</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\bluestacks\hd-agent.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:16:16.0074314+02:00</d2p1:CreationDate>
+            <d2p1:Id>89b794ab-661f-46c0-ae32-b2e1d3b676f7</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\bluestacks\hd-multiinstancemanager.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:16:23.8951931+02:00</d2p1:CreationDate>
+            <d2p1:Id>7e1fa84c-a00e-40e2-ab21-f4250ff5348f</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\bluestacks\hd-player.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:16:27.5689305+02:00</d2p1:CreationDate>
+            <d2p1:Id>0cb9e4ae-990c-4ef1-999a-b5d36735b370</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\teamviewer\teamviewer_service.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:16:31.8243704+02:00</d2p1:CreationDate>
+            <d2p1:Id>2a4d751f-c6f3-44e5-9e74-f32c1ff5cd93</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>E:\installation\bluestacks\client\bluestacks.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:ChildProcessesInherit>true</d2p1:ChildProcessesInherit>
+            <d2p1:CreationDate>2020-07-03T13:19:10.374648+02:00</d2p1:CreationDate>
+            <d2p1:Id>ab9af9e6-3797-4fc2-a8bb-5dee0c355a26</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:UnrestrictedPolicy" />
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\microsoft vs code\code.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:ChildProcessesInherit>true</d2p1:ChildProcessesInherit>
+            <d2p1:CreationDate>2020-07-03T13:19:18.3097274+02:00</d2p1:CreationDate>
+            <d2p1:Id>f91969b1-d9de-4391-a0a3-e5a407968ec0</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:UnrestrictedPolicy" />
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\ansys inc\v201\framework\bin\win64\ansysfww.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:19:24.8130497+02:00</d2p1:CreationDate>
+            <d2p1:Id>0431d186-98a6-4ccd-827c-bb8aed299097</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\microsoft office\root\office16\excel.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:19:32.5651373+02:00</d2p1:CreationDate>
+            <d2p1:Id>708b881c-6aca-407e-88cc-aefe98c005f2</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\malwarebytes\anti-malware\mbamservice.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:20:54.6373555+02:00</d2p1:CreationDate>
+            <d2p1:Id>ddc387b0-98e0-4116-b138-03e8a4e90a16</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\windows\system32\nslookup.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:23:24.8776496+02:00</d2p1:CreationDate>
+            <d2p1:Id>c89bb1b5-92fb-4c83-8040-ad56c1b34989</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:UnrestrictedPolicy" />
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\openvpn\bin\openvpn.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:25:08.0643881+02:00</d2p1:CreationDate>
+            <d2p1:Id>b53a3cd6-24af-48f8-8f0b-2d486a68d7d8</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:AppContainerSubject">
+              <d2p1:DisplayName>DolbyLaboratories.DolbyAccess</d2p1:DisplayName>
+              <d2p1:Publisher>CN=58D26209-1D57-482C-B403-B655571B5C7B</d2p1:Publisher>
+              <d2p1:PublisherId>rz1tebttyb220</d2p1:PublisherId>
+              <d2p1:Sid>S-1-15-2-864892550-682355956-3667821578-694357232-3878941086-3291980491-2900429266</d2p1:Sid>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T13:25:13.797282+02:00</d2p1:CreationDate>
+            <d2p1:Id>a40665ff-7e41-45a2-9b71-1c0bf3a01c81</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\ansys inc\v201\scdm\spaceclaim.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T14:26:57.7316745+02:00</d2p1:CreationDate>
+            <d2p1:Id>cc2d0cb5-dd62-41f9-ab36-6fb8c1a27534</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:AppContainerSubject">
+              <d2p1:DisplayName>9E2F88E3.Twitter</d2p1:DisplayName>
+              <d2p1:Publisher>CN=2079F891-4F1B-4C35-9488-2582FB598793</d2p1:Publisher>
+              <d2p1:PublisherId>wgeqdkkx372wm</d2p1:PublisherId>
+              <d2p1:Sid>S-1-15-2-1063257880-1914585122-1954150059-946145533-116938067-416079064-1690466945</d2p1:Sid>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:ChildProcessesInherit>true</d2p1:ChildProcessesInherit>
+            <d2p1:CreationDate>2020-07-03T17:17:46.3731964+02:00</d2p1:CreationDate>
+            <d2p1:Id>8620270b-379c-404d-938f-1373a5571e1a</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>E:\installation\gta\launcher\launcher.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T17:18:09.5569753+02:00</d2p1:CreationDate>
+            <d2p1:Id>3ca1b946-f316-4515-a3e7-2e2b491c0a77</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\rockstar games\social club\socialclubhelper.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-03T17:21:55.725307+02:00</d2p1:CreationDate>
+            <d2p1:Id>c82a4c5b-3144-48a5-b2f2-ddfb2b76651c</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\eset\remoteadministrator\agent\eraagent.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-05T08:47:56.1791247+02:00</d2p1:CreationDate>
+            <d2p1:Id>c8ca9e16-6a7d-436c-8331-4a36c5a15f72</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\Users\Asus\AppData\Local\Viber\Viber.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-06T17:15:27.5661604+02:00</d2p1:CreationDate>
+            <d2p1:Id>16ce3a95-7949-4312-9f4d-99478bfd55eb</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\Users\Asus\AppData\Local\microsoft\Edge SxS\application\msedge.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-07T11:10:59.6827166+02:00</d2p1:CreationDate>
+            <d2p1:Id>b3b68394-8fdc-496c-a1bf-0f62dd60444b</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\program files (x86)\Google\Chrome\application\chrome.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:ChildProcessesInherit>true</d2p1:ChildProcessesInherit>
+            <d2p1:CreationDate>2020-07-07T19:07:26.8097048+02:00</d2p1:CreationDate>
+            <d2p1:Id>8e1ce919-862a-4955-8901-bd9279696673</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\Users\Asus\AppData\Local\Programs\Opera\68.0.3618.173\opera.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-08T17:10:16.9902059+02:00</d2p1:CreationDate>
+            <d2p1:Id>94b3369f-9543-4741-a381-dd866228e4ae</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\program files\softdeluxe\free download manager\fdm.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-11T03:12:52.4085844+02:00</d2p1:CreationDate>
+            <d2p1:Id>81990b28-a2c7-4f70-9d5d-faea55ce6f6e</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\Users\Asus\AppData\Roaming\Zoom\bin\Zoom.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-11T11:28:37.7013854+02:00</d2p1:CreationDate>
+            <d2p1:Id>4477c1c3-c65d-47a5-9a2e-963bff209a36</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\Windows\System32\rundll32.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-11T11:31:19.8296529+02:00</d2p1:CreationDate>
+            <d2p1:Id>2c66b11b-edcc-48db-ba32-fb9995a0d9ba</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>c:\program files (x86)\Browny02\Brother\BrStMonW.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-11T11:32:57.3419535+02:00</d2p1:CreationDate>
+            <d2p1:Id>a4d1ed40-e100-4d9b-b832-114c0cbd11ca</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\windows\system32\spoolsv.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-11T12:30:45.4827735+02:00</d2p1:CreationDate>
+            <d2p1:Id>03734540-350e-4270-afc3-d4abf10e65ed</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\nvidia corporation\nvidia geforce experience\nvidia geforce experience.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-11T12:30:51.5702982+02:00</d2p1:CreationDate>
+            <d2p1:Id>361743c8-1bd8-44cc-9484-ed9852a19e22</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\nvidia corporation\nvnode\nvidia web helper.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:ChildProcessesInherit>true</d2p1:ChildProcessesInherit>
+            <d2p1:CreationDate>2020-07-12T08:42:02.607217+02:00</d2p1:CreationDate>
+            <d2p1:Id>2488e553-3f27-4dac-b69a-eb1b03026f0c</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>e:\installation\twinmotion\twinmotion\Binaries\Win64\twinmotion-win64-shipping.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-15T07:14:07.6320503+02:00</d2p1:CreationDate>
+            <d2p1:Id>900f5c4d-2a72-4d2e-b06b-3e5c14c5663b</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\windows\system32\svchost.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-15T08:43:04.7311605+02:00</d2p1:CreationDate>
+            <d2p1:Id>24fe1041-7987-4429-b893-02e4aee5c0dd</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\microsoft office\root\office16\winword.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-15T08:43:18.930961+02:00</d2p1:CreationDate>
+            <d2p1:Id>cdf72f9e-2ec1-47af-96a9-faf029c5c2f5</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\browny02\brynsvc.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-15T08:43:27.5315837+02:00</d2p1:CreationDate>
+            <d2p1:Id>29110867-8ce2-456f-9c07-662479c76fa8</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\windows\system32\wiawow64.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-17T07:23:18.4197168+02:00</d2p1:CreationDate>
+            <d2p1:Id>3df63025-90ef-4802-badb-fb6ba768b49a</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\ansys inc\shared files\licensing\winx64\lmutil.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-18T13:15:02.938546+02:00</d2p1:CreationDate>
+            <d2p1:Id>16e93e49-4c37-4b6f-92f2-4f8acca46a0d</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:AppContainerSubject">
+              <d2p1:DisplayName>Microsoft.WindowsStore</d2p1:DisplayName>
+              <d2p1:Publisher>CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</d2p1:Publisher>
+              <d2p1:PublisherId>8wekyb3d8bbwe</d2p1:PublisherId>
+              <d2p1:Sid>S-1-15-2-1609473798-1231923017-684268153-4268514328-882773646-2760585773-1760938157</d2p1:Sid>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-20T07:57:35.0229502+02:00</d2p1:CreationDate>
+            <d2p1:Id>42c5621a-c099-4865-b458-d105867fbf33</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\Box\Box Sync\BoxSync.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-20T08:35:11.3600703+02:00</d2p1:CreationDate>
+            <d2p1:Id>3f359800-0c4f-4b7c-bf03-824658c90b4a</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>443,1000-10000,50000-65000,16000-26000</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>3478-3481,50000-60000</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\windowsapps\microsoft.skypeapp_15.61.100.0_x86__kzf8qxf38zg5c\Skype\Skype.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-20T09:04:13.6564688+02:00</d2p1:CreationDate>
+            <d2p1:Id>7c069288-68eb-4de6-8eb1-151a3910c76d</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\ansys inc\shared files\licensing\winx64\ansysli_util.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-20T09:04:28.343583+02:00</d2p1:CreationDate>
+            <d2p1:Id>c1cc4981-93c6-4004-a180-305f69d47138</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\ansys inc\v201\aisol\bin\winx64\ansyswbu.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-20T09:05:19.863726+02:00</d2p1:CreationDate>
+            <d2p1:Id>467beb90-ea68-4094-a798-6b988a681cab</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\ansys inc\v202\commonfiles\apip\bin\winx64\apip-standalone-service.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-20T09:05:32.1751057+02:00</d2p1:CreationDate>
+            <d2p1:Id>17312495-a44c-4a82-aecf-2a14f6df71b4</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\ansys inc\v202\framework\bin\win64\ansysfww.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-20T09:17:14.7825703+02:00</d2p1:CreationDate>
+            <d2p1:Id>fc130b00-cb24-4d46-8da7-c6436140111f</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\ansys inc\v202\scdm\spaceclaim.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-20T12:48:28.1951377+02:00</d2p1:CreationDate>
+            <d2p1:Id>73d06d84-3327-4b75-84a9-e09b5878721d</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\common files\autodesk shared\autodesk download manager\AdDLMgr.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-25T19:18:03.3135817+02:00</d2p1:CreationDate>
+            <d2p1:Id>a96430a4-1cb3-4a9e-8c5e-d64e553b2307</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\plex\plex media server\plex media server.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-25T19:18:28.6312451+02:00</d2p1:CreationDate>
+            <d2p1:Id>69cde315-83f8-458f-94a8-1c9d2153e100</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\plex\plex media server\plexscripthost.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-25T19:18:41.7460074+02:00</d2p1:CreationDate>
+            <d2p1:Id>b4ca6140-4d61-441c-8b6b-4717677829b9</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\plex\plex media server\plex tuner service.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-25T19:45:13.0161194+02:00</d2p1:CreationDate>
+            <d2p1:Id>da849c35-c0d1-4b52-8c6e-5efbb6a7a00c</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:AppContainerSubject">
+              <d2p1:DisplayName>CAF9E577.Plex</d2p1:DisplayName>
+              <d2p1:Publisher>CN=D6A5344F-7912-4E3F-9D30-2F9AF50BBC55</d2p1:Publisher>
+              <d2p1:PublisherId>aam28m9va5cke</d2p1:PublisherId>
+              <d2p1:Sid>S-1-15-2-663319984-3691977918-1341348298-2599563705-1202581887-3444832810-199907587</d2p1:Sid>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-26T16:09:19.2895966+02:00</d2p1:CreationDate>
+            <d2p1:Id>34a483aa-67fe-4b6f-8de7-dd0fd7bba968</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\plex\plex\plex.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-07-26T16:09:30.8796726+02:00</d2p1:CreationDate>
+            <d2p1:Id>0ae170c5-7230-4bc3-a757-782125e27960</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\dropbox\update\dropboxupdate.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-04T10:06:20.8034321+02:00</d2p1:CreationDate>
+            <d2p1:Id>1a5051fa-1c58-4d7e-8370-eec18c213770</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\pcloud drive\pCloud.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:ChildProcessesInherit>true</d2p1:ChildProcessesInherit>
+            <d2p1:CreationDate>2020-08-04T17:06:36.4920746+02:00</d2p1:CreationDate>
+            <d2p1:Id>6e9963b4-3746-45ad-967b-80a3dccabe95</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>E:\installation\gtav\gta5.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-04T17:08:07.0074843+02:00</d2p1:CreationDate>
+            <d2p1:Id>9c9777e1-cc65-4cf1-8187-96094c288061</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>System</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-12T08:37:13.4158894+02:00</d2p1:CreationDate>
+            <d2p1:Id>b4e4ae33-8ca0-43ed-8e25-d73d053bce33</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>443,1000-10000,50000-65000,16000-26000</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>3478-3481,50000-60000</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\windowsapps\microsoft.skypeapp_15.63.76.0_x86__kzf8qxf38zg5c\skype\Skype.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-12T08:37:30.7986351+02:00</d2p1:CreationDate>
+            <d2p1:Id>345d8c20-9d73-415e-8f50-abe40ba1544a</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\nvidia corporation\display.nvcontainer\nvdisplay.container.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-12T08:39:24.5666544+02:00</d2p1:CreationDate>
+            <d2p1:Id>a603a9e9-b86c-4237-937c-72c54b1ceb8e</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\users\asus\appdata\local\discord\app-0.0.307\discord.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-13T17:11:03.062266+02:00</d2p1:CreationDate>
+            <d2p1:Id>3a83d43e-8fbc-4c44-b2be-8e7aa9f6274e</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\Users\Asus\AppData\Local\microsoft\Teams\current\Teams.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-20T04:45:47.5762276+02:00</d2p1:CreationDate>
+            <d2p1:Id>dad167f7-42a5-4a11-b441-9efdceda4c63</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\programdata\malwarebytes\mbamservice\instlrupdate\mbsetup.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-20T09:49:33.5217412+02:00</d2p1:CreationDate>
+            <d2p1:Id>c8002f2c-e835-4de7-a66c-e2a9ec741033</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\git\mingw64\libexec\git-core\git-remote-https.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-20T11:40:14.7903532+02:00</d2p1:CreationDate>
+            <d2p1:Id>1b9d09c0-c880-432a-b4e9-7b74005c9ba2</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\nodejs\node.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-20T12:03:45.2642892+02:00</d2p1:CreationDate>
+            <d2p1:Id>fb24cbc8-73e8-452d-97c5-cc26c94e8950</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\windowsapps\microsoft.microsoftofficehub_18.2006.1031.0_x64__8wekyb3d8bbwe\localbridge.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-21T18:57:35.9236498+02:00</d2p1:CreationDate>
+            <d2p1:Id>a35025e4-7748-438a-8fe1-714052c6c03d</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\programdata\chocolatey\choco.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-23T10:15:44.0705178+02:00</d2p1:CreationDate>
+            <d2p1:Id>90f49f3b-7a0e-4909-805d-a9a77a449e19</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files\git\mingw64\libexec\git-core\git-credential-manager.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-26T14:09:56.2948601+02:00</d2p1:CreationDate>
+            <d2p1:Id>d5c8578e-de5d-45dc-b758-4a22a6b7a599</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>E:\googledrive\portableapps\portableapps\portableapps.com\portableappsupdater.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-28T12:19:42.8515652+02:00</d2p1:CreationDate>
+            <d2p1:Id>84c90a98-15d5-4076-8a5f-5e7028f2c391</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>E:\installation\hitman\retail\hitman.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+          <d2p1:FirewallExceptionV3>
+            <d2p1:CreationDate>2020-08-30T08:45:13.0364427+02:00</d2p1:CreationDate>
+            <d2p1:Id>5618ed4c-cec5-45e0-92d5-be49f09e2e6e</d2p1:Id>
+            <d2p1:Policy i:type="d2p1:TcpUdpPolicy">
+              <d2p1:AllowedLocalTcpListenerPorts>*</d2p1:AllowedLocalTcpListenerPorts>
+              <d2p1:AllowedLocalUdpListenerPorts>*</d2p1:AllowedLocalUdpListenerPorts>
+              <d2p1:AllowedRemoteTcpConnectPorts>*</d2p1:AllowedRemoteTcpConnectPorts>
+              <d2p1:AllowedRemoteUdpConnectPorts>*</d2p1:AllowedRemoteUdpConnectPorts>
+            </d2p1:Policy>
+            <d2p1:Subject i:type="d2p1:ExecutableSubject">
+              <d2p1:ExecutablePath>C:\program files (x86)\chocolatey gui\chocolateygui.exe</d2p1:ExecutablePath>
+            </d2p1:Subject>
+          </d2p1:FirewallExceptionV3>
+        </d2p1:AppExceptions>
+        <d2p1:ProfileName>Default</d2p1:ProfileName>
+        <d2p1:SpecialExceptions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Filtered_ICMP_Traffic</d5p1:string>
+          <d5p1:string>Windows_DHCP_Client</d5p1:string>
+          <d5p1:string>Windows_DNS_Client</d5p1:string>
+          <d5p1:string>Windows_Network_Discovery</d5p1:string>
+          <d5p1:string>Windows_Store_Update</d5p1:string>
+          <d5p1:string>Windows_Time_Sync</d5p1:string>
+          <d5p1:string>Windows_Update</d5p1:string>
+          <d5p1:string>Windows_Remote_Desktop</d5p1:string>
+        </d2p1:SpecialExceptions>
+      </d2p1:ServerProfileConfiguration>
+    </d2p1:Profiles>
+  </Service>
 </ConfigContainer>

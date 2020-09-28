@@ -16,7 +16,8 @@ REM set appPath="C:\Program Files\ANSYS Inc\v192\ANSYS\bin\winx64\ansys192.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v193\ANSYS\bin\winx64\ansys2019R1.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v194\ANSYS\bin\winx64\ansys2019R2.exe"
 REM set appPath="C:\Program Files\ANSYS Inc\v195\ANSYS\bin\winx64\ansys2019R3.exe"
-set appPath="C:\Program Files\ANSYS Inc\v201\ANSYS\bin\winx64\ansys2020R1.exe"
+REM set appPath="C:\Program Files\ANSYS Inc\v201\ANSYS\bin\winx64\ansys2020R1.exe"
+set appPath="C:\Program Files\ANSYS Inc\v202\ANSYS\bin\winx64\ansys2020R2.exe"
 
 REM if !host! equ ansys2 (
 REM   set appPath="D:\installations\ANSYS Inc\v194\ANSYS\bin\winx64\ansys2019R3.exe"
@@ -65,7 +66,7 @@ REM ============================================================================
   REM call 339220a.bat
   REM call 339220f.bat
 
-  REM call 338420.bat
+  REM call 338920.bat
 
   REM call 339920.bat
 
@@ -82,10 +83,18 @@ REM ============================================================================
   REM call 340620.bat
 
   REM call 342820.bat
+  call 342820c.bat
 
-  call 343120.bat
+  REM call 343120.bat
 
   REM call 343920.bat
+
+  REM call 345720.bat
+  REM call 345820.bat
+  REM call 345920.bat
+
+  REM call 346120.bat
+  REM call 346120L.bat
 
   REM call xxxxxx.xxx
   REM call xxxxxx.xxx

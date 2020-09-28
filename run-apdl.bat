@@ -128,7 +128,8 @@ echo Display Device: %dispName%
 call timer.bat :startTimer
 
 REM set appPath="C:\Program Files\ANSYS Inc\v195\ANSYS\bin\winx64\ansys2019R3.exe"
-set appPath="C:\Program Files\ANSYS Inc\v201\ANSYS\bin\winx64\ansys2020R1.exe"
+REM set appPath="C:\Program Files\ANSYS Inc\v201\ANSYS\bin\winx64\ansys2020R1.exe"
+set appPath="C:\Program Files\ANSYS Inc\v202\ANSYS\bin\winx64\ansys2020R2.exe"
 
 REM if !host! equ ansys2 (
 REM   set appPath="D:\installations\ANSYS Inc\v195\ANSYS\bin\winx64\ansys2019R3.exe"

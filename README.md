@@ -2,23 +2,7 @@
 
 Main Contents are batch files to run ansys apdl calculation. Additionally contains tools and notes used often.
 
-<!-- TOC -->
-
-- [APDL_Batch](#apdl_batch)
-  - [Notes](#notes)
-    - [Node and NPM](#node-and-npm)
-      - [Essential Globals](#essential-globals)
-    - [Heroku](#heroku)
-    - [VIM](#vim)
-    - [GIT](#git)
-      - [If chages made without creating branch](#if-chages-made-without-creating-branch)
-        - [If no commits are made](#if-no-commits-are-made)
-        - [If already commited](#if-already-commited)
-    - [Windows Command Line](#windows-command-line)
-    - [Sysinternal](#sysinternal)
-    - [OTHERS](#others)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [APDL_Batch](#apdl_batch)auto  - [Notes](#notes)auto    - [Node and NPM](#node-and-npm)auto      - [Essential Globals](#essential-globals)auto    - [Heroku](#heroku)auto    - [VIM](#vim)auto    - [GIT](#git)auto      - [If chages made without creating branch](#if-chages-made-without-creating-branch)auto        - [If no commits are made](#if-no-commits-are-made)auto        - [If already commited](#if-already-commited)auto    - [Windows Command Line](#windows-command-line)auto    - [Sysinternal](#sysinternal)auto    - [OTHERS](#others)autoauto<!-- /TOC -->
 
 ## Notes
 
@@ -36,7 +20,7 @@ Main Contents are batch files to run ansys apdl calculation. Additionally contai
 
 #### Essential Globals
 
-* file: npm-lsit.txt
+* file: npm-list.txt
 
 ### Heroku
 
