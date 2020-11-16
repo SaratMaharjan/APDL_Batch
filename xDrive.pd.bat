@@ -30,7 +30,7 @@ REM start "C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
 REM timeout /t 300
 start /d "C:\Program Files\OpenVPN\bin" openvpn-gui.exe
 
-start /d "C:\Program Files\Everything" Everything.exe
+@REM start /d "C:\Program Files\Everything" Everything.exe
 
 start /d "E:\GoogleDrive\PortableApps\PortableApps\_switcheroo" switcheroo.exe
 

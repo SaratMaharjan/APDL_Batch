@@ -12,7 +12,7 @@ REM set redirect=1
 REM set extVar=1
 set nPrefix=B1
 
-for /l %%b in (1 1 5) do (
+for /l %%b in (1 1 1) do (
 REM for %%b in (1 2) do (
 
   set bq=%%b

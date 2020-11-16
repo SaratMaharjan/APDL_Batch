@@ -9,9 +9,13 @@ git config --global user.name "smhrjn"
 git config --global user.email sarat.maharjan@gmail.com"
 git config --global color.ui true
 
-REM git config --global --unset-all diff.tool
-REM git config --global diff.tool vimdiff
-REM git config --global difftool.prompt false
+@REM  git config --global --unset-all diff.tool
+@REM  git config --global diff.tool vimdiff
+@REM  git config --global difftool.prompt false
 
-REM git config remote.origin.url https://smhrjn:password@github.com/smhrjn/vim.git
-REM git config remote.origin.url https://smhrjn:password@github.com/smhrjn/APDL_Batch.git
+@REM  git config remote.origin.url https://smhrjn:password@github.com/smhrjn/vim.git
+@REM  git config remote.origin.url https://smhrjn:password@github.com/smhrjn/APDL_Batch.git
+
+@REM git config --global --list
+
+

@@ -1,0 +1,360 @@
+{
+  "sync.gist": "b3d70da831bd0181d45e54bd5649a92b",
+  "workbench.colorTheme": "Overflow Contrast (rainglow)",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    // "activityBar.background": "#00AA00",
+    "contrastActiveBorder": "#abcdef",
+    "editorBracketMatch.background": "#000000",
+    "editorBracketMatch.border": "#ff8000",
+    "editorLineNumber.activeForeground": "#ffff00"
+  },
+  "window.title": "${activeEditorLong}${separator}${rootName}",
+  "window.zoomLevel": 0,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.find.seedSearchStringFromSelection": false,
+  "editor.fontFamily": "'Fira Code'",
+  // "editor.fontFamily": "'Roboto'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.mouseWheelZoom": true,
+  "editor.renderIndentGuides": true,
+  "editor.showFoldingControls": "always",
+  "editor.wordWrap": "off",
+  "editor.renderWhitespace": "none",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "explorer.sortOrder": "type",
+  // "autofold.default": 0,
+  "files.insertFinalNewline": true,
+  // Configure global patterns for excluding files and folders.
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.git": true,
+    "**/.history": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/*.exe": true,
+    "**/*.inp": false,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    }
+    // "**/*.[0-9]*": true,
+  },
+  "search.exclude": {
+    "**/.history": true,
+    "**/.history/*.*": true,
+    "**/*.inp": true,
+    "**/bower_components": true,
+    "**/node_modules": true
+  },
+  "search.useIgnoreFilesByDefault": true,
+  "powermode.enabled": false,
+  "bookmarks.saveBookmarksInProject": true,
+  "dateTime.showDayOfMonth": true,
+  "dateTime.showMonth": true,
+  "badCodeHighlighter.highlights": [
+    {
+      "filename": "\\.in$",
+      "text": "/eof\\b",
+      "color": "#11eeaa",
+      "tooltip": "File not read from here"
+    },
+    {
+      "filename": "\\.in$",
+      "text": "\\b(to do|special case|update|important|invalid|missing)\\b",
+      "color": "#ffaa00",
+      "tooltip": "may require Attention..."
+    },
+    {
+      "filename": "\\.*",
+      "text": "\\t",
+      "color": "#abe",
+      "tooltip": "replace with space"
+    }
+  ],
+  "macros": {
+    "selectBlock": [
+      "spaceBlockJumper.moveUp",
+      "spaceBlockJumper.selectDown"
+    ]
+  },
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "workbench.activityBar.visible": true,
+  "eslint.enable": true,
+  "eslint.options": {
+    "extends": [
+      "google"
+    ],
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "plugins": [
+      "html"
+    ],
+    "rules": {
+      "arrow-parens": "off",
+      "comma-dangle": "off",
+      "constructor-super": "warn",
+      "func-names": [
+        "error",
+        "never"
+      ],
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "windows"
+      ],
+      "max-len": "off",
+      "no-const-assign": "warn",
+      "no-tabs": "warn",
+      "no-this-before-super": "warn",
+      "no-undef": "warn",
+      "no-unreachable": "warn",
+      "no-unused-vars": "warn",
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "require-jsdoc": "off",
+      "semi": [
+        "error",
+        "always",
+        {
+          "omitLastInOneLineBlock": true
+        }
+      ],
+      "valid-typeof": "warn"
+    }
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "vue"
+  ],
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": true,
+  "htmlhint.enable": true,
+  "htmlhint.options": {
+    "alt-require": true,
+    // "attr-lowercase": true,
+    "attr-no-duplication": true,
+    "attr-unsafe-chars": true,
+    "attr-value-double-quotes": true,
+    // "attr-value-not-empty": true,
+    "doctype-first": false,
+    "doctype-html5": true,
+    "head-script-disabled": true,
+    "href-abs-or-rel": false,
+    "id-class-value": "dash",
+    "id-unique": true,
+    "inline-script-disabled": true,
+    "inline-style-disabled": true,
+    "space-tab-mixed-disabled": "space2",
+    "spec-char-escape": true,
+    "src-not-empty": true,
+    "style-disabled": true,
+    "tag-pair": true,
+    "tag-self-close": false,
+    // "tagname-lowercase": true,
+    "title-require": true
+  },
+  "markdownlint.config": {
+    "default": true,
+    "no-hard-tabs": true,
+    "MD033": false
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "psi-header.config": {
+    "forceToTop": false,
+    "blankLinesAfter": 0
+  },
+  "psi-header.changes-tracking": {
+    "isActive": true,
+    "modAuthor": "Modified By: ",
+    "modDate": "Last Modified: ",
+    "modDateFormat": "dddd, MMMM Do YYYY, h:mm:ss a",
+    "include": [],
+    "exclude": [
+      "markdown",
+      "json"
+    ],
+    "autoHeader": "off"
+  },
+  "psi-header.templates": [
+    {
+      "language": "*",
+      "template": [
+        "Last Modified: ",
+        "Modified By: "
+      ]
+    }
+  ],
+  "psi-header.variables": [
+    [
+      "company",
+      "anakon"
+    ],
+    [
+      "author",
+      "mhrjn"
+    ]
+  ],
+  "psi-header.lang-config": [
+    {
+      "language": "apdl",
+      "begin": "! ---------------",
+      "prefix": "! ",
+      "end": "! ---------------",
+      "blankLinesAfter": 0
+    },
+    {
+      "language": "javascript",
+      "begin": "/**",
+      "prefix": " * ",
+      "end": " */",
+      "blankLinesAfter": 0,
+      "forceToTop": false
+    },
+    {
+      "language": "typescript",
+      "mapTo": "javascript"
+    }
+  ],
+  "mongo.shell.path": "E:\\SM\\PortableApps\\PortableApps\\mongo\\bin\\mongo.exe",
+  "editor.renderControlCharacters": false,
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "git.decorations.enabled": true,
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
+  "workbench.panel.location": "right",
+  "editor.multiCursorModifier": "alt",
+  "gitProjectManager.baseProjectsFolders": [
+    "C:/_________Drive/workspace"
+  ],
+  "gitProjectManager.ignoredFolders": [
+    "node_modules"
+  ],
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": true,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "gitlens.keymap": "none",
+  "open-file-from-path.searchExclusion": [
+    "**/node_modules/**",
+    "**/.vscode/**",
+    "**/.history/**"
+  ],
+  "sync.gist": "b3d70da831bd0181d45e54bd5649a92b",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "python.languageServer": "Microsoft",
+  "workbench.sideBar.location": "left",
+  "editor.renameOnType": true,
+  "emmet.includeLanguages": {
+    "njk": "html"
+  },
+  "vsicons.associations.files": [
+    {
+      "icon": "nunjucks",
+      "extensions": [
+        "njk"
+      ],
+      "format": "svg"
+    }
+  ],
+  "material-icon-theme.files.associations": {
+    "*.html": "nunjucks"
+  },
+  "gitlens.blame.heatmap.enabled": false,
+  "gitlens.blame.heatmap.location": "left",
+  "gitlens.blame.highlight.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "python.dataScience.askForKernelRestart": false,
+  "editor.accessibilitySupport": "off"
+  // "vim.disableAnnoyingNeovimMessage": true,
+  // "vim.disableAnnoyingNeovimMessage": true
+  // "sync.gist": "8cd5d2fd3a57b4eec0d440e4775aa531",
+  // "sync.lastUpload": "2017-07-21T16:09:50.993Z",
+  // "sync.autoDownload": false,
+  // "sync.autoUpload": false,
+  // "sync.lastDownload": "2017-07-11T19:26:22.933Z",
+  // "sync.forceDownload": false,
+  // "sync.anonymousGist": false,
+  // "sync.host": "",
+  // "sync.pathPrefix": "",
+  // "sync.quietSync": false,
+  // "sync.askGistName": false,
+  // "local-history.daysLimit": 5,
+  // "amVim.bindCtrlCommands": false,
+  // "vim.disableAnnoyingNeovimMessage": true,
+  // "vim.foldfix": true,
+  // "vim.leader": ",",
+  // "vim.easymotion": true,
+  // "vim.incsearch": true,
+  // "vim.useSystemClipboard": true,
+  // "vim.useCtrlKeys": false,
+  // "vim.hlsearch": true,
+  // "vim.handleKeys":{
+  //   "<C-a>": false,
+  //   "<C-f>": false
+  // },
+  // "vim.insertModeKeyBindings": [
+  //     {
+  //       "before": ["j","j"],
+  //       "after": ["<Esc>"]
+  //     }
+  // ],
+  // "vim.otherModesKeyBindingsNonRecursive": [
+  //     {
+  //       "before": ["<leader>","d"],
+  //       "after": ["d", "d"]
+  //     },
+  //     {
+  //       "before": ["l","e"],
+  //       "after": ["`", "[", "v", "`", "]"]
+  //     },
+  //     {
+  //       "before": ["<leader>","l","l","s"],
+  //       "after": ["^"]
+  //     },
+  //     {
+  //       "before":["<A-b>"],
+  //       "after":["<C-b>"],
+  //       "commands": [
+  //           {
+  //             // "command": ":nohl"
+  //           }
+  //       ]
+  //     }
+  // ]
+}

@@ -70,7 +70,7 @@ REM ============================================================================
 
   REM call 339920.bat
 
-  REM call 340620.bat
+  @REM call 340620.bat
 
   REM call 340720.bat
 
@@ -83,9 +83,10 @@ REM ============================================================================
   REM call 340620.bat
 
   REM call 342820.bat
-  call 342820c.bat
+  REM call 342820c.bat
 
-  REM call 343120.bat
+  @REM call 343120.bat
+  @REM call 343120z.bat
 
   REM call 343920.bat
 
@@ -93,8 +94,11 @@ REM ============================================================================
   REM call 345820.bat
   REM call 345920.bat
 
-  REM call 346120.bat
+  call 346120.bat
   REM call 346120L.bat
+
+  @REM call 346720.bat
+  @REM call 346920.bat
 
   REM call xxxxxx.xxx
   REM call xxxxxx.xxx
