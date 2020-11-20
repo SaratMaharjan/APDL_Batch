@@ -1,3 +1,5 @@
+@REM NOTE: something
+
 @echo off
 call %~dp0%l2cur.bat
 set /a waitSec=3600/60*0
@@ -24,7 +26,7 @@ REM   set appPath="D:\installations\ANSYS Inc\v194\ANSYS\bin\winx64\ansys2019R3.
 REM )
 
 REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
-  set startValue=3
+  set startValue=2
   set endValue=!startValue!
   REM set endValue=2
 
@@ -94,8 +96,8 @@ REM ============================================================================
   REM call 345820.bat
   REM call 345920.bat
 
-  call 346120.bat
-  REM call 346120L.bat
+  @REM call 346120.bat
+  call 346120L.bat
 
   @REM call 346720.bat
   @REM call 346920.bat

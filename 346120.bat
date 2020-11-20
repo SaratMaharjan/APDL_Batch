@@ -6,7 +6,7 @@ set proj_Num=%~n0
 REM set proj_Num=345920
 
 REM set pathBefore=E:
-REM set pathAfter=ansys
+set pathAfter=ansys
 
 REM set sourcePre=x:\ins
 REM set sourceFile=s-alt.in
@@ -22,7 +22,7 @@ REM for %%b in (1 2) do (
 
   set interval=2000 1 2000
   REM set interval2=20!bq! 100 20!bq!
-  set interval2=50!bq! 100 50!bq!
+  set interval2=30!bq! 100 30!bq!
   REM set interval2=40!bq! 100 40!bq!
     call calc.bat
 

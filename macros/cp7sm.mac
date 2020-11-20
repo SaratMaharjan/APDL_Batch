@@ -1,5 +1,5 @@
 ! ---------------
-! Last Modified: Monday, October 19th 2020, 5:04:27 pm
+! Last Modified: Monday, November 16th 2020, 4:30:55 pm
 ! Modified By: mhrjn
 ! ---------------
 
@@ -14,10 +14,8 @@ jptf = 9
 inq, 'gs61'
 jplot
 
-/eof
-
 fini
-/fil, f1000-201
+/fil, f2000-201
 resu
 p7
 immed, 0
@@ -28,7 +26,7 @@ inq, 'gs61'
 jplot
 
 fini
-/fil, f1000-301
+/fil, f2000-301
 resu
 p7
 immed, 0
@@ -37,8 +35,6 @@ jplot, 9
 jptf = 9
 inq, 'gs61'
 jplot
-
-/eof
 
 fini
 /fil, f2000-401
