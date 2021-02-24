@@ -1,3 +1,5 @@
+# special characters
+
 ä : alt 132
 Ä : alt 142
 ö : alt 148
@@ -35,7 +37,3 @@
 ƒ : alt 159
 µ : alt 230
 € : alt 0128
-
-
-­
-­

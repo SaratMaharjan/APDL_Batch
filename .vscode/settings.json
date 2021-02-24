@@ -5,5 +5,7 @@
 	"eslint.enable": true,
 	"favorites.resources": [
 		"server.js"
-	]
+  ],
+  "workbench.colorTheme": "Arstotzka (rainglow)",
+  "workbench.editor.closeEmptyGroups": false
 }

@@ -1,7 +1,7 @@
-rem call:%*
+@REM call:%*
 
 :calc
-echo rem ++++++++++++++++++++++++++++++++++++++++++++++++ starting calculation ++++++++++++++++++++++++++++++++++++++++++++++++>> !bDir!\run-calc-!host!.bat
+echo @REM ++++++++++++++++++++++++++++++++++++++++++++++++ starting calculation ++++++++++++++++++++++++++++++++++++++++++++++++>> !bDir!\run-calc-!host!.bat
 del !wDir!\*.lock >nul 2>&1
 del !wDir!\*.abt >nul 2>&1
 
@@ -13,16 +13,16 @@ for /l %%c in ( 1 1 1 ) do (
   set retry=%%c
 
   for /l %%r in ( !startValue! 1 !endValue! ) do (
-    rem licenses region
+    @REM licenses region
       set numPro=!numPro!
 
       if %%r equ 1 (
-        rem set ansj=struct
+        @REM set ansj=struct
         set ansj=ansys
       ) else if %%r equ 2 (
         set ansj=mech_2
       ) else if %%r equ 3 (
-        rem set ansj=stba
+        @REM set ansj=stba
         set ansj=meba
       ) else if %%r equ 4 (
         set ansj=preppost
@@ -41,12 +41,12 @@ for /l %%c in ( 1 1 1 ) do (
       echo Project: %proj_Num%
       echo source %d% : !location!
       echo dbSize : !dbSize!
-    rem licenses endregion
+    @REM licenses endregion
 
     call timer.bat startTimer
     (echo 0) > !wDir!\license-!nPrefix!!job!-!lk!.txt
 
-    rem region Call ANSYS
+    @REM region Call ANSYS
     del "!wDir!\f!job!-!lk!.err" >nul 2>&1
 
     set apdlCMD=!appPath! -np !numPro! -b -p !ansj! -dis -mpi INTELMPI -jobstg !job! -jobt !lk! -verz !location!^
@@ -60,22 +60,22 @@ for /l %%c in ( 1 1 1 ) do (
     echo.
     echo !apdlCMD!
 
-    rem region write to batch file in project folder
-      rem echo !apdlCMD!>> !bDir!\run-calc-!host!.bat
+    @REM region write to batch file in project folder
+      @REM echo !apdlCMD!>> !bDir!\run-calc-!host!.bat
       echo !apdlCMDtext!>> !bDir!\run-calc-!host!.bat
-    rem endregion write to batch file in project folder
+    @REM endregion write to batch file in project folder
     echo.
 
     if %execute% equ 1 (
       !apdlCMD!
     )
-    rem endregion Call ANSYS
+    @REM endregion Call ANSYS
 
     call timer.bat stopTimer
     call timer.bat displayTimerResult
     set /a mins=!tCalc!/60
-    echo rem +++++++++++++++++++++++++++++++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++++++++++++++++++++++++++++++>> !bDir!\run-calc-!host!.bat
-    echo rem ++++++++++++++++++++++++++++++++++++++++++++++++++ end of calculation ++++++++++++++++++++++++++++++++++++++++++++++++>> !bDir!\run-calc-!host!.bat
+    echo @REM +++++++++++++++++++++++++++++++++++ Time Required: !tCalc! Minutes OR !mins! Hours +++++++++++++++++++++++++++++++++++>> !bDir!\run-calc-!host!.bat
+    echo @REM ++++++++++++++++++++++++++++++++++++++++++++++++++ end of calculation ++++++++++++++++++++++++++++++++++++++++++++++++>> !bDir!\run-calc-!host!.bat
     echo del *.lock>> !bDir!\run-calc-!host!.bat
     echo del *.ema>> !bDir!\run-calc-!host!.bat
     echo del *.esa>> !bDir!\run-calc-!host!.bat
@@ -107,14 +107,14 @@ for /l %%c in ( 1 1 1 ) do (
     echo isLicenseAvailable: !inPrep!
     echo.
 
-    rem if !tCalc! geq 5 (
+    @REM if !tCalc! geq 5 (
     if !inPrep! equ 1 (
       echo.
       echo --------calculated with License: !ansj! --- Processors: !numPro!----------
       echo.
       goto :checkOuter
     )
-    rem print message region
+    @REM print message region
     echo.
     echo  ------------ coudldn't calculate ------------- & echo.
     echo probable reasons:
@@ -128,7 +128,7 @@ for /l %%c in ( 1 1 1 ) do (
     echo.
     echo. !ansj! try failed
     echo.
-    rem print message endregion
+    @REM print message endregion
    )
 
   :checkOuter
@@ -145,7 +145,7 @@ for /l %%c in ( 1 1 1 ) do (
   echo.
   echo ---------- could not calculate - try: !retry! ----------
   echo.
-  rem timeout /t 60
+  @REM timeout /t 60
 )
 
 goto :eof

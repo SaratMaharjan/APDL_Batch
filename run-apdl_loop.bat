@@ -1,5 +1,5 @@
 
-REM read Argument
+@REM read Argument
 set drive=%1
 set fname=%2
 
@@ -25,34 +25,34 @@ if exist last-drive-!host!.txt (
   echo "D:"> last-drive-!host!.txt
 )
 
-  REM if "!host!" neq "ansys2" (
-  REM   if %drive% equ 1 (
-  REM     REM set pathBefore=u:
-  REM     set /p pathBefore=Enter Drive: %=%
-  REM     set pathAfter=ansys
-  REM   ) else (
-  REM     set pathBefore=E:\maharjan
-  REM     set pathAfter=ansys
-  REM   )
-  REM ) else (
-  REM   if %drive% equ 1 (
-  REM     set pathBefore=D:
-  REM     set pathAfter=ansys
-  REM   ) else (
-  REM     set pathBefore=E:
-  REM     set pathAfter=ansys
-  REM   )
-  REM )
-  REM if %drive% equ 3 (
-  REM   set pathBefore=\\ansys2\maharjan
-  REM   set pathAfter=ansys
-  REM )
+  @REM if "!host!" neq "ansys2" (
+  @REM   if %drive% equ 1 (
+  @REM     @REM set pathBefore=u:
+  @REM     set /p pathBefore=Enter Drive: %=%
+  @REM     set pathAfter=ansys
+  @REM   ) else (
+  @REM     set pathBefore=E:\maharjan
+  @REM     set pathAfter=ansys
+  @REM   )
+  @REM ) else (
+  @REM   if %drive% equ 1 (
+  @REM     set pathBefore=D:
+  @REM     set pathAfter=ansys
+  @REM   ) else (
+  @REM     set pathBefore=E:
+  @REM     set pathAfter=ansys
+  @REM   )
+  @REM )
+  @REM if %drive% equ 3 (
+  @REM   set pathBefore=\\ansys2\maharjan
+  @REM   set pathAfter=ansys
+  @REM )
 
-REM set ansj=preppost
+@REM set ansj=preppost
 set /p ansj=<last-lic-!host!.txt
 set /p r=Enter License to Use (1: struct, 2: mech_2, 4: prepost; default: %ansj%):%=%
 if "%r%" equ "1" (
-  REM set ansj=struct
+  @REM set ansj=struct
   set ansj=ansys
 )
 if "%r%" equ "2" (
@@ -67,16 +67,16 @@ if "%r%" equ "4" (
 
 (echo %ansj%) > last-lic-!host!.txt
 
-REM set proj_Num="test"
+@REM set proj_Num="test"
 set /p proj_Num=<last-run-!host!.txt
 set /p proj_Num2=Enter The Project Num (Folder, default: %proj_Num%):%=%
 if not "%proj_Num2%" == "" (
-  REM echo Project : %proj_Num%
+  @REM echo Project : %proj_Num%
   (echo %proj_Num2%) > last-run-!host!.txt
   set proj_Num=%proj_Num2%
 ) else (
-  REM set proj_Num="test"
-  REM echo Default Project  : !proj_Num!
+  @REM set proj_Num="test"
+  @REM echo Default Project  : !proj_Num!
 )
 echo.
 
@@ -94,19 +94,19 @@ if not "%proj_sub%" == "" (
   echo.
 )
 
-REM set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
-REM if not "%disp%" == "" (
-  REM echo Display Num: %disp%
-REM ) else (
-  REM set disp=1
-  REM REM echo Default Display Num  : !disp!
-REM )
+@REM set /p disp=Enter The Display Device Num (1 (default): 3d, 2: win32c, 3: win32):%=%
+@REM if not "%disp%" == "" (
+  @REM echo Display Num: %disp%
+@REM ) else (
+  @REM set disp=1
+  @REM REM echo Default Display Num  : !disp!
+@REM )
 set dispName=3D
-REM if "%disp%" == "2" (
-  REM set dispName=win32c
-REM )
-REM if "%disp%" == "3" (
-  REM set dispName=win32
+@REM if "%disp%" == "2" (
+  @REM set dispName=win32c
+@REM )
+@REM if "%disp%" == "3" (
+  @REM set dispName=win32
 )
 
 set runNum=0
@@ -136,8 +136,8 @@ for /l %%b in (1 1 100) do (
   echo !apdlCMD!
   echo.
 
-  REM goto :takeTime
-  REM start "" /b !apdlCMD!
+  @REM goto :takeTime
+  @REM start "" /b !apdlCMD!
   !apdlCMD!
 
   timeout /t 30

@@ -2,11 +2,11 @@
 setlocal EnableDelayedExpansion
 
 set appPath="C:\Program Files\ANSYS Inc\v172\ANSYS\bin\winx64\ansys172.exe"
-REM set ansj=ansys
+@REM set ansj=ansys
 set ansj=mech_2
-REM set ansj=stba
-REM set ansj=meba
-REM set ansj=preppost
+@REM set ansj=stba
+@REM set ansj=meba
+@REM set ansj=preppost
 
 set numPro=2
 

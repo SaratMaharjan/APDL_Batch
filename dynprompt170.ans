@@ -1140,7 +1140,7 @@ READ, Fname, NSKIP, Format, Xfield, Yfield, Zfield, pRfield, pIfield
 REAL, NSET
 REALVAR, IR, IA, --, --, Name, --, --, FACTA
 RECTNG, X1, X2, Y1, Y2
-REMESH, Action, Filename, Ext, --, Opt1, Opt2
+@REMESH, Action, Filename, Ext, --, Opt1, Opt2
 RESCOMBINE, NUMFILES, Fname, Ext, Lstep, Sbstep, Fact, KIMG, TIME, ANGLE, NSET, ORDER
 RESCONTROL, Action, Ldstep, Frequency, MAXFILES
 RESET

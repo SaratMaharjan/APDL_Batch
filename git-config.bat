@@ -17,5 +17,3 @@ git config --global color.ui true
 @REM  git config remote.origin.url https://smhrjn:password@github.com/smhrjn/APDL_Batch.git
 
 @REM git config --global --list
-
-

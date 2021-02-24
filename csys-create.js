@@ -105,8 +105,8 @@ function td_remove_sel_ns(ns) {
 
 var SC = DS.Script;
 var SM = SC.sm;
-for (var ii = 1; ii <= 4; ii = ii + 1) {
-  td_new_sel_ns('sh' + ii);
+for (var ii = 13; ii <= 20; ii = ii + 1) {
+  td_new_sel_ns('sk' + ii);
   SC.doCreateCoordinateSystem();
 }
 // for(var ii = 1; ii <= 4; ii++){
@@ -126,12 +126,12 @@ function csys_Rename() {
   //debugger;
   var c4 = DS.Tree.FirstActiveBranch.CoordinateSystemGroup;
   var c5 = c4.Children.Count;
-  for (var i = 4; i <= c5; i++) {
+  for (var i = 14; i <= c5; i++) {
     //c4.Children.Item(2).CoordinateSystemType = SC.id_Cylindrical
     var c6 = c4.Children.Item(i);
-    c6.Name = 'schr' + (i - 3);
+    c6.Name = 'schr' + (i - 1);
     c6.AnsysSystemAuto = 0;
-    c6.AnsysSystemNumber = 40 + i - 2;
+    c6.AnsysSystemNumber = 20 + i - 1;
     c6.PrimaryAxis = 3;
     //c6.PrimaryAxisAlignment = 4;
     c6.PrimaryAxisAlignment = 1;

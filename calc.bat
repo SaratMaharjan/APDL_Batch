@@ -8,12 +8,12 @@ echo Working Location: !wDir!
 echo.
 
 if !startValue! equ 1 (
-  rem set ansj=struct
+  @REM set ansj=struct
   set ansj=ansys
 ) else if !startValue! equ 2 (
   set ansj=mech_2
 ) else if !startValue! equ 3 (
-  rem set ansj=stba
+  @REM set ansj=stba
   set ansj=meba
 ) else if !startValue! equ 4 (
   set ansj=preppost
@@ -22,9 +22,9 @@ if !startValue! equ 1 (
 )
 
 copy "z:\cp7run.mac" "!wDir!\cp7run.mac"
-REM copy "%userprofile%\dropbox\zcore\cp7run.mac" "!wDir!\cp7run.mac"
+@REM copy "%userprofile%\dropbox\zcore\cp7run.mac" "!wDir!\cp7run.mac"
 copy "z:\.delImages.bat" "!wDir!\.delImages.bat"
-REM copy "%userprofile%\dropbox\zcore\.delImages.bat" "!wDir!\.delImages.bat"
+@REM copy "%userprofile%\dropbox\zcore\.delImages.bat" "!wDir!\.delImages.bat"
 
 if !append! equ 1 (
   echo.>> !bDir!\run-calc-!host!.bat
@@ -35,11 +35,11 @@ if !append! equ 1 (
 set todayNow=On %date:~0,2%.%date:~3,2%.%date:~6,4% at %time:~0,2%:%time:~3,2%
 echo *set,hostname,'!host!' > !wDir!\host.csv
 echo *abbr,fin,!location!\>> !wDir!\host.csv
-echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________!todayNow!____________________________________________##########>> !bDir!\run-calc-!host!.bat
-echo rem region New Analysis Cases>> !bDir!\run-calc-!host!.bat
+echo @REM #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo @REM #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo @REM #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo @REM #######________________________________________!todayNow!____________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo @REM region New Analysis Cases>> !bDir!\run-calc-!host!.bat
 echo @echo off>> !bDir!\run-calc-!host!.bat
 echo setlocal EnableDelayedExpansion>> !bDir!\run-calc-!host!.bat
 echo set ans_consec=yes>> !bDir!\run-calc-!host!.bat
@@ -113,7 +113,7 @@ for /l %%m in (!interval!) do (
   )
 )
 
-echo rem endregion New Analysis Cases>> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
-echo rem #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo @REM endregion New Analysis Cases>> !bDir!\run-calc-!host!.bat
+echo @REM #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo @REM #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat
+echo @REM #######________________________________________________________________________________________________________##########>> !bDir!\run-calc-!host!.bat

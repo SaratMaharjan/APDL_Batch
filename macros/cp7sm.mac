@@ -1,5 +1,5 @@
 ! ---------------
-! Last Modified: Monday, November 16th 2020, 4:30:55 pm
+! Last Modified: Tuesday, February 23rd 2021, 10:22:00 am
 ! Modified By: mhrjn
 ! ---------------
 
@@ -13,6 +13,8 @@ jplot, 9
 jptf = 9
 inq, 'gs61'
 jplot
+
+/eof
 
 fini
 /fil, f2000-201
@@ -58,10 +60,9 @@ jptf = 9
 inq, 'gs61'
 jplot
 
-/eof
 
 fini
-/fil, f2000-201
+/fil, f2000-601
 resu
 p7
 immed, 0
@@ -73,39 +74,6 @@ jplot
 
 /eof
 
-fini
-/fil, f1000-301
-resu
-p7
-immed, 0
-p1
-jplot, 9
-jptf = 9
-inq, 'belastungplot'
-jplot
-
-fini
-/fil, f1000-401
-resu
-p7
-immed, 0
-p1
-jplot, 9
-jptf = 9
-inq, 'belastungplot'
-jplot
-
-fini
-/fil, f1000-501
-resu
-p7
-immed, 0
-p1
-jplot, 9
-jptf = 9
-inq, 'belastungplot'
-jplot
-/eof
 
 ! /com, first
 ! a= 2

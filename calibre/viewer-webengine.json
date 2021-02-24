@@ -1,0 +1,32 @@
+{
+  "main_window_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAd/////+AAADwAAAAQaAAAKAAAAAR0AAAx/AAAD7AAAAAECAAAAB4AAAAeAAAAAFwAADv8AAAQZ"
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIcA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAkwD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAAB7AP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAOQA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAMYA////AAAHgAAABAMAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 1,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Welded Connections"
+        ],
+        "key": "E:\\Google Drive (sarat.maharjan@gmail.com)\\books\\Welded Connections\\AISC Design Guide 21 (10860)\\AISC Design Guide 21 - Welded Connections.pdf",
+        "pathtoebook": "E:\\Google Drive (sarat.maharjan@gmail.com)\\books\\Welded Connections\\AISC Design Guide 21 (10860)\\AISC Design Guide 21 - Welded Connections.pdf",
+        "timestamp": "2021-01-11T10:38:03.727Z",
+        "title": "Design Guide 21.indd"
+      }
+    ]
+  }
+}

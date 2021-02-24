@@ -1,4 +1,4 @@
-## How to hide API keys from github ##
+# How to hide API keys from github
 
 1. If you have already pushed commits with sensitive data, follow this guide to remove the sensitive info while
 retaining your commits: https://help.github.com/articles/remove-sensitive-data/

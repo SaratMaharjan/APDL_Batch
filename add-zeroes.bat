@@ -33,4 +33,4 @@ if %num% equ 2 (
 )
 
 set par=%par1%
-REM echo %par%
+@REM echo %par%

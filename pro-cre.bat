@@ -8,7 +8,7 @@ set /p name=Enter Project Name: %=%
 if not "%project%" == "" (
   echo Creating Folder Structure .. ... .... ..........
 
-  REM %direc%
+  @REM %direc%
   mkdir %project%
   cd %project%
 

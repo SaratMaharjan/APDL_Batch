@@ -14,23 +14,23 @@ setlocal EnableDelayedExpansion
     set pathAfter=ANSYS
   )
 
-REM set proj_Num="test"
+@REM set proj_Num="test"
 set /p proj_Num=<last-run.txt
 
 set /p proj_Num2=Enter The Project Num (Folder, default: %proj_Num%):%=%
 if not "%proj_Num2%" == "" (
-  REM echo Project : %proj_Num%
+  @REM echo Project : %proj_Num%
   (echo %proj_Num2%) > last-run.txt
   set proj_Num=%proj_Num2%
   echo.
 ) else (
-  REM set proj_Num="test"
-  REM echo Default Project  : !proj_Num!
+  @REM set proj_Num="test"
+  @REM echo Default Project  : !proj_Num!
 )
 
 set /p proj_sub=Enter The SubFolder (Folder, default: %pathAfter%):%=%
 if not "%proj_sub%" == "" (
-  REM echo Project : %proj_sub%
+  @REM echo Project : %proj_sub%
   set pathAfter=%proj_sub%
   echo.
 )
@@ -40,11 +40,11 @@ set /p jobname=Enter Jobname:%=%
 set /p resuStep=Enter Step to Resume:%=%
 set /p resuSub=Enter Last Substep:%=%
 
-REM set ansj=preppost
+@REM set ansj=preppost
 set /p ansj=<last-res-lic.txt
 set /p r=Enter License to Use (1: struct, 2: mech_2, 3: meba; default: %ansj%):%=%
 if "%r%" equ "1" (
-  REM set ansj=struct
+  @REM set ansj=struct
   set ansj=ansys
 )
 if "%r%" equ "2" (

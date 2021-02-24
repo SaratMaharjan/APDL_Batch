@@ -1,19 +1,18 @@
 <?xml version="1.0"?>
 <shortcuts xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1">
-  <shortcut command="Rotate" key="Ctrl+J" />
   <shortcut command="SplitBodyTool" mnemonic="Q" />
   <shortcut command="CaeMidsurface" mnemonic="W" />
   <shortcut command="SplitFace" key="Alt+F" />
   <shortcut command="StyleOpaque" mnemonic="O" />
   <shortcut command="RandomizeColors" key="Alt+X" />
   <shortcut command="ProjectToSolid" mnemonic="=" />
+  <shortcut command="CaeShowAllBodies" key="F5" />
   <shortcut command="DebugReverseFaceNormal" key="Alt+N" />
   <shortcut command="AnalysisNormal" mnemonic="N" />
   <shortcut command="CurveOffset" key="Alt+O" />
   <shortcut command="CreateRefDatum" key="Alt+P" />
   <shortcut command="SnapView" key="Alt+Up" />
-  <shortcut command="PlaceInComponent" key="Ctrl+Shift+N" />
-  <shortcut command="Pan" mnemonic="H" />
-  <shortcut command="Home" key="Ctrl+D0" />
   <shortcut command="ToolGuideAnchor" key="Alt+A" />
+  <shortcut command="Pan" mnemonic="H" />
+  <shortcut command="Home" key="Alt+D0" />
 </shortcuts>
