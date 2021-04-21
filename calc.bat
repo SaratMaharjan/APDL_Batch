@@ -1,7 +1,8 @@
 
 set "location=!sourcePre!\!proj_Num!"
 set "wDir=!pathBefore!\!proj_Num!\!pathAfter!"
-set "bDir=!batPre!\!proj_Num!\!batAfter!"
+@REM set "bDir=!batPre!\!proj_Num!\!batAfter!"
+set "bDir=!batPre!\!proj_Num!"
 echo.
 echo Source Location: !location!
 echo Working Location: !wDir!

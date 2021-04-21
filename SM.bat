@@ -58,7 +58,6 @@ echo %appPath%
 
   @REM call 337319.bat
 
-
   @REM call 338820.bat
   @REM call 338820a.bat
   @REM call 338820k.bat
@@ -116,11 +115,21 @@ echo %appPath%
 
   @REM call 350221.bat
 
-  call 351221.bat
-  call 351321.bat
-  call 351421.bat
+  @REM call 351321.bat
+  @REM call 351421.bat
+  @REM call 351521.bat
+
+  @REM call 352721.bat
+  @REM call 350221d.bat
+
+  @REM call 352121.bat
 
   @REM call 999921.bat
+
+  @REM call 353221.bat
+  @REM call 353421.bat
+
+  call 352921.bat
 
   @REM call xxxxxx.xxx
   @REM call xxxxxx.xxx

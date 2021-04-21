@@ -1,9 +1,9 @@
 
 @REM set sourcePre=R:\maharjan
 set sourcePre=x:\ins
-set batPre=x:\projekte
+set batPre=x:\ins
 set pathAfter=ansys
-set batAfter=07_ansys
+set batAfter=batch
 set sourceFile=s.in
 set nPrefix=f
 

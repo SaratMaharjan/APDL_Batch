@@ -2,8 +2,8 @@
 call reset.bat
 set proj_Num=%~n0
 
-@REM set pathBefore=E:
-set pathAfter=ansysa
+@REM set pathBefore=D:
+@REM set pathAfter=ansysa
 
 @REM set sourcePre=x:\ins
 @REM set sourceFile=s-alt.in
@@ -26,6 +26,20 @@ set pathAfter=ansysa
 @REM )
 
 
+@REM for /l %%b in (1 1 1) do (
+@REM @REM for %%b in (1 2) do (
+
+@REM   set bq=%%b
+
+@REM   set interval=2000 1 2000
+@REM   @REM set interval2=20!bq! 100 20!bq!
+@REM   set interval2=10!bq! 100 10!bq!
+@REM   @REM set interval2=40!bq! 100 40!bq!
+@REM     call calc.bat
+
+@REM )
+
+set nPrefix=r
 for /l %%b in (1 1 1) do (
 @REM for %%b in (1 2) do (
 

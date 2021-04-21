@@ -1,6 +1,13 @@
 
 # Windows Command Line
 
+delete files recursively without prompting
+
+- del /s /q *.svn
+- rmdir /s /q *.svn
+
+general
+
 - rmdir PATH /s /q (delete folder with sub folders)
 - dir C:\ /s | more
 - tree c:\ | more
@@ -44,7 +51,7 @@
 
   tasklist /? : for help
 
-  NETWORKING:
+NETWORKING:
 <pre>
     ping
     tracert

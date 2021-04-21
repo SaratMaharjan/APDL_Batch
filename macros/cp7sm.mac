@@ -1,10 +1,10 @@
 ! ---------------
-! Last Modified: Tuesday, February 23rd 2021, 10:22:00 am
+! Last Modified: Tuesday, March 23rd 2021, 9:18:13 am
 ! Modified By: mhrjn
 ! ---------------
 
 fini
-/fil, f2000-101
+/fil, f2100-101
 resu
 p7
 immed, 0
@@ -14,66 +14,51 @@ jptf = 9
 inq, 'gs61'
 jplot
 
+fini
+/fil, f2100-201
+resu
+p7
+immed, 0
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2100-301
+resu
+p7
+immed, 0
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2100-401
+resu
+p7
+immed, 0
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
+
+fini
+/fil, f2100-501
+resu
+p7
+immed, 0
+p1
+jplot, 9
+jptf = 9
+inq, 'gs61'
+jplot
 /eof
-
-fini
-/fil, f2000-201
-resu
-p7
-immed, 0
-p1
-jplot, 9
-jptf = 9
-inq, 'gs61'
-jplot
-
-fini
-/fil, f2000-301
-resu
-p7
-immed, 0
-p1
-jplot, 9
-jptf = 9
-inq, 'gs61'
-jplot
-
-fini
-/fil, f2000-401
-resu
-p7
-immed, 0
-p1
-jplot, 9
-jptf = 9
-inq, 'gs61'
-jplot
-
-fini
-/fil, f2000-501
-resu
-p7
-immed, 0
-p1
-jplot, 9
-jptf = 9
-inq, 'gs61'
-jplot
-
-
-fini
-/fil, f2000-601
-resu
-p7
-immed, 0
-p1
-jplot, 9
-jptf = 9
-inq, 'gs61'
-jplot
-
 /eof
-
 
 ! /com, first
 ! a= 2
@@ -85,7 +70,7 @@ jplot
 ! ! schraub931, 42, 8.8, 5
 ! ! schraub931, 42, 10.9, 5
 ! ! schraub931, 42, 12.9, 5
-! /eof
+/eof
 
 ! /nopr
 ! emms, 3

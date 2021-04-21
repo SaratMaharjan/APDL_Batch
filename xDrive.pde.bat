@@ -18,7 +18,7 @@ start /d "E:\GoogleDrive\PortableApps\PortableApps\_Rainmeter" Rainmeter.exe
 start /d "E:\GoogleDrive\PortableApps\PortableApps\StickiesPortable" StickiesPortable.exe
 
 @REM timeout /t 120
-start /d "C:\Program Files\Process Hacker 2" ProcessHacker.exe
+@REM start /d "C:\Program Files\Process Hacker 2" ProcessHacker.exe
 
 @REM timeout /t 120
 start outlook.exe

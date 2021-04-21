@@ -11,7 +11,7 @@ start /d "%userprofile%\Dropbox\zCore" AutoHotkey.exe
 @REM start /d "C:\Users\maharjan\Google Drive\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
 
 @REM timeout /t 120
-start /d "C:\Program Files\Process Hacker 2" ProcessHacker.exe
+@REM start /d "C:\Program Files\Process Hacker 2" ProcessHacker.exe
 
 @REM timeout /t 120
 @REM start outlook.exe

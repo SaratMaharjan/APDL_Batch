@@ -28,12 +28,12 @@ echo %appPath%
 @REM )
 
 @REM  1.Structural/ANSYS  2.Mech_2  3.Stba/MEBA  4.Prepost
-  set startValue=2
+  set startValue=3
   set endValue=!startValue!
   @REM set endValue=2
 
 @REM Number of Processors
-  set numPro=4
+  set numPro=8
   if "!host!" equ "osmhrjn" (
     @REM set numPro=2
   )
@@ -57,7 +57,6 @@ echo %appPath%
   @REM call 335719.bat
 
   @REM call 337319.bat
-
 
   @REM call 338820.bat
   @REM call 338820a.bat
@@ -116,11 +115,19 @@ echo %appPath%
 
   @REM call 350221.bat
 
-  @REM call 351221.bat
   @REM call 351321.bat
   @REM call 351421.bat
+  @REM call 351521.bat
 
-  call 999921.bat
+  @REM call 352721.bat
+  @REM call 350221d.bat
+
+  @REM call 352121.bat
+
+  @REM call 999921.bat
+
+  @REM call 353221.bat
+  call 353421.bat
 
   @REM call xxxxxx.xxx
   @REM call xxxxxx.xxx
@@ -129,6 +136,8 @@ echo %appPath%
   @REM call xxxxxx.xxx
   @REM call xxxxxx.xxx
   @REM call xxxxxx.xxx
+
+  call extra_cmd_0.bat
 
 @REM ==================================================================================================
 

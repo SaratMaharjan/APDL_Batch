@@ -29,15 +29,15 @@ for /l %%b in (1 1 1) do (
 )
 
 
-for /l %%b in (1 1 1) do (
-@REM for %%b in (1 2) do (
+@REM for /l %%b in (1 1 1) do (
+@REM @REM for %%b in (1 2) do (
 
-  set bq=%%b
+@REM   set bq=%%b
 
-  set interval=1000 1 1000
-  @REM set interval2=20!bq! 100 20!bq!
-  set interval2=20!bq! 100 40!bq!
-  @REM set interval2=40!bq! 100 40!bq!
-    call calc.bat
+@REM   set interval=1000 1 1000
+@REM   @REM set interval2=20!bq! 100 20!bq!
+@REM   set interval2=20!bq! 100 40!bq!
+@REM   @REM set interval2=40!bq! 100 40!bq!
+@REM     call calc.bat
 
-)
+@REM )
