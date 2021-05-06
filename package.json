@@ -26,7 +26,7 @@
   "dependencies": {
     "deep-freeze": "0.0.1",
     "event-stream": "^3.3.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mysql": "^2.17.1",
     "readline-sync": "^1.4.9",
     "replace-in-file": "^3.4.4",
