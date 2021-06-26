@@ -15,4 +15,5 @@
   <shortcut command="ToolGuideAnchor" key="Alt+A" />
   <shortcut command="Pan" mnemonic="H" />
   <shortcut command="Home" key="Alt+D0" />
+  <shortcut command="LocateInTree" key="Alt+L" />
 </shortcuts>

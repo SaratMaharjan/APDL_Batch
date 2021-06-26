@@ -1,9 +1,10 @@
 
 call reset.bat
-set proj_Num=%~n0
+@REM set proj_Num=%~n0
+set proj_Num=353221
 
 @REM set pathBefore=D:
-@REM set pathAfter=ansys
+set pathAfter=ansysb
 
 @REM set sourcePre=x:\ins
 @REM set sourceFile=s-alt.in
@@ -17,9 +18,9 @@ for /l %%b in (1 1 1) do (
 
   set bq=%%b
 
-  set interval=1000 1 1000
+  set interval=1600 1 1620
   @REM set interval2=20!bq! 100 20!bq!
-  set interval2=30!bq! 100 40!bq!
+  set interval2=10!bq! 100 10!bq!
   @REM set interval2=40!bq! 100 40!bq!
     call calc.bat
 

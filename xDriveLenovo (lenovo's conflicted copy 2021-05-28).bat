@@ -11,7 +11,7 @@ start /d "%userprofile%\Dropbox\zCore" AutoHotkey.exe
 @REM start /d "C:\Users\maharjan\Google Drive\PortableApps\PortableApps\SpeedCrunchPortable" SpeedCrunchPortable.exe
 
 @REM timeout /t 120
-@REM start /d "C:\Program Files\Process Hacker 2" ProcessHacker.exe
+start /d "C:\Program Files\Process Hacker 2" ProcessHacker.exe
 
 @REM timeout /t 120
 @REM start outlook.exe
@@ -19,6 +19,6 @@ start /d "%userprofile%\Dropbox\zCore" AutoHotkey.exe
 @REM timeout /t 300
 @REM start /d "C:\Program Files\OpenVPN\bin" openvpn-gui.exe
 
-@REM start /d "C:\Users\sarat\AppData\Local\Microsoft\OneDrive" OneDrive.exe
+start /d "C:\Users\sarat\AppData\Local\Microsoft\OneDrive" OneDrive.exe
 
-@REM start /d "C:\Program Files\Google\Drive" googledrivesync.exe
+start /d "C:\Program Files\Google\Drive" googledrivesync.exe

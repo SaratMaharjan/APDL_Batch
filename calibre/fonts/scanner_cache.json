@@ -10512,7 +10512,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\acaderef.ttf||7640:1231135558.0": {
+    "c:\\windows\\fonts\\acaderef.ttf||7640:1231171558.0": {
       "family_name": "AcadEref",
       "font-family": "AcadEref",
       "font-stretch": "normal",
@@ -10620,7 +10620,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\aigdt___.ttf||30488:1231135558.0": {
+    "c:\\windows\\fonts\\aigdt___.ttf||30488:1231171558.0": {
       "family_name": "AIGDT",
       "font-family": "AIGDT",
       "font-stretch": "normal",
@@ -10692,7 +10692,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\amdt_symbols.ttf||6696:1231135222.0": {
+    "c:\\windows\\fonts\\amdt_symbols.ttf||6696:1231171222.0": {
       "family_name": "AmdtSymbols",
       "font-family": "AmdtSymbols",
       "font-stretch": "normal",
@@ -11412,6 +11412,78 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
+    "c:\\windows\\fonts\\artifakt element black italic.ttf||130112:1600436777.0": {
+      "family_name": "Artifakt Element Black",
+      "font-family": "Artifakt Element Black",
+      "font-stretch": "normal",
+      "font-style": "italic",
+      "font-weight": "800",
+      "fs_type": 0,
+      "full_name": "Artifakt Element Black Italic",
+      "is_bold": false,
+      "is_italic": true,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": false,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        10,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element black italic.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Black Italic",
+      "subfamily_name": "Italic",
+      "weight": 800,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element black.ttf||124944:1532022934.0": {
+      "family_name": "Artifakt Element Black",
+      "font-family": "Artifakt Element Black",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "800",
+      "fs_type": 0,
+      "full_name": "ArtifaktElement-Black",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        10,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element black.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Black",
+      "subfamily_name": "Regular",
+      "weight": 800,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
     "c:\\windows\\fonts\\artifakt element bold italic.ttf||119736:1565249520.0": {
       "family_name": "Artifakt Element",
       "font-family": "Artifakt Element",
@@ -11484,6 +11556,222 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
+    "c:\\windows\\fonts\\artifakt element book italic.ttf||118880:1600436777.0": {
+      "family_name": "Artifakt Element Book",
+      "font-family": "Artifakt Element Book",
+      "font-stretch": "normal",
+      "font-style": "italic",
+      "font-weight": "450",
+      "fs_type": 0,
+      "full_name": "Artifakt Element Book Italic",
+      "is_bold": false,
+      "is_italic": true,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": false,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        5,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element book italic.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Book Italic",
+      "subfamily_name": "Italic",
+      "weight": 450,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element book.ttf||114768:1511903070.0": {
+      "family_name": "Artifakt Element Book",
+      "font-family": "Artifakt Element Book",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "450",
+      "fs_type": 0,
+      "full_name": "ArtifaktElement-Book",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        5,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element book.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Book",
+      "subfamily_name": "Regular",
+      "weight": 450,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element hair italic.ttf||117156:1600436777.0": {
+      "family_name": "Artifakt Element Hair",
+      "font-family": "Artifakt Element Hair",
+      "font-stretch": "normal",
+      "font-style": "italic",
+      "font-weight": "100",
+      "fs_type": 0,
+      "full_name": "Artifakt Element Hair Italic",
+      "is_bold": false,
+      "is_italic": true,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": false,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        2,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element hair italic.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Hair Italic",
+      "subfamily_name": "Italic",
+      "weight": 100,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element hair.ttf||112864:1600436777.0": {
+      "family_name": "Artifakt Element Hair",
+      "font-family": "Artifakt Element Hair",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "100",
+      "fs_type": 0,
+      "full_name": "ArtifaktElement-Hair",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        2,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element hair.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Hair",
+      "subfamily_name": "Regular",
+      "weight": 100,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element heavy italic.ttf||128968:1600436777.0": {
+      "family_name": "Artifakt Element Heavy",
+      "font-family": "Artifakt Element Heavy",
+      "font-stretch": "normal",
+      "font-style": "italic",
+      "font-weight": "900",
+      "fs_type": 0,
+      "full_name": "Artifakt Element Heavy Italic",
+      "is_bold": false,
+      "is_italic": true,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": false,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        11,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element heavy italic.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Heavy Italic",
+      "subfamily_name": "Italic",
+      "weight": 900,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element heavy.ttf||126292:1600436777.0": {
+      "family_name": "Artifakt Element Heavy",
+      "font-family": "Artifakt Element Heavy",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "900",
+      "fs_type": 0,
+      "full_name": "ArtifaktElement-Heavy",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        11,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element heavy.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Heavy",
+      "subfamily_name": "Regular",
+      "weight": 900,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
     "c:\\windows\\fonts\\artifakt element italic.ttf||117596:1565249520.0": {
       "family_name": "Artifakt Element",
       "font-family": "Artifakt Element",
@@ -11520,6 +11808,150 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
+    "c:\\windows\\fonts\\artifakt element light italic.ttf||117572:1600436777.0": {
+      "family_name": "Artifakt Element Light",
+      "font-family": "Artifakt Element Light",
+      "font-stretch": "normal",
+      "font-style": "italic",
+      "font-weight": "300",
+      "fs_type": 0,
+      "full_name": "Artifakt Element Light Italic",
+      "is_bold": false,
+      "is_italic": true,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": false,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        4,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element light italic.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Light Italic",
+      "subfamily_name": "Italic",
+      "weight": 300,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element light.ttf||113128:1530775480.0": {
+      "family_name": "Artifakt Element Light",
+      "font-family": "Artifakt Element Light",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "300",
+      "fs_type": 0,
+      "full_name": "ArtifaktElement-Light",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        3,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element light.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Light",
+      "subfamily_name": "Regular",
+      "weight": 300,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element medium italic.ttf||118192:1600436777.0": {
+      "family_name": "Artifakt Element Medium",
+      "font-family": "Artifakt Element Medium",
+      "font-stretch": "normal",
+      "font-style": "italic",
+      "font-weight": "600",
+      "fs_type": 0,
+      "full_name": "Artifakt Element Medium Italic",
+      "is_bold": false,
+      "is_italic": true,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": false,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        6,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element medium italic.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Medium Italic",
+      "subfamily_name": "Italic",
+      "weight": 600,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element medium.ttf||114328:1504853410.0": {
+      "family_name": "Artifakt Element Medium",
+      "font-family": "Artifakt Element Medium",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "600",
+      "fs_type": 0,
+      "full_name": "ArtifaktElement-Medium",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        6,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element medium.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Medium",
+      "subfamily_name": "Regular",
+      "weight": 600,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
     "c:\\windows\\fonts\\artifakt element regular.ttf||114124:1565249520.0": {
       "family_name": "Artifakt Element",
       "font-family": "Artifakt Element",
@@ -11548,6 +11980,150 @@
         4
       ],
       "path": "c:\\windows\\fonts\\artifakt element regular.ttf",
+      "preferred_family_name": null,
+      "preferred_subfamily_name": null,
+      "subfamily_name": "Regular",
+      "weight": 400,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element thin italic.ttf||117548:1600436777.0": {
+      "family_name": "Artifakt Element Thin",
+      "font-family": "Artifakt Element Thin",
+      "font-stretch": "normal",
+      "font-style": "italic",
+      "font-weight": "200",
+      "fs_type": 0,
+      "full_name": "Artifakt Element Thin Italic",
+      "is_bold": false,
+      "is_italic": true,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": false,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        3,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element thin italic.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Thin Italic",
+      "subfamily_name": "Italic",
+      "weight": 200,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifakt element thin.ttf||113248:1600436777.0": {
+      "family_name": "Artifakt Element Thin",
+      "font-family": "Artifakt Element Thin",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "200",
+      "fs_type": 0,
+      "full_name": "ArtifaktElement-Thin",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        2,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifakt element thin.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Thin",
+      "subfamily_name": "Regular",
+      "weight": 200,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifaktelementmedium.ttf||114328:1504853410.0": {
+      "family_name": "Artifakt Element Medium",
+      "font-family": "Artifakt Element Medium",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "600",
+      "fs_type": 0,
+      "full_name": "ArtifaktElement-Medium",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        6,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifaktelementmedium.ttf",
+      "preferred_family_name": "Artifakt Element",
+      "preferred_subfamily_name": "Medium",
+      "subfamily_name": "Regular",
+      "weight": 600,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\artifaktelementregular.ttf||114124:1504700987.0": {
+      "family_name": "Artifakt Element",
+      "font-family": "Artifakt Element",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "normal",
+      "fs_type": 0,
+      "full_name": "ArtifaktElement-Regular",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 3,
+      "panose": [
+        2,
+        11,
+        5,
+        3,
+        5,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\artifaktelementregular.ttf",
       "preferred_family_name": null,
       "preferred_subfamily_name": null,
       "subfamily_name": "Regular",
@@ -11808,7 +12384,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\bgothl.ttf||35360:817700910.0": {
+    "c:\\windows\\fonts\\bgothl.ttf||35360:817736910.0": {
       "family_name": "BankGothic Lt BT",
       "font-family": "BankGothic Lt BT",
       "font-stretch": "semi-expanded",
@@ -11844,7 +12420,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\bgothm.ttf||35908:817700912.0": {
+    "c:\\windows\\fonts\\bgothm.ttf||35908:817736912.0": {
       "family_name": "BankGothic Md BT",
       "font-family": "BankGothic Md BT",
       "font-stretch": "semi-expanded",
@@ -12703,6 +13279,42 @@
       "preferred_family_name": null,
       "preferred_subfamily_name": null,
       "subfamily_name": "Italic",
+      "weight": 400,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\bssym7.ttf||54412:1613323783.0085826": {
+      "family_name": "Bookshelf Symbol 7",
+      "font-family": "Bookshelf Symbol 7",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "normal",
+      "fs_type": 8,
+      "full_name": "Bookshelf Symbol 7",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 1,
+      "panose": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "path": "c:\\windows\\fonts\\bssym7.ttf",
+      "preferred_family_name": null,
+      "preferred_subfamily_name": null,
+      "subfamily_name": "Regular",
       "weight": 400,
       "width": 5,
       "wws_family_name": null,
@@ -13680,7 +14292,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\cityb___.ttf||52756:843075932.0": {
+    "c:\\windows\\fonts\\cityb___.ttf||52756:843108332.0": {
       "family_name": "CityBlueprint",
       "font-family": "CityBlueprint",
       "font-stretch": "normal",
@@ -13896,7 +14508,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\compi.ttf||23804:817700914.0": {
+    "c:\\windows\\fonts\\compi.ttf||23804:817736914.0": {
       "family_name": "CommercialPi BT",
       "font-family": "CommercialPi BT",
       "font-stretch": "normal",
@@ -13932,7 +14544,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\complex_.ttf||69796:1033753578.0": {
+    "c:\\windows\\fonts\\complex_.ttf||69796:1033785978.0": {
       "family_name": "Complex",
       "font-family": "Complex",
       "font-stretch": "normal",
@@ -13968,7 +14580,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\comsc.ttf||64196:817700914.0": {
+    "c:\\windows\\fonts\\comsc.ttf||64196:817736914.0": {
       "family_name": "CommercialScript BT",
       "font-family": "CommercialScript BT",
       "font-stretch": "normal",
@@ -14616,7 +15228,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\counb___.ttf||62188:843076030.0": {
+    "c:\\windows\\fonts\\counb___.ttf||62188:843108430.0": {
       "family_name": "CountryBlueprint",
       "font-family": "CountryBlueprint",
       "font-stretch": "normal",
@@ -14976,7 +15588,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\dutch.ttf||48284:817700916.0": {
+    "c:\\windows\\fonts\\dutch.ttf||48284:817736916.0": {
       "family_name": "Dutch801 Rm BT",
       "font-family": "Dutch801 Rm BT",
       "font-stretch": "normal",
@@ -15012,7 +15624,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\dutchb.ttf||48268:817700918.0": {
+    "c:\\windows\\fonts\\dutchb.ttf||48268:817736918.0": {
       "family_name": "Dutch801 Rm BT",
       "font-family": "Dutch801 Rm BT",
       "font-stretch": "normal",
@@ -15048,7 +15660,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\dutchbi.ttf||47528:817700918.0": {
+    "c:\\windows\\fonts\\dutchbi.ttf||47528:817736918.0": {
       "family_name": "Dutch801 Rm BT",
       "font-family": "Dutch801 Rm BT",
       "font-stretch": "normal",
@@ -15084,7 +15696,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\dutcheb.ttf||46656:817700920.0": {
+    "c:\\windows\\fonts\\dutcheb.ttf||46656:817736920.0": {
       "family_name": "Dutch801 XBd BT",
       "font-family": "Dutch801 XBd BT",
       "font-stretch": "normal",
@@ -15120,7 +15732,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\dutchi.ttf||48388:817700920.0": {
+    "c:\\windows\\fonts\\dutchi.ttf||48388:817736920.0": {
       "family_name": "Dutch801 Rm BT",
       "font-family": "Dutch801 Rm BT",
       "font-stretch": "normal",
@@ -15480,7 +16092,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\eurr____.ttf||57648:845597154.0": {
+    "c:\\windows\\fonts\\eurr____.ttf||57648:845629554.0": {
       "family_name": "EuroRoman",
       "font-family": "EuroRoman",
       "font-stretch": "normal",
@@ -15516,7 +16128,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\eurro___.ttf||62392:845597154.0": {
+    "c:\\windows\\fonts\\eurro___.ttf||62392:845629554.0": {
       "family_name": "EuroRoman",
       "font-family": "EuroRoman",
       "font-stretch": "normal",
@@ -16308,7 +16920,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\gdt_____.ttf||29688:1097617756.0": {
+    "c:\\windows\\fonts\\gdt_____.ttf||29688:1097650156.0": {
       "family_name": "GDT",
       "font-family": "GDT",
       "font-stretch": "normal",
@@ -16344,7 +16956,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\geniso.ttf||76496:1231135558.0": {
+    "c:\\windows\\fonts\\geniso.ttf||76496:1231171558.0": {
       "family_name": "GENISO",
       "font-family": "GENISO",
       "font-stretch": "normal",
@@ -17064,7 +17676,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\gothice_.ttf||68452:1033754106.0": {
+    "c:\\windows\\fonts\\gothice_.ttf||68452:1033786506.0": {
       "family_name": "GothicE",
       "font-family": "GothicE",
       "font-stretch": "normal",
@@ -17100,7 +17712,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\gothicg_.ttf||55716:1033754176.0": {
+    "c:\\windows\\fonts\\gothicg_.ttf||55716:1033786576.0": {
       "family_name": "GothicG",
       "font-family": "GothicG",
       "font-stretch": "normal",
@@ -17172,7 +17784,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\gothici_.ttf||53648:1033754224.0": {
+    "c:\\windows\\fonts\\gothici_.ttf||53648:1033786624.0": {
       "family_name": "GothicI",
       "font-family": "GothicI",
       "font-stretch": "normal",
@@ -17352,7 +17964,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\greekc__.ttf||26220:1033754286.0": {
+    "c:\\windows\\fonts\\greekc__.ttf||26220:1033786686.0": {
       "family_name": "GreekC",
       "font-family": "GreekC",
       "font-stretch": "normal",
@@ -17388,7 +18000,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\greeks__.ttf||23584:1033754334.0": {
+    "c:\\windows\\fonts\\greeks__.ttf||23584:1033786734.0": {
       "family_name": "GreekS",
       "font-family": "GreekS",
       "font-stretch": "normal",
@@ -17820,7 +18432,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isocp2__.ttf||37828:1075319092.0": {
+    "c:\\windows\\fonts\\isocp2__.ttf||37828:1075355092.0": {
       "family_name": "ISOCP2",
       "font-family": "ISOCP2",
       "font-stretch": "normal",
@@ -17856,7 +18468,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isocp3__.ttf||37716:1075319094.0": {
+    "c:\\windows\\fonts\\isocp3__.ttf||37716:1075355094.0": {
       "family_name": "ISOCP3",
       "font-family": "ISOCP3",
       "font-stretch": "normal",
@@ -17892,7 +18504,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isocp___.ttf||38112:1198029104.0": {
+    "c:\\windows\\fonts\\isocp___.ttf||38112:1198065104.0": {
       "family_name": "ISOCP",
       "font-family": "ISOCP",
       "font-stretch": "normal",
@@ -17928,7 +18540,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isocpeui.ttf||132652:1056410810.0": {
+    "c:\\windows\\fonts\\isocpeui.ttf||132652:1056443210.0": {
       "family_name": "ISOCPEUR",
       "font-family": "ISOCPEUR",
       "font-stretch": "normal",
@@ -17964,7 +18576,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isocpeur.ttf||140516:1193936115.0": {
+    "c:\\windows\\fonts\\isocpeur.ttf||140516:1193972114.0": {
       "family_name": "ISOCPEUR",
       "font-family": "ISOCPEUR",
       "font-stretch": "normal",
@@ -18000,7 +18612,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isoct2__.ttf||37280:1075319094.0": {
+    "c:\\windows\\fonts\\isoct2__.ttf||37280:1075355094.0": {
       "family_name": "ISOCT2",
       "font-family": "ISOCT2",
       "font-stretch": "normal",
@@ -18036,7 +18648,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isoct3__.ttf||37444:1075319094.0": {
+    "c:\\windows\\fonts\\isoct3__.ttf||37444:1075355094.0": {
       "family_name": "ISOCT3",
       "font-family": "ISOCT3",
       "font-stretch": "normal",
@@ -18072,7 +18684,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isoct___.ttf||37324:1075319094.0": {
+    "c:\\windows\\fonts\\isoct___.ttf||37324:1075355094.0": {
       "family_name": "ISOCT",
       "font-family": "ISOCT",
       "font-stretch": "normal",
@@ -18108,7 +18720,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isocteui.ttf||132624:1056410810.0": {
+    "c:\\windows\\fonts\\isocteui.ttf||132624:1056443210.0": {
       "family_name": "ISOCTEUR",
       "font-family": "ISOCTEUR",
       "font-stretch": "normal",
@@ -18144,7 +18756,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\isocteur.ttf||139712:1056410810.0": {
+    "c:\\windows\\fonts\\isocteur.ttf||139712:1056443210.0": {
       "family_name": "ISOCTEUR",
       "font-family": "ISOCTEUR",
       "font-stretch": "normal",
@@ -18180,7 +18792,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\italic__.ttf||52272:1033754722.0": {
+    "c:\\windows\\fonts\\italic__.ttf||52272:1033787122.0": {
       "family_name": "Italic",
       "font-family": "Italic",
       "font-stretch": "normal",
@@ -18216,7 +18828,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\italicc_.ttf||50908:1033754758.0": {
+    "c:\\windows\\fonts\\italicc_.ttf||50908:1033787158.0": {
       "family_name": "ItalicC",
       "font-family": "ItalicC",
       "font-stretch": "normal",
@@ -18252,7 +18864,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\italict_.ttf||53764:1033754790.0": {
+    "c:\\windows\\fonts\\italict_.ttf||53764:1033787190.0": {
       "family_name": "ItalicT",
       "font-family": "ItalicT",
       "font-stretch": "normal",
@@ -20232,7 +20844,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\monos.ttf||37980:817700920.0": {
+    "c:\\windows\\fonts\\monos.ttf||37980:817736920.0": {
       "family_name": "Monospac821 BT",
       "font-family": "Monospac821 BT",
       "font-stretch": "normal",
@@ -20268,7 +20880,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\monosb.ttf||40068:817700922.0": {
+    "c:\\windows\\fonts\\monosb.ttf||40068:817736922.0": {
       "family_name": "Monospac821 BT",
       "font-family": "Monospac821 BT",
       "font-stretch": "normal",
@@ -20304,7 +20916,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\monosbi.ttf||39196:817700922.0": {
+    "c:\\windows\\fonts\\monosbi.ttf||39196:817736922.0": {
       "family_name": "Monospac821 BT",
       "font-family": "Monospac821 BT",
       "font-stretch": "normal",
@@ -20340,7 +20952,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\monosi.ttf||39256:817700924.0": {
+    "c:\\windows\\fonts\\monosi.ttf||39256:817736924.0": {
       "family_name": "Monospac821 BT",
       "font-family": "Monospac821 BT",
       "font-stretch": "normal",
@@ -20376,7 +20988,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\monotxt_.ttf||35564:1033754826.0": {
+    "c:\\windows\\fonts\\monotxt_.ttf||35564:1033787226.0": {
       "family_name": "Monotxt",
       "font-family": "Monotxt",
       "font-stretch": "normal",
@@ -20556,7 +21168,43 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\mtproxy1.ttf||39108:1033755044.0": {
+    "c:\\windows\\fonts\\mtextra.ttf||9024:1613323783.0833838": {
+      "family_name": "MT Extra",
+      "font-family": "MT Extra",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "normal",
+      "fs_type": 0,
+      "full_name": "MT Extra",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 0,
+      "panose": [
+        5,
+        5,
+        1,
+        2,
+        1,
+        2,
+        5,
+        2,
+        2,
+        2
+      ],
+      "path": "c:\\windows\\fonts\\mtextra.ttf",
+      "preferred_family_name": null,
+      "preferred_subfamily_name": null,
+      "subfamily_name": "Regular",
+      "weight": 400,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\mtproxy1.ttf||39108:1033787444.0": {
       "family_name": "Proxy 1",
       "font-family": "Proxy 1",
       "font-stretch": "normal",
@@ -20592,7 +21240,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\mtproxy2.ttf||39108:1033755100.0": {
+    "c:\\windows\\fonts\\mtproxy2.ttf||39108:1033787500.0": {
       "family_name": "Proxy 2",
       "font-family": "Proxy 2",
       "font-stretch": "normal",
@@ -20628,7 +21276,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\mtproxy3.ttf||39108:1033755134.0": {
+    "c:\\windows\\fonts\\mtproxy3.ttf||39108:1033787534.0": {
       "family_name": "Proxy 3",
       "font-family": "Proxy 3",
       "font-stretch": "normal",
@@ -20664,7 +21312,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\mtproxy4.ttf||39108:1033755160.0": {
+    "c:\\windows\\fonts\\mtproxy4.ttf||39108:1033787560.0": {
       "family_name": "Proxy 4",
       "font-family": "Proxy 4",
       "font-stretch": "normal",
@@ -20700,7 +21348,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\mtproxy5.ttf||39108:1033755194.0": {
+    "c:\\windows\\fonts\\mtproxy5.ttf||39108:1033787594.0": {
       "family_name": "Proxy 5",
       "font-family": "Proxy 5",
       "font-stretch": "normal",
@@ -20736,7 +21384,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\mtproxy6.ttf||39108:1033755224.0": {
+    "c:\\windows\\fonts\\mtproxy6.ttf||39108:1033787624.0": {
       "family_name": "Proxy 6",
       "font-family": "Proxy 6",
       "font-stretch": "normal",
@@ -20772,7 +21420,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\mtproxy7.ttf||39108:1033755252.0": {
+    "c:\\windows\\fonts\\mtproxy7.ttf||39108:1033787652.0": {
       "family_name": "Proxy 7",
       "font-family": "Proxy 7",
       "font-stretch": "normal",
@@ -20808,7 +21456,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\mtproxy8.ttf||39108:1033755276.0": {
+    "c:\\windows\\fonts\\mtproxy8.ttf||39108:1033787676.0": {
       "family_name": "Proxy 8",
       "font-family": "Proxy 8",
       "font-stretch": "normal",
@@ -20844,7 +21492,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\mtproxy9.ttf||39108:1033755302.0": {
+    "c:\\windows\\fonts\\mtproxy9.ttf||39108:1033787702.0": {
       "family_name": "Proxy 9",
       "font-family": "Proxy 9",
       "font-stretch": "normal",
@@ -21276,6 +21924,42 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
+    "c:\\windows\\fonts\\outlook.ttf||17672:1613323783.0853786": {
+      "family_name": "MS Outlook",
+      "font-family": "MS Outlook",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "normal",
+      "fs_type": 0,
+      "full_name": "MS Outlook",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 1,
+      "panose": [
+        5,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "path": "c:\\windows\\fonts\\outlook.ttf",
+      "preferred_family_name": null,
+      "preferred_subfamily_name": null,
+      "subfamily_name": "Regular",
+      "weight": 400,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
     "c:\\windows\\fonts\\pala.ttf||472284:1575709717.6129663": {
       "family_name": "Palatino Linotype",
       "font-family": "Palatino Linotype",
@@ -21456,7 +22140,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\panroman.ttf||55416:843076374.0": {
+    "c:\\windows\\fonts\\panroman.ttf||55416:843108774.0": {
       "family_name": "PanRoman",
       "font-family": "PanRoman",
       "font-stretch": "normal",
@@ -22032,6 +22716,78 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
+    "c:\\windows\\fonts\\refsan.ttf||220172:1613323783.0943544": {
+      "family_name": "MS Reference Sans Serif",
+      "font-family": "MS Reference Sans Serif",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "normal",
+      "fs_type": 0,
+      "full_name": "MS Reference Sans Serif",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 1,
+      "panose": [
+        2,
+        11,
+        6,
+        4,
+        3,
+        5,
+        4,
+        4,
+        2,
+        4
+      ],
+      "path": "c:\\windows\\fonts\\refsan.ttf",
+      "preferred_family_name": null,
+      "preferred_subfamily_name": null,
+      "subfamily_name": "Regular",
+      "weight": 400,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
+    "c:\\windows\\fonts\\refspcl.ttf||53288:1613323783.0943544": {
+      "family_name": "MS Reference Specialty",
+      "font-family": "MS Reference Specialty",
+      "font-stretch": "normal",
+      "font-style": "normal",
+      "font-weight": "normal",
+      "fs_type": 8,
+      "full_name": "MS Reference Specialty",
+      "is_bold": false,
+      "is_italic": false,
+      "is_oblique": false,
+      "is_otf": false,
+      "is_regular": true,
+      "is_wws": false,
+      "os2_version": 1,
+      "panose": [
+        5,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "path": "c:\\windows\\fonts\\refspcl.ttf",
+      "preferred_family_name": null,
+      "preferred_subfamily_name": null,
+      "subfamily_name": "Regular",
+      "weight": 400,
+      "width": 5,
+      "wws_family_name": null,
+      "wws_subfamily_name": null
+    },
     "c:\\windows\\fonts\\revit.ttf||30608:1283136632.0": {
       "family_name": "Gil",
       "font-family": "Gil",
@@ -22428,7 +23184,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\romab___.ttf||57448:843077152.0": {
+    "c:\\windows\\fonts\\romab___.ttf||57448:843109552.0": {
       "family_name": "Romantic",
       "font-family": "Romantic",
       "font-stretch": "normal",
@@ -22464,7 +23220,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\romai___.ttf||65512:843077200.0": {
+    "c:\\windows\\fonts\\romai___.ttf||65512:843109600.0": {
       "family_name": "Romantic",
       "font-family": "Romantic",
       "font-stretch": "normal",
@@ -22500,7 +23256,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\romanc__.ttf||48304:1033755338.0": {
+    "c:\\windows\\fonts\\romanc__.ttf||48304:1033787738.0": {
       "family_name": "RomanC",
       "font-family": "RomanC",
       "font-stretch": "normal",
@@ -22536,7 +23292,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\romand__.ttf||44240:1033755364.0": {
+    "c:\\windows\\fonts\\romand__.ttf||44240:1033787764.0": {
       "family_name": "RomanD",
       "font-family": "RomanD",
       "font-stretch": "normal",
@@ -22572,7 +23328,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\romans__.ttf||50020:1097617756.0": {
+    "c:\\windows\\fonts\\romans__.ttf||50020:1097650156.0": {
       "family_name": "RomanS",
       "font-family": "RomanS",
       "font-stretch": "normal",
@@ -22608,7 +23364,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\romant__.ttf||53404:1033755452.0": {
+    "c:\\windows\\fonts\\romant__.ttf||53404:1033787852.0": {
       "family_name": "RomanT",
       "font-family": "RomanT",
       "font-stretch": "normal",
@@ -22644,7 +23400,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\romantic.ttf||56236:843077242.0": {
+    "c:\\windows\\fonts\\romantic.ttf||56236:843109642.0": {
       "family_name": "Romantic",
       "font-family": "Romantic",
       "font-stretch": "normal",
@@ -22716,7 +23472,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\sanss___.ttf||53688:843075772.0": {
+    "c:\\windows\\fonts\\sanss___.ttf||53688:843108172.0": {
       "family_name": "SansSerif",
       "font-family": "SansSerif",
       "font-stretch": "normal",
@@ -22752,7 +23508,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\sanssb__.ttf||52704:843075640.0": {
+    "c:\\windows\\fonts\\sanssb__.ttf||52704:843108040.0": {
       "family_name": "SansSerif",
       "font-family": "SansSerif",
       "font-stretch": "normal",
@@ -22788,7 +23544,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\sanssbo_.ttf||58840:843075598.0": {
+    "c:\\windows\\fonts\\sanssbo_.ttf||58840:843107998.0": {
       "family_name": "SansSerif",
       "font-family": "SansSerif",
       "font-stretch": "normal",
@@ -22824,7 +23580,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\sansso__.ttf||59996:843075728.0": {
+    "c:\\windows\\fonts\\sansso__.ttf||59996:843108128.0": {
       "family_name": "SansSerif",
       "font-family": "SansSerif",
       "font-stretch": "normal",
@@ -23004,7 +23760,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\scriptc_.ttf||59676:1033755530.0": {
+    "c:\\windows\\fonts\\scriptc_.ttf||59676:1033787930.0": {
       "family_name": "ScriptC",
       "font-family": "ScriptC",
       "font-stretch": "normal",
@@ -23040,7 +23796,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\scripts_.ttf||58960:1033755598.0": {
+    "c:\\windows\\fonts\\scripts_.ttf||58960:1033787998.0": {
       "family_name": "ScriptS",
       "font-family": "ScriptS",
       "font-stretch": "normal",
@@ -23832,7 +24588,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\simplex_.ttf||57476:1097617756.0": {
+    "c:\\windows\\fonts\\simplex_.ttf||57476:1097650156.0": {
       "family_name": "Simplex",
       "font-family": "Simplex",
       "font-stretch": "normal",
@@ -23976,7 +24732,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\stylu.ttf||47236:817700924.0": {
+    "c:\\windows\\fonts\\stylu.ttf||47236:817736924.0": {
       "family_name": "Stylus BT",
       "font-family": "Stylus BT",
       "font-stretch": "normal",
@@ -24012,7 +24768,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\supef___.ttf||46768:843077032.0": {
+    "c:\\windows\\fonts\\supef___.ttf||46768:843109432.0": {
       "family_name": "SuperFrench",
       "font-family": "SuperFrench",
       "font-stretch": "normal",
@@ -24048,7 +24804,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swiss.ttf||36548:817700926.0": {
+    "c:\\windows\\fonts\\swiss.ttf||36548:817736926.0": {
       "family_name": "Swis721 BT",
       "font-family": "Swis721 BT",
       "font-stretch": "normal",
@@ -24084,7 +24840,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissb.ttf||36852:817700926.0": {
+    "c:\\windows\\fonts\\swissb.ttf||36852:817736926.0": {
       "family_name": "Swis721 BT",
       "font-family": "Swis721 BT",
       "font-stretch": "normal",
@@ -24120,7 +24876,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissbi.ttf||36520:817700926.0": {
+    "c:\\windows\\fonts\\swissbi.ttf||36520:817736926.0": {
       "family_name": "Swis721 BT",
       "font-family": "Swis721 BT",
       "font-stretch": "normal",
@@ -24156,7 +24912,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissbo.ttf||56088:817700928.0": {
+    "c:\\windows\\fonts\\swissbo.ttf||56088:817736928.0": {
       "family_name": "Swis721 BdOul BT",
       "font-family": "Swis721 BdOul BT",
       "font-stretch": "normal",
@@ -24192,7 +24948,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissc.ttf||36436:817700928.0": {
+    "c:\\windows\\fonts\\swissc.ttf||36436:817736928.0": {
       "family_name": "Swis721 Cn BT",
       "font-family": "Swis721 Cn BT",
       "font-stretch": "condensed",
@@ -24228,7 +24984,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swisscb.ttf||37884:817700930.0": {
+    "c:\\windows\\fonts\\swisscb.ttf||37884:817736930.0": {
       "family_name": "Swis721 Cn BT",
       "font-family": "Swis721 Cn BT",
       "font-stretch": "condensed",
@@ -24264,7 +25020,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swisscbi.ttf||38744:817700930.0": {
+    "c:\\windows\\fonts\\swisscbi.ttf||38744:817736930.0": {
       "family_name": "Swis721 Cn BT",
       "font-family": "Swis721 Cn BT",
       "font-stretch": "condensed",
@@ -24300,7 +25056,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swisscbo.ttf||55760:817700932.0": {
+    "c:\\windows\\fonts\\swisscbo.ttf||55760:817736932.0": {
       "family_name": "Swis721 BdCnOul BT",
       "font-family": "Swis721 BdCnOul BT",
       "font-stretch": "normal",
@@ -24336,7 +25092,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissci.ttf||37616:817700932.0": {
+    "c:\\windows\\fonts\\swissci.ttf||37616:817736932.0": {
       "family_name": "Swis721 Cn BT",
       "font-family": "Swis721 Cn BT",
       "font-stretch": "condensed",
@@ -24372,7 +25128,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissck.ttf||38696:817700932.0": {
+    "c:\\windows\\fonts\\swissck.ttf||38696:817736932.0": {
       "family_name": "Swis721 BlkCn BT",
       "font-family": "Swis721 BlkCn BT",
       "font-stretch": "condensed",
@@ -24408,7 +25164,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swisscki.ttf||39120:817700934.0": {
+    "c:\\windows\\fonts\\swisscki.ttf||39120:817736934.0": {
       "family_name": "Swis721 BlkCn BT",
       "font-family": "Swis721 BlkCn BT",
       "font-stretch": "condensed",
@@ -24444,7 +25200,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swisscl.ttf||35064:817700934.0": {
+    "c:\\windows\\fonts\\swisscl.ttf||35064:817736934.0": {
       "family_name": "Swis721 LtCn BT",
       "font-family": "Swis721 LtCn BT",
       "font-stretch": "condensed",
@@ -24480,7 +25236,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swisscli.ttf||37824:817700936.0": {
+    "c:\\windows\\fonts\\swisscli.ttf||37824:817736936.0": {
       "family_name": "Swis721 LtCn BT",
       "font-family": "Swis721 LtCn BT",
       "font-stretch": "condensed",
@@ -24516,7 +25272,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swisse.ttf||37256:817700936.0": {
+    "c:\\windows\\fonts\\swisse.ttf||37256:817736936.0": {
       "family_name": "Swis721 Ex BT",
       "font-family": "Swis721 Ex BT",
       "font-stretch": "expanded",
@@ -24552,7 +25308,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swisseb.ttf||38672:817700938.0": {
+    "c:\\windows\\fonts\\swisseb.ttf||38672:817736938.0": {
       "family_name": "Swis721 Ex BT",
       "font-family": "Swis721 Ex BT",
       "font-stretch": "expanded",
@@ -24588,7 +25344,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissek.ttf||40660:817700938.0": {
+    "c:\\windows\\fonts\\swissek.ttf||40660:817736938.0": {
       "family_name": "Swis721 BlkEx BT",
       "font-family": "Swis721 BlkEx BT",
       "font-stretch": "expanded",
@@ -24624,7 +25380,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissel.ttf||37244:817700940.0": {
+    "c:\\windows\\fonts\\swissel.ttf||37244:817736940.0": {
       "family_name": "Swis721 LtEx BT",
       "font-family": "Swis721 LtEx BT",
       "font-stretch": "expanded",
@@ -24660,7 +25416,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissi.ttf||36584:817700940.0": {
+    "c:\\windows\\fonts\\swissi.ttf||36584:817736940.0": {
       "family_name": "Swis721 BT",
       "font-family": "Swis721 BT",
       "font-stretch": "normal",
@@ -24696,7 +25452,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissk.ttf||36460:817700940.0": {
+    "c:\\windows\\fonts\\swissk.ttf||36460:817736940.0": {
       "family_name": "Swis721 Blk BT",
       "font-family": "Swis721 Blk BT",
       "font-stretch": "normal",
@@ -24732,7 +25488,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swisski.ttf||37316:817700942.0": {
+    "c:\\windows\\fonts\\swisski.ttf||37316:817736942.0": {
       "family_name": "Swis721 Blk BT",
       "font-family": "Swis721 Blk BT",
       "font-stretch": "normal",
@@ -24768,7 +25524,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissko.ttf||60536:817700942.0": {
+    "c:\\windows\\fonts\\swissko.ttf||60536:817736942.0": {
       "family_name": "Swis721 BlkOul BT",
       "font-family": "Swis721 BlkOul BT",
       "font-stretch": "normal",
@@ -24804,7 +25560,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissl.ttf||35524:817700944.0": {
+    "c:\\windows\\fonts\\swissl.ttf||35524:817736944.0": {
       "family_name": "Swis721 Lt BT",
       "font-family": "Swis721 Lt BT",
       "font-stretch": "normal",
@@ -24840,7 +25596,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\swissli.ttf||36412:817700944.0": {
+    "c:\\windows\\fonts\\swissli.ttf||36412:817736944.0": {
       "family_name": "Swis721 Lt BT",
       "font-family": "Swis721 Lt BT",
       "font-stretch": "normal",
@@ -24876,7 +25632,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\syastro_.ttf||35416:1033755668.0": {
+    "c:\\windows\\fonts\\syastro_.ttf||35416:1033788068.0": {
       "family_name": "Syastro",
       "font-family": "Syastro",
       "font-stretch": "normal",
@@ -24948,7 +25704,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\symap___.ttf||33960:1033755702.0": {
+    "c:\\windows\\fonts\\symap___.ttf||33960:1033788102.0": {
       "family_name": "Symap",
       "font-family": "Symap",
       "font-stretch": "normal",
@@ -24984,7 +25740,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\symath__.ttf||31264:1033755734.0": {
+    "c:\\windows\\fonts\\symath__.ttf||31264:1033788134.0": {
       "family_name": "Symath",
       "font-family": "Symath",
       "font-stretch": "normal",
@@ -25056,7 +25812,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\symeteo_.ttf||22620:1033755766.0": {
+    "c:\\windows\\fonts\\symeteo_.ttf||22620:1033788166.0": {
       "family_name": "Symeteo",
       "font-family": "Symeteo",
       "font-stretch": "normal",
@@ -25092,7 +25848,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\symusic_.ttf||31764:1033755810.0": {
+    "c:\\windows\\fonts\\symusic_.ttf||31764:1033788210.0": {
       "family_name": "Symusic",
       "font-family": "Symusic",
       "font-stretch": "normal",
@@ -25524,7 +26280,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\techb___.ttf||58584:843076196.0": {
+    "c:\\windows\\fonts\\techb___.ttf||58584:843108596.0": {
       "family_name": "TechnicBold",
       "font-family": "TechnicBold",
       "font-stretch": "normal",
@@ -25560,7 +26316,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\techl___.ttf||52648:843076244.0": {
+    "c:\\windows\\fonts\\techl___.ttf||52648:843108644.0": {
       "family_name": "TechnicLite",
       "font-family": "TechnicLite",
       "font-stretch": "normal",
@@ -25596,7 +26352,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\technic_.ttf||58660:843076292.0": {
+    "c:\\windows\\fonts\\technic_.ttf||58660:843108692.0": {
       "family_name": "Technic",
       "font-family": "Technic",
       "font-stretch": "normal",
@@ -25956,7 +26712,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\txt_____.ttf||37508:1075319092.0": {
+    "c:\\windows\\fonts\\txt_____.ttf||37508:1075355092.0": {
       "family_name": "Txt",
       "font-family": "Txt",
       "font-stretch": "normal",
@@ -25992,7 +26748,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\umath.ttf||22128:817700944.0": {
+    "c:\\windows\\fonts\\umath.ttf||22128:817736944.0": {
       "family_name": "UniversalMath1 BT",
       "font-family": "UniversalMath1 BT",
       "font-stretch": "normal",
@@ -26352,7 +27108,7 @@
       "wws_family_name": null,
       "wws_subfamily_name": null
     },
-    "c:\\windows\\fonts\\vinet.ttf||68552:817700946.0": {
+    "c:\\windows\\fonts\\vinet.ttf||68552:817736946.0": {
       "family_name": "Vineta BT",
       "font-family": "Vineta BT",
       "font-stretch": "semi-expanded",

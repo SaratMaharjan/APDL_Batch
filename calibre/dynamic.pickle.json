@@ -1,10 +1,7 @@
 {
+  "add books dialog dir": "E:\\googleDrive.sarat.maharjan\\books_notImported",
   "database location dialog": "E:\\googleDrive.sarat.maharjan\\books",
   "sort_history": [
-    [
-      "timestamp",
-      false
-    ],
     [
       "title",
       true
@@ -12,6 +9,10 @@
     [
       "timestamp",
       false
+    ],
+    [
+      "title",
+      true
     ],
     [
       "timestamp",

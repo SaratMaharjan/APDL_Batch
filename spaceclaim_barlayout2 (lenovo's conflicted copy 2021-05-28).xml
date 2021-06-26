@@ -1,17 +1,17 @@
 <dotnetbarlayout version="6" zorder="3,4,1,2">
   <docksite size="0" dockingside="Top" originaldocksitesize="0" />
   <docksite size="0" dockingside="Bottom" originaldocksitesize="0" />
-  <docksite size="315" dockingside="Left" originaldocksitesize="0">
+  <docksite size="239" dockingside="Left" originaldocksitesize="0">
     <dockcontainer orientation="1" w="0" h="0">
-      <barcontainer w="312" h="471">
+      <barcontainer w="236" h="412">
         <bar name="structureViewDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Structure" dockline="0" dockoffset="0" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="1" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
           <items>
             <item name="structureViewDockItem" origBar="" origPos="-1" pos="0" />
           </items>
         </bar>
       </barcontainer>
-      <barcontainer w="312" h="364">
-        <bar name="propertiesDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Properties" dockline="0" dockoffset="474" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="1" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
+      <barcontainer w="236" h="433">
+        <bar name="propertiesDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Properties" dockline="0" dockoffset="415" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="1" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
           <items>
             <item name="propertiesDockItem" origBar="" origPos="-1" pos="0" />
           </items>
@@ -19,10 +19,10 @@
       </barcontainer>
     </dockcontainer>
   </docksite>
-  <docksite size="773" dockingside="Right" originaldocksitesize="0">
+  <docksite size="611" dockingside="Right" originaldocksitesize="0">
     <dockcontainer orientation="0" w="0" h="0">
-      <dockcontainer orientation="1" w="302" h="838">
-        <barcontainer w="302" h="422">
+      <dockcontainer orientation="1" w="227" h="848">
+        <barcontainer w="227" h="422">
           <bar name="propertiesSideBar" dockline="-1" layout="2" dockoffset="0" state="2" dockside="2" fpos="866,522,300,300" visible="true" seldocktab="3">
             <items>
               <item name="appearanceDockItem" origBar="" origPos="-1" pos="0" />
@@ -33,8 +33,8 @@
             </items>
           </bar>
         </barcontainer>
-        <barcontainer w="302" h="423">
-          <bar name="structureViewSideBar" dockline="0" layout="2" dockoffset="1" state="2" dockside="2" fpos="1220,645,300,491" visible="true" seldocktab="0">
+        <barcontainer w="227" h="423">
+          <bar name="structureViewSideBar" dockline="0" layout="2" dockoffset="1" state="2" dockside="2" fpos="999,607,300,300" visible="true" seldocktab="0">
             <items>
               <item name="selectionViewDockItem" origBar="" origPos="-1" pos="0" />
               <item name="namedViewsDockItem" origBar="" origPos="-1" pos="1" />
@@ -42,14 +42,14 @@
           </bar>
         </barcontainer>
       </dockcontainer>
-      <barcontainer w="234" h="838">
+      <barcontainer w="205" h="848">
         <bar name="namedGroupDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Groups" dockline="999" dockoffset="0" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="2" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
           <items>
             <item name="namedGroupDockItem" origBar="" origPos="-1" pos="0" />
           </items>
         </bar>
       </barcontainer>
-      <barcontainer w="228" h="838">
+      <barcontainer w="170" h="848">
         <bar name="layerEditorDockItem" candockleft="true" candockright="true" candocktop="false" candockbottom="false" candockdoc="false" candocktab="true" canmaximizefloating="false" text="Layers" dockline="999" dockoffset="0" grabhandle="8" menubar="false" stretch="true" style="9" wrapdock="false" wrapfloat="true" state="2" dockside="2" visible="true" custom="true" canhide="false" imagesize="0" itemsp="0" themes="true" fontname="Microsoft Sans Serif" fontemsize="8.25" fontstyle="0" layout="2" eqbutton="false" hidein="false" autocaptionsync="true">
           <items>
             <item name="layerEditorDockItem" origBar="" origPos="-1" pos="0" />

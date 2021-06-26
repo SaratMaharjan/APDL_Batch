@@ -1,12 +1,12 @@
 
 call reset.bat
-set appPath="C:\Program Files\ANSYS Inc\v202\ANSYS\bin\winx64\ansys2020R2.exe"
+set appPath="C:\Program Files\ANSYS Inc\v211\ANSYS\bin\winx64\ansys2021R1.exe"
 
 set proj_Num=%~n0
 @REM set proj_Num=345920
 
 @REM set pathBefore=E:
-set pathAfter=ansys
+@REM set pathAfter=ansys
 
 @REM set sourcePre=x:\ins
 @REM set sourceFile=s-alt.in
@@ -35,7 +35,7 @@ for /l %%b in (1 1 1) do (
 
   set interval=2000 1 2000
   @REM set interval2=20!bq! 100 20!bq!
-  set interval2=10!bq! 100 40!bq!
+  set interval2=50!bq! 100 50!bq!
   @REM set interval2=40!bq! 100 40!bq!
     call calc.bat
 

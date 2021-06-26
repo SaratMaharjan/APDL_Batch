@@ -1,0 +1,368 @@
+ Volume in drive Z is New Volume
+ Volume Serial Number is 4E18-7884
+
+ Directory of Z:\
+
+09.06.2021  12:59 PM    <DIR>          ..
+09.06.2021  12:59 PM                 0 file_list.txt
+09.06.2021  12:59 PM    <DIR>          .
+09.06.2021  12:59 PM                31 getFileList.bat
+09.06.2021  12:16 PM                28 sm.lock
+09.06.2021  12:16 PM                 4 hostname.txt
+09.06.2021  12:16 PM             2,553 356021.bat
+09.06.2021  12:15 PM             1,704 sm.bat
+09.06.2021  11:03 AM               216 sound.vbs
+09.06.2021  10:05 AM               957 356221.bat
+09.06.2021  09:32 AM                10 last-lic-sm.txt
+09.06.2021  09:31 AM                 8 last-run-sm.txt
+09.06.2021  09:24 AM             1,704 sm2.bat
+09.06.2021  09:13 AM                 6 lastProject.txt
+09.06.2021  07:18 AM             2,854 nseln_new.py
+09.06.2021  06:23 AM    <DIR>          .history
+02.06.2021  01:11 PM               795 355921.bat
+02.06.2021  10:16 AM               482 354221.bat
+28.05.2021  03:11 PM    <DIR>          calibre
+28.05.2021  02:02 PM    <DIR>          .git
+28.05.2021  01:48 PM    <DIR>          completed_batch
+28.05.2021  12:44 PM               813 xDriveLenovo.bat
+26.05.2021  02:58 PM               481 354821.bat
+25.05.2021  10:49 AM                 0 extra_cmd.bat
+21.05.2021  03:30 PM               728 353321.bat
+20.05.2021  03:36 PM             4,226 calc.bat
+14.05.2021  09:32 AM               761 353421.bat
+11.05.2021  11:05 AM             5,904 calc-loop.bat
+07.05.2021  05:29 PM               849 346120.bat
+07.05.2021  03:53 PM               561 346120L.bat
+27.04.2021  08:59 AM               477 352921.bat
+21.04.2021  02:14 PM                 4 last-drive-sm.txt
+21.04.2021  07:49 AM               499 353221b.bat
+21.04.2021  07:49 AM             3,477 sm3.bat
+21.04.2021  07:48 AM               499 353221a.bat
+21.04.2021  02:35 AM                56 npm-list-sm.txt
+20.04.2021  07:21 PM             4,847 spaceclaim_barlayout2.xml
+20.04.2021  07:21 PM           139,060 spaceclain_user.config
+20.04.2021  03:02 PM             1,472 xDrive.pde.bat
+20.04.2021  03:02 PM             1,041 xDrive.bat
+20.04.2021  03:02 PM             1,466 xDrive.sm.bat
+20.04.2021  05:58 AM             3,828 csys-create.js
+15.04.2021  05:24 PM               566 347520.bat
+13.04.2021  01:58 PM             1,634 352721.bat
+31.03.2021  03:18 AM            26,472 ShareX-13.4.0-backup.sxb
+23.03.2021  02:52 AM               589 350221d.bat
+22.03.2021  10:12 AM    <DIR>          macros
+18.03.2021  12:34 PM                 8 last-lic-ansys2.txt
+17.03.2021  11:15 AM               589 324618.bat
+17.03.2021  08:32 AM                 8 last-run-ansys2.txt
+16.03.2021  05:21 PM               500 reset.bat
+11.03.2021  09:59 AM               763 351521.bat
+08.03.2021  12:46 PM               475 999921.bat
+05.03.2021  06:45 PM            22,264 install.txt
+05.03.2021  11:02 AM               856 347520L.bat
+04.03.2021  01:10 PM               759 351321.bat
+04.03.2021  07:59 AM               475 351421.bat
+26.02.2021  10:40 AM             1,047 337319.bat
+25.02.2021  05:23 PM             1,252 command_Line-Batch.md
+24.02.2021  12:56 PM               763 352121.bat
+24.02.2021  08:02 AM             1,383 pre-push.bat
+24.02.2021  08:00 AM    <DIR>          __pycache__
+24.02.2021  07:59 AM                 0 pip-list-sm.txt
+24.02.2021  07:28 AM             6,762 Word-Anpassungen.exportedUI
+24.02.2021  07:27 AM             4,386 Excel Customizations.exportedUI
+24.02.2021  07:16 AM             4,900 calc-loop_noDB.bat
+24.02.2021  07:16 AM               101 shutdown.bat
+24.02.2021  07:16 AM               567 348820p.bat
+24.02.2021  07:16 AM             3,520 run-apdl_loop.bat
+24.02.2021  07:16 AM             3,865 run-apdl.bat
+24.02.2021  07:16 AM             1,142 349621.bat
+24.02.2021  07:16 AM             1,132 349621c.bat
+24.02.2021  07:16 AM             1,877 restart.bat
+24.02.2021  07:16 AM             1,137 349621a.bat
+24.02.2021  07:16 AM               566 349120.bat
+24.02.2021  07:16 AM               567 348820.bat
+24.02.2021  07:16 AM             3,097 sm4.bat
+24.02.2021  07:16 AM               566 348920.bat
+24.02.2021  07:16 AM             1,132 349621b.bat
+24.02.2021  07:16 AM               557 347520a.bat
+24.02.2021  07:16 AM             1,029 test.bat
+24.02.2021  07:16 AM               636 pro-cre.bat
+24.02.2021  07:16 AM             3,299 sm3 (lenovo's conflicted copy 2021-05-28).bat
+24.02.2021  07:13 AM            49,137 dynprompt172.ans
+24.02.2021  07:13 AM               158 l2cur.bat
+24.02.2021  07:13 AM                70 run-ansys.bat
+24.02.2021  07:13 AM               104 first.bat
+24.02.2021  07:13 AM               111 rSolu.bat
+24.02.2021  07:13 AM            49,133 dynprompt170.ans
+24.02.2021  07:13 AM               434 add-zeroes.bat
+24.02.2021  07:13 AM               798 xDriveLenovo (lenovo's conflicted copy 2021-05-28).bat
+24.02.2021  07:12 AM             1,467 xDrive.pde (lenovo's conflicted copy 2021-05-28).bat
+24.02.2021  07:12 AM             1,036 xDrive (lenovo's conflicted copy 2021-05-28).bat
+24.02.2021  07:12 AM               870 timer.bat
+24.02.2021  07:09 AM               584 350221.bat
+24.02.2021  03:12 AM                34 server.bat
+24.02.2021  03:06 AM                 0 extra_cmd_0.bat
+24.02.2021  03:03 AM             1,461 xDrive.sm (lenovo's conflicted copy 2021-05-28).bat
+23.02.2021  04:17 PM           139,063 spaceclain_user (lenovo's conflicted copy 2021-05-28).config
+23.02.2021  01:26 PM             4,846 spaceclaim_barlayout2 (lenovo's conflicted copy 2021-05-28).xml
+19.02.2021  02:17 PM               876 git-config.bat
+19.02.2021  01:59 PM               307 .gitconfig
+17.02.2021  11:06 AM             8,604 nseln.py
+16.02.2021  09:24 AM               931 CustomShortcuts.xml
+14.02.2021  07:11 PM    <DIR>          acad
+14.02.2021  07:11 PM    <DIR>          npp-settings
+14.02.2021  07:11 PM    <DIR>          notepad++_settings
+14.02.2021  07:11 PM    <DIR>          Bkp_Settings_2019-08-29 08-03-22
+14.02.2021  07:11 PM    <DIR>          pypandas
+14.02.2021  07:10 PM    <DIR>          explorer++_config
+14.02.2021  07:10 PM    <DIR>          _batchFiles
+14.02.2021  07:09 PM    <DIR>          .idea
+14.02.2021  07:07 PM    <DIR>          registry_hacks
+14.02.2021  07:05 PM    <DIR>          .vscode
+14.02.2021  07:02 PM    <DIR>          pymodules
+14.02.2021  07:02 PM    <DIR>          node_modules
+11.02.2021  08:13 AM            97,792 macrosSM.xla
+11.02.2021  08:13 AM            97,792 macrosSM (lenovo's conflicted copy 2021-05-28).xla
+09.02.2021  11:17 AM           139,302 user_spaceclaim2021R1.config
+08.02.2021  06:46 AM                 8 last-lic-osmhrjn.txt
+08.02.2021  06:40 AM                 6 last-run-osmhrjn.txt
+05.02.2021  07:53 PM                 4 last-drive-ansys2.txt
+07.01.2021  05:08 AM             1,391 README.md
+05.01.2021  07:11 PM             4,753 chocolatey.config
+05.01.2021  03:43 PM             4,044 chocolatey (osmhrjn's conflicted copy 2021-01-05).config
+01.12.2020  03:41 AM             1,016 Doku General 343120  Doku Masch.sti
+21.11.2020  07:43 AM             3,279 git.md
+21.11.2020  07:39 AM               538 special-characters.md
+21.11.2020  07:39 AM                84 sketchupNotes.md
+21.11.2020  07:38 AM             1,923 hide-api-keys.md
+21.11.2020  07:37 AM               524 chocolatey.md
+21.11.2020  07:31 AM               197 node.md
+21.11.2020  07:20 AM             4,044 vim.md
+21.11.2020  05:55 AM               230 vsCodeNotes.md
+20.11.2020  07:10 AM               582 pip-list.txt
+20.11.2020  07:10 AM                47 npm-list.txt
+16.11.2020  08:43 AM               951 autocad.md
+16.11.2020  07:56 AM                74 TODO
+09.11.2020  10:23 AM             7,749 calcs.ipynb
+09.11.2020  09:31 AM             9,867 vscodeSettings.json
+26.10.2020  09:33 AM             4,190 chocolatey (osmhrjn's conflicted copy 2020-10-26).config
+19.10.2020  11:45 AM               424 vdi2230_part1.md
+16.10.2020  11:35 AM               666 wsl.md
+30.09.2020  12:54 PM           124,825 tinywall.tws
+28.09.2020  05:06 PM             4,470 barlayout2.xml
+23.09.2020  11:53 AM               335 functions.py
+21.09.2020  02:43 PM            60,023 Normal.dotm
+16.09.2020  10:25 AM               373 predeformation.py
+15.09.2020  03:53 AM            33,478 installed_.txt
+14.09.2020  10:30 AM           107,422 learn_python.ipynb
+14.09.2020  06:25 AM                51 test.csv
+11.09.2020  07:29 AM           117,760 latex_packages.txt
+11.09.2020  05:33 AM               194 pandocHTML.bat
+10.09.2020  08:01 PM               117 l2pdf.bat
+08.09.2020  01:25 PM               103 htmlPDF.bat
+07.09.2020  08:25 AM                 0 jupyterOutput.log
+06.09.2020  09:07 AM                32 jupyter.py
+06.09.2020  06:24 AM               310 testzip.zip
+06.09.2020  06:19 AM                40 textfile.txt.bak
+06.09.2020  06:02 AM                40 textfile.txt
+31.08.2020  09:52 AM                22 withas.txt
+30.08.2020  06:03 PM             1,862 chocolatey_ansys2.config
+30.08.2020  04:52 PM             4,069 chocolatey_lenovo.config
+30.08.2020  11:37 AM            31,430 software_list.txt
+30.08.2020  09:19 AM            26,417 ShareX-13.1.0-backup.sxb
+29.08.2020  11:13 AM             1,577 fsResizer.ccf
+26.08.2020  07:28 AM               248 example.html
+24.08.2020  08:58 AM               263 npm-list_2020.10.txt
+21.08.2020  03:16 PM             1,565 markdown.md
+30.06.2020  07:30 AM            18,606 AutoHotkey.ahk
+14.05.2020  11:56 AM                 6 lastProject (ansys2's conflicted copy 2020-05-15).txt
+29.04.2020  12:47 PM           132,097 spaceclaim_user.config
+23.03.2020  10:31 AM                29 cp7run.mac
+10.03.2020  06:29 PM                 4 last-drive-osmhrjn.txt
+05.03.2020  11:08 AM               901 package.json
+05.03.2020  11:05 AM            27,589 image9.png
+05.03.2020  11:05 AM               142 aref.bat
+05.03.2020  11:05 AM             8,941 image2.png
+05.03.2020  11:05 AM            30,179 image8.png
+05.03.2020  11:05 AM            20,912 image7.png
+05.03.2020  11:05 AM            76,375 image1.png
+05.03.2020  11:05 AM             2,349 url-text.py
+05.03.2020  11:05 AM            21,069 image6.png
+05.03.2020  11:05 AM            35,392 ansys-apdl-syntax-0.0.11.vsix
+05.03.2020  11:05 AM            12,486 image5.png
+05.03.2020  11:05 AM            13,461 image4.png
+05.03.2020  11:05 AM            33,194 image10.png
+05.03.2020  11:05 AM            31,318 image3.png
+05.03.2020  11:05 AM                68 7ze.bat
+05.03.2020  11:04 AM           189,494 speedCrunch.json
+05.03.2020  11:04 AM             8,863 views.xml
+05.03.2020  11:04 AM            49,152 solhook12.dll
+05.03.2020  11:04 AM               665 check.xml
+05.03.2020  11:04 AM               881 api.spec
+05.03.2020  11:04 AM           160,286 eset.xml
+05.03.2020  11:04 AM                11 jobname.abt
+01.12.2019  09:32 AM            13,593 ShareX-12.4.1-backup.sxb
+30.11.2019  07:35 PM             8,192 coin.db
+30.11.2019  07:33 PM             7,987 api.py
+30.11.2019  04:59 PM               566 files.py
+30.11.2019  10:12 AM             8,192 mycompany.db
+30.11.2019  10:12 AM             1,126 sqdb.py
+30.11.2019  05:47 AM               314 youload.py
+30.11.2019  05:39 AM               147 playlist.txt
+29.11.2019  06:54 PM                41 pydata.txt
+29.11.2019  06:40 PM             1,236 err.py
+29.11.2019  06:11 PM               571 overloading.py
+29.11.2019  05:51 PM               452 abs_class.py
+29.11.2019  05:16 PM               559 aggregation_has_a_weak_association.py
+29.11.2019  05:12 PM               529 composition_part_of_weak_connection.py
+29.11.2019  04:47 PM               171 triangle.py
+29.11.2019  04:47 PM               163 square.py
+29.11.2019  04:46 PM               156 shape.py
+29.11.2019  04:45 PM               278 polygon.py
+29.11.2019  04:04 AM               211 while_sum.py
+20.11.2019  06:37 PM             3,269 py_demo.py
+14.11.2019  02:23 PM               894 circle.py
+07.10.2019  10:28 AM           128,244 user.config
+17.09.2019  07:50 AM                19 rLines.bat
+15.09.2019  02:54 PM             2,832 structural_analysis_oneDoor.md
+23.08.2019  05:57 AM               245 _vimrc.vim
+23.08.2019  05:57 AM               308 _vimrc
+02.08.2019  11:01 AM            52,240 cad_dim_7.JPG
+02.08.2019  11:00 AM            50,235 cad_dim_6.JPG
+02.08.2019  11:00 AM            59,048 cad_dim_5.JPG
+02.08.2019  11:00 AM            62,645 cad_dim_4.JPG
+02.08.2019  10:59 AM            56,796 cad_dim_3.JPG
+02.08.2019  10:59 AM            57,324 cad_dim_2.JPG
+02.08.2019  10:59 AM            61,999 cad_dim_1.JPG
+19.07.2019  05:13 AM            35,153 package-lock.json
+18.07.2019  03:57 PM                79 7zip.bat
+03.07.2019  02:59 PM                 8 hostname (ansys2s in Konflikt stehende Kopie 2019-07-03).txt
+28.06.2019  03:52 PM           129,835 spaceclaim-settings_2019R2.config
+27.06.2019  10:48 AM           129,839 spaceclaim-settings_2019R2_EDITED.config
+27.06.2019  10:44 AM           104,680 spaceclaim-settings-before1802_EDITED.config
+26.06.2019  03:22 PM                 8 hostname (ansys2s in Konflikt stehende Kopie 2019-06-26).txt
+26.06.2019  08:22 AM            13,387 macroTemplate.xltm
+18.06.2019  07:21 AM           129,830 Before_problem_spaceclaim-settings_2019R2.config
+14.06.2019  12:45 PM                 8 hostname (ansys2s in Konflikt stehende Kopie 2019-06-17).txt
+16.04.2019  03:26 PM                 8 hostname (ansys2s in Konflikt stehende Kopie 2019-04-16 (1)).txt
+16.04.2019  01:25 PM                 8 hostname (ansys2s in Konflikt stehende Kopie 2019-04-16).txt
+15.04.2019  07:27 PM                 8 hostname (ansys2s in Konflikt stehende Kopie 2019-04-15).txt
+04.04.2019  11:13 PM         1,189,376 AutoHotkey.exe
+27.03.2019  12:07 PM                 8 hostname (ansys2s in Konflikt stehende Kopie 2019-03-28).txt
+25.03.2019  07:55 AM                 8 last-lic-.txt
+25.03.2019  07:55 AM                 6 last-drive-.txt
+25.03.2019  07:55 AM                 8 last-run-.txt
+13.03.2019  05:54 PM                 8 hostname (ansys2s in Konflikt stehende Kopie 2019-03-13).txt
+26.02.2019  03:48 PM             2,597 Plot_insert.bas
+22.02.2019  05:54 AM                 8 hostname (ansys2s in Konflikt stehende Kopie 2019-02-22).txt
+22.02.2019  05:52 AM             4,887 start.ans
+22.02.2019  05:30 AM           127,338 spaceclaim-settings_2019R1.config
+11.02.2019  07:35 AM                98 da_vinci.txt
+07.01.2019  05:24 AM             3,038 Preferences_Sketchup2017.dat
+18.12.2018  03:17 PM             1,490 Preferences-sketchup2016.dat
+28.11.2018  01:59 PM               746 csys-rename.js
+12.11.2018  08:48 AM                 6 lastProject (ansys2s in Konflikt stehende Kopie 2018-11-12).txt
+23.10.2018  07:56 AM               548 replSolu.py
+23.10.2018  07:38 AM                65 replPY.bat
+22.10.2018  06:00 PM               243 .delImages.bat
+22.10.2018  02:07 PM             6,006 backup_181022_140737.reg
+18.10.2018  06:50 AM                 8 hostname (ansys2s in Konflikt stehende Kopie 2018-10-18).txt
+16.10.2018  08:27 PM                 4 last-drive.txt
+16.10.2018  08:27 PM                 7 last-lic.txt
+16.10.2018  06:59 PM                 8 last-run.txt
+15.10.2018  11:16 AM                 9 hostname (DESKTOP-JP7VOFP's conflicted copy 2018-10-15).txt
+14.10.2018  08:26 PM            43,708 cmder-settings.xml
+10.10.2018  02:53 PM               270 lisp_tut.lsp
+10.10.2018  02:43 PM               106 lisp_tut._ls
+02.10.2018  12:49 PM                 8 hostname (ansys2s in Konflikt stehende Kopie 2018-10-02).txt
+01.10.2018  07:27 AM                 8 hostname (ansys2s in Konflikt stehende Kopie 2018-10-01).txt
+28.09.2018  12:56 PM         1,040,088 creo_3d_access - user.maharjan.appdata.roaming.ptc.zip
+27.09.2018  10:44 AM                 8 hostname (ansys2s in Konflikt stehende Kopie 2018-09-27).txt
+19.07.2018  09:06 AM           123,914 spaceclaim-settings.config
+18.07.2018  05:38 PM             4,243 Excel Customizations_beforeJune26.exportedUI
+18.07.2018  01:26 PM            19,743 spaceclaim-shortcuts191.png
+27.06.2018  10:08 AM                 8 hostname (ansys2s in Konflikt stehende Kopie 2018-06-27).txt
+07.05.2018  05:39 PM                59 jobname.solc
+29.03.2018  07:34 PM               332 sound.bat
+29.03.2018  07:33 PM            57,388 success.wav
+12.03.2018  04:16 AM             3,835 delete-files.bat
+20.02.2018  12:40 PM             1,293 rSoluStream.js
+11.02.2018  03:37 AM         1,189,888 AutoHotkey_old2019.exe
+01.02.2018  05:17 PM             1,799 rLines.js
+01.02.2018  05:17 PM             1,183 rSolu.js
+08.01.2018  03:47 PM            14,849 _js.js
+08.01.2018  03:47 PM             1,117 pip-list-2017.12.txt
+08.01.2018  03:45 PM         2,960,698 ansys-navigation-settings.tiff
+30.11.2017  01:10 PM             3,630 rxjs-basics.md
+24.11.2017  09:37 AM            67,646 if_MS-DOS-Batch-File_35476.ico
+24.11.2017  09:37 AM           156,812 if_gvim_17927.ico
+14.11.2017  11:12 PM            31,125 NormalSM.dotm
+12.10.2017  10:09 PM               557 merge.bat
+10.10.2017  11:34 PM               682 gui-python.py
+10.10.2017  11:34 PM            75,155 draftsight-profile.xml
+17.09.2017  10:37 PM             2,064 linux.md
+17.09.2017  10:37 PM               834 bash-tut
+06.09.2017  09:31 PM           104,671 spaceclaim-settings-before1802.config
+06.09.2017  09:31 PM             6,013 analytical-load-calculation.mcdx
+06.09.2017  09:31 PM            34,099 ansys-navigation-settings.png
+27.08.2017  04:58 PM             5,297 config.xml
+12.08.2017  01:24 PM             6,085 rxjs-applications.md
+12.08.2017  01:24 PM               701 Notes.in
+10.08.2017  12:24 AM               417 slice.js
+10.08.2017  12:24 AM             7,119 ns.js
+10.08.2017  12:24 AM            20,892 slice2.js
+10.08.2017  12:24 AM             2,706 named-selection.js
+10.08.2017  12:24 AM               840 js.js
+10.08.2017  12:24 AM               137 spaceclain-customize-shortcuts-installation.txt
+10.08.2017  12:24 AM               571 debug-test.js
+10.08.2017  12:24 AM             1,146 unshared.js
+10.08.2017  12:24 AM             3,496 volume-osd.ahk
+10.08.2017  12:24 AM             1,204 s.in
+10.08.2017  12:24 AM             2,444 js2.js
+10.08.2017  12:24 AM             6,921 make-face-component.js
+10.08.2017  12:24 AM             2,204 sizing.js
+10.08.2017  12:24 AM             3,775 modal-displacements.js
+10.08.2017  12:24 AM             1,986 remote-work-environment.md
+10.08.2017  12:24 AM               281 .htmlhintrc
+02.08.2017  09:29 PM            11,776 replaceLines.exe
+02.08.2017  09:29 PM               887 .eslintrc.json
+02.08.2017  09:29 PM               470 functional.js
+01.08.2017  08:59 PM               221 .editorconfig
+01.08.2017  08:43 PM            17,442 deutsche-text.txt
+01.08.2017  08:43 PM             1,076 hide-active.scscript
+01.08.2017  08:43 PM             5,281 creo-mouse-backup
+01.08.2017  08:43 PM           375,790 custom-shortcut.zip
+01.08.2017  08:43 PM               976 create-new-wb.wbjn
+01.08.2017  08:43 PM            11,839 anakon-ansys-units.xml
+01.08.2017  08:43 PM               796 create-new-wb-ansys17.wbjn
+01.08.2017  08:43 PM             6,637 linear-equations.mcdx
+01.08.2017  08:43 PM             7,674 transformation-symbolic.mcdx
+01.08.2017  08:43 PM            15,135 settings-icon.png
+01.08.2017  08:43 PM            27,672 normal-sm-20150217.dotm
+01.08.2017  08:43 PM            31,125 normal-sm.dotm
+01.08.2017  08:43 PM               557 spaceclaim-shortcuts.xml
+01.08.2017  08:43 PM            20,283 normal-email.dotm
+01.08.2017  08:43 PM               565 reset-vars.vbs
+01.08.2017  08:43 PM                58 run-ansys-e.bat
+01.08.2017  08:43 PM                56 run-ansys-r.bat
+01.08.2017  08:43 PM               397 sync.ffs_db
+01.08.2017  08:43 PM                48 pro-cre-user.bat
+01.08.2017  08:43 PM                 0 scss-styleguide.md
+01.08.2017  08:43 PM               168 find-max.bat
+11.06.2017  08:16 PM               715 .gitignore
+20.02.2017  11:20 PM               230 lisp.fas
+20.02.2017  11:20 PM                76 lisp.lisp
+20.02.2017  11:20 PM                29 lisp.lib
+19.11.2016  01:58 AM           105,742 Flag-blue.ico
+09.11.2016  12:54 AM         1,208,832 AutoHotkey-old.exe
+09.11.2016  12:49 AM           376,832 zbar.exe
+09.11.2016  12:49 AM             7,680 replSOLU.exe
+09.11.2016  12:49 AM               342 settings.dat
+09.11.2016  12:49 AM            11,264 loadStep.exe
+15.10.2015  06:35 PM           102,400 CustomizeShortcuts.dll
+15.10.2015  06:35 PM               316 CustomizeShortcuts.xml
+15.10.2015  06:35 PM             5,322 start162.ans
+22.09.2015  01:44 AM           101,673 profileACAD.arg
+04.09.2015  09:56 PM             5,319 start161.ans
+04.09.2015  09:56 PM             5,349 start160.ans
+04.09.2015  09:56 PM            18,944 Project.dvb
+             341 File(s)     13,280,641 bytes
+              20 Dir(s)  846,416,822,272 bytes free

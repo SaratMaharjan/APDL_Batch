@@ -120,3 +120,6 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
     git checkout development
     git checkout fix/fix-name
   </pre>
+
+  git reset HEAD filename - uncommit
+  git checkout -- filename - undo changes to last commit
