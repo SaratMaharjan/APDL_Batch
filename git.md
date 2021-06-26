@@ -123,3 +123,4 @@ Use of branches if possible. eg: bug/..., feature/..., refactor/..., style/...
 
   git reset HEAD filename - uncommit
   git checkout -- filename - undo changes to last commit
+
